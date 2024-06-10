@@ -15,9 +15,14 @@
 
 |name|ro|ru|en|
 |----|----|----|----|
-|e-SIM_qr|[■](demo/directmail/esim_qr_ro.html)|[■](demo/directmail/esim_qr_ru.html)|[■](demo/directmail/esim_qr_en.html)
-|e-SIM_code|[■](demo/directmail/esim_code_ro.html)|[■](demo/directmail/esim_code_ru.html)|[■](demo/directmail/esim_code_en.html)
-|e-SIM_pay|[■](demo/directmail/esim_pay_ro.html)|[■](demo/directmail/esim_pay_ru.html)|[■](demo/directmail/esim_pay_en.html)
-|e-SIM_thx|[■](demo/directmail/esim_thx_ro.html)|[■](demo/directmail/esim_thx_ru.html)|[■](demo/directmail/esim_thx_en.html)
-|e-SIM_thx|[■](demo/directmail/one_number_qr_ro.html)||
+|e-SIM qr|[■](demo/directmail/esim_qr_ro.html)|[■](demo/directmail/esim_qr_ru.html)|[■](demo/directmail/esim_qr_en.html)
+|e-SIM code|[■](demo/directmail/esim_code_ro.html)|[■](demo/directmail/esim_code_ru.html)|[■](demo/directmail/esim_code_en.html)
+|e-SIM pay|[■](demo/directmail/esim_pay_ro.html)|[■](demo/directmail/esim_pay_ru.html)|[■](demo/directmail/esim_pay_en.html)
+|e-SIM thx|[■](demo/directmail/esim_thx_ro.html)|[■](demo/directmail/esim_thx_ru.html)|[■](demo/directmail/esim_thx_en.html)
+|One Number|[■](demo/directmail/one_number_qr_ro.html)||
 
+<br><br>
+<h2>Assets:</h2>
+
+- [JS](toolkit/js/mtc_evolution.js)
+- [CSS](toolkit/css/mtc_evolution.css)
