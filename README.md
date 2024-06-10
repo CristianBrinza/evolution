@@ -4,10 +4,10 @@
 <p align=center>                           
   <img align="center" style="height: 30%; width: 30%;" src="images/directmail/v1/moldtelecom_small_logo_1.png" />
 </p> 
-<br><br>
+<br>
 <h2>Demo/Testing:</h2>
 
-
+This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products
 ### Landings:
 - [MD-IX]()
 
