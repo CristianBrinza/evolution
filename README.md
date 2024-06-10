@@ -7,7 +7,7 @@
 <br>
 <h2>Demo/Testing:</h2>
 
-This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products<br>
+This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products.<br>
 Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 ### Landings:
 - [MD-IX]()
