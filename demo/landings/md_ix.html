@@ -110,6 +110,15 @@ width: 100%;
 
     
         }
+        .mdix_facility_block_title{
+            width: 23%;
+
+padding: 16px 40px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+
+        }
         .mdix_facility_block{
 width: 23%;
 border-radius: 8px;
@@ -118,14 +127,20 @@ padding: 16px 40px;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
-gap:12px
+gap:12px;
 
 
-
+transition: transform 0.2s ease-in-out; /* Smooth transition */
+    transform: scale(1); /* Initial scale */
         }
+
+        .mdix_facility_block:hover{
+            transform: scale(1.05);
+        }
+        
        </style>
         <div id="mdix_facility">
-            <div class="mdix_facility_block" style="border: none;">
+            <div class="mdix_facility_block_title">
                 <div class="mtc_evolution_title">Facilitati 
                     aditionale</div>
             </div>
@@ -246,30 +261,37 @@ gap:12px
     justify-content: space-between;
 
     }
+    #mdix_services_left, #mdix_services_right {
+    height: 270px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    border-radius: var(--block_border_radius);
+    overflow: hidden;
+    padding: 60px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 18px;
+}
 
-    #mdix_services_left, #mdix_services_right{
-        height: 270px;
-        width: calc(50% - 10px);
-        box-sizing: border-box;
-        border-radius: var(--block_border_radius);
-        overflow: hidden;
-        padding: 60px 50px;
-        display: flex;  
-        justify-content: flex-start;
-        flex-direction: column;
-        gap:18px;
+#mdix_services_left {
+    background: url(../../images/landings/md_ix/img2.png);
+    background-size: 100%; /* Ensure initial size is set */
+    background-position: center;
+    transition: background-size 0.3s ease-in-out;
+}
 
-    }
-    #mdix_services_left{
-        background: url(../../images/landings/md_ix/img2.png);
-        background-size: cover;
+#mdix_services_right {
+    background: url(../../images/landings/md_ix/img3.png);
+    background-size: 100%; /* Ensure initial size is set */
     background-position: center;
-    }
-    #mdix_services_right{
-        background: url(../../images/landings/md_ix/img3.png);
-        background-size: cover;
-    background-position: center;
-    }
+    transition: background-size 0.3s ease-in-out;
+}
+
+#mdix_services_left:hover, #mdix_services_right:hover {
+    background-size: 105%; /* Adjust the percentage to control the zoom level */
+}
+
 </style>
         <div id="mdix_services">
             <div id="mdix_services_left">
@@ -336,6 +358,7 @@ gap:12px
 }
 
 .mdix_options_left_btn{
+    cursor: pointer;
     width: calc(50% - 5px);
     border-radius: 8px;
 background: #FFF;
@@ -346,12 +369,18 @@ font-style: normal;
 font-weight: 600;
 line-height: 18px; /* 225% */
 letter-spacing: 0.16px;
-gap: 15px;
-padding: 8px 20px;
+gap: 18px;
+padding: 8px 22px;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 box-sizing: border-box;
+transition: background-color 0.2s ease-in-out;
+
+}
+.mdix_options_left_btn:hover{
+    background-color: #bbc4fa;
+
 }
         </style>
 <div id="mdix_options">
@@ -369,14 +398,14 @@ box-sizing: border-box;
         
 
         <div id="mdix_options_left_text">
-            <div class="mdix_options_left_btn">
+            <div class="mdix_options_left_btn" onclick="location.href='mailto:intl.data@moldtelecom.md'">
                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 5L9.25 8C9.60472 8.28401 10.0456 8.43875 10.5 8.43875C10.9544 8.43875 11.3953 8.28401 11.75 8L15.5 5M19.5 13V3C19.5 2.46957 19.2893 1.96086 18.9142 1.58579C18.5391 1.21071 18.0304 1 17.5 1H3.5C2.96957 1 2.46086 1.21071 2.08579 1.58579C1.71071 1.96086 1.5 2.46957 1.5 3V13C1.5 13.5304 1.71071 14.0391 2.08579 14.4142C2.46086 14.7893 2.96957 15 3.5 15H17.5C18.0304 15 18.5391 14.7893 18.9142 14.4142C19.2893 14.0391 19.5 13.5304 19.5 13Z" stroke="#3B6DFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     
                 <span>intl.data@moldtelecom.md</span>
             </div>
-            <div class="mdix_options_left_btn">
+            <div class="mdix_options_left_btn" onclick="redirectToPageSVG('https://maps.app.goo.gl/x1Cpp4FJAbv7d36v6')">
                 <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.49991 12.0001C10.7059 12.0001 12.4999 10.2061 12.4999 8.00009C12.4999 5.79409 10.7059 4.00009 8.49991 4.00009C6.29391 4.00009 4.49991 5.79409 4.49991 8.00009C4.49991 10.2061 6.29391 12.0001 8.49991 12.0001ZM8.49991 6.00009C9.60291 6.00009 10.4999 6.89709 10.4999 8.00009C10.4999 9.10309 9.60291 10.0001 8.49991 10.0001C7.39691 10.0001 6.49991 9.10309 6.49991 8.00009C6.49991 6.89709 7.39691 6.00009 8.49991 6.00009Z" fill="#3B6DFB"/>
                     <path d="M7.92 19.8141C8.08924 19.935 8.29202 19.9999 8.5 19.9999C8.70797 19.9999 8.91075 19.935 9.08 19.8141C9.384 19.5991 16.529 14.4401 16.5 8.00009C16.5 3.58909 12.911 9.15527e-05 8.5 9.15527e-05C4.089 9.15527e-05 0.499996 3.58909 0.499996 7.99509C0.470996 14.4401 7.616 19.5991 7.92 19.8141ZM8.5 2.00009C11.809 2.00009 14.5 4.69109 14.5 8.00509C14.521 12.4431 10.112 16.4281 8.5 17.7351C6.889 16.4271 2.479 12.4411 2.5 8.00009C2.5 4.69109 5.191 2.00009 8.5 2.00009Z" fill="#3B6DFB"/>
@@ -395,6 +424,65 @@ box-sizing: border-box;
 </div>
 
 <div class="mtc_evolution_main">
+
+<style>
+#mdix_parteners{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#mdix_parteners_title{
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+}
+#mdix_parteners_right{
+width: calc(100% - 280px - 20px);
+gap:20px;
+display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.mdix_parteners_right_block{
+    background-color: #AAB7FF;
+    width: calc((100% - 40px)/3);
+
+}
+</style>
+    <div id="mdix_parteners">
+<div id="mdix_parteners_title">
+    <div class="mtc_evolution_title">Participanți</div>
+
+</div>
+
+<div id="mdix_parteners_right">
+
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+    </div>
+    <div class="mdix_parteners_right_block">
+        &nbsp;
+     </div>
+     <div class="mdix_parteners_right_block">
+        &nbsp;
+     </div>
+     <div class="mdix_parteners_right_block">
+        &nbsp;
+     </div>
+     <div class="mdix_parteners_right_block">
+        &nbsp;
+     </div>
+
+
+</div>
+    </div>
 
         <div id="mtc_evolution_footer_text"></div>
 </div>
