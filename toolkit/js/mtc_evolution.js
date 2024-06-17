@@ -79,31 +79,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Insert the loading animation div
   insertLoadingDiv();
 
+  const elements = document.querySelectorAll(".mtc_evolution_glow_effect");
 
-  const elements = document.querySelectorAll('.mtc_evolution_glow_effect');
+  elements.forEach((element) => {
+    element.addEventListener("mousemove", (e) => {
+      const rect = element.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-  elements.forEach(element => {
-      element.addEventListener('mousemove', (e) => {
-          const rect = element.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          
-          element.style.setProperty('--mouse-x', `${x}px`);
-          element.style.setProperty('--mouse-y', `${y}px`);
-      });
+      element.style.setProperty("--mouse-x", `${x}px`);
+      element.style.setProperty("--mouse-y", `${y}px`);
+    });
 
-      element.addEventListener('mouseleave', () => {
-          element.style.setProperty('--mouse-x', '50%');
-          element.style.setProperty('--mouse-y', '50%');
-      });
+    element.addEventListener("mouseleave", () => {
+      element.style.setProperty("--mouse-x", "50%");
+      element.style.setProperty("--mouse-y", "50%");
+    });
   });
 
-
-
-
-  const scrollSnaps = document.querySelectorAll('.scrollsnap');
+  const scrollSnaps = document.querySelectorAll(".scrollsnap");
   let isScrolling = false;
-  
+
   function debounce(func, wait = 12) {
     let timeout;
     return function (...args) {
@@ -111,63 +107,120 @@ document.addEventListener("DOMContentLoaded", function () {
       timeout = setTimeout(() => func.apply(this, args), wait);
     };
   }
-  
+
   function handleScroll() {
     if (isScrolling) return;
     isScrolling = true;
-  
+
     let centerOffset = window.innerHeight / 2;
-  
-    scrollSnaps.forEach(snap => {
+
+    scrollSnaps.forEach((snap) => {
       let rect = snap.getBoundingClientRect();
       let elementCenter = rect.top + rect.height / 2;
       let distanceFromCenter = Math.abs(centerOffset - elementCenter);
-  
+
       if (distanceFromCenter < 140) {
         window.scrollTo({
           top: window.scrollY + rect.top - centerOffset + rect.height / 2,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     });
-  
+
     setTimeout(() => {
       isScrolling = false;
     }, 700); // Adjust this if needed to better match the smoothness of the scroll
   }
-  
-  window.addEventListener('scroll', debounce(handleScroll, 100));
 
-
-
-
-
-
-
-
-
-
+  window.addEventListener("scroll", debounce(handleScroll, 100));
 });
 
-
-
-
-
-
 function evolution_popoup(id) {
-    target1 = document.getElementById("mtc_evolution_popup_block_" + id);
-    var inside = target1.querySelector('.mtc_evolution_popup_block_inside');
-    if (target1.style.display === "none" || target1.style.display === "") {
-        target1.style.display = "flex";
-        setTimeout(function() {
-            target1.classList.add("show");
-        }, 10); // Delay to trigger transition
+  target1 = document.getElementById("mtc_evolution_popup_block_" + id);
+  var inside = target1.querySelector(".mtc_evolution_popup_block_inside");
+  if (target1.style.display === "none" || target1.style.display === "") {
+    target1.style.display = "flex";
+    setTimeout(function () {
+      target1.classList.add("show");
+    }, 10); // Delay to trigger transition
+  } else {
+    target1.classList.remove("show");
+    setTimeout(function () {
+      target1.style.display = "none";
+    }, 300); // Match the transition duration
+  }
+}
+
+function mtc_evolution_getCurrentUrl() {
+  // Get the current URL including all query parameters
+  var url = window.location.href;
+  return url;
+}
+
+function mtc_evolution_form_comanda_new(
+  formId,
+  serviceValue,
+  tagValue,
+  infoValue
+) {
+  // Get the form element by its ID
+  const form = document.getElementById(formId);
+
+  // Check if the form exists
+  if (form) {
+    // Set the form attributes
+    form.action = "/comanda_new";
+    form.dataset.type = "thankyou-page-form";
+    form.method = "post";
+
+    // Helper function to create and append hidden input
+    const addHiddenInput = (name, value) => {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
+    };
+
+    // Function that checks for the existence of the lang variable and logs it if it exists
+    if (typeof lang !== "undefined") {
+      console.log(lang);
     } else {
-        target1.classList.remove("show");
-        setTimeout(function() {
-            target1.style.display = "none";
-        }, 300); // Match the transition duration
+      console.log("lang is not defined");
     }
 
+    // Add the hidden inputs
+    addHiddenInput("lang", lang);
+    addHiddenInput("source", mtc_evolution_getCurrentUrl());
+    addHiddenInput("service", serviceValue);
+    addHiddenInput("tag", tagValue);
+    addHiddenInput("info", infoValue);
+    addHiddenInput("_token", "FrAtgRPx5WTf87lXzyon9zDDt0F6YSq9VmLJsYlc");
+  } else {
+    console.error(`Form with id ${formId} does not exist.`);
+  }
 }
-  
+
+// Function to handle form submission
+function handleFormSubmission(event) {
+  event.preventDefault(); // Prevent the form from submitting immediately
+
+  // Show the loading animation
+  var mtc_loadingAnimationSVG = document.getElementById(
+    "mtc_evolution_loadingAnimationSVG"
+  );
+  mtc_loadingAnimationSVG.style.display = "flex";
+
+  // Optionally, use AJAX here to submit the form data without redirecting
+  setTimeout(() => {
+    event.target.submit(); // This is where you'd replace with AJAX if not redirecting
+  }, 1000); // Adjust delay as needed
+}
+
+// Add event listener to the form
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector(".mtc_evolution_form_comanda_new_form");
+  if (form) {
+    form.addEventListener("submit", handleFormSubmission);
+  }
+});
