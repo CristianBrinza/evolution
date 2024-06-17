@@ -2,7 +2,7 @@ function mtc_evolution_add_route(add_route_array) {
   let add_route_div = '<div id="mtc_evolution_route">';
   for (let i = 0; i < add_route_array.length; i++) {
     add_route_div +=
-      '<a href="' +
+      '<a class="mtc_evolution_route_link" href="' +
       add_route_array[i][1] +
       '">' +
       add_route_array[i][0] +
@@ -78,4 +78,96 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Insert the loading animation div
   insertLoadingDiv();
+
+
+  const elements = document.querySelectorAll('.mtc_evolution_glow_effect');
+
+  elements.forEach(element => {
+      element.addEventListener('mousemove', (e) => {
+          const rect = element.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          element.style.setProperty('--mouse-x', `${x}px`);
+          element.style.setProperty('--mouse-y', `${y}px`);
+      });
+
+      element.addEventListener('mouseleave', () => {
+          element.style.setProperty('--mouse-x', '50%');
+          element.style.setProperty('--mouse-y', '50%');
+      });
+  });
+
+
+
+
+  const scrollSnaps = document.querySelectorAll('.scrollsnap');
+  let isScrolling = false;
+  
+  function debounce(func, wait = 12) {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
+  
+  function handleScroll() {
+    if (isScrolling) return;
+    isScrolling = true;
+  
+    let centerOffset = window.innerHeight / 2;
+  
+    scrollSnaps.forEach(snap => {
+      let rect = snap.getBoundingClientRect();
+      let elementCenter = rect.top + rect.height / 2;
+      let distanceFromCenter = Math.abs(centerOffset - elementCenter);
+  
+      if (distanceFromCenter < 140) {
+        window.scrollTo({
+          top: window.scrollY + rect.top - centerOffset + rect.height / 2,
+          behavior: 'smooth'
+        });
+      }
+    });
+  
+    setTimeout(() => {
+      isScrolling = false;
+    }, 700); // Adjust this if needed to better match the smoothness of the scroll
+  }
+  
+  window.addEventListener('scroll', debounce(handleScroll, 100));
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
+
+
+function evolution_popoup(id) {
+    target1 = document.getElementById("mtc_evolution_popup_block_" + id);
+    var inside = target1.querySelector('.mtc_evolution_popup_block_inside');
+    if (target1.style.display === "none" || target1.style.display === "") {
+        target1.style.display = "flex";
+        setTimeout(function() {
+            target1.classList.add("show");
+        }, 10); // Delay to trigger transition
+    } else {
+        target1.classList.remove("show");
+        setTimeout(function() {
+            target1.style.display = "none";
+        }, 300); // Match the transition duration
+    }
+
+}
+  
