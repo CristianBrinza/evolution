@@ -10,7 +10,7 @@
 This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products.<br>
 Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 ### Landings:
-- [MD-IX]()
+- [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/md_ix.html)
 
 ### Directmail:
 
