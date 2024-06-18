@@ -222,10 +222,13 @@ justify-content: center;
     transition: transform 0.5s; /* Apply transition effect */
     cursor: pointer;
     user-select: none;
+    padding: 10px;
+    border-radius: var(--block_border_radius);
 }
 
 #new_home_main_services svg:hover {
     transform: scale(1.1); /* Scale on hover */
+    background: #F3F5FF;
 }
 </style>
     <div id="new_home_main_services">
@@ -518,6 +521,353 @@ până la <span style="font-weight: 700;">1000 Mmps</span>.
                 
         </div>
     </div>
+
+
+<style>
+    #new_home_phones{
+        width: 100%;
+
+    }
+    #new_home_phones_title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #new_home_phones_carousell{
+        width: 100%;
+    }
+    .new_home_phones_carousell_card{
+        border-radius: 12px;
+border: 1px solid #D9DFFF;
+background: #FFF;
+padding: 20px;
+box-sizing: border-box;
+width: 280px;
+margin-right: 20px;
+height: 458px;
+    }
+    .new_home_phones_carousell_card_img{
+        width: 100%;
+        height: auto;
+    }
+    .new_home_phones_carousell_card_phone_title{
+        color: #222;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.16px;
+margin-top: 22px;
+    }
+    .new_home_phones_carousell_card_specs{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap:20px;
+    }
+    .new_home_phones_carousell_card_price_old{
+        color: #9F9F9F;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 100% */
+letter-spacing: 0.16px;
+text-decoration-line: line-through;
+    }
+    .new_home_phones_carousell_card_price_new{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.32px;
+    }
+    .new_home_phones_carousell_card_btn_star{
+        border-radius: 12px;
+border: 1px solid #212A55;
+display: flex;
+padding: 5px 18px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+transition: background-color 0.2s ease-in-out;
+    }
+    .new_home_phones_carousell_card_btn_comanda{
+        color: #FFF;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+border-radius: 12px;
+border: 1px solid #FFF;
+background: #212A55;
+display: flex;
+padding: 5px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+transition: background-color 0.2s ease-in-out;
+    }
+    .new_home_phones_carousell_card_btn{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    align-items: center;
+    
+    }
+    .new_home_phones_carousell_card_btn_star:hover{
+        background-color: #bbc4fa;
+    border: 1px solid transparent;
+    }
+    .new_home_phones_carousell_card_btn_comanda:hover{
+        background-color: #bbc4fa;
+    border: 1px solid transparent;
+    color: #212A55;
+    }
+
+    .new_home_phones_carousell_card_btn_star_selected{
+        background-color: #fbbeca!important;
+        border: 1px solid transparent;
+    }
+    .new_home_phones_carousell_card_btn_star_selected svg path{
+        stroke:#DF4361;
+        
+    }
+</style>
+    <div id="new_home_phones">
+<div class="mtc_evolution_title" id="new_home_phones_title" style="color: #212A55;">
+    Exclusiv online
+</div>
+
+
+<div class="new_home_phones_carousell">
+    <div class="new_home_phones_carousell_card">
+        <img class="new_home_phones_carousell_card_img" src="../../images/landings/home/phone1.png" alt="moldtelecom">
+    <div class="new_home_phones_carousell_card_specs">
+    
+    <div class="new_home_phones_carousell_card_phone_title">
+        <span style="font-weight: 700;">Samsung</span> <br>
+        Galaxy A34 8/256 GB
+    </div>
+    <div>
+        <span class="new_home_phones_carousell_card_price_old">
+            &nbsp;8799 LEI&nbsp;
+        </span><br>
+        <span class="new_home_phones_carousell_card_price_new">
+    
+            7599 LEI
+    
+        </span>
+    </div>
+    <div class="new_home_phones_carousell_card_btn">
+        <div class="new_home_phones_carousell_card_btn_comanda" onclick="redirect_from_home('smartphone/297')">
+            Cumpara acum
+        </div>
+        <div class="new_home_phones_carousell_card_btn_star" id="home_star_btn_1" onclick="home_add_star('home_star_btn_1')">
+         <svg width="24" height="36" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6624 10.5703C20.6435 10.5866 20.6254 10.6035 20.608 10.621L16.7217 13.9743C16.4394 14.2179 16.3161 14.5983 16.4018 14.9612L17.6041 20.0536L17.6049 20.0572C17.6251 20.1414 17.6199 20.2297 17.5899 20.311C17.56 20.3923 17.5066 20.4628 17.4366 20.5138C17.3665 20.5647 17.2829 20.5938 17.1964 20.5972C17.1102 20.6007 17.0249 20.5786 16.9512 20.5338C16.9509 20.5336 16.9506 20.5335 16.9503 20.5333L12.5244 17.8094C12.2031 17.6116 11.7977 17.6116 11.4764 17.8092L7.04972 20.532C7.04917 20.5323 7.04862 20.5327 7.04807 20.533C6.97456 20.5772 6.88966 20.5989 6.8039 20.5953C6.7175 20.5917 6.6341 20.5627 6.5642 20.5117C6.4943 20.4608 6.44102 20.3904 6.41108 20.3093C6.38113 20.2281 6.37586 20.14 6.39593 20.0559L6.39628 20.0544L7.60294 14.962C7.68898 14.5989 7.5657 14.2181 7.28318 13.9743L3.33756 10.5697C3.33751 10.5697 3.33746 10.5696 3.33741 10.5696C3.27156 10.5126 3.22394 10.4375 3.20048 10.3537C3.177 10.2698 3.17877 10.1808 3.20555 10.0979C3.23234 10.015 3.28296 9.94179 3.35109 9.88747C3.41854 9.8337 3.5002 9.80077 3.58605 9.79271L8.75533 9.37566C9.12975 9.34546 9.45566 9.10797 9.59911 8.7608L11.595 3.93062L11.5959 3.92839C11.6287 3.84864 11.6844 3.78042 11.756 3.7324C11.8276 3.68439 11.9119 3.65875 11.9981 3.65875C12.0843 3.65875 12.1685 3.68439 12.2401 3.7324C12.3118 3.78042 12.3675 3.84864 12.4002 3.92839L12.4011 3.93048L14.3961 8.76066C14.5395 9.1079 14.8655 9.34545 15.2399 9.37566L20.41 9.79277C20.4105 9.79281 20.4109 9.79285 20.4114 9.79289C20.4979 9.80047 20.5802 9.83327 20.6482 9.88722C20.7166 9.94147 20.7675 10.0147 20.7944 10.0977C20.8214 10.1807 20.8232 10.2698 20.7997 10.3539C20.7763 10.438 20.7285 10.5132 20.6624 10.5703Z" stroke="#212A55" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="new_home_phones_carousell_card">
+        <img class="new_home_phones_carousell_card_img" src="../../images/landings/home/phone1.png" alt="moldtelecom">
+    <div class="new_home_phones_carousell_card_specs">
+    
+    <div class="new_home_phones_carousell_card_phone_title">
+        <span style="font-weight: 700;">Samsung</span> <br>
+        Galaxy A34 8/256 GB
+    </div>
+    <div>
+        <span class="new_home_phones_carousell_card_price_old">
+            &nbsp;8799 LEI&nbsp;
+        </span><br>
+        <span class="new_home_phones_carousell_card_price_new">
+    
+            7599 LEI
+    
+        </span>
+    </div>
+    <div class="new_home_phones_carousell_card_btn">
+        <div class="new_home_phones_carousell_card_btn_comanda">
+            Cumpara acum
+        </div>
+        <div class="new_home_phones_carousell_card_btn_star" id="home_star_btn_2" onclick="home_add_star('home_star_btn_2')">
+         <svg width="24" height="36" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6624 10.5703C20.6435 10.5866 20.6254 10.6035 20.608 10.621L16.7217 13.9743C16.4394 14.2179 16.3161 14.5983 16.4018 14.9612L17.6041 20.0536L17.6049 20.0572C17.6251 20.1414 17.6199 20.2297 17.5899 20.311C17.56 20.3923 17.5066 20.4628 17.4366 20.5138C17.3665 20.5647 17.2829 20.5938 17.1964 20.5972C17.1102 20.6007 17.0249 20.5786 16.9512 20.5338C16.9509 20.5336 16.9506 20.5335 16.9503 20.5333L12.5244 17.8094C12.2031 17.6116 11.7977 17.6116 11.4764 17.8092L7.04972 20.532C7.04917 20.5323 7.04862 20.5327 7.04807 20.533C6.97456 20.5772 6.88966 20.5989 6.8039 20.5953C6.7175 20.5917 6.6341 20.5627 6.5642 20.5117C6.4943 20.4608 6.44102 20.3904 6.41108 20.3093C6.38113 20.2281 6.37586 20.14 6.39593 20.0559L6.39628 20.0544L7.60294 14.962C7.68898 14.5989 7.5657 14.2181 7.28318 13.9743L3.33756 10.5697C3.33751 10.5697 3.33746 10.5696 3.33741 10.5696C3.27156 10.5126 3.22394 10.4375 3.20048 10.3537C3.177 10.2698 3.17877 10.1808 3.20555 10.0979C3.23234 10.015 3.28296 9.94179 3.35109 9.88747C3.41854 9.8337 3.5002 9.80077 3.58605 9.79271L8.75533 9.37566C9.12975 9.34546 9.45566 9.10797 9.59911 8.7608L11.595 3.93062L11.5959 3.92839C11.6287 3.84864 11.6844 3.78042 11.756 3.7324C11.8276 3.68439 11.9119 3.65875 11.9981 3.65875C12.0843 3.65875 12.1685 3.68439 12.2401 3.7324C12.3118 3.78042 12.3675 3.84864 12.4002 3.92839L12.4011 3.93048L14.3961 8.76066C14.5395 9.1079 14.8655 9.34545 15.2399 9.37566L20.41 9.79277C20.4105 9.79281 20.4109 9.79285 20.4114 9.79289C20.4979 9.80047 20.5802 9.83327 20.6482 9.88722C20.7166 9.94147 20.7675 10.0147 20.7944 10.0977C20.8214 10.1807 20.8232 10.2698 20.7997 10.3539C20.7763 10.438 20.7285 10.5132 20.6624 10.5703Z" stroke="#212A55" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="new_home_phones_carousell_card">
+        <img class="new_home_phones_carousell_card_img" src="../../images/landings/home/phone1.png" alt="moldtelecom">
+    <div class="new_home_phones_carousell_card_specs">
+    
+    <div class="new_home_phones_carousell_card_phone_title">
+        <span style="font-weight: 700;">Samsung</span> <br>
+        Galaxy A34 8/256 GB
+    </div>
+    <div>
+        <span class="new_home_phones_carousell_card_price_old">
+            &nbsp;8799 LEI&nbsp;
+        </span><br>
+        <span class="new_home_phones_carousell_card_price_new">
+    
+            7599 LEI
+    
+        </span>
+    </div>
+    <div class="new_home_phones_carousell_card_btn">
+        <div class="new_home_phones_carousell_card_btn_comanda">
+            Cumpara acum
+        </div>
+        <div class="new_home_phones_carousell_card_btn_star" id="home_star_btn_3" onclick="home_add_star('home_star_btn_3')">
+         <svg width="24" height="36" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6624 10.5703C20.6435 10.5866 20.6254 10.6035 20.608 10.621L16.7217 13.9743C16.4394 14.2179 16.3161 14.5983 16.4018 14.9612L17.6041 20.0536L17.6049 20.0572C17.6251 20.1414 17.6199 20.2297 17.5899 20.311C17.56 20.3923 17.5066 20.4628 17.4366 20.5138C17.3665 20.5647 17.2829 20.5938 17.1964 20.5972C17.1102 20.6007 17.0249 20.5786 16.9512 20.5338C16.9509 20.5336 16.9506 20.5335 16.9503 20.5333L12.5244 17.8094C12.2031 17.6116 11.7977 17.6116 11.4764 17.8092L7.04972 20.532C7.04917 20.5323 7.04862 20.5327 7.04807 20.533C6.97456 20.5772 6.88966 20.5989 6.8039 20.5953C6.7175 20.5917 6.6341 20.5627 6.5642 20.5117C6.4943 20.4608 6.44102 20.3904 6.41108 20.3093C6.38113 20.2281 6.37586 20.14 6.39593 20.0559L6.39628 20.0544L7.60294 14.962C7.68898 14.5989 7.5657 14.2181 7.28318 13.9743L3.33756 10.5697C3.33751 10.5697 3.33746 10.5696 3.33741 10.5696C3.27156 10.5126 3.22394 10.4375 3.20048 10.3537C3.177 10.2698 3.17877 10.1808 3.20555 10.0979C3.23234 10.015 3.28296 9.94179 3.35109 9.88747C3.41854 9.8337 3.5002 9.80077 3.58605 9.79271L8.75533 9.37566C9.12975 9.34546 9.45566 9.10797 9.59911 8.7608L11.595 3.93062L11.5959 3.92839C11.6287 3.84864 11.6844 3.78042 11.756 3.7324C11.8276 3.68439 11.9119 3.65875 11.9981 3.65875C12.0843 3.65875 12.1685 3.68439 12.2401 3.7324C12.3118 3.78042 12.3675 3.84864 12.4002 3.92839L12.4011 3.93048L14.3961 8.76066C14.5395 9.1079 14.8655 9.34545 15.2399 9.37566L20.41 9.79277C20.4105 9.79281 20.4109 9.79285 20.4114 9.79289C20.4979 9.80047 20.5802 9.83327 20.6482 9.88722C20.7166 9.94147 20.7675 10.0147 20.7944 10.0977C20.8214 10.1807 20.8232 10.2698 20.7997 10.3539C20.7763 10.438 20.7285 10.5132 20.6624 10.5703Z" stroke="#212A55" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="new_home_phones_carousell_card">
+        <img class="new_home_phones_carousell_card_img" src="../../images/landings/home/phone1.png" alt="moldtelecom">
+    <div class="new_home_phones_carousell_card_specs">
+    
+    <div class="new_home_phones_carousell_card_phone_title">
+        <span style="font-weight: 700;">Samsung</span> <br>
+        Galaxy A34 8/256 GB
+    </div>
+    <div>
+        <span class="new_home_phones_carousell_card_price_old">
+            &nbsp;8799 LEI&nbsp;
+        </span><br>
+        <span class="new_home_phones_carousell_card_price_new">
+    
+            7599 LEI
+    
+        </span>
+    </div>
+    <div class="new_home_phones_carousell_card_btn">
+        <div class="new_home_phones_carousell_card_btn_comanda">
+            Cumpara acum
+        </div>
+        <div class="new_home_phones_carousell_card_btn_star" id="home_star_btn_4" onclick="home_add_star('home_star_btn_4')">
+         <svg width="24" height="36" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6624 10.5703C20.6435 10.5866 20.6254 10.6035 20.608 10.621L16.7217 13.9743C16.4394 14.2179 16.3161 14.5983 16.4018 14.9612L17.6041 20.0536L17.6049 20.0572C17.6251 20.1414 17.6199 20.2297 17.5899 20.311C17.56 20.3923 17.5066 20.4628 17.4366 20.5138C17.3665 20.5647 17.2829 20.5938 17.1964 20.5972C17.1102 20.6007 17.0249 20.5786 16.9512 20.5338C16.9509 20.5336 16.9506 20.5335 16.9503 20.5333L12.5244 17.8094C12.2031 17.6116 11.7977 17.6116 11.4764 17.8092L7.04972 20.532C7.04917 20.5323 7.04862 20.5327 7.04807 20.533C6.97456 20.5772 6.88966 20.5989 6.8039 20.5953C6.7175 20.5917 6.6341 20.5627 6.5642 20.5117C6.4943 20.4608 6.44102 20.3904 6.41108 20.3093C6.38113 20.2281 6.37586 20.14 6.39593 20.0559L6.39628 20.0544L7.60294 14.962C7.68898 14.5989 7.5657 14.2181 7.28318 13.9743L3.33756 10.5697C3.33751 10.5697 3.33746 10.5696 3.33741 10.5696C3.27156 10.5126 3.22394 10.4375 3.20048 10.3537C3.177 10.2698 3.17877 10.1808 3.20555 10.0979C3.23234 10.015 3.28296 9.94179 3.35109 9.88747C3.41854 9.8337 3.5002 9.80077 3.58605 9.79271L8.75533 9.37566C9.12975 9.34546 9.45566 9.10797 9.59911 8.7608L11.595 3.93062L11.5959 3.92839C11.6287 3.84864 11.6844 3.78042 11.756 3.7324C11.8276 3.68439 11.9119 3.65875 11.9981 3.65875C12.0843 3.65875 12.1685 3.68439 12.2401 3.7324C12.3118 3.78042 12.3675 3.84864 12.4002 3.92839L12.4011 3.93048L14.3961 8.76066C14.5395 9.1079 14.8655 9.34545 15.2399 9.37566L20.41 9.79277C20.4105 9.79281 20.4109 9.79285 20.4114 9.79289C20.4979 9.80047 20.5802 9.83327 20.6482 9.88722C20.7166 9.94147 20.7675 10.0147 20.7944 10.0977C20.8214 10.1807 20.8232 10.2698 20.7997 10.3539C20.7763 10.438 20.7285 10.5132 20.6624 10.5703Z" stroke="#212A55" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    </div>
+    </div>
+    
+    </div>
+</div>
+
+
+<script>
+
+function home_add_star(id) {
+    // Check if 'starArray' exists in local storage
+    if (localStorage.getItem('starArray') === null) {
+        // If 'starArray' doesn't exist, create it as an empty array
+        localStorage.setItem('starArray', JSON.stringify([]));
+    }
+
+    // Retrieve the current array from local storage
+    let starArray = JSON.parse(localStorage.getItem('starArray'));
+
+    // Check if the id is already present in the array
+    const index = starArray.indexOf(id);
+
+    if (index !== -1) {
+        // If the id is found, remove it from the array
+        starArray.splice(index, 1);
+        document.getElementById(id).classList.remove('new_home_phones_carousell_card_btn_star_selected')
+
+    } else {
+        // If the id is not found, add it to the array
+        starArray.push(id);
+document.getElementById(id).classList.add('new_home_phones_carousell_card_btn_star_selected')
+
+    }
+
+    // Store the updated array back in local storage
+    localStorage.setItem('starArray', JSON.stringify(starArray));
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (localStorage.getItem('starArray') != null) {
+        let starArray = JSON.parse(localStorage.getItem('starArray')) || [];
+starArray.forEach(id => {
+    document.getElementById(id).classList.add('new_home_phones_carousell_card_btn_star_selected')
+
+});
+
+    }
+})
+
+    $('.new_home_phones_carousell').slick({
+      arrows: false,
+      dots: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1351,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 951,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 751,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+          {
+          breakpoint: 551,
+          settings: {
+            variableWidth: false,
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+  
+  </script>
+    </div>
+    <div id="mtc_evolution_footer_text" ></div>
 </div>
 </div>
 </body>
