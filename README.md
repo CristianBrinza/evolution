@@ -28,3 +28,12 @@ Below are presented the style and logic to the Evolution Design System Toolkit W
 
 - [JS](toolkit/js/mtc_evolution.js)
 - [CSS](toolkit/css/mtc_evolution.css)
+
+
+<br><br>
+<h2>Spripts:</h2>
+Directmail to production:
+
+```python
+python3 scripts/directmail_to_production.py demo/directmail/one_number_qr_ro.html
+```
