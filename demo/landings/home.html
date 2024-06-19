@@ -15,6 +15,67 @@
             </style>
            <script>
             var lang = "ro";
+let footerButtons = ["Contacte", "Magazine", "Licitații"];
+localStorage.setItem('mtc_footer_buttons', JSON.stringify(footerButtons));
+let mtcFooter = [
+    {
+        "name": "Despre Moldtelecom",
+        "children": [
+            {"name": "Despre companie", "link": "https://moldtelecom.md/ro/personal/Despre-companie"},
+            {"name": "Licitații", "link": "https://moldtelecom.md/ro/personal/licitatii_list"},
+            {"name": "Consiliul de administrare", "link": "https://moldtelecom.md/ro/personal/Consiliu_de_administrare"},
+            {"name": "Structura organizatorica", "link": "https://moldtelecom.md/ro/personal/structura-organizatorica"},
+            {"name": "Cariera", "link": "https://moldtelecom.md/ro/cariera"},
+            {"name": "Contacte", "link": "https://moldtelecom.md/ro/personal/contacte"},
+            {"name": "Inima Codrilor", "link": "http://ivancea.moldtelecom.md/"},
+            {"name": "Interconectare/ operatori (parteneri)", "link": "https://moldtelecom.md/ro/personal/interconectare"},
+            {"name": "Internet Exchange", "link": "https://moldtelecom.md/ro/personal/Internet-Exchange"},
+            {"name": "Freephone", "link": "https://moldtelecom.md/ro/personal/freephone"}
+        ]
+    },
+    {
+        "name": "Legal",
+        "children": [
+            {"name": "Servicii administrative", "link": "https://moldtelecom.md/servicii-administrative"},
+            {"name": "Securitatea datelor", "link": "https://moldtelecom.md/ro/personal/Securitatea Datelor"},
+            {"name": "Parametrii de calitate", "link": "/Parametri-de-calitate"},
+            {"name": "Protejează-te de fraude", "link": "https://moldtelecom.md/ro/personal/fraude"},
+            {"name": "Cum depui o reclamație?", "link": "https://moldtelecom.md/ro/personal/Reclamatii"},
+            {"name": "Declarația în domeniul calității", "link": "https://moldtelecom.md/files/Declaratia privind Politica in domeniul calitatii_ed.9.pdf"},
+            {"name": "Certificat de conformitate a SMC", "link": "/files/Certificat SMC_4.pdf"},
+            {"name": "Rapoarte", "link": "https://moldtelecom.md/ro/personal/Rapoarte"},
+            {"name": "Locațiune", "link": "https://moldtelecom.md/files/Lista spatii libere pasibile de acordat in locatiune.pdf"},
+            {"name": "Cod de etică", "link": "https://moldtelecom.md/files/Codul_Etic.pdf"},
+            {"name": "Codul de guvernanță corporativă", "link": "/files/Cod-de-GC_S-AMoltelecom_redactratfinal.pdf"},
+            {"name": "Instrucțiune de lucru privind actele de corupție", "link": "https://moldtelecom.md/files/Pages from IL prev. depist.  și  reacționare  acte coruptie varianta finala.pdf"},
+            {"name": "Lista de interdicție a agenților economici", "link": "/files/lista de interdictii Moldtelecom.pdf"},
+            {"name": "Statutul Moldtelecom", "link": "https://moldtelecom.md/files/Statutul%20MOLDTELECOM%20S.A..pdf"},
+            {"name": "Regulamentul cu privire la achiziționarea bunurilor, serviciilor și lucrărilor Moldtelecom", "link": "files/Regulamentul cu privire la achizitionarea bunurilor serviciilor si lucrărilor MTC - APROBAT din 06.03.2024 .pdf"},
+            {"name": "Plan-prognoză achiziții anul 2024", "link": "files/Plan_prognoza_achizitii_pentru_2024.xlsx"}
+        ]
+    },
+    {
+        "name": "Util",
+        "children": [
+            {"name": "Ghidurile utilizatorului", "link": "https://moldtelecom.md/ro/personal/Ghidurile-utilizatorului"},
+            {"name": "Ghiduri Video", "link": "https://moldtelecom.md/ro/personal/Ghiduri-Video"},
+            {"name": "Condiții contractuale", "link": "https://moldtelecom.md/ro/personal/Conditii_contractuale"},
+            {"name": "Modalități de achitare", "link": "https://moldtelecom.md/ro/personal/modalitati_achitare"},
+            {"name": "Divertisment", "link": "https://moldtelecom.md/ro/personal/Divertisment"},
+            {"name": "Întrebări frecvente", "link": "https://moldtelecom.md/Intrebari-frecvente"},
+            {"name": "Speedtest", "link": "https://moldtelecom.md/ro/personal/speedtest"},
+            {"name": "Hartă acoperire", "link": "https://moldtelecom.md/ro/personal/acoperire-3g"},
+            {"name": "Eliberarea condițiilor tehnice si coordonarea proiectelor", "link": "https://moldtelecom.md/Eliberarea condițiilor tehnice și coordonarea proiectelor"},
+            {"name": "Supravegherea lucrărilor în zona de protecție ", "link": "https://www.moldtelecom.md/ro/personal/lucrari"},
+            {"name": "Procedura de selectie a partenerilor", "link": "/files/procedura de selectie pdf.pdf"},
+            {"name": "Procedura de interdicție a agenților economici la operațiuni de achiziție", "link": "/files/Lista interdictii_Furnizori_pe site.pdf"}
+        ]
+    }
+];
+localStorage.setItem('mtc_footer', JSON.stringify(mtcFooter));
+let storedMtcFooter = JSON.parse(localStorage.getItem('mtc_footer'));
+
+
           </script>
 
 
@@ -26,8 +87,8 @@
 <script src="../../toolkit/js/mtc_evolution.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
@@ -35,6 +96,7 @@
 #new_home_services{
     width:100%;
     border-bottom: 1px solid #EAEDFF;
+    border-top: 1px solid #EAEDFF;
 }
 .new_home_services_block{
     user-select: none;
@@ -58,11 +120,13 @@ font-weight: 400;
 line-height: 16px; /* 100% */
 margin: 8px;
 transition: background-color 0.2s ease-in-out;
-padding: 11px 35px 10px 35px;
+padding: 11px 10px 10px 10px;
 }
 .new_home_services_block:hover{
     background: #F3F5FF;
 }
+
+
 </style>
 <script>
     function redirect_from_home(where){
@@ -160,17 +224,17 @@ padding: 11px 35px 10px 35px;
             {
               breakpoint: 1351,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
               },
             },
             {
               breakpoint: 951,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
               },
             },
             {
-              breakpoint: 751,
+              breakpoint: 651,
               settings: {
                 slidesToShow: 2,
               },
@@ -179,7 +243,7 @@ padding: 11px 35px 10px 35px;
               breakpoint: 551,
               settings: {
                 variableWidth: false,
-                slidesToShow: 1,
+                slidesToShow: 2,
               },
             },
           ],
@@ -216,7 +280,6 @@ display: flex;
 gap:45px;
 align-items: center;
 justify-content: center;
-
     }
     #new_home_main_services svg {
     transition: transform 0.5s; /* Apply transition effect */
@@ -230,6 +293,32 @@ justify-content: center;
     transform: scale(1.1); /* Scale on hover */
     background: #F3F5FF;
 }
+@media (max-width: 940px) {
+    #new_home_main_services{
+gap: 10px;
+justify-content: space-between;
+    }
+
+    #new_home_main_services svg{
+     padding: 0 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    #new_home_main_services{
+height: 80px;
+    }
+    #new_home_main_services svg {
+        height: 80px;
+        padding: 10px 10px;
+    }
+    #new_home_main_services{
+gap: 0px;
+    }
+}
+
+
+
 </style>
     <div id="new_home_main_services">
         <svg onclick="redirect_from_home('Abonamente-Televiziune')" width="121" height="161" viewBox="0 0 121 161" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -430,6 +519,47 @@ line-height: 16px; /* 100% */
 letter-spacing: 0.16px;
 width: 350px;
     }
+
+    @media (max-width: 1300px) {
+        #new_home_promo {
+    width: 100%;
+    height: auto;
+    background: url(../../images/landings/home/img1_tablet.png);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 30px 50px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    }
+@media (max-width: 940px) {
+        #new_home_promo {
+
+    background: url(../../images/landings/home/img1_tablet_small.png);
+    background-size: cover;
+    background-position: center;
+
+}
+}
+
+@media (max-width: 650px) {
+    .new_home_promo_options_block_right_text{
+width: 80%;
+    }
+    .new_home_promo_options_block_right_text_br{
+        display: none;
+    }
+    #new_home_promo{
+        width: 100%;
+     
+    padding: 30px;
+    gap:40px;
+
+    }
+}
+    
+
 </style>
     <div id="new_home_promo">
 
@@ -456,7 +586,7 @@ width: 350px;
     Televiziune
 </div>
 <div class="new_home_promo_options_block_right_text">
-    Până la 149 canale, 93 HD, 3 radio cu <br>
+    Până la 149 canale, 93 HD, 3 radio cu <br class="new_home_promo_options_block_right_text_br">
 abonamentul <span style="font-weight: 700;">Univers</span> și <span style="font-weight: 700;">Moldtelecom TV</span> <span style="color: #1AAD9E; font-weight: 700;">GRATIS</span>.
 </div>
 <div>
@@ -480,7 +610,7 @@ abonamentul <span style="font-weight: 700;">Univers</span> și <span style="font
     Internet
 </div>
 <div class="new_home_promo_options_block_right_text">
-    Viteza maximă de net disponibilă la adresa ta de <br>
+    Viteza maximă de net disponibilă la adresa ta de <br class="new_home_promo_options_block_right_text_br">
 până la <span style="font-weight: 700;">1000 Mmps</span>.
    
 </div>
@@ -504,7 +634,7 @@ până la <span style="font-weight: 700;">1000 Mmps</span>.
     Super Wi-Fi
 </div>
 <div class="new_home_promo_options_block_right_text">
-    Stabilitate și viteza ridicată cu echipamentul <br>
+    Stabilitate și viteza ridicată cu echipamentul <br class="new_home_promo_options_block_right_text_br">
     <span style="font-weight: 700;">Wi-Fi 6</span>, în toate colțurile case.
 </div>
 <div>
@@ -644,9 +774,25 @@ transition: background-color 0.2s ease-in-out;
         stroke:#DF4361;
         
     }
+
+    #new_home_phones_title{
+        color: #212A55;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 100% */
+width: 100%;
+text-align: center;
+user-select: none;
+    }
+
+
+   
 </style>
     <div id="new_home_phones">
-<div class="mtc_evolution_title" id="new_home_phones_title" style="color: #212A55;">
+<div id="new_home_phones_title">
     Exclusiv online
 </div>
 
@@ -780,6 +926,38 @@ transition: background-color 0.2s ease-in-out;
     </div>
     
     </div>
+    <div class="new_home_phones_carousell_card">
+        <img class="new_home_phones_carousell_card_img" src="../../images/landings/home/phone1.png" alt="moldtelecom">
+    <div class="new_home_phones_carousell_card_specs">
+    
+    <div class="new_home_phones_carousell_card_phone_title">
+        <span style="font-weight: 700;">Samsung</span> <br>
+        Galaxy A34 8/256 GB
+    </div>
+    <div>
+        <span class="new_home_phones_carousell_card_price_old">
+            &nbsp;8799 LEI&nbsp;
+        </span><br>
+        <span class="new_home_phones_carousell_card_price_new">
+    
+            7599 LEI
+    
+        </span>
+    </div>
+    <div class="new_home_phones_carousell_card_btn">
+        <div class="new_home_phones_carousell_card_btn_comanda">
+            Cumpara acum
+        </div>
+        <div class="new_home_phones_carousell_card_btn_star" id="home_star_btn_5" onclick="home_add_star('home_star_btn_5')">
+         <svg width="24" height="36" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6624 10.5703C20.6435 10.5866 20.6254 10.6035 20.608 10.621L16.7217 13.9743C16.4394 14.2179 16.3161 14.5983 16.4018 14.9612L17.6041 20.0536L17.6049 20.0572C17.6251 20.1414 17.6199 20.2297 17.5899 20.311C17.56 20.3923 17.5066 20.4628 17.4366 20.5138C17.3665 20.5647 17.2829 20.5938 17.1964 20.5972C17.1102 20.6007 17.0249 20.5786 16.9512 20.5338C16.9509 20.5336 16.9506 20.5335 16.9503 20.5333L12.5244 17.8094C12.2031 17.6116 11.7977 17.6116 11.4764 17.8092L7.04972 20.532C7.04917 20.5323 7.04862 20.5327 7.04807 20.533C6.97456 20.5772 6.88966 20.5989 6.8039 20.5953C6.7175 20.5917 6.6341 20.5627 6.5642 20.5117C6.4943 20.4608 6.44102 20.3904 6.41108 20.3093C6.38113 20.2281 6.37586 20.14 6.39593 20.0559L6.39628 20.0544L7.60294 14.962C7.68898 14.5989 7.5657 14.2181 7.28318 13.9743L3.33756 10.5697C3.33751 10.5697 3.33746 10.5696 3.33741 10.5696C3.27156 10.5126 3.22394 10.4375 3.20048 10.3537C3.177 10.2698 3.17877 10.1808 3.20555 10.0979C3.23234 10.015 3.28296 9.94179 3.35109 9.88747C3.41854 9.8337 3.5002 9.80077 3.58605 9.79271L8.75533 9.37566C9.12975 9.34546 9.45566 9.10797 9.59911 8.7608L11.595 3.93062L11.5959 3.92839C11.6287 3.84864 11.6844 3.78042 11.756 3.7324C11.8276 3.68439 11.9119 3.65875 11.9981 3.65875C12.0843 3.65875 12.1685 3.68439 12.2401 3.7324C12.3118 3.78042 12.3675 3.84864 12.4002 3.92839L12.4011 3.93048L14.3961 8.76066C14.5395 9.1079 14.8655 9.34545 15.2399 9.37566L20.41 9.79277C20.4105 9.79281 20.4109 9.79285 20.4114 9.79289C20.4979 9.80047 20.5802 9.83327 20.6482 9.88722C20.7166 9.94147 20.7675 10.0147 20.7944 10.0977C20.8214 10.1807 20.8232 10.2698 20.7997 10.3539C20.7763 10.438 20.7285 10.5132 20.6624 10.5703Z" stroke="#212A55" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+    </div>
+    </div>
+    
+    </div>
 </div>
 
 
@@ -827,13 +1005,13 @@ starArray.forEach(id => {
 })
 
     $('.new_home_phones_carousell').slick({
-      arrows: false,
+      arrows: true,
       dots: false,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 2000,
       variableWidth: true,
       responsive: [
         {
@@ -849,18 +1027,15 @@ starArray.forEach(id => {
           },
         },
         {
-          breakpoint: 751,
+          breakpoint: 651,
           settings: {
-            slidesToShow: 2,
-          },
-        },
-          {
-          breakpoint: 551,
-          settings: {
-            variableWidth: false,
             slidesToShow: 1,
+            centerMode: true,
+            centerPadding: '60px',
+            arrows: false,
           },
         },
+          
       ],
     });
 
@@ -868,7 +1043,10 @@ starArray.forEach(id => {
   </script>
     </div>
     <div id="mtc_evolution_footer_text" ></div>
+   
+    
 </div>
+<div id="mtc_evolution_footer" ></div>
 </div>
 </body>
 </html>
