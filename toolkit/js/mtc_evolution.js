@@ -182,19 +182,15 @@ function mtc_evolution_form_comanda_new(
       form.appendChild(input);
     };
 
-    // Function that checks for the existence of the lang variable and logs it if it exists
-    if (typeof lang !== "undefined") {
-      console.log(lang);
-    } else {
-      console.log("lang is not defined");
-    }
-
     // Add the hidden inputs
     addHiddenInput("lang", lang);
     addHiddenInput("source", mtc_evolution_getCurrentUrl());
     addHiddenInput("service", serviceValue);
     addHiddenInput("tag", tagValue);
-    addHiddenInput("info", infoValue);
+    const info_in_form = document.getElementById('test_form');
+    if (form && !form.querySelector('input[name="info"]')) {
+      addHiddenInput("info", infoValue);
+    }
     addHiddenInput("_token", "FrAtgRPx5WTf87lXzyon9zDDt0F6YSq9VmLJsYlc");
   } else {
     console.error(`Form with id ${formId} does not exist.`);
