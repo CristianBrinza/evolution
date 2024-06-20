@@ -79,6 +79,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Insert the loading animation div
   insertLoadingDiv();
 
+
+
+  fetch("../../toolkit/html/mtc_evolution_footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    const footerElement = document.getElementById("mtc_evolution_footer");
+    // Check if the element exists
+    if (footerElement) {
+      footerElement.innerHTML = data;
+      set_footer();
+      hideoldfooter();
+    }
+  });
+
+
   const elements = document.querySelectorAll(".mtc_evolution_glow_effect");
 
   elements.forEach((element) => {
@@ -164,14 +179,14 @@ function mtc_evolution_form_comanda_new(
   infoValue
 ) {
   // Get the form element by its ID
-  const form = document.getElementById(formId);
+  const evlutions_form = document.getElementById(formId);
 
   // Check if the form exists
-  if (form) {
+  if (evlutions_form) {
     // Set the form attributes
-    form.action = "/comanda_new";
-    form.dataset.type = "thankyou-page-form";
-    form.method = "post";
+    evlutions_form.action = "/comanda_new";
+    evlutions_form.dataset.type = "thankyou-page-form";
+    evlutions_form.method = "post";
 
     // Helper function to create and append hidden input
     const addHiddenInput = (name, value) => {
@@ -179,44 +194,83 @@ function mtc_evolution_form_comanda_new(
       input.type = "hidden";
       input.name = name;
       input.value = value;
-      form.appendChild(input);
+      evlutions_form.appendChild(input);
     };
 
     // Add the hidden inputs
-    addHiddenInput("lang", lang);
-    addHiddenInput("source", mtc_evolution_getCurrentUrl());
-    addHiddenInput("service", serviceValue);
-    addHiddenInput("tag", tagValue);
-    const info_in_form = document.getElementById('test_form');
-    if (form && !form.querySelector('input[name="info"]')) {
+  
+    if (evlutions_form && !evlutions_form.querySelector('input[name="lang"]')) {
+      addHiddenInput("lang", lang);
+    }
+    if (evlutions_form && !evlutions_form.querySelector('input[name="source"]')) {
+      addHiddenInput("source", mtc_evolution_getCurrentUrl());
+    }
+    if (evlutions_form && !evlutions_form.querySelector('input[name="service"]')) {
+      addHiddenInput("service", serviceValue);
+    }
+    if (evlutions_form && !evlutions_form.querySelector('input[name="tag"]')) {
+      addHiddenInput("tag", tagValue);
+    }
+    if (evlutions_form && !evlutions_form.querySelector('input[name="info"]')) {
       addHiddenInput("info", infoValue);
     }
-    addHiddenInput("_token", "FrAtgRPx5WTf87lXzyon9zDDt0F6YSq9VmLJsYlc");
+    if (evlutions_form && !evlutions_form.querySelector('input[name="_token"]')) {
+      addHiddenInput("_token", "ymN6zXmxrKDbUCi1sq7MDG5YOhXhPz1m3QXNNNhW");
+    }
   } else {
     console.error(`Form with id ${formId} does not exist.`);
   }
 }
 
-// Function to handle form submission
-function handleFormSubmission(event) {
-  event.preventDefault(); // Prevent the form from submitting immediately
 
-  // Show the loading animation
-  var mtc_loadingAnimationSVG = document.getElementById(
-    "mtc_evolution_loadingAnimationSVG"
+
+//---------------------------------------------------------------------
+//mtc footer config
+function set_footer() {
+  var mtc_evolution_footer_buttons = JSON.parse(
+    localStorage.getItem("mtc_footer_buttons")
   );
-  mtc_loadingAnimationSVG.style.display = "flex";
+  document.getElementById("mtc_evolution_footer_contacte").innerHTML =
+    mtc_evolution_footer_buttons[0];
+  document.getElementById("mtc_evolution_footer_magazine").innerHTML =
+    mtc_evolution_footer_buttons[1];
+  document.getElementById("mtc_evolution_footer_licitatii").innerHTML =
+    mtc_evolution_footer_buttons[2];
 
-  // Optionally, use AJAX here to submit the form data without redirecting
-  setTimeout(() => {
-    event.target.submit(); // This is where you'd replace with AJAX if not redirecting
-  }, 1000); // Adjust delay as needed
+  var mtc_evolution_footer = JSON.parse(localStorage.getItem("mtc_footer"));
+  var footer_content = "";
+
+  mtc_evolution_footer.forEach((item) => {
+    footer_content += '<div class="mtc_evolution_footer_content_column">';
+    footer_content +=
+      '<div class="mtc_evolution_footer_content_title">' + item.name + "</div>";
+    if (item.children) {
+      item.children.forEach((child) => {
+        footer_content +=
+          '<a class="mtc_evolution_footer_content_list" href="' +
+          child.link +
+          '"">' +
+          child.name +
+          "</a>";
+      });
+    }
+    footer_content += "</div>";
+  });
+  document.getElementById("mtc_evolution_footer_content").innerHTML = footer_content;
 }
 
-// Add event listener to the form
-document.addEventListener("DOMContentLoaded", function () {
-  var form = document.querySelector(".mtc_evolution_form_comanda_new_form");
-  if (form) {
-    form.addEventListener("submit", handleFormSubmission);
+
+
+
+// Function to set the footer content and apply necessary DOM manipulations
+function hideoldfooter() {
+  const footerElement = document.getElementById("mtc_evolution_footer");
+  if (footerElement) {
+    // Hide elements only if footer is successfully updated
+    const footerHolders = document.querySelectorAll(".footer_holder");
+    const backTopContainers = document.querySelectorAll(".back_top_container");
+    hideElements(footerHolders);
+    hideElements(backTopContainers);
   }
-});
+}
+//---------------------------------------------------------------------
