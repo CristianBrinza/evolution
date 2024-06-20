@@ -7,7 +7,7 @@ def replace_paths_in_file(file_path, new_folder):
         file_content = file.read()
     
     # Replace the specified paths
-    file_content = file_content.replace("../toolkit/", "https://moldtelecom.md/evolution/toolkit/")
+    file_content = file_content.replace("../../toolkit/", "https://moldtelecom.md/evolution/toolkit/")
     file_content = file_content.replace("../../images/", "https://moldtelecom.md/evolution/images/")
     
     # Create the new folder if it doesn't exist
