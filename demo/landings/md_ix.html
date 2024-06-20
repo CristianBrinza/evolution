@@ -26,11 +26,11 @@
 <script src="../../toolkit/js/mtc_evolution.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
-    mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal  "],["MD-IX",""]]);
+    mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"],["MD-IX",""]]);
 </script>
 
 <div id="mtc_evolution_hero_img_small" >
@@ -39,7 +39,7 @@
     <img id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/md_ix/hero_tablet_ro.png" alt="hero">
     <img id="mtc_evolution_hero_img_small_mobile" src="../../images/landings/md_ix/hero_mobile_ro.png" alt="hero">
 </div>
-<div class="mtc_evolution_main">
+<div class="mtc_evolution_main" id="md_ix_main">
    <style>
     #mdix_features {
         user-select: none;
@@ -84,22 +84,31 @@ line-height: 22px; /* 137.5% */
     }
     @media (max-width: 940px) {
         .mdix_features_card {
-        width: calc((680px - 100px) / 2);
+        width: calc((580px - 100px) / 2);
+        margin-right: 20px;
         }
 
         
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 650px) {
         .mdix_features_card {
     width: 35vw;
+  
 }
+
+
     }
 
     @media (max-width: 550px) {
         .mdix_features_card {
     width: 60vw;
     margin-right: 0;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+#mdix_features{
+    padding: 25px 15px;
 }
     }
 
@@ -299,7 +308,7 @@ line-height: 22px; /* 137.5% */
               },
             },
             {
-              breakpoint: 751,
+              breakpoint: 651,
               settings: {
                 slidesToShow: 2,
               },
@@ -363,7 +372,7 @@ line-height: 22px; /* 137.5% */
         <div id="mdix_about_left">
 <div class="mtc_evolution_title">Moldova Internet Exchange</div>
 <div class="mtc_evolution_text">
-    <span class="bold">MD-IX</span> este primul punct de schimb a traficului (Internet Exchange) din Republica Moldova care oferă posibilitatea realizării schimbul de trafic IP atît între rețelele furnizorilor de servicii de comunicații din Republica Moldova cît și cu furnizorii străini.
+    <span class="bold">MD-IX</span> este primul punct de schimb al traficului (Internet Exchange) din Republica Moldova, care oferă posibilitatea realizării schimbului de trafic IP atât între rețelele furnizorilor de servicii de comunicații din Republica Moldova, cât și cu furnizorii străini.
    
 </div>
 
@@ -380,23 +389,521 @@ line-height: 22px; /* 137.5% */
      
 
     </div>
-
+    <style>
+        .graphiq {
+          width: 100%;
+          position: relative;
+          display: flex;
+        }
+    
+        .graphiq__graph-layout {
+          flex: 1;
+          overflow-x: hidden;
+        }
+    
+        .graphiq__graph-values {
+          font-size: 0.75em;
+          padding-right: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-bottom: 1.25em;
+          text-align: right;
+          font-weight: bold;
+        }
+    
+        .graphiq__line {
+          fill: none;
+          stroke-miterlimit: 10;
+        }
+    
+        .graphiq__graph-key {
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .graphiq__graph-key .key {
+          font-size: 0.75em;
+          text-align: center;
+          display: block;
+        }
+    
+        .graphiq__y-division {
+          fill: none;
+          stroke-miterlimit: 10;
+          z-index: -1;
+          transition: 0.25s ease-in;
+        }
+    
+        .graphiq__graph-dot {
+          transition: stroke-width ease-in-out 0.2s;
+          transform-origin: 50% 50%;
+        }
+    
+        .graphiq__value-dialog {
+          display: block;
+          position: absolute;
+          background: transparent;
+          font-size: 0.75em;
+          line-height: 0;
+          padding: 0.66em 0.33em;
+          font-weight: bold;
+          -webkit-animation: float 0.3s ease-out forwards;
+                  animation: float 0.3s ease-out forwards;
+        }
+    
+        @-webkit-keyframes float {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY();
+          }
+        }
+    
+        @keyframes float {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY();
+          }
+        }
+      </style>
 <style>
-    #mdix_speed{
-
+     #mdix_speed{
+display: flex;
         border-radius: var(--block_border_radius);
 border: 1px solid #D9DFFF;
 width: 100%;
-        padding: 50px 0;
+        padding: 50px 25px;
         box-sizing: border-box;
+        gap:20px;
     }
+    #mdix_speed_title{
+        width: 24%;
+        height: 200px;
+    padding: 16px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+   
+   .mdix_speed_graph{
+    width: 48%;
+    position: relative;
+   }
+   .graphiq__graph-values{
+    color: #AAA;
+text-align: right;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+   }
+   .graphiq__graph-key{
+    color: #AAA;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+opacity: 0.5
+   }
+
+   .graphiq__value-dialog{
+    color: #D9DFFF;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+opacity: 0.5
+   }
+   #mdix_speed_values{
+    width: 24%;
+        height: 200px;
+    padding: 16px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   }
+   .mdix_speed_values_title{
+    color: #939393;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+   }
+   .mdix_speed_values_speed{
+    color: #2E2E30;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+   }
+   .mdix_speed_values_unit{
+    color: #2E2E30;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+   }
 </style>
     <div id="mdix_speed">
+<div id="mdix_speed_title">
+    <div class="mtc_evolution_title">Încărcarea totală <br><span class="mtc_evolution_text">a punctului de schimb a traficului MD-IX</span></div>
+</div>
+<div class="mdix_speed_graph">
+    <div >
+      <div class="mdix_speed_graph_inside">
+        <div class="graph-coffees" style="width: 500px;"></div>
+      </div>
+    </div>
+</div>
 
+<div id="mdix_speed_values">
+    <div>
+        <span class="mdix_speed_values_title">Medium speed</span><br>
+    <span class="mdix_speed_values_speed" id="mdix_speed_values_speed_med"></span> <span class="mdix_speed_values_unit">gb/s</span>
+    </div>
+    <div>
+        <span class="mdix_speed_values_title">Maximum speed</span><br>
+    <span class="mdix_speed_values_speed" id="mdix_speed_values_speed_max"></span> <span class="mdix_speed_values_unit">gb/s</span>
+    </div>
+    <div>
+        <span class="mdix_speed_values_title">Last updated</span><br>
+    <span class="mdix_speed_values_unit" id="mdix_speed_values_speed_time"></span>
+    </div>
+</div>
     </div>
 
+ 
+    <script>
+
+         // Initiate graphs
+         const coffees = {
+            "00:00": 60,
+            "04:00": 20.5,
+            "08:00": 60,
+            "12:00": 20.44,
+            "16:00": 15.88,
+            "20:00": 40,
+            "24:00": 20
+          };
 
 
+// Extract values from the object
+const md_ix_values = Object.values(coffees);
+
+// Calculate the maximum value
+const md_ix_maxValue = Math.max(...md_ix_values);
+
+// Calculate the average value
+const temp_sum = md_ix_values.reduce((acc, val) => acc + val, 0);
+const md_ix_averageValue = (temp_sum / md_ix_values.length).toFixed(2);
+
+// Log the results
+console.log('Max value:', );
+console.log('Average value:', md_ix_averageValue);
+document.getElementById("mdix_speed_values_speed_med").innerText = md_ix_averageValue;
+document.getElementById("mdix_speed_values_speed_max").innerText = md_ix_maxValue;
+
+
+function logCurrentDateTime() {
+  const now = new Date();
+
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1; // Months are zero-indexed
+  const day = now.getDate();
+
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  document.getElementById('mdix_speed_values_speed_time').innerText=`${day}.${month}.${year} ${hours}:${minutes}:${seconds}`
+  
+}
+
+// Call the function when the page loads
+window.onload = logCurrentDateTime;
+
+        (function () {
+    
+          // Extend function to merge default settings with user options
+          function extend(defaults, options) {
+            const extended = {};
+            for (let key in defaults) {
+              extended[key] = defaults[key];
+            }
+            for (let key in options) {
+              extended[key] = options[key];
+            }
+            return extended;
+          }
+    
+          // Custom graphiq plugin function
+          function graphiq(element, options) {
+            const settings = extend({
+              data: {},
+              colorLine: "#ECECEC",
+              colorDot: "#c3ecf7",
+              colorXGrid: "#ECECEC",
+              colorYGrid: "#ECECEC",
+              colorLabels: "#AAAAAA",
+              colorUnits: "#AAAAAA",
+              colorRange: "#AAAAAA",
+              colorFill: "#533c68",
+              colorDotStroke: "#FFFFFF",
+              dotStrokeWeight: 0,
+              fillOpacity: 0.75,
+              rangeOpacity: 0.5,
+              dotRadius: 3,
+              lineWeight: 1,
+              yLines: true,
+              dots: true,
+              xLines: true,
+              xLineCount: 5,
+              fill: true,
+              height: 100,
+              fluidParent: null
+            }, options);
+    
+            const values = [];
+            let entryDivision;
+            const dataRange = settings.height + settings.dotRadius;
+            const parent = element;
+            let maxVal;
+            const scaleFactor = settings.height / 100;
+            let pathPoints = "";
+    
+            for (let key in settings.data) {
+              values.push(settings.data[key]);
+            }
+    
+            parent.innerHTML = `
+              <div class="graphiq__graph-values"></div>
+              <div class="graphiq__graph-layout">
+                <svg class="graphiq__graph" viewBox="0 0 960 ${settings.height + 10}" shape-rendering="geometricPrecision">
+                  <defs>
+                    <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#ADB7F9" stop-opacity="1"></stop>
+                      <stop offset="100%" stop-color="#ADB7F9" stop-opacity="0"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#gradientFill)" style="opacity: ${settings.fillOpacity}" class="graphiq__fill-path" d="" stroke-width="0" stroke="#000" fill="cyan"/>
+                </svg>
+                <div class="graphiq__graph-key"></div>
+              </div>
+            `;
+    
+            if (settings.fluidParent) {
+              parent.closest(".mdix_speed_graph_inside").style.overflow = "auto";
+            }
+            parent.classList.add('graphiq');
+    
+            const graph = parent.querySelector(".graphiq__graph");
+    
+            for (let key in settings.data) {
+              parent.querySelector(".graphiq__graph-key").innerHTML += `<div class="key" style="color: ${settings.colorLabels}">${key}</div>`;
+            }
+    
+            //maxVal = Math.max(...values);
+            maxVal=60;
+    
+            parent.querySelector('.graphiq__graph-values').innerHTML = `
+              <span style="color: ${settings.colorRange}; opacity: ${settings.rangeOpacity}">${maxVal} GB/s</span>
+              <span style="color: ${settings.colorRange}; opacity: ${settings.rangeOpacity}">${maxVal/3*2} GB/s</span>
+              <span style="color: ${settings.colorRange}; opacity: ${settings.rangeOpacity}">${maxVal/3*1} GB/s</span>
+              <span style="color: ${settings.colorRange}; opacity: ${settings.rangeOpacity}">0 GB/s</span>
+            `;
+    
+            const width = parent.querySelector(".graphiq__graph-layout").offsetWidth;
+    
+            if (settings.xLines) {
+              unitLines(width, maxVal);
+            }
+    
+            layoutGraph(width, true);
+    
+            window.addEventListener("resize", function () {
+              pathPoints = "";
+              layoutGraph(parent.querySelector(".graphiq__graph-layout").offsetWidth, false);
+            });
+    
+            function percentageOf(max, current) {
+              return (current / max * 100) * scaleFactor;
+            }
+    
+            function layoutGraph(width, initial) {
+              graph.setAttribute("viewBox", `0 0 ${width} ${settings.height + 10}`);
+              graph.setAttribute("width", width);
+              entryDivision = width / (values.length - 1);
+              getCoordinates(initial, entryDivision);
+            }
+    
+            function getCoordinates(initial, entryDivision) {
+              for (let i = 0; i < values.length; i++) {
+                let offset = i === 0 ? (settings.dotRadius + settings.dotStrokeWeight) + 1 :
+                            i === values.length - 1 ? ((settings.dotRadius + settings.dotStrokeWeight) * -1) - 1 : 0;
+    
+                let lineOffset = i === values.length - 2 ? (settings.dotRadius + settings.dotStrokeWeight) / 2 : 0;
+                let xAxis = (entryDivision * i) + offset;
+                let nextI = i + 1;
+                let xAxis2 = entryDivision * nextI;
+                let yAxis = dataRange - percentageOf(maxVal, values[i]);
+                let yAxis2 = dataRange - percentageOf(maxVal, values[nextI]);
+    
+                if (i === values.length - 1) {
+                  yAxis2 = yAxis;
+                  xAxis2 = xAxis;
+                }
+    
+                pathPoints += ` L ${xAxis} ${yAxis}`;
+    
+                if (i === values.length - 1 && settings.fill) {
+                  buildFillPath(pathPoints);
+                }
+    
+                if (initial) {
+                  if (settings.yLines) {
+                    const yLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                    yLine.setAttribute("class", "graphiq__y-division");
+                    yLine.setAttribute("x1", xAxis);
+                    yLine.setAttribute("y1", yAxis);
+                    yLine.setAttribute("x2", xAxis);
+                    yLine.setAttribute("y2", settings.height + 5);
+                    yLine.setAttribute("stroke", settings.colorYGrid);
+                    yLine.setAttribute("stroke-dasharray", "5 6");
+                    yLine.setAttribute("stroke-width", 1);
+                    graph.prepend(yLine);
+                  }
+    
+                  const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                  line.setAttribute("class", "graphiq__line");
+                  line.setAttribute("x1", xAxis);
+                  line.setAttribute("y1", yAxis);
+                  line.setAttribute("x2", xAxis2 - lineOffset);
+                  line.setAttribute("y2", yAxis2 + (settings.dotStrokeWeight / 2));
+                  line.setAttribute("stroke", settings.colorLine);
+                  line.setAttribute("stroke-width", settings.lineWeight);
+                  line.setAttribute("vector-effect", "non-scaling-stroke");
+                  graph.append(line);
+    
+                  const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                  dot.setAttribute("class", "graphiq__graph-dot");
+                  dot.setAttribute("cx", xAxis);
+                  dot.setAttribute("cy", yAxis + (settings.dotStrokeWeight / 2));
+                  dot.setAttribute("r", settings.dots ? settings.dotRadius : 0);
+                  dot.setAttribute("fill", settings.colorDot);
+                  dot.setAttribute("stroke", settings.colorDotStroke);
+                  dot.setAttribute("stroke-width", settings.dotStrokeWeight);
+                  dot.setAttribute("data-value", values[i]);
+                  dot.setAttribute("vector-effect", "non-scaling-stroke");
+                  graph.append(dot);
+                } else {
+                  parent.querySelectorAll(".graphiq__graph-dot")[i].setAttribute("cx", xAxis);
+                  parent.querySelectorAll(".graphiq__line")[i].setAttribute("x1", xAxis);
+                  parent.querySelectorAll(".graphiq__line")[i].setAttribute("x2", xAxis2 - lineOffset);
+                  parent.querySelectorAll(".graphiq__y-division")[values.length - i - 1].setAttribute("x1", xAxis);
+                  parent.querySelectorAll(".graphiq__y-division")[values.length - i - 1].setAttribute("x2", xAxis);
+                  parent.querySelectorAll(".graphiq__x-line").forEach(line => {
+                    line.setAttribute("x2", width);
+                  });
+                }
+              }
+            }
+    
+            function buildFillPath(pathPoints) {
+              parent.querySelector('.graphiq__fill-path').setAttribute("d", `M  ${4 + settings.dotStrokeWeight} ${settings.height + 5 + settings.dotStrokeWeight}${pathPoints} L ${width - settings.dotRadius - settings.dotStrokeWeight} ${settings.height + 5 + settings.dotStrokeWeight}`);
+            }
+    
+            function unitLines(width, maxVal) {
+              const iteration = 160 / (settings.xLineCount - 1);
+    
+              for (let i = 0; i < settings.xLineCount; i++) {
+                const xLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                xLine.setAttribute("class", "graphiq__x-line");
+                xLine.setAttribute("y1", iteration * i + (settings.dotRadius + settings.dotStrokeWeight));
+                xLine.setAttribute("x2", width);
+                xLine.setAttribute("y2", iteration * i + (settings.dotRadius + settings.dotStrokeWeight));
+                xLine.setAttribute("stroke", settings.colorXGrid);
+                xLine.setAttribute("stroke-width", 1);
+                graph.prepend(xLine);
+              }
+            }
+    
+            parent.addEventListener('mouseenter', function () {
+              parent.querySelectorAll('.graphiq__graph-dot').forEach((dot, index) => {
+                const valueDialog = document.createElement('span');
+                valueDialog.style.color = settings.colorUnits;
+                valueDialog.classList.add('graphiq__value-dialog', `value-${index}`);
+                valueDialog.innerText = dot.getAttribute("data-value");
+                document.body.append(valueDialog);
+                console.log(dot.getBoundingClientRect().top)
+               
+               
+                const rect = dot.getBoundingClientRect();
+        const coordinates = {
+            top: rect.top ,
+            left: rect.left + window.scrollX
+        };
+
+        console.log(`Dot ${index} - top: ${coordinates.top}, left: ${coordinates.left}`);
+    
+
+
+                valueDialog.style.top = `${dot.getBoundingClientRect().top + window.scrollY - 30}px`;
+                valueDialog.style.left = `${dot.getBoundingClientRect().left - (valueDialog.offsetWidth / 2) + 3}px`;
+              });
+              
+            });
+    
+            parent.addEventListener('mouseleave', function () {
+              document.querySelectorAll('.graphiq__value-dialog').forEach(dialog => dialog.remove());
+            });
+          }
+    
+         
+    
+
+          const graphCoffeesElement = document.querySelector('.graph-coffees');
+          graphiq(graphCoffeesElement, {
+            data: coffees,
+            fluidParent: ".mdix_speed_graph_inside",
+            height: 160, 
+            xLineCount: 4,
+            dotRadius: 4,
+            yLines: true,
+            xLines: true,
+            dots: true,
+            colorLine: "#ADB7F9",
+            colorDot: "#ADB7F9",
+            colorXGrid: "#ECECEC",
+            colorUnits: "#D9DFFF",
+            colorFill: "#3a2f23",
+            dotStrokeWeight: 2
+          });
+    
+        })();
+
+
+
+                
+         
+      </script>
     <style>
         #mdix_facility{
             user-select: none;
@@ -455,7 +962,7 @@ gap:12px;
     gap: 12px;
 }
 }
-@media (max-width: 750px) {
+@media (max-width: 940px) {
 .mdix_facility_block_title {
     width: 46%;
     padding: 0px 40px 25px 40px;
@@ -488,8 +995,8 @@ gap:12px;
        </style>
         <div id="mdix_facility" class="mtc_evolution_glow_effect scrollsnap">
             <div class="mdix_facility_block_title">
-                <div class="mtc_evolution_title">Facilitati 
-                    aditionale</div>
+                <div class="mtc_evolution_title">Facilități
+                     adiționale</div>
             </div>
             <div class="mdix_facility_block mtc_evolution_zoom">
                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -624,14 +1131,14 @@ gap:12px;
 
 #mdix_services_left {
     background: url(../../images/landings/md_ix/img2.png);
-    background-size: 100%; /* Ensure initial size is set */
+    background-size: 100%; 
     background-position: center;
     transition: background-size 0.35s ease-in-out;
 }
 
 #mdix_services_right {
     background: url(../../images/landings/md_ix/img3.png);
-    background-size: 100%; /* Ensure initial size is set */
+    background-size: 100%; 
     background-position: center;
     transition: background-size 0.35s ease-in-out;
 }
@@ -680,8 +1187,8 @@ gap:12px;
 
                 </div>
                 <div class="mtc_evolution_text" style="color: white;">
-                    Serviciul de Private VLAN permite de organiza o rețeaua virtuală (VLAN) între doi participanți conectați la MD-IX în scopul realizării schimbului de date
-
+                    
+                    Serviciul Private VLAN permite  organizarea unei rețele virtuale (VLAN) între doi participanți conectați la MD-IX, în scopul realizării schimbului de date.
                 </div>
             </div>
             <div id="mdix_services_right">
@@ -693,7 +1200,7 @@ gap:12px;
 
                 </div>
                 <div class="mtc_evolution_text" style="color: white;">
-                    Serviciul Public Peering permite efectuarea schimbului de trafic Internet cu rețelele participanții conectați la platforma MD-IX.
+                    Serviciul Public Peering permite efectuarea schimbului de trafic Internet cu rețelele participanților conectați la platforma MD-IX.
 
 
                 </div>
@@ -816,9 +1323,10 @@ min-width: 250px;
             }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
     #mdix_options_left_text {
     flex-direction: column;
+    align-items: center;
 }
 .mdix_options_left_btn {
     width: 70%;
@@ -841,9 +1349,9 @@ min-width: 250px;
     <div id="mdix_options_left">
         <div class="mtc_evolution_title ">Opțiuni de Conectare</div>
         <div class="mtc_evolution_text">
-            Conectarea la platforma MD-IX se poate realiza prin porturi 1GE, 10GE și 100GE. Informațiile de rutare sunt transmise prin sesiuni BGP între participanți prin intermediu sesiunilor directe sau prin intermediul  route - serverelor. Fiecare participant conectat la MD-IX își poate aplica propria sa politică de peering: deschisă, privată sau restrictivă. 
+            Conectarea la platforma MD-IX se poate realiza prin porturi de 1GE, 10GE și 100GE. Informațiile de rutare sunt transmise prin sesiuni BGP între participanți, prin intermediu sesiunilor directe sau prin intermediul  route - serverelor. Fiecare participant conectat la MD-IX își poate aplica propria sa politică de peering: deschisă, privată sau restrictivă. 
             <br><br>
-                Pentru întrebări cu privire la conectarea la platformă și detalii privind serviciile oferite ne puteți contacta la:
+            Pentru întrebări cu privire la conectarea platformei și informațile privind serviciile oferite, te îndemnăm să ne scrii pe 
        
             </div>
            
@@ -945,7 +1453,7 @@ line-height: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
 }
 .mdix_parteners_right_block:hover .mdix_parteners_right_block_title{
     
@@ -953,6 +1461,10 @@ line-height: normal;
 
 
 
+}
+.mdix_parteners_right_block_logo{
+    width: 50%;
+    height: auto;
 }
 
 @media (max-width: 1300px) {
@@ -973,7 +1485,8 @@ line-height: normal;
 
 @media (max-width: 550px) {
     .mdix_parteners_right_block{
-    width: 70%;
+    width: 45%;
+    flex-direction: column;
 } 
 #mdix_parteners_right {
     justify-content: center;
@@ -994,55 +1507,92 @@ align-items: flex-start;
 <div id="mdix_parteners_right">
 
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p1.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
             <div class="mdix_parteners_right_block_title">AlexHost</div>
             <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
+            <div class="mdix_parteners_right_block_title">Arax</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 15836</div>
+        </div>
+    </div>
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">Cloudflare</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 13335</div>
+        </div>
+    </div>
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">Inovare-Prim</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 39798</div>
+        </div>
+    </div>
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">Moldtelecom</div>
             <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p4.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
-            <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
+            <div class="mdix_parteners_right_block_title">Moldcell</div>
+            <div class="mdix_parteners_right_block_subtitle">43925  </div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p5.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
-            <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
+            <div class="mdix_parteners_right_block_title">NocSoft</div>
+            <div class="mdix_parteners_right_block_subtitle">60239</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
-            <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
+            <div class="mdix_parteners_right_block_title">Orange Moldova</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 43289</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
-            <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
+            <div class="mdix_parteners_right_block_title">Trabia</div>
+            <div class="mdix_parteners_right_block_subtitle">43925</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/logo1.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p8.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
-            <div class="mdix_parteners_right_block_title">AlexHost</div>
-            <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
+            <div class="mdix_parteners_right_block_title">StarNet</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 31279</div>
+        </div>
+    </div>
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p7.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">STISC</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 39279</div>
         </div>
     </div>
 
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p6.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">PCH</div>
+            <div class="mdix_parteners_right_block_subtitle">AS42, AS 3856</div>
+        </div>
+    </div>
+
+    
 
 </div>
     </div>
@@ -1051,9 +1601,23 @@ align-items: flex-start;
 </div>
 
 
-</div>
 
 
+<style>
+    #mdix_popup_img{
+        width: 100%;
+        height: 120px;
+        border-radius: var(--block_border_radius);
+        margin-bottom: 20px;
+        background: url("../../images/landings/md_ix/img5.png");
+        background-size: 100%; 
+        background-position: center;
+    }
+    #mdix_popup_title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+</style>
 <div class="mtc_evolution_popup_block" id="mtc_evolution_popup_block_f4" style="display: none;">
     <div class="mtc_evolution_popup_block_inside">
          <svg onclick="evolution_popoup('f4')" class="mtc_evolution_popup_close_button" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1063,11 +1627,25 @@ align-items: flex-start;
             
             
    
- <span>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>
-    aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa<br>
+ <span>
 
+<div id="mdix_popup_img">
+    &nbsp;&nbsp;&nbsp; 
+</div>
+
+    <div class="mtc_evolution_title" id="mdix_popup_title">Moldova Internet Exchange</div>
+    &nbsp;&nbsp;MD-IX este primul punct de schimb al traficului (Internet Exchange) din Republica Moldova, care oferă posibilitatea realizării schimbului de trafic IP atât între rețelele furnizorilor de servicii de comunicații din Republica Moldova, cât și cu furnizorii străini. 
+    <br><br>
+    &nbsp;&nbsp;În afara furnizorilor serviciilor de comunicații, la MD-IX se pot conecta furnizorii de conținut (CDN), furnizorii de servicii de hosting, operatorii de domenii (DNS), de platforme sociale, instituțiile guvernamentale și alte entități care dețin un sistem autonom. 
+    <br><br>
+    &nbsp;&nbsp;
+    Punctul de prezență al platformei MD-IX se află în municipiul Chișinău, bd. Ștefan cel Mare 12. Platforma MD-IX est gestionată de S. A. Moldtelecom. 
+    <br>
+    
  </span>
 </div>
     </div>
+
+</div>
     </body>
 </html>
