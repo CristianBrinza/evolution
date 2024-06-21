@@ -1316,3 +1316,16 @@ body::-webkit-scrollbar {
 
 
 /*-------------------------------------------*/
+
+
+.mtc_evolution_reveal {
+  position: relative;
+  transform: translateY(8.1vw);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.mtc_evolution_reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
