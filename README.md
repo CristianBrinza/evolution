@@ -37,3 +37,10 @@ Directmail to production:
 ```python
 python3 scripts/directmail_to_production.py demo/directmail/one_number_qr_ro.html
 ```
+
+Toolkit to production:
+
+```python
+python3 scripts/toolkit_to_production.py toolkit/js/mtc_evolution.js
+python3 scripts/toolkit_to_production.py toolkit/css/mtc_evolution.css
+```
