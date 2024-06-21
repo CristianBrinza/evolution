@@ -642,40 +642,41 @@ body {
   transition: transform 0.3s linear;
   transition: color 0.3s linear;
 }
-
-.mtc_evolution_buton {
-  border: 2px solid #212a55;
+.mtc_evolution_bottom_buton {
+  border: 2px solid var(--mtc_blue);
   border-radius: 100px;
   display: table;
   margin: 40px auto;
   text-align: center;
   font-size: 18px;
-  color: #212a55;
+  color: var(--mtc_blue);
   padding: 10px 30px;
   cursor: pointer;
   font-family: "MTC-Futura New";
   font-weight: 500;
 }
 
-.mtc_arrow_container {
+.mtc_evolution_arrow_container {
   display: inline-block;
   vertical-align: middle;
 }
 
-.mtc_evolution_buton_top {
+.mtc_evolution_bottom_buton_top {
   position: relative;
   top: 2px;
   margin-right: 10px;
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  border-top: 2px solid #212a55;
-  border-right: 0px solid #212a55;
-  border-bottom: 0px solid #212a55;
-  border-left: 2px solid #212a55;
+  border-top: 2px solid var(--mtc_blue);
+  border-right: 0px solid var(--mtc_blue);
+  border-bottom: 0px solid var(--mtc_blue);
+  border-left: 2px solid var(--mtc_blue);
+
 }
 
-.mtc_evolution_buton:hover {
+
+.mtc_evolution_bottom_buton:hover {
   background: #00000030;
 }
 
