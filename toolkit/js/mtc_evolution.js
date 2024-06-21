@@ -274,3 +274,46 @@ function hideoldfooter() {
   }
 }
 //---------------------------------------------------------------------
+
+
+document.documentElement.addEventListener("click", function (e) {
+  let target = e.target;
+  while (target != document.documentElement) {
+    if (target.matches(".mtc_evolution_bottom_buton")) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      break;
+    }
+    target = target.parentNode;
+  }
+});
+
+//---------------------------------------------------------------------
+//reveal script
+function mtc_evolution_reveal() {
+  var reveals = document.querySelectorAll(".mtc_evolution_reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight * 1.2;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
+//---------------------------------------------------------------------
+
+function mtc_evolution_scroll_to_div(to_where) {
+  document
+    .getElementById(to_where)
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
