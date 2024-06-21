@@ -643,13 +643,13 @@ body {
   transition: color 0.3s linear;
 }
 .mtc_evolution_bottom_buton {
-  border: 2px solid var(--mtc_blue);
+  border: 2px solid #212a55;
   border-radius: 100px;
   display: table;
   margin: 40px auto;
   text-align: center;
   font-size: 18px;
-  color: var(--mtc_blue);
+  color: #212a55;
   padding: 10px 30px;
   cursor: pointer;
   font-family: "MTC-Futura New";
@@ -668,10 +668,10 @@ body {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  border-top: 2px solid var(--mtc_blue);
-  border-right: 0px solid var(--mtc_blue);
-  border-bottom: 0px solid var(--mtc_blue);
-  border-left: 2px solid var(--mtc_blue);
+  border-top: 2px solid #212a55;
+  border-right: 0px solid #212a55;
+  border-bottom: 0px solid #212a55;
+  border-left: 2px solid #212a55;
 }
 
 .mtc_evolution_bottom_buton:hover {
@@ -1306,4 +1306,10 @@ body::-webkit-scrollbar {
 .mtc_evolution_reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+
+#mtc_evolution_btn_footer_promo{
+  border: 1px solid #212A55;
+    color: #212A55;
 }
