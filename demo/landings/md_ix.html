@@ -482,6 +482,7 @@ border: 1px solid #D9DFFF;
 width: 100%;
         padding: 50px 25px;
         box-sizing: border-box;
+        flex-wrap: wrap;
         gap:20px;
     }
     #mdix_speed_title{
@@ -561,6 +562,58 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
    }
+
+
+   @media (max-width: 1300px) {
+    #mdix_speed{
+padding-top: 20px;
+justify-content: center;
+    }
+   #mdix_speed_title {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#mdix_speed_values {
+    width: 30%;
+}
+.mdix_speed_graph {
+    width: 500px;
+    position: relative;
+}
+
+}
+
+@media (max-width: 1300px) {
+    #mdix_speed_values {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #mdix_speed {
+        padding-bottom: 10px;
+    }
+
+    .graph-coffees, .mdix_speed_graph{
+        width: 100%!important;
+    }
+}
+@media (max-width: 580px) {
+#mdix_speed_values_title_last{
+    display: none;
+}
+#mdix_speed_values{
+    padding-left: 0;
+    padding-right: 0;
+}
+#mdix_speed_title{
+    padding: 16px 0px;
+}
+}
 </style>
     <div id="mdix_speed">
 <div id="mdix_speed_title">
@@ -583,8 +636,8 @@ line-height: normal;
         <span class="mdix_speed_values_title">Maximum speed</span><br>
     <span class="mdix_speed_values_speed" id="mdix_speed_values_speed_max"></span> <span class="mdix_speed_values_unit">gb/s</span>
     </div>
-    <div>
-        <span class="mdix_speed_values_title">Last updated</span><br>
+    <div id="mdix_speed_values_title_last">
+        <span class="mdix_speed_values_title" >Last updated</span><br>
     <span class="mdix_speed_values_unit" id="mdix_speed_values_speed_time"></span>
     </div>
 </div>
@@ -1528,14 +1581,21 @@ align-items: flex-start;
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p2.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
             <div class="mdix_parteners_right_block_title">Inovare-Prim</div>
             <div class="mdix_parteners_right_block_subtitle">AS 39798</div>
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p3.png" alt="logo">
+        <div class="mdix_parteners_right_block_right">
+            <div class="mdix_parteners_right_block_title">MivoCloud</div>
+            <div class="mdix_parteners_right_block_subtitle">AS 39798</div>
+        </div>
+    </div>
+    <div class="mdix_parteners_right_block">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p10.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
             <div class="mdix_parteners_right_block_title">Moldtelecom</div>
             <div class="mdix_parteners_right_block_subtitle">AS 20019</div>
@@ -1556,7 +1616,7 @@ align-items: flex-start;
         </div>
     </div>
     <div class="mdix_parteners_right_block">
-        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p0.png" alt="logo">
+        <img class="mdix_parteners_right_block_logo" src="../../images/landings/md_ix/p9.png" alt="logo">
         <div class="mdix_parteners_right_block_right">
             <div class="mdix_parteners_right_block_title">Orange Moldova</div>
             <div class="mdix_parteners_right_block_subtitle">AS 43289</div>
