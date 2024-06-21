@@ -221,7 +221,7 @@ body {
     -moz-border-radius: 18px;
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
-}
+  }
 }
 
 /* route style  */
@@ -495,7 +495,7 @@ body {
 
 .mtc_evolution_btn:hover {
   background-color: #bbc4fa;
-  border: 1px solid transparent!important;
+  border: 1px solid transparent !important;
 }
 
 /*-------------------------------------------*/
@@ -672,9 +672,7 @@ body {
   border-right: 0px solid var(--mtc_blue);
   border-bottom: 0px solid var(--mtc_blue);
   border-left: 2px solid var(--mtc_blue);
-
 }
-
 
 .mtc_evolution_bottom_buton:hover {
   background: #00000030;
@@ -817,102 +815,92 @@ body {
   }
 }
 
-
-
-
-#cookie_policy, .ask_news{
-    width: 96%!important;
-    margin: 0 2% 5px!important;
-    border-radius: 18px!important;
-    left: auto!important;
-    right: auto!important;
-    border: 1px solid #cbcbcb!important;
-    box-sizing: border-box!important;
+#cookie_policy,
+.ask_news {
+  width: 96% !important;
+  margin: 0 2% 5px !important;
+  border-radius: 18px !important;
+  left: auto !important;
+  right: auto !important;
+  border: 1px solid #cbcbcb !important;
+  box-sizing: border-box !important;
 }
 
 .ask_news .close {
-  right: 4vw!important;
+  right: 4vw !important;
   bottom: 35px;
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .ask_news .text {
     width: 60%;
   }
 }
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .ask_news .text {
     width: 90%;
   }
 }
-@media (min-width: 320px) and (max-width: 426px){
-.ask_news .text {
+@media (min-width: 320px) and (max-width: 426px) {
+  .ask_news .text {
     width: 75%;
+  }
 }
-}
-@media (min-width: 320px) and (max-width: 370px){
-.ask_news .close {
-  top: auto;
-}
-}
-
-.cookie_ok{
-  font-family: "MTC-Futura New"!important;
-    font-size: 15px!important;
-    font-style: normal!important;
-    font-weight: 400!important;
-    line-height: 1!important;
-    border-radius: 100px!important;
-    padding: 15px 20px!important;
-    display: flex!important;
-    text-align: center!important;
-    align-items: center!important;
-    justify-content: center!important;
-    flex-direction: row!important;
-    gap: 10px!important;
-    cursor: pointer!important;
-    text-decoration: none!important;
+@media (min-width: 320px) and (max-width: 370px) {
+  .ask_news .close {
+    top: auto;
+  }
 }
 
-
+.cookie_ok {
+  font-family: "MTC-Futura New" !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  border-radius: 100px !important;
+  padding: 15px 20px !important;
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
 
 body::-webkit-scrollbar {
-    display: none;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #ff0000;
-  }
-  
+  display: none;
+}
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
 
-
-
-  /* Arrows */
+/* Arrows */
 .slick-prev,
 .slick-next {
   font-size: 0;
   line-height: 0;
-  
+
   position: absolute;
   top: 50%;
-  
+
   display: block;
-  
+
   width: 24px;
   height: 24px;
   padding: 0;
   transform: translate(0, -50%);
-  
+
   cursor: pointer;
-  
+
   color: transparent;
   border: none;
   outline: none;
@@ -937,7 +925,7 @@ body::-webkit-scrollbar {
   left: -35px;
 }
 
-[dir='rtl'] .slick-prev {
+[dir="rtl"] .slick-prev {
   right: -35px;
   left: auto;
 }
@@ -946,7 +934,7 @@ body::-webkit-scrollbar {
   right: -35px;
 }
 
-[dir='rtl'] .slick-next {
+[dir="rtl"] .slick-next {
   right: auto;
   left: -35px;
 }
@@ -963,21 +951,18 @@ body::-webkit-scrollbar {
 
 /* Custom SVG Arrows */
 .slick-prev:before {
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjM3NSAxOC43NUw4LjYyNSAxMkwxNS4zNzUgNS4yNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+');
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjM3NSAxOC43NUw4LjYyNSAxMkwxNS4zNzUgNS4yNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+");
 }
 
 .slick-next:before {
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguNjI1IDUuMjVMMTUuMzc1IDEyTDguNjI1IDE4Ljc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=');
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguNjI1IDUuMjVMMTUuMzc1IDEyTDguNjI1IDE4Ljc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=");
 }
-
 
 @media (max-width: 480px) {
-
-.druid-chat-menu{
-  transform: scale(0.65);
+  .druid-chat-menu {
+    transform: scale(0.65);
+  }
 }
-}
-
 
 @keyframes mtc_evelution_druid_fadeOut {
   to {
@@ -990,9 +975,6 @@ body::-webkit-scrollbar {
   animation-delay: 10s;
   -webkit-animation: fadeOut 2s forwards;
 }
-
-
-
 
 /*-------------------------------------------*/
 /*----- MTC footer -----*/
@@ -1169,9 +1151,7 @@ body::-webkit-scrollbar {
   border-right: 0px solid #212a55;
   border-bottom: 0px solid #212a55;
   border-left: 2px solid #212a55;
-
 }
-
 
 .mtc_evolution_buton:hover {
   background: #00000030;
@@ -1314,9 +1294,7 @@ body::-webkit-scrollbar {
   }
 }
 
-
 /*-------------------------------------------*/
-
 
 .mtc_evolution_reveal {
   position: relative;
