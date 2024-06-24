@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the element exists
       if (footerElement) {
         footerElement.innerHTML = data;
-        set_footer();
-        hideoldfooter();
+        mtc_evolution_set_footer();
+        mtc_evolution_hideoldfooter();
       }
     });
 
@@ -181,7 +181,7 @@ function mtc_evolution_form_comanda_new(
   // Check if the form exists
   if (evlutions_form) {
     // Set the form attributes
-    evlutions_form.action = "/comanda_new";
+    evlutions_form.action = "/comanda_marketing";
     evlutions_form.dataset.type = "thankyou-page-form";
     evlutions_form.method = "post";
 
@@ -230,7 +230,7 @@ function mtc_evolution_form_comanda_new(
 
 //---------------------------------------------------------------------
 //mtc footer config
-function set_footer() {
+function mtc_evolution_set_footer() {
   var mtc_evolution_footer_buttons = JSON.parse(
     localStorage.getItem("mtc_footer_buttons")
   );
@@ -265,7 +265,7 @@ function set_footer() {
 }
 
 // Function to set the footer content and apply necessary DOM manipulations
-function hideoldfooter() {
+function mtc_evolution_hideoldfooter() {
   const footerElement = document.getElementById("mtc_evolution_footer");
   if (footerElement) {
     // Hide elements only if footer is successfully updated
@@ -280,7 +280,7 @@ function hideoldfooter() {
 document.documentElement.addEventListener("click", function (e) {
   let target = e.target;
   while (target != document.documentElement) {
-    if (target.matches(".mtc_evolution_bottom_buton")) {
+    if (target.matches(".mtc_evolution_bottom_button")) {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
