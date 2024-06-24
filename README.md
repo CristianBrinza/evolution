@@ -10,7 +10,7 @@
 This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products.<br>
 Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 ### Landings:
-- [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/md_ix.html)
+- [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/md_ix.html) | [RU](https://cristianbrinza.github.io/evolution/demo/landings/md_ix_ru.html)
 - [Home](https://cristianbrinza.github.io/evolution/demo/landings/home.html)
 
 
@@ -43,7 +43,7 @@ python3 scripts/directmail_to_production.py demo/directmail/one_number_qr_ro.htm
 Langing to production:
 
 ```python
-python3 scripts/landing_to_production.py demo/landing/home.html
+python3 scripts/landing_to_production.py demo/landings/home.html
 ```
 
 
