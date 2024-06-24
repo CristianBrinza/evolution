@@ -30,6 +30,9 @@ Below are presented the style and logic to the Evolution Design System Toolkit W
 
 - [JS](toolkit/js/mtc_evolution.js)
 - [CSS](toolkit/css/mtc_evolution.css)
+- HTML : [Footer](toolkit/html/mtc_evolution_footer.html)
+- Test [test.html](demo/landings/test.html), [test.js](toolkit/test/test.js).
+- [Fonts](toolkit/fonts)
 
 
 <br>
