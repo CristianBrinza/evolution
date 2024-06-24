@@ -269,7 +269,7 @@ body {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1;
+  line-height: 32px;
 }
 
 .mtc_evolution_text {
@@ -288,6 +288,7 @@ body {
 }
 
 #mtc_evolution_footer_text {
+  font-family: 'Source Sans Pro';
   color: #a6a6a6;
   text-align: center;
   font-size: 14px;
@@ -961,6 +962,11 @@ body::-webkit-scrollbar {
 @media (max-width: 480px) {
   .druid-chat-menu {
     transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    -o-transform: scale(0.65);
+    transform: scale(0.65);
   }
 }
 
@@ -1308,8 +1314,8 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 
-
-#mtc_evolution_btn_footer_promo{
-  border: 1px solid #212A55;
-    color: #212A55;
+#mtc_evolution_btn_footer_promo {
+  border: 1px solid #212a55;
+  color: #212a55;
+  margin: 40px auto;
 }
