@@ -1,4 +1,3 @@
-var lang = "ro";
 let footerButtons = ["Contacte", "Magazine", "Licitații"];
 localStorage.setItem("mtc_footer_buttons", JSON.stringify(footerButtons));
 let mtcFooter = [
