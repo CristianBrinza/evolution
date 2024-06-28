@@ -31,7 +31,7 @@
         height: 515px!important;
     }
 </style>
-    <div id="mtc_evolution_hero_img_small"><img alt="hero" id="mtc_evolution_hero_img_small_desk"
+    <div id="mtc_evolution_hero_img_small" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'"><img alt="hero" id="mtc_evolution_hero_img_small_desk"
         src="../../images/landings/one_number/img0_desktop_ro.png" /> <img alt="hero"
         id="mtc_evolution_hero_img_small_screen"
         src="../../images/landings/one_number/" /> <img alt="hero"
@@ -388,7 +388,7 @@ După conectarea smartwatch-ului, vei avea posibilitatea să:
             
     </div>
     <div id="one_number_block_7_left_under">
-        *Înainte de a activa One Number, verifică dacă dispozitivul tău este compatibil cu tehnologia eSIM. (hyperlink)
+        *Înainte de a activa One Number, verifică dacă dispozitivul tău este compatibil cu tehnologia eSIM. <span>Lista smartwatch-urilor</span>
     </div>
    </div>
    <img id="one_number_block_7_img" src="../../images/landings/one_number/img6.png" alt="">
@@ -727,6 +727,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 100%; /* 24px */
 margin-top: 20px;
+max-width: 580px;
         }
     </style>
     <div id="one_number_block_9_1">
@@ -1123,9 +1124,9 @@ margin-top:20px;
 border-radius: 10px;
         }
     </style>
-    <div class="one_number_block_13">Lista smartwatch-urilor cu eSIM</div>
-    <div class="one_number_block_13">FAQ</div>
-    <div class="one_number_block_13">Vezi Regulament</div>
+    <div class="one_number_block_13" onclick="evolution_popoup('f1')">Lista smartwatch-urilor cu eSIM</div>
+    <div class="one_number_block_13" onclick="evolution_popoup('f2')">FAQ</div>
+    <div class="one_number_block_13" onclick="window.location='../../files/Regulament_One_Number.pdf'">Vezi Regulament</div>
 
     <style>
         #mtc_evolution_footer_text{
@@ -1142,7 +1143,132 @@ border-radius: 10px;
     &nbsp;  &nbsp;
 </div>
 
+
+
+<div class="mtc_evolution_popup_block" id="mtc_evolution_popup_block_f1" style="display: none;">
+    <div class="mtc_evolution_popup_block_inside"><svg class="mtc_evolution_popup_close_button" fill="none" height="17" onclick="evolution_popoup('f1')" viewbox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8537 6.43075C11.928 6.36155 11.9878 6.2784 12.0299 6.18605C12.072 6.09371 12.0955 5.99397 12.0991 5.89255C12.1026 5.79112 12.0862 5.68999 12.0506 5.59493C12.0151 5.49987 11.9612 5.41273 11.892 5.3385C11.8228 5.26427 11.7396 5.2044 11.6473 5.16231C11.5549 5.12021 11.4552 5.09672 11.3538 5.09316C11.2523 5.08961 11.1512 5.10607 11.0561 5.14161C10.9611 5.17714 10.874 5.23105 10.7997 5.30025L8.53872 7.40825L6.43072 5.14648C6.28967 5.00201 6.09768 4.91849 5.89584 4.91378C5.69399 4.90908 5.49831 4.98356 5.35068 5.12129C5.20306 5.25903 5.1152 5.44907 5.10591 5.65076C5.09662 5.85245 5.16665 6.04976 5.30099 6.20048L7.40899 8.46148L5.14722 10.5695C5.07037 10.638 5.00798 10.7212 4.96372 10.8141C4.91946 10.9071 4.89423 11.0079 4.88949 11.1108C4.88475 11.2136 4.90062 11.3164 4.93615 11.413C4.97168 11.5096 5.02616 11.5982 5.09639 11.6734C5.16662 11.7487 5.25119 11.8092 5.34512 11.8513C5.43905 11.8935 5.54046 11.9164 5.64338 11.9188C5.74631 11.9212 5.84867 11.903 5.94447 11.8653C6.04026 11.8276 6.12756 11.7711 6.20122 11.6992L8.46222 9.59198L10.5702 11.853C10.6383 11.9313 10.7214 11.995 10.8146 12.0405C10.9079 12.0859 11.0093 12.1122 11.1129 12.1176C11.2165 12.123 11.3201 12.1075 11.4176 12.0721C11.515 12.0366 11.6044 11.9819 11.6802 11.9111C11.7561 11.8404 11.817 11.7551 11.8592 11.6604C11.9014 11.5656 11.9241 11.4633 11.9259 11.3596C11.9278 11.2559 11.9087 11.1529 11.8699 11.0567C11.8311 10.9605 11.7733 10.8731 11.6999 10.7998L9.59272 8.53875L11.8537 6.43075Z" fill="black"></path> <path clip-rule="evenodd" d="M0 8.5C0 3.80568 3.80568 0 8.5 0C13.1943 0 17 3.80568 17 8.5C17 13.1943 13.1943 17 8.5 17C3.80568 17 0 13.1943 0 8.5ZM8.5 15.4545C7.58672 15.4545 6.68237 15.2747 5.83861 14.9252C4.99485 14.5757 4.22818 14.0634 3.58239 13.4176C2.9366 12.7718 2.42434 12.0052 2.07484 11.1614C1.72534 10.3176 1.54545 9.41328 1.54545 8.5C1.54545 7.58672 1.72534 6.68237 2.07484 5.83861C2.42434 4.99485 2.9366 4.22818 3.58239 3.58239C4.22818 2.9366 4.99485 2.42434 5.83861 2.07484C6.68237 1.72534 7.58672 1.54545 8.5 1.54545C10.3445 1.54545 12.1134 2.27816 13.4176 3.58239C14.7218 4.88662 15.4545 6.65554 15.4545 8.5C15.4545 10.3445 14.7218 12.1134 13.4176 13.4176C12.1134 14.7218 10.3445 15.4545 8.5 15.4545Z" fill="black" fill-rule="evenodd"></path> </svg> <span> </span>
+    <div id="mdix_popup_img"><span>&nbsp;&nbsp;&nbsp; </span></div>
+    <span> </span>
+    
+    <div class="mtc_evolution_title" id="mdix_popup_title"><span>Lista smartwatch-urilor cu eSIM</span></div>
+    <span>
+        
+        <ul>
+            <li>Lista smarwatch-urilor compatibile cu tehnologia One Number:
+                <ul>
+                    <li>Galaxy Watch 6 Classic eSIM</li>
+                    <li>Galaxy Watch 6 eSIM</li>
+                    <li>Galaxy Watch 5 Pro LTE</li>
+                    <li>Galaxy Watch 5 LTE</li>
+                    <li>Galaxy Watch 4 Classic LTE</li>
+                    <li>Galaxy Watch 4 LTE</li>
+                </ul>
+            </li>
+            <li>Lista smarwatch-urilor compatibile cu tehnologia eSIM:
+                <ul>
+                    <li>Apple
+                        <ul>
+                            <li>Apple Watch Series 3</li>
+                            <li>Apple Watch Series 4</li>
+                            <li>Apple Watch Series 5</li>
+                            <li>Apple Watch Series 6</li>
+                            <li>Apple Watch Series 7</li>
+                            <li>Apple Watch Series 8</li>
+                            <li>Apple Watch Series 9</li>
+                            <li>Apple Watch Ultra LTE</li>
+                            <li>Apple Watch Ultra 2</li>
+                        </ul>
+                    </li>
+                    <li>Samsung
+                        <ul>
+                            <li>Samsung Watch</li>
+                            <li>Samsung Watch Active 2 4G</li>
+                            <li>Samsung Watch Active 3 4G</li>
+                            <li>Samsung Gear 2 3G Classic</li>
+                            <li>Samsung Gear S3 Frontier LTE</li>
+                            <li>Samsung Galaxy Watch 3 LTE</li>
+                            <li>Samsung Galaxy Watch 4 LTE</li>
+                            <li>Samsung Galaxy Watch 5 LTE</li>
+                            <li>Samsung Galaxy Watch 5 Pro</li>
+                            <li>Samsung Galaxy Watch 6 Classic</li>
+                            <li>Samsung Galaxy Watch 6</li>
+                        </ul>
+                    </li>
+                    <li>Xiaomi
+                        <ul>
+                            <li>Xiaomi Watch 2 Pro</li>
+                            <li>Xiaomi Mi Watch</li>
+                            <li>Xiaomi Watch S3</li>
+                        </ul>
+                    </li>
+                    <li>Huawei
+                        <ul>
+                            <li>Huawei Watch 2 Pro</li>
+                            <li>Huawei Watch 2</li>
+                            <li>Huawei Watch 3 Active 4G</li>
+                            <li>Huawei Watch 3 Pro</li>
+                            <li>Huawei Watch 3</li>
+                            <li>Huawei Watch 4 Pro</li>
+                            <li>Huawei Watch 4</li>
+                        </ul>
+                    </li>
+                    <li>OPPO
+                        <ul>
+                            <li>Oppo Watch</li>
+                            <li>Oppo Watch SE</li>
+                            <li>Oppo Watch 2</li>
+                            <li>Oppo Watch Pro 3</li>
+                            <li>Oppo Watch Pro 4</li>
+                        </ul>
+                    </li>
+                    <li>Other popular smartwatch
+                        <ul>
+                            <li>TicWatch Pro 4G/LTE</li>
+                            <li>TicWatch Pro 3 Ultra</li>
+                            <li>Amazfit Nexo</li>
+                            <li>Vivo Watch 2</li>
+                            <li>Fossil Gen 5 LTE</li>
+                            <li>Fossil Gen 6 LTE</li>
+                            <li>Garmin Forerunner 945 LTE</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </span></div>
+    </div>
+
+
+    <div class="mtc_evolution_popup_block" id="mtc_evolution_popup_block_f2" style="display: none;">
+        <div class="mtc_evolution_popup_block_inside"><svg class="mtc_evolution_popup_close_button" fill="none" height="17" onclick="evolution_popoup('f2')" viewbox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8537 6.43075C11.928 6.36155 11.9878 6.2784 12.0299 6.18605C12.072 6.09371 12.0955 5.99397 12.0991 5.89255C12.1026 5.79112 12.0862 5.68999 12.0506 5.59493C12.0151 5.49987 11.9612 5.41273 11.892 5.3385C11.8228 5.26427 11.7396 5.2044 11.6473 5.16231C11.5549 5.12021 11.4552 5.09672 11.3538 5.09316C11.2523 5.08961 11.1512 5.10607 11.0561 5.14161C10.9611 5.17714 10.874 5.23105 10.7997 5.30025L8.53872 7.40825L6.43072 5.14648C6.28967 5.00201 6.09768 4.91849 5.89584 4.91378C5.69399 4.90908 5.49831 4.98356 5.35068 5.12129C5.20306 5.25903 5.1152 5.44907 5.10591 5.65076C5.09662 5.85245 5.16665 6.04976 5.30099 6.20048L7.40899 8.46148L5.14722 10.5695C5.07037 10.638 5.00798 10.7212 4.96372 10.8141C4.91946 10.9071 4.89423 11.0079 4.88949 11.1108C4.88475 11.2136 4.90062 11.3164 4.93615 11.413C4.97168 11.5096 5.02616 11.5982 5.09639 11.6734C5.16662 11.7487 5.25119 11.8092 5.34512 11.8513C5.43905 11.8935 5.54046 11.9164 5.64338 11.9188C5.74631 11.9212 5.84867 11.903 5.94447 11.8653C6.04026 11.8276 6.12756 11.7711 6.20122 11.6992L8.46222 9.59198L10.5702 11.853C10.6383 11.9313 10.7214 11.995 10.8146 12.0405C10.9079 12.0859 11.0093 12.1122 11.1129 12.1176C11.2165 12.123 11.3201 12.1075 11.4176 12.0721C11.515 12.0366 11.6044 11.9819 11.6802 11.9111C11.7561 11.8404 11.817 11.7551 11.8592 11.6604C11.9014 11.5656 11.9241 11.4633 11.9259 11.3596C11.9278 11.2559 11.9087 11.1529 11.8699 11.0567C11.8311 10.9605 11.7733 10.8731 11.6999 10.7998L9.59272 8.53875L11.8537 6.43075Z" fill="black"></path> <path clip-rule="evenodd" d="M0 8.5C0 3.80568 3.80568 0 8.5 0C13.1943 0 17 3.80568 17 8.5C17 13.1943 13.1943 17 8.5 17C3.80568 17 0 13.1943 0 8.5ZM8.5 15.4545C7.58672 15.4545 6.68237 15.2747 5.83861 14.9252C4.99485 14.5757 4.22818 14.0634 3.58239 13.4176C2.9366 12.7718 2.42434 12.0052 2.07484 11.1614C1.72534 10.3176 1.54545 9.41328 1.54545 8.5C1.54545 7.58672 1.72534 6.68237 2.07484 5.83861C2.42434 4.99485 2.9366 4.22818 3.58239 3.58239C4.22818 2.9366 4.99485 2.42434 5.83861 2.07484C6.68237 1.72534 7.58672 1.54545 8.5 1.54545C10.3445 1.54545 12.1134 2.27816 13.4176 3.58239C14.7218 4.88662 15.4545 6.65554 15.4545 8.5C15.4545 10.3445 14.7218 12.1134 13.4176 13.4176C12.1134 14.7218 10.3445 15.4545 8.5 15.4545Z" fill="black" fill-rule="evenodd"></path> </svg> <span> </span>
+        <div id="mdix_popup_img"><span>&nbsp;&nbsp;&nbsp; </span></div>
+        <span> </span>
+        
+        <div class="mtc_evolution_title" id="mdix_popup_title"><span>FAQ</span></div>
+        <span>
+            
+          
+                
+                    <ol>
+                        <li><strong>Pentru cine este disponibil One Number?</strong>
+                            <p>Serviciul OneNumber este disponibil pentru toți clienții care au un abonament mobil de la Moldtelecom și sunt deținători de smartwatch-uri compatibile cu OneNumber. Vezi aici lista de ceasuri disponibile.</p>
+                        </li>
+                        <li><strong>Este posibilă dezactivarea One Number?</strong>
+                            <p>Da, este posibilă dezactivarea opțiunii One Number din aplicația My Moldtelecom (opțiunea One Number) și o poți dezactiva oricând dorești.</p>
+                        </li>
+                        <li><strong>Cum procedez dacă smartwatch-ul cu SIM suplimentar a fost pierdut sau furat?</strong>
+                            <p>În această situație, poți apela la 022 200 200, la Serviciul Asistență Clienți, unde vei fi ghidat în soluționarea problemei.</p>
+                        </li>
+                        <li><strong>Voi putea folosi SIM-ul suplimentar va funcționa și în roaming?</strong>
+                            <p>One Number funcționează doar pe teritoriul Republicii Moldova. În afara granițelor, va funcționa doar SIM-ul principal. În cazul în care încearci să activezi serviciul OneNumber și este activat Roaming-ul, nu se va permite activarea serviciului OneNumber până când nu dezactiveazi Roaming-ul.</p>
+                            <p>Dacă activezi serviciul One Number și ulterior activezi Roaming-ul, serviciul One Number se va dezactiva automat.</p>
+                            <p>În momentul în care se dezactiveazi Roaming-ul, se va verifica dacă serviciul One Number a fost dezactivat anterior din cauza Roaming-ului. În acest caz, serviciul One Number se va reactiva automat.</p>
+                            <p>Aceste informații sunt menite să îți ofere claritate asupra modului de funcționare și gestionare a serviciului One Number.</p>
+                        </li>
+                    </ol>
+               </span></div>
+        </div>
 </div>
-</div>
+
     </body>
 </html>

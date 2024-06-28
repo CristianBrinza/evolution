@@ -1003,3 +1003,11 @@ body::-webkit-scrollbar {
   color: #212a55;
   margin: 40px auto;
 }
+
+
+#mdix_popup_title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
