@@ -84,6 +84,7 @@ line-height: 100%;
 letter-spacing: -0.48px;
     }
    .one_number_btn {
+    cursor: pointer;
         display: flex;
         gap:30px;
 padding: 15px;
@@ -112,7 +113,7 @@ ONE NUMBER?
         <div id="one_number_block_1_text">
             <span style="font-weight: 450;">One Number</span> reprezintă  <span style="font-weight: 450;">un serviciu nou lansat de Moldtelecom!</span> Acum poți utiliza atât telefonul, cât și ceasul inteligent, cu un singur număr de telefon și un singur abonament. Această soluție inteligentă îți permite să profiți la maximum de timpul tău și să te bucuri de o comunicare mai eficientă.
         </div>
-        <div class="one_number_btn">
+        <div class="one_number_btn" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
             Activează acum
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.25 25.9969C20.2916 25.9969 26 20.2886 26 13.2469C26 6.20532 20.2916 0.496948 13.25 0.496948C6.20837 0.496948 0.5 6.20532 0.5 13.2469C0.5 20.2886 6.20837 25.9969 13.25 25.9969Z" fill="white"/>
@@ -158,6 +159,7 @@ line-height: 90%;
         width:100%;
 height: 2px;
         background: #D9D9D9;
+        margin-top: -20px;
     }
     #one_number_block_3_loaded{
         width: 550px;
@@ -307,6 +309,7 @@ margin: 40px 0 -10px;
         width:100%;
 height: 2px;
         background: #D9D9D9;
+        margin-top: -10px;
     }
     #one_number_block_6_loaded{
         width: 850px;
@@ -376,7 +379,7 @@ După conectarea smartwatch-ului, vei avea posibilitatea să:
     <li>suni cu numărul tău de telefon de pe ambele dispozitive asociate (smartphone și smartwatch).</li>
 </ul>
     </div>
-    <div class="one_number_btn">
+    <div class="one_number_btn" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
         Activează OneNumber
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.25 25.9969C20.2916 25.9969 26 20.2886 26 13.2469C26 6.20532 20.2916 0.496948 13.25 0.496948C6.20837 0.496948 0.5 6.20532 0.5 13.2469C0.5 20.2886 6.20837 25.9969 13.25 25.9969Z" fill="white"/>
@@ -442,6 +445,8 @@ height: 2px;
     #one_number_block_8_2{
         width: 100%;
         display: flex;
+        padding-bottom: 30px;
+        justify-content: space-between;
     }
     #one_number_block_8_2_left{
         width: calc(50% - 10px);
@@ -449,13 +454,196 @@ height: 2px;
     #one_number_block_8_2_right{
         width: calc(50% - 10px);
     }
+    #one_number_block_8_2_left_img{
+        margin: -20px -128px -40px -132px;
+    }
+    #one_number_block_8_2_left_text{
+        color: #222;
+font-family: "MTC-Futura New";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; /* 16px */
+    }
+
+    #one_number_block_8_2_right_top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .one_number_block_8_2_right_top_block{
+        border-radius:10px;
+background: #FFF;
+box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+width: 280px;
+
+    }
+    .one_number_block_8_2_right_top_block_top{
+        border-radius: 10px 10px 0px 0px;
+        background: #6BB8FF;
+        color: #FFF;
+font-family: "MTC-Futura New";
+font-size: 20.8px;
+font-style: normal;
+font-weight: 400;
+line-height: 20.8px; /* 100% */
+padding: 15px;
+box-sizing: border-box;
+text-align: center;
+    }
+    .one_number_block_8_2_right_top_block_active .one_number_block_8_2_right_top_block_top{
+background: #0378E5;
+    }
+    .one_number_block_8_2_right_top_block_bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        box-sizing: border-box;
+        color: #0378E5;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 20.8px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 125% */
+    }
+.one_number_block_8_2_right_top_block_bottom_block{
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .one_number_block_8_2_right_top_block_bottom_block_inside{
+        width: 100%;
+        border-radius: 10px;
+background: #FFF;
+box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+height: 83px;
+display: flex;
+color: #222;
+font-family: "MTC-Futura New";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 18px;
+flex-direction: column;
+align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    }
+    #one_number_block_8_2_right_top_block_bottom_btn{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 70px;
+    }
 </style>
 <div id="one_number_block_8_2">
     <div id="one_number_block_8_2_left">
-        <img src="" alt="">
+        <img id="one_number_block_8_2_left_img" src="../../images/landings/one_number/img9.png" alt="">
+       <div id="one_number_block_8_2_left_text">
+        *După ce ai finalizat toți pașii, verifică dacă ceasul tău este conectat la rețeaua mobilă. Poți face acest lucru verificând indicatorul de semnal pe ceas. Dacă întâmpini probleme, contactează serviciul de suport Moldtelecom la 022 200 200.
+       </div>
     </div>
     <div id="one_number_block_8_2_right">
 
+
+        <div id="one_number_block_8_2_right_top">
+            <div class="one_number_block_8_2_right_top_block" id="one_number_block_8_2_right_top_block_1" onclick="show_gerneral_guide()">
+                <div class="one_number_block_8_2_right_top_block_top">
+                    Activarea <span style="font-weight: 500;">One Number</span> pe Smartwatch (generare eSIM)
+                </div>
+                <div class="one_number_block_8_2_right_top_block_bottom">
+                    Vezi pașii
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.25 25.6016C20.2916 25.6016 26 19.8932 26 12.8516C26 5.80993 20.2916 0.101562 13.25 0.101562C6.20837 0.101562 0.5 5.80993 0.5 12.8516C0.5 19.8932 6.20837 25.6016 13.25 25.6016Z" fill="#0378E5"/>
+                        <path d="M18.0086 11.3766H15.1247V5.34101C15.1247 4.93008 14.7909 4.59619 14.3799 4.59619H12.1234C11.7125 4.59619 11.3786 4.93008 11.3786 5.34101V11.3766H8.49474C7.9187 11.3766 7.5628 12.0004 7.84899 12.4957L10.2265 16.616L12.6041 20.7364C12.8903 21.2354 13.6094 21.2354 13.8956 20.7364L16.2732 16.616L18.6507 12.4957C18.9369 11.9967 18.5773 11.3766 18.005 11.3766H18.0086Z" fill="white"/>
+                        </svg>
+                        
+                </div>
+                            </div>
+                            <div class="one_number_block_8_2_right_top_block" id="one_number_block_8_2_right_top_block_2" onclick="show_samsung_guide()">
+                                <div class="one_number_block_8_2_right_top_block_top">
+                                    Activare eSIM pe <br>
+<span style="font-weight: 500;">Samsung</span> Smartwatch
+                                </div>
+                                <div class="one_number_block_8_2_right_top_block_bottom">
+                                    Vezi pașii
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.25 25.6016C20.2916 25.6016 26 19.8932 26 12.8516C26 5.80993 20.2916 0.101562 13.25 0.101562C6.20837 0.101562 0.5 5.80993 0.5 12.8516C0.5 19.8932 6.20837 25.6016 13.25 25.6016Z" fill="#0378E5"/>
+                                        <path d="M18.0086 11.3766H15.1247V5.34101C15.1247 4.93008 14.7909 4.59619 14.3799 4.59619H12.1234C11.7125 4.59619 11.3786 4.93008 11.3786 5.34101V11.3766H8.49474C7.9187 11.3766 7.5628 12.0004 7.84899 12.4957L10.2265 16.616L12.6041 20.7364C12.8903 21.2354 13.6094 21.2354 13.8956 20.7364L16.2732 16.616L18.6507 12.4957C18.9369 11.9967 18.5773 11.3766 18.005 11.3766H18.0086Z" fill="white"/>
+                                        </svg>
+                                        
+                                </div>
+                                            </div>
+        </div>
+
+
+        <div class="one_number_block_8_2_right_top_block_bottom_block"  
+                id="one_number_block_8_2_right_top_block_bottom_block_1" style="display: none;">
+         
+                <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+                    <span> <span style="color: #0378E5; font-weight: 450;">1.</span> <span style=" font-weight: 450; font-size: 20.8px;">Loghează-te în aplicația My Moldtelecom</span><br>
+                     Deschide aplicația și autentifică-te folosind datele tale de acces.</span>
+                 </div>
+                 <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+                    <span> <span style="color: #0378E5; font-weight: 450;">2.</span> <span style=" font-weight: 450; font-size: 20.8px;"> Accesează numărul</span><br>
+                    Selectează numărul de telefon dorit și intră în meniul „Mai Multe”, apoi alege „One Number”.</span>
+                 </div>
+
+                 <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+                    <span> <span style="color: #0378E5; font-weight: 450;">3.</span> <span style=" font-weight: 450; font-size: 20.8px;">Activare One Number</span><br>
+                    
+Parcurge informațiile generale despre serviciul One Number, apoi selectează „Activează One Number”. Confirmă activarea serviciului și treci peste procesul de validare.</span>
+                 </div>
+                 <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+                    <span> <span style="color: #0378E5; font-weight: 450;">4.</span> <span style=" font-weight: 450; font-size: 20.8px;"> Scanează codul QR</span><br>
+                   
+Pe ecran va apărea un cod QR pe care să-l scanezi pentru a activa One Number pe smartwatch-ul tău.</span>
+                 </div>
+
+
+
+
+        </div>
+        <div class="one_number_block_8_2_right_top_block_bottom_block"  
+        id="one_number_block_8_2_right_top_block_bottom_block_2"
+        style="display: none;">
+ 
+        <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+            <span> <span style="color: #0378E5; font-weight: 450;">1.</span> <span style=" font-weight: 450; font-size: 20.8px;">Galaxy Wearable</span><br>
+            Descarcă și deschide aplicația Galaxy Wearable pe telefonul tău și asociază smartwatch-ul.</span>
+         </div>
+         <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+            <span> <span style="color: #0378E5; font-weight: 450;">2.</span> <span style=" font-weight: 450; font-size: 20.8px;">Setări</span><br>
+            În aplicația Galaxy Wearable, accesează Setări ceas > Abonamente mobile > Utilizare cod.</span>
+         </div>
+
+         <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+            <span> <span style="color: #0378E5; font-weight: 450;">3.</span> <span style=" font-weight: 450; font-size: 20.8px;"> Scanează codul QR</span><br>
+            
+            Scanează codul QR al eSIM-ului și urmează instrucțiunile pentru a finaliza configurarea.</span>
+         </div>
+         <div class="one_number_block_8_2_right_top_block_bottom_block_inside">
+            <span> <span style="color: #0378E5; font-weight: 450;">4.</span> <span style=" font-weight: 450; font-size: 20.8px;"> Efectuat</span><br>
+           
+            Finisează configurarea prin accesarea Efectuat.</span>
+         </div>
+
+</div>
+<div id="one_number_block_8_2_right_top_block_bottom_btn">
+    <div class="one_number_btn" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
+        Activează OneNumber
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.25 25.9969C20.2916 25.9969 26 20.2886 26 13.2469C26 6.20532 20.2916 0.496948 13.25 0.496948C6.20837 0.496948 0.5 6.20532 0.5 13.2469C0.5 20.2886 6.20837 25.9969 13.25 25.9969Z" fill="white"></path>
+            <path d="M18.0086 11.772L15.1247 11.772V5.7364C15.1247 5.32546 14.7909 4.99158 14.3799 4.99158H12.1234C11.7125 4.99158 11.3786 5.32546 11.3786 5.7364V11.772H8.49474C7.9187 11.772 7.5628 12.3957 7.84899 12.8911L10.2265 17.0114L12.6041 21.1318C12.8903 21.6308 13.6094 21.6308 13.8956 21.1318L16.2732 17.0114L18.6507 12.8911C18.9369 12.3921 18.5773 11.772 18.005 11.772H18.0086Z" fill="#0378E5"></path>
+            </svg>
+            
+    </div>
+</div>
     </div>
 </div>
 
@@ -464,7 +652,25 @@ height: 2px;
 </div>
 
 
+<script>
+    function show_gerneral_guide(){
+        document.getElementById("one_number_block_8_2_right_top_block_1").classList.add('one_number_block_8_2_right_top_block_active')
+        document.getElementById("one_number_block_8_2_right_top_block_2").classList.remove('one_number_block_8_2_right_top_block_active')
+        
+        document.getElementById("one_number_block_8_2_right_top_block_bottom_block_1").style.display="flex";
+         document.getElementById("one_number_block_8_2_right_top_block_bottom_block_2").style.display="none";
+    }
 
+    function show_samsung_guide(){
+        document.getElementById("one_number_block_8_2_right_top_block_1").classList.remove('one_number_block_8_2_right_top_block_active')
+        document.getElementById("one_number_block_8_2_right_top_block_2").classList.add('one_number_block_8_2_right_top_block_active')
+        document.getElementById("one_number_block_8_2_right_top_block_bottom_block_2").style.display="flex";
+         document.getElementById("one_number_block_8_2_right_top_block_bottom_block_1").style.display="none";
+    
+    }
+
+    show_gerneral_guide()
+</script>
 <div class="mtc_evolution_main">
 
 
@@ -550,9 +756,12 @@ margin-top: 20px;
 </div>
 
 <style>
-
+#one_number_block_10{
+    width: 100%;
+    display: none;
+}
 </style>
-
+<div id="one_number_block_10">
 <div id="one_number_block_10_title">
     Smartwatch-uri compatibile
 </div>
@@ -653,7 +862,7 @@ flex-shrink: 0;
     
       </script>
     
-
+</div>
 
 
 
@@ -727,7 +936,7 @@ margin-bottom: 30px;
    
 </div>
 
-<div class="one_number_btn">
+<div class="one_number_btn" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
     Activează OneNumber
     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.25 25.9969C20.2916 25.9969 26 20.2886 26 13.2469C26 6.20532 20.2916 0.496948 13.25 0.496948C6.20837 0.496948 0.5 6.20532 0.5 13.2469C0.5 20.2886 6.20837 25.9969 13.25 25.9969Z" fill="white"/>
@@ -743,7 +952,7 @@ margin-bottom: 30px;
     #one_number_block_12{
         width: 100%;
         background: #F4F7FF;
-        padding: 30px 0;
+        padding: 0px 0;
         margin-top: 75px;
         margin-bottom: 60px;
     }
@@ -772,6 +981,7 @@ line-height: 120%; /* 23.04px */
     #one_number_block_12_btn_app{
         display: flex;
         gap:10px;
+        cursor: pointer;
     }
     #one_number_block_12_left{
         display: flex;
@@ -780,9 +990,17 @@ line-height: 120%; /* 23.04px */
         align-items: flex-start;
 
     }
+
+    #one_number_block_12_img{
+        width: calc(50% - 10px + 100px);
+margin-right: -100px;
+    }
+    #one_number_block_12_inside{
+        flex-direction: row;
+    }
 </style>
     <div id="one_number_block_12">
-      <div class="mtc_evolution_main">
+      <div class="mtc_evolution_main" id="one_number_block_12_inside">
 
         <div id="one_number_block_12_left">
 <div id="one_number_block_12_title">
@@ -792,8 +1010,8 @@ Tot de ce ai nevoie într-un singur loc
 <div id="one_number_block_12_text">
     Cu aplicația <span style="color: #0378E5;">My Moldtelecom</span> deții controlul deplin să gestionezi conturile și serviciile tale și ale membrilor de familie, oricând și oriunde.Verifică toate conturile, achită facturile, transferă bani pe contul altor persoane sau activează opțiuni adiționale, direct în telefon.Aplicația este disponibilă în 3 limbi: RO, RU, EN și poate fi accesată 24/7.
 </div>
-<div id="one_number_block_12_btn_app">
-    <svg width="180" height="52" viewBox="0 0 180 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div id="one_number_block_12_btn_app" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
+    <svg style="cursor: pointer;" width="180" height="52" viewBox="0 0 180 52" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M179 46.0029C179 48.774 176.709 51.0187 173.874 51.0187H6.13243C3.2995 51.0187 1 48.774 1 46.0029V6.00333C1 3.23349 3.2995 0.980957 6.13243 0.980957H173.873C176.709 0.980957 178.999 3.23349 178.999 6.00333L179 46.0029Z" fill="black"/>
         <path d="M173.333 1.04163C176.42 1.04163 178.932 3.4905 178.932 6.5V45.5C178.932 48.5095 176.42 50.9584 173.333 50.9584H6.66667C3.58 50.9584 1.06833 48.5095 1.06833 45.5V6.5C1.06833 3.4905 3.58 1.04163 6.66667 1.04163H173.333ZM173.333 2.74817e-06H6.66667C3.00167 2.74817e-06 0 2.92663 0 6.5V45.5C0 49.0734 3.00167 52 6.66667 52H173.333C176.998 52 180 49.0734 180 45.5V6.5C180 2.92663 176.998 2.74817e-06 173.333 2.74817e-06Z" fill="#A6A6A6"/>
         <path d="M40.1705 25.7191C40.1318 21.5292 43.6891 19.4908 43.8518 19.3959C41.8371 16.532 38.7145 16.1407 37.6171 16.1095C34.9945 15.8404 32.4505 17.6396 31.1145 17.6396C29.7518 17.6396 27.6945 16.1355 25.4771 16.1797C22.6238 16.2226 19.9545 17.8333 18.4905 20.3345C15.4691 25.4344 17.7225 32.9289 20.6171 37.0512C22.0651 39.0701 23.7571 41.3243 25.9718 41.245C28.1385 41.1579 28.9478 39.8982 31.5625 39.8982C34.1531 39.8982 34.9131 41.245 37.1718 41.1943C39.4971 41.1579 40.9611 39.1663 42.3585 37.1292C44.0318 34.8152 44.7038 32.5363 44.7305 32.4193C44.6758 32.4011 40.2145 30.741 40.1705 25.7191Z" fill="white"/>
@@ -823,7 +1041,7 @@ Tot de ce ai nevoie într-un singur loc
 
         
 
-        <svg width="180" height="52" viewBox="0 0 180 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg style="cursor: pointer;" width="180" height="52" viewBox="0 0 180 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M173.333 52H6.66667C3.00167 52 0 49.0734 0 45.5V6.5C0 2.92663 3.00167 2.74817e-06 6.66667 2.74817e-06H173.333C176.998 2.74817e-06 180 2.92663 180 6.5V45.5C180 49.0734 176.998 52 173.333 52Z" fill="white"/>
             <path d="M173.333 1.04163C176.42 1.04163 178.932 3.4905 178.932 6.5V45.5C178.932 48.5095 176.42 50.9584 173.333 50.9584H6.66667C3.58 50.9584 1.06833 48.5095 1.06833 45.5V6.5C1.06833 3.4905 3.58 1.04163 6.66667 1.04163H173.333ZM173.333 2.74817e-06H6.66667C3.00167 2.74817e-06 0 2.92663 0 6.5V45.5C0 49.0734 3.00167 52 6.66667 52H173.333C176.998 52 180 49.0734 180 45.5V6.5C180 2.92663 176.998 2.74817e-06 173.333 2.74817e-06Z" fill="#A6A6A6"/>
             <path d="M13.9133 9.80044C13.5216 10.2002 13.2949 10.8226 13.2949 11.6286V40.3781C13.2949 41.1841 13.5216 41.8064 13.9133 42.2062L14.0099 42.2939L30.5332 26.1902V25.8099L14.0099 9.7062L13.9133 9.80044Z" fill="url(#paint0_linear_914_1925)"/>
@@ -868,7 +1086,7 @@ Tot de ce ai nevoie într-un singur loc
             </svg>
             
 </div>
-<div class="one_number_btn">
+<div class="one_number_btn" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'">
     Activează OneNumber
     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.25 25.9969C20.2916 25.9969 26 20.2886 26 13.2469C26 6.20532 20.2916 0.496948 13.25 0.496948C6.20837 0.496948 0.5 6.20532 0.5 13.2469C0.5 20.2886 6.20837 25.9969 13.25 25.9969Z" fill="white"></path>
@@ -877,16 +1095,16 @@ Tot de ce ai nevoie într-un singur loc
         
 </div>
         </div>
-        <img src="
-        " alt="">
+        <img id="one_number_block_12_img" src="../../images/landings/one_number/img8.png" alt="My Moldtelecom">
       </div>
     </div>
 
 
     
-<div class="mtc_evolution_main" style="gap:0">
+<div class="mtc_evolution_main"   style="gap:0">
     <style>
         .one_number_block_13{
+            cursor: pointer;
             width: 100%;
             color: #222;
 text-align: center;
