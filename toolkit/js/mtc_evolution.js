@@ -1,3 +1,4 @@
+//toolkit/js/mtc_evolution.js
 function mtc_evolution_add_route(add_route_array) {
   let add_route_div = '<div id="mtc_evolution_route">';
   for (let i = 0; i < add_route_array.length; i++) {
@@ -146,6 +147,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", debounce(handleScroll, 100));
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.mtc_evolution_qa_show').forEach(function(showElement) {
+    showElement.addEventListener('click', function() {
+        var hiddenElement = this.nextElementSibling;
+        var svgElement = this.querySelector('svg');
+        
+        if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+            hiddenElement.style.display = 'block';
+            svgElement.style.transform = 'rotate(45deg)';
+        } else {
+            hiddenElement.style.display = 'none';
+            svgElement.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+});
+
 
 function evolution_popoup(id) {
   target1 = document.getElementById("mtc_evolution_popup_block_" + id);
@@ -317,3 +336,6 @@ function mtc_evolution_scroll_to_div(to_where) {
     .getElementById(to_where)
     .scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
+
+
