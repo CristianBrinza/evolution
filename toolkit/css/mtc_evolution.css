@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,300,600,700,800");
 :root {
   --hero_border_radius: 30px;
@@ -271,7 +271,26 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
+.mtc_evolution_title_center {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  width: 100%;
+  text-align: center;
+}
 
+.mtc_evolution_subtitle_center{
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.16px;
+width: 100%;
+  text-align: center;
+}
 .mtc_evolution_text {
   font-size: 16px;
   font-style: normal;
@@ -471,6 +490,7 @@ body {
 }
 
 .mtc_evolution_btn {
+  cursor: pointer;
   color: #3b6dfb;
   font-family: "Source Sans Pro";
   font-size: 16px;
@@ -487,17 +507,143 @@ body {
   border-radius: 12px;
   border: 1px solid #3b6dfb;
   width: max-content;
-  transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .mtc_evolution_btn:hover {
   background-color: #bbc4fa;
   border: 1px solid transparent !important;
 }
+
+
+.mtc_evolution_btn_1 {
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #212A55;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /*225%*/letter-spacing: 0.16px;
+  display: flex;
+  padding: 5px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+ /* background: #FFF;*/
+  border: 1px solid #212A55;
+  width: max-content;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.mtc_evolution_btn_1:hover {
+  background-color: #D9DFFF;
+  border: 1px solid transparent !important;
+}
+.mtc_evolution_btn_2 {
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #212A55;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  /*225%*/
+  letter-spacing: 0.16px;
+  display: flex;
+  padding: 5px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+background: #F3F5FF;
+  border: 1px solid transparent;
+  width: max-content;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+.mtc_evolution_btn_2:hover {
+  background-color: #D9DFFF;
+  border: 1px solid transparent !important;
+}
+
+.strikethrough {
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-offset: 1px;
+}
+
+
+.mtc_evolution_qa{
+  width: 100%;
+  border-radius: 15px;
+border: 1px solid #D9DFFF;
+display: flex;
+box-sizing: border-box;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.mtc_evolution_qa:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.mtc_evolution_link{
+  color: #3E94FF;
+text-decoration-line: underline;
+}
+
+.mtc_evolution_qa_title{
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.mtc_evolution_qa_show{
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 63px;
+  padding: 21px 39px 22px 36px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.mtc_evolution_qa_hiden{
+  display: block;
+  padding: 0 39px 22px 36px;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.mtc_evolution_qa_show svg {
+  transition: transform 0.3s ease;
+}
+
+
+
 
 
 #cookie_policy,
