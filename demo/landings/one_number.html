@@ -30,15 +30,27 @@
     #mtc_evolution_hero_img_small_desk{
         height: 515px!important;
     }
+
+    #mtc_evolution_hero_img_small_tablet{
+        height: 400px!important;
+    }
+
+    @media (max-width: 650px) {
+      .mtc_evolution_main{
+           overflow: hidden;
+        }
+    }
+
+
 </style>
     <div id="mtc_evolution_hero_img_small" onclick="window.location='https://my.moldtelecom.md/my-moldtelecom/'"><img alt="hero" id="mtc_evolution_hero_img_small_desk"
         src="../../images/landings/one_number/img0_desktop_ro.png" /> <img alt="hero"
         id="mtc_evolution_hero_img_small_screen"
-        src="../../images/landings/one_number/" /> <img alt="hero"
+        src="../../images/landings/one_number/img0_screen_ro.png" /> <img alt="hero"
         id="mtc_evolution_hero_img_small_tablet"
-        src="../../images/landings/one_number/" /> <img alt="hero"
+        src="../../images/landings/one_number/img0_teblet_ro.png" /> <img alt="hero"
         id="mtc_evolution_hero_img_small_mobile"
-        src="../../images/landings/one_number/" /></div>
+        src="../../images/landings/one_number/img0_mobile_ro.png" /></div>
     
 
 
@@ -47,11 +59,11 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
     #one_number_block_1_img{
         margin-left:-187px;
-        width: calc(50% + 187px- 10px);
+        width: calc(50% + 187px - 10px);
         height: auto;
         margin-top: -132px;
         margin-bottom: -147px;
@@ -100,6 +112,29 @@ font-style: normal;
 font-weight: 450;
 line-height: 26px; /* 108.333% */
 
+    }
+
+    @media (max-width: 940px) {
+        #one_number_block_1{
+            flex-direction: column;
+            align-items: center;
+        }
+        #one_number_block_1_right{
+            width: 100%;
+        }
+        #one_number_block_1_img{
+            width: calc(100% + 187px);
+            margin-bottom: -70px;
+        }
+    }
+    @media (max-width: 650px) {
+
+        #one_number_block_1_img{
+            width: 100%;
+            margin: 0;
+            content: url('../../images/landings/one_number/img10.png');
+            margin-bottom: 10px;
+        }
     }
  </style>
     <div class="mtc_evolution_main">
@@ -162,7 +197,7 @@ height: 2px;
         margin-top: -20px;
     }
     #one_number_block_3_loaded{
-        width: 550px;
+        width: 33%;
         height: 100%;
         background: #0378E5;
     }
@@ -198,6 +233,18 @@ font-size: 24px;
 font-style: normal;
 font-weight: 300;
 line-height: 100%; /* 24px */
+    }
+    @media (max-width: 1300px) {
+        .one_number_block_4_inside{
+        width: 420px;
+        margin-right: 20px;
+    }
+    }
+    @media (max-width: 650px) {
+        .one_number_block_4_inside{
+        width: 580px;
+        margin-right: 20px;
+    }
     }
 </style>
 <div class="carousell_1" id="one_number_block_4">
@@ -263,12 +310,13 @@ line-height: 100%; /* 24px */
           breakpoint: 951,
           settings: {
             slidesToShow: 2,
+           
           },
         },
         {
           breakpoint: 651,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
           },
         },
         {
@@ -312,7 +360,7 @@ height: 2px;
         margin-top: -10px;
     }
     #one_number_block_6_loaded{
-        width: 850px;
+        width: 70%;
         height: 100%;
         background: #0378E5;
     }
@@ -331,6 +379,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 60px;
+overflow: hidden;
     }
     #one_number_block_7_img{
         width: calc(50% - 10px + 119px);
@@ -362,6 +411,34 @@ font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 100%; /* 16px */
+    }
+
+    @media (max-width: 940px) {
+        #one_number_block_7{
+            flex-direction: column;
+        }
+        #one_number_block_7_left{
+width: 100%;
+        }
+        #one_number_block_7_img{
+width: calc(100% + 119px);
+margin-top: 10px;
+        }
+    }
+
+
+    @media (max-width: 650px) {
+        #one_number_block_7_img{
+            content:url('../../images/landings/one_number/img11.png');
+width:100%;
+margin: 0;
+margin-top: 10px;
+        }
+    }
+    @media (max-width: 450px) {
+        #one_number_block_5{
+            font-size: 42px;
+        }
     }
 </style>
 <div id="one_number_block_7">
@@ -401,7 +478,7 @@ După conectarea smartwatch-ului, vei avea posibilitatea să:
 
 <style>
     #one_number_block_8{
-
+        overflow: hidden;
         width: 100%;
         background: #F4F7FF;
         padding:  30px 0;
@@ -539,6 +616,44 @@ align-items: flex-start;
         display: flex;
         justify-content: flex-end;
         margin-top: 70px;
+    }
+
+    @media (max-width: 1300px) {
+        #one_number_block_8_2 {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+} 
+#one_number_block_8_2_right{
+    width: 100%;
+}
+#one_number_block_8_2_left{
+width: 100%;
+}
+#one_number_block_8_2_left_img{
+margin: 0;
+width: 100%;
+}
+#one_number_block_8_2_right_top_block_bottom_btn {
+    justify-content: center;
+}
+.one_number_block_8_2_right_top_block{
+    width: calc(50% - 10px);
+}
+    }
+
+    @media (max-width: 650px) {
+        .one_number_block_8_2_right_top_block_bottom_block_inside{
+            height: 95px;
+        }
+    }
+    @media (max-width: 400px) {
+        .one_number_block_8_2_right_top_block_bottom_block_inside{
+            height: 105px;
+        }
     }
 </style>
 <div id="one_number_block_8_2">
@@ -728,6 +843,25 @@ font-weight: 400;
 line-height: 100%; /* 24px */
 margin-top: 20px;
 max-width: 580px;
+margin-bottom: 20px;
+        }
+
+
+        @media (max-width: 1300px) {
+     
+            #one_number_block_9_videos{
+flex-direction: column;
+align-items: center;
+            }
+        }
+
+        @media (max-width: 650px) {
+            #one_number_block_9_videos iframe{
+           width: 100%;
+        }
+        .one_number_block_9_videos_block{
+            width: 100%;
+        }
         }
     </style>
     <div id="one_number_block_9_1">
@@ -738,14 +872,14 @@ max-width: 580px;
 
 <div id="one_number_block_9_videos">
 
-   <div>
+   <div class="one_number_block_9_videos_block">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="one_number_block_9_videos_text">
         Rămâi conectat oriunde te-ai afla, fără să depinzi de telefon, în orice situație.
     </div>
    </div>
 
-   <div>
+   <div class="one_number_block_9_videos_block">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="one_number_block_9_videos_text">
         Cum activezi serviciul One Number
@@ -883,6 +1017,12 @@ font-style: normal;
 font-weight: 500;
 line-height: 100%; /* 52px */
     }
+
+    @media (max-width: 940px) {
+        #one_number_block_11{
+            margin-top: 40px;
+        }
+    }
 </style>
 <div id="one_number_block_11">
 
@@ -897,7 +1037,7 @@ line-height: 100%; /* 52px */
             
         }
         #one_number_block_11_1_loaded{
-            width: 750px;
+            width: 65%;
             height: 100%;
             background: #0378E5;
         }
@@ -998,6 +1138,34 @@ margin-right: -100px;
     }
     #one_number_block_12_inside{
         flex-direction: row;
+    }
+    @media (max-width: 1300px) {
+    #one_number_block_12_inside{
+        flex-direction: column;
+        align-items: center;
+    }
+    #one_number_block_12_left{
+        width: 100%;
+       
+    }
+    #one_number_block_12_inside{
+        padding-top: 60px;
+    }
+    #one_number_block_12_img{
+        width: 100%;
+margin-right: 0;
+    }
+    }
+
+    @media (max-width: 420px) {
+        #one_number_block_12_btn_app{
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+        }
+        #one_number_block_12_left {
+    align-items: center;
+}
     }
 </style>
     <div id="one_number_block_12">
