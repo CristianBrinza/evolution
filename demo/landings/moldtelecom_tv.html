@@ -30,7 +30,7 @@
         </style>
    <a id="mtc_evolution_hero_img_small_href" href="https://mtc.md/my-mtc">
    
- <div id="mtc_evolution_hero_img_small" style="cursor: pointer;"><img alt="hero" id="mtc_evolution_hero_img_small_desk" src="../../images/landings/mtc_tv/img0_desktop_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_screen" src="../../images/landings/md_ix/hero_screen_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/md_ix/hero_tablet_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_mobile" src="../../images/landings/md_ix/hero_mobile_ro.png" /></div>
+ <div id="mtc_evolution_hero_img_small" style="cursor: pointer;"><img alt="hero" id="mtc_evolution_hero_img_small_desk" src="../../images/landings/mtc_tv/hero_desktop_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_screen" src="../../images/landings/mtc_tv/hero_screen_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/mtc_tv/hero_tablet_ro.png" /> <img alt="hero" id="mtc_evolution_hero_img_small_mobile" src="../../images/landings/mtc_tv/hero_mobile_ro.png" /></div>
 </a>
     <style>
         #mtc_tv_subriptions{
@@ -119,10 +119,11 @@ font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 15px;
+max-width: 92%;
 }
 .mtc_tv_card_option{
     display: flex;
-    width: 180px;
+    width: 190px;
 }
 .mtc_tv_card_option svg{
     margin: 6px 8px 0 0;
@@ -133,17 +134,96 @@ height: 8px;
     display: flex;
     gap:20px;
 }
+#mtc_tv_card_carousell_svg{
+    display: none;
+}
+#mtc_evolution_title_center_br{
+    display: none;
+}
+
+@media (max-width: 940px) {
+    #mtc_tv_card_carousell_svg{
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+    .mtc_tv_card_carousell {
+        overflow: hidden;
+        width: 100%;
+        overflow-x: auto; /* Allows horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        padding-bottom: 10px;
+        position: relative; /* Needed to position the fade-out effect */
+    }
+
+    .mtc_tv_card_carousell::-webkit-scrollbar {
+    height: 5px;
+    
+   
+   
+
+    }
+    .mtc_tv_card_carousell::-webkit-scrollbar-thumb{
+background: #dae0ff;
+border-radius: 100px;
+    }
+    .mtc_tv_card{
+            width: 270px;
+            min-width: 270px;
+padding: 30px 20px;
+        }
+        .mtc_tv_card_carousell {
+    display: flex;
+    gap: 15px;
+    
+    
+}
+}
+@media (max-width: 650px) {
+    .mtc_tv_card{
+            width: 270px;
+            min-width: 270px;
+padding: 18px;
+        }
+        .mtc_tv_card_carousell {
+    display: flex;
+    gap: 159x;
+
+}
+}
+
+@media (max-width: 525px) {
+#mtc_evolution_title_center_br{
+    display: block;
+}
+#mtc_tv_card_carousell_svg{
+    top: 75px;
+
+}
+}
+
 
 
     </style>
     <div class="mtc_evolution_main" >
-        <div id="mtc_tv_subriptions"><div>
-        <div class="mtc_evolution_title_center" style="color:#212A55;">Activează gratuit Moldtelecom TV</div>
+        <div id="mtc_tv_subriptions" style="position: relative;">
+            <div>
+        <div class="mtc_evolution_title_center" style="color:#212A55;">Activează gratuit <br id="mtc_evolution_title_center_br">Moldtelecom TV</div>
 <div class="mtc_evolution_subtitle_center">
     conectand Internet fibră + Televiziune
 </div>
 </div>
+<svg id="mtc_tv_card_carousell_svg"width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.75 1L28.5 7.75L21.75 14.5" stroke="#D3DAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.75 14.5L1 7.75L7.75 1" stroke="#D3DAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+    
 <div class="mtc_tv_card_carousell">
+   
+        
     <div class="mtc_tv_card">
         <div class="mtc_tv_card_name_block">
 
@@ -392,12 +472,66 @@ padding-right: 14px;
 .mtc_tv_download_text_devices span{
    width: 180px;
 }
+
+#mtc_tv_download_br{
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+    #mtc_tv_download_img{
+display:none;
+    }
+    #mtc_tv_download_left {
+    width: 100%;
+}
+}
+
+@media (max-width: 940px) {
+    #mtc_tv_download_text_devices_block{
+        width: 100%;
+    }
+    .mtc_tv_download_text_devices {
+    width: calc((100% - 20px) / 2);
+    box-sizing: border-box;
+}
+#mtc_tv_download_br{
+    display: block;
+}
+#mtc_tv_download_left{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+}
+
+@media (max-width: 630px) {
+   .mtc_tv_download_text_devices{
+width: 100%;
+max-width: 280px;
+    }
+    #mtc_tv_download_left {
+    align-items: center;
+}
+#mtc_tv_download_text_devices_block {
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+}
+#mtc_tv_download_left_btns a svg{
+   width: 140px;
+
+}
+#mtc_tv_download_left_btns {
+    justify-content: center;
+}
+
+}
 </style>
 
 <div id="mtc_tv_download">
 <div id="mtc_tv_download_left">
     <div id="mtc_tv_download_text">
-        <span id="mtc_tv_download_text_title">Descoperă universul Moldtelecom TV</span><br>
+        <span id="mtc_tv_download_text_title">Descoperă universul<br id="mtc_tv_download_br"> Moldtelecom TV</span><br>
             <span id="mtc_tv_download_text_subtitle">
                 Ai acces la Moldtelecom TV de pe orice device
             </span>
@@ -646,6 +780,7 @@ padding-right: 14px;
     align-items: center;
     padding-left: 50px;
     box-sizing: border-box;
+    position: relative;
 }
 
 #mtc_tv_tutorial_text {
@@ -852,6 +987,67 @@ top:7px;
 left: 7px;
 
 }
+
+@media (max-width: 1300px) {
+#mtc_tv_tutorial_video_block {
+    transform: scale(0.75);
+    position: absolute;
+    right: 0;
+}
+#mtc_tv_tutorial_text {
+    max-width: 300px;
+}
+}
+
+@media (max-width: 940px) {
+    #mtc_tv_tutorial {
+    flex-direction: column;
+    height:450px;
+    padding: 0;
+}
+#mtc_tv_tutorial_video_block {
+    right: auto;
+    bottom: 0;
+}
+#mtc_tv_tutorial_text{
+    text-align: center;
+    margin-top: 20px;
+}
+.mtc_tv_tutorial_video_block_float_4{
+    width: 30px;
+    height: 30px;
+}
+}
+
+@media (max-width: 700px) {
+    #mtc_tv_tutorial_video_block{
+        transform: scale(0.70);
+    }
+}
+@media (max-width: 520px) {
+    #mtc_tv_tutorial_video_block{
+        transform: scale(0.60);
+    }
+    #mtc_tv_tutorial {
+        height: 425px;
+    }
+}
+@media (max-width: 520px) {
+    #mtc_tv_tutorial_video_block{
+        transform: scale(0.60);
+    }
+    #mtc_tv_tutorial {
+        height: 425px;
+    }
+}
+@media (max-width: 440px) {
+    #mtc_tv_tutorial_video_block{
+        transform: scale(0.50);
+    }
+    #mtc_tv_tutorial {
+        height: 400px;
+    }
+}
 </style>
 <div id="mtc_tv_tutorial">
     <div id="mtc_tv_tutorial_text">
@@ -925,6 +1121,12 @@ line-height: 22px; /* 137.5% */
 width: 90%;
 margin: 0 5% 0;
     }
+
+    @media (max-width: 650px) {
+.carousell_1_card {
+       width: 280px;
+   }
+    }
 </style>
 <div>
     <div class="mtc_evolution_title_center" style="color:#212A55;">Reinventăm modul în care te uiți la TV</div>
@@ -997,7 +1199,7 @@ margin: 0 5% 0;
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 3000,
       variableWidth: true,
       responsive: [
         {
@@ -1015,15 +1217,11 @@ margin: 0 5% 0;
         {
           breakpoint: 651,
           settings: {
-            slidesToShow: 2,
-          },
-        },
-          {
-          breakpoint: 551,
-          settings: {
-            variableWidth: false,
-            slidesToShow: 1,
-          },
+                slidesToShow: 1,
+                                    centerMode: true,
+                                    centerPadding: '60px',
+                                    arrows: false,
+              },
         },
       ],
     });
@@ -1093,7 +1291,6 @@ align-items: center;
        margin-right: 50px;
        display: flex !important;
    flex-direction: column;
-   gap: 20px;
       
    }
     }
@@ -1108,22 +1305,30 @@ align-items: center;
 
     @media (max-width: 650px) {
         .mtc_tv_features_card {
-    width: 35vw;
+    width: 38vw;
   
 }
-
-
     }
 
     @media (max-width: 550px) {
         .mtc_tv_features_card {
-    width: 60vw;
-    margin-right: 0;
+    width: 65vw;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0;
+    margin-right: 0;
+    padding-left: calc(90vw - 65vw - 30px);
 }
 #mtc_tv_features{
     padding: 25px 15px;
+}
+    }
+    @media (max-width: 430px) {
+        .mtc_tv_features_card {
+    width: 80vw;
+    box-sizing: border-box;
+    padding: 0;
+    margin-right: 0;
+    padding-left: calc(90vw - 80vw - 30px);
 }
     }
 </style>
@@ -1244,14 +1449,8 @@ align-items: center;
             {
               breakpoint: 651,
               settings: {
-                slidesToShow: 2,
-              },
-            },
-              {
-              breakpoint: 551,
-              settings: {
-                variableWidth: false,
                 slidesToShow: 1,
+        
               },
             },
           ],
@@ -1327,6 +1526,39 @@ letter-spacing: 0.16px;
     height: 100%;
     display: flex;
 }
+
+@media (max-width: 1300px) {
+    #mtc_evolution_app_img_qr{
+        display: none;
+    }
+    #mtc_evolution_app{
+        position: relative;
+    }
+    #mtc_evolution_app_img_block{
+        position: absolute;
+        right: 0;
+    }
+    #mtc_evolution_app {
+    justify-content: space-between;
+}
+}
+
+@media (max-width: 940px) {
+    #mtc_evolution_app {
+    flex-direction: column;
+    align-items: center;
+}
+#mtc_evolution_app_img_block{
+    position: relative;
+}
+#mtc_evolution_app_text_subtitle {
+    text-align: center;
+}
+#mtc_evolution_app_text {
+    align-items: center;
+}
+}
+
 
 </style>
 <div id="mtc_evolution_app" class="mtc_evolution_glow_effect">
