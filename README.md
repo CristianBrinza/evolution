@@ -10,9 +10,10 @@
 This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products.<br>
 Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 ### Landings:
-- [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/md_ix.html) | [RU](https://cristianbrinza.github.io/evolution/demo/landings/md_ix_ru.html)
+- [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/mdix.html) | [RU](https://cristianbrinza.github.io/evolution/demo/landings/mdix_ru.html)
 - [Home](https://cristianbrinza.github.io/evolution/demo/landings/home.html)
-- [Moldtelecom TV](https://cristianbrinza.github.io/evolution/demo/landings/moldtelecom_tv.html)
+- [Moldtelecom TV](https://cristianbrinza.github.io/evolution/demo/landings/moldtelecom-tv.html)
+- [Moldtelecom TV](https://cristianbrinza.github.io/evolution/demo/landings/despre-companie.html)
 
 
 ### Directmail:
