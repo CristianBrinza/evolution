@@ -172,46 +172,63 @@
                 display: none;
             }
 
+            .mtc_tv_card_carousell {
+      -webkit-overflow-scrolling: touch;
+              }
+  .mtc_tv_card_carousell::-webkit-scrollbar {
+      height: 5px;
+  }
+
+  .mtc_tv_card_carousell::-webkit-scrollbar-thumb {
+      background: #dae0ff;
+      border-radius: 100px;
+  }
+            ::-webkit-scrollbar {
+width: 0px;
+
+}
+
+.mtc_tv_card_carousell {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Ensures horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+.mtc_tv_card_carousell::-webkit-scrollbar {
+    height: 0px;
+}
+
+.mtc_tv_card_carousell::-webkit-scrollbar-thumb {
+    background: #dae0ff;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+
+
             @media (max-width: 940px) {
+
+            .mtc_tv_card_carousell {
+    overflow: hidden;
+    width: 100%;
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+}
                 #mtc_tv_card_carousell_svg {
                     display: block;
                     position: absolute;
                     top: 45px;
                     right: 0;
-                }
-
-                .mtc_tv_card_carousell {
-                    overflow: hidden;
-                    width: 100%;
-                    overflow-x: auto;
-                    /* Allows horizontal scrolling */
-                    -webkit-overflow-scrolling: touch;
-                    /* Smooth scrolling for iOS */
-                    padding-bottom: 10px;
-                }
-
-                /* Customize the scrollbar for WebKit browsers (iOS, Android, Safari, Chrome) */
-                .mtc_tv_card_carousell::-webkit-scrollbar {
-                    height: 5px;
-                }
-
-                .mtc_tv_card_carousell::-webkit-scrollbar-thumb {
-                    background: #dae0ff;
-                    border-radius: 100px;
-                }
-
-                /* Ensure the scrollbar is visible in iOS */
-                .mtc_tv_card_carousell {
-                    -webkit-overflow-scrolling: touch;
-                    /* Ensure smooth scrolling for iOS */
-                }
-
-                /* Additional fix for Android */
-                .mtc_tv_card_carousell {
-                    scrollbar-color: #dae0ff transparent;
-                    /* Firefox support */
-                    scrollbar-width: thin;
-                    /* Firefox support */
                 }
 
                 .mtc_tv_card {
@@ -233,10 +250,12 @@
                     width: 270px;
                     min-width: 270px;
                     padding: 18px;
+                    
                 }
 
                 .mtc_tv_card_carousell {
                     display: flex;
+                    overflow-x: auto;
 
                 }
             }
@@ -475,6 +494,104 @@
                     </div>
 
                 </div>
+                <style>
+                    #mtc_tv_subriptions {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mtc_tv_card_carousell {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Ensures horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+#custom-scrollbar {
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+
+#custom-scrollbar-thumb {
+    height: 100%;
+    background: #dae0ff;
+    border-radius: 4px;
+    width: 100px; /* Initial width, this will be updated by JS */
+    position: absolute;
+    left: 0;
+}
+
+/* Additional styles for cards and other elements */
+.mtc_tv_card {
+    display: flex;
+    width: 280px;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 12px;
+    background: #F3F5FF;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Add necessary media queries */
+@media (max-width: 940px) {
+    .mtc_tv_card_carousell {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mtc_tv_card_carousell {
+        padding-bottom: 10px;
+    }
+}
+
+                </style>
+                <div id="custom-scrollbar">
+                    <div id="custom-scrollbar-thumb"></div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const carousell = document.querySelector('.mtc_tv_card_carousell');
+                        const scrollbar = document.getElementById('custom-scrollbar');
+                        const thumb = document.getElementById('custom-scrollbar-thumb');
+                
+                        function updateScrollbar() {
+                            const carousellWidth = carousell.scrollWidth;
+                            const viewportWidth = carousell.clientWidth;
+                            const scrollbarWidth = scrollbar.clientWidth;
+                            const thumbWidth = Math.max((viewportWidth / carousellWidth) * scrollbarWidth, 50); // Minimum thumb width
+                
+                            thumb.style.width = `${thumbWidth}px`;
+                            thumb.style.left = `${(carousell.scrollLeft / carousellWidth) * scrollbarWidth}px`;
+                        }
+                
+                        carousell.addEventListener('scroll', updateScrollbar);
+                
+                        scrollbar.addEventListener('click', function (e) {
+                            const scrollbarRect = scrollbar.getBoundingClientRect();
+                            const clickX = e.clientX - scrollbarRect.left;
+                            const carousellWidth = carousell.scrollWidth;
+                            const viewportWidth = carousell.clientWidth;
+                
+                            carousell.scrollLeft = (clickX / scrollbarRect.width) * carousellWidth - viewportWidth / 2;
+                        });
+                
+                        window.addEventListener('resize', updateScrollbar);
+                        updateScrollbar(); // Initial call to set up the scrollbar
+                    });
+                </script>
+                
+
+
                 <div class="mtc_evolution_btn_2" onclick="evolution_popoup('mtc_evolution_popup_block_f1')">
                     <span>Detalii Oferta</span> <svg fill="none" height="24" viewbox="0 0 24 24" width="24"
                         xmlns="http://www.w3.org/2000/svg">
