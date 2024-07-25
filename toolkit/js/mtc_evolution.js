@@ -163,11 +163,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+document.querySelectorAll('.mtc_evolution_popup_block').forEach(block => {
+  block.setAttribute('onclick', `evolution_popoup('${block.id}')`);
+  
+  let svgElement = `<svg class="mtc_evolution_popup_close_button" onclick="evolution_popoup('${block.id}')" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 19.5L19.425 4.5M19.5 19.5L4.575 4.5" stroke="#9DAEFF" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
+  block.querySelector('.mtc_evolution_popup_block_inside').insertAdjacentHTML('beforeend', svgElement);
+  block.querySelector('.mtc_evolution_popup_close_button').insertAdjacentHTML('beforeend', svgElement);
+  
+  block.querySelector('.mtc_evolution_popup_block_inside').addEventListener('click', (event) => {
+      event.stopPropagation();
+  });
+});
+
+
+
 });
 
 
 function evolution_popoup(id) {
-  target1 = document.getElementById("mtc_evolution_popup_block_" + id);
+  target1 = document.getElementById(id);
   var inside = target1.querySelector(".mtc_evolution_popup_block_inside");
   if (target1.style.display === "none" || target1.style.display === "") {
     target1.style.display = "flex";
@@ -336,6 +353,7 @@ function mtc_evolution_scroll_to_div(to_where) {
     .getElementById(to_where)
     .scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
 
 
 
