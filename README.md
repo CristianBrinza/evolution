@@ -13,7 +13,9 @@ Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 - [MD-IX](https://cristianbrinza.github.io/evolution/demo/landings/mdix.html) | [RU](https://cristianbrinza.github.io/evolution/demo/landings/mdix_ru.html)
 - [Home](https://cristianbrinza.github.io/evolution/demo/landings/home.html)
 - [Moldtelecom TV](https://cristianbrinza.github.io/evolution/demo/landings/moldtelecom-tv.html)
-- [Moldtelecom TV](https://cristianbrinza.github.io/evolution/demo/landings/despre-companie.html)
+- [Despre Companie](https://cristianbrinza.github.io/evolution/demo/landings/despre-companie.html)
+- [Cinema Online](https://cristianbrinza.github.io/evolution/demo/landings/cinema-online.html)
+- [Echipamente Wifi](https://cristianbrinza.github.io/evolution/demo/landings/echipamente-wifi.html)
 
 
 ### Directmail:
