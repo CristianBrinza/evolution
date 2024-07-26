@@ -224,6 +224,13 @@ body {
   }
 }
 
+
+@media (max-width: 350px) {
+  #mtc_evolution_hero_img_small_mobile {
+    height: 250px;
+}
+}
+
 /* route style  */
 #mtc_evolution_route {
   width: 100%;

@@ -1,0 +1,361 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Cinema Online ", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small" style="cursor: pointer;"><img alt="hero"
+                id="mtc_evolution_hero_img_small_desk"
+                src="../../images/landings/cinema_online/hero_desktop_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_screen"
+                src="../../images/landings/cinema_online/hero_screen_ro.png" /> <img alt="hero"
+                id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/cinema_online/hero_tablet_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_mobile"
+                src="../../images/landings/cinema_online/hero_mobile_ro.png" />
+        </div>
+
+
+        <div class="mtc_evolution_main">
+            <div>
+            <div class="mtc_evolution_title_center" style="color:#212A55;">
+                Top Filme, Seriale și Desene Animate
+            </div>
+            <div class="mtc_evolution_subtitle_center">
+                doar la Moldtelecom
+            </div>
+           
+            <style>
+                .carousell_1 {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                .carousell_1_card {
+                    width: 280px;
+                    height: 372px;
+                    border-radius: 12px;
+                    background: #F3F5FF;
+                    margin-right: 20px;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+
+               
+
+                @media (max-width: 650px) {
+                    .carousell_1_card {
+                        width: 280px;
+                    }
+                }
+
+                </style>
+            <div class="carousell_1">
+                <div class="carousell_1_card">
+                    Disponibil oriunde
+                    </div>
+                    <div class="carousell_1_card">
+                        Disponibil oriunde
+                        </div>
+                        <div class="carousell_1_card">
+                            Disponibil oriunde
+                            </div>
+                    </div>
+                
+            </div>
+
+            <script>
+                $('.carousell_1').slick({
+                    arrows: true,
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    variableWidth: true,
+                    responsive: [
+                        {
+                            breakpoint: 1351,
+                            settings: {
+                                slidesToShow: 3,
+                            },
+                        },
+                        {
+                            breakpoint: 951,
+                            settings: {
+                                slidesToShow: 2,
+                            },
+                        },
+                        {
+                            breakpoint: 651,
+                            settings: {
+                                slidesToShow: 1,
+                                centerMode: true,
+                                centerPadding: '60px',
+                                arrows: false,
+                            },
+                        },
+                    ],
+                });
+
+
+            </script>
+
+
+<div>
+    <div class="mtc_evolution_title_center" style="color:#212A55;">
+       Reviews and feedback
+    </div>
+
+<style>
+    .carousell_2{
+        margin-top: 10px;
+        height: 100px;
+        min-height: 135px;
+    }
+    .carousell_2_card{
+        border-radius: 8px;
+border: 1px solid #D9DFFF;
+background: #FFF;
+width: 380px;
+padding: 19px 20px 18px 20px;
+box-sizing: border-box;
+display: flex!important;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 8px;
+margin-right: 20px;
+    }
+    .carousell_2_card_stars{
+        color: #000;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.12px;
+display: flex;
+align-items: center;
+    justify-content: flex-start;
+    }
+    .carousell_2_card_stars span{
+        margin-left: 5px;
+    }
+    .carousell_2_card_avatar{
+        height: 22px;
+        width: auto;
+    }
+    .carousell_2_card_logo{
+        height: 22px;
+        width: auto;
+    }
+    .carousell_2_card_title {
+    display: flex;
+    color: #222;
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.carousell_2_card_title_left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+gap:8px;
+}
+ 
+.carousell_2_card_comment{
+    color: #222;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.12px;
+}
+
+</style>
+    <div class="carousell_2">
+    </div>
+    <script>
+
+
+let comments = [
+    {
+        name: "Constantin  Bezdrighin1",
+        stars: 5,
+        platform:'megogo',
+        text:"Since I have heard about Megogo I have been amazed at the amount of content that is available & the continued grow! THE ENGLISH OPTIONS ON THE ANDROID TV APP NOW WORKS!"
+    },
+    {
+        name: "Constantin  Bezdrighin2",
+        stars: 5,
+        platform:'ivi',
+        text:"Since I have heard about Megogo I have been amazed at the amount of content that is available & the continued grow! THE ENGLISH OPTIONS ON THE ANDROID TV APP NOW WORKS!"
+    },
+    {
+        name: "Constantin  Bezdrighin3",
+        stars: 1,
+        platform:'megogo',
+        text:"From the moment I found out about Megogo, I've been astonished by the extensive content library and its continuous growth! The English features on the Android TV app are now operational!"
+    },
+    {
+        name: "Constantin  Bezdrighin4",
+        stars: 2,
+        platform:'premier',
+        text:"Upon hearing about Megogo, I was amazed at the immense variety of content and its constant development! The English options on the Android TV app are now up and running!"
+    },
+    {
+        name: "Constantin  Bezdrighin5",
+        stars: 3,
+        platform:'megogo',
+        text:"The English options on the Android TV app are now up and running!"
+    },
+];
+
+
+
+
+
+var slideIndex = 0;
+
+window.onload = function() {
+
+    // Fisher-Yates Shuffle Algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+let shuffledComments = shuffleArray(comments);
+
+shuffledComments.forEach(comment => {
+
+  let new_comment= ' <div class="carousell_2_card"><div class="carousell_2_card_title"> <div class="carousell_2_card_title_left">'+
+    ' <img class="carousell_2_card_avatar" src="../../images/landings/cinema_online/img4.png" alt="Avarar">'+
+    '<span>'+comment.name+'</span></div>'
+
+    if (comment.platform === "megogo"){
+        new_comment+='<img class="carousell_2_card_logo" src="../../images/landings/cinema_online/img5.png" alt="Cinema-Online">'
+    }
+    else if (comment.platform === "premier"){   
+        new_comment+='<img class="carousell_2_card_logo" src="../../images/landings/cinema_online/img6.png" alt="Cinema-Online">'
+    }
+    else if (comment.platform === "ivi"){   
+        new_comment+='<img class="carousell_2_card_logo" src="../../images/landings/cinema_online/img7.png" alt="Cinema-Online">'
+    }
+ 
+ new_comment+='</div><div class="carousell_2_card_stars">'
+
+for(i=0; i<comment.stars;i++)
+{
+    new_comment+='<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.214 7.46543L11.5832 9.73554L12.3847 13.1305C12.429 13.3148 12.4176 13.508 12.352 13.6858C12.2865 13.8637 12.1697 14.0181 12.0164 14.1296C11.8631 14.241 11.6803 14.3046 11.4909 14.3122C11.3015 14.3198 11.1141 14.2711 10.9524 14.1723L8.00005 12.3552L5.04594 14.1723C4.88425 14.2705 4.69709 14.3188 4.50805 14.3109C4.319 14.303 4.13651 14.2394 3.98356 14.128C3.8306 14.0166 3.71403 13.8624 3.64851 13.6849C3.58299 13.5074 3.57145 13.3145 3.61536 13.1305L4.4198 9.73554L1.78899 7.46543C1.64593 7.34179 1.54246 7.17874 1.49152 6.99665C1.44057 6.81456 1.4444 6.62149 1.50253 6.44156C1.56066 6.26163 1.6705 6.10281 1.81835 5.98494C1.9662 5.86707 2.1455 5.79537 2.33386 5.77879L5.78315 5.50051L7.11376 2.28039C7.18578 2.10489 7.30836 1.95478 7.46592 1.84913C7.62348 1.74348 7.80889 1.68707 7.99859 1.68707C8.18829 1.68707 8.3737 1.74348 8.53126 1.84913C8.68882 1.95478 8.8114 2.10489 8.88342 2.28039L10.2134 5.50051L13.6627 5.77879C13.8515 5.79475 14.0313 5.86605 14.1797 5.98376C14.3281 6.10147 14.4384 6.26035 14.4969 6.4405C14.5554 6.62065 14.5594 6.81405 14.5085 6.99648C14.4575 7.1789 14.3539 7.34224 14.2105 7.46602L14.214 7.46543Z" fill="#212A55"/></svg>'
+    }
+for(i=0; i<(5-comment.stars);i++)
+{
+     new_comment+='<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.7749 6.96142C13.7623 6.9723 13.7502 6.98358 13.7386 6.99521L11.1478 9.2308C10.9596 9.39319 10.8773 9.6468 10.9345 9.88872L11.736 13.2836L11.7365 13.286C11.75 13.3422 11.7465 13.4011 11.7266 13.4552C11.7066 13.5094 11.671 13.5565 11.6243 13.5904C11.5776 13.6244 11.5219 13.6437 11.4642 13.6461C11.4067 13.6484 11.3499 13.6337 11.3007 13.6038C11.3005 13.6037 11.3003 13.6035 11.3001 13.6034L8.34954 11.7875C8.13531 11.6556 7.8651 11.6556 7.65084 11.7874L4.69976 13.6026C4.69941 13.6028 4.69907 13.603 4.69872 13.6032C4.6497 13.6327 4.59307 13.6472 4.53587 13.6448C4.47827 13.6424 4.42267 13.623 4.37607 13.5891C4.32947 13.5551 4.29395 13.5082 4.27399 13.4541C4.25403 13.4 4.25051 13.3412 4.26389 13.2851L4.26412 13.2842L5.06857 9.88925C5.12593 9.64718 5.04374 9.39332 4.85539 9.2308L2.22498 6.96104C2.22495 6.96102 2.22493 6.961 2.22491 6.96098C2.18099 6.923 2.14924 6.87294 2.13359 6.81703C2.11794 6.76109 2.11912 6.70177 2.13698 6.6465C2.15483 6.59122 2.18858 6.54243 2.234 6.50622C2.27897 6.47037 2.33341 6.44842 2.39064 6.44304L5.83682 6.16501C6.08644 6.14488 6.30371 5.98655 6.39935 5.7551L7.72996 2.53499L7.73057 2.5335C7.75239 2.48033 7.78953 2.43485 7.83726 2.40284C7.885 2.37083 7.94118 2.35374 7.99865 2.35374C8.05613 2.35374 8.1123 2.37083 8.16004 2.40284C8.20777 2.43485 8.24491 2.48033 8.26673 2.5335L8.26731 2.53489L9.59733 5.75501C9.69295 5.9865 9.91024 6.14487 10.1599 6.16501L13.6066 6.44308C13.6069 6.44311 13.6072 6.44313 13.6075 6.44316C13.6652 6.44821 13.7201 6.47007 13.7654 6.50605C13.811 6.54221 13.8449 6.59103 13.8629 6.64637C13.8809 6.70171 13.8821 6.76113 13.8664 6.81717C13.8508 6.87321 13.8189 6.92339 13.7749 6.96142Z" stroke="#D9DFFF" stroke-width="1.33333" stroke-linejoin="round"/></svg>'
+    }
+
+              new_comment+= '<span>'+comment.stars+'/5</span>'+
+                        '</div>'+
+' <div class="carousell_2_card_comment">'+
+    comment.text+
+                ' </div>'+
+            ' </div>'
+
+
+    slideIndex++;
+    $('.carousell_2').slick('slickAdd', new_comment);
+
+});
+};
+
+        $('.carousell_2').slick({
+            arrows: true,
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1351,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 951,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 651,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        arrows: false,
+                    },
+                },
+            ],
+        });
+
+        
+    
+
+    </script>
+</div>
+
+            <div id="mtc_evolution_footer_text"></div>
+        </div>
+
+        <div id="mtc_evolution_footer"></div>
+
+
+
+
+    </div>
+</body>
+
+</html>

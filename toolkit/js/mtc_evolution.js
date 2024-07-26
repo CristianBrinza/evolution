@@ -92,6 +92,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+    fetch("../../toolkit/html/mtc_evolution_app.html")
+    .then((response) => response.text())
+    .then((data) => {
+      const footerElement = document.getElementById("mtc_evolution_app");
+      // Check if the element exists
+      if (footerElement) {
+        footerElement.innerHTML = data;
+        mtc_evolution_set_footer();
+        mtc_evolution_hideoldfooter();
+      }
+    });
+
   const elements = document.querySelectorAll(".mtc_evolution_glow_effect");
 
   elements.forEach((element) => {
