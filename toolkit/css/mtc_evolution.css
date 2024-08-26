@@ -516,7 +516,7 @@ width: 100%;
   font-family: "Source Sans Pro";
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 36px;
   /*225%*/letter-spacing: 0.16px;
   display: flex;
@@ -547,7 +547,7 @@ width: 100%;
   font-family: "Source Sans Pro";
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 36px;
   /*225%*/letter-spacing: 0.16px;
   display: flex;
@@ -607,7 +607,17 @@ background: #F3F5FF;
   text-decoration-offset: 1px;
 }
 
-
+.select_regions .select_box {
+  background-color: rgb(87 86 86 / 70%);
+    backdrop-filter: blur(7px);
+}
+.select_box .head3{
+  font-size: 32px!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: 32px!important;
+    text-align: center!important;
+}
 .mtc_evolution_qa{
   width: 100%;
   border-radius: 15px;

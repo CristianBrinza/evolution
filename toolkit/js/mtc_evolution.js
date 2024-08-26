@@ -95,12 +95,21 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("../../toolkit/html/mtc_evolution_app.html")
     .then((response) => response.text())
     .then((data) => {
-      const footerElement = document.getElementById("mtc_evolution_app");
+      const appElement = document.getElementById("mtc_evolution_app");
       // Check if the element exists
-      if (footerElement) {
-        footerElement.innerHTML = data;
-        mtc_evolution_set_footer();
-        mtc_evolution_hideoldfooter();
+      if (appElement) {
+        appElement.innerHTML = data;
+      }
+    });
+
+    fetch("../../toolkit/html/mtc_evolution_call.html")
+    .then((response) => response.text())
+    .then((data) => {
+      const callElement = document.getElementById("mtc_evolution_call");
+      // Check if the element exists
+      if (callElement) {
+        callElement.innerHTML = data;
+        mtc_evolution_form_comanda_new('mtc_evolution_call_form', 'call_banner', 'campain[back2school_2024]', ' ');
       }
     });
 

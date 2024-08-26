@@ -1,0 +1,1471 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+
+  
+var r_change = r_change || {};
+r_change.promo = typeof r_change.promo !== 'undefined' ? r_change.promo : true;
+function togglePromoAndTest() {
+  r_change.promo = !r_change.promo;
+  change_offer();
+  console.log(`Current r_change.promo: ${r_change.promo}`);
+  regio=`${r_change.promo}`
+}
+
+
+r_change.show_popup = function() {
+    // Get the first element with the class 'region_change'
+    let element = document.getElementsByClassName('region_change')[0];
+    
+    if (element) {
+        // Execute your custom function
+        togglePromoAndTest();
+
+        // Update the inner text of the element with the value of 'regio'
+        element.innerText = regio;
+    }
+};
+
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Promo", ""], ["Net + TV + Mobil", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small" style="cursor: pointer;">
+            <img alt="hero" id="mtc_evolution_hero_img_small_desk"      src="../../images/landings/" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_screen"    src="../../images/landings/" /> 
+            <img alt="hero" id="mtc_evolution_hero_img_small_tablet"    src="../../images/landings/" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_mobile"    src="../../images/landings/" />
+        </div>
+
+        <style>
+            #mtc_evolution_hero_img_small_desk {
+    height: 480px;
+}
+        </style>
+
+        <div class="mtc_evolution_main">
+         
+<div id="mtc_evolution_call"></div>
+<style>
+    #mtc_evolution_triple_regio{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+border-radius: 12px;
+border: 1px solid #BBC4FA;
+display: inline-flex;
+padding: 3px 23px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin: -20px auto;
+    }
+</style>
+<div id="mtc_evolution_triple_regio">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.75 10.3613C4.75 5.81842 8.19088 2.91125 12 2.91125C15.8091 2.91125 19.25 5.81842 19.25 10.3613C19.25 11.7573 18.7112 13.3451 17.5371 15.1423C16.3646 16.9371 14.5856 18.8984 12.1766 21.0264C12.0791 21.1096 11.9306 21.1096 11.8332 21.0262C9.41912 18.8982 7.63766 16.9368 6.46394 15.142C5.28874 13.345 4.75 11.7573 4.75 10.3613ZM9.25 10.1613C9.25 11.6755 10.4858 12.9113 12 12.9113C13.5142 12.9113 14.75 11.6755 14.75 10.1613C14.75 8.64704 13.5142 7.41125 12 7.41125C10.4858 7.41125 9.25 8.64704 9.25 10.1613Z" stroke="black" stroke-width="1.5"/>
+        </svg>
+        Regiunea&nbsp;&nbsp;<div class="region_change cerc_arrow">Waiting</div>
+</div>
+            <div>
+                <div class="mtc_evolution_title_center" style="color:#212A55;">Configurează-ți propriul abonament</div>
+                <div class="mtc_evolution_subtitle_center" style="margin-top: 10px;">
+                    Alege Internet Fibra și ai 50% reducere la abonament pe 24 luni. <br>
+Combină cu televiziune pentru mai multă diversitate acasă sau alege Samsung A35 cu reducere de până la 50%.
+                </div>
+            </div>
+
+
+
+
+
+<script>
+window.onload = function() {
+    mtc_evolution_form_comanda_new('calculator_form', 'triple', 'campain[triple_2024_bacl2school], place[calculator]', ' ')
+         
+}
+prices = {
+  fibra_500: 180,
+  fibra_1000: 200,
+  simplu: 50,
+  premier: 60,
+  univers: 70,
+  plus_tv:30,
+  fix_tel:10,
+
+  r55:55,
+  s95:95
+}
+
+let final_prices=[0,0,0,0,0]
+
+let regio=''
+let final_price=0;
+$('html').on('click', '.region_change', function () {
+ r_change.show_popup();
+})
+
+when_ready('r_change', function () {
+  r_change.callback.push(change_offer);
+})
+
+$('.new_command').show();
+
+function change_offer() {
+
+  $('[serviciu=int]').show();
+  if (r_change.promo) {
+      prices.fibra_500 = 180;
+      prices.fibra_1000 = 200;
+      regio="true"
+
+      
+  }
+  else {
+      prices.fibra_500 = 230;
+      prices.fibra_1000 = 250;
+      regio="false"
+  }
+ 
+  console.log(`Prices updated: fibra_500 = ${prices.fibra_500}, fibra_1000 = ${prices.fibra_1000}, region = ${regio}`);
+updateprices()
+activate_option("fibra_500")
+activate_option("simplu_tv")
+activate_option("phone_r55")
+
+}
+
+function updateprices(){
+    document.getElementById('price_fiber_500_option').innerText=prices.fibra_500
+    document.getElementById('price_fiber_1000_option').innerText=prices.fibra_1000
+    document.getElementById('simplu_calculator_price').innerText=prices.simplu
+    document.getElementById('premier_calculator_price').innerText=prices.premier
+    document.getElementById('univers_calculator_price').innerText=prices.univers
+   
+
+  
+}
+
+
+
+function changeSVG(svg_id) {
+    const svgContainer = document.getElementById('mtc_evolution_calculator_constructor_block_option_active_tick_'+svg_id);
+    svgContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+            <path d="M17.9524 7.52516L18.4747 8.04743L10.0857 16.4364L6.52528 12.876L7.04775 12.3535L9.8234 15.1224L10.0859 15.3843L10.3482 15.1222L17.9524 7.52516Z" fill="white" stroke="#BBC4FA" stroke-width="0.742857"/>
+        </svg>
+    `;
+}
+
+function changeBackSVG(svg_id) {
+    const svgContainer = document.getElementById('mtc_evolution_calculator_constructor_block_option_active_tick_'+svg_id);
+    svgContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+        </svg>
+    `;
+}
+
+function visual_option(option, status){
+    const element = document.getElementById('mtc_evolution_calculator_constructor_block_option_'+option);
+    
+    if (status=='active') {
+        element.classList.add('mtc_evolution_calculator_constructor_block_option_active');
+        changeSVG(option)
+    } else {
+        element.classList.remove('mtc_evolution_calculator_constructor_block_option_active');
+        changeBackSVG(option)
+    }
+
+}
+
+function activate_option(option) {
+    
+   
+
+    if(option==='fibra_500'){
+           visual_option('fibra_1000','pasive')
+           final_prices[0]=prices.fibra_500;
+        visual_option('fibra_500','active')
+        document.getElementById('mtc_evolution_calculator_total_price_fibra').innerText=prices.fibra_500+' lei';
+    }
+
+    else if(option==='fibra_1000'){
+           visual_option('fibra_500','pasive')
+           final_prices[0]=prices.fibra_1000;
+        
+        visual_option('fibra_1000','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_price_fibra').innerText=prices.fibra_1000+' lei';
+    }
+
+    else if(option==='simplu_tv'){
+        visual_option('premier_tv','pasive')
+        visual_option('univers_tv','pasive')
+           final_prices[1]=prices.simplu;
+        
+        visual_option('simplu_tv','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_price_tv').innerText=prices.simplu+' lei';
+    }
+
+    else if(option==='premier_tv'){
+        visual_option('simplu_tv','pasive')
+        visual_option('univers_tv','pasive')
+           final_prices[1]=prices.premier;
+        
+        visual_option('premier_tv','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_price_tv').innerText=prices.premier+' lei';
+    }
+
+    else if(option==='univers_tv'){
+        visual_option('premier_tv','pasive')
+        visual_option('simplu_tv','pasive')
+           final_prices[1]=prices.univers;
+        
+        visual_option('univers_tv','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_price_tv').innerText=prices.univers+' lei';
+    }
+
+    else if(option==='TV_sup'){
+       if(document.getElementById('mtc_evolution_calculator_constructor_block_option_TV_sup').classList.contains('mtc_evolution_calculator_constructor_block_option_active')){
+        visual_option(option,'pasive')
+        document.getElementById('mtc_evolution_calculator_total_price_plus_tv').style.display='none'
+        final_prices[2]=0;
+        }
+       else{
+        visual_option(option,'active')
+        document.getElementById('mtc_evolution_calculator_total_price_plus_tv').style.display='flex'
+        final_prices[2]=prices.plus_tv
+    }
+       document.getElementById('mtc_evolution_calculator_total_price_plus_tv_number').innerText=prices.plus_tv+' lei';
+    }
+
+    else if(option==='phone_r55'){
+        visual_option('phone_95','pasive')
+           final_prices[3]=prices.r55;
+        
+        visual_option('phone_r55','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_phones').innerText=prices.r55+' lei';
+    }
+    else if(option==='phone_95'){
+        visual_option('phone_r55','pasive')
+           final_prices[3]=prices.s95;
+        
+        visual_option('phone_95','active')
+
+      
+        document.getElementById('mtc_evolution_calculator_total_phones').innerText=prices.s95+' lei';
+    }
+    else if(option==='Tel_Fix'){
+       if(document.getElementById('mtc_evolution_calculator_constructor_block_option_Tel_Fix').classList.contains('mtc_evolution_calculator_constructor_block_option_active')){
+        visual_option(option,'pasive')
+        document.getElementById('mtc_evolution_calculator_total_price_Tel_Fix').style.display='none'
+        final_prices[4]=0;
+document.getElementById('mtc_evolution_calculator_constructor_block_option_Tel_Fix').style.border='1px solid #FCD501';
+        
+    }
+       else{
+        visual_option(option,'active')
+        document.getElementById('mtc_evolution_calculator_total_price_Tel_Fix').style.display='flex'
+        final_prices[4]=prices.fix_tel;
+        document.getElementById('mtc_evolution_calculator_constructor_block_option_Tel_Fix').style.border='1px solid transparent';
+ 
+    }
+       document.getElementById('mtc_evolution_calculator_total_price_plus_Tel_Fix').innerText=prices.fix_tel+' lei';
+    }
+
+    final_price=final_prices[0]+final_prices[1]+final_prices[2]+final_prices[3]+final_prices[4]
+    document.getElementById('mtc_evolution_calculator_final_prices_show').innerText=final_price+' lei';
+    document.getElementById("calculator_form").elements["info"].value = 'triple abonament : ' +' -> pret: ' + final_price;
+}
+
+
+
+</script>
+
+
+<style>
+    #mtc_evolution_calculator{
+        display: flex;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+    }
+    #mtc_evolution_calculator_constructor{
+        border-radius: 12px;
+border: 1px solid #D9DFFF;
+display: flex;
+padding: 40px 80px;
+align-items: center;
+gap: 20px;
+width: 780px;
+box-sizing: border-box;
+flex-direction: column;
+    }
+    #mtc_evolution_calculator_total{
+        border-radius: 12px;
+border: 1px solid #D9DFFF;
+display: flex;
+width: 380px;
+padding: 36px 50px;
+flex-direction: column;
+align-items: flex-start;
+width: 380px;
+box-sizing: border-box;
+    }
+    #mtc_evolution_calculator_total_title{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 80% */
+letter-spacing: 0.2px;
+display: flex;
+align-items: center;
+gap:10px;
+margin-bottom: 20px;
+    }
+    .mtc_evolution_calculator_constructor_block{
+        width: 100%;
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+    }
+    .mtc_evolution_calculator_constructor_block_title{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 80% */
+letter-spacing: 0.2px;
+    }
+    .mtc_evolution_calculator_constructor_block_title_italic{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: italic;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0.2px;
+
+    }
+    .mtc_evolution_calculator_constructor_block_option{
+        border-radius: 12px;
+border: 1px solid #BBC4FA;
+cursor: pointer;
+overflow: hidden;
+    }
+    .mtc_evolution_calculator_constructor_block_option:hover{
+        border: 1px solid #e9ebfa;
+    }
+
+    .mtc_evolution_calculator_constructor_block_option_active{
+background: #EFF2FD;
+border: 1px solid #EFF2FD;
+    }
+    .mtc_evolution_calculator_constructor_block_option_active:hover{
+border: 1px solid #EFF2FD;
+    }
+    #mtc_evolution_calculator_constructor_block_option_TV_sup, #mtc_evolution_calculator_constructor_block_option_Tel_Fix{
+        width: 100%;
+        display: flex;
+padding: 11px 20px 13px 33px;
+align-items: center;
+gap: 31px;
+align-self: stretch;
+box-sizing: border-box;
+    }
+    #mtc_evolution_calculator_constructor_block_option_fibra{
+        width: 100%;
+        display: flex;
+        gap:20px;
+    }
+    #mtc_evolution_calculator_constructor_block_option_fibra_500, #mtc_evolution_calculator_constructor_block_option_fibra_1000{
+        width:300px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .mtc_evolution_calculator_constructor_block_option_fibra_title{
+        color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.15px;
+    }
+    .mtc_evolution_calculator_constructor_block_option_fibra_mbps{
+        color: #1AAD9E;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px;
+letter-spacing: 0.2px;
+    }
+    .mtc_evolution_calculator_constructor_block_option_fibra_echipament{
+        color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 100% */
+    }
+    .mtc_evolution_calculator_constructor_block_option_price{
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+    .mtc_evolution_calculator_constructor_block_option_price_old{
+        color: rgba(33, 42, 85, 0.50);
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+text-decoration: line-through;
+    }
+    .mtc_evolution_calculator_constructor_block_option_price_bold{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px;
+letter-spacing: -0.32px;
+    }
+    .mtc_evolution_calculator_constructor_block_option_price_lei{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: -0.16px;
+    }
+    #mtc_evolution_calculator_total_prices{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mtc_evolution_calculator_total_price{
+        display: flex;
+padding: 17px 0px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 1px dashed #BBC4FA;
+width: 100%;
+    }
+    .mtc_evolution_calculator_total_price_title{
+        color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 93.75% */
+    }
+    .mtc_evolution_calculator_total_price_number{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px; /* 93.75% */
+    }
+    #mtc_evolution_calculator_total_price_plus_tv{
+        display: none;
+    }
+    #mtc_evolution_calculator_total_price_Tel_Fix{
+        display: none;
+    }
+    .mtc_evolution_calculator_constructor_block_title_light{
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0.2px;
+}
+.mtc_evolution_calculator_constructor_block_option_tv{
+    width: calc((100% - 40px) /3);
+}
+#mtc_evolution_calculator_constructor_block_options_tv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+#mtc_evolution_calculator_final_prices{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 93.75% */
+margin-top: 40px;
+padding: 17px 0px;
+border-bottom: 1px dashed #BBC4FA;
+}
+#mtc_evolution_calculator_final_prices_show{
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px; /* 93.75% */
+}
+
+.mtc_evolution_calculator_constructor_block_option_phone{
+    width: 100%;
+}
+#mtc_evolution_calculator_constructor_block_phones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.mtc_evolution_calculator_constructor_block_option_tv_title{
+    color: #FFF;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 100% */
+letter-spacing: 0.16px;
+background: #82BB4D;
+padding: 4px;
+width: 100%;
+}
+.mtc_evolution_calculator_constructor_block_option_tv_inside{
+    width: 100%;
+    display: flex;
+    padding: 5px 16px 8px 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+letter-spacing: -0.32px;
+position: relative;
+}
+.mtc_evolution_calculator_constructor_block_option_tv_inside_clannels{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.14px;
+}
+#mtc_evolution_calculator_constructor_block_option_active_tick_simplu_tv,
+#mtc_evolution_calculator_constructor_block_option_active_tick_premier_tv,
+#mtc_evolution_calculator_constructor_block_option_active_tick_univers_tv{
+    top: 8px;
+    right: 20;
+    position: absolute;
+}
+
+.mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number{
+    color: rgba(33, 42, 85, 0.60);
+
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px; /* 100% */
+letter-spacing: 0.14px;
+}
+
+#mtc_evolution_calculator_constructor_block_option_title_tel_fix{
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px; /* 100% */
+letter-spacing: 0.2px;
+}
+#mtc_evolution_calculator_constructor_block_option_subtitle_tel_fix{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 100% */
+margin-bottom: 2px;
+}
+#mtc_evolution_calculator_constructor_block_option_Tel_Fix{
+    justify-content: space-between;
+}
+#mtc_evolution_calculator_constructor_block_option_TV_top_title{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 16px; 
+letter-spacing: 0.15px;
+}
+#mtc_evolution_calculator_constructor_block_option_TV_title{
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 18px;
+letter-spacing: 0.2px;
+}
+#mtc_evolution_calculator_constructor_block_option_TV_subtitle{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+margin-top: 2px;
+}
+.mtc_evolution_form_comanda_triple{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.mtc_evolution_triple_form_phone{
+    border-radius: 12px;
+border: 1px solid #D9DFFF;
+margin-top: 10px;
+display: flex;
+padding: 5px 23px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+height: 45px;
+box-sizing: border-box;
+color: #333333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+text-align: center;
+}
+.mtc_evolution_triple_call{
+    width: 100%;
+}
+</style>
+
+<div id="mtc_evolution_calculator">
+<div id="mtc_evolution_calculator_constructor">
+
+    <div class="mtc_evolution_calculator_constructor_block">
+        <div class="mtc_evolution_calculator_constructor_block_title">
+            Internet Fibră  
+        </div>
+        <div id="mtc_evolution_calculator_constructor_block_option_fibra">
+            <div class="mtc_evolution_calculator_constructor_block_option" id="mtc_evolution_calculator_constructor_block_option_fibra_500" onclick="activate_option('fibra_500')">
+
+                <div id="mtc_evolution_calculator_constructor_block_option_active_tick_fibra_500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                    </svg>
+                </div>
+
+                <div class="mtc_evolution_calculator_constructor_block_option_fibra_title">
+                    Până la <br>
+                    <span class="mtc_evolution_calculator_constructor_block_option_fibra_mbps">
+                        500Mbps
+                    </span>
+<br>
+<span class="mtc_evolution_calculator_constructor_block_option_fibra_echipament">
+    Echipament performant
+</span>
+                </div>
+                <div class="mtc_evolution_calculator_constructor_block_option_price">
+<span class="mtc_evolution_calculator_constructor_block_option_price_old">
+    230 lei /luna
+</span>
+<span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_500_option">
+    ----
+</span>
+<span class="mtc_evolution_calculator_constructor_block_option_price_lei">
+    lei /luna
+</span>
+                </div>
+            </div>
+            <div class="mtc_evolution_calculator_constructor_block_option" id="mtc_evolution_calculator_constructor_block_option_fibra_1000" onclick="activate_option('fibra_1000')">
+
+                <div id="mtc_evolution_calculator_constructor_block_option_active_tick_fibra_1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                    </svg>
+                </div>
+
+                <div class="mtc_evolution_calculator_constructor_block_option_fibra_title">
+                    Până la <br>
+                    <span class="mtc_evolution_calculator_constructor_block_option_fibra_mbps">
+                        1000Mbps
+                    </span>
+<br>
+<span class="mtc_evolution_calculator_constructor_block_option_fibra_echipament">
+    Echipament performant
+</span>
+                </div>
+                <div class="mtc_evolution_calculator_constructor_block_option_price">
+<span class="mtc_evolution_calculator_constructor_block_option_price_old">
+    230 lei /luna
+</span>
+<span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_1000_option">
+   ----
+</span>
+<span class="mtc_evolution_calculator_constructor_block_option_price_lei">
+    lei /luna
+</span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="mtc_evolution_calculator_constructor_block">
+        <div class="mtc_evolution_calculator_constructor_block_title">
+            Televiziune <span class="mtc_evolution_calculator_constructor_block_title_italic">*vezi <a href="https://www.moldtelecom.md/canale-TV">grila</a></span>
+        </div>
+
+
+     <div id="mtc_evolution_calculator_constructor_block_options_tv">
+        <div class="mtc_evolution_calculator_constructor_block_option mtc_evolution_calculator_constructor_block_option_tv" id="mtc_evolution_calculator_constructor_block_option_simplu_tv" onclick="activate_option('simplu_tv')">
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Simplu</div>
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
+                <div>
+                    <span><span style="font-weight: 900; font-size: 32px;" id="simplu_calculator_price">--</span> lei /luna</span>
+                    <br>
+                    <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
+                        <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
+                     Canale, 
+                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">30</span> HD</span>
+                </div>
+            
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_simplu_tv">
+
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+        </div>
+        <div class="mtc_evolution_calculator_constructor_block_option mtc_evolution_calculator_constructor_block_option_tv" id="mtc_evolution_calculator_constructor_block_option_premier_tv" onclick="activate_option('premier_tv')">
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Premier</div>
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
+                <div>
+                    <span><span style="font-weight: 900; font-size: 32px;" id="premier_calculator_price">--</span> lei /luna</span>
+                    <br>
+                    <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
+                        <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
+                     Canale, 
+                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">30</span> HD + 
+                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">3</span> radio</span>
+                </div>
+            
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_premier_tv">
+
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+          
+        </div>
+        <div class="mtc_evolution_calculator_constructor_block_option mtc_evolution_calculator_constructor_block_option_tv" id="mtc_evolution_calculator_constructor_block_option_univers_tv" onclick="activate_option('univers_tv')">
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Univers</div>
+
+            <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
+                <div>
+                    <span><span style="font-weight: 900; font-size: 32px;" id="univers_calculator_price">--</span> lei /luna</span>
+                    <br>
+                    <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
+                        <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
+                     Canale, 
+                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">30</span> HD + 
+                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">3</span> radio</span>
+                </div>
+            
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_univers_tv">
+
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+           
+        </div>
+      
+     </div>
+    </div>
+
+    <div class="mtc_evolution_calculator_constructor_block">
+        <div class="mtc_evolution_calculator_constructor_block_title">
+          Abonament TV Suplimentar
+        </div>
+
+        <div class="mtc_evolution_calculator_constructor_block_option" id="mtc_evolution_calculator_constructor_block_option_TV_sup" onclick="activate_option('TV_sup')">
+
+            <div>
+                <span id="mtc_evolution_calculator_constructor_block_option_TV_top_title">Pentru comoditatea familiei tale <br>
+                    </span>
+                    <span id="mtc_evolution_calculator_constructor_block_option_TV_title">Adauga un abonament TV suplimentar <span style="font-weight: 300;">la doar</span> 30 lei/luna</span><br>
+           <span id="mtc_evolution_calculator_constructor_block_option_TV_subtitle">Grila de canale TV este identicã cu grila abonamentului de televiziune ales.</span>
+                </div>
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_TV_sup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="mtc_evolution_calculator_constructor_block">
+        <div class="mtc_evolution_calculator_constructor_block_title">
+            Abonament Mobil cu minute nelimitate si Internet, inclusiv in Roaming
+        </div>
+
+      <div id="mtc_evolution_calculator_constructor_block_phones">
+        <div class="mtc_evolution_calculator_constructor_block_option mtc_evolution_calculator_constructor_block_option_phone" id="mtc_evolution_calculator_constructor_block_option_phone_r55" onclick="activate_option('phone_r55')">
+
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_phone_r55">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="mtc_evolution_calculator_constructor_block_option mtc_evolution_calculator_constructor_block_option_phone" id="mtc_evolution_calculator_constructor_block_option_phone_95" onclick="activate_option('phone_95')">
+
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_phone_95">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+      </div>
+       
+    </div>
+
+
+    <div class="mtc_evolution_calculator_constructor_block">
+        <div class="mtc_evolution_calculator_constructor_block_title">
+            Telefonie fixa <span class="mtc_evolution_calculator_constructor_block_title_light">prin internet</span>
+        </div>
+
+        <div class="mtc_evolution_calculator_constructor_block_option" id="mtc_evolution_calculator_constructor_block_option_Tel_Fix" style="border: 1px solid #FCD501;" onclick="activate_option('Tel_Fix')">
+<div id="mtc_evolution_calculator_constructor_block_option_title_tel_fix">
+    Aboanament lunar -  10 lei/lună<br>
+    <span id="mtc_evolution_calculator_constructor_block_option_subtitle_tel_fix">
+        Minute nelimitate in reteaua mobilă si fixă Moldtelecom <br>
++ 30 minute nationale + Serviciul CLIP inclus
+    </span>
+</div>
+            <div id="mtc_evolution_calculator_constructor_block_option_active_tick_Tel_Fix">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+                </svg>
+            </div>
+        </div>
+     
+    </div>
+
+
+
+
+
+</div>
+<div id="mtc_evolution_calculator_total">
+
+
+    <div id="mtc_evolution_calculator_total_title">
+        Comanda ta <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2467_11438)">
+            <path d="M9 15H11V9H9V15ZM10 7C10.2833 7 10.521 6.904 10.713 6.712C10.905 6.52 11.0007 6.28267 11 6C11 5.71667 10.904 5.479 10.712 5.287C10.52 5.095 10.2827 4.99933 10 5C9.71667 5 9.479 5.096 9.287 5.288C9.095 5.48 8.99933 5.71733 9 6C9 6.28333 9.096 6.521 9.288 6.713C9.48 6.905 9.71733 7.00067 10 7ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6867 3.825 17.9743 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.263333 12.6833 0.000666667 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31333 4.88333 2.02567 3.825 2.925 2.925C3.825 2.025 4.88333 1.31267 6.1 0.788C7.31667 0.263333 8.61667 0.000666667 10 0C11.3833 0 12.6833 0.262667 13.9 0.788C15.1167 1.31333 16.175 2.02567 17.075 2.925C17.975 3.825 18.6877 4.88333 19.213 6.1C19.7383 7.31667 20.0007 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6867 15.1167 17.9743 16.175 17.075 17.075C16.175 17.975 15.1167 18.6877 13.9 19.213C12.6833 19.7383 11.3833 20.0007 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_2467_11438">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+    </div>
+
+    <div id="mtc_evolution_calculator_total_prices">
+        <div class="mtc_evolution_calculator_total_price">
+            <span class="mtc_evolution_calculator_total_price_title">Net acasă</span>
+            <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_price_fibra"> ---- </span>
+        </div>
+        <div class="mtc_evolution_calculator_total_price">
+            <span class="mtc_evolution_calculator_total_price_title">Televiziune</span>
+            <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_price_tv"> ---- </span>
+        </div>
+        <div class="mtc_evolution_calculator_total_price" id="mtc_evolution_calculator_total_price_plus_tv">
+            <span class="mtc_evolution_calculator_total_price_title">+ 1 TV</span>
+            <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_price_plus_tv_number"> ---- </span>
+        </div>
+        <div class="mtc_evolution_calculator_total_price" id="mtc_evolution_calculator_total_price_phones">
+            <span class="mtc_evolution_calculator_total_price_title">Abonament Mobil</span>
+            <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_phones"> ---- </span>
+        </div>
+        <div class="mtc_evolution_calculator_total_price" id="mtc_evolution_calculator_total_price_Tel_Fix">
+            <span class="mtc_evolution_calculator_total_price_title">Telefonie Fixa</span>
+            <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_price_plus_Tel_Fix"> ---- </span>
+        </div>
+    </div>
+
+    <div id="mtc_evolution_calculator_final_prices">
+<div>Total</div>
+
+<div id="mtc_evolution_calculator_final_prices_show">----</div>
+    </div>
+    <form class="mtc_evolution_form_comanda_triple" id="calculator_form" action="/comanda_marketing" data-type="thankyou-page-form" method="post">
+        <input class="mtc_evolution_triple_form_phone" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -" required="" value=""> 
+        <input class="mtc_evolution_triple_call mtc_evolution_btn_2" name="submit" type="submit" value="Comandă acum">
+    </form>
+</div>
+</div>
+
+
+<style>
+    #mtc_evolution_btn_2_detalii{
+        margin: -20 auto 0;
+    }
+</style>
+
+    <div class="mtc_evolution_btn_2" id="mtc_evolution_btn_2_detalii">
+        <span>Detalii oferta</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+
+    </div>
+
+<style>
+    .special_offer_title{
+        color: #212A55;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 100% */
+    }
+    .special_offer_title_bold{
+        font-weight: 700;
+    }
+    #special_offer_triple{
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+    }
+</style>
+<div id="special_offer_triple">
+    <div class="special_offer_title">
+        Fii cool in Back to School! <span class="special_offer_title_bold">Ia-ti Samsung A35, 5G 8/256GB la jumatate de pret!</span>
+    </div>
+
+<style>
+    #special_offer_phone{
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
+        border: 1px solid #D9DFFF;
+        padding: 55px 40px;
+    }
+</style>
+    <div id="special_offer_phone">
+        <div class="mtc_evolution_btn_2" >
+            <span>Vezi oferta</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+    
+        </div>
+</div>
+
+    <div class="special_offer_title">
+        Sau alege un smart  televizor la  <span class="special_offer_title_bold">Pret WOW!</span>
+    </div>
+<style>
+    #special_offer_tv{
+width: 100%;
+display: flex;
+gap: 20px;
+    }
+    .special_offer_tv_block{
+        width: 580px;
+        border-radius: 12px;
+border: 1px solid #D9DFFF;
+background: #FFF;
+padding: 55px 40px;
+box-sizing: border-box;
+height: 350px;
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+    #special_offer_tv_block_1{
+        background: url('../../images/landings/triple/img3.png');
+        background-size: cover;
+    }
+    #special_offer_tv_block_2{
+        background: url('../../images/landings/triple/img4.png');
+        background-size: cover;
+    }
+    .special_offer_tv_block_title{
+        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 100% */
+max-width: 65%;
+    }
+    .special_offer_tv_block_title span{
+        font-weight: 300;
+    }
+    .special_offer_tv_block_subtitle{
+        color: #222;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 0.2px;
+margin-top: 15px;
+    }
+</style>
+<div id="special_offer_tv">
+    <div class="special_offer_tv_block" id="special_offer_tv_block_1">
+
+        <div>
+    <div class="special_offer_tv_block_title">
+       <span> Descopera oferta </span>televizoarele Smart la pret WOW!
+    </div>
+    <div class="special_offer_tv_block_subtitle">
+        KIVI 43U730QB
+    </div>
+    </div>  
+        <div class="mtc_evolution_btn_2" >
+            <span>Vezi oferta</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+    
+        </div>
+    </div>
+    <div class="special_offer_tv_block" id="special_offer_tv_block_2">
+
+        <div>
+    <div class="special_offer_tv_block_title">
+       <span> Descopera oferta </span>televizoarele Smart la pret WOW!
+    </div>
+    <div class="special_offer_tv_block_subtitle">
+        KIVI 43U730QB
+    </div>
+    </div>  
+        <div class="mtc_evolution_btn_2" >
+            <span>Vezi oferta</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+    
+        </div>
+    </div>
+</div>
+
+   
+</div>
+
+
+
+
+
+<div>
+    <div class="mtc_evolution_title_center" style="color:#212A55; margin-bottom: 20px;">Funcții interactive
+    </div>
+    <style type="text/css">
+        #mtc_tv_features {
+            user-select: none;
+            width: 100%;
+            padding: 33px 45px;
+            box-sizing: border-box;
+            border-radius: var(--block_border_radius);
+            background: #FFF;
+            border: 1px solid #D9DFFF;
+
+        }
+
+        .mtc_tv_features_card {
+
+            width: calc((1090px - 150px) / 4);
+            margin-right: 50px;
+            display: flex !important;
+            flex-direction: column;
+
+        }
+
+        .mtc_tv_features_card span {
+            color: #222;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            /* 137.5% */
+            height: 78px;
+        }
+
+        .mtc_tv_features_card svg {
+            margin-bottom: 10px;
+        }
+
+        .mtc_tv_features_bold {
+            font-weight: 700 !important;
+        }
+
+        .mtc_tv_features_card_btn {
+            cursor: pointer;
+            color: #212A55;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            /* 106.25% */
+            margin-top: 8px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .mtc_tv_features_card_btn svg {
+            margin: 0;
+        }
+
+        @media (max-width: 1300px) {
+            .mtc_tv_features_card {
+
+                width: calc((790px - 100px) / 3);
+                margin-right: 50px;
+                display: flex !important;
+                flex-direction: column;
+
+            }
+        }
+
+        @media (max-width: 940px) {
+            .mtc_tv_features_card {
+                width: calc((580px - 100px) / 2);
+                margin-right: 20px;
+            }
+
+
+        }
+
+        @media (max-width: 650px) {
+            .mtc_tv_features_card {
+                width: 38vw;
+
+            }
+        }
+
+        @media (max-width: 550px) {
+            .mtc_tv_features_card {
+                width: 65vw;
+                box-sizing: border-box;
+                padding: 0;
+                margin-right: 0;
+                padding-left: calc(90vw - 65vw - 30px);
+            }
+
+            #mtc_tv_features {
+                padding: 25px 15px;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .mtc_tv_features_card {
+                width: 70vw;
+                box-sizing: border-box;
+                padding: 0;
+                margin-right: 0;
+                padding-left: calc(90vw - 70vw - 30px);
+            }
+        }
+    </style>
+    <div class="carousell_2" id="mtc_tv_features">
+        <div class="mtc_tv_features_card">
+            <svg width="48" height="47" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M33.909 20.4828H36.7673C38.0041 20.4828 39.1141 20.9833 39.8975 21.7813C40.681 20.9869 41.7945 20.4828 43.0278 20.4828H43.7641C43.7641 18.9086 43.7641 17.3344 43.7641 15.7565C43.7641 15.3938 43.7605 15.0239 43.7024 14.6684C43.0931 10.7293 39.981 8.07416 35.991 8.07054C32.7447 8.07054 29.4948 8.07054 26.2484 8.07054H25.6681C25.8422 7.88555 25.9365 7.78036 26.0344 7.68243C27.6921 6.02481 29.346 4.36355 31.0109 2.70956C31.4317 2.2888 31.6602 1.81002 31.5296 1.21516C31.4027 0.623927 31.0399 0.235818 30.4523 0.0653406C29.8393 -0.108764 29.3352 0.0834765 28.8999 0.518739C26.7163 2.7023 24.5291 4.88587 22.3492 7.07669C22.2295 7.19639 22.1824 7.385 22.1026 7.5446C21.7797 7.3052 21.6818 7.15649 21.5585 7.03316C19.433 4.90401 17.3038 2.77485 15.1746 0.649317C14.3875 -0.134155 13.4953 -0.213953 12.8315 0.438941C12.1641 1.09546 12.233 2.00226 13.0092 2.7821C14.6342 4.40708 16.2592 6.03206 17.8805 7.65704C17.9893 7.76585 18.0945 7.88192 18.2759 8.07779H17.6448C14.3984 8.07779 11.1485 8.07054 7.90213 8.08505C7.36531 8.08505 6.82123 8.12495 6.29891 8.23376C2.65359 8.97733 0.190736 12.0024 0.183481 15.7602C0.1726 22.4596 0.179854 29.1626 0.183481 35.862C0.183481 36.2429 0.190736 36.6274 0.248771 36.9973C0.883528 40.922 3.95575 43.5408 7.95291 43.5444C15.1746 43.548 22.3964 43.5444 29.6181 43.5408V24.5561C29.6181 22.3109 31.5441 20.4864 33.909 20.4864V20.4828Z"
+                    fill="#CED6FF" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M45.8891 46.8845H43.0309C41.9645 46.8845 41.0976 46.1155 41.0976 45.1724V24.5519C41.0976 23.6088 41.9645 22.8398 43.0309 22.8398H45.8891C46.9555 22.8398 47.8224 23.6088 47.8224 24.5519V45.1724C47.8224 46.1155 46.9555 46.8845 45.8891 46.8845ZM36.7642 46.8845H33.9059C32.8396 46.8845 31.9727 46.1155 31.9727 45.1725V24.5519C31.9727 23.6088 32.8396 22.8399 33.9059 22.8399H36.7642C37.8306 22.8399 38.6975 23.6088 38.6975 24.5519V45.1725C38.6975 46.1155 37.8306 46.8845 36.7642 46.8845Z"
+                    fill="url(#paint0_linear_1671_8369)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1671_8369" x1="33.981" y1="27.7178" x2="45.812"
+                        y2="42.5907" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3D6FFD" />
+                        <stop offset="1" stop-color="#4EDFAC" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div> <span class="mtc_tv_features_bold">Pauză</span> <br>
+                Opreşte şi revino să priveşti din punctul în care ai oprit...</div>
+            <div class="mtc_tv_features_card_btn"
+                onclick="evolution_popoup('mtc_evolution_popup_block_f2')">Detalii
+                <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.74219 11L19.9222 11" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 7.47485L19.8827 10.9562" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 14.5251L19.8827 11.0438" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+
+            </div>
+        </div>
+
+        <div class="mtc_tv_features_card">
+            <svg width="51" height="47" viewBox="0 0 51 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M37.6471 20.344C39.8091 20.344 41.8593 20.8269 43.7006 21.6917C43.7006 19.6774 43.7006 17.6632 43.697 15.6526C43.697 15.2923 43.6934 14.9247 43.6357 14.5716C43.0304 10.6585 39.9388 8.0209 35.9752 8.0173C32.7503 8.0173 29.5218 8.0173 26.2969 8.0173H25.7203C25.8933 7.83354 25.987 7.72904 26.0843 7.63175C27.731 5.98506 29.374 4.33477 31.0279 2.69169C31.4459 2.27371 31.6729 1.79808 31.5432 1.20714C31.4171 0.619811 31.0568 0.234263 30.473 0.0649096C29.8641 -0.108047 29.3632 0.0829259 28.9308 0.515317C26.7617 2.68448 24.5889 4.85364 22.4234 7.03001C22.3044 7.14892 22.2576 7.33629 22.1783 7.49483C21.8576 7.25701 21.7604 7.10928 21.6378 6.98677C19.5263 4.87166 17.4112 2.75654 15.2961 0.645034C14.5142 -0.13327 13.6278 -0.212541 12.9684 0.436045C12.3054 1.08824 12.3739 1.98905 13.145 2.76375C14.7592 4.37801 16.3735 5.99227 17.9841 7.60653C18.0922 7.71463 18.1967 7.82993 18.3769 8.02451H17.7499C14.525 8.02451 11.2965 8.0173 8.07158 8.03171C7.53829 8.03171 6.9978 8.07135 6.47894 8.17945C2.85406 8.92532 0.407447 11.9304 0.40024 15.6634C0.389431 22.3186 0.396637 28.9775 0.40024 35.6327C0.40024 36.011 0.407444 36.393 0.465096 36.7605C1.09567 40.6592 4.14763 43.2608 8.11842 43.2644C14.1395 43.268 20.1641 43.2644 26.1852 43.2644C24.3871 40.8718 23.3206 37.8991 23.3206 34.6814C23.3206 26.7831 29.7452 20.3585 37.6435 20.3585L37.6471 20.344Z"
+                    fill="#CED6FF" />
+                <path
+                    d="M38.2894 46.6479C44.9063 46.6479 50.2703 41.2839 50.2703 34.6671C50.2703 28.0503 44.9063 22.6863 38.2894 22.6863C31.6726 22.6863 26.3086 28.0503 26.3086 34.6671C26.3086 41.2839 31.6726 46.6479 38.2894 46.6479Z"
+                    fill="url(#paint0_linear_1671_8387)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1671_8387" x1="26.3086" y1="34.6671" x2="50.2703"
+                        y2="34.6671" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3D6FFD" />
+                        <stop offset="1" stop-color="#4EDFAC" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div> <span class="mtc_tv_features_bold">Înregistrare</span> <br>
+                Alcătuieşte propria librărie de filme de filme şi emisiuni preferate...</div>
+            <div class="mtc_tv_features_card_btn"
+                onclick="evolution_popoup('mtc_evolution_popup_block_f3')">Detalii
+                <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.74219 11L19.9222 11" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 7.47485L19.8827 10.9562" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 14.5251L19.8827 11.0438" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+
+            </div>
+        </div>
+
+        <div class="mtc_tv_features_card">
+            <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M27.3652 34.6648V27.7903C27.3652 23.8666 31.6132 21.413 35.0108 23.3766L40.963 26.8139L46.9152 30.2512C50.3129 32.2148 50.3129 37.1185 46.9152 39.0821L40.963 42.5194L35.0108 45.9567C31.6132 47.9204 27.3652 45.4667 27.3652 41.543V34.6685V34.6648Z"
+                    fill="url(#paint0_linear_1671_8373)" />
+                <path
+                    d="M24.8724 27.7901C24.8724 25.0987 26.2632 22.6919 28.5907 21.3479C30.9183 20.004 33.6998 20.004 36.031 21.3479L44.1486 26.0355C44.1486 22.573 44.145 19.1105 44.1414 15.6516C44.1414 15.2913 44.1378 14.9238 44.0801 14.5707C43.4748 10.6578 40.3834 8.02037 36.4201 8.01677C33.1954 8.01677 29.9671 8.01677 26.7424 8.01677H26.1659C26.3389 7.83301 26.4325 7.72853 26.5298 7.63124C28.1764 5.98466 29.8194 4.33448 31.4732 2.69151C31.8911 2.27356 32.1181 1.79796 31.9884 1.20706C31.8623 0.61977 31.502 0.234247 30.9183 0.0649052C30.3094 -0.10804 29.8086 0.0829203 29.3762 0.515283C27.2072 2.6843 25.0346 4.85332 22.8691 7.02954C22.7502 7.14844 22.7034 7.3358 22.6241 7.49433C22.3035 7.25653 22.2062 7.10881 22.0837 6.9863C19.9723 4.87133 17.8574 2.75636 15.7424 0.644991C14.9605 -0.133261 14.0742 -0.212527 13.4148 0.436016C12.7519 1.08816 12.8203 1.98892 13.5914 2.76357C15.2055 4.37772 16.8197 5.99187 18.4302 7.60602C18.5383 7.71411 18.6428 7.82941 18.823 8.02397H18.196C14.9713 8.02397 11.743 8.01677 8.51833 8.03118C7.98509 8.03118 7.44463 8.07081 6.92579 8.1789C3.30116 8.92473 0.854712 11.9296 0.847506 15.6624C0.836697 22.3171 0.843903 28.9755 0.847506 35.6303C0.847506 36.0086 0.854709 36.3905 0.912357 36.758C1.54289 40.6565 4.59465 43.2579 8.56517 43.2615C14.0634 43.2651 19.5652 43.2615 25.0634 43.2615C24.9373 42.7102 24.8652 42.141 24.8652 41.5537V27.8045L24.8724 27.7901Z"
+                    fill="#CED6FF" />
+                <defs>
+                    <linearGradient id="paint0_linear_1671_8373" x1="27.3652" y1="34.6667" x2="49.4634"
+                        y2="34.6667" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3D6FFD" />
+                        <stop offset="1" stop-color="#4EDFAC" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div> <span class="mtc_tv_features_bold">Reluare</span> <br>
+                Poţi privi în reluare orice moment important pierdut întâmplător...</div>
+            <div class="mtc_tv_features_card_btn"
+                onclick="evolution_popoup('mtc_evolution_popup_block_f4')">Detalii
+                <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.74219 11L19.9222 11" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 7.47485L19.8827 10.9562" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 14.5251L19.8827 11.0438" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+
+            </div>
+        </div>
+
+        <div class="mtc_tv_features_card">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M33.4589 21.8529C34.1829 20.8535 35.2397 20.6028 35.5761 20.5264C36.2672 20.3738 36.8522 20.4537 37.1813 20.5264C39.4484 20.5264 41.7119 20.5264 43.979 20.5228C43.979 18.9455 43.979 17.3646 43.979 15.7873C43.979 15.4239 43.9753 15.0532 43.9168 14.6971C43.3025 10.7502 40.1651 8.08995 36.1428 8.08631C32.8702 8.08631 29.5938 8.08631 26.3211 8.08631H25.7361C25.9116 7.90096 26.0067 7.79557 26.1054 7.69745C27.7765 6.03658 29.4439 4.37208 31.1223 2.71485C31.5465 2.29328 31.7768 1.81355 31.6452 1.21753C31.5172 0.625146 31.1516 0.236279 30.5592 0.0654683C29.9412 -0.108977 29.4329 0.0836397 28.9941 0.519753C26.7928 2.70759 24.5879 4.89542 22.3903 7.09052C22.2696 7.21045 22.2221 7.39943 22.1416 7.55934C21.8162 7.31948 21.7174 7.17047 21.5931 7.04691C19.4503 4.91359 17.3039 2.78027 15.1575 0.650586C14.364 -0.134417 13.4644 -0.214371 12.7953 0.439799C12.1261 1.0976 12.1919 2.00617 12.9744 2.78754C14.6126 4.41569 16.2508 6.04385 17.8853 7.672C17.995 7.78103 18.101 7.89733 18.2839 8.09358H17.6476C14.3749 8.09358 11.0986 8.08631 7.8259 8.10085C7.28472 8.10085 6.73623 8.14083 6.20968 8.24985C2.53111 9.00215 0.0482633 12.0331 0.04095 15.7982C0.0299801 22.5107 0.0372934 29.2269 0.04095 35.9394C0.04095 36.321 0.0482606 36.7062 0.106767 37.0769C0.746677 41.0092 3.84384 43.6332 7.87344 43.6368C16.1959 43.6441 24.5184 43.6368 32.8409 43.6332V24.0553C32.819 23.7537 32.7934 22.7797 33.4552 21.8638L33.4589 21.8529Z"
+                    fill="#CED6FF" />
+                <path
+                    d="M35.5664 24.5603C35.5737 24.3932 35.6139 24.0806 35.8041 23.7499C35.8772 23.6227 36.082 23.2774 36.5208 23.0521C36.9669 22.8268 37.3874 22.8668 37.5373 22.8886C41.5889 22.8559 44.6019 22.8668 45.7355 22.8886C45.9147 22.8886 46.3022 22.914 46.7008 23.1393C47.3151 23.4846 47.7137 24.1606 47.7137 24.9637C47.7174 28.3509 47.7137 31.738 47.7137 35.1252C47.7137 38.3124 47.6771 41.4961 47.732 44.6833C47.7576 46.1443 46.7776 47.0856 45.3662 47.0492C42.9272 46.9911 40.4846 47.002 38.0456 47.0492C36.8389 47.071 35.9211 46.6386 35.5664 45.3593V24.5603ZM41.6474 44.0146C43.2965 44.0146 44.6714 42.6627 44.6751 41.0381C44.6824 39.3119 43.3587 37.9853 41.6327 37.9926C39.9178 37.9999 38.6087 39.3046 38.6051 41.02C38.6014 42.6518 39.9873 44.0182 41.6474 44.0146ZM39.607 27.9075C40.1664 27.9111 40.6125 27.4787 40.6235 26.9226C40.6345 26.3811 40.1847 25.9159 39.6362 25.9014C39.0768 25.8868 38.5977 26.3557 38.6014 26.9081C38.6051 27.4677 39.0439 27.9002 39.607 27.9039V27.9075ZM44.6751 26.9008C44.6677 26.3411 44.2289 25.9086 43.6658 25.905C43.0917 25.905 42.642 26.3557 42.653 26.9262C42.6603 27.4678 43.1283 27.9184 43.6768 27.9111C44.2253 27.9039 44.6787 27.4423 44.6751 26.9008ZM39.6106 31.9306C40.1701 31.9306 40.6125 31.4982 40.6235 30.9421C40.6345 30.4006 40.1774 29.9354 39.6326 29.9282C39.0731 29.9173 38.5977 30.3861 38.6051 30.9421C38.6124 31.5018 39.0512 31.9343 39.6143 31.9343L39.6106 31.9306ZM44.6751 30.9239C44.6677 30.3643 44.2289 29.9318 43.6658 29.9282C43.0917 29.9282 42.642 30.3788 42.653 30.9494C42.6603 31.4909 43.1283 31.9415 43.6768 31.9343C44.2253 31.927 44.6787 31.4655 44.6751 30.9239ZM39.6289 35.9538C40.192 35.9465 40.6272 35.5068 40.6235 34.9471C40.6235 34.4056 40.1628 33.9477 39.6143 33.9477C39.0548 33.9477 38.5868 34.4238 38.6014 34.9762C38.616 35.5358 39.0658 35.9611 39.6289 35.9538ZM43.6658 33.9549C43.1027 33.9549 42.6639 34.3874 42.6566 34.9471C42.6493 35.4886 43.1027 35.9501 43.6512 35.9611C44.2107 35.972 44.686 35.4995 44.6787 34.9471C44.6714 34.3874 44.2289 33.9549 43.6695 33.9549H43.6658Z"
+                    fill="url(#paint0_linear_1671_8377)" />
+                <path
+                    d="M42.653 40.9914C42.653 41.5474 42.2142 41.9872 41.6547 41.9945C41.0806 42.0017 40.6272 41.5547 40.6309 40.9841C40.6345 40.4426 41.0989 39.9883 41.6474 39.992C42.1923 39.992 42.6567 40.4535 42.653 40.9914Z"
+                    fill="url(#paint1_linear_1671_8377)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1671_8377" x1="35.5664" y1="34.9591" x2="47.7325"
+                        y2="34.9591" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3D6FFD" />
+                        <stop offset="1" stop-color="#4EDFAC" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1671_8377" x1="40.6309" y1="40.9932" x2="42.653"
+                        y2="40.9932" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3D6FFD" />
+                        <stop offset="1" stop-color="#4EDFAC" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div> <span class="mtc_tv_features_bold">Universal Remote</span> <br>
+                Telecomanda Mediabox-ului poate înlocui telecomanda televizorului...</div>
+            <div class="mtc_tv_features_card_btn"
+                onclick="evolution_popoup('mtc_evolution_popup_block_f5')">Detalii
+                <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.74219 11L19.9222 11" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 7.47485L19.8827 10.9562" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <path d="M16.4014 14.5251L19.8827 11.0438" stroke="#212A55" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+
+            </div>
+        </div>
+
+       
+
+
+
+
+    </div>
+
+
+    <script>
+        $('.carousell_2').slick({
+            arrows: false,
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1351,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 951,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 651,
+                    settings: {
+                        slidesToShow: 1,
+
+                    },
+                },
+            ],
+        });
+
+
+    </script>
+
+</div>
+
+
+<div id="mtc_evolution_app">
+</div>
+
+
+
+
+            <div id="mtc_evolution_footer_text"></div>
+        </div>
+
+
+        <div id="mtc_evolution_footer"></div>
+
+
+      
+     
+
+    </div>
+</body>
+
+</html>

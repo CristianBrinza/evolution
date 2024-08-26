@@ -1,0 +1,110 @@
+<style>
+    #mtc_evolution_call {
+        width: 100%;
+        border-radius: 12px;
+        background: #F3F5FF;
+        padding: 6px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #212A55;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.16px;
+    }
+
+    .mtc_evolution_call_bold {
+        font-weight: 700;
+    }
+
+    .mtc_evolution_btn_call, .mtc_evolution_call_form_send {
+        cursor: pointer;
+        color: #C2C1FF;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        /*225%*/
+        letter-spacing: 0.16px;
+        display: flex;
+        padding: 0px 23px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        border: 1px solid #C2C1FF;
+        background: transparent;
+        text-decoration: none;
+        width: max-content;
+        transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+        -webkit-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+        -moz-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+        -ms-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+        -o-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+    }
+
+    .mtc_evolution_btn_call:hover {
+        background-color: #bbc4fa;
+        color: white;
+        border: 1px solid transparent !important;
+    }
+    .mtc_evolution_btn_call:hover svg path{
+        fill: white;
+    }
+    .mtc_evolution_form_comanda_new_form_call{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        margin: 0;
+    }
+    .mtc_evolution_call_form_phone{
+        border-radius: 12px;
+border: 1px solid #C2C1FF;
+background: #FFF;
+color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+box-sizing: border-box;
+padding-left: 25px;
+width: 150px;
+    }
+    .mtc_evolution_main{
+        margin-top: 20px;
+    }
+</style>
+<div id="mtc_evolution_call">
+
+
+    <span class="mtc_evolution_call_bold">Mai simplu prin telefon?</span> <span>Află mai multe apelând</span>
+    <a href="" style="text-decoration: none;">
+        <div class="mtc_evolution_btn_call">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.64162 1.98655L8.76958 1.62627C9.82528 1.28904 10.9543 1.83469 11.4067 2.90086L12.3074 5.02482C12.7002 5.94961 12.4823 7.03777 11.7691 7.71434L9.78653 9.59742C9.90871 10.7243 10.2871 11.8334 10.9218 12.9248C11.5254 13.9803 12.3341 14.9044 13.3003 15.6425L15.684 14.8466C16.5868 14.546 17.5702 14.8927 18.1242 15.7064L19.4145 17.6021C20.0597 18.5489 19.9434 19.8538 19.1443 20.6561L18.2876 21.5159C17.4351 22.3716 16.2181 22.6826 15.0912 22.3307C12.4324 21.5013 9.98761 19.039 7.75682 14.944C5.52324 10.842 4.73496 7.36209 5.39197 4.50431C5.66847 3.30198 6.52517 2.34369 7.64371 1.98655"
+                    fill="#C2C1FF" />
+            </svg>
+
+            022 500 500
+        </div>
+    </a>
+
+    <span>sau te contactăm noi </span>
+    <script>
+        mtc_evolution_form_comanda_new('mtc_evolution_call_form', 'call_banner', 'campain[back2school_2024]', ' ')
+         
+    </script>
+    <form class="mtc_evolution_form_comanda_new_form_call" id="mtc_evolution_call_form" action="/comanda_marketing" data-type="thankyou-page-form" method="post">
+        <input class="mtc_evolution_call_form_phone" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0** *** ***" required="" value=""> 
+        <input class="mtc_evolution_btn_call" name="submit" type="submit" value="Comandă acum">
+    </form>
+</div>
