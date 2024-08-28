@@ -18,6 +18,9 @@ Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 - [Echipamente WiFi](https://cristianbrinza.github.io/evolution/demo/landings/echipamente-wifi.html)
 - [Safe-Web](https://cristianbrinza.github.io/evolution/demo/landings/safe-web.html)
 
+Promo:
+- [Triple](https://cristianbrinza.github.io/evolution/demo/landings/triple.html)
+
 
 ### Directmail:
 
