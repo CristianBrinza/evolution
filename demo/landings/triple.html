@@ -72,6 +72,10 @@ r_change.show_popup = function() {
         <div class="mtc_evolution_main">
          
 <div id="mtc_evolution_call"></div>
+
+
+
+
 <style>
     #mtc_evolution_triple_regio{
         color: #212A55;
@@ -735,6 +739,63 @@ align-items: center;
     justify-content: center;
     height: 100%;
 }
+#mtc_evolution_calculator_prices_down{
+    width: 100%;
+}
+
+@media (max-width:1300px) {
+    #mtc_evolution_calculator{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    #mtc_evolution_calculator_total {
+    width: 780px;
+}
+    
+}
+
+@media (max-width: 940px) {
+    #mtc_evolution_calculator{
+       width: 100%;
+    }
+    #mtc_evolution_calculator_total {
+        width: 100%;
+        margin-bottom: 30px;
+}
+#mtc_evolution_calculator_constructor_block_option_fibra {
+    flex-wrap: wrap;
+    gap:10px;
+}
+#mtc_evolution_calculator_constructor{
+    padding: 40px 97px;
+    width: 100%;
+}
+#mtc_evolution_calculator_constructor_block_option_fibra_500, #mtc_evolution_calculator_constructor_block_option_fibra_1000 {
+    width: 100%;
+}
+#mtc_evolution_calculator_constructor_block_option_TV_title{
+    margin-top: 5px 0;
+}
+#mtc_evolution_calculator_constructor_block_option_TV_subtitle{
+display: none;
+}  
+#mtc_evolution_calculator_constructor_block_options_tv {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mtc_evolution_calculator_constructor_block_option_tv {
+    width: 100%;
+}
+#mtc_evolution_calculator_constructor_block_option_subtitle_tel_fix_hide_br{
+    display: none;
+}
+.mtc_evolution_calculator_constructor_block_option_tv_inside_mobile{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+}
 </style>
 
 <div id="mtc_evolution_calculator">
@@ -765,13 +826,13 @@ align-items: center;
                 </div>
                 <div class="mtc_evolution_calculator_constructor_block_option_price">
 <span class="mtc_evolution_calculator_constructor_block_option_price_old">
-    230 lei /luna
+    230 lei/lună
 </span>
 <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_500_option">
     ----
 </span>
 <span class="mtc_evolution_calculator_constructor_block_option_price_lei">
-    lei /luna
+    lei/lună
 </span>
                 </div>
             </div>
@@ -795,13 +856,13 @@ align-items: center;
                 </div>
                 <div class="mtc_evolution_calculator_constructor_block_option_price">
 <span class="mtc_evolution_calculator_constructor_block_option_price_old">
-    230 lei /luna
+    230 lei/lună
 </span>
 <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_1000_option">
    ----
 </span>
 <span class="mtc_evolution_calculator_constructor_block_option_price_lei">
-    lei /luna
+    lei/lună
 </span>
                 </div>
             </div>
@@ -820,8 +881,8 @@ align-items: center;
             <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Simplu</div>
 
             <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
-                <div>
-                    <span><span style="font-weight: 900; font-size: 32px;" id="simplu_calculator_price">--</span> lei /luna</span>
+                <div class="mtc_evolution_calculator_constructor_block_option_tv_inside_mobile">
+                    <span><span style="font-weight: 900; font-size: 32px;" id="simplu_calculator_price">--</span> lei/lună</span>
                     <br>
                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
                         <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
@@ -843,8 +904,8 @@ align-items: center;
             <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Premier</div>
 
             <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
-                <div>
-                    <span><span style="font-weight: 900; font-size: 32px;" id="premier_calculator_price">--</span> lei /luna</span>
+                <div class="mtc_evolution_calculator_constructor_block_option_tv_inside_mobile">
+                    <span><span style="font-weight: 900; font-size: 32px;" id="premier_calculator_price">--</span> lei/lună</span>
                     <br>
                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
                         <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
@@ -868,8 +929,8 @@ align-items: center;
             <div class="mtc_evolution_calculator_constructor_block_option_tv_title">Univers</div>
 
             <div class="mtc_evolution_calculator_constructor_block_option_tv_inside">
-                <div>
-                    <span><span style="font-weight: 900; font-size: 32px;" id="univers_calculator_price">--</span> lei /luna</span>
+                <div class="mtc_evolution_calculator_constructor_block_option_tv_inside_mobile">
+                    <span><span style="font-weight: 900; font-size: 32px;" id="univers_calculator_price">--</span> lei/lună</span>
                     <br>
                     <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels">
                         <span class="mtc_evolution_calculator_constructor_block_option_tv_inside_clannels_number">55</span> 
@@ -902,7 +963,7 @@ align-items: center;
             <div>
                 <span id="mtc_evolution_calculator_constructor_block_option_TV_top_title">Pentru comoditatea familiei tale <br>
                     </span>
-                    <span id="mtc_evolution_calculator_constructor_block_option_TV_title">Adauga un abonament TV suplimentar <span style="font-weight: 300;">la doar</span> 30 lei/luna</span><br>
+                    <div id="mtc_evolution_calculator_constructor_block_option_TV_title">Adauga un abonament TV suplimentar <span style="font-weight: 300;">la doar</span> 30 lei/lună</div>
            <span id="mtc_evolution_calculator_constructor_block_option_TV_subtitle">Grila de canale TV este identicã cu grila abonamentului de televiziune ales.</span>
                 </div>
             <div id="mtc_evolution_calculator_constructor_block_option_active_tick_TV_sup">
@@ -984,13 +1045,13 @@ align-items: center;
 </div>
 <div class="mtc_evolution_calculator_constructor_block_option_price">
     <span class="mtc_evolution_calculator_constructor_block_option_price_old" style="display: none;">
-        --- lei /luna
+        --- lei/lună
     </span>
     <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="phone_r55_price">
         ----
     </span>
     <span class="mtc_evolution_calculator_constructor_block_option_price_lei">
-        lei /luna
+        lei/lună
     </span>
                     </div>
             <div id="mtc_evolution_calculator_constructor_block_option_active_tick_phone_r55">
@@ -1066,13 +1127,13 @@ align-items: center;
             </div>
             <div class="mtc_evolution_calculator_constructor_block_option_price">
                 <span class="mtc_evolution_calculator_constructor_block_option_price_old" style="display: none;">
-                    --- lei /luna
+                    --- lei/lună
                 </span>
                 <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="phone_s95_price">
                     ----
                 </span>
                 <span class="mtc_evolution_calculator_constructor_block_option_price_lei">
-                    lei /luna
+                    lei/lună
                 </span>
                                 </div>
             <div id="mtc_evolution_calculator_constructor_block_option_active_tick_phone_95">
@@ -1095,7 +1156,7 @@ align-items: center;
 <div id="mtc_evolution_calculator_constructor_block_option_title_tel_fix">
     Aboanament lunar -  10 lei/lună<br>
     <span id="mtc_evolution_calculator_constructor_block_option_subtitle_tel_fix">
-        Minute nelimitate in reteaua mobilă si fixă Moldtelecom <br>
+        Minute nelimitate in reteaua mobilă si fixă Moldtelecom <br id="mtc_evolution_calculator_constructor_block_option_subtitle_tel_fix_hide_br">
 + 30 minute nationale + Serviciul CLIP inclus
     </span>
 </div>
@@ -1132,7 +1193,7 @@ align-items: center;
 
     <div id="mtc_evolution_calculator_total_prices">
         <div class="mtc_evolution_calculator_total_price">
-            <span class="mtc_evolution_calculator_total_price_title">Net acasă</span>
+            <span class="mtc_evolution_calculator_total_price_title">Net fibră</span>
             <span class="mtc_evolution_calculator_total_price_number" id="mtc_evolution_calculator_total_price_fibra"> ---- </span>
         </div>
         <div class="mtc_evolution_calculator_total_price">
@@ -1153,20 +1214,22 @@ align-items: center;
         </div>
     </div>
 
+   <div id="mtc_evolution_calculator_prices_down">
     <div id="mtc_evolution_calculator_final_prices">
-<div>Total</div>
-
-<div id="mtc_evolution_calculator_final_prices_show">----</div>
-    </div>
-    <form class="mtc_evolution_form_comanda_triple" id="calculator_form" action="/comanda_marketing" data-type="thankyou-page-form" method="post">
-        <input class="mtc_evolution_triple_form_phone" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -" required="" value=""> 
-        <button class="mtc_evolution_triple_call mtc_evolution_btn_2" name="submit" type="submit" > Comandă acum
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-        </button>   
-    </form>
+        <div>Total</div>
+        
+        <div id="mtc_evolution_calculator_final_prices_show">----</div>
+            </div>
+            <form class="mtc_evolution_form_comanda_triple" id="calculator_form" action="/comanda_marketing" data-type="thankyou-page-form" method="post">
+                <input class="mtc_evolution_triple_form_phone" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -" required="" value=""> 
+                <button class="mtc_evolution_triple_call mtc_evolution_btn_2" name="submit" type="submit" > Comandă acum
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </button>   
+            </form>
+   </div>
 </div>
 </div>
 
@@ -1294,7 +1357,7 @@ margin-top: 15px;
         padding: 55px 40px;
         box-sizing: border-box;
     }
-    .slick-initialized .slick-slide{
+    .special_offer_phone_carousel_block{
         display: flex!important;
     }
     .slick-dots{
@@ -1303,6 +1366,66 @@ margin-top: 15px;
     left: -340px;
     
     }
+
+
+    @media (max-width: 1300px) {
+        .slick-dots{
+            left: -180px;
+    
+    }
+
+    #special_offer_tv_block_1{
+        background: url('../../images/landings/triple/img3_small.png');
+        background-size: cover;
+    }
+    #special_offer_tv_block_2{
+        background: url('../../images/landings/triple/img4_small.png');
+        background-size: cover;
+    }
+    }
+
+    @media (max-width: 940px) {
+        #special_offer_tv {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.special_offer_phone_text{
+    width: 100%;
+}
+.special_offer_phone_carousel_block {
+    flex-direction: column;
+}
+.special_offer_tv_block_title {
+    line-height: 28px;
+}
+#special_offer_phone_block_img{
+margin: 20px 0;
+}
+#special_offer_phone {
+    height: 720px;
+}
+.slick-dots {
+    position: absolute !important;
+    bottom: 25px;
+    left: auto;
+}
+#special_offer_tv_block_1{
+        background: url('../../images/landings/triple/img3.png');
+        background-size: cover;
+    }
+    #special_offer_tv_block_2{
+        background: url('../../images/landings/triple/img4.png');
+        background-size: cover;
+    }
+
+    }
+
+
+    @media (max-width: 650px) {
+   
+}
   
 </style>
     <div id="special_offer_phone" class="special_offer_phone_carousel">
