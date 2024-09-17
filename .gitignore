@@ -3,3 +3,4 @@ images/.DS_Store
 images/directmail/.DS_Store
 production
 .DS_Store
+.vscode/settings.json
