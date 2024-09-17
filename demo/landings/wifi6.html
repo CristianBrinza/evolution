@@ -1,0 +1,1240 @@
+<html></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Safe Web", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small">
+            <video autoplay  loop muted>
+                <source src="../../images/landings/wifi6/wifi.mp4" type="video/mp4">
+            </video>
+        </div>
+
+       <style>
+        #mtc_evolution_hero_img_small video{
+            width: 100%;
+        }
+        #mtc_evolution_hero_img_small{
+           height: 25vw;
+           padding-top: 50px;
+
+        }
+
+
+      @media (max-width:650px) {
+        #mtc_evolution_hero_img_small video{
+            height: 80vw;
+            width: auto;
+           
+        }
+        #mtc_evolution_hero_img_small {
+            height: 70vw;
+    padding-top: 0px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+        
+      }
+       </style>
+        <div class="mtc_evolution_main">
+      
+            <div>
+            
+                <style type="text/css">
+                    #mtc_tv_features {
+                        user-select: none;
+                        width: 100%;
+                        padding: 33px 45px;
+                        box-sizing: border-box;
+                        border-radius: var(--block_border_radius);
+                        background: #F3F5FF;
+                        border: 1px solid #F3F5FF;
+            
+                    }
+            
+                    .mtc_tv_features_card {
+            
+                        width: calc((1090px - 150px) / 4);
+                        margin-right: 50px;
+                        display: flex !important;
+                        flex-direction: column;
+            
+                    }
+            
+                    .mtc_tv_features_card span {
+                        color: #222;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        /* 137.5% */
+                        height: 78px;
+                    }
+            
+                    .mtc_tv_features_card svg {
+                        margin-bottom: 10px;
+                    }
+            
+                    .mtc_tv_features_bold {
+                        font-weight: 700 !important;
+                    }
+            
+                    .mtc_tv_features_card_btn {
+                        cursor: pointer;
+                        color: #212A55;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 17px;
+                        /* 106.25% */
+                        margin-top: 8px;
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                    }
+            
+                    .mtc_tv_features_card_btn svg {
+                        margin: 0;
+                    }
+            
+                    @media (max-width: 1300px) {
+                        .mtc_tv_features_card {
+            
+                            width: calc((790px - 100px) / 3);
+                            margin-right: 50px;
+                            display: flex !important;
+                            flex-direction: column;
+            
+                        }
+                    }
+            
+                    @media (max-width: 940px) {
+                        .mtc_tv_features_card {
+                            width: calc((580px - 100px) / 2);
+                            margin-right: 20px;
+                        }
+                        .special_offer_phone_text {
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            
+            
+                    }
+            
+                    @media (max-width: 650px) {
+                        .mtc_tv_features_card {
+                            width: 38vw;
+            
+                        }
+                        .special_offer_tv_block_title{
+            width: 100%;
+            max-width: 460px;
+                        }
+                        
+                        .special_offer_tv_block_title_costume{
+            width: 100%;
+            max-width: 289px;
+                        }
+                        .special_offer_tv_block_title br{
+                            display: none;
+                        }
+                        
+                    }
+            
+                    @media (max-width: 550px) {
+                        .mtc_tv_features_card {
+                            width: 65vw;
+                            box-sizing: border-box;
+                            padding: 0;
+                            margin-right: 0;
+                            padding-left: calc(90vw - 65vw - 30px);
+                        }
+            
+                        #mtc_tv_features {
+                            padding: 25px 15px;
+                        }
+                    }
+            
+                    @media (max-width: 430px) {
+                        .mtc_tv_features_card {
+                            width: 70vw;
+                            box-sizing: border-box;
+                            padding: 0;
+                            margin-right: 0;
+                            padding-left: calc(90vw - 70vw - 30px);
+                        }
+                    }
+                </style>
+                <div class="carousell_2" id="mtc_tv_features">
+                    <div class="mtc_tv_features_card">
+                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12.0039" y="11.3835" width="25.0446" height="25.0446" rx="3.75" stroke="#78C144" stroke-width="2.5"/>
+                            <rect x="5.74219" y="5.12378" width="37.5648" height="37.5648" rx="3.75" stroke="#212A55" stroke-width="2.5"/>
+                            <rect x="48.5" y="31" width="3" height="6" rx="1.5" transform="rotate(90 48.5 31)" fill="#212A55"/>
+                            <rect x="48.5" y="23" width="3" height="6" rx="1.5" transform="rotate(90 48.5 23)" fill="#212A55"/>
+                            <rect x="48.5" y="15" width="3" height="6" rx="1.5" transform="rotate(90 48.5 15)" fill="#212A55"/>
+                            <rect x="6.5" y="31" width="3" height="6" rx="1.5" transform="rotate(90 6.5 31)" fill="#212A55"/>
+                            <rect x="6.5" y="23" width="3" height="6" rx="1.5" transform="rotate(90 6.5 23)" fill="#212A55"/>
+                            <rect x="6.5" y="15" width="3" height="6" rx="1.5" transform="rotate(90 6.5 15)" fill="#212A55"/>
+                            <rect x="30.5" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            <rect x="22.5" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            <rect x="14.5" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            <rect x="30.5" y="42" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            <rect x="22.5" y="42" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            <rect x="14.5" y="42" width="3" height="6" rx="1.5" fill="#212A55"/>
+                            </svg>
+                            
+                            
+                            
+                        <div>
+                            Asiguram  <span class="mtc_tv_features_bold">capacitate</span> <br>
+                            și <span class="mtc_tv_features_bold">experiență</span> excepțională</div>
+                    
+                    </div>
+            
+                    <div class="mtc_tv_features_card">
+                        <svg width="56" height="44" viewBox="0 0 56 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.2812 15.0002V36.6002C46.2812 38.0324 45.8071 39.4059 44.9632 40.4186C44.1193 41.4313 42.9747 42.0002 41.7813 42.0002H14.7812C13.5878 42.0002 12.4432 41.4313 11.5993 40.4186C10.7554 39.4059 10.2813 38.0324 10.2812 36.6002V15.0002" stroke="#78C144" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.42969 14.9319L27.2195 2.09851C27.44 1.98893 27.6832 1.93188 27.9297 1.93188C28.1762 1.93188 28.4193 1.98893 28.6399 2.09851L54.4297 14.9319" stroke="#212A55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.42969 14.9319L27.2195 2.09851C27.44 1.98893 27.6832 1.93188 27.9297 1.93188C28.1762 1.93188 28.4193 1.98893 28.6399 2.09851L54.4297 14.9319" stroke="#212A55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            
+                            
+                            <div>
+                                Creat pentru  <span class="mtc_tv_features_bold">casă</span> <br>
+                                <span class="mtc_tv_features_bold">inteligentă</span> și <span class="mtc_tv_features_bold">gaming</span>
+                         
+                                  </div>
+                       
+                    </div>
+            
+                    <div class="mtc_tv_features_card">
+                        <svg width="58" height="46" viewBox="0 0 58 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.28233 43.9319C4.08605 39.5753 2.20312 34.2276 2.20312 28.4479C2.20312 13.8035 14.2914 1.93188 29.2031 1.93188C44.1148 1.93188 56.2031 13.8035 56.2031 28.4479C56.2031 34.2276 54.3202 39.5753 51.1239 43.9319" stroke="#212A55" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M27.2734 32.6106L43.622 16.6999" stroke="#78C144" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M32.9531 30.4319C32.9531 32.8939 31.1647 34.6819 29.2031 34.6819C27.2415 34.6819 25.4531 32.8939 25.4531 30.4319C25.4531 27.9699 27.2415 26.1819 29.2031 26.1819C31.1647 26.1819 32.9531 27.9699 32.9531 30.4319Z" fill="#78D337" stroke="#78C144" stroke-width="2.5"/>
+                            </svg>
+                            
+                            
+                            
+                            <div>
+                                <span class="mtc_tv_features_bold">Gamă de viteze</span> impresionante,<br> stabile și performante </div>
+                       
+                    </div>
+            
+                    <div class="mtc_tv_features_card">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.1768 2.36602C44.1104 2.074 43.9677 1.80486 43.7631 1.58613C43.5586 1.36739 43.2997 1.20691 43.0128 1.12111C42.7258 1.03531 42.4213 1.02726 42.1303 1.0978C41.8392 1.16833 41.5722 1.31491 41.3564 1.52254L34.4629 8.14955C34.2526 8.3521 34.0984 8.60563 34.0153 8.88547C33.9321 9.16531 33.9229 9.46191 33.9884 9.74639L35.109 14.6513C35.0927 14.6665 35.0767 14.682 35.0608 14.6977L26.8196 22.6203C26.3623 23.092 26.106 23.7228 26.1046 24.3798C26.1033 25.0368 26.357 25.6687 26.8123 26.1423C27.2676 26.6159 27.889 26.8944 28.5455 26.9189C29.2021 26.9434 29.8425 26.7122 30.3319 26.2738L38.5798 18.3548C38.5961 18.3384 38.6122 18.3218 38.6281 18.305L43.4816 19.6214C43.7633 19.6981 44.06 19.7005 44.3429 19.6284C44.6258 19.5564 44.8852 19.4123 45.0959 19.2102L51.9894 12.5832C52.2063 12.3759 52.364 12.1145 52.4465 11.8261C52.529 11.5376 52.5332 11.2324 52.4587 10.9418C52.3842 10.6511 52.2337 10.3856 52.0227 10.1723C51.8117 9.95908 51.5477 9.80585 51.2578 9.72836L45.5095 8.17456L44.1768 2.36602Z" fill="#78C144"/>
+                            <path d="M48.0594 27.9599C47.3596 31.9544 45.4438 35.7744 42.3192 38.8225C34.4023 46.5457 21.7235 46.3887 14.0003 38.4718C6.27706 30.5549 6.43409 17.8761 14.351 10.1529C17.4756 7.10475 21.3419 5.28409 25.3525 4.68349" stroke="#212A55" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M24.9628 15.05C24.4607 15.253 23.9721 15.4978 23.5023 15.7841C22.7168 16.2628 21.984 16.8576 21.3295 17.5676C17.5476 21.6694 17.807 28.0604 21.9089 31.8423C26.0107 35.6241 32.4017 35.3647 36.1836 31.2629C36.8604 30.5288 37.4078 29.7214 37.8268 28.8688C38.0918 28.3298 38.3054 27.7728 38.4681 27.2047" stroke="#212A55" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                            
+                            
+                            <div>
+                                Eficiență fără  
+ <span class="mtc_tv_features_bold">precedent</span> <br>
+                                și <span class="mtc_tv_features_bold">la tine acasa </span> </div>
+                        
+                    </div>
+            
+                   
+            
+            
+            
+            
+                </div>
+            
+            
+                <script>
+                    $('.carousell_2').slick({
+                        arrows: false,
+                        dots: false,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        variableWidth: true,
+                        responsive: [
+                            {
+                                breakpoint: 1351,
+                                settings: {
+                                    slidesToShow: 3,
+                                },
+                            },
+                            {
+                                breakpoint: 951,
+                                settings: {
+                                    slidesToShow: 2,
+                                },
+                            },
+                            {
+                                breakpoint: 651,
+                                settings: {
+                                    slidesToShow: 1,
+            
+                                },
+                            },
+                        ],
+                    });
+            
+            
+                </script>
+            
+            </div>
+
+
+            <style>
+                .wifi_page_block_1, .wifi_page_block_2{
+width: 100%;
+display: flex;
+align-items: center;
+    justify-content: space-between;
+                }
+                .wifi_page_block_1_img{
+width: 580px;
+height: auto;
+border-radius: 12px;
+                }
+                .wifi_page_block_1_right{
+                    width: 580px;
+                    padding: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+                }
+                .wifi_page_block_1_title{
+                 
+                    color: #212A55;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 100% */
+                }
+                .wifi_page_block_1_text{
+                    color: #222;
+font-family: "MTC-Futura New";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 91.667% */
+letter-spacing: 0.24px;
+                }
+                .mtc_evolution_btn_2_costume {
+                    color: #fff;
+                    background: #212A55;
+                }
+
+                .mtc_evolution_btn_2_costume svg path {
+                    stroke: #fff;
+                }
+                .wifi_page_block_1_btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+@media (max-width:1300px) {
+    .wifi_page_block_1_img{
+        width: 430px;
+    }
+    .wifi_page_block_1_right{
+        padding: 10px 30px;
+        width: 430px;
+    }
+    .wifi_page_block_1_text{
+        font-size: 20px;
+    }
+    .wifi_page_block_1_title {
+    font-size: 28px;
+    margin-bottom: -10px;
+}
+    
+}
+            </style>
+          
+          <div class="wifi_page_block_1">
+               
+            <img class="wifi_page_block_1_img" src="../../images/landings/wifi6/img2.png" alt="wifi6">
+            <div class="wifi_page_block_1_right">
+                <div class="wifi_page_block_1_title">
+                    Wi-Fi de ultimă generație pentru casa ta 
+                </div>
+                <div class="wifi_page_block_1_text">
+            
+                    Wi-Fi 6 aduce tehnologia Wi-Fi de ultimă generație în casa ta, oferindu-ți avantaje în ceea ce privește capacitatea, viteza și raza de acțiune de care ai nevoie.
+                        </div>
+            
+                        <div class="wifi_page_block_1_btns">
+                            <a class="mtc_evolution_btn_2 mtc_evolution_btn_2_costume" >
+                                <span>Abonamente</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                        
+                            </a>
+                            <a class="mtc_evolution_btn_2 mtc_evolution_btn_2_costume" >
+                                <span>Caracteristici</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                        
+                            </a>
+                            
+                            
+                        </div>
+            </div>
+                        </div>
+
+
+
+<style>
+    #wifi_page_block_2{
+        height: 351px;
+        width: 100%;
+        border-radius: 12px;
+border: 1px solid #D9DFFF;
+background: url('../../images/landings/wifi6/img6.png');
+display: flex;
+justify-content: flex-end;
+    }
+    #wifi_page_block_2_right {
+    width: 440px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media (max-width:1300px) {
+    #wifi_page_block_2{
+background: url('../../images/landings/wifi6/img6_2.png');
+    }
+    
+}
+
+@media (max-width:940px) {
+    #wifi_page_block_2_right{
+width: 100%;
+box-sizing: border-box;
+    }
+    #wifi_page_block_2{
+background: url('../../images/landings/wifi6/img6_3.png');
+    }
+}
+
+
+@media (max-width: 650px) {
+    .wifi_page_block_1_img{
+        width: 100%;
+    }
+    .wifi_page_block_1_right{
+        width: 100%;
+    }
+    #wifi_page_block_2_right {
+        padding: 23px;
+        width: 100%;
+}
+}
+</style>
+
+<div id="wifi_page_block_2">
+<div id="wifi_page_block_2_right">
+    <div class="wifi_page_block_1_title">
+        Conexiuni multiple
+    </div>
+    <div class="wifi_page_block_1_text">
+        Fiecare membru al familiei poate accesa internetul în același timp de pe diferite gadgeturi, asigurând o experiență online de înaltă calitate, pe orice dispozitiv și în orice moment.
+    Wi-Fi 6 garantează o performanță excelentă chiar și atunci când mai multe dispozitive sunt conectate simultan cu routerul wireless. 
+    </div>
+</div>
+</div>
+
+
+
+
+                        <div class="wifi_page_block_1">
+               
+                            <img class="wifi_page_block_1_img" src="../../images/landings/wifi6/img3.png" alt="wifi6">
+                            <div class="wifi_page_block_1_right">
+                                <div class="wifi_page_block_1_title">
+                                    Cu o viteză mai mare vine o stabilitate mai mare
+                                </div>
+                                <div class="wifi_page_block_1_text">
+                            
+                                  
+Wi-Fi 6 introduce simboluri OFDM (modulație cu diviziune în frecvență ortogonală) ce transmit date de 4 ori mai lungi, ceea ce oferă mai multă stabilitate și permite transmiterea mai multor date în același spațiu.   </div>
+                            
+                        
+                            </div>
+                                        </div>
+
+                                        <div class="wifi_page_block_2">
+               
+                                           
+                                            <div class="wifi_page_block_1_right">
+                                                <div class="wifi_page_block_1_title">
+                                                    Interval incredibil
+                                                </div>
+                                                <div class="wifi_page_block_1_text">
+                                            
+                                                    Cu Wi-Fi 6 profiți din plin de Wi-Fi-ul ultrarapid, pe suprafețe mai mari ca niciodată – de la dormitor și baie până la subsol și curtea din spate. </div>
+                                            
+                                        
+                                            </div>
+                                            <img class="wifi_page_block_1_img" src="../../images/landings/wifi6/img4.png" alt="wifi6">
+                                                        </div>
+
+
+
+                                                        <div class="wifi_page_block_1">
+               
+                                                            <img class="wifi_page_block_1_img" src="../../images/landings/wifi6/img5.png" alt="wifi6">
+                                                            <div class="wifi_page_block_1_right">
+                                                                <div class="wifi_page_block_1_title">
+                                                                    Bucură-te de viteze de internet mai rapide   
+                                                                </div>
+                                                                <div class="wifi_page_block_1_text">
+                                                            
+                                                                    cu tehnologia de ultimă generație Wi-Fi 6!</div>
+                                                            
+                                                                        <div class="wifi_page_block_1_btns">
+                                                                            <a class="mtc_evolution_btn_2 mtc_evolution_btn_2_costume" >
+                                                                                <span>Vezi toate ofertele</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                                                </svg>
+                                                                        
+                                                                            </a>
+                                                                        
+                                                                            
+                                                                            
+                                                                        </div>
+                                                            </div>
+                                                                        </div>
+
+
+
+                                                                        <div>
+                                                                            <div class="mtc_evolution_title_center" style="color:#212A55;">Viteză de generație următoare</div>
+                                                                            
+                                                                            <div class="mtc_evolution_subtitle_center" style="margin-top: 5px;">Wi-Fi 6 utilizează benzile de 2,4 GHz și de 5 GHz. <br>
+                                                                                De asemenea, vine cu 1024 QAM (modulația amplitudinii în cuadratură) pentru a crește debitul către dispozitive cu până la 25%. </div>
+                                                                            </div>
+<style>
+    .wifi_page_block_3{
+        border-radius: 12px;
+border: 1px solid #CED6FF;
+background: #FFF;
+width: 100%;
+padding: 35px 62px 20px 32px;
+box-sizing: border-box;
+display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -20px;
+    }
+    .wifi_page_block_3_title{
+        border-radius: 12px;
+background: #212A55;
+color: #FFF;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 70%; /* 21px */
+text-transform: capitalize;
+width: 298px;
+padding: 13px 2px;
+margin-bottom: 20px;
+    }
+    .wifi_page_block_3_block{
+        width: 33.3%;
+    }
+    .wifi_page_block_3_block ul{
+        width: calc(100% - 40px);
+        color: #333;
+font-family: "MTC-Futura New";
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: 42px; /* 175% */
+border-bottom: 1px dashed #CED6FF;
+margin: 0;
+    }
+    .wifi_page_block_3_title_br_hiden{
+        display: none;
+    }
+
+    @media (max-width:1300px) {
+        .wifi_page_block_3_block ul{   
+            font-size: 20px;
+            line-height: 22px;
+    }  
+    .wifi_page_block_3_title{
+        width: 90%;
+    }
+    .wifi_page_block_3_block ul li{  
+        height: 40px; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center
+    }
+    .wifi_page_block_3_title_br_hiden{
+        display: block;
+    }
+    }
+
+    @media (max-width:940px) {
+        .wifi_page_block_3_block{
+            width: 50%;
+        }
+        #wifi_page_block_3_block_1{
+           display: none;
+        }
+        .wifi_page_block_3{
+            padding: 20px 10px;
+            box-sizing: border-box;
+        }
+    }
+   
+
+    @media (max-width: 940px) {
+    .wifi_page_block_3 {
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .wifi_page_block_3_block {
+        width: 100%;
+    }
+    .wifi_page_block_3_title {
+        width: 100%;
+    }
+    .wifi_page_block_3_title_br_hiden{
+        display: none;
+    }
+}
+</style>
+<div class="wifi_page_block_3">
+
+    <div class="wifi_page_block_3_block" id="wifi_page_block_3_block_1">
+        <div class="wifi_page_block_3_title" > 
+            Caracteristici
+        </div>
+        <ul>
+            <li>
+                Canale Wi-Fi suportate
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Dual-band viteza maximă
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Fluxuri MU-MIMO
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Agregarea sub-purtatorului
+            </li>
+        </ul>
+        <ul>
+            <li>
+                QAM
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Criptare Wireless
+            </li>
+        </ul>
+
+
+
+
+
+      
+    </div>
+    <div class="wifi_page_block_3_block">
+        
+   
+        <div class="wifi_page_block_3_title" style="background-color: #78C144;"> 
+            Wi-Fi 5
+        </div>
+        <ul>
+            <li>
+                5 GHz
+            </li>
+        </ul>
+        <ul>
+            <li>
+                2600 Mbps
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Downstream - <br class="wifi_page_block_3_title_br_hiden"> 4 Upstream -1
+            </li>
+        </ul>
+        <ul>
+            <li>
+                OFDM
+            </li>
+        </ul>
+        <ul>
+            <li>
+                256-QAM
+            </li>
+        </ul>
+        <ul>
+            <li>
+                802.11 128-bit AES
+            </li>
+        </ul>
+
+  
+    </div>
+    <div class="wifi_page_block_3_block">
+        <div class="wifi_page_block_3_title" style="background-color: #78C144;"> 
+            Wi-Fi 6
+        </div>
+        <ul>
+            <li>
+                2.4 GHz + 5 GHz
+            </li>
+        </ul>
+        <ul>
+            <li>
+                5400 Mbps
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Downstream - 4  <br class="wifi_page_block_3_title_br_hiden"> Upstream - 4
+            </li>
+        </ul>
+        <ul>
+            <li>
+                OFDMA
+            </li>
+        </ul>
+        <ul>
+            <li>
+                1024-QAM (+25%)
+            </li>
+        </ul>
+        <ul>
+            <li>
+                criptare pe 128 de biți
+            </li>
+        </ul>
+       
+
+    </div>
+</div>
+
+                                                                       <div>
+                                                                            <div class="mtc_evolution_title_center" style="color:#212A55;">Configurează-ți propriul abonament</div>
+                                                                            
+                                                                            <div class="mtc_evolution_subtitle_center" style="margin-top: 5px;">Alege Internet Fibra si ai 50% reducere la abonament pe 24 luni. </div>
+                                                                            </div>
+
+
+<style>
+#wifi_page_block_4{
+width: 100%;
+display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+.wifi_page_block_4_subscriptions{
+    border-radius: 12px;
+border: 1px solid #D9DFFF;
+background: #FFF;
+width: 580px;
+padding: 50px 60px 50px 60px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+gap:15px;
+
+}
+.wifi_page_block_4_subscriptions_title{
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 80% */
+letter-spacing: 0.2px;
+}
+.wifi_page_block_4_subscriptions_block{
+    border-radius: 12px;
+background: #EFF2FD;
+width: 100%;
+height: 80px;
+
+}
+.wifi_page_block_4_subscriptions_block_tel{
+    border-radius: 12px;
+    border: 1px solid #FCD501;
+    background: #fff;
+    position: relative;
+    padding: 0 24px 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wifi_page_block_4_subscriptions_block_tel_title{
+    color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px; /* 100% */
+letter-spacing: 0.2px;
+}
+.wifi_page_block_4_subscriptions_block_tel_subtitle{
+    color: rgba(33, 42, 85, 0.35);
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 2px;
+}
+.wifi_page_block_4_subscriptions_block_net_title_1{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.15px;
+}
+.wifi_page_block_4_subscriptions_block_net_title_2{
+    color: #1AAD9E;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+.wifi_page_block_4_subscriptions_block_net_title_3{
+    color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 100% */
+}
+.mtc_evolution_calculator_constructor_block_option_price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mtc_evolution_calculator_constructor_block_option_price_old {
+    color: rgba(33, 42, 85, 0.50);
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    text-decoration: line-through;
+    width: 70px;
+    text-align: center;
+}
+.mtc_evolution_calculator_constructor_block_option_price_bold {
+    color: #212A55;
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: -0.32px;
+    width: 70px;
+    text-align: center;
+}
+.mtc_evolution_calculator_constructor_block_option_price_lei {
+    color: #212A55;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+}
+.wifi_page_block_4_subscriptions_block_net{
+    padding: 0 24px 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+@media (max-width:1300px) {
+    
+   .wifi_page_block_4_subscriptions{
+width: 430px;
+padding: 50px 35px 50px 35px;
+    }
+}
+
+
+@media (max-width: 940px) {
+    .wifi_page_block_1 {
+
+    flex-direction: column;
+} .wifi_page_block_2 {
+    flex-direction: column-reverse;
+}
+#wifi_page_block_4{
+    flex-direction: column;
+    gap:20px;
+}
+.wifi_page_block_4_subscriptions{
+    width: 100%;
+}
+}
+
+@media (max-width: 650px) {
+    .wifi_page_block_4_subscriptions_block_tel {
+    width: 100%;
+    height: 110px;
+}
+}
+</style>
+                                                                            <div id="wifi_page_block_4">
+                                                                                <div class="wifi_page_block_4_subscriptions">
+
+                                                                                    <div class="wifi_page_block_4_subscriptions_title">
+                                                                                        Internet Fibră
+                                                                                    </div>
+                                                                                    <div class="wifi_page_block_4_subscriptions_block wifi_page_block_4_subscriptions_block_net">
+                                                                                <div>
+                                                                                    <span class="wifi_page_block_4_subscriptions_block_net_title_1">
+                                                                                        Până la 
+                                                                                    </span>
+                                                                                <br>
+                                                                                <span class="wifi_page_block_4_subscriptions_block_net_title_2">500Mbps</span>
+                                                                                   <br>
+                                                                                    <span class="wifi_page_block_4_subscriptions_block_net_title_3">
+                                                                                        Echipament performant
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="mtc_evolution_calculator_constructor_block_option_price"><span class="mtc_evolution_calculator_constructor_block_option_price_old" id="mtc_evolution_calculator_constructor_block_option_price_old_1" style="display: block;"> 230 lei/lună </span> <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_500_option">115</span> <span class="mtc_evolution_calculator_constructor_block_option_price_lei"> lei/lună </span></div>
+                                                                                    </div>
+                                                                                    <div class="wifi_page_block_4_subscriptions_title">
+                                                                                        Telefonie fixă <span style="font-weight: 300;">prin internet</span>
+                                                                                    </div>
+                                                                                        <div class="wifi_page_block_4_subscriptions_block wifi_page_block_4_subscriptions_block_tel" id="mtc_evolution_calculator_constructor_block_option_Tel_Fix_1" onclick="activate_option('Tel_Fix_1')">
+                                                                                            <div>
+                                                                                           <div class="wifi_page_block_4_subscriptions_block_tel_title">
+                                                                                            Abonament lunar -  10 lei/lună
+                                                                                           </div>
+                                                                                           <div class="wifi_page_block_4_subscriptions_block_tel_subtitle">
+                                                                                            Minute nelimitate in reteaua mobilă si fixă Moldtelecom
+                                                                                + 30 minute nationale + Serviciul CLIP inclus
+                                                                                           </div>
+                                                                                           
+                                                                                
+                                                                                           </div>
+                                                                                           <div id="mtc_evolution_calculator_constructor_block_option_active_tick_Tel_Fix_1"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="12" fill="white" r="11.5" stroke="#BBC4FA"></circle> </svg></div>
+                                                                                        </div>
+                                                                                
+                                                                                    <div class="mtc_evolution_btn_2 mtc_evolution_btn_2_costume" onclick="show_popup('1')">
+                                                                                        <span>  Comandă acum</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                                                        </svg>
+                                                                                
+                                                                                    </div>
+                                                                                  
+                                                                                </div>
+           
+                                                                                <div class="wifi_page_block_4_subscriptions">
+
+                                                                                    <div class="wifi_page_block_4_subscriptions_title">
+                                                                                        Internet Fibră
+                                                                                    </div>
+                                                                                    <div class="wifi_page_block_4_subscriptions_block wifi_page_block_4_subscriptions_block_net">
+                                                                                <div>
+                                                                                    <span class="wifi_page_block_4_subscriptions_block_net_title_1">
+                                                                                        Până la 
+                                                                                    </span>
+                                                                                <br>
+                                                                                <span class="wifi_page_block_4_subscriptions_block_net_title_2">1000Mbps</span>
+                                                                                   <br>
+                                                                                    <span class="wifi_page_block_4_subscriptions_block_net_title_3">
+                                                                                        Echipament performant
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="mtc_evolution_calculator_constructor_block_option_price"><span class="mtc_evolution_calculator_constructor_block_option_price_old" id="mtc_evolution_calculator_constructor_block_option_price_old_1" style="display: block;"> 250 lei/lună </span> <span class="mtc_evolution_calculator_constructor_block_option_price_bold" id="price_fiber_500_option">125</span> <span class="mtc_evolution_calculator_constructor_block_option_price_lei"> lei/lună </span></div>
+                                                                                    </div>
+                                                                                    <div class="wifi_page_block_4_subscriptions_title">
+                                                                                        Telefonie fixă <span style="font-weight: 300;">prin internet</span>
+                                                                                    </div>
+                                                                                        <div class="wifi_page_block_4_subscriptions_block wifi_page_block_4_subscriptions_block_tel" id="mtc_evolution_calculator_constructor_block_option_Tel_Fix_2" onclick="activate_option('Tel_Fix_2')" >
+                                                                                            <div>
+                                                                                           <div class="wifi_page_block_4_subscriptions_block_tel_title">
+                                                                                            Abonament lunar -  10 lei/lună
+                                                                                           </div>
+                                                                                           <div class="wifi_page_block_4_subscriptions_block_tel_subtitle">
+                                                                                            Minute nelimitate in reteaua mobilă si fixă Moldtelecom
+                                                                                + 30 minute nationale + Serviciul CLIP inclus
+                                                                                           </div>
+                                                                                           
+                                                                                
+                                                                                           </div>
+                                                                                           <div id="mtc_evolution_calculator_constructor_block_option_active_tick_Tel_Fix_2"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="12" fill="white" r="11.5" stroke="#BBC4FA"></circle> </svg></div>
+                                                                                        </div>
+                                                                                
+                                                                                    <div class="mtc_evolution_btn_2 mtc_evolution_btn_2_costume" onclick="show_popup('2')">
+                                                                                        <span>  Comandă acum</span><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                                                        </svg>
+                                                                                
+                                                                                    </div>
+                                                                                  
+                                                                                </div>
+                                          
+
+
+                                                                                <script>
+                                                                                    function show_popup(nr){
+                                                                                        if(nr=='2'){
+  
+  evolution_popoup('mtc_evolution_popup_block_form');
+  document.getElementById('mtc_evolution_popup_block_form_name').innerHTML= 'Net 1000 Mbps'
+  document.getElementById("tm_comanda_form").elements["info"].value='wifi6 - Net 1000 Mbps'
+                                                                                      if(fix_final_prices2!==0){
+                                                                  
+                                                                                             document.getElementById('mtc_evolution_popup_block_form_name').innerHTML= 'Net 1000 Mbps + Tel. Fix'
+  document.getElementById("tm_comanda_form").elements["info"].value='wifi6 - Net 1000 Mbps  + Tel. Fix'
+                                                                                      }
+                                                                                  }
+                                                                                  if(nr=='1'){
+  
+  evolution_popoup('mtc_evolution_popup_block_form');
+  document.getElementById('mtc_evolution_popup_block_form_name').innerHTML= 'Net 500 Mbps'
+  document.getElementById("tm_comanda_form").elements["info"].value='wifi6 - Net 500 Mbps'
+                                                                                      if(fix_final_prices1!==0){
+                                                                  
+                                                                                             document.getElementById('mtc_evolution_popup_block_form_name').innerHTML= 'Net 500 Mbps + Tel. Fix'
+  document.getElementById("tm_comanda_form").elements["info"].value='wifi6 - Net 500 Mbps  + Tel. Fix'
+                                                                                      }
+                                                                                  }
+                                                                                     
+                                                                                       
+                                                                                        
+                                                                                        
+                                                                                    }
+                                                                                </script>
+
+
+<script>
+    window.onload = function() {
+    mtc_evolution_form_comanda_new('tm_comanda_form', 'wifi6', ' ', 'place[mini_calculator]', ' ')
+         
+}
+</script>
+        <div class="mtc_evolution_popup_block" id="mtc_evolution_popup_block_form" style="display: none;" onclick="evolution_popoup('mtc_evolution_popup_block_f999')">
+            <div class="mtc_evolution_popup_block_inside">
+                <div class="mtc_evolution_title mtc_evolution_title_functions" style='margin-bottom:10px'>
+   <span style='font-size: 16px;
+   line-height: 1;
+   font-weight: 300;'><br>Abonamentul selectat:</span>
+   <br>
+    <span id='mtc_evolution_popup_block_form_name'> --- </span></div>
+                <form action="/comanda_marketing" class="mtc_evolution_form_comanda_mobil" id="tm_comanda_form">
+                    <input class="mtc_evolution_form_comanda_mobil_phone" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -" required="" value="" />
+                    <button class="mtc_evolution_triple_call mtc_evolution_btn_2" name="submit" type="submit">
+                        Comandă acum 
+                        <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="
+                    http://www.w3.org/2000/svg">
+                    <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="#212A55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path> </svg></button></form>
+            </div>
+            </div>
+                    <style>
+                            .mtc_evolution_calculator_constructor_block_option_active{
+background: #fdf8dc;
+border: 1px solid #f8e67e;
+    }
+    .mtc_evolution_calculator_constructor_block_option_active:hover{
+border: 1px solid #f8e67e;
+    }
+                    </style>                     
+                                          <script>
+                                             function changeSVG(svg_id) {
+            const svgContainer = document.getElementById('mtc_evolution_calculator_constructor_block_option_active_tick_' + svg_id);
+            svgContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+            <path d="M17.9524 7.52516L18.4747 8.04743L10.0857 16.4364L6.52528 12.876L7.04775 12.3535L9.8234 15.1224L10.0859 15.3843L10.3482 15.1222L17.9524 7.52516Z" fill="white" stroke="#BBC4FA" stroke-width="0.742857"/>
+        </svg>
+    `;
+        }
+
+        function changeBackSVG(svg_id) {
+            const svgContainer = document.getElementById('mtc_evolution_calculator_constructor_block_option_active_tick_' + svg_id);
+            svgContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11.5" fill="white" stroke="#BBC4FA"/>
+        </svg>
+    `;
+        }
+
+        function visual_option(option, status) {
+            const element = document.getElementById('mtc_evolution_calculator_constructor_block_option_' + option);
+
+            if (status == 'active') {
+                element.classList.add('mtc_evolution_calculator_constructor_block_option_active');
+                changeSVG(option)
+            } else {
+                element.classList.remove('mtc_evolution_calculator_constructor_block_option_active');
+                changeBackSVG(option)
+            }
+
+        }
+      
+        let fix_final_prices1= 0;
+        let fix_final_prices2= 0;
+        function activate_option(option) {
+
+
+
+            if (option === 'Tel_Fix_1') {
+                if (document.getElementById('mtc_evolution_calculator_constructor_block_option_Tel_Fix_1').classList.contains('mtc_evolution_calculator_constructor_block_option_active')) {
+                    visual_option(option, 'pasive')
+                    fix_final_prices1 = 0;
+                }
+                else {
+                    visual_option(option, 'active')
+                    fix_final_prices1 = 10
+                }
+            }
+            if (option === 'Tel_Fix_2') {
+                if (document.getElementById('mtc_evolution_calculator_constructor_block_option_Tel_Fix_2').classList.contains('mtc_evolution_calculator_constructor_block_option_active')) {
+                    visual_option(option, 'pasive')
+                    fix_final_prices2 = 0;
+                }
+                else {
+                    visual_option(option, 'active')
+                    fix_final_prices2 = 10
+                }
+            }
+
+
+            else if (option === 'fibra_1000') {
+                visual_option('fibra_500', 'pasive')
+                final_prices[0] = prices.fibra_1000;
+                selected_net = 'fibra_1000'
+                visual_option('fibra_1000', 'active')
+
+
+                document.getElementById('mtc_evolution_calculator_total_price_fibra').innerText = prices.fibra_1000 + ' lei';
+            }
+        }
+
+                                          </script>                                  </div>
+
+            <div id="mtc_evolution_footer_text"></div>
+        </div>
+
+        <div id="mtc_evolution_footer"></div>
+
+
+      
+        <style>
+            .mtc_evolution_form_comanda_mobil{
+    
+                display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-end;
+            }
+            .mtc_evolution_form_comanda_mobil_phone{
+        border-radius: 12px;
+        border: 1px solid #D9DFFF;
+        margin-top: 10px;
+        display: flex;
+        padding: 5px 23px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        height: 45px;
+        box-sizing: border-box;
+        color: #333333;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0.16px;
+        text-align: center;
+    }
+    
+    @media (max-width:580px) {
+        .mtc_evolution_form_comanda_mobil {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mtc_evolution_triple_call{
+    width:100%;
+    }
+    }
+         </style>
+
+    </div>
+</body>
+
+</html>
