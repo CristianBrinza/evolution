@@ -17,6 +17,7 @@ Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 - [Cinema Online](https://cristianbrinza.github.io/evolution/demo/landings/cinema-online.html)
 - [Echipamente WiFi](https://cristianbrinza.github.io/evolution/demo/landings/echipamente-wifi.html)
 - [Safe-Web](https://cristianbrinza.github.io/evolution/demo/landings/safe-web.html)
+- [News](https://cristianbrinza.github.io/evolution/demo/landings/news.html)
 
 Promo:
 - [Triple](https://cristianbrinza.github.io/evolution/demo/landings/triple.html)
