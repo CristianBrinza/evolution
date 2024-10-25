@@ -1,0 +1,278 @@
+<head>
+    <style type="text/css">
+        /* General reset for consistent email rendering across platforms */
+        body, table, td {
+            margin: 0;
+            padding: 0;
+            color: #333333!important;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        td{
+            border-radius: 12px;
+        }
+        p{
+            color: #333333!important;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        img.emoji {
+            display: inline !important;
+            height: 1em;
+            width: 1em;
+            line-height: inherit;
+            vertical-align: middle;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+            table-layout: fixed;
+        }
+        .wrapper {
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .outer {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .content {
+            padding: 30px;
+        }
+        .button {
+            background-color: #2F3A70;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 100px;
+            display: inline-block;
+            margin: 10px 0 15px;
+        }
+        .main_banner {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+            max-width: 164px;
+        }
+        .social {
+            display: flex;
+            vertical-align: middle;
+            justify-content: center!important;
+            align-items: center!important;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .social a {
+            text-decoration: none;
+            margin: 0 6px;
+        }
+        .social a img {
+            height: 19px;
+            width: auto;
+        }
+        .block {
+            padding: 20px;
+            border-radius: 12px;
+            background: #F3F5FF;
+        }
+        .last {
+            max-width: 279px;
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 110%;
+            margin: 15px auto 0;
+        }
+        .pre_button {
+            padding: 20px;
+            border-radius: 12px;
+            background: #F5F5F5;
+        }
+        .pre_button a {
+            color: #4F9CF9;
+            font-weight: 700;
+        }
+        .extra {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bottom_logo {
+            height: 30px;
+        }
+        #extra_img_1, #extra_img_2 {
+        display: none;
+    }
+
+    #extra_img_3, #extra_img_4 {
+        display: block;
+    }
+    #bottom_logo{
+margin-right: 20px;
+    }
+        
+
+        @media screen and (min-width: 601px) {
+            .extra {
+                flex-direction: row;
+            }
+            #extra_img_2 {
+                margin-top: 0px;
+                margin-left: 20px;
+            }
+            #extra_img_3, #extra_img_4 {
+        display: none;
+    }
+
+    #extra_img_1, #extra_img_2, #bottom_logo {
+        display: block;
+    }
+        }
+
+
+        /* Default state (Desktop view) */
+#extra_img_3, #extra_img_4 {
+    display: none;
+}
+
+/* Mobile view (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    #extra_img_1, #extra_img_2, #bottom_logo {
+        display: none !important; /* Ensures these are hidden on mobile */
+    }
+    .extra{
+        display: block;
+    }
+
+    #extra_img_3, #extra_img_4 {
+        display: block !important; /* Ensures these are shown on mobile */
+    }
+}
+
+/* Desktop view (min-width: 601px) */
+@media screen and (min-width: 601px) {
+    #extra_img_3, #extra_img_4 {
+        display: none !important; /* Ensures these are hidden on desktop */
+    }
+
+    #extra_img_1, #extra_img_2 {
+        display: block !important; /* Ensures these are shown on desktop */
+    }
+    .extra{
+        display: flex;
+    }
+}
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+    <table class="wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table class="outer" role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff; margin: 0 auto;">
+                    <tr>
+                        <td class="content" style="padding: 30px;">
+                            <img class="logo" src="../../images/directmail/portare/logo.png" alt="Moldtelecom" style="display: block; margin: 0 auto; width: 70%; max-width: 164px;">
+                            <p>Salut <img data-emoji="👋" class="emoji" alt="👋" aria-label="👋" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f44b/72.png" loading="lazy">,</p>
+
+                            <p>Ce-ar fi să plătești <b>doar 50%</b> din abonamentul de telefonie mobilă care îți oferă tot ce ai nevoie? 
+                                <img data-emoji="😱" class="emoji" alt="😱" aria-label="😱" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f631/72.png" loading="lazy">
+                                <img data-emoji="📱" class="emoji" alt="📱" aria-label="📱" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f4f1/72.png" loading="lazy"></p>
+                            <img class="main_banner" src="../../images/directmail/portare/main_banner.png" alt="Moldtelecom" style="width: 100%; border-radius: 10px;">
+                            <p>Simplu: <b>treci la Moldtelecom cu numărul tău actual</b> și bucură-te de oferte avantajoase!</p>
+                            <p class="block" style="padding: 20px; border-radius: 12px; background-color: #F3F5FF;">
+                                Cu Moldtelecom beneficiezi de:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- minute naționale NELIMITATE</b> 
+                                
+                                <img data-emoji="📱" class="emoji" alt="📱" aria-label="📱" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f4f1/72.png" loading="lazy">
+                                ,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- până la 245 GB</b> internet 
+                                
+                                <img data-emoji="🌐" class="emoji" alt="🌐" aria-label="🌐" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f310/72.png" loading="lazy">
+                                 pentru a naviga fără limite,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- minute internaționale</b> 
+                                <img data-emoji="🌍" class="emoji" alt="🌍" aria-label="🌍" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f30d/72.png" loading="lazy">
+                                
+                                 pentru a rămâne conectat cu cei dragi din străinătate,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- minute și net în Roaming</b> 
+                                
+                                <img data-emoji="✈️" class="emoji" alt="✈️" aria-label="✈️" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/2708/72.png" loading="lazy">
+                                 pentru călătorii fără griji.
+                                <br><br>
+                                <b>Totul cu reducere de 50%</b> la abonament pe toată perioada contractului, <b>începând cu doar 75 lei lunar</b>. 
+                                <img data-emoji="💸" class="emoji" alt="💸" aria-label="💸" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f4b8/72.png" loading="lazy">
+                                <img data-emoji="🔥" class="emoji" alt="🔥" aria-label="🔥" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f525/72.png" loading="lazy">
+                            </p>
+                            <p class="pre_button" style="padding: 20px; border-radius: 12px; background-color: #F5F5F5;">Accesează pagina <a href="https://mtc.md/portmtc" style="color: #4F9CF9; font-weight: 700;">moldtelecom.md</a> și descoperă toate detaliile despre abonamentele de telefonie mobilă. Sună la <a href="tel:022500500" style="color: #4F9CF9;">022 500 500</a>.</p>
+                            <p style="text-align: center;">
+                                <a href="https://mtc.md/portmtc" class="button" style="background-color: #2F3A70; color: white; padding: 15px 20px; text-decoration: none; border-radius: 100px; display: inline-block; margin: 10px 0 15px;">Alege abonamentul</a>
+                            </p>
+                            <p style="text-align: center; margin-bottom: 10px;">Conectează-te cu lumea digitală:</p>
+                            <div class="extra" style="flex-wrap: wrap; justify-content: center;">
+                                <a class="extra_img" id="extra_img_1" href="https://moldtelecom.md/esim" style="display: block; width: 100%; max-width: 260px; margin-right: 10px;">
+                                    <img src="https://moldtelecom.md/evolution/images/directmail/portare/extra1.png" alt="esim" style="width: 100%;">
+                                </a>
+                                <a class="extra_img" id="extra_img_2" href="https://mtc.md/my-mtc" style="display: block; width: 100%; max-width: 260px; margin-left: 10px;">
+                                    <img src="https://moldtelecom.md/evolution/images/directmail/portare/extra2.png" alt="app" style="width: 100%;">
+                                </a>
+                                <a class="extra_img" id="extra_img_3" href="https://moldtelecom.md/esim" style="display: block; width: 100%;  margin-bottom: 10px;">
+                                    <img src="https://moldtelecom.md/evolution/images/directmail/portare/extra1.png" alt="esim" style="width: 100%;">
+                                </a>
+                                <a class="extra_img" id="extra_img_4" href="https://mtc.md/my-mtc" style="display: block; width: 100%;  margin-top: 10px;">
+                                    <img src="https://moldtelecom.md/evolution/images/directmail/portare/extra2.png" alt="app" style="width: 100%;">
+                                </a>
+                            </div>
+                            <p style="text-align: center; font-weight: 600;">#Depășește-ți_limitele</p>
+                            <div style="display: flex; width: 100%;">
+                                <p style="text-align: center;">
+                            <p class="social" style="justify-content: center !important; align-items: center !important; text-align: center;">
+                                <a href="https://www.moldtelecom.md" id="bottom_logo" style="margin: 10px 6px;">
+                                  <img style="height: 30px; width: auto;" src="../../images/directmail/portare/bottom_logo.png" alt="Moldtelecom">
+                                </a> 
+                                <a href="https://www.facebook.com/moldtelecom.md" style="margin: 10px 6px;">
+                                  <img style="height: 19px; width: auto;" src="../../images/directmail/portare/facbook.png" alt="Facebook">
+                                </a> 
+                                <a href="https://www.tiktok.com/@moldtelecom.md" style="margin: 10px 6px;">
+                                  <img style="height: 19px; width: auto;" src="../../images/directmail/portare/tiktok.png" alt="Facebook">
+                                </a> 
+                                <a href="https://www.instagram.com/moldtelecom.md/" style="margin: 10px 6px;">
+                                  <img style="height: 19px; width: auto;" src="../../images/directmail/portare/instagram.png" alt="Instagram">
+                                </a> 
+                                <a href="https://www.linkedin.com/company/moldtelecom" style="margin: 10px 6px;">
+                                  <img style="height: 19px; width: auto;" src="../../images/directmail/portare/linkedin.png" alt="LinkedIn">
+                                </a> 
+                                <a href="https://www.youtube.com/channel/UC7ETXBNXYyQP_FnzeXKlwEQ" style="margin: 10px 6px;">
+                                  <img style="height: 19px; width: auto;" src="../../images/directmail/portare/youtube.png" alt="YouTube">
+                                </a>
+                              </p>
+                            </p>
+                        </div>
+                            <p class="last" style="max-width: 279px; width: 100%; text-align: center; font-size: 10px; font-weight: 400; line-height: 110%; margin: 15px auto 0;">
+                                Stefan cel Mare si Sfant Blvd. 10, CHISINAU, MD-2001<br>
+                                © 2024 S.A. MOLDTELECOM
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
