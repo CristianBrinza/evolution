@@ -19,9 +19,13 @@ Main showcase demo - [link](https://cristianbrinza.github.io/evolution/).
 - [Safe-Web](https://cristianbrinza.github.io/evolution/demo/landings/safe-web.html)
 - [News](https://cristianbrinza.github.io/evolution/demo/landings/news.html)
 
-Promo:
+### Promo:
 - [Triple](https://cristianbrinza.github.io/evolution/demo/landings/triple.html)
 - [Mobile](https://cristianbrinza.github.io/evolution/demo/landings/tm.html)
+
+### Others:
+- [Factura](https://cristianbrinza.github.io/evolution/demo/landings/factura.html)
+- [Digital 10](https://cristianbrinza.github.io/evolution/demo/landings/digital10.html)
 
 
 ### Directmail:
