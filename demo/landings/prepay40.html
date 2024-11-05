@@ -1,0 +1,873 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Prepay", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small" style="cursor: pointer;"><img alt="hero"
+                id="mtc_evolution_hero_img_small_desk" src="../../images/landings/" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_screen"
+                src="../../images/landings/" /> <img alt="hero"
+                id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_mobile"
+                src="../../images/landings/" />
+        </div>
+
+<style>
+    :root {
+    --mtc_blue: #212a55;
+    --mtc_pink: #dd4e6c;
+    --mtc_purple: #c666a4;
+    --mtc_light_green: #68b828;
+    --mtc_dark_green: #1da099;
+    --mtc_yellow: #e6e419;
+    --mtc_orange: #f2ab4c;
+    --mtc_dark_gray: #333333;
+    --mtc_backbroung: #ffffff;
+    --mtc_link_blue: #0071FA;
+    --heading_text: #1D1D1F;
+    --light_gray: #F7F7F7;
+    --border_radius_1: 18px;
+}
+</style>
+        <div class="mtc_evolution_main">
+            <style>
+                .prepay_title_1{
+                    color: #222;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+                }
+            </style>
+            <div class="prepay_title_1">
+                Primești mai mult, achiți mai puțin <br>
+ <span style="color: #3E94FF;">Cartela Moldtelecom!</span>
+            </div>
+
+
+<style>
+.prepay_block_1{
+    border-radius: 12px;
+background: #F3F5FF;
+word-wrap: 100%;
+display: flex;
+margin-top: -20px;
+}
+.prepay_block_1_right{
+display: flex;
+flex-direction: column;
+gap:20px;
+box-sizing: border-box;
+padding: 40px;
+
+justify-content: center;
+align-items: center;
+width: calc(100% - 480px);
+margin-left: -30px;
+}
+.prepay_block_1_right_title{
+    color: #222;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+.prepay_block_1_img{
+    width: 550px;
+}
+.prepay_block_1_right_card {
+    border-radius: 15.233px;
+    background: #FFF;
+    backdrop-filter: blur(16px);
+    width: 125px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.prepay_block_1_right_subtitle{
+    color: #222;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.prepay_block_1_right_card_title{
+    color: #3E94FF;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 30.466px;
+font-style: normal;
+font-weight: 700;
+line-height: 24.542px; /* 80.556% */
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.prepay_block_1_right_card_subtitle{
+    color: #242424;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.926px; /* 84.628% */
+height: 45px;
+display: flex;
+align-items: center;
+    justify-content: center;
+}
+.prepay_block_1_right_card_long{
+    border-radius: 12px;
+background: #3E94FF;
+backdrop-filter: blur(29px);
+width: 100%;
+max-width: 395px;
+height: 46px;
+color: #FFF;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 42px;
+font-style: normal;
+font-weight: 700;
+line-height: 44.658px; /* 106.329% */
+display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.prepay_block_1_right_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+<div class="prepay_block_1">
+<img class="prepay_block_1_img" src="../../images/landings/prepay_40/img5.png" alt="prepay">
+<div class="prepay_block_1_right">
+    <div class="prepay_block_1_right_title">
+        BONUS DE BUN VENIT
+    </div>
+
+    <div class="prepay_block_1_right_cards">
+        <div class="prepay_block_1_right_card">
+            <div class="prepay_block_1_right_card_title">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.8916 0.633065C33.7434 0.418887 30.0561 2.2037 27.6452 5.14864C27.6452 5.14864 24.9329 8.68257 24.9329 8.66472C24.9329 8.66472 21.5115 13.1803 21.5292 13.1803L18.5865 17.0712L18.356 17.3746C16.6719 19.6413 13.6937 20.9085 10.556 19.9804C9.38139 19.6233 8.32155 18.9597 7.48403 18.0569C6.64651 17.1541 6.06113 16.0443 5.7873 14.8402C5.54291 13.7972 5.53576 12.7121 5.76637 11.666C5.99699 10.6198 6.45941 9.63969 7.11909 8.79874C7.77878 7.95779 8.61867 7.27779 9.57603 6.80954C10.5334 6.34129 11.5835 6.09688 12.6478 6.09459C14.7928 6.09459 16.3883 7.00485 17.4874 7.96865C18.6574 9.00384 20.4479 8.8432 21.4052 7.59383C22.2383 6.5051 22.132 4.93446 21.1392 4.00636C15.5374 -1.1696 4.93639 0.00837829 1.55045 7.20118C-2.84595 16.5357 3.85501 25.7454 12.6478 25.7454C16.5124 25.7454 19.9692 24.0141 22.2561 21.2298L23.0183 20.2303C23.0183 20.2303 24.9506 17.678 24.9506 17.6959C24.9506 17.6959 28.372 13.1803 28.3543 13.1803L31.3502 9.23586L31.563 8.96814C33.1052 6.86206 35.7644 5.66624 38.6894 6.23738C41.2776 6.75497 43.4226 8.78966 44.0608 11.3776C45.2308 16.0717 41.7208 20.3017 37.2357 20.3017C35.1262 20.3017 33.5307 19.3914 32.4316 18.4098C32.154 18.1647 31.8294 17.9797 31.4779 17.8662C31.1264 17.7527 30.7554 17.7131 30.3881 17.7499C30.0207 17.7868 29.6648 17.8992 29.3424 18.0802C29.02 18.2613 28.738 18.5071 28.5138 18.8025C27.6452 19.9447 27.8047 21.5332 28.8684 22.497C30.517 23.9784 33.3357 25.7811 37.2357 25.7811C44.6812 25.7811 50.6199 19.1951 49.6095 11.5026C48.8295 5.577 43.7949 0.936483 37.8916 0.633065Z" fill="#3E94FF"/>
+                    </svg>
+                    
+            </div>
+            <div class="prepay_block_1_right_card_subtitle">
+                în rețeaua mobilă și fixă
+            </div>
+        </div>
+        <div class="prepay_block_1_right_card">
+            <div class="prepay_block_1_right_card_title">
+                40 min.
+            </div>
+            <div class="prepay_block_1_right_card_subtitle">
+                minute naționale
+            </div>
+        </div>
+        <div class="prepay_block_1_right_card">
+            <div class="prepay_block_1_right_card_title">
+                40 GB
+            </div>
+            <div class="prepay_block_1_right_card_subtitle">
+                internet <br> trafic
+            </div>
+        </div>
+        <div class="prepay_block_1_right_card_long">
+            40 lei
+        </div>
+    </div>
+    <div class="prepay_block_1_right_subtitle">
+        Cu noua ta cartelă, primești bonus de bun venit: minute nelimitate în rețeaua mobilă și fixă Moldtelecom, 40 minute naționale și 40 GB de internet, valabile timp de 15 zile. Se oferă o singură dată la activarea  cartelei.
+ <br><br>
+Ulterior, te bucuri de un conținut generos în funcție de suma reîncărcării, începând 30 lei, până la 600 minute și 100 GB.
+<br><br>
+
+<span style="font-weight: 450;">Disponibilă și în stațiile PECO și magazinele Moldtelecom</span>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<style>
+    .prepay_block_2{
+        border-radius: 12px;
+        border: 1px solid #D9DFFF;
+        width: 100%;
+        background: url(../../images/landings/prepay_40/img7.png);
+        box-sizing: border-box;
+        padding: 40px 50px;
+        height: 344px;
+    }
+.prepay_block_2_title{
+color: #FFF;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+max-width: 320px;
+}
+.prepay_block_2_img{
+    height: 76px;
+    margin-top: 40px;
+}
+.prepay_block_2_btn{
+    border-radius: 12px;
+    display: flex;
+width: 190px;
+padding: 5px 23px 5px 23px;
+align-items: center;
+gap: 10px;
+background:  #F3F5FF;
+color: #212A55;
+font-family: "MTC-Futura New";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+margin-top: 30px;
+}
+</style>
+<div class="prepay_block_2">
+<div class="prepay_block_2_title">
+    Unde poți cumpăra Cartela Moldtelecom
+</div>
+
+<img class="prepay_block_2_img" src="../../images/landings/prepay_40/img8.png" alt="">
+<div class="prepay_block_2_btn">
+    Unde poți cumpăra
+    <svg width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.25 5.25L27 12L20.25 18.75" stroke="#212A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+</div>
+</div>
+
+
+
+<style>
+    #digital10_hero_block_6{
+        width: 100%;
+    }
+    .digital10_hero_block_6_title{
+        color: #1D1D1F;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 29.79px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 15px;
+    }
+    .digital10_hero_block_5_list {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.digital10_hero_block_5_list_block{
+    border-radius: 16px;
+background: #F3F5FF;
+
+    backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    max-width: 160px;
+    width: 100%;
+    border: 1px solid #01467100;
+}
+.digital10_hero_block_5_list_block_subtitle{
+    color: #242424;
+    text-align: center;
+    font-family: "MTC-Futura New";
+    font-style: normal;
+    font-weight: 400;
+
+
+font-size: 14.895px;
+font-style: normal;
+font-weight: 500;
+line-height: 14.61px;
+}
+
+.digital10_hero_block_5_list_block {
+    transition: transform 0.2s ease-in-out;
+    /* transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; */
+}
+.digital10_hero_block_5_list_block:hover {
+    transform: scale(1.04);
+    /* border: 1px solid #0146711d; */
+    border: 1px solid #ffffffc7;
+}
+.digital10_hero_block_5_list_block_title{
+    color: #016D82;
+    text-align: center;
+    font-family: "MTC-Futura New";
+    font-size: 30.466px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.542px;
+    margin-top: 5px;
+}
+
+</style>
+
+
+    <div id="digital10_hero_block_6">
+        <div class="digital10_hero_block_6_title">
+            Tarife Extra:
+        </div>
+    
+        <div class="digital10_hero_block_5_list">
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    1leu
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    Minuta în rețeaua <br>mobilă Moldtelecom
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    1leu
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    Minuta înrețeaua <br> fixă Moldtelecom
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    2 lei
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    Minuta <br>
+                    națională
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    0,50 lei
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    SMS în rețeaua <br>
+    mobilă
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    0,50 lei
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    SMS <br>
+                    național
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    2 lei
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    SMS <br>
+                    internațional
+                  </span>
+            </div>
+            <div class="digital10_hero_block_5_list_block">
+                <span class="digital10_hero_block_5_list_block_title">
+                    1,5 lei
+            </span>
+                  <span class="digital10_hero_block_5_list_block_subtitle">
+                    Trafic internet <br>
+                    lei/MB
+                  </span>
+            </div>
+            
+        </div>
+    </div>
+
+
+<style>
+    .prepay_block_5_title{
+        color: #1D1D1F;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 100%;
+margin-top: 20px;
+    }
+    .digital10_hero_block_7_inside_video{
+                width: 90%;
+                aspect-ratio: 16/9;
+                max-width: 700px;
+                border-radius: 12px;
+                margin: -20px auto 0;
+            }
+            .digital10_hero_block_7_inside_video_block{
+                width: 100%;
+                display: flex;
+                margin-bottom: 30px;
+            }
+      
+</style>
+    <div class="prepay_block_5_title">
+        Cartela Moldtelecom: prinde vibe-ul <br>
+        provocărilor rebele
+    </div>
+
+
+
+    <div class="digital10_hero_block_7_inside_video_block">
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="digital10_hero_block_7_inside_video" frameborder="0" id="cartela_block4_video" src="https://www.youtube.com/embed/t98o49yRmy8" style="cursor: pointer;" title="YouTube video player"></iframe>
+      
+    </div>
+
+<style type="text/css">#cartela_block3 {
+    width: 100vw;
+    background: var(--light_gray);
+    display: flex;
+    margin-top: 40px;
+}
+
+#cartela_block3_header {
+    color: var(--heading_text);
+    width: 100%;
+    text-align: center;
+    font-family: "MTC-Futura New";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#cartela_block3_subheader {
+    color: var(--heading_text);
+    width: 100%;
+
+    text-align: center;
+    font-family: "MTC-Futura New";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+#cartela_block3_main_img {
+    margin: 0 0 0 -60px;
+    width: 433px;
+    height: auto;
+}
+
+#cartela_block3_main_text {
+    color: var(--heading_text);
+    text-align: right;
+    font-family: "MTC-Futura New";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+#cartela_block3_flex {
+    display: flex;
+}
+
+#cartela_block3_text_flex {
+    width: 50%;
+    margin-left: 60px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cartela_get_btn {
+    width: 168px;
+    height: auto;
+}
+
+#cartela_block3_get_btns {
+    display: flex;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+@media (max-width:950px) {
+    #cartela_block3_flex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #cartela_block3_text_flex {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    #cartela_block3_main_text {
+        text-align: center;
+    }
+
+    #cartela_block3 {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:650px) {
+    #cartela_block3_main_img {
+        margin: 0 0 0 -60px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width:650px) {
+    .cartela_get_btn {
+        width: 45%;
+        height: auto;
+    }
+
+    #cartela_block3_header {
+        font-size: 42px;
+    }
+}
+</style>
+</div>
+<div id="cartela_block3">
+    <div class="cartela_main">
+    <div id="cartela_block3_header">ÎȚI PLAC PROVOCĂRILE?</div>
+    
+    <div id="cartela_block3_subheader">PARTICIPĂ LA CHALLENGE ȘI CÂȘTIGĂ PREMII VALOROASE!</div>
+    
+    <div class="cartela_block3_main" id="cartela_block3_flex">
+    <div id="cartela_block3_text_flex"><span class="reveal active" id="cartela_block3_main_text"> Acceptă provocarea în aplicația My Moldtelecom și câștigă premii valoroase! Descarcă aplicația My Moldtelecom și treci etapele din Challenge.<br>
+    <br>
+    Cartela Moldtelecom. Viața ta - regulile tale!</span>
+    
+    <div class="reveal active" id="cartela_block3_get_btns"><img alt="Get on App Store" class="cartela_get_btn hand zoom" onclick="window.location='https://mtc.md/my-mtc'" src="https://moldtelecom.md/new/images/landings/personal/cartela/App_Store_btn.png"> <img alt="Get on Google Play" class="cartela_get_btn hand zoom" onclick="window.location='https://mtc.md/my-mtc'" src="https://moldtelecom.md/new/images/landings/personal/cartela/Google_Play_btn.png"></div>
+    </div>
+    <img alt="Cartela_Moldtelecom" id="cartela_block3_main_img" src="../../images/landings/prepay_40/img6.png"></div>
+    </div>
+    </div>
+
+
+    <div class="mtc_evolution_main">
+
+<div class="mtc_evolution_app"></div>
+
+
+
+    <div class="digital10_hero_block_7_inside_title">
+        Descoperă toată gama de Opțiuni adiționale
+    </div>
+    
+    
+    <style>
+        .digital10_hero_block_7_inside_title {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: "MTC-Futura New";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: -40px;
+}
+        .carousell_2{
+            margin: 20px 0 -20px;
+        }
+        .carousell_2_card{
+            height: 365px;
+            width: 100%;
+            max-width: 280px;
+            /* background: #FFFFFF; */
+            background: transparent;
+            border-radius: 16px;
+            margin: 10px;
+    
+        }
+        .carousell_2_card_img{
+            width: 100%;
+        }
+        .carousell_2_card_title{
+            width: 100%;
+            color: #212A55;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "MTC-Futura New";
+    font-size: 23.638px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.577px; /* 116.667% */
+    margin: 15px 0 10px;
+        }
+        .carousell_2_card_subtitle{
+    width: 90%;
+    margin: 0 5%;
+    color: #989898;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "MTC-Futura New";
+    font-size: 15.759px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.334px */
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        .carousell_2_card_btn{
+            color: #212A55;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12.893px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.34px; /* 150% */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 10px;
+    cursor: pointer;
+        }
+        .carousell_2_card_btn svg{
+        transition: margin 0.3s ease-in-out;
+    }
+        .carousell_2_card_btn:hover svg{
+            margin: 0 -5px 0 5px;
+        }
+    </style>
+    
+    <div class="carousell_2">
+        <div class="carousell_2_card">
+            <img class="carousell_2_card_img" src="../../images/landings/digital10/img5.png" alt="digital10">
+            <div class="carousell_2_card_title">
+             World Roaming
+            </div>
+            <div class="carousell_2_card_subtitle">
+             Opțiune de Internet mobil pentru cele mai populare destinaţii și cele mai aproape ca distanţă.
+            </div>
+            <div class="carousell_2_card_btn" onclick="evolution_popoup('mtc_evolution_popup_block_5')">
+             Activare și condiții
+             <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0.953125 9.59277L5.78813 5.72477L0.953125 1.53443" stroke="#212A55" stroke-width="1.61167" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+                 
+            </div>
+          </div>
+    
+          <div class="carousell_2_card">
+            <img class="carousell_2_card_img" src="../../images/landings/digital10/img6.png" alt="digital10">
+            <div class="carousell_2_card_title">
+                Fly Prepay
+            </div>
+            <div class="carousell_2_card_subtitle">
+                Cu opțiunile preplătite Fly, bucură-tede date mobile nelimitate, minute si și rețele sociale fără limite
+            </div>
+            <div class="carousell_2_card_btn" onclick="evolution_popoup('mtc_evolution_popup_block_6')">
+             Activare și condiții
+             <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0.953125 9.59277L5.78813 5.72477L0.953125 1.53443" stroke="#212A55" stroke-width="1.61167" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+                 
+            </div>
+          </div>
+          <div class="carousell_2_card">
+            <img class="carousell_2_card_img" src="../../images/landings/digital10/img7.png" alt="digital10">
+            <div class="carousell_2_card_title">
+             World Roaming
+            </div>
+            <div class="carousell_2_card_subtitle">
+             Opțiune de Internet mobil pentru cele mai populare destinaţii și cele mai aproape ca distanţă.
+            </div>
+            <div class="carousell_2_card_btn" onclick="evolution_popoup('mtc_evolution_popup_block_7')">
+             Activare și condiții
+             <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0.953125 9.59277L5.78813 5.72477L0.953125 1.53443" stroke="#212A55" stroke-width="1.61167" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+                 
+            </div>
+          </div>
+          <div class="carousell_2_card">
+            <img class="carousell_2_card_img" src="../../images/landings/digital10/img8.png" alt="digital10">
+            <div class="carousell_2_card_title">
+             World Roaming
+            </div>
+            <div class="carousell_2_card_subtitle">
+             Opțiune de Internet mobil pentru cele mai populare destinaţii și cele mai aproape ca distanţă.
+            </div>
+            <div class="carousell_2_card_btn" onclick="evolution_popoup('mtc_evolution_popup_block_8')">
+             Activare și condiții
+             <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0.953125 9.59277L5.78813 5.72477L0.953125 1.53443" stroke="#212A55" stroke-width="1.61167" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+                 
+            </div>
+          </div>
+       
+    </div>
+    <script>
+        $('.carousell_2').slick({
+            arrows: true,
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            responsive: [
+                {
+                    breakpoint: 1351,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 951,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 651,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+    
+        function cumpara(action, id) {
+            document.getElementById("abonamente_iptv_form").elements["info"].value = action + " " + id;
+            document.getElementById('mtc_popup_block_title_cumpara').innerHTML = id;
+            popoup('cumpara')
+        }
+    </script>
+  
+<div id="mtc_evolution_app">
+</div>
+
+<style>
+    .prepay_block_9{
+        color: #1D1D1F;
+font-family: "MTC-Futura New";
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+display: flex;
+flex-wrap: wrap;
+gap:20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    }
+    .prepay_block_9_btn {
+    border-radius: 12px;
+    background: #212A55;
+    color: #FFF;
+    font-family: "MTC-Futura New";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+    padding: 5px 35px 5px 23px;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+}
+</style>
+<div class="prepay_block_9">
+    ARHIVĂ CARTELA PREPAY MOLDTELECOM
+    <div class="prepay_block_9_btn">
+        Vezi mai multe detalii aici
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25 1.25L8 8L1.25 14.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+    </div>
+</div>
+        
+        </div>
+
+        <div id="mtc_evolution_footer"></div>
+    </div>
+ 
+
+
+
+
+</body>
+
+</html>
