@@ -198,6 +198,17 @@ else if (lang === "ru") {
                   },
               ],
         });
+        document.querySelectorAll('.mtc_evo_v2_mobile_options .mtc_evo_v2_popup_block').forEach(block => {
+            block.setAttribute('onclick', `mtc_evo_v2_popoup('${block.id}')`);
+            
+            let svgElement = `<svg class="mtc_evo_v2_popup_close_button" onclick="mtc_evo_v2_popoup('${block.id}')" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 19.5L19.425 4.5M19.5 19.5L4.575 4.5" stroke="#292C48" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
+            block.querySelector('.mtc_evo_v2_popup_block_inside').insertAdjacentHTML('beforeend', svgElement);
+            block.querySelector('.mtc_evo_v2_popup_close_button').insertAdjacentHTML('beforeend', svgElement);
+            
+            block.querySelector('.mtc_evo_v2_popup_block_inside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+          });
       } else {
           console.error('Carousel element not found');
       }
