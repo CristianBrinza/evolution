@@ -35,28 +35,48 @@ function mtc_evo_v2_add_route(add_route_array) {
         });
       });
       
-      if (lang === "ro") {
+    
+        const appElement1 = document.getElementById("mtc_evo_v2_app");
+        // Check if the element exists
+        if (appElement1) {
+            if (lang === "ro") {
         fetch("../../toolkit/html/mtc_evo_v2_app_ro.html")
       .then((response) => response.text())
       .then((data) => {
-        const appElement = document.getElementById("mtc_evo_v2_app");
-        // Check if the element exists
-        if (appElement) {
-          appElement.innerHTML = data;
-        }
+          appElement1.innerHTML = data;
       });
-      }
-      else if (lang === "ru") {
-        fetch("/evolution/toolkit/html/mtc_evo_v2_app_ro.html")
+}
+else if (lang === "ru") {
+    fetch("../../toolkit/html/mtc_evo_v2_app_ru.html")
+    .then((response) => response.text())
+    .then((data) => {
+        appElement1.innerHTML = data;
+    });
+}
+        }
+     
+
+        const appElement2 = document.getElementById("mtc_evo_v2_options_mobile");
+        // Check if the element exists
+        if (appElement2) {
+            if (lang === "ro") {
+        fetch("../../toolkit/html/mtc_evo_v2_options_mobile_ru.html")
       .then((response) => response.text())
       .then((data) => {
-        const appElement = document.getElementById("mtc_evo_v2_app");
-        // Check if the element exists
-        if (appElement) {
-          appElement.innerHTML = data;
-        }
+          appElement2.innerHTML = data;
+          mtc_evo_v2_mobile_initializeSlickCarousel()
       });
-      }
+}
+else if (lang === "ru") {
+    fetch("../../toolkit/html/mtc_evo_v2_options_mobile_ru.html")
+    .then((response) => response.text())
+    .then((data) => {
+        appElement2.innerHTML = data;
+        mtc_evo_v2_mobile_initializeSlickCarousel()
+    });
+}
+        }
+     
       
 });
       
