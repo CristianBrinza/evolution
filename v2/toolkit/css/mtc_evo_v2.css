@@ -311,6 +311,13 @@ margin: 0 auto;
   margin-top:10px;
   }
 
+ @media (max-width:650px) {
+    .mtc_evo_v2_popup_block_inside ul{
+margin-left: -30px;
+    }
+    
+ }
+
   body::-webkit-scrollbar {
     display: none;
   }
@@ -321,8 +328,18 @@ margin: 0 auto;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #ff0000;
-  }
+    background: #212A55;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+
+}
+::-webkit-scrollbar {
+    width: 8px; /* For vertical scrollbar */
+    height: 5px; /* For horizontal scrollbar */
+}
   
   /* Arrows */
   .slick-prev,
