@@ -1,0 +1,334 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Resurse Legale", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small" style="cursor: pointer;"><img alt="hero"
+                id="mtc_evolution_hero_img_small_desk" src="../../images/landings/legal/hero_desktop_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_screen"
+                src="../../images/landings/legal/hero_screen_ro.png" /> <img alt="hero"
+                id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/legal/hero_tablet_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_mobile"
+                src="../../images/landings/legal/hero_mobile_ro.png" />
+        </div>
+
+
+        <style>
+            .legal_block {
+                border-top: 1px solid #F3F5FF;
+                width: 100%;
+                display: flex;
+                padding-top: 10px;
+                align-items: flex-start;
+                gap: 20px;
+                align-self: stretch;
+            }
+
+            .legal_block_title {
+                color: #222;
+                font-family: "Source Sans Pro";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.16px;
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .legal_block_links {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                gap: 20px;
+                align-self: stretch;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .legal_block_link {
+                display: flex;
+                width: 100%;
+                max-width: 280px;
+                height: 65px;
+                padding: 13px 28px;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                border-radius: 12px;
+                background: #F3F5FF;
+                color: var(--Colors-Icons, #000);
+                /* text-align: center; */
+                font-family: "Source Sans Pro";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                /* 137.5% */
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+.legal_block_link:hover{
+    background: #e9edff;
+}
+.legal_block_link_svg{
+    display: flex;
+    height: 31px;
+    width: 31px;
+}
+            .legal_block_link_text{
+                display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+            }
+            .mtc_evolution_main{
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 940px) {
+                .legal_block {
+    flex-direction: column;
+}
+}
+@media (max-width: 650px) {
+    .legal_block_link{
+        max-width: 100%;
+    }
+}
+        </style>
+        <div class="mtc_evolution_main" id="legal_page">
+            <!-- <div class="legal_block">
+                <div class="legal_block_title">
+                    Administratie si organizare:
+                </div>
+                <div class="legal_block_links">
+                    <div class="legal_block_link">
+                        <div class="legal_block_link_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                                fill="none">
+                                <path
+                                    d="M20.95 18C21.05 17.175 21.125 16.35 21.125 15.5C21.125 14.65 21.05 13.825 20.95 13H25.175C25.375 13.8 25.5 14.6375 25.5 15.5C25.5 16.3625 25.375 17.2 25.175 18M18.7375 24.95C19.4875 23.5625 20.0625 22.0625 20.4625 20.5H24.15C22.939 22.5853 21.0176 24.165 18.7375 24.95ZM18.425 18H12.575C12.45 17.175 12.375 16.35 12.375 15.5C12.375 14.65 12.45 13.8125 12.575 13H18.425C18.5375 13.8125 18.625 14.65 18.625 15.5C18.625 16.35 18.5375 17.175 18.425 18ZM15.5 25.45C14.4625 23.95 13.625 22.2875 13.1125 20.5H17.8875C17.375 22.2875 16.5375 23.95 15.5 25.45ZM10.5 10.5H6.85C8.0483 8.40879 9.96832 6.82655 12.25 6.05C11.5 7.4375 10.9375 8.9375 10.5 10.5ZM6.85 20.5H10.5C10.9375 22.0625 11.5 23.5625 12.25 24.95C9.97283 24.1654 8.05536 22.5852 6.85 20.5ZM5.825 18C5.625 17.2 5.5 16.3625 5.5 15.5C5.5 14.6375 5.625 13.8 5.825 13H10.05C9.95 13.825 9.875 14.65 9.875 15.5C9.875 16.35 9.95 17.175 10.05 18M15.5 5.5375C16.5375 7.0375 17.375 8.7125 17.8875 10.5H13.1125C13.625 8.7125 14.4625 7.0375 15.5 5.5375ZM24.15 10.5H20.4625C20.0707 8.95201 19.4914 7.45763 18.7375 6.05C21.0375 6.8375 22.95 8.425 24.15 10.5ZM15.5 3C8.5875 3 3 8.625 3 15.5C3 18.8152 4.31696 21.9946 6.66117 24.3388C7.8219 25.4996 9.19989 26.4203 10.7165 27.0485C12.233 27.6767 13.8585 28 15.5 28C18.8152 28 21.9946 26.683 24.3388 24.3388C26.683 21.9946 28 18.8152 28 15.5C28 13.8585 27.6767 12.233 27.0485 10.7165C26.4203 9.19989 25.4996 7.8219 24.3388 6.66117C23.1781 5.50043 21.8001 4.57969 20.2835 3.95151C18.767 3.32332 17.1415 3 15.5 3Z"
+                                    fill="#3E94FF" />
+                            </svg>
+                        </div>
+                        <div class="legal_block_link_text">
+                            Consiliul de administrare
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+<script>
+    const data = {
+  "Administratie si organizare": [
+    {
+      "title": "Consiliul de administrare",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Structura organizatorica",
+      "url": "www.orange.md",
+      "icon": "arrow"
+    },
+    {
+      "title": "Statutul Moldtelecom",
+      "url": "www.orange.md",
+      "icon": "arrow"
+    },
+    {
+      "title": "Servicii administrative",
+      "url": "www.orange.md",
+      "icon": "arrow"
+    }
+    
+  ],
+  "Rapoate si parametrii": [
+    {
+      "title": "Rapoarte",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Parametrii de calitate",
+      "url": "www.orange.md",
+      "icon": "arrow"
+    }
+  ],
+  "Documente si informatii": [
+    {
+      "title": "Consiliul de administrare",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Cod de etică",
+      "url": "www.orange.md",
+      "icon": "arrow"
+    },
+    {
+      "title": "Codul de guvernanță corporativă",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Instrucțiune de lucru privind actele de corupție",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Certificat de conformitate a SMC",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Lista de interdicție a agenților economici",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Cum depui o reclamație?",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Protejează-te de fraude",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Plan-prognoză achiziții anul 2024",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Regulamentul cu privire la achiziționarea bunurilor, serviciilor și lucrărilor ",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Declarația în domeniul calității",
+      "url": "www.moldtelecom.md",
+      "icon": "globe"
+    },
+    {
+      "title": "Declarația privind politica de mediu",
+      "url": "www.vodaphone.md",
+      "icon": "arrow"
+    }
+    
+    
+  ],
+  "Date tehnice": [
+
+    {
+      "title": "Securitatea datelor",
+      "url": "www.vodaphone.md",
+      "icon": "arrow"
+    },
+    {
+      "title": "Eliberarea condițiilor tehnice si coordonarea proiectelor",
+      "url": "www.vodaphone.md",
+      "icon": "arrow"
+    },
+    {
+      "title": "Supravegherea lucrărilor în zona de protecție",
+      "url": "www.vodaphone.md",
+      "icon": "arrow"
+    },{
+      "title": "Mecanismul de înlocuire, evidență și publicare a listei e interdicție a agentilor aconomici S.A.''Moldtelecom''",
+      "url": "www.vodaphone.md",
+      "icon": "arrow"
+    }
+  ]
+};
+
+let page='';
+// Console log each section and title
+Object.keys(data).forEach(section => {
+
+    page+='<div class="legal_block">'+
+               ' <div class="legal_block_title">'+
+                section+
+                ':</div>'+
+                '<div class="legal_block_links">'
+
+                    data[section].forEach(item => {
+
+                    page+='<div class="legal_block_link" onclick="legal_redirect_to(\''+item.url+'\')">'+
+                        '<div class="legal_block_link_svg">'
+                            
+                            if(item.icon=='globe'){
+                                page+= ' <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"> <path d="M20.95 18C21.05 17.175 21.125 16.35 21.125 15.5C21.125 14.65 21.05 13.825 20.95 13H25.175C25.375 13.8 25.5 14.6375 25.5 15.5C25.5 16.3625 25.375 17.2 25.175 18M18.7375 24.95C19.4875 23.5625 20.0625 22.0625 20.4625 20.5H24.15C22.939 22.5853 21.0176 24.165 18.7375 24.95ZM18.425 18H12.575C12.45 17.175 12.375 16.35 12.375 15.5C12.375 14.65 12.45 13.8125 12.575 13H18.425C18.5375 13.8125 18.625 14.65 18.625 15.5C18.625 16.35 18.5375 17.175 18.425 18ZM15.5 25.45C14.4625 23.95 13.625 22.2875 13.1125 20.5H17.8875C17.375 22.2875 16.5375 23.95 15.5 25.45ZM10.5 10.5H6.85C8.0483 8.40879 9.96832 6.82655 12.25 6.05C11.5 7.4375 10.9375 8.9375 10.5 10.5ZM6.85 20.5H10.5C10.9375 22.0625 11.5 23.5625 12.25 24.95C9.97283 24.1654 8.05536 22.5852 6.85 20.5ZM5.825 18C5.625 17.2 5.5 16.3625 5.5 15.5C5.5 14.6375 5.625 13.8 5.825 13H10.05C9.95 13.825 9.875 14.65 9.875 15.5C9.875 16.35 9.95 17.175 10.05 18M15.5 5.5375C16.5375 7.0375 17.375 8.7125 17.8875 10.5H13.1125C13.625 8.7125 14.4625 7.0375 15.5 5.5375ZM24.15 10.5H20.4625C20.0707 8.95201 19.4914 7.45763 18.7375 6.05C21.0375 6.8375 22.95 8.425 24.15 10.5ZM15.5 3C8.5875 3 3 8.625 3 15.5C3 18.8152 4.31696 21.9946 6.66117 24.3388C7.8219 25.4996 9.19989 26.4203 10.7165 27.0485C12.233 27.6767 13.8585 28 15.5 28C18.8152 28 21.9946 26.683 24.3388 24.3388C26.683 21.9946 28 18.8152 28 15.5C28 13.8585 27.6767 12.233 27.0485 10.7165C26.4203 9.19989 25.4996 7.8219 24.3388 6.66117C23.1781 5.50043 21.8001 4.57969 20.2835 3.95151C18.767 3.32332 17.1415 3 15.5 3Z" fill="#3E94FF" /> </svg>'
+                            
+                            }
+                            else(
+                                page+= ' <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"> <path d="M20.95 18C21.05 17.175 21.125 16.35 21.125 15.5C21.125 14.65 21.05 13.825 20.95 13H25.175C25.375 13.8 25.5 14.6375 25.5 15.5C25.5 16.3625 25.375 17.2 25.175 18M18.7375 24.95C19.4875 23.5625 20.0625 22.0625 20.4625 20.5H24.15C22.939 22.5853 21.0176 24.165 18.7375 24.95ZM18.425 18H12.575C12.45 17.175 12.375 16.35 12.375 15.5C12.375 14.65 12.45 13.8125 12.575 13H18.425C18.5375 13.8125 18.625 14.65 18.625 15.5C18.625 16.35 18.5375 17.175 18.425 18ZM15.5 25.45C14.4625 23.95 13.625 22.2875 13.1125 20.5H17.8875C17.375 22.2875 16.5375 23.95 15.5 25.45ZM10.5 10.5H6.85C8.0483 8.40879 9.96832 6.82655 12.25 6.05C11.5 7.4375 10.9375 8.9375 10.5 10.5ZM6.85 20.5H10.5C10.9375 22.0625 11.5 23.5625 12.25 24.95C9.97283 24.1654 8.05536 22.5852 6.85 20.5ZM5.825 18C5.625 17.2 5.5 16.3625 5.5 15.5C5.5 14.6375 5.625 13.8 5.825 13H10.05C9.95 13.825 9.875 14.65 9.875 15.5C9.875 16.35 9.95 17.175 10.05 18M15.5 5.5375C16.5375 7.0375 17.375 8.7125 17.8875 10.5H13.1125C13.625 8.7125 14.4625 7.0375 15.5 5.5375ZM24.15 10.5H20.4625C20.0707 8.95201 19.4914 7.45763 18.7375 6.05C21.0375 6.8375 22.95 8.425 24.15 10.5ZM15.5 3C8.5875 3 3 8.625 3 15.5C3 18.8152 4.31696 21.9946 6.66117 24.3388C7.8219 25.4996 9.19989 26.4203 10.7165 27.0485C12.233 27.6767 13.8585 28 15.5 28C18.8152 28 21.9946 26.683 24.3388 24.3388C26.683 21.9946 28 18.8152 28 15.5C28 13.8585 27.6767 12.233 27.0485 10.7165C26.4203 9.19989 25.4996 7.8219 24.3388 6.66117C23.1781 5.50043 21.8001 4.57969 20.2835 3.95151C18.767 3.32332 17.1415 3 15.5 3Z" fill="#3E94FF" /> </svg>'
+                             
+                            )
+                           
+                            page+= '</div>'+
+                            ' <div class="legal_block_link_text">'+
+                                ` ${item.title}`+
+                                '</div> </div> '
+                                
+                            });  
+                            page+= '</div> </div>'
+
+
+
+});
+
+
+document.getElementById("legal_page").innerHTML=page;
+
+
+function legal_redirect_to(url){
+    window.location=url
+}
+</script>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

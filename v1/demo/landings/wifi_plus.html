@@ -1,0 +1,785 @@
+<html>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <script src="../../toolkit/test/test.js"></script>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evolution.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evolution.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evolution_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Safe Web", ""]]);
+        </script>
+        <div id="mtc_evolution_hero_img_small"><img alt="hero"
+                id="mtc_evolution_hero_img_small_desk" src="../../images/landings/wifi_plus/hero_desktop_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_screen" src="../../images/landings/wifi_plus/hero_screen_ro.png" /> <img alt="hero"
+                id="mtc_evolution_hero_img_small_tablet" src="../../images/landings/wifi_plus/hero_tablet_ro.png" />
+            <img alt="hero" id="mtc_evolution_hero_img_small_mobile" src="../../images/landings/wifi_plus/hero_mobile_ro.png" />
+        </div>
+
+
+        <div class="mtc_evolution_main">
+
+            <div>
+
+                <style type="text/css">
+                    #mtc_tv_features {
+                        user-select: none;
+                        width: 100%;
+                        padding: 33px 45px;
+                        box-sizing: border-box;
+                        border-radius: var(--block_border_radius);
+                        background: transparent;
+                        border: 1px solid #CED6FF;
+
+                    }
+
+                    .mtc_tv_features_card {
+
+                        width: calc((1090px - 150px) / 4);
+                        margin-right: 50px;
+                        display: flex !important;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
+                    }
+
+                    .mtc_tv_features_card span {
+                        color: #222;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        /* 137.5% */
+                        height: 78px;
+
+                    }
+
+                    .mtc_tv_features_card svg {
+                        margin-bottom: 10px;
+                    }
+
+                    .mtc_tv_features_bold {
+                        font-weight: 700 !important;
+                    }
+
+                    .mtc_tv_features_card_btn {
+                        cursor: pointer;
+                        color: #212A55;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 17px;
+                        /* 106.25% */
+                        margin-top: 8px;
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                    }
+
+                    .mtc_tv_features_card_btn svg {
+                        margin: 0;
+                    }
+
+                    .mtc_tv_features_card_max_text {
+                        color: #212A55 !important;
+                        text-align: center !important;
+                        font-family: "Source Sans Pro" !important;
+                        font-size: 24px !important;
+                        font-style: normal !important;
+                        font-weight: 700 !important;
+                        line-height: 22px !important;
+                    }
+
+                    @media (max-width: 1300px) {
+                        .mtc_tv_features_card {
+
+                            width: calc((790px - 100px) / 3);
+                            margin-right: 50px;
+                            display: flex !important;
+                            flex-direction: column;
+
+                        }
+                    }
+
+                    @media (max-width: 940px) {
+                        .mtc_tv_features_card {
+                            width: calc((580px - 100px) / 2);
+                            margin-right: 20px;
+                        }
+
+                        .special_offer_phone_text {
+                            justify-content: flex-start;
+                            gap: 20px;
+                        }
+
+
+                    }
+
+                    @media (max-width: 650px) {
+                        .mtc_tv_features_card {
+                            width: 38vw;
+
+                        }
+
+                        .special_offer_tv_block_title {
+                            width: 100%;
+                            max-width: 460px;
+                        }
+
+                        .special_offer_tv_block_title_costume {
+                            width: 100%;
+                            max-width: 289px;
+                        }
+
+                        .special_offer_tv_block_title br {
+                            display: none;
+                        }
+
+                    }
+
+                    @media (max-width: 550px) {
+                        .mtc_tv_features_card {
+                            width: 65vw;
+                            box-sizing: border-box;
+                            padding: 0;
+                            margin-right: 0;
+                            padding-left: calc(90vw - 65vw - 30px);
+                        }
+
+                        #mtc_tv_features {
+                            padding: 25px 15px;
+                        }
+                    }
+
+                    @media (max-width: 430px) {
+                        .mtc_tv_features_card {
+                            width: 70vw;
+                            box-sizing: border-box;
+                            padding: 0;
+                            margin-right: 0;
+                            padding-left: calc(90vw - 70vw - 30px);
+                        }
+                    }
+                </style>
+                <div class="carousell_2" id="mtc_tv_features">
+                    <div class="mtc_tv_features_card">
+
+
+                        <div>
+                            <div class="mtc_tv_features_card_max_text">
+                                Conectivitate <br>
+                                Multi-Dispozitiv
+                            </div><br>
+                            Suportă conectarea a până la 2 echipamente per conexiune de internet fix.
+                        </div>
+
+                    </div>
+
+                    <div class="mtc_tv_features_card">
+
+
+                        <div>
+                            <div class="mtc_tv_features_card_max_text">
+                                Acoperire<br>
+
+                                Extinsă
+                            </div><br>
+
+
+                            Asigură conexiune stabilă Wi-Fi în fiecare colț al casei tale.
+                        </div>
+
+                    </div>
+
+                    <div class="mtc_tv_features_card">
+
+
+                        <div>
+                            <div class="mtc_tv_features_card_max_text">
+                                Viteze<br>
+
+                                Superioare
+
+
+                            </div><br>
+                            Navighează și transmite în streaming la viteze rapide, fără întreruperi.
+                        </div>
+
+                    </div>
+
+                    <div class="mtc_tv_features_card">
+
+
+                        <div>
+                            <div class="mtc_tv_features_card_max_text">
+                                Flexibilitate <br>
+
+                                Totală
+
+                            </div><br>
+                            Serviciul Wi-Fi Plus poate fi conectat sau deconectat oricând.
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+                <script>
+                    $('.carousell_2').slick({
+                        arrows: false,
+                        dots: false,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        variableWidth: true,
+                        responsive: [
+                            {
+                                breakpoint: 1351,
+                                settings: {
+                                    slidesToShow: 3,
+                                },
+                            },
+                            {
+                                breakpoint: 951,
+                                settings: {
+                                    slidesToShow: 2,
+                                },
+                            },
+                            {
+                                breakpoint: 651,
+                                settings: {
+                                    slidesToShow: 1,
+
+                                },
+                            },
+                        ],
+                    });
+
+
+                </script>
+
+            </div>
+
+
+            <style type="text/css">.wifi_page_block_1,
+                .wifi_page_block_2 {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: -20px;
+                }
+        
+                .wifi_page_block_1_img {
+                    width: 580px;
+                    height: auto;
+                    border-radius: 12px;
+                }
+        
+                .wifi_page_block_1_right {
+                    width: 580px;
+                    padding: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+        
+                .wifi_page_block_1_title {
+        
+                    color: #212A55;
+                    font-family: "MTC-Futura New";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                    /* 100% */
+                }
+        
+                .wifi_page_block_1_text {
+                    color: #222;
+                    font-family: "MTC-Futura New";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 22px;
+                    /* 91.667% */
+                    letter-spacing: 0.24px;
+                }
+        
+                .mtc_evolution_btn_2_costume {
+                    color: #fff !important;
+                    background: #212A55;
+                    text-decoration: none;
+                }
+        
+                .mtc_evolution_btn_2_costume svg path {
+                    stroke: #fff;
+                }
+        
+                .wifi_page_block_1_btns {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 20px;
+                }
+        
+        
+                @media (max-width:1300px) {
+                    .wifi_page_block_1,
+                .wifi_page_block_2 {
+                   
+                    margin-top: 0px;
+                }
+                    .wifi_page_block_1_img {
+                    width: 50%;
+                }
+                   
+                   .wifi_page_block_1_right{
+                    padding: 10px 20px;
+                   }
+        
+                    .wifi_page_block_1_text {
+                        font-size: 20px;
+                    }
+        
+                    .wifi_page_block_1_title {
+                        font-size: 28px;
+                        margin-bottom: -10px;
+                    }
+        
+                }
+
+                @media (max-width: 940px) {
+                    .wifi_page_block_1_right{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 15px 0 30px;
+                    }
+                    .wifi_page_block_1_img {
+                    width: 100%;
+                }
+			.wifi_page_block_1 {
+
+				flex-direction: column;
+			}
+
+			.wifi_page_block_2 {
+				flex-direction: column-reverse;
+			}
+
+			#wifi_page_block_4 {
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.wifi_page_block_4_subscriptions {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 650px) {
+			.wifi_page_block_4_subscriptions_block_tel {
+				width: 100%;
+				height: 110px;
+			}
+		}
+        </style>
+
+            
+
+            <div class="wifi_page_block_1">
+
+                <img class="wifi_page_block_1_img" src="../../images/landings/wifi_plus/img3.png" alt="wifi6">
+                <div class="wifi_page_block_1_right">
+                    <div class="wifi_page_block_1_title">
+                        Ce este <br>
+                        Wi-Fi PLUS? 
+                    </div>
+                    <div class="wifi_page_block_1_text">
+
+                        Serviciul Wi-Fi PLUS asigură o conexiune internet neîntreruptă și rapidă în fiecare colț al
+                        locuinței, permițând utilizatorilor să se bucure de viteze superioare pentru streaming, jocuri
+                        și multiple dispozitive conectate simultan, transformând astfel fiecare experiență online
+                        într-una fără griji și de înaltă calitate.
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="wifi_page_block_2">
+
+
+                <div class="wifi_page_block_1_right">
+                    <div class="wifi_page_block_1_title">
+                        De ce să alegi serviciul Wi-Fi PLUS de la Moldtelecom?
+                    </div>
+                    <div class="wifi_page_block_1_text">
+
+                        Descoperă puterea unei conexiuni fără limite cu Wi-Fi PLUS! Ideal pentru casele mari sau cu mai
+                        multe etaje, serviciul nostru îți garantează o acoperire Wi-Fi completă și viteze impresionante
+                        pentru streaming HD, gaming și utilizarea simultană a multiple dispozitive. </div>
+
+
+                </div>
+                <img class="wifi_page_block_1_img" src="../../images/landings/wifi_plus/img4.png" alt="wifi6">
+            </div>
+
+
+            <div class="wifi_page_block_1">
+
+                <img class="wifi_page_block_1_img" src="../../images/landings/wifi_plus/img5.png" alt="wifi6">
+                <div class="wifi_page_block_1_right">
+                    <div class="wifi_page_block_1_title">
+                        Dispozitivele tale conectate
+                    </div>
+                    <div class="wifi_page_block_1_text">
+
+                        Conectezi multiple dispozitive la aceeași rețea Wi-Fi, fără a fi necesar să introduci repetat
+                        parola și fără întreruperi la navigare în timp ce te deplasezi în locuința ta
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+<style>
+.wifi_plus_modalitati{
+    border-radius: 12px;
+background: #F3F5FF;
+width: 100%;
+padding: 40px;
+box-sizing: border-box;
+}
+.wifi_plus_modalitati_title{
+    width: 100%;
+    text-align: center;
+    color: #212A55;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    
+}
+.wifi_plus_modalitati_options{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+.wifi_plus_modalitati_block{
+    color: #222;
+font-family: "MTC-Futura New";
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: 99%;
+display: flex;
+flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+
+
+}
+.wifi_plus_modalitati_block_title{
+    color: #212A55;
+text-align: center;
+font-family: "MTC-Futura New";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+@media (max-width:950px) {
+   .wifi_plus_modalitati
+   {
+    padding: 40px 20px;
+   }
+}
+</style>
+
+<div class="wifi_plus_modalitati">
+<div class="wifi_plus_modalitati_title">
+    Modalități de activare
+</div>
+<div class="wifi_plus_modalitati_options">
+    <div class="wifi_plus_modalitati_block">
+        <div class="wifi_plus_modalitati_block_title"> 
+          La conectare: <br><br>
+        </div>
+  
+  Serviciul Wi-Fi PLUS poate fi
+  activat odată cu conectarea unui abonament de internet fix.
+      </div>
+   
+      <div class="wifi_plus_modalitati_block">
+        <div class="wifi_plus_modalitati_block_title"> 
+            Prin Telefon: <br><br>
+        </div>
+  
+       
+
+        Poți solicita activarea
+        serviciului Wi-Fi PLUS apelând Serviciul Suport Clienți la
+        numărul 022 200 200.
+        
+      </div>
+      <div class="wifi_plus_modalitati_block">
+        <div class="wifi_plus_modalitati_block_title"> 
+            În Magazin: <br><br>
+        </div>
+  
+        
+
+        De asemenea, poți cere
+        activarea serviciului personal, la orice magazin Moldtelecom.
+      </div>
+</div>
+</div>
+
+            <style>
+.wifi_plus_20_lei{
+    width:100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    content: url('../../images/landings/wifi_plus/img6.png');
+}
+
+@media (max-width: 940px) {
+    .wifi_plus_20_lei{
+        margin-top: 0px;
+        content: url('../../images/landings/wifi_plus/img6_mob.png');
+    }
+}
+            </style>
+
+            <img class="wifi_plus_20_lei" alt="Wifi_plus">
+            <style>
+                .wifi_plus_options_btn{
+                    display: flex;
+                    cursor: pointer;
+                    border-radius: 12px;
+background: #212A55;
+margin: 0 auto;
+padding: 5px 15px 5px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #FFF;
+font-family: "MTC-Futura New";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; /* 225% */
+letter-spacing: 0.16px;
+                }
+            </style>
+<div class="wifi_plus_options_btn">
+    Condiții de utilizare
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.625 5.25L15.375 12L8.625 18.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+</div>
+
+            <div>
+                <div class="mtc_evolution_title_center" style="color:#212A55; margin-bottom: 20px;">Întrebări frecvente
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Ce este Wi-Fi PLUS?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Wi-Fi PLUS este o opțiune adițională la serviciul tău de Internet fix, care îți extinde
+                        acoperirea Wi-Fi în locuință, permițând conectarea a până la două echipamente terminale per
+                        conexiune pentru a asigura o acoperire optimă.
+
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Cum se activează Wi-Fi PLUS?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Poți activa Wi-Fi PLUS simultan cu instalarea serviciului de Internet fix sau ulterior, fie prin
+                        apel la Serviciul Suport Clienți la 022 200 200, fie personal la orice magazin Moldtelecom.
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Cât costă serviciul Wi-Fi PLUS?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Serviciul Wi-Fi PLUS costă 20 lei lunar pentru fiecare echipament conectat. Acest cost este
+                        adăugat la factura ta lunară de Internet fix.
+
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Cum sunt facturate costurile pentru Wi-Fi PLUS?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Facturarea începe de la momentul activării serviciului și costurile sunt incluse în factura
+                        lunară de Internet fix. Facturarea continuă până la deconectarea serviciului.
+
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Pot deconecta serviciul Wi-Fi PLUS oricând?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Da, serviciul Wi-Fi PLUS poate fi deconectat în orice moment fără penalități. Pentru
+                        deconectare, contactează Serviciul Suport Clienți sau vizitează un magazin Moldtelecom.
+
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Ce se întâmplă dacă echipamentul Wi-Fi PLUS este pierdut
+                            sau deteriorat?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Dacă echipamentul este pierdut sau deteriorat, vei fi responsabil să plătești o taxă de
+                        compensare de 300 lei per echipament, sumă care va fi adăugată la factura ta.
+
+                    </div>
+                </div>
+
+                <div class="mtc_evolution_qa">
+                    <div class="mtc_evolution_qa_show">
+                        <span class="mtc_evolution_qa_title">Wi-Fi PLUS este compatibil cu orice router?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M17.5 8.5C17.5 8.77052 17.3925 9.02996 17.2012 9.22125C17.01 9.41254 16.7505 9.52 16.48 9.52H10.02V15.98C10.02 16.2505 9.91254 16.51 9.72125 16.7012C9.52996 16.8925 9.27052 17 9 17C8.72948 17 8.47004 16.8925 8.27875 16.7012C8.08746 16.51 7.98 16.2505 7.98 15.98V9.52H1.52C1.24948 9.52 0.990038 9.41254 0.798751 9.22125C0.607464 9.02996 0.5 8.77052 0.5 8.5C0.5 8.22948 0.607464 7.97004 0.798751 7.77875C0.990038 7.58746 1.24948 7.48 1.52 7.48H7.98V1.02C7.98 0.749479 8.08746 0.490038 8.27875 0.298751C8.47004 0.107464 8.72948 0 9 0C9.27052 0 9.52996 0.107464 9.72125 0.298751C9.91254 0.490038 10.02 0.749479 10.02 1.02V7.48H16.48C16.7505 7.48 17.01 7.58746 17.2012 7.77875C17.3925 7.97004 17.5 8.22948 17.5 8.5Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+                    <div class="mtc_evolution_qa_hiden" style="display: none">
+
+
+                        Wi-Fi PLUS este proiectat pentru a fi compatibil cu majoritatea routerelor moderne. Pentru
+                        detalii specifice despre compatibilitate, te rugăm să consulți documentația echipamentului sau
+                        să contactezi Serviciul Suport Clienți.
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div id="mtc_evolution_footer_text"></div>
+        </div>
+
+        <div id="mtc_evolution_footer"></div>
+
+
+
+
+    </div>
+</body>
+
+</html>
