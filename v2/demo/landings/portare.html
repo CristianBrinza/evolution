@@ -52,7 +52,7 @@
         </style>
         <div class="mtc_evo_v2_hero">
             <div class="mtc_evo_v2_hero_btns mtc_evo_v2_main">
-                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero">
+                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('portare_abonamente')">
                     Abonament
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,7 +61,7 @@
                     </svg>
 
                 </div>
-                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero">
+                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('portare_oferte')">
                     Oferte de iarna
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -242,7 +242,7 @@
                         height: auto;
                     }
                 </style>
-                <div class="carousell_1_portare">
+                <div class="carousell_1_portare" id="portare_abonamente">
                     <div class="carousell_1_portare_inside">
                         <div class="carousell_1_portare_card">
                             <div class="carousell_1_portare_card_abonament">
@@ -1862,7 +1862,7 @@
                     }
                 </style>
 
-                <div class="portare_oferte_blocks">
+                <div class="portare_oferte_blocks" id="portare_oferte">
                     <div class="portare_oferte_block portare_oferte_block1">
                         <div class="portare_oferte_block_title">
                             Smartphone
@@ -2084,7 +2084,7 @@
                                     </svg>
 
                                 </div>
-                                <span class="portare_bonus_block_detalii">Detalii ofertă</span>
+                                <span class="portare_bonus_block_detalii" onclick="mtc_evo_v2_popoup('mtc_evo_v2_popup_detalii_onenumber')">Detalii ofertă</span>
 
                             </div>
                         </div>
@@ -2114,11 +2114,41 @@
                                     </svg>
 
                                 </div>
-                                <span class="portare_bonus_block_detalii">Detalii ofertă</span>
+                                <span class="portare_bonus_block_detalii" onclick="mtc_evo_v2_popoup('mtc_evo_v2_popup_detalii_mtc_tv')">Detalii ofertă</span>
 
                             </div>
                         </div>
                         <img class="portare_bonus_block_gift" src="../../images/landings/portare/gift.png" alt="gift">
+                    </div>
+                </div>
+                <div class="mtc_evo_v2_popup_block" id="mtc_evo_v2_popup_detalii_onenumber" style="display: none;">
+                    <div class="mtc_evo_v2_popup_block_inside">
+            <ul>
+                        <li>
+                            Serviciul One Number se oferă gratuit în primele 3 luni, la conectarea unui abonament de telefonie mobilă Liberty 190, Liberty Plus 250. La expirarea termenului  va fi aplicat tariful standard de 40 lei/lună.</li>
+                           <li> Serviciul One Number îți permite să utilizezi același număr pe smartphone și pe smartwatch-ul asociat. Pentru internet și minute utilizate de pe smartwatch-ul asociat nu se percep taxe suplimentare, comunicând pe toate dispozitivele din abonamentul de telefonie mobilă.</li>
+                        </ul>
+                           
+                    </div>
+                </div>
+        
+                <div class="mtc_evo_v2_popup_block" id="mtc_evo_v2_popup_detalii_mtc_tv" style="display: none;">
+                    <div class="mtc_evo_v2_popup_block_inside">
+            
+                       <ul>
+                    <li>Moldtelecom TV este un serviciu modern care permite abonaților de Telefonie Mobilă să urmărească televiziunea direct pe dispozitivele mobile cu sisteme de operare Android și iOS.</li>
+                        <li>Serviciul funcționează prin conexiunea la rețeaua fixă (Wi-Fi) sau mobilă Moldtelecom.</li>
+                        <li>Serviciul poate fi activat doar dacă abonamentul de Telefonie Mobilă are statut activ.</li>
+                        <li>Oferta Moldtelecom TV la doar 40 lei, este valabilă pentru abonații noi și existenți, inclusiv abonații portați.</li>
+                    </ul>
+                    &nbsp;&nbsp;<b> Activarea sau dezactivarea serviciului poate fi realizată în orice zi a lunii, exclusiv prin aplicația MyMoldtelecom.</b>
+                      <ul>
+                        <li>Autentifică-te în aplicația My Moldtelecom.</li>
+                        <li>Accesează secțiunea ”Opțiuni și servicii” și selectează ”Moldtelecom TV”.</li>
+                        <li>Alege opțiunea de Activare sau Dezactivare.</li>
+                        <li>Selectează tipul de dispozitiv - mobil</li>
+                      </ul>
+                           
                     </div>
                 </div>
 
@@ -2367,7 +2397,7 @@ align-items: center;
         </div>
     </div>
     <div class="portare_abonamente_detalii">
-        <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary" onclick="window.location='aa'">
+        <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary" onclick="window.location='https://www.moldtelecom.md/Optiuni-telefonie-mobila'">
             Mai multe
             <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z" fill="#212A55"></path>
@@ -2380,6 +2410,8 @@ align-items: center;
     </script>
 </div>
         </div>
+
+     
     </div>
 </body>
 

@@ -161,3 +161,11 @@ function mtc_evo_v2_add_route(add_route_array) {
           console.error('Carousel element not found');
       }
       }
+
+
+
+      function mtc_evo_v2_scroll_to_div(to_where) {
+        document
+          .getElementById(to_where)
+          .scrollIntoView({ behavior: "smooth", block: "center" });
+      }
