@@ -49,21 +49,17 @@
                 flex-direction: row;
                 padding-top: 390px;
                 margin-top: 0;
-            }.mtc_evo_v2_hero_outside{
-                width: 100vw;
-                display: flex;
-                overflow: hidden;
-                align-items: center;
-                justify-content: center;
             }
             @media (max-width:1600px) {
                 .mtc_evo_v2_hero {
                 border-radius: 0px;
+                width: 100%;
             }
         }
             @media (max-width:1300px) {
-              
-            .mtc_evo_v2_hero {
+                .mtc_evo_v2_hero {
+               
+    
     height: 370px;
 }
 .mtc_evo_v2_hero_btns {
@@ -71,7 +67,7 @@
 }
             }
         </style>
-       <div class="mtc_evo_v2_hero_outside">
+      
         <div class="mtc_evo_v2_hero">
             <div class="mtc_evo_v2_hero_btns mtc_evo_v2_main">
                 <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('portare_abonamente')">
@@ -94,7 +90,7 @@
                 </div>
             </div>
         </div>
-       </div>
+      
 
         <div class="mtc_evo_v2_main">
 
@@ -1892,9 +1888,10 @@
                     #portare_oferte_block_title_phone_desk{
                         display: none;
                     }
-                    #portare_oferte_block_oferta_img{
-display: none;
+                    .portare_oferte_block1_btns_mobil{
+                        display: none;
                     }
+                 
 
                     @media (max-width:1300px) {
                      .portare_oferte_block1{
@@ -1930,6 +1927,9 @@ display: none;
                 }
 
                 @media (max-width:650px) {
+                    .mtc_evo_v2_title_portare{
+                        display: none;
+                    }
                     #portare_oferte{
                        
                     }
@@ -1939,19 +1939,64 @@ width: 100%;
                     .portare_oferte_block1{
                         background-position-x: -25px;
                     }
+                    #portare_oferte_block_2, #portare_oferte_block_3 {
+    background-position-y: -170px;
+}
+.portare_oferte_block1_btns_mobil{
+                        display: math;
+                    }
                 }
+                @media (max-width:580px) {
+    #portare_oferte_block_2, #portare_oferte_block_3 {
+        background-position-y: -120px;
+    }
+}
                 @media (max-width:550px) {
              
                     .portare_oferte_block1{
-                        background-position-x: 5px;
-                        height: 280px;
+                        background-position-x: -75px;
+                       
                     }
                 }
+
+                @media (max-width:500px) {
+             
+             .portare_oferte_block1{
+                 background-position-x: -95px;
+                
+             }
+         }
+
+               
+
+                @media (max-width:490px) {
+    #portare_oferte_block_2, #portare_oferte_block_3 {
+        background-position-y: -70px;
+    }
+}
+@media (max-width:460px) {
+             
+             .portare_oferte_block1{
+                 background-position-x: -125px;
+                
+             }
+         }
+         @media (max-width:440px) {
+             
+             .portare_oferte_block1{
+                 background-position-x: -155px;
+                 height: 300px;
+             }
+         }
+@media (max-width:420px) {
+    #portare_oferte_block_2, #portare_oferte_block_3 {
+        background-position-y: -50px;
+    }
+}
                 </style>
 
                 <div class="portare_oferte_blocks" id="portare_oferte">
                     <div class="portare_oferte_block portare_oferte_block1">
-                        <img id="portare_oferte_block_oferta_img" src="../../images/landings/portare/oferta_2_mobile.png" alt="Oferta">
                         <div class="portare_oferte_block_title">
                             Smartphone
                         </div>
@@ -1982,6 +2027,7 @@ width: 100%;
                         </div>
                     </div>
                     <div class="portare_oferte_block " id="portare_oferte_block_2" style="position: relative;">
+                
                         <div class="portare_oferte_block_title">
                             Smartphone
                         </div>
@@ -1997,7 +2043,8 @@ width: 100%;
 
                         <div class="portare_oferte_block_btns">
                             <div class="mtc_evo_v2_btn" onclick="show_popup_options('portare', 'portare_oppo_a60')">
-                                Portează-te
+                                
+                                <span>Portează-te <span id="portare_oferte_block1_btns_mobil">acum</span></span>
                                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2026,7 +2073,7 @@ width: 100%;
 
                         <div class="portare_oferte_block_btns">
                             <div class="mtc_evo_v2_btn" onclick="show_popup_options('portare', 'portare_oppo_a80')">
-                                Portează-te
+                                <span>Portează-te <span id="portare_oferte_block1_btns_mobil">acum</span></span>
                                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
