@@ -39,7 +39,7 @@ function mtc_evo_v2_add_route(add_route_array) {
         fetch("../../toolkit/html/mtc_evo_v2_app_ro.html")
       .then((response) => response.text())
       .then((data) => {
-        const appElement = document.getElementById("mtc_evolution_app");
+        const appElement = document.getElementById("mtc_evo_v2_app");
         // Check if the element exists
         if (appElement) {
           appElement.innerHTML = data;
@@ -50,7 +50,7 @@ function mtc_evo_v2_add_route(add_route_array) {
         fetch("/evolution/toolkit/html/mtc_evo_v2_app_ro.html")
       .then((response) => response.text())
       .then((data) => {
-        const appElement = document.getElementById("mtc_evolution_app");
+        const appElement = document.getElementById("mtc_evo_v2_app");
         // Check if the element exists
         if (appElement) {
           appElement.innerHTML = data;
