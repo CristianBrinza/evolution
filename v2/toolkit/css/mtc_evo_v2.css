@@ -276,7 +276,7 @@ margin: 0 auto;
   .mtc_evo_v2_popup_block_table {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid #212a55;
+    border: 1px solid #212a5534;
     margin-bottom: 20px;
     margin-top: 5px;
   }
@@ -426,25 +426,29 @@ margin: 0 auto;
 
   .mtc_evo_v2_btn{
     border-radius: 1000px;
-background:#292C48;
-display: flex;
-height: 46px;
-padding: 15px 22px;
-box-sizing: border-box;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-color:  #FFF;
-font-family: "Source Sans Pro";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 16px;
-border: 1px solid transparent;
-transition: border 0.3s ease, background 0.3s ease;
-cursor: pointer;
-  }
+    background:#292C48;
+    display: flex;
+    height: 46px;
+    padding: 15px 22px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color:  #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    border: 1px solid transparent;
+    transition: border 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: border 0.3s ease, background 0.3s ease;
+    -moz-transition: border 0.3s ease, background 0.3s ease;
+    -ms-transition: border 0.3s ease, background 0.3s ease;
+    -o-transition: border 0.3s ease, background 0.3s ease;
+}
   .mtc_evo_v2_btn svg{
     margin: 0 0 0 0;
     transition: margin 0.3s ease;

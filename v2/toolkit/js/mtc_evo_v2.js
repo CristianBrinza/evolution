@@ -35,9 +35,30 @@ function mtc_evo_v2_add_route(add_route_array) {
         });
       });
       
-      
-      
+      if (lang === "ro") {
+        fetch("../../toolkit/html/mtc_evo_v2_app_ro.html")
+      .then((response) => response.text())
+      .then((data) => {
+        const appElement = document.getElementById("mtc_evolution_app");
+        // Check if the element exists
+        if (appElement) {
+          appElement.innerHTML = data;
+        }
       });
+      }
+      else if (lang === "ru") {
+        fetch("/evolution/toolkit/html/mtc_evo_v2_app_ro.html")
+      .then((response) => response.text())
+      .then((data) => {
+        const appElement = document.getElementById("mtc_evolution_app");
+        // Check if the element exists
+        if (appElement) {
+          appElement.innerHTML = data;
+        }
+      });
+      }
+      
+});
       
       function mtc_evo_v2_popoup(id) {
         target1 = document.getElementById(id);
