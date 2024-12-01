@@ -14,6 +14,7 @@
     </style>
     <script>
         var lang = "ro";
+        let token='test'
     </script>
 </head>
 
@@ -28,7 +29,7 @@
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
-            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Telefonie Mobila", ""]]);
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Promo", "/"], ["NET + TV +  MOBIL", ""]] );
         </script>
 
 
@@ -38,7 +39,7 @@
                 height: 500px;
                 border-radius: 30px;
                 margin: 0 auto;
-                background-image: url('../../images/landings/portare/hero_desktop_ro.png');
+                background-image: url('../../images/landings/triple/hero_desktop_ro.png');
                 background-size: cover;
                 background-position-x: center;
             }
@@ -66,7 +67,7 @@
 
             @media (max-width:1300px) {
                 .mtc_evo_v2_hero {
-                    background-image: url('../../images/landings/portare/hero_tablet_ro.png');
+                    background-image: url('../../images/landings/triple/hero_tablet_ro.png');
 
 
                     height: 406px;
@@ -79,7 +80,7 @@
 
             @media (max-width:950px) {
                 .mtc_evo_v2_hero {
-                    background-image: url('../../images/landings/portare/hero_tablet_verical_ro.png');
+                    background-image: url('../../images/landings/triple/hero_tablet_verical_ro.png');
                     height: 295px;
                 }
 
@@ -102,7 +103,7 @@
                 }
             }
         </style>
-        <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/portare/hero_mobile_ro.png" alt="Moldtelecom">
+        <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/triple/hero_mobile_ro.png" alt="Moldtelecom">
         <div class="mtc_evo_v2_hero">
             <div class="mtc_evo_v2_hero_btns mtc_evo_v2_main">
                 <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('calculator_btns')">
@@ -204,6 +205,7 @@
                         display: flex;
                         gap: 30px;
                         align-items: flex-start;
+                        flex-wrap: wrap;
                     }
 
                     .tv_internet_calculator_left {
@@ -680,6 +682,89 @@ position: relative;
     border: 1px solid #D9DFFF;
 
                    }
+
+                   @media (max-width:1300px) {
+                    .tv_internet_calculator_right {
+                        width: 770px;
+                    }
+                    .tv_internet_calculator {
+    justify-content: center;
+}
+
+
+                    
+                   }
+@media (max-width:950px) {
+    .tv_internet_calculator_left_block_mobil_options {
+    gap: 10px;
+}
+    .tv_internet_calculator_left_block_second_tv_text_block {
+    width: 290px;
+}
+}
+                   @media (max-width:650px) {
+                    .tv_internet_calculator_left_block_options_fibra_option{
+width: 100%;
+                    }
+                    .tv_internet_calculator_left_block_mobil_option{
+width: calc((100% - 20px) / 2);
+                    }
+                    .tv_internet_calculator_left_block_options_fibra_option{
+                        position: relative;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_old{
+                        position: absolute;
+                        top:15px;
+                        right: 15px;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_new{
+                        position: absolute;
+                        right:15px;
+                        bottom: 15px;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_img{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    #tv_internet_calculator_left_block_second_tv_img_1{
+content: url("../../images/landings/triple/img_second_tv_mobil.png");
+
+                    }
+                    #tv_internet_calculator_left_block_second_tv_img_2{
+                        content: url("../../images/landings/triple/img_fix_mobil.png");
+                    }
+                    .tv_internet_calculator_left_block_second_tv {
+    flex-wrap: wrap;
+}
+.tv_internet_calculator_left_block_second_tv_text_block {
+    width: 290px;
+    width: 75%;
+}
+.tv_internet_calculator_left_block_mobil_option_selected_top {
+    align-items: flex-end;
+}
+.tv_internet_calculator_left_block_mobil_option_selected_old_price {
+ 
+    bottom: auto;
+    right: 26px;
+    top: 10px;
+}
+.calculator_btns {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#calculator_btn_yes{
+    width: 100%;
+}
+#calculator_btn_no{
+    width: 100%;
+}
+                    
+                   }
                 </style>
                 <div class="tv_internet_calculator">
                     <div class="tv_internet_calculator_left">
@@ -1052,7 +1137,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 25 GB </span>   Trafic internet
         </span>
     </div>
     <div class="ab_block">
@@ -1066,7 +1151,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 25 SMS </span>   naționale
         </span>
     </div>
    
@@ -1093,8 +1178,8 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
-           <span style="font-weight: 700;"> 25 min</span> internaționale
+           <span style="font-weight: 700;"> 450 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 45 min</span> internaționale
         </span>
     </div>
     <div class="ab_block">
@@ -1122,7 +1207,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 45 SMS </span>   naționale
         </span>
     </div>
    
@@ -1149,8 +1234,22 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
-           <span style="font-weight: 700;"> 25 min</span> internaționale
+           <span style="font-weight: 700;"> 850 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 85 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 0.5C5.25315 0.5 1 4.75315 1 10C1 15.2468 5.25315 19.5 10.5 19.5C15.7468 19.5 20 15.2468 20 10C20 4.75315 15.7468 0.5 10.5 0.5ZM10.5 17.6L12.4 15.7L13.35 14.75V12.85H11.45V11.9L10.5 10.95H7.65V13.8L9.55 15.7V17.5344C5.807 17.0642 2.9 13.8684 2.9 10L3.85 10.95H5.75V9.05H7.65L10.5 6.2V4.3H8.6L7.65 3.35V2.95955C9.47707 2.21505 11.5229 2.21505 13.35 2.95955V4.3L12.4 5.25V7.15L13.35 8.1L16.3235 5.1265C17.0464 5.99218 17.5676 7.00791 17.8492 8.1H16.2L14.3 10V11.9L15.25 12.85H17.15L17.4217 13.1217C16.2275 15.758 13.577 17.6 10.5 17.6Z" fill="#2B2B2B" stroke="#FDEBEF" stroke-width="0.4"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 7 GB</span>  Roaming EU <br>
+           <span style="font-weight: 700;"> 850 min</span> Roaming EU
         </span>
     </div>
     <div class="ab_block">
@@ -1164,7 +1263,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 85 GB </span>   Trafic internet
         </span>
     </div>
     <div class="ab_block">
@@ -1178,7 +1277,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 85 SMS </span>   naționale
         </span>
     </div>
    
@@ -1205,8 +1304,22 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
-           <span style="font-weight: 700;"> 25 min</span> internaționale
+           <span style="font-weight: 700;"> Nelimitat min</span>  naționale  <br> şi
+           <span style="font-weight: 700;"> 50 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 0.5C5.25315 0.5 1 4.75315 1 10C1 15.2468 5.25315 19.5 10.5 19.5C15.7468 19.5 20 15.2468 20 10C20 4.75315 15.7468 0.5 10.5 0.5ZM10.5 17.6L12.4 15.7L13.35 14.75V12.85H11.45V11.9L10.5 10.95H7.65V13.8L9.55 15.7V17.5344C5.807 17.0642 2.9 13.8684 2.9 10L3.85 10.95H5.75V9.05H7.65L10.5 6.2V4.3H8.6L7.65 3.35V2.95955C9.47707 2.21505 11.5229 2.21505 13.35 2.95955V4.3L12.4 5.25V7.15L13.35 8.1L16.3235 5.1265C17.0464 5.99218 17.5676 7.00791 17.8492 8.1H16.2L14.3 10V11.9L15.25 12.85H17.15L17.4217 13.1217C16.2275 15.758 13.577 17.6 10.5 17.6Z" fill="#2B2B2B" stroke="#FDEBEF" stroke-width="0.4"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 10 GB</span>  Roaming EU <br>
+           <span style="font-weight: 700;"> Nelim. min</span> Roaming EU
         </span>
     </div>
     <div class="ab_block">
@@ -1220,7 +1333,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> 245 GB </span>   Trafic internet
         </span>
     </div>
     <div class="ab_block">
@@ -1234,7 +1347,7 @@ position: relative;
     
         </div>
         <span>
-           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+           <span style="font-weight: 700;"> Nelimitat SMS </span>   Trafic internet
         </span>
     </div>
    
@@ -1248,7 +1361,7 @@ position: relative;
                                 TV Suplimentar  <span class="tv_internet_calculator_left_block_second_tv_small_text">(optional)</span>
                             </div>
                            <div class="tv_internet_calculator_left_block_second_tv" id="second_tv" onclick="select_second_tv('')">
-<img class="tv_internet_calculator_left_block_second_tv_img" src="../../images/landings/triple/img_second_tv.png" alt="TV Suplimentar">
+<img class="tv_internet_calculator_left_block_second_tv_img" id="tv_internet_calculator_left_block_second_tv_img_1" src="../../images/landings/triple/img_second_tv.png" alt="TV Suplimentar">
 <div class="tv_internet_calculator_left_block_second_tv_text_block">
     <div class="tv_internet_calculator_left_block_second_tv_text">
         Adaugă un abonament TV suplimentar <br>
@@ -1279,7 +1392,7 @@ position: relative;
                                     Telefonie fixă  <span class="tv_internet_calculator_left_block_second_tv_small_text"><span style="color: #212A55;">prin internet</span> (optional)</span>
                                 </div>
                                <div class="tv_internet_calculator_left_block_second_tv" id="fix_option" onclick="select_fix('')">
-    <img class="tv_internet_calculator_left_block_second_tv_img" src="../../images/landings/triple/img_fix.png" alt="TV Suplimentar">
+    <img class="tv_internet_calculator_left_block_second_tv_img" id="tv_internet_calculator_left_block_second_tv_img_2" src="../../images/landings/triple/img_fix.png" alt="TV Suplimentar">
     <div class="tv_internet_calculator_left_block_second_tv_text_block">
         <div class="tv_internet_calculator_left_block_second_tv_text">
             Minute nelimitate în rețeaua mobilă și fixă Moldtelecom
@@ -1358,7 +1471,11 @@ position: relative;
                             <span>după 12 luni</span>
                             <span><span id="tv_internet_calculator_right_total_price_after12">---</span>lei/luna</span>
                         </div>
-                        <form action="/comanda_marketing" class="mtc_evo_v2_form_comanda_calculator" id="tm_comanda_form">
+                        <div class="tv_internet_calculator_right_price_block" id="tv_internet_calculator_right_total_price_no_discount">
+                            <span>&nbsp;</span>
+                            <span><span id="tv_internet_calculator_right_total_price_no_discount_price">---</span>&nbsp;lei/luna</span>
+                        </div>
+                        <form action="/comanda_marketing" class="mtc_evo_v2_form_comanda_calculator" id="mtc_evo_v2_form_comanda_calculator">
                             <input class="mtc_evo_v2_form_comanda_calculator_phone" maxlength="9" name="phone"
                                 pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -"
                                 required="" value="" /> 
@@ -1725,6 +1842,10 @@ document.getElementById('pret_tv_old_block').classList.remove('old_to_new_price'
 document.getElementById('pret_fibra_new_block').style.display="math"
 document.getElementById('pret_fibra_old_block').classList.remove('old_to_new_price')
 
+document.getElementById('tv_internet_calculator_right_total_price_after').style.display="flex";
+document.getElementById('tv_internet_calculator_right_total_price_12').style.display="flex";
+document.getElementById('tv_internet_calculator_right_total_price_no_discount').style.display="none";
+
 }
 
     function set_prices_reducere_no(){
@@ -1745,6 +1866,11 @@ document.getElementById('pret_tv_old_block').classList.add('old_to_new_price')
 
 document.getElementById('pret_fibra_new_block').style.display="none"
 document.getElementById('pret_fibra_old_block').classList.add('old_to_new_price')
+
+
+document.getElementById('tv_internet_calculator_right_total_price_after').style.display="none";
+document.getElementById('tv_internet_calculator_right_total_price_12').style.display="none";
+document.getElementById('tv_internet_calculator_right_total_price_no_discount').style.display="flex";
 
 
 
@@ -1985,6 +2111,12 @@ let formatted_price = (after_12_price % 1 === 0)
 document.getElementById('tv_internet_calculator_right_total_price_after12').innerText = formatted_price;
 
 
+document.getElementById('tv_internet_calculator_right_total_price_no_discount_price').innerText= 
+   final_fibra+
+    final_tv+
+    final_mob+
+    final_sup+final_fix
+
 }
 
 
@@ -1992,6 +2124,8 @@ document.getElementById('tv_internet_calculator_right_total_price_after12').inne
 
 
                 function abonament_chage(id) {
+                    mtc_evo_v2_form_comanda_new('mtc_evo_v2_form_comanda_calculator', 'triple', 'campain[triple_2024_xmas], place[calculator]', ' ')
+
                     // Remove the active class from all buttons
                     document.querySelectorAll('.calculator_btn').forEach((btn) => {
                         btn.classList.remove('calculator_btn_acitve');
@@ -2009,7 +2143,7 @@ document.getElementById('tv_internet_calculator_right_total_price_after12').inne
                 abonament_chage('calculator_btn_yes')
 
                 window.onload = function () {
-                        mtc_evo_v2_form_comanda_new('mtc_evo_v2_form_comanda_calculator', 'triple', 'campain[triple_2024_xmas], place[calculator]', ' ')
+                      //  mtc_evo_v2_form_comanda_new('mtc_evo_v2_form_comanda_calculator', 'triple', 'campain[triple_2024_xmas], place[calculator]', ' ')
 
                     }
 
