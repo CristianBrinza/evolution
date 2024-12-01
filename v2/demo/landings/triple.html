@@ -766,12 +766,13 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
 .tv_internet_calculator_left_block_options_fibra_option{
     height: 95px;
 }
-                    
-                   }
-
-                   .tv_internet_calculator_left_block_options_fibra_option_small {
+          
+.tv_internet_calculator_left_block_options_fibra_option_small {
     height: 65px !important; /* Override any inline or existing styles */
 }
+                   }
+
+                
                 </style>
                 <div class="tv_internet_calculator">
                     <div class="tv_internet_calculator_left">
@@ -1354,7 +1355,7 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
     
         </div>
         <span>
-           <span style="font-weight: 700;"> Nelimitat SMS </span>   Trafic internet
+           <span style="font-weight: 700;"> Nelimitat SMS </span>   naționale
         </span>
     </div>
    
@@ -1793,6 +1794,8 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
     let final_sup=0;
     let final_fix=0;
 
+    let is_reducere=true
+
 let canale={
     simple_canale:58,
     simple_hd:32,
@@ -1822,6 +1825,7 @@ let canale={
     let reducere_mob=50;
 
     function set_prices_reducere(){
+        is_reducere=true
         document.getElementById('fibra300_price').innerText=Math.round(prices.fibra_300/100*(100-reducere_net))
 document.getElementById('fibra500_price').innerText=Math.round(prices.fibra_500/100*(100-reducere_net))
 document.getElementById('fibra1000_price').innerText=Math.round(prices.fibra_1000/100*(100-reducere_net))
@@ -1860,6 +1864,7 @@ document.querySelectorAll('.tv_internet_calculator_left_block_options_fibra_opti
 }
 
     function set_prices_reducere_no(){
+        is_reducere=false
         document.querySelectorAll('.tv_internet_calculator_left_block_option_prices_old').forEach(element => {
     element.style.opacity = '0';
 
@@ -2111,10 +2116,11 @@ function update_price(){
 
     let after_12_price = 
     parseFloat((final_fibra / 100 * (100 - reducere_net_after)).toFixed(1)) +
-    parseFloat((final_tv / 100 * (100 - reducere_net_after)).toFixed(1)) +
+    parseFloat((final_tv / 100 * (100 - reducere_tv_after)).toFixed(1)) +
     final_mob +
     final_sup +
     final_fix;
+
 
 // Determine the format based on whether there's a fractional part
 let formatted_price = (after_12_price % 1 === 0) 
@@ -2129,7 +2135,26 @@ document.getElementById('tv_internet_calculator_right_total_price_no_discount_pr
     final_tv+
     final_mob+
     final_sup+final_fix
-
+   
+  
+    if(is_reducere==true){
+        if (document.getElementById("mtc_evo_v2_form_comanda_calculator")?.elements["info"]) {
+    document.getElementById("mtc_evo_v2_form_comanda_calculator").elements["info"].value =
+        'triple' + ' (reducere-abonament) Configurat -> ' +
+        Math.round(final_fibra / 100 * (100 - reducere_net)) + ' + ' +
+        Math.round(final_tv / 100 * (100 - reducere_tv)) + ' + ' +
+        final_mob + ' + ' + final_sup + ' + ' + final_fix;
+}
+    }
+    else{
+        if (document.getElementById("mtc_evo_v2_form_comanda_calculator")?.elements["info"]) {
+    document.getElementById("mtc_evo_v2_form_comanda_calculator").elements["info"].value =
+        'triple' + ' (reducere-tv) Configurat -> ' +
+        final_fibra + ' + ' +
+       final_tv  + ' + ' +
+        final_mob + ' + ' + final_sup + ' + ' + final_fix;
+}
+    }
 }
 
 
@@ -2148,6 +2173,7 @@ document.getElementById('tv_internet_calculator_right_total_price_no_discount_pr
                         else if (id == 'calculator_btn_no') {
                             set_prices_reducere_no()
                         }
+                        update_price()
                     });
                     // Add the active class to the clicked button
                     document.getElementById(id).classList.add('calculator_btn_acitve');
