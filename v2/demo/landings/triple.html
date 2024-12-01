@@ -763,8 +763,15 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
 #calculator_btn_no{
     width: 100%;
 }
+.tv_internet_calculator_left_block_options_fibra_option{
+    height: 95px;
+}
                     
                    }
+
+                   .tv_internet_calculator_left_block_options_fibra_option_small {
+    height: 65px !important; /* Override any inline or existing styles */
+}
                 </style>
                 <div class="tv_internet_calculator">
                     <div class="tv_internet_calculator_left">
@@ -1527,10 +1534,10 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
             <div class="mtc_evo_v2_popup_block" id="mtc_evo_v2_popup_detalii_abonament" style="display: none;">
                 <div class="mtc_evo_v2_popup_block_inside">
                     <ul>
-                        <li><span>Perioada de comercializare a ofertei: 02.09.2024 – 25.11.2024 (inclusiv).</span></li>
+                        <li>Perioada de comercializare a ofertei: 06.12.2024 - 28.02.2025 (inclusiv).</li>
+                        <li>Abonatul de internet fix beneficiază de reducere de 50 lei lunar la abonamentul de telefonie mobilă Star 150, 75 lei lunar la abonamentul Liberty 190 și 100 lei lunar la abonamentul Liberty Plus 250, reducere valabilă pe toată perioada deținerii serviciului de Internet Fix sau Internet Fix + IPTV.</li>
+                        <li>Rezoluțiunea anticipată a contractului de telefonie mobile (inclusiv migrarea spre PrePay, port out, schimbul de abonament catre unul cu valoare mai mică) implică achitarea unei taxe cu titlu de prejudiciu, după cum urmează: 50 lei/75 lei/100 lei (fără TVA)  × nr. de luni acordare reducere.</li>
                         <li><span>Viteza la internet se oferă în funcție de posibilitățile tehnice.</span></li>
-                        <li><span>Abonatul de internet fix beneficiază de reducere de 50 lei lunar la abonamentul de telefonie mobilă Star 150, Liberty 190 și Liberty Plus 250, valabilă pe toată perioada deținerii serviciului de Internet Fix sau Internet Fix + IPTV.</span></li>
-                        <li>Rezolutiunea anticipata (inclusiv migrarea spre PrePay, schimbul de abonament catre unul cu valoare mai mica sau port out) pana la expirarea perioadei minime contractuale implică achitarea unei plăți cu titlu de prejudiciu, conform formulei de calcul: 50 lei * nr. de luni acordare reducere.</li>
                         <li><span>Telefonia Fixă cu 30 minute naționale în rețelele fixe și mobile și apeluri nelimitate în rețeaua fixă și mobilă Moldtelecom se oferă adițional la doar 10 lei/lună, pe perioada valabilității contractului de Internet Fix.</span></li>
                         <li>Abonamentul Smart 55 este destinat pentru clienții Moldtelecom care dețin servicii de Internet și/sau IPTV, un alt abonament de Telefonie mobilă eligibil sau pentru utilizatorii cartelei Prepay care migrează la Postpay.</li>
                         <li><span>Abonații conectați la abonamentele Liberty 190 și Liberty Plus 250 pot comunica în Roaming UE+SEE din contul minutelor naționale incluse în abonament. In plus, abonamentul Liberty 190 oferă 7 GB, iar abonamentul Liberty Plus 250 – 10 GB disponibili spre utilizare în Roaming în rețeaua operatorilor incluși în grupul UE+SEE.</span></li>
@@ -1553,13 +1560,13 @@ content: url("../../images/landings/triple/img_second_tv_mobil.png");
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <td>Smart 55</td>
                                 <td>2,00</td>
                                 <td>0,50</td>
                                 <td>2,00</td>
                                 <td>0,20</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <td>Start 95</td>
                                 <td>2,00</td>
@@ -1846,6 +1853,10 @@ document.getElementById('tv_internet_calculator_right_total_price_after').style.
 document.getElementById('tv_internet_calculator_right_total_price_12').style.display="flex";
 document.getElementById('tv_internet_calculator_right_total_price_no_discount').style.display="none";
 
+document.querySelectorAll('.tv_internet_calculator_left_block_options_fibra_option').forEach(element => {
+    element.classList.remove('tv_internet_calculator_left_block_options_fibra_option_small');
+});
+
 }
 
     function set_prices_reducere_no(){
@@ -1872,7 +1883,9 @@ document.getElementById('tv_internet_calculator_right_total_price_after').style.
 document.getElementById('tv_internet_calculator_right_total_price_12').style.display="none";
 document.getElementById('tv_internet_calculator_right_total_price_no_discount').style.display="flex";
 
-
+document.querySelectorAll('.tv_internet_calculator_left_block_options_fibra_option').forEach(element => {
+    element.classList.add('tv_internet_calculator_left_block_options_fibra_option_small');
+});
 
 });
 
