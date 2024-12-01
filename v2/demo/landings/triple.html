@@ -1,0 +1,2037 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Telefonie Mobila", ""]]);
+        </script>
+
+
+        <style>
+            .mtc_evo_v2_hero {
+                width: 1600px;
+                height: 500px;
+                border-radius: 30px;
+                margin: 0 auto;
+                background-image: url('../../images/landings/portare/hero_desktop_ro.png');
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            .mtc_evo_v2_hero_btns {
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                padding-top: 390px;
+                margin-top: 0;
+                flex-wrap: wrap;
+
+            }
+
+            .mtc_evo_v2_hero_mobile {
+                display: none;
+            }
+
+            @media (max-width:1600px) {
+                .mtc_evo_v2_hero {
+                    border-radius: 0px;
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:1300px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/portare/hero_tablet_ro.png');
+
+
+                    height: 406px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    padding-top: 310px;
+                }
+            }
+
+            @media (max-width:950px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/portare/hero_tablet_verical_ro.png');
+                    height: 295px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    display: none;
+                }
+            }
+
+            @media (max-width:650px) {
+                .mtc_evo_v2_hero {
+                    display: none;
+                }
+
+                .mtc_evo_v2_hero_mobile {
+                    display: block;
+                    width: 100vw;
+                    margin: 0 auto;
+                    height: auto;
+
+                }
+            }
+        </style>
+        <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/portare/hero_mobile_ro.png" alt="Moldtelecom">
+        <div class="mtc_evo_v2_hero">
+            <div class="mtc_evo_v2_hero_btns mtc_evo_v2_main">
+                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('calculator_btns')">
+                    Abonament
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-0.00031662 5.19383C-0.00031662 4.99492 0.0787014 4.80415 0.219354 4.6635C0.360006 4.52285 0.550771 4.44383 0.749683 4.44383L10.9397 4.44383L8.21968 1.72383C8.0872 1.58166 8.01508 1.39361 8.01851 1.19931C8.02194 1.00501 8.10065 0.819623 8.23806 0.68221C8.37547 0.544797 8.56086 0.466085 8.75516 0.462657C8.94946 0.459228 9.13751 0.531351 9.27968 0.663831L13.2797 4.66383C13.4201 4.80446 13.499 4.99508 13.499 5.19383C13.499 5.39258 13.4201 5.58321 13.2797 5.72383L9.27968 9.72383C9.13751 9.85631 8.94946 9.92844 8.75516 9.92501C8.56086 9.92158 8.37547 9.84287 8.23806 9.70545C8.10065 9.56804 8.02194 9.38265 8.01851 9.18835C8.01508 8.99405 8.0872 8.80601 8.21968 8.66383L10.9397 5.94383L0.749683 5.94383C0.550771 5.94383 0.360006 5.86481 0.219354 5.72416C0.0787014 5.58351 -0.00031662 5.39274 -0.00031662 5.19383Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('mtc_evo_v2_carousell_options_tv_internet')">
+                    Opțiuni
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-0.00031662 5.19383C-0.00031662 4.99492 0.0787014 4.80415 0.219354 4.6635C0.360006 4.52285 0.550771 4.44383 0.749683 4.44383L10.9397 4.44383L8.21968 1.72383C8.0872 1.58166 8.01508 1.39361 8.01851 1.19931C8.02194 1.00501 8.10065 0.819623 8.23806 0.68221C8.37547 0.544797 8.56086 0.466085 8.75516 0.462657C8.94946 0.459228 9.13751 0.531351 9.27968 0.663831L13.2797 4.66383C13.4201 4.80446 13.499 4.99508 13.499 5.19383C13.499 5.39258 13.4201 5.58321 13.2797 5.72383L9.27968 9.72383C9.13751 9.85631 8.94946 9.92844 8.75516 9.92501C8.56086 9.92158 8.37547 9.84287 8.23806 9.70545C8.10065 9.56804 8.02194 9.38265 8.01851 9.18835C8.01508 8.99405 8.0872 8.80601 8.21968 8.66383L10.9397 5.94383L0.749683 5.94383C0.550771 5.94383 0.360006 5.86481 0.219354 5.72416C0.0787014 5.58351 -0.00031662 5.39274 -0.00031662 5.19383Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .mtc_evolution_footer_new_main {
+                display: flex !important;
+            }
+        </style>
+        <div class="mtc_evo_v2_main">
+
+
+
+            <style>
+                .tm_abonamente_1 {}
+
+                .mtc_evo_v2_title_abonament {
+                    margin-bottom: 20px !important;
+                    margin-top: -15px !important;
+                }
+            </style>
+            <div class="tm_abonamente_1">
+
+
+                <div class="mtc_evo_v2_title mtc_evo_v2_title_abonament">
+                    Crează-ți propriul abonament:
+                </div>
+
+
+                <style>
+                    .calculator_btns {
+                        display: flex;
+                        width: 100%;
+                        gap: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    .calculator_btn {
+                        cursor: pointer;
+                        border-radius: 1000px;
+                        background: #F4F4F4;
+                        color: #ED4B6A;
+                        color: #ADBBFF;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 16px;
+                        /* 100% */
+                        display: flex;
+                        height: 46px;
+                        padding: 15px 22px;
+                        box-sizing: border-box;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border: 1px solid transparent;
+
+                    }
+
+                    .calculator_btn_acitve {
+                        border-radius: 1000px;
+                        border: 1px solid #ED4B6A;
+                        background: #F4F6FF;
+
+                        border: 1px solid #CFD7FF;
+                        background: #F4F6FF;
+
+
+                    }
+
+                    .hide_abonaments {
+                        overflow: hidden !important;
+                        height: 0px !important;
+                        margin-top: 0px !important;
+                    }
+
+                    .tv_internet_calculator {
+                        width: 100%;
+                        display: flex;
+                        gap: 30px;
+                        align-items: flex-start;
+                    }
+
+                    .tv_internet_calculator_left {
+                        max-width: 770px;
+                        width: 100%;
+                    }
+
+                    .tv_internet_calculator_right {
+                        width: 380px;
+                        border-radius: 24px;
+                        border: 2px solid #F3F5FF;
+                        background: #FFF;
+                        padding: 30px;
+                        box-sizing: border-box;
+                    }
+
+                    .tv_internet_calculator_right_title {
+                        color: #2F3043;
+                        font-family: "Source Sans Pro";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        /* 100% */
+                        margin-bottom: 17px;
+                    }
+
+                    .tv_internet_calculator_right_price_block {
+                        border-bottom: 1px dashed #BBB;
+                        color: #2F3043;
+                        font-family: "Source Sans Pro";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 38px;
+                        /* 237.5% */
+                        width: 100%;
+                        height: 38px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                    }
+
+                    .tv_internet_calculator_right_price_block_old {
+                        color: rgba(47, 48, 67, 0.49);
+                        text-decoration-line: line-through;
+                    }
+
+                    .tv_internet_calculator_left_block {
+                        border-left: 2px solid #EFF1FF;
+                        margin: 15px 0 20px;
+                        box-sizing: border-box;
+                        padding-left: 7px;
+                    }
+                    .tv_internet_calculator_left_block_title{
+                        color: #212A55;
+font-family: "Source Sans Pro";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 37px; /* 154.167% */
+                    }
+                    #tv_internet_calculator_left_block_options_fibra{
+display: flex;
+width: 100%;
+align-items: center;
+align-content: center;
+gap: 10px;
+align-self: stretch;
+flex-wrap: wrap;
+                    }
+                    .tv_internet_calculator_left_block_options_fibra_option{
+                        width: 245px;
+                        height: 105px;
+                        border-radius: 16px;
+border: 1.5px solid #F7F7F7;
+background: #FAFAFA;
+padding: 12px 18px 12px;
+box-sizing: border-box;
+cursor: pointer;
+                    }
+.tv_internet_calculator_left_block_options_fibra_option_active, .tv_internet_calculator_left_block_options_fibra_option_active:hover{
+    border: 1.5px solid #DFE5FE!important;
+    background: #EEF1FF!important;
+}
+                    .tv_internet_calculator_left_block_options_fibra_option_small_title{
+                        color: rgba(47, 48, 67, 0.35);
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; /* 128.571% */
+letter-spacing: 0.14px;
+                    }
+                    .tv_internet_calculator_left_block_options_fibra_option_title{
+                        color: #18B3AC;
+font-family: "Source Sans Pro";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 75% */
+letter-spacing: 0.24px;
+margin-bottom: 15px;
+                    }
+                    .tv_internet_calculator_left_block_option_prices{
+width: 100%;
+display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_old{
+                        color: rgba(29, 35, 41, 0.35);
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 100% */
+text-decoration-line: line-through;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_new{
+                        display: flex;
+    align-items: flex-start;
+    gap: 2px;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_new_big{
+                        color: #2F3043;
+text-align: right;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 44.444% */
+letter-spacing: -0.72px;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_new_big_lei{
+                        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px;
+                    }
+                    .tv_internet_calculator_left_block_option_prices_new_big_sub{
+                        color: rgba(114, 114, 114, 0.42);
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 10.552px;
+font-style: normal;
+font-weight: 600;
+line-height: 10px;
+letter-spacing: 0.106px;
+                    }
+                    .tv_internet_calculator_left_block_options_tv_option_title{
+                        color: #1D2329;
+                        color: #78C144;
+font-family: "Source Sans Pro";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 75% */
+letter-spacing: 0.24px;
+                    }
+                    .tv_internet_calculator_left_block_options_tv_canale{
+display: flex;
+gap: 3px;
+width: 100%;
+margin-top: 8px;
+margin-bottom: 12px;
+                    }
+                    .tv_internet_calculator_left_block_options_tv_canale_block{
+                        color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 12px;
+border-radius: 100px;
+background:  #EEF7F6;
+display: flex;
+padding: 2px 5px;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+                    }
+                    .tv_internet_calculator_left_block_options_fibra_option_active .tv_internet_calculator_left_block_options_tv_canale_block{
+                        background:  #fff;
+                    }
+                    .tv_internet_calculator_left_block_options_tv_canale_block_bold{
+                        font-weight: 600;
+                    }
+                    .tv_internet_calculator_left_block_options_tv_subtext{
+                        color: #939393;
+font-family: "Source Sans Pro";
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 37px;
+                    }
+                    .tv_internet_calculator_left_block_second_tv{
+                        width: 100%;
+                        border-radius: 16px;
+border: 1.5px solid #EEF1FF;
+background: #FFF;
+padding: 16px;
+box-sizing: border-box;
+display: flex;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_small_text{
+                        color: rgba(33, 42, 85, 0.35);
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 37px;
+
+                    }
+                    .tv_internet_calculator_left_block_second_tv_img{
+                        width: 135px;
+                        height: auto;
+                        border-radius: 10px;
+                        
+                    }
+                    .tv_internet_calculator_left_block_second_tv_price_big{
+                        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 44.444% */
+                    }
+                    .tv_internet_calculator_left_block_second_tv_price_small{
+                        color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_price{
+                        display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-right: 5px;
+
+                    }
+                    .tv_internet_calculator_left_block_second_tv_text{
+                        color: #1D2329;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px; /* 105.556% */
+margin-top: 5px;
+
+                    }
+                    .tv_internet_calculator_left_block_second_tv_text_block{
+                        width: 490px;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_subtext{
+                        color: rgba(47, 48, 67, 0.31);
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px;
+margin-top: 3px;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_activate{
+                        color: rgba(33, 42, 85, 0.75);
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 100% */
+display: flex;
+gap:5px;
+align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    transform: scale(1.00);
+    transform-origin: left center;
+    transition: transform 0.1s ease-in-out ;
+                    }
+                    .tv_internet_calculator_left_block_second_tv_active,
+                    .tv_internet_calculator_left_block_second_tv_active:hover{
+                        border: 1.5px solid #DFE5FE;
+                        background: #EEF1FF;
+                    }
+                    .tv_internet_calculator_left_block_second_tv:hover
+                    .tv_internet_calculator_left_block_second_tv_activate{
+transform: scale(1.02);
+transform-origin: left center;
+color: #CFD7FF;
+                    }
+.tv_internet_calculator_left_block_second_tv:hover
+                    .tv_internet_calculator_left_block_second_tv_activate
+                    svg path{
+                        fill:#CFD7FF
+                    }
+
+                    #fix_option{
+                        border: 1.5px solid rgba(252, 213, 1, 0.29);
+
+                    }
+                    .tv_internet_calculator_left_block_fix_active,
+                    .tv_internet_calculator_left_block_fix_active:hover{
+                        border: 1.5px solid #FDE560;
+                        background: #fff9d9;
+                    }
+                    .tv_internet_calculator_left_block_mobil_options{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+                    }
+                    .tv_internet_calculator_left_block_mobil_option{
+                        border-radius: 100px;
+border: 1.5px solid #F7F7F7;
+background: #FAFAFA;
+width: 180px;
+height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+                    }
+                   .tv_internet_calculator_left_block_mobil_option_selected{
+                   
+width: 100%;
+border-radius: 20px;
+border: 1px solid #EEF1FF;
+background:  #FFF;
+margin-top: 10px;
+padding: 20px 30px 20px;
+box-sizing: border-box;
+position: relative;
+                   }
+                   .tv_internet_calculator_left_block_mobil_option_selected_old_price{
+                    color: rgba(29, 35, 41, 0.35);
+position: absolute;
+bottom: 20px;
+right: 30px;
+text-decoration-line: line-through;
+                   }
+                   .tv_internet_calculator_left_block_mobil_option_selected_top{
+                    width: 100%;
+                    display: flex;
+    align-items: center;
+    justify-content: space-between;
+                   }
+                   .tv_internet_calculator_left_block_mobil_option_selected_top_title{
+                    color: #9797A1;
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: 0.14px;
+                   }
+                   .tv_internet_calculator_left_block_mobil_option_selected_top_abonament{
+                    color: #2F3043;
+text-align: center;
+font-family: "Open Sans";
+font-size: 15.123px;
+font-style: normal;
+font-weight: 600;
+line-height: 20.164px; /* 133.333% */
+border-radius: 1000px;
+background: #F3F5FF;
+padding: 6px 12px;
+box-sizing: border-box;
+margin-top: 3px;
+                   }
+.ab_svg{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+                   .ab_blocks{
+                    width: 100%;
+                    max-width: 630px;
+                    display: flex;
+                    margin-top: 15px;
+                    flex-direction: row;
+                    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+                   }
+                   .ab_block{
+                    color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+width: 200px;
+display: flex;
+gap:10px;
+align-items: center;
+    justify-content: flex-start;
+                   }
+                   .old_to_new_price{
+                    color: #2F3043;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    text-decoration: none;
+                   }
+
+
+                   .tv_internet_calculator_right_total{
+                    color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 38px; /* 237.5% */
+margin-top: 20px;
+margin-bottom: -5px;
+                   }
+                   #tv_internet_calculator_right_total_price_after{
+                    border-bottom: 1px dashed transparent;
+                   }
+                   .mtc_evo_v2_btn_calculator{
+                    width: 100%;
+                  
+                   }
+                   .mtc_evo_v2_form_comanda_calculator{
+width: 100%;
+display: flex;
+position: relative;
+                    flex-direction: column;
+                    gap:10px;
+                    box-sizing: border-box;
+                    margin-top: 20px;
+                   }
+                   #mtc_evo_v2_form_comanda_calculator_phone_svg{
+                    position: absolute;
+                    right: 20px;
+                    top: 12px;
+                   }
+                   .mtc_evo_v2_form_comanda_calculator_phone{
+                    width: 100%;
+                    border-radius: 1000px;
+    background: #fff;
+    display: flex;
+    height: 44px;
+    padding: 15px 22px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #292C48;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    border: 1px solid #D9DFFF;
+
+                   }
+                </style>
+                <div class="tv_internet_calculator">
+                    <div class="tv_internet_calculator_left">
+                        <div class="calculator_btns" id="calculator_btns">
+                            <div class="calculator_btn" id="calculator_btn_yes" onclick="abonament_chage('calculator_btn_yes')">
+                                Reducere Abonament
+                            </div>
+                            <div class="calculator_btn" id="calculator_btn_no" onclick="abonament_chage('calculator_btn_no')">
+                                Reducere TV
+                            </div>
+                        </div>
+                        <div class="tv_internet_calculator_left_block">
+                            <div class="tv_internet_calculator_left_block_title">
+                                Internet Fibră
+                            </div>
+                            <div id="tv_internet_calculator_left_block_options_fibra">
+                                <div class="tv_internet_calculator_left_block_options_fibra_option" id="fibra300" onclick="select_fibra('fibra300')">
+                                    <div class="tv_internet_calculator_left_block_options_fibra_option_small_title">
+                                        Până la
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_options_fibra_option_title">
+                                        300Mbps
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_option_prices">
+                                        <div class="tv_internet_calculator_left_block_option_prices_old">
+                                            <span id="fibra300_price_old">---</span>&nbsp;lei/lună
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_option_prices_new">
+                                            <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                <span id="fibra300_price">---</span>
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                lei/lună
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                      
+                                    </div>
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_options_fibra_option" id="fibra500" onclick="select_fibra('fibra500')">
+                                        <div class="tv_internet_calculator_left_block_options_fibra_option_small_title">
+                                            Până la
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_options_fibra_option_title">
+                                            500Mbps
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_option_prices">
+                                            <div class="tv_internet_calculator_left_block_option_prices_old">
+                                                <span id="fibra500_price_old">---</span>&nbsp;lei/lună
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices_new">
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                    <span id="fibra500_price">---</span>
+                                                </div>
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                    lei/lună
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                          
+                                        </div>
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_options_fibra_option" id="fibra1000" onclick="select_fibra('fibra1000')">
+                                            <div class="tv_internet_calculator_left_block_options_fibra_option_small_title">
+                                                Până la
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_options_fibra_option_title">
+                                                1000Mbps
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices">
+                                                <div class="tv_internet_calculator_left_block_option_prices_old">
+                                                    <span id="fibra1000_price_old">---</span>&nbsp;lei/lună
+                                                </div>
+                                                <div class="tv_internet_calculator_left_block_option_prices_new">
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                        <span id="fibra1000_price">---</span>
+                                                    </div>
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                        lei/lună
+                                                        <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                              
+                                            </div>
+                                            </div>
+                            </div>
+                        </div>
+                        <div class="tv_internet_calculator_left_block">
+                            <div class="tv_internet_calculator_left_block_title">
+                               TV <span class="tv_internet_calculator_left_block_options_tv_subtext">*vezi <span style="color: #2C72FF; text-decoration: underline;" onclick="window.location='https://www.moldtelecom.md/canale-TV'">grila</span></span>
+                            </div>
+                            <div id="tv_internet_calculator_left_block_options_fibra">
+                                <div class="tv_internet_calculator_left_block_options_fibra_option" id="simple" onclick="select_tv('simple')">
+                                    
+                                    <div class="tv_internet_calculator_left_block_options_tv_option_title">
+                                        Simplu
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_options_tv_canale">
+                                        <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                           <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="simple_canale"> ---</span>&nbsp;canale
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                            <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="simple_hd"> --</span>&nbsp;HD
+                                         </div>
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_option_prices">
+                                        <div class="tv_internet_calculator_left_block_option_prices_old">
+                                            <span id="simple_price_old">---</span>&nbsp;lei/lună
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_option_prices_new">
+                                            <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                <span id="simple_price"></span>
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                lei/lună
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                      
+                                    </div>
+                                    </div>
+                                    <div class="tv_internet_calculator_left_block_options_fibra_option" id="premier" onclick="select_tv('premier')">
+                                    
+                                        <div class="tv_internet_calculator_left_block_options_tv_option_title">
+                                            Premier
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_options_tv_canale">
+                                            <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                               <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="premier_canale"> ---</span>&nbsp;canale
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                                <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="premier_hd"> --</span>&nbsp;HD
+                                             </div>
+                                             <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                                <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="premier_radio"> --</span>&nbsp;Radio
+                                             </div>
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_option_prices">
+                                            <div class="tv_internet_calculator_left_block_option_prices_old">
+                                                <span id="premier_price_old">---</span>&nbsp;lei/lună
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices_new">
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                    <span id="premier_price"></span>
+                                                </div>
+                                                <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                    lei/lună
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                          
+                                        </div>
+                                        </div>
+                                        <div class="tv_internet_calculator_left_block_options_fibra_option" id="univers" onclick="select_tv('univers')">
+                                    
+                                            <div class="tv_internet_calculator_left_block_options_tv_option_title">
+                                                Univers
+                                            </div>
+                                            <div class="tv_internet_calculator_left_block_options_tv_canale">
+                                                <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                                   <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="univers_canale"> ---</span>&nbsp;canale
+                                                </div>
+                                                <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                                    <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="univers_hd"> --</span>&nbsp;HD
+                                                 </div>
+                                                 <div class="tv_internet_calculator_left_block_options_tv_canale_block">
+                                                    <span class="tv_internet_calculator_left_block_options_tv_canale_block_bold" id="univers_radio"> --</span>&nbsp;Radio
+                                                 </div>
+                                                </div>
+                                            <div class="tv_internet_calculator_left_block_option_prices">
+                                                <div class="tv_internet_calculator_left_block_option_prices_old">
+                                                    <span id="univers_price_old">---</span>&nbsp;lei/lună
+                                                </div>
+                                                <div class="tv_internet_calculator_left_block_option_prices_new">
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big">
+                                                        <span id="univers_price"></span>
+                                                    </div>
+                                                    <div class="tv_internet_calculator_left_block_option_prices_new_big_lei">
+                                                        lei/lună
+                                                        <div class="tv_internet_calculator_left_block_option_prices_new_big_sub">primul an
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                              
+                                            </div>
+                                            </div>
+                                    
+                                   
+                            </div>
+                        </div>
+                        <div class="tv_internet_calculator_left_block">
+                            <div class="tv_internet_calculator_left_block_title">
+                                Mobil
+                            </div>
+                       
+
+                            <div class="tv_internet_calculator_left_block_mobil_options">
+                                <div class="tv_internet_calculator_left_block_mobil_option" id="ab_95" onclick="select_mobil('ab_95')">
+                                    <svg width="78" height="31" viewBox="0 0 78 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5248_2256)">
+                                        <mask id="mask0_5248_2256" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="78" height="31">
+                                        <path d="M77.85 0.931274L0.150024 0.931274L0.150024 30.0688L77.85 30.0688V0.931274Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_5248_2256)">
+                                        <path d="M15.126 13.1966C15.038 13.0161 14.9264 12.8415 14.7914 12.6727C14.6564 12.5039 14.5214 12.3584 14.3804 12.242C14.2514 12.1372 14.0751 12.0441 13.8404 11.9452C13.6114 11.852 13.3061 11.7996 12.9363 11.7996C12.2963 11.7996 11.7739 11.9801 11.3806 12.3351C10.9814 12.6902 10.7816 13.1675 10.7816 13.767C10.7816 14.0231 10.8169 14.2268 10.8873 14.3839C10.9577 14.5411 11.0811 14.7041 11.263 14.8729C11.4568 15.065 11.6682 15.2163 11.8971 15.3385C12.1262 15.4607 12.3669 15.5713 12.6076 15.6703L13.8404 16.2058C14.2103 16.3687 14.5684 16.5434 14.9088 16.7296C15.2494 16.9159 15.5547 17.1371 15.8247 17.4048C16.1593 17.7365 16.3942 18.0858 16.5352 18.4641C16.676 18.8366 16.7464 19.2557 16.7464 19.7156C16.7464 20.2975 16.6407 20.833 16.4411 21.3162C16.2357 21.7992 15.948 22.2125 15.584 22.556C15.2201 22.8994 14.7914 23.1613 14.2984 23.3476C13.8051 23.5337 13.2709 23.627 12.6956 23.627C12.2728 23.627 11.815 23.5629 11.3218 23.4348C10.8287 23.3068 10.359 23.0274 9.90702 22.5966C9.58408 22.2941 9.33155 21.9331 9.13795 21.5315C8.94418 21.1241 8.80319 20.7283 8.71513 20.35L10.1006 19.9659C10.1535 20.2975 10.2474 20.6002 10.3884 20.8796C10.5293 21.159 10.6877 21.3918 10.8697 21.584C11.1515 21.8634 11.4452 22.0495 11.7563 22.1486C12.0674 22.2475 12.3844 22.2941 12.7191 22.2941C13.1534 22.2941 13.5351 22.2242 13.8639 22.0845C14.1927 21.9448 14.4627 21.7586 14.6741 21.5199C14.8853 21.2871 15.044 21.0135 15.1437 20.7108C15.2436 20.4083 15.2963 20.0939 15.2963 19.7795C15.2963 19.4885 15.2494 19.2207 15.1555 18.9763C15.0556 18.7377 14.8971 18.5049 14.6623 18.2895C14.4803 18.115 14.2631 17.9578 14.0107 17.8298C13.7524 17.7017 13.4587 17.562 13.1241 17.4107L11.9735 16.8751C11.7152 16.7587 11.4392 16.6248 11.1457 16.4735C10.8522 16.3222 10.5527 16.1068 10.2593 15.8274C9.97743 15.5597 9.76019 15.2687 9.60754 14.9485C9.4549 14.6342 9.37865 14.2326 9.37865 13.7495C9.37865 13.2664 9.46672 12.8066 9.64866 12.405C9.83061 12.0034 10.0771 11.6599 10.4001 11.3747C10.723 11.0895 11.1046 10.8684 11.5449 10.7054C11.9852 10.5482 12.4666 10.4667 12.9773 10.4667C13.3766 10.4667 13.7347 10.5075 14.0635 10.589C14.3922 10.6705 14.7152 10.8218 15.0321 11.0372C15.2905 11.2176 15.5254 11.4271 15.7424 11.6658C15.9597 11.9102 16.1418 12.1663 16.2826 12.4457L15.1495 13.1908L15.126 13.1966Z" fill="#EF4D6C"/>
+                                        <path d="M20.0459 16.7444V23.3973H18.6604V16.7444H17.8149V15.4871H18.6604V12.6293H20.0459V15.4871H21.4314V16.7444H20.0459Z" fill="#EF4D6C"/>
+                                        <path d="M28.8515 15.4776H30.2369V23.3877H28.8515V22.2817C28.7341 22.4331 28.5933 22.5845 28.4288 22.7416C28.2645 22.893 28.0647 23.0384 27.8417 23.1724C27.6186 23.3063 27.3603 23.411 27.0726 23.4982C26.785 23.5797 26.468 23.6205 26.1216 23.6205C25.6225 23.6205 25.1353 23.5332 24.6715 23.3527C24.2077 23.1724 23.7909 22.9103 23.4327 22.5611C23.0746 22.212 22.787 21.7754 22.5697 21.2574C22.3525 20.7336 22.241 20.1282 22.241 19.4297C22.241 18.7312 22.3467 18.1434 22.5581 17.6254C22.7693 17.1073 23.057 16.6824 23.4152 16.339C23.7733 15.9956 24.1901 15.7337 24.6539 15.5591C25.1235 15.3786 25.6109 15.2913 26.1274 15.2913C26.5149 15.2913 26.8554 15.3379 27.1548 15.4368C27.4543 15.53 27.7185 15.6464 27.9357 15.7802C28.1528 15.9141 28.3407 16.0596 28.4934 16.211C28.646 16.3623 28.7694 16.4962 28.8574 16.6126V15.4892L28.8515 15.4776ZM26.2742 16.5078C25.9278 16.5078 25.5991 16.566 25.2821 16.6883C24.965 16.8105 24.695 16.9909 24.4543 17.2411C24.2194 17.4915 24.0256 17.7941 23.879 18.1551C23.7322 18.5159 23.6559 18.9408 23.6559 19.4238C23.6559 19.8429 23.7145 20.2329 23.826 20.5939C23.9376 20.9547 24.1137 21.2691 24.3369 21.5368C24.56 21.8045 24.8358 22.014 25.1646 22.1654C25.4934 22.3167 25.8574 22.3923 26.2684 22.3923C26.6792 22.3923 27.0668 22.3109 27.3955 22.1537C27.7243 21.9965 28.0003 21.7812 28.235 21.5077C28.4641 21.2341 28.6402 20.9197 28.7517 20.5647C28.8691 20.2096 28.9219 19.8313 28.9219 19.4413C28.9219 18.935 28.8398 18.4926 28.6813 18.1259C28.5227 17.7593 28.3114 17.4507 28.0589 17.2121C27.8006 16.9735 27.5189 16.793 27.2018 16.6766C26.8907 16.5602 26.5795 16.5078 26.2684 16.5078H26.2742Z" fill="#EF4D6C"/>
+                                        <path d="M32.469 15.4765H33.8545V16.3321C33.8956 16.2798 33.9544 16.1983 34.0483 16.0819C34.1363 15.9654 34.2597 15.849 34.4063 15.7268C34.5532 15.6046 34.7351 15.4998 34.9465 15.4125C35.1578 15.3252 35.3985 15.2786 35.6686 15.2786C35.8859 15.2786 36.103 15.3077 36.3144 15.3718C36.5258 15.4358 36.7195 15.5114 36.9015 15.5987L36.2498 16.8385C36.0971 16.7396 35.9505 16.6697 35.8095 16.629C35.6686 16.5882 35.5453 16.5708 35.4456 16.5708C35.1638 16.5708 34.9347 16.6173 34.7528 16.7163C34.5766 16.8094 34.4298 16.9317 34.3301 17.0713C34.2126 17.2226 34.107 17.4556 34.013 17.7698C33.9133 18.0841 33.8663 18.5613 33.8663 19.2075V23.3808H32.4807V15.4707L32.469 15.4765Z" fill="#EF4D6C"/>
+                                        <path d="M39.9653 16.7444V23.3973H38.5798V16.7444H37.7343V15.4871H38.5798V12.6293H39.9653V15.4871H41.3508V16.7444H39.9653Z" fill="#EF4D6C"/>
+                                        <path d="M24.7365 5.42471C25.987 5.42471 27.0026 4.41777 27.0026 3.17799C27.0026 1.93822 25.987 0.931274 24.7365 0.931274C23.4861 0.931274 22.4704 1.93822 22.4704 3.17799C22.4704 4.41777 23.4861 5.42471 24.7365 5.42471Z" fill="#EF4D6C"/>
+                                        <path d="M28.5707 10.0644C29.4396 10.0644 30.1441 9.36598 30.1441 8.50455C30.1441 7.64312 29.4396 6.94464 28.5707 6.94464C27.7019 6.94464 26.9974 7.64312 26.9974 8.50455C26.9974 9.36598 27.7019 10.0644 28.5707 10.0644Z" fill="#EF4D6C"/>
+                                        <path d="M32.5102 4.23872C33.0974 4.23872 33.5786 3.76726 33.5786 3.17939C33.5786 2.59153 33.1032 2.12006 32.5102 2.12006C31.9173 2.12006 31.4417 2.59153 31.4417 3.17939C31.4417 3.76726 31.9173 4.23872 32.5102 4.23872Z" fill="#EF4D6C"/>
+                                        <path d="M53.0346 30.0746C51.7783 30.0746 50.6393 29.9989 49.6119 29.8418C48.5847 29.6847 47.7921 29.5275 47.2401 29.3586V27.3856H51.9486C52.7939 27.3856 53.5455 27.1469 54.197 26.6696C54.8487 26.1924 55.3595 25.3658 55.7352 24.1901C56.111 23.0143 56.2988 21.3903 56.2988 19.3067C55.7705 19.4755 55.1775 19.6036 54.5258 19.7025C53.8743 19.7956 53.3164 19.848 52.8585 19.848C50.7803 19.848 49.1423 19.202 47.9506 17.9097C46.7587 16.6176 46.1541 14.627 46.1541 11.9495C46.1541 9.2721 46.7764 7.39788 48.021 6.12902C49.2657 4.86014 51.0562 4.22571 53.3987 4.22571C55.7412 4.22571 57.5669 4.85432 58.7998 6.11155C60.0326 7.36879 60.649 9.25463 60.649 11.7691V19.6733C60.649 23.2645 59.974 25.9013 58.6178 27.5775C57.2675 29.2539 55.4064 30.0921 53.0406 30.0921L53.0346 30.0746ZM54.4847 17.3218H56.2988V11.7516C56.2988 9.95892 56.023 8.66675 55.4652 7.89263C54.9075 7.11268 54.2205 6.72269 53.3987 6.72269C52.5768 6.72269 51.8898 7.1185 51.3322 7.91008C50.7743 8.70168 50.4985 10.0404 50.4985 11.9321C50.4985 13.8237 50.7743 15.2847 51.3322 16.0995C51.884 16.9144 52.9407 17.3218 54.4847 17.3218Z" fill="#EF4D6C"/>
+                                        <path d="M69.6963 30.0727C68.4399 30.0727 67.301 29.9969 66.2736 29.8399C65.2462 29.6827 64.4537 29.5255 63.9018 29.3567V27.3836H68.9742C70.5182 27.3836 71.663 26.9995 72.3968 26.2369C73.1307 25.4686 73.5006 24.2405 73.5006 22.5351C73.5006 20.7365 73.1307 19.4503 72.3968 18.676C71.6571 17.8961 70.5182 17.5061 68.9742 17.5061H64.2658V4.56714L76.9467 4.56714V7.26205H68.6161V14.8054H69.7022C72.5025 14.8054 74.5632 15.4399 75.8782 16.7087C77.1933 17.9777 77.8508 19.9158 77.8508 22.5293C77.8508 25.1426 77.1933 26.9295 75.8782 28.1868C74.5632 29.4441 72.5025 30.0727 69.7022 30.0727H69.6963Z" fill="#EF4D6C"/>
+                                        <path d="M12.9542 29.71C5.89177 29.71 0.150063 24.0177 0.150063 17.0214C0.150063 10.0251 5.89177 4.32684 12.9542 4.32684C18.2263 4.32684 22.8993 7.46409 24.8485 12.3242C24.9542 12.5861 24.825 12.883 24.5608 12.9819C24.2966 13.0867 23.9972 12.9587 23.8975 12.6967C22.101 8.22659 17.8035 5.33961 12.9542 5.33961C6.45526 5.33961 1.17748 10.5781 1.17748 17.0214C1.17748 23.4647 6.46125 28.6973 12.9542 28.6973C15.872 28.6973 18.6783 27.6322 20.8447 25.6939C21.0559 25.5078 21.3788 25.5193 21.5668 25.7289C21.7545 25.9384 21.7369 26.2585 21.5315 26.4449C19.1773 28.5518 16.1304 29.71 12.9602 29.71H12.9542Z" fill="#EF4D6C"/>
+                                        <path d="M24.7365 5.42471C25.987 5.42471 27.0026 4.41777 27.0026 3.17799C27.0026 1.93822 25.987 0.931274 24.7365 0.931274C23.4861 0.931274 22.4704 1.93822 22.4704 3.17799C22.4704 4.41777 23.4861 5.42471 24.7365 5.42471Z" fill="#EF4D6C"/>
+                                        <path d="M32.5102 4.23872C33.0974 4.23872 33.5786 3.76726 33.5786 3.17939C33.5786 2.59153 33.1032 2.12006 32.5102 2.12006C31.9173 2.12006 31.4417 2.59153 31.4417 3.17939C31.4417 3.76726 31.9173 4.23872 32.5102 4.23872Z" fill="#EF4D6C"/>
+                                        <path d="M12.9542 29.71C5.89177 29.71 0.150063 24.0177 0.150063 17.0214C0.150063 10.0251 5.89177 4.32684 12.9542 4.32684C18.2263 4.32684 22.8993 7.46409 24.8485 12.3242C24.9542 12.5861 24.825 12.883 24.5608 12.9819C24.2966 13.0867 23.9972 12.9587 23.8975 12.6967C22.101 8.22659 17.8035 5.33961 12.9542 5.33961C6.45526 5.33961 1.17748 10.5781 1.17748 17.0214C1.17748 23.4647 6.46125 28.6973 12.9542 28.6973C15.872 28.6973 18.6783 27.6322 20.8447 25.6939C21.0559 25.5078 21.3788 25.5193 21.5668 25.7289C21.7545 25.9384 21.7369 26.2585 21.5315 26.4449C19.1773 28.5518 16.1304 29.71 12.9602 29.71H12.9542Z" fill="#EF4D6C"/>
+                                        <path d="M28.5707 10.0644C29.4396 10.0644 30.1441 9.36598 30.1441 8.50455C30.1441 7.64312 29.4396 6.94464 28.5707 6.94464C27.7019 6.94464 26.9974 7.64312 26.9974 8.50455C26.9974 9.36598 27.7019 10.0644 28.5707 10.0644Z" fill="#EF4D6C"/>
+                                        </g>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_5248_2256">
+                                        <rect width="29.1375" height="77.7" fill="white" transform="matrix(0 1 -1 0 77.85 0.931274)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+
+                                <div class="tv_internet_calculator_left_block_mobil_option" id="ab_150" onclick="select_mobil('ab_150')">
+                                    <svg width="86" height="43" viewBox="0 0 86 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5248_2319)">
+                                        <path d="M24.3663 10.458C25.545 10.458 26.5158 9.5046 26.5158 8.30847C26.5158 7.11233 25.5624 6.15887 24.3663 6.15887C23.1702 6.15887 22.2167 7.11233 22.2167 8.30847C22.2167 9.5046 23.1702 10.458 24.3663 10.458Z" fill="#4EBDC5"/>
+                                        <path d="M28.0077 14.9041C28.8225 14.9041 29.4985 14.2454 29.4985 13.4133C29.4985 12.5812 28.8397 11.9224 28.0077 11.9224C27.1755 11.9224 26.5169 12.5812 26.5169 13.4133C26.5169 14.2454 27.1755 14.9041 28.0077 14.9041Z" fill="#4EBDC5"/>
+                                        <path d="M31.7335 9.32253C32.2881 9.32253 32.7389 8.87182 32.7389 8.31709C32.7389 7.76235 32.2881 7.31165 31.7335 7.31165C31.1787 7.31165 30.728 7.76235 30.728 8.31709C30.728 8.87182 31.1787 9.32253 31.7335 9.32253Z" fill="#4EBDC5"/>
+                                        <path d="M13.2034 33.6689C6.51206 33.6689 1.06877 28.2256 1.06877 21.5343C1.06877 14.8429 6.51206 9.3996 13.2034 9.3996C18.1959 9.3996 22.6339 12.3986 24.4714 17.0444C24.5754 17.2871 24.454 17.5819 24.194 17.6685C23.9513 17.7726 23.6566 17.6512 23.5699 17.3912C21.8712 13.1267 17.7973 10.3704 13.2034 10.3704C7.04947 10.3704 2.03955 15.3803 2.03955 21.5343C2.03955 27.6882 7.04947 32.6981 13.2034 32.6981C15.9771 32.6981 18.6295 31.6754 20.6749 29.8205C20.8656 29.6472 21.1776 29.6472 21.3683 29.8553C21.5417 30.0458 21.5243 30.3579 21.3337 30.5486C19.0974 32.5595 16.2198 33.6689 13.2034 33.6689Z" fill="#4EBDC5"/>
+                                        <path d="M15.2715 17.8731C15.1848 17.6998 15.0807 17.5438 14.9595 17.3705C14.8381 17.197 14.6995 17.0757 14.5607 16.9543C14.4394 16.8503 14.2661 16.7636 14.058 16.677C13.8501 16.5903 13.5553 16.5383 13.2086 16.5383C12.6019 16.5383 12.1164 16.7116 11.7352 17.041C11.3537 17.3877 11.163 17.8384 11.163 18.4105C11.163 18.6532 11.1977 18.8439 11.2671 18.9999C11.3364 19.1559 11.4578 19.3119 11.6138 19.468C11.7871 19.6414 11.9952 19.7973 12.2205 19.9188C12.4459 20.04 12.6712 20.144 12.8965 20.2307L14.058 20.7334C14.4047 20.8894 14.7514 21.0627 15.0635 21.2362C15.3929 21.4096 15.6703 21.6349 15.9303 21.8775C16.2422 22.1897 16.4677 22.5364 16.6063 22.8831C16.7449 23.2471 16.8144 23.6458 16.8144 24.0791C16.8144 24.6339 16.7104 25.154 16.5196 25.6047C16.3289 26.0726 16.0515 26.4541 15.7048 26.7834C15.3581 27.1127 14.9595 27.3556 14.4914 27.5461C14.0234 27.7368 13.5206 27.8063 12.966 27.8063C12.5672 27.8063 12.1338 27.7368 11.6657 27.6328C11.1978 27.5289 10.747 27.2515 10.331 26.8355C10.0189 26.5408 9.77622 26.2114 9.60287 25.8126C9.42952 25.414 9.29092 25.0499 9.20424 24.6858L10.5217 24.3218C10.5737 24.6339 10.6603 24.9285 10.7989 25.1885C10.9377 25.4486 11.0763 25.674 11.2497 25.8647C11.5097 26.1247 11.8045 26.3153 12.0819 26.402C12.3765 26.4888 12.6712 26.5408 13.0005 26.5408C13.4165 26.5408 13.7806 26.4714 14.0927 26.35C14.4047 26.2114 14.6647 26.0381 14.8555 25.8126C15.0635 25.5873 15.2021 25.3273 15.3062 25.0325C15.4102 24.7378 15.4448 24.4432 15.4448 24.1484C15.4448 23.871 15.3929 23.611 15.3062 23.3857C15.2195 23.1604 15.0635 22.935 14.8381 22.7271C14.6647 22.5536 14.4568 22.4149 14.214 22.2935C13.9713 22.1723 13.6939 22.0335 13.382 21.8949L12.2898 21.3748C12.0471 21.2708 11.7871 21.1322 11.5097 20.9934C11.2323 20.8548 10.9551 20.6467 10.6777 20.3693C10.4177 20.1093 10.2096 19.8321 10.0536 19.5373C9.91484 19.2252 9.82816 18.8439 9.82816 18.3932C9.82816 17.9424 9.915 17.4917 10.0884 17.1104C10.2617 16.729 10.487 16.3996 10.7989 16.1223C11.1111 15.8449 11.4578 15.6369 11.8911 15.4808C12.3072 15.3248 12.7579 15.2555 13.2432 15.2555C13.6246 15.2555 13.954 15.2902 14.2661 15.3768C14.5781 15.4635 14.8902 15.6022 15.1848 15.8102C15.4274 15.9836 15.6529 16.1743 15.8608 16.4169C16.0689 16.6597 16.2422 16.9023 16.3637 17.1624L15.2888 17.8731H15.2715Z" fill="#4EBDC5"/>
+                                        <path d="M19.9328 21.2722V27.6341H18.6153V21.2722H17.8179V20.0759H18.6153V17.3369H19.9328V20.0759H21.2503V21.2722H19.9328Z" fill="#4EBDC5"/>
+                                        <path d="M28.2726 20.0572H29.5901V27.6154H28.2726V26.5579C28.1687 26.6967 28.0299 26.8527 27.874 26.9913C27.718 27.1301 27.5273 27.2687 27.3192 27.4073C27.1113 27.5461 26.8684 27.6328 26.5912 27.7194C26.3138 27.8061 26.0191 27.8407 25.6897 27.8407C25.2216 27.8407 24.7537 27.754 24.3201 27.5807C23.8696 27.4073 23.4881 27.1646 23.1414 26.818C22.7947 26.4886 22.5347 26.0726 22.3266 25.5698C22.1187 25.0671 22.0147 24.4951 22.0147 23.8189C22.0147 23.1429 22.1187 22.5881 22.3093 22.1028C22.5173 21.6175 22.7774 21.2013 23.1241 20.872C23.4708 20.5426 23.8522 20.3 24.3029 20.1266C24.7537 19.9533 25.2043 19.8665 25.6897 19.8665C26.0538 19.8665 26.3831 19.9186 26.6605 20.0052C26.9379 20.0919 27.1979 20.196 27.4059 20.3346C27.6139 20.456 27.7873 20.5946 27.9259 20.7506C28.0647 20.8893 28.1859 21.028 28.2726 21.132V20.0572ZM25.8283 21.0453C25.499 21.0453 25.1871 21.0973 24.8923 21.2187C24.5975 21.3401 24.3375 21.5134 24.1122 21.7387C23.8868 21.9814 23.7134 22.2588 23.5574 22.6055C23.4188 22.9522 23.3495 23.351 23.3495 23.8189C23.3495 24.2177 23.4015 24.599 23.5055 24.9459C23.6095 25.2925 23.7829 25.5871 23.9908 25.8472C24.1989 26.1072 24.4589 26.2979 24.7709 26.4539C25.083 26.5927 25.4297 26.6793 25.811 26.6793C26.1924 26.6793 26.5739 26.6099 26.8684 26.4539C27.1632 26.2979 27.4406 26.0898 27.6659 25.8298C27.8913 25.5698 28.0473 25.2752 28.1514 24.9285C28.2554 24.5818 28.3247 24.2351 28.3247 23.8537C28.3247 23.3682 28.2554 22.9522 28.0993 22.6055C27.9433 22.2588 27.7526 21.9642 27.5099 21.7387C27.2672 21.5134 26.9899 21.3401 26.6951 21.236C26.4005 21.132 26.1057 21.0801 25.811 21.0801L25.8283 21.0453Z" fill="#4EBDC5"/>
+                                        <path d="M31.7038 20.0595H33.0213V20.8741C33.0213 20.8741 33.1252 20.7529 33.2119 20.6314C33.2986 20.5274 33.4026 20.4062 33.5414 20.3021C33.68 20.1807 33.8533 20.094 34.0441 20.0074C34.252 19.9207 34.4774 19.8861 34.7201 19.8861C34.9282 19.8861 35.1361 19.9207 35.3268 19.9728C35.5349 20.0247 35.7082 20.1114 35.8816 20.1981L35.2575 21.3769C35.1189 21.2729 34.9801 21.2036 34.8415 21.1689C34.7027 21.1341 34.5987 21.1169 34.4948 21.1169C34.2348 21.1169 34.0093 21.1689 33.836 21.2555C33.6626 21.3422 33.524 21.4636 33.4373 21.5849C33.3333 21.7236 33.2293 21.9489 33.1426 22.2437C33.0559 22.5383 33.004 23.0064 33.004 23.6131V27.6003H31.6865V20.0421L31.7038 20.0595Z" fill="#4EBDC5"/>
+                                        <path d="M42.6601 32.4608V10.1166H38.8759V7.95422C39.4285 7.76202 40.2094 7.59383 41.2185 7.44969C42.2515 7.30553 43.3927 7.23344 44.6421 7.23344H46.9847V32.4608H42.6601ZM56.8841 32.8211C55.6348 32.8211 54.4935 32.7372 53.4605 32.5689C52.4514 32.4247 51.6705 32.2685 51.1179 32.1004V30.1182L56.1634 30.1182C57.7009 30.1182 58.8302 29.7339 59.551 28.965C60.2958 28.1962 60.6683 26.9588 60.6683 25.253C60.6683 23.451 60.2958 22.1656 59.551 21.3968C58.8302 20.6039 57.7009 20.2075 56.1634 20.2075H51.4783V7.23344L64.0919 7.23344V9.93637H55.803V17.5045H56.8841C59.6712 17.5045 61.7134 18.1413 63.0109 19.4146C64.3322 20.6881 64.9929 22.6342 64.9929 25.253C64.9929 27.7756 64.3322 29.6737 63.0109 30.9472C61.7134 32.1965 59.6712 32.8211 56.8841 32.8211ZM75.799 32.8211C74.2373 32.8211 72.8558 32.4247 71.6545 31.6318C70.4772 30.815 69.5522 29.4575 68.8794 27.5595C68.2068 25.6614 67.8704 23.0907 67.8704 19.8471C67.8704 16.6036 68.2068 14.0448 68.8794 12.1708C69.5522 10.2727 70.4772 8.91526 71.6545 8.09838C72.8558 7.2815 74.2373 6.87305 75.799 6.87305C77.3607 6.87305 78.7302 7.2815 79.9075 8.09838C81.1088 8.91526 82.0458 10.2727 82.7185 12.1708C83.3912 14.0448 83.7276 16.6036 83.7276 19.8471C83.7276 23.0907 83.3912 25.6614 82.7185 27.5595C82.0458 29.4575 81.1088 30.815 79.9075 31.6318C78.7302 32.4247 77.3607 32.8211 75.799 32.8211ZM75.799 30.2985C76.2075 30.2985 76.6159 30.1543 77.0243 29.8659C77.4568 29.5536 77.8532 29.013 78.2136 28.2442C78.574 27.4753 78.8623 26.4182 79.0786 25.0727C79.2948 23.7033 79.4029 21.9614 79.4029 19.8471C79.4029 17.7329 79.2948 16.0029 79.0786 14.6575C78.8623 13.288 78.574 12.2188 78.2136 11.45C77.8532 10.6812 77.4568 10.1526 77.0243 9.8643C76.6159 9.55195 76.2075 9.39578 75.799 9.39578C75.3906 9.39578 74.9701 9.55195 74.5376 9.8643C74.1292 10.1526 73.7448 10.6812 73.3844 11.45C73.024 12.2188 72.7357 13.288 72.5195 14.6575C72.3032 16.0029 72.1951 17.7329 72.1951 19.8471C72.1951 21.9614 72.3032 23.7033 72.5195 25.0727C72.7357 26.4182 73.024 27.4753 73.3844 28.2442C73.7448 29.013 74.1292 29.5536 74.5376 29.8659C74.9701 30.1543 75.3906 30.2985 75.799 30.2985Z" fill="#4EBDC5"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_5248_2319">
+                                        <rect width="42.1569" height="86" fill="white" transform="matrix(0 1 -1 0 86 0.421631)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="tv_internet_calculator_left_block_mobil_option" id="ab_190" onclick="select_mobil('ab_190')">
+                                    <svg width="101" height="43" viewBox="0 0 101 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5248_2330)">
+                                        <path d="M24.769 10.4662C25.9213 10.4662 26.8701 9.53434 26.8701 8.36523C26.8701 7.19613 25.9382 6.26422 24.769 6.26422C23.6 6.26422 22.6681 7.19613 22.6681 8.36523C22.6681 9.53434 23.6 10.4662 24.769 10.4662Z" fill="#F38059"/>
+                                        <path d="M28.3294 14.8119C29.1258 14.8119 29.7866 14.1681 29.7866 13.3548C29.7866 12.5415 29.1426 11.8976 28.3294 11.8976C27.516 11.8976 26.8723 12.5415 26.8723 13.3548C26.8723 14.1681 27.516 14.8119 28.3294 14.8119Z" fill="#F38059"/>
+                                        <path d="M31.9728 9.3565C32.5151 9.3565 32.9556 8.91597 32.9556 8.37377C32.9556 7.83158 32.5151 7.39105 31.9728 7.39105C31.4307 7.39105 30.9902 7.83158 30.9902 8.37377C30.9902 8.91597 31.4307 9.3565 31.9728 9.3565Z" fill="#F38059"/>
+                                        <path d="M12.7753 33.1527C6.23499 33.1527 0.914698 27.8326 0.914698 21.2923C0.914698 14.7521 6.23499 9.43188 12.7753 9.43188C15.1643 9.43188 17.4854 10.1435 19.4508 11.482C19.6712 11.6345 19.722 11.9226 19.5695 12.1428C19.4171 12.3631 19.129 12.4139 18.9088 12.2614C17.0958 11.0246 14.9779 10.3638 12.7753 10.3638C6.76026 10.3638 1.86355 15.2605 1.86355 21.2754C1.86355 27.2904 6.76026 32.1871 12.7753 32.1871C15.2828 32.1871 17.638 31.3567 19.6035 29.7981C19.8067 29.6286 20.1118 29.6624 20.2642 29.8658C20.4336 30.069 20.3997 30.3741 20.1965 30.5265C18.1124 32.2041 15.4692 33.1359 12.7753 33.1359V33.1527Z" fill="#F38059"/>
+                                        <path d="M11.8771 15.3808V26.0044H15.1472V27.2583H10.5556V15.3808H11.8771Z" fill="#F38059"/>
+                                        <path d="M16.3535 17.0747C16.3535 16.8206 16.4382 16.6172 16.6246 16.4309C16.811 16.2445 17.0142 16.1598 17.2684 16.1598C17.5225 16.1598 17.7259 16.2445 17.9123 16.4309C18.0987 16.6004 18.1833 16.8206 18.1833 17.0747C18.1833 17.3289 18.0987 17.5322 17.9123 17.7186C17.7259 17.9049 17.5225 17.9898 17.2684 17.9898C17.0142 17.9898 16.811 17.9049 16.6246 17.7186C16.4552 17.5322 16.3535 17.3289 16.3535 17.0747ZM17.8954 19.8535V27.2408H16.6076V19.8535H17.8954Z" fill="#F38059"/>
+                                        <path d="M21.2491 27.2586H19.9614V14.2798H21.2491V20.9047C21.4693 20.6336 21.6895 20.4134 21.9268 20.261C22.164 20.1085 22.4012 19.9729 22.6215 19.8881C22.8417 19.8034 23.0619 19.7527 23.2653 19.7357C23.4685 19.7187 23.6379 19.7017 23.7566 19.7017C24.3326 19.7017 24.8579 19.8034 25.2985 20.0238C25.739 20.244 26.1118 20.5321 26.4168 20.9047C26.7218 21.2775 26.959 21.6842 27.1115 22.1587C27.2639 22.633 27.3486 23.1075 27.3486 23.6158C27.3486 24.1241 27.2639 24.6154 27.1115 25.073C26.959 25.5303 26.7218 25.9369 26.4168 26.3097C26.1118 26.6656 25.739 26.9537 25.2985 27.1569C24.8579 27.3773 24.3666 27.4788 23.8075 27.4788C23.1975 27.4788 22.6893 27.3603 22.2655 27.1231C21.8419 26.8858 21.5032 26.5809 21.2321 26.225V27.2586H21.2491ZM23.6549 26.3267C24.0277 26.3267 24.3666 26.259 24.6717 26.1064C24.9596 25.9709 25.2138 25.7675 25.4171 25.5133C25.6204 25.2592 25.773 24.9713 25.8915 24.6494C26.0102 24.3103 26.0609 23.9715 26.0609 23.5988C26.0609 23.1413 25.9932 22.7517 25.8407 22.3958C25.7051 22.04 25.5187 21.7519 25.2815 21.5317C25.0443 21.3113 24.7902 21.1251 24.5021 21.0064C24.2141 20.8878 23.9091 20.837 23.6211 20.837C23.333 20.837 23.0281 20.9047 22.723 21.0064C22.4181 21.1251 22.164 21.3115 21.9268 21.5487C21.6895 21.7858 21.5031 22.0739 21.3676 22.4128C21.2321 22.7517 21.1474 23.1413 21.1474 23.5988C21.1474 23.9715 21.1982 24.3273 21.3168 24.6662C21.4353 25.005 21.6048 25.2931 21.8081 25.5303C22.0115 25.7675 22.2825 25.9709 22.5876 26.1233C22.8925 26.259 23.2313 26.3437 23.6042 26.3437L23.6549 26.3267Z" fill="#F38059"/>
+                                        <path d="M35.8826 25.3664C35.5437 26.0273 35.0862 26.5524 34.5101 26.9082C33.9341 27.281 33.2734 27.4675 32.5107 27.4675C32.0704 27.4675 31.6298 27.3997 31.1892 27.2471C30.7487 27.0946 30.3591 26.8744 30.0202 26.5694C29.6812 26.2645 29.3932 25.8577 29.1898 25.3833C28.9697 24.892 28.868 24.316 28.868 23.6213C28.868 23.0621 28.9527 22.5538 29.1221 22.0794C29.2915 21.6049 29.5287 21.1983 29.8338 20.8425C30.1387 20.4866 30.5115 20.2155 30.9521 20.0123C31.3925 19.8089 31.8839 19.7072 32.443 19.7072C33.1717 19.7072 33.7647 19.8598 34.222 20.1478C34.6796 20.4359 35.0184 20.7408 35.2386 21.0628C35.476 21.4017 35.6624 21.8083 35.7809 22.3336C35.8995 22.8419 35.9503 23.3502 35.9333 23.8415H30.1896C30.1896 24.2143 30.2574 24.5701 30.3759 24.8751C30.4945 25.18 30.664 25.4511 30.8842 25.6714C31.1045 25.8916 31.3417 26.0611 31.6298 26.1797C31.9177 26.2982 32.2228 26.3492 32.5447 26.3492C33.07 26.3492 33.5273 26.2135 33.9171 25.9256C34.3068 25.6375 34.6118 25.2647 34.832 24.8073L35.8995 25.4003L35.8826 25.3664ZM34.6118 22.7572C34.5101 22.181 34.256 21.7066 33.8494 21.3677C33.4596 21.0119 32.9853 20.8425 32.426 20.8425C31.867 20.8425 31.4094 21.0289 31.0028 21.3847C30.5962 21.7406 30.3421 22.2149 30.2574 22.7572H34.5949H34.6118Z" fill="#F38059"/>
+                                        <path d="M37.5504 19.8508H38.8379V20.6472C38.8379 20.6472 38.9396 20.5286 39.0243 20.4101C39.1091 20.3084 39.2108 20.1897 39.3464 20.088C39.4819 19.9695 39.6513 19.8848 39.8377 19.8001C40.0409 19.7153 40.2613 19.6814 40.4985 19.6814C40.7019 19.6814 40.9051 19.7153 41.0915 19.7661C41.2949 19.8169 41.4643 19.9016 41.6337 19.9865L41.0237 21.1385C40.8883 21.0369 40.7526 20.9861 40.6171 20.9352C40.4815 20.9014 40.3798 20.8844 40.2783 20.8844C40.0241 20.8844 39.8038 20.9352 39.6343 21.0199C39.4649 21.1046 39.3294 21.2233 39.2447 21.3419C39.143 21.4774 39.0413 21.6976 38.9566 21.9857C38.8719 22.2738 38.8211 22.7312 38.8211 23.3242V27.2213H37.5334V19.8339L37.5504 19.8508Z" fill="#F38059"/>
+                                        <path d="M44.477 21.0488V27.267H43.1893V21.0488H42.4099V19.8798H43.1893V17.2026H44.477V19.8798H45.7647V21.0488H44.477Z" fill="#F38059"/>
+                                        <path d="M49.662 26.5737L46.2564 19.881H47.7136L50.3228 25.1673L52.7288 19.881H54.152L48.7132 31.3687H47.29L49.6451 26.5737H49.662Z" fill="#F38059"/>
+                                        <path d="M58.1674 31.9655V10.1262H54.4687V8.01275C55.0088 7.82488 55.7721 7.6605 56.7583 7.5196C57.7682 7.3787 58.8835 7.30824 60.1046 7.30824L62.3943 7.30824V31.9655H58.1674ZM72.5984 32.3179C71.3773 32.3179 70.2618 32.2356 69.2521 32.0711C68.2659 31.9304 67.5026 31.7776 66.9625 31.6133V29.676L71.5418 29.676C72.3635 29.676 73.0915 29.4411 73.7256 28.9714C74.3596 28.5018 74.8528 27.6916 75.205 26.5409C75.5808 25.3903 75.7687 23.7934 75.7687 21.7504C75.252 21.9148 74.6767 22.044 74.0427 22.1378C73.4086 22.2317 72.8685 22.2787 72.4224 22.2787C70.4027 22.2787 68.806 21.6446 67.6318 20.3765C66.4811 19.1086 65.9057 17.1595 65.9057 14.5293C65.9057 11.9696 66.5046 10.0675 67.7022 8.82291C68.9233 7.57831 70.6728 6.95599 72.9506 6.95599C75.252 6.95599 77.0015 7.57831 78.1992 8.82291C79.3968 10.044 79.9956 11.8875 79.9956 14.3532V22.1027C79.9956 25.6251 79.3381 28.2083 78.023 29.852C76.7079 31.4959 74.8997 32.3179 72.5984 32.3179ZM74.0074 19.813H75.7687V14.3532C75.7687 12.5919 75.4985 11.3356 74.9584 10.5841C74.4183 9.80921 73.7492 9.42172 72.9506 9.42172C72.1522 9.42172 71.4829 9.80921 70.9428 10.5841C70.4027 11.3591 70.1327 12.6741 70.1327 14.5293C70.1327 16.4549 70.4027 17.8169 70.9428 18.6153C71.4829 19.4138 72.5045 19.813 74.0074 19.813ZM90.9015 32.3179C89.3751 32.3179 88.0248 31.9304 86.8507 31.1554C85.7 30.3569 84.7959 29.0301 84.1384 27.1749C83.4808 25.3197 83.1521 22.8071 83.1521 19.6368C83.1521 16.4667 83.4808 13.9657 84.1384 12.134C84.7959 10.2789 85.7 8.95206 86.8507 8.15364C88.0248 7.35521 89.3751 6.95599 90.9015 6.95599C92.4279 6.95599 93.7664 7.35521 94.9171 8.15364C96.0913 8.95206 97.0071 10.2789 97.6646 12.134C98.3222 13.9657 98.6509 16.4667 98.6509 19.6368C98.6509 22.8071 98.3222 25.3197 97.6646 27.1749C97.0071 29.0301 96.0913 30.3569 94.9171 31.1554C93.7664 31.9304 92.4279 32.3179 90.9015 32.3179ZM90.9015 29.852C91.3007 29.852 91.6999 29.7111 92.0991 29.4293C92.5218 29.124 92.9093 28.5956 93.2616 27.8442C93.6138 27.0928 93.8956 26.0596 94.107 24.7445C94.3183 23.4059 94.424 21.7035 94.424 19.6368C94.424 17.5704 94.3183 15.8796 94.107 14.5645C93.8956 13.226 93.6138 12.181 93.2616 11.4295C92.9093 10.6781 92.5218 10.1615 92.0991 9.87965C91.6999 9.57438 91.3007 9.42172 90.9015 9.42172C90.5023 9.42172 90.0913 9.57438 89.6686 9.87965C89.2694 10.1615 88.8937 10.6781 88.5414 11.4295C88.1892 12.181 87.9074 13.226 87.696 14.5645C87.4847 15.8796 87.379 17.5704 87.379 19.6368C87.379 21.7035 87.4847 23.4059 87.696 24.7445C87.9074 26.0596 88.1892 27.0928 88.5414 27.8442C88.8937 28.5956 89.2694 29.124 89.6686 29.4293C90.0913 29.7111 90.5023 29.852 90.9015 29.852Z" fill="#F38059"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_5248_2330">
+                                        <rect width="42.8524" height="100.538" fill="white" transform="matrix(0 1 -1 0 101 0)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="tv_internet_calculator_left_block_mobil_option" id="ab_250" onclick="select_mobil('ab_250')">
+                                    <svg width="103" height="41" viewBox="0 0 103 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5248_2344)">
+                                        <path d="M12.7381 31.8737C6.48075 31.8737 1.39044 26.7834 1.39044 20.526C1.39044 14.2685 6.48075 9.17816 12.7381 9.17816C15.024 9.17816 17.2448 9.85903 19.1253 11.1397C19.3361 11.2856 19.3847 11.5612 19.2388 11.7719C19.093 11.9827 18.8173 12.0313 18.6067 11.8854C16.872 10.702 14.8457 10.0698 12.7381 10.0698C6.98331 10.0698 2.29828 14.7548 2.29828 20.5098C2.29828 26.2646 6.98331 30.9496 12.7381 30.9496C15.1374 30.9496 17.3909 30.1553 19.2713 28.6639C19.4658 28.5018 19.7577 28.5342 19.9035 28.7287C20.0656 28.9233 20.0331 29.215 19.8387 29.361C17.8447 30.9659 15.3158 31.8575 12.7381 31.8575V31.8737Z" fill="#D47EAB"/>
+                                        <path d="M24.2136 10.1679C25.316 10.1679 26.2238 9.27626 26.2238 8.15771C26.2238 7.03913 25.3323 6.14752 24.2136 6.14752C23.0951 6.14752 22.2035 7.03913 22.2035 8.15771C22.2035 9.27626 23.0951 10.1679 24.2136 10.1679Z" fill="#D47EAB"/>
+                                        <path d="M27.6201 14.3257C28.3819 14.3257 29.0143 13.7097 29.0143 12.9316C29.0143 12.1534 28.3982 11.5374 27.6201 11.5374C26.8419 11.5374 26.2259 12.1534 26.2259 12.9316C26.2259 13.7097 26.8419 14.3257 27.6201 14.3257Z" fill="#D47EAB"/>
+                                        <path d="M31.1255 9.11834C31.6441 9.11834 32.0656 8.69685 32.0656 8.17809C32.0656 7.65933 31.6441 7.23785 31.1255 7.23785C30.6066 7.23785 30.1851 7.65933 30.1851 8.17809C30.1851 8.69685 30.6066 9.11834 31.1255 9.11834Z" fill="#D47EAB"/>
+                                        <path d="M11.8973 14.8699V25.0343H15.0261V26.2338H10.6329V14.8699H11.8973Z" fill="#D47EAB"/>
+                                        <path d="M16.1611 16.4907C16.1611 16.2475 16.2422 16.0529 16.4205 15.8746C16.5989 15.6963 16.7933 15.6152 17.0365 15.6152C17.2796 15.6152 17.4742 15.6963 17.6526 15.8746C17.8308 16.0367 17.9118 16.2475 17.9118 16.4907C17.9118 16.7338 17.8308 16.9283 17.6526 17.1066C17.4742 17.285 17.2796 17.366 17.0365 17.366C16.7933 17.366 16.5989 17.285 16.4205 17.1066C16.2584 16.9283 16.1611 16.7338 16.1611 16.4907ZM17.6526 19.1655V26.2335H16.4205V19.1655H17.6526Z" fill="#D47EAB"/>
+                                        <path d="M20.843 26.2343H19.6109V13.8165H20.843V20.1551C21.0538 19.8957 21.2645 19.685 21.4914 19.539C21.7185 19.3931 21.9454 19.2635 22.1561 19.1825C22.3669 19.1014 22.5776 19.0527 22.7722 19.0364C22.9666 19.0203 23.1287 19.0041 23.2423 19.0041C23.7934 19.0041 24.296 19.1014 24.7175 19.3121C25.139 19.5229 25.4957 19.7984 25.7874 20.1551C26.0792 20.5116 26.3062 20.9008 26.4521 21.3547C26.598 21.8087 26.679 22.2625 26.679 22.7488C26.679 23.2351 26.598 23.7052 26.4521 24.143C26.3062 24.5807 26.0792 24.9698 25.7874 25.3265C25.4957 25.6668 25.139 25.9424 24.7175 26.137C24.296 26.3477 23.8259 26.445 23.2908 26.445C22.7072 26.445 22.2209 26.3314 21.8156 26.1045C21.4104 25.8776 21.0861 25.5859 20.8269 25.2454V26.2343H20.843ZM23.145 25.3425C23.5017 25.3425 23.8259 25.2777 24.1176 25.1319C24.3933 25.0022 24.6364 24.8077 24.831 24.5645C25.0255 24.3213 25.1715 24.0457 25.2849 23.7377C25.3984 23.4135 25.447 23.0893 25.447 22.7326C25.447 22.295 25.3822 21.922 25.2363 21.5816C25.1065 21.2413 24.9282 20.9656 24.7012 20.7548C24.4743 20.5441 24.2312 20.3658 23.9555 20.2524C23.68 20.1389 23.3881 20.0903 23.1126 20.0903C22.837 20.0903 22.5453 20.1551 22.2534 20.2524C21.9617 20.3658 21.7185 20.5441 21.4914 20.771C21.2645 20.9981 21.0861 21.2736 20.9565 21.5978C20.8267 21.922 20.7457 22.295 20.7457 22.7326C20.7457 23.0893 20.7944 23.4297 20.9078 23.754C21.0213 24.0782 21.1834 24.3538 21.378 24.5807C21.5725 24.8077 21.8319 25.0022 22.1238 25.1481C22.4155 25.2777 22.7397 25.3588 23.0964 25.3588L23.145 25.3425Z" fill="#D47EAB"/>
+                                        <path d="M34.51 24.4239C34.1857 25.0561 33.748 25.5586 33.1969 25.8991C32.6457 26.2556 32.0134 26.434 31.2839 26.434C30.8624 26.434 30.4409 26.3692 30.0195 26.2233C29.598 26.0774 29.2251 25.8666 28.9008 25.5749C28.5766 25.283 28.3011 24.8939 28.1066 24.4401C27.8959 23.9699 27.7986 23.4187 27.7986 22.7541C27.7986 22.2192 27.8796 21.7328 28.0417 21.2788C28.2038 20.825 28.4308 20.436 28.7227 20.0955C29.0144 19.7551 29.3711 19.4957 29.7926 19.3011C30.214 19.1066 30.6842 19.0093 31.2191 19.0093C31.9162 19.0093 32.4836 19.1552 32.9212 19.4308C33.359 19.7063 33.6832 19.9982 33.8939 20.3062C34.1209 20.6304 34.2993 21.0194 34.4127 21.522C34.5262 22.0083 34.5748 22.4947 34.5585 22.9649H29.063C29.063 23.3214 29.1279 23.6619 29.2413 23.9538C29.3548 24.2455 29.517 24.5049 29.7276 24.7156C29.9385 24.9264 30.1654 25.0885 30.441 25.2019C30.7165 25.3155 31.0084 25.364 31.3164 25.364C31.8189 25.364 32.2565 25.2344 32.6295 24.9588C33.0023 24.6833 33.2942 24.3266 33.5048 23.8888L34.5262 24.4562L34.51 24.4239ZM33.3102 21.9273C33.2131 21.3761 32.9699 20.9223 32.5809 20.5981C32.208 20.2576 31.7541 20.0955 31.2191 20.0955C30.6842 20.0955 30.2464 20.2737 29.8574 20.6142C29.4682 20.9546 29.2252 21.4086 29.1442 21.9273H33.2942H33.3102Z" fill="#D47EAB"/>
+                                        <path d="M36.1002 19.1714H37.3322V19.9334C37.3322 19.9334 37.4295 19.8199 37.5106 19.7063C37.5916 19.6092 37.6888 19.4957 37.8186 19.3984C37.9482 19.285 38.1103 19.2038 38.2886 19.1227C38.4832 19.0417 38.6939 19.0093 38.921 19.0093C39.1154 19.0093 39.31 19.0418 39.4882 19.0904C39.6828 19.139 39.8449 19.22 40.007 19.3011L39.4236 20.4035C39.2938 20.3062 39.164 20.2576 39.0344 20.2089C38.9048 20.1766 38.8075 20.1603 38.7102 20.1603C38.467 20.1603 38.2563 20.2089 38.0942 20.29C37.9321 20.371 37.8023 20.4845 37.7213 20.5981C37.624 20.7277 37.5268 20.9384 37.4458 21.214C37.3647 21.4897 37.316 21.9273 37.316 22.4947V26.2233H36.0839V19.1552L36.1002 19.1714Z" fill="#D47EAB"/>
+                                        <path d="M42.7459 20.2931V26.2425H41.5139V20.2931H40.7682V19.1745H41.5139V16.6132H42.7459V19.1745H43.978V20.2931H42.7459Z" fill="#D47EAB"/>
+                                        <path d="M47.7068 25.5605L44.4482 19.157H45.8424L48.339 24.215L50.641 19.157H52.0027L46.799 30.1482H45.4371L47.6906 25.5605H47.7068Z" fill="#D47EAB"/>
+                                        <path d="M24.8956 28.949C25.0577 28.949 25.2198 28.9652 25.3819 28.9977C25.544 29.0301 25.7062 29.1111 25.852 29.2409C25.9331 29.3057 25.9979 29.3868 26.0304 29.4516C26.0627 29.5164 26.1114 29.6137 26.1437 29.6785C26.1762 29.7435 26.1925 29.8406 26.1925 29.9056C26.1925 29.9704 26.1925 30.0514 26.1925 30.1162C26.1925 30.3432 26.16 30.5215 26.0952 30.6674C26.0304 30.7972 25.9493 30.9105 25.8845 30.9755C25.8195 31.0403 25.7385 31.1051 25.6574 31.1537C25.5764 31.2024 25.4953 31.2348 25.4143 31.251C25.3332 31.2672 25.2522 31.2835 25.1711 31.2997C25.09 31.2997 25.0252 31.2997 24.9604 31.2997H24.4416V32.5803H23.5986V28.9329H24.8794L24.8956 28.949ZM24.4416 30.6188H24.7496C24.7496 30.6188 24.8794 30.6188 24.9604 30.6026C25.0415 30.6026 25.1225 30.554 25.2036 30.4892C25.2359 30.4567 25.2684 30.3919 25.3009 30.3432C25.3332 30.2784 25.3332 30.2135 25.3332 30.1325C25.3332 30.0514 25.3332 29.9866 25.3009 29.9217C25.2684 29.8568 25.2359 29.8083 25.2036 29.7758C25.1388 29.711 25.0738 29.6785 24.9928 29.6624C24.9117 29.6624 24.8308 29.6462 24.7335 29.6462H24.4416V30.6351V30.6188Z" fill="#D47EAB"/>
+                                        <path d="M29.9889 28.9452V31.8794H31.1238V32.5926H29.146V28.9452H29.9889Z" fill="#D47EAB"/>
+                                        <path d="M36.9537 31.1012C36.9537 31.1822 36.9537 31.2795 36.9537 31.3768C36.9537 31.4741 36.9214 31.5714 36.9051 31.6685C36.8889 31.7658 36.8403 31.8631 36.7916 31.9604C36.743 32.0577 36.662 32.155 36.5809 32.2522C36.4999 32.3495 36.4026 32.4143 36.3053 32.4792C36.208 32.5278 36.1108 32.5764 36.0135 32.6089C35.9162 32.6413 35.8189 32.6574 35.7216 32.6737C35.6245 32.6899 35.527 32.6737 35.4299 32.6737C35.3326 32.6737 35.2353 32.6737 35.138 32.6737C35.0409 32.6737 34.9436 32.6413 34.8463 32.6089C34.749 32.5764 34.6517 32.544 34.5546 32.4792C34.4573 32.4305 34.3762 32.3495 34.2789 32.2522C34.1816 32.155 34.1168 32.0577 34.0681 31.9604C34.0195 31.8631 33.9709 31.7658 33.9547 31.6685C33.9385 31.5714 33.906 31.4741 33.906 31.3768C33.906 31.2795 33.906 31.1822 33.906 31.1012V28.9452H34.749V31.0851C34.749 31.0851 34.749 31.2633 34.7815 31.3768C34.7976 31.4903 34.8463 31.6037 34.9436 31.701C35.0084 31.7821 35.1057 31.8306 35.1867 31.8631C35.284 31.8794 35.3651 31.8956 35.4462 31.8956C35.5272 31.8956 35.6083 31.8956 35.7054 31.8631C35.8027 31.8469 35.8837 31.7821 35.9486 31.701C36.0459 31.6037 36.0946 31.5064 36.1108 31.3768C36.1269 31.2633 36.1432 31.1661 36.1432 31.0851V28.9452H36.9862V31.1012H36.9537Z" fill="#D47EAB"/>
+                                        <path d="M41.9354 29.8399C41.9354 29.8399 41.8058 29.7266 41.741 29.6941C41.676 29.6618 41.6274 29.6293 41.5626 29.613C41.4976 29.5968 41.4653 29.5807 41.4166 29.5807C41.368 29.5807 41.3355 29.5807 41.3194 29.5807C41.2545 29.5807 41.2059 29.5807 41.1411 29.5968C41.0763 29.613 41.0276 29.6455 40.9627 29.6941C40.9303 29.7266 40.9142 29.7589 40.8979 29.7914C40.8817 29.8239 40.8817 29.8724 40.8817 29.921C40.8817 30.0021 40.9142 30.067 40.9627 30.1156C41.0113 30.1481 41.06 30.1966 41.1248 30.2129C41.1897 30.2452 41.287 30.2777 41.4166 30.3263L41.6922 30.4236C41.6922 30.4236 41.8543 30.4884 41.9516 30.5371C42.0489 30.5857 42.1137 30.6344 42.1948 30.6992C42.3083 30.7965 42.3731 30.9099 42.4055 31.0397C42.438 31.1693 42.4542 31.2828 42.4542 31.3801C42.4542 31.5746 42.4217 31.7367 42.3569 31.8988C42.2921 32.0609 42.211 32.1907 42.13 32.2878C42.0489 32.3689 41.9679 32.4338 41.8706 32.4824C41.7733 32.5311 41.676 32.5635 41.5787 32.5959C41.4815 32.6283 41.4005 32.6445 41.3032 32.6445C41.2059 32.6445 41.1411 32.6445 41.0925 32.6445C40.9627 32.6445 40.8331 32.6445 40.7196 32.612C40.606 32.5797 40.4927 32.5472 40.3629 32.4986C40.2656 32.4499 40.1684 32.3851 40.0711 32.3203C39.9739 32.2392 39.8928 32.1744 39.828 32.1096L40.2657 31.5098C40.2657 31.5098 40.3629 31.607 40.4278 31.6556C40.4927 31.7043 40.5412 31.7529 40.606 31.7854C40.7519 31.8665 40.8979 31.915 41.06 31.915C41.1086 31.915 41.1734 31.915 41.2384 31.8988C41.3032 31.8988 41.368 31.8502 41.4328 31.8015C41.4653 31.7692 41.4976 31.7367 41.5301 31.6881C41.5626 31.6394 41.5626 31.5746 41.5626 31.5098C41.5626 31.4449 41.5626 31.3962 41.5301 31.3639C41.5139 31.3314 41.4816 31.2828 41.4328 31.2503C41.4005 31.2341 41.3843 31.2018 41.3355 31.1855C41.3032 31.1693 41.2545 31.1531 41.2221 31.137C41.1897 31.1207 41.1411 31.1045 41.1086 31.0882C41.0763 31.0882 41.0438 31.0559 41.0113 31.0559L40.7033 30.9586C40.6223 30.9261 40.5251 30.8938 40.4441 30.8451C40.3468 30.7965 40.2656 30.7478 40.2008 30.6667C40.1035 30.5694 40.0387 30.4561 40.0226 30.3425C39.9901 30.2291 39.9901 30.1318 39.9901 30.0345C39.9901 29.8724 40.0226 29.7266 40.0711 29.5807C40.1197 29.4509 40.2008 29.3213 40.3143 29.2078C40.4439 29.0781 40.5737 28.9808 40.7358 28.9484C40.8817 28.8998 41.0438 28.8835 41.2221 28.8835C41.287 28.8835 41.3518 28.8835 41.4328 28.8835C41.5139 28.8835 41.5949 28.8998 41.6922 28.9321C41.7895 28.9646 41.8868 28.9971 41.9841 29.0457C42.0813 29.0942 42.1948 29.1592 42.2921 29.2402L41.9191 29.8562L41.9354 29.8399Z" fill="#D47EAB"/>
+                                        <path d="M54.621 31.2243V28.1911C56.1487 26.4611 57.4519 24.9446 58.5303 23.6414C59.6088 22.3382 60.4963 21.1699 61.1928 20.1364C61.8893 19.1029 62.3949 18.1255 62.7095 17.2042C63.0465 16.2832 63.2149 15.3395 63.2149 14.3733C63.2149 12.7781 62.9005 11.621 62.2713 10.902C61.6422 10.183 60.7771 9.82355 59.6763 9.82355H54.958V7.96994C55.4747 7.7902 56.205 7.63292 57.1486 7.49812C58.1146 7.36331 59.1819 7.2959 60.3503 7.2959C62.6196 7.2959 64.3383 7.89131 65.5066 9.08211C66.675 10.2505 67.2592 12.0142 67.2592 14.3733C67.2592 15.4293 67.0345 16.5077 66.5851 17.6087C66.1358 18.7096 65.518 19.8443 64.7316 21.0127C63.9452 22.181 63.0353 23.3943 62.0016 24.6524C60.9681 25.8882 59.856 27.18 58.6652 28.5281H67.0907V31.2243H54.621ZM75.1765 31.5613C74.0081 31.5613 72.941 31.4827 71.9749 31.3254C71.0312 31.1906 70.301 31.0446 69.7842 30.8874V29.0337L74.5025 29.0337C75.9405 29.0337 76.9964 28.6741 77.6705 27.9552C78.3669 27.2363 78.7153 26.0792 78.7153 24.4839C78.7153 22.7989 78.3669 21.5968 77.6705 20.8778C76.9964 20.1364 75.9405 19.7656 74.5025 19.7656H70.1212V7.63292L81.9169 7.63292V10.1606H74.1655V17.238H75.1765C77.7828 17.238 79.6926 17.8334 80.9059 19.0242C82.1416 20.2151 82.7594 22.035 82.7594 24.4839C82.7594 26.843 82.1416 28.618 80.9059 29.8089C79.6926 30.9772 77.7828 31.5613 75.1765 31.5613ZM92.8648 31.5613C91.4044 31.5613 90.1125 31.1906 88.9891 30.4491C87.8881 29.6853 87.0231 28.4158 86.3941 26.6409C85.7649 24.8659 85.4503 22.4619 85.4503 19.4286C85.4503 16.3954 85.7649 14.0026 86.3941 12.2501C87.0231 10.4751 87.8881 9.20568 88.9891 8.44177C90.1125 7.67786 91.4044 7.2959 92.8648 7.2959C94.3252 7.2959 95.6059 7.67786 96.7068 8.44177C97.8302 9.20568 98.7065 10.4751 99.3356 12.2501C99.9647 14.0026 100.279 16.3954 100.279 19.4286C100.279 22.4619 99.9647 24.8659 99.3356 26.6409C98.7065 28.4158 97.8302 29.6853 96.7068 30.4491C95.6059 31.1906 94.3252 31.5613 92.8648 31.5613ZM92.8648 29.2023C93.2468 29.2023 93.6287 29.0674 94.0107 28.7978C94.4151 28.5057 94.7858 28.0002 95.1228 27.2813C95.4599 26.5622 95.7295 25.5736 95.9317 24.3154C96.1339 23.0348 96.235 21.4058 96.235 19.4286C96.235 17.4515 96.1339 15.8337 95.9317 14.5755C95.7295 13.2949 95.4599 12.295 95.1228 11.5761C94.7858 10.8571 94.4151 10.3628 94.0107 10.0932C93.6287 9.80109 93.2468 9.65504 92.8648 9.65504C92.4828 9.65504 92.0897 9.80109 91.6852 10.0932C91.3033 10.3628 90.9438 10.8571 90.6068 11.5761C90.2697 12.295 90.0001 13.2949 89.7979 14.5755C89.5957 15.8337 89.4946 17.4515 89.4946 19.4286C89.4946 21.4058 89.5957 23.0348 89.7979 24.3154C90.0001 25.5736 90.2697 26.5622 90.6068 27.2813C90.9438 28.0002 91.3033 28.5057 91.6852 28.7978C92.0897 29.0674 92.4828 29.2023 92.8648 29.2023Z" fill="#D47EAB"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_5248_2344">
+                                        <rect width="41" height="102.5" fill="white" transform="matrix(0 1 -1 0 103 0)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                            <div class="tv_internet_calculator_left_block_mobil_option_selected">
+<div class="tv_internet_calculator_left_block_mobil_option_selected_top">
+    <div class="tv_internet_calculator_left_block_mobil_option_selected_top_title">
+        Abonamentul ales: <br>
+        <div class="tv_internet_calculator_left_block_mobil_option_selected_top_abonament"><span id="selected_mobile_ab"></span></div>
+    </div>
+    <div class="tv_internet_calculator_left_block_second_tv_price">
+        <div class="tv_internet_calculator_left_block_second_tv_price_big">
+           <span id="tv_internet_calculator_left_block_mobil_option_selected_top_price">--</span>
+        </div>
+       <div class="tv_internet_calculator_left_block_second_tv_price_small">
+        lei/lună
+       </div>
+    </div>
+    <div class="tv_internet_calculator_left_block_mobil_option_selected_old_price" id="tv_internet_calculator_left_block_mobil_option_selected_old_price">
+       <span id="mob_old_price_selected">---</span>
+        &nbsp;lei/lună
+                                        
+    </div>
+</div>
+
+<div id="ab_95_content" class="ab_blocks">
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 1.74917C15.0263 1.74894 14.3145 1.93353 13.682 2.28545C13.0496 2.63737 12.5176 3.14496 12.1363 3.76012C11.755 4.37527 11.5371 5.0776 11.5033 5.80055C11.4695 6.5235 11.6208 7.2431 11.943 7.89117C12.103 8.21117 12.168 8.60117 12.063 8.99317L11.81 9.93917L12.756 9.68617C13.1257 9.59084 13.5175 9.63351 13.858 9.80617C14.4317 10.0909 15.0624 10.2422 15.7028 10.2489C16.3433 10.2556 16.977 10.1175 17.5565 9.84481C18.1361 9.57215 18.6465 9.17202 19.0497 8.67434C19.4528 8.17665 19.7383 7.59428 19.8847 6.97075C20.0311 6.34723 20.0347 5.69867 19.8952 5.07355C19.7557 4.44844 19.4768 3.86294 19.0791 3.36081C18.6815 2.85868 18.1756 2.45291 17.5991 2.17384C17.0226 1.89476 16.3905 1.74958 15.75 1.74917ZM10 5.99917C10.0003 4.74875 10.4082 3.53251 11.1618 2.53475C11.9155 1.53699 12.9739 0.81211 14.1766 0.46995C15.3793 0.127789 16.6607 0.187003 17.8267 0.638619C18.9928 1.09023 19.9798 1.90963 20.6382 2.97264C21.2967 4.03565 21.5906 5.28433 21.4756 6.52944C21.3606 7.77456 20.8428 8.94824 20.0008 9.87263C19.1587 10.797 18.0383 11.4217 16.8093 11.6521C15.5803 11.8824 14.3097 11.7059 13.19 11.1492C13.1777 11.142 13.1641 11.1376 13.15 11.1362H13.143L12.031 11.4332C11.7937 11.4968 11.5438 11.4968 11.3064 11.4333C11.069 11.3698 10.8526 11.2449 10.6788 11.0712C10.505 10.8975 10.38 10.6811 10.3163 10.4438C10.2526 10.2064 10.2525 9.95654 10.316 9.71917L10.614 8.60617V8.59917C10.6122 8.58499 10.6075 8.57135 10.6 8.55917C10.2032 7.76426 9.99776 6.8876 10 5.99917ZM2.468 3.09117C3.694 1.80117 5.722 2.04217 6.736 3.47617L7.996 5.25917C8.807 6.40617 8.739 7.99917 7.771 9.01917L7.526 9.27617L7.524 9.28217C7.511 9.31917 7.479 9.43417 7.511 9.65417C7.578 10.1102 7.929 11.0352 9.357 12.5382C10.789 14.0462 11.657 14.4022 12.06 14.4672C12.1571 14.4893 12.2581 14.4869 12.354 14.4602L12.762 14.0302C13.636 13.1102 14.998 12.9292 16.097 13.5612L18.007 14.6612C19.64 15.6012 20.02 17.9002 18.715 19.2742L17.295 20.7692C16.852 21.2362 16.247 21.6352 15.5 21.7092C13.676 21.8892 9.451 21.6542 5.022 16.9912C0.888001 12.6392 0.103001 8.85417 0.00400125 7.00517C-0.0449987 6.09117 0.362001 5.30817 0.898001 4.74417L2.468 3.09117ZM5.511 4.34117C4.999 3.61717 4.078 3.57417 3.555 4.12417L1.985 5.77717C1.655 6.12617 1.48 6.52517 1.502 6.92517C1.582 8.43517 2.233 11.8772 6.109 15.9582C10.173 20.2372 13.918 20.3582 15.353 20.2162C15.636 20.1882 15.928 20.0302 16.207 19.7362L17.627 18.2412C18.241 17.5962 18.08 16.4332 17.259 15.9612L15.349 14.8612C14.836 14.5662 14.235 14.6572 13.85 15.0632L13.395 15.5432L12.851 15.0262C13.394 15.5432 13.394 15.5432 13.393 15.5442L13.392 15.5462L13.389 15.5492L13.382 15.5552L13.368 15.5692C13.3261 15.6104 13.2805 15.6479 13.232 15.6812C13.152 15.7382 13.046 15.8012 12.911 15.8532C12.635 15.9632 12.271 16.0212 11.82 15.9482C10.942 15.8052 9.792 15.1752 8.27 13.5712C6.742 11.9632 6.157 10.7642 6.027 9.87117C5.96463 9.50581 5.99348 9.13069 6.111 8.77917C6.16552 8.62597 6.24308 8.48199 6.341 8.35217L6.371 8.31517L6.385 8.30017L6.391 8.29417L6.394 8.29117L6.396 8.28917C6.396 8.28917 6.397 8.28817 6.941 8.80417L6.397 8.28817L6.684 7.98617C7.129 7.51617 7.194 6.72217 6.772 6.12617L5.511 4.34117Z" fill="#2F3043"/>
+                </svg>
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> Nelimitat</span> min. și SMS în rețea
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.468 1.09117C3.694 -0.198831 5.722 0.0421691 6.736 1.47617L7.996 3.25917C8.807 4.40617 8.739 5.99917 7.771 7.01917L7.526 7.27617L7.524 7.28217C7.511 7.31917 7.479 7.43417 7.511 7.65417C7.578 8.11017 7.929 9.03517 9.357 10.5382C10.789 12.0462 11.657 12.4022 12.06 12.4672C12.1571 12.4893 12.2581 12.4869 12.354 12.4602L12.762 12.0302C13.636 11.1102 14.998 10.9292 16.097 11.5612L18.007 12.6612C19.64 13.6012 20.02 15.9002 18.715 17.2742L17.295 18.7692C16.852 19.2362 16.247 19.6352 15.5 19.7092C13.676 19.8892 9.451 19.6542 5.022 14.9912C0.888001 10.6392 0.103001 6.85417 0.00400125 5.00517C-0.0449987 4.09117 0.362001 3.30817 0.898001 2.74417L2.468 1.09117ZM5.511 2.34117C4.999 1.61717 4.078 1.57417 3.555 2.12417L1.985 3.77717C1.655 4.12617 1.48 4.52517 1.502 4.92517C1.582 6.43517 2.233 9.87717 6.109 13.9582C10.173 18.2372 13.918 18.3582 15.353 18.2162C15.636 18.1882 15.928 18.0302 16.207 17.7362L17.627 16.2412C18.241 15.5962 18.08 14.4332 17.259 13.9612L15.349 12.8612C14.836 12.5662 14.235 12.6572 13.85 13.0632L13.395 13.5432L12.851 13.0262C13.394 13.5432 13.393 13.5442 13.393 13.5442L13.392 13.5462L13.389 13.5492L13.382 13.5552L13.368 13.5692C13.3261 13.6104 13.2805 13.6479 13.232 13.6812C13.152 13.7382 13.046 13.8012 12.911 13.8532C12.635 13.9632 12.271 14.0212 11.82 13.9482C10.942 13.8052 9.792 13.1752 8.27 11.5712C6.742 9.96317 6.157 8.76417 6.027 7.87117C5.96463 7.50581 5.99348 7.13069 6.111 6.77917C6.16552 6.62597 6.24308 6.48199 6.341 6.35217L6.371 6.31517L6.385 6.30017L6.391 6.29417L6.394 6.29117L6.396 6.28917C6.396 6.28917 6.397 6.28817 6.941 6.80417L6.397 6.28817L6.684 5.98617C7.129 5.51617 7.194 4.72217 6.772 4.12617L5.511 2.34117Z" fill="#2F3043"/>
+                </svg>
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 25 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7362 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7362 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" fill="#2F3043"/>
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7363 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7363 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" stroke="#F3F5FF" stroke-width="0.666667"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 18.5C12.1811 18.5 13.8245 18.0015 15.2223 17.0675C16.6202 16.1335 17.7096 14.806 18.353 13.2528C18.9963 11.6996 19.1646 9.99057 18.8367 8.34173C18.5087 6.6929 17.6991 5.17834 16.5104 3.9896C15.3217 2.80085 13.8071 1.9913 12.1583 1.66333C10.5094 1.33535 8.80036 1.50368 7.24719 2.14703C5.69402 2.79037 4.3665 3.87984 3.43251 5.27766C2.49852 6.67547 2 8.31886 2 10C2 11.36 2.31922 12.6444 2.88778 13.7844C3.31561 14.6448 2.72061 15.8055 2.49394 16.6527C2.44373 16.84 2.44372 17.0373 2.49392 17.2247C2.54412 17.4121 2.64276 17.5829 2.77992 17.7201C2.91709 17.8572 3.08794 17.9559 3.27531 18.0061C3.46268 18.0563 3.65997 18.0563 3.84733 18.0061C4.6945 17.7794 5.85522 17.1844 6.71561 17.6132C7.89164 18.1971 9.18697 18.5006 10.5 18.5Z" stroke="#2F3043" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+   
+ 
+</div>
+<div id="ab_150_content" class="ab_blocks">
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 1.74917C15.0263 1.74894 14.3145 1.93353 13.682 2.28545C13.0496 2.63737 12.5176 3.14496 12.1363 3.76012C11.755 4.37527 11.5371 5.0776 11.5033 5.80055C11.4695 6.5235 11.6208 7.2431 11.943 7.89117C12.103 8.21117 12.168 8.60117 12.063 8.99317L11.81 9.93917L12.756 9.68617C13.1257 9.59084 13.5175 9.63351 13.858 9.80617C14.4317 10.0909 15.0624 10.2422 15.7028 10.2489C16.3433 10.2556 16.977 10.1175 17.5565 9.84481C18.1361 9.57215 18.6465 9.17202 19.0497 8.67434C19.4528 8.17665 19.7383 7.59428 19.8847 6.97075C20.0311 6.34723 20.0347 5.69867 19.8952 5.07355C19.7557 4.44844 19.4768 3.86294 19.0791 3.36081C18.6815 2.85868 18.1756 2.45291 17.5991 2.17384C17.0226 1.89476 16.3905 1.74958 15.75 1.74917ZM10 5.99917C10.0003 4.74875 10.4082 3.53251 11.1618 2.53475C11.9155 1.53699 12.9739 0.81211 14.1766 0.46995C15.3793 0.127789 16.6607 0.187003 17.8267 0.638619C18.9928 1.09023 19.9798 1.90963 20.6382 2.97264C21.2967 4.03565 21.5906 5.28433 21.4756 6.52944C21.3606 7.77456 20.8428 8.94824 20.0008 9.87263C19.1587 10.797 18.0383 11.4217 16.8093 11.6521C15.5803 11.8824 14.3097 11.7059 13.19 11.1492C13.1777 11.142 13.1641 11.1376 13.15 11.1362H13.143L12.031 11.4332C11.7937 11.4968 11.5438 11.4968 11.3064 11.4333C11.069 11.3698 10.8526 11.2449 10.6788 11.0712C10.505 10.8975 10.38 10.6811 10.3163 10.4438C10.2526 10.2064 10.2525 9.95654 10.316 9.71917L10.614 8.60617V8.59917C10.6122 8.58499 10.6075 8.57135 10.6 8.55917C10.2032 7.76426 9.99776 6.8876 10 5.99917ZM2.468 3.09117C3.694 1.80117 5.722 2.04217 6.736 3.47617L7.996 5.25917C8.807 6.40617 8.739 7.99917 7.771 9.01917L7.526 9.27617L7.524 9.28217C7.511 9.31917 7.479 9.43417 7.511 9.65417C7.578 10.1102 7.929 11.0352 9.357 12.5382C10.789 14.0462 11.657 14.4022 12.06 14.4672C12.1571 14.4893 12.2581 14.4869 12.354 14.4602L12.762 14.0302C13.636 13.1102 14.998 12.9292 16.097 13.5612L18.007 14.6612C19.64 15.6012 20.02 17.9002 18.715 19.2742L17.295 20.7692C16.852 21.2362 16.247 21.6352 15.5 21.7092C13.676 21.8892 9.451 21.6542 5.022 16.9912C0.888001 12.6392 0.103001 8.85417 0.00400125 7.00517C-0.0449987 6.09117 0.362001 5.30817 0.898001 4.74417L2.468 3.09117ZM5.511 4.34117C4.999 3.61717 4.078 3.57417 3.555 4.12417L1.985 5.77717C1.655 6.12617 1.48 6.52517 1.502 6.92517C1.582 8.43517 2.233 11.8772 6.109 15.9582C10.173 20.2372 13.918 20.3582 15.353 20.2162C15.636 20.1882 15.928 20.0302 16.207 19.7362L17.627 18.2412C18.241 17.5962 18.08 16.4332 17.259 15.9612L15.349 14.8612C14.836 14.5662 14.235 14.6572 13.85 15.0632L13.395 15.5432L12.851 15.0262C13.394 15.5432 13.394 15.5432 13.393 15.5442L13.392 15.5462L13.389 15.5492L13.382 15.5552L13.368 15.5692C13.3261 15.6104 13.2805 15.6479 13.232 15.6812C13.152 15.7382 13.046 15.8012 12.911 15.8532C12.635 15.9632 12.271 16.0212 11.82 15.9482C10.942 15.8052 9.792 15.1752 8.27 13.5712C6.742 11.9632 6.157 10.7642 6.027 9.87117C5.96463 9.50581 5.99348 9.13069 6.111 8.77917C6.16552 8.62597 6.24308 8.48199 6.341 8.35217L6.371 8.31517L6.385 8.30017L6.391 8.29417L6.394 8.29117L6.396 8.28917C6.396 8.28917 6.397 8.28817 6.941 8.80417L6.397 8.28817L6.684 7.98617C7.129 7.51617 7.194 6.72217 6.772 6.12617L5.511 4.34117Z" fill="#2F3043"/>
+                </svg>
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> Nelimitat</span> min. și SMS în rețea
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.468 1.09117C3.694 -0.198831 5.722 0.0421691 6.736 1.47617L7.996 3.25917C8.807 4.40617 8.739 5.99917 7.771 7.01917L7.526 7.27617L7.524 7.28217C7.511 7.31917 7.479 7.43417 7.511 7.65417C7.578 8.11017 7.929 9.03517 9.357 10.5382C10.789 12.0462 11.657 12.4022 12.06 12.4672C12.1571 12.4893 12.2581 12.4869 12.354 12.4602L12.762 12.0302C13.636 11.1102 14.998 10.9292 16.097 11.5612L18.007 12.6612C19.64 13.6012 20.02 15.9002 18.715 17.2742L17.295 18.7692C16.852 19.2362 16.247 19.6352 15.5 19.7092C13.676 19.8892 9.451 19.6542 5.022 14.9912C0.888001 10.6392 0.103001 6.85417 0.00400125 5.00517C-0.0449987 4.09117 0.362001 3.30817 0.898001 2.74417L2.468 1.09117ZM5.511 2.34117C4.999 1.61717 4.078 1.57417 3.555 2.12417L1.985 3.77717C1.655 4.12617 1.48 4.52517 1.502 4.92517C1.582 6.43517 2.233 9.87717 6.109 13.9582C10.173 18.2372 13.918 18.3582 15.353 18.2162C15.636 18.1882 15.928 18.0302 16.207 17.7362L17.627 16.2412C18.241 15.5962 18.08 14.4332 17.259 13.9612L15.349 12.8612C14.836 12.5662 14.235 12.6572 13.85 13.0632L13.395 13.5432L12.851 13.0262C13.394 13.5432 13.393 13.5442 13.393 13.5442L13.392 13.5462L13.389 13.5492L13.382 13.5552L13.368 13.5692C13.3261 13.6104 13.2805 13.6479 13.232 13.6812C13.152 13.7382 13.046 13.8012 12.911 13.8532C12.635 13.9632 12.271 14.0212 11.82 13.9482C10.942 13.8052 9.792 13.1752 8.27 11.5712C6.742 9.96317 6.157 8.76417 6.027 7.87117C5.96463 7.50581 5.99348 7.13069 6.111 6.77917C6.16552 6.62597 6.24308 6.48199 6.341 6.35217L6.371 6.31517L6.385 6.30017L6.391 6.29417L6.394 6.29117L6.396 6.28917C6.396 6.28917 6.397 6.28817 6.941 6.80417L6.397 6.28817L6.684 5.98617C7.129 5.51617 7.194 4.72217 6.772 4.12617L5.511 2.34117Z" fill="#2F3043"/>
+                </svg>
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 25 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7362 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7362 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" fill="#2F3043"/>
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7363 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7363 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" stroke="#F3F5FF" stroke-width="0.666667"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 18.5C12.1811 18.5 13.8245 18.0015 15.2223 17.0675C16.6202 16.1335 17.7096 14.806 18.353 13.2528C18.9963 11.6996 19.1646 9.99057 18.8367 8.34173C18.5087 6.6929 17.6991 5.17834 16.5104 3.9896C15.3217 2.80085 13.8071 1.9913 12.1583 1.66333C10.5094 1.33535 8.80036 1.50368 7.24719 2.14703C5.69402 2.79037 4.3665 3.87984 3.43251 5.27766C2.49852 6.67547 2 8.31886 2 10C2 11.36 2.31922 12.6444 2.88778 13.7844C3.31561 14.6448 2.72061 15.8055 2.49394 16.6527C2.44373 16.84 2.44372 17.0373 2.49392 17.2247C2.54412 17.4121 2.64276 17.5829 2.77992 17.7201C2.91709 17.8572 3.08794 17.9559 3.27531 18.0061C3.46268 18.0563 3.65997 18.0563 3.84733 18.0061C4.6945 17.7794 5.85522 17.1844 6.71561 17.6132C7.89164 18.1971 9.18697 18.5006 10.5 18.5Z" stroke="#2F3043" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+   
+ 
+</div>
+<div id="ab_190_content" class="ab_blocks">
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 1.74917C15.0263 1.74894 14.3145 1.93353 13.682 2.28545C13.0496 2.63737 12.5176 3.14496 12.1363 3.76012C11.755 4.37527 11.5371 5.0776 11.5033 5.80055C11.4695 6.5235 11.6208 7.2431 11.943 7.89117C12.103 8.21117 12.168 8.60117 12.063 8.99317L11.81 9.93917L12.756 9.68617C13.1257 9.59084 13.5175 9.63351 13.858 9.80617C14.4317 10.0909 15.0624 10.2422 15.7028 10.2489C16.3433 10.2556 16.977 10.1175 17.5565 9.84481C18.1361 9.57215 18.6465 9.17202 19.0497 8.67434C19.4528 8.17665 19.7383 7.59428 19.8847 6.97075C20.0311 6.34723 20.0347 5.69867 19.8952 5.07355C19.7557 4.44844 19.4768 3.86294 19.0791 3.36081C18.6815 2.85868 18.1756 2.45291 17.5991 2.17384C17.0226 1.89476 16.3905 1.74958 15.75 1.74917ZM10 5.99917C10.0003 4.74875 10.4082 3.53251 11.1618 2.53475C11.9155 1.53699 12.9739 0.81211 14.1766 0.46995C15.3793 0.127789 16.6607 0.187003 17.8267 0.638619C18.9928 1.09023 19.9798 1.90963 20.6382 2.97264C21.2967 4.03565 21.5906 5.28433 21.4756 6.52944C21.3606 7.77456 20.8428 8.94824 20.0008 9.87263C19.1587 10.797 18.0383 11.4217 16.8093 11.6521C15.5803 11.8824 14.3097 11.7059 13.19 11.1492C13.1777 11.142 13.1641 11.1376 13.15 11.1362H13.143L12.031 11.4332C11.7937 11.4968 11.5438 11.4968 11.3064 11.4333C11.069 11.3698 10.8526 11.2449 10.6788 11.0712C10.505 10.8975 10.38 10.6811 10.3163 10.4438C10.2526 10.2064 10.2525 9.95654 10.316 9.71917L10.614 8.60617V8.59917C10.6122 8.58499 10.6075 8.57135 10.6 8.55917C10.2032 7.76426 9.99776 6.8876 10 5.99917ZM2.468 3.09117C3.694 1.80117 5.722 2.04217 6.736 3.47617L7.996 5.25917C8.807 6.40617 8.739 7.99917 7.771 9.01917L7.526 9.27617L7.524 9.28217C7.511 9.31917 7.479 9.43417 7.511 9.65417C7.578 10.1102 7.929 11.0352 9.357 12.5382C10.789 14.0462 11.657 14.4022 12.06 14.4672C12.1571 14.4893 12.2581 14.4869 12.354 14.4602L12.762 14.0302C13.636 13.1102 14.998 12.9292 16.097 13.5612L18.007 14.6612C19.64 15.6012 20.02 17.9002 18.715 19.2742L17.295 20.7692C16.852 21.2362 16.247 21.6352 15.5 21.7092C13.676 21.8892 9.451 21.6542 5.022 16.9912C0.888001 12.6392 0.103001 8.85417 0.00400125 7.00517C-0.0449987 6.09117 0.362001 5.30817 0.898001 4.74417L2.468 3.09117ZM5.511 4.34117C4.999 3.61717 4.078 3.57417 3.555 4.12417L1.985 5.77717C1.655 6.12617 1.48 6.52517 1.502 6.92517C1.582 8.43517 2.233 11.8772 6.109 15.9582C10.173 20.2372 13.918 20.3582 15.353 20.2162C15.636 20.1882 15.928 20.0302 16.207 19.7362L17.627 18.2412C18.241 17.5962 18.08 16.4332 17.259 15.9612L15.349 14.8612C14.836 14.5662 14.235 14.6572 13.85 15.0632L13.395 15.5432L12.851 15.0262C13.394 15.5432 13.394 15.5432 13.393 15.5442L13.392 15.5462L13.389 15.5492L13.382 15.5552L13.368 15.5692C13.3261 15.6104 13.2805 15.6479 13.232 15.6812C13.152 15.7382 13.046 15.8012 12.911 15.8532C12.635 15.9632 12.271 16.0212 11.82 15.9482C10.942 15.8052 9.792 15.1752 8.27 13.5712C6.742 11.9632 6.157 10.7642 6.027 9.87117C5.96463 9.50581 5.99348 9.13069 6.111 8.77917C6.16552 8.62597 6.24308 8.48199 6.341 8.35217L6.371 8.31517L6.385 8.30017L6.391 8.29417L6.394 8.29117L6.396 8.28917C6.396 8.28917 6.397 8.28817 6.941 8.80417L6.397 8.28817L6.684 7.98617C7.129 7.51617 7.194 6.72217 6.772 6.12617L5.511 4.34117Z" fill="#2F3043"/>
+                </svg>
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> Nelimitat</span> min. și SMS în rețea
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.468 1.09117C3.694 -0.198831 5.722 0.0421691 6.736 1.47617L7.996 3.25917C8.807 4.40617 8.739 5.99917 7.771 7.01917L7.526 7.27617L7.524 7.28217C7.511 7.31917 7.479 7.43417 7.511 7.65417C7.578 8.11017 7.929 9.03517 9.357 10.5382C10.789 12.0462 11.657 12.4022 12.06 12.4672C12.1571 12.4893 12.2581 12.4869 12.354 12.4602L12.762 12.0302C13.636 11.1102 14.998 10.9292 16.097 11.5612L18.007 12.6612C19.64 13.6012 20.02 15.9002 18.715 17.2742L17.295 18.7692C16.852 19.2362 16.247 19.6352 15.5 19.7092C13.676 19.8892 9.451 19.6542 5.022 14.9912C0.888001 10.6392 0.103001 6.85417 0.00400125 5.00517C-0.0449987 4.09117 0.362001 3.30817 0.898001 2.74417L2.468 1.09117ZM5.511 2.34117C4.999 1.61717 4.078 1.57417 3.555 2.12417L1.985 3.77717C1.655 4.12617 1.48 4.52517 1.502 4.92517C1.582 6.43517 2.233 9.87717 6.109 13.9582C10.173 18.2372 13.918 18.3582 15.353 18.2162C15.636 18.1882 15.928 18.0302 16.207 17.7362L17.627 16.2412C18.241 15.5962 18.08 14.4332 17.259 13.9612L15.349 12.8612C14.836 12.5662 14.235 12.6572 13.85 13.0632L13.395 13.5432L12.851 13.0262C13.394 13.5432 13.393 13.5442 13.393 13.5442L13.392 13.5462L13.389 13.5492L13.382 13.5552L13.368 13.5692C13.3261 13.6104 13.2805 13.6479 13.232 13.6812C13.152 13.7382 13.046 13.8012 12.911 13.8532C12.635 13.9632 12.271 14.0212 11.82 13.9482C10.942 13.8052 9.792 13.1752 8.27 11.5712C6.742 9.96317 6.157 8.76417 6.027 7.87117C5.96463 7.50581 5.99348 7.13069 6.111 6.77917C6.16552 6.62597 6.24308 6.48199 6.341 6.35217L6.371 6.31517L6.385 6.30017L6.391 6.29417L6.394 6.29117L6.396 6.28917C6.396 6.28917 6.397 6.28817 6.941 6.80417L6.397 6.28817L6.684 5.98617C7.129 5.51617 7.194 4.72217 6.772 4.12617L5.511 2.34117Z" fill="#2F3043"/>
+                </svg>
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 25 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7362 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7362 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" fill="#2F3043"/>
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7363 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7363 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" stroke="#F3F5FF" stroke-width="0.666667"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 18.5C12.1811 18.5 13.8245 18.0015 15.2223 17.0675C16.6202 16.1335 17.7096 14.806 18.353 13.2528C18.9963 11.6996 19.1646 9.99057 18.8367 8.34173C18.5087 6.6929 17.6991 5.17834 16.5104 3.9896C15.3217 2.80085 13.8071 1.9913 12.1583 1.66333C10.5094 1.33535 8.80036 1.50368 7.24719 2.14703C5.69402 2.79037 4.3665 3.87984 3.43251 5.27766C2.49852 6.67547 2 8.31886 2 10C2 11.36 2.31922 12.6444 2.88778 13.7844C3.31561 14.6448 2.72061 15.8055 2.49394 16.6527C2.44373 16.84 2.44372 17.0373 2.49392 17.2247C2.54412 17.4121 2.64276 17.5829 2.77992 17.7201C2.91709 17.8572 3.08794 17.9559 3.27531 18.0061C3.46268 18.0563 3.65997 18.0563 3.84733 18.0061C4.6945 17.7794 5.85522 17.1844 6.71561 17.6132C7.89164 18.1971 9.18697 18.5006 10.5 18.5Z" stroke="#2F3043" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+   
+ 
+</div>
+<div id="ab_250_content" class="ab_blocks">
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 1.74917C15.0263 1.74894 14.3145 1.93353 13.682 2.28545C13.0496 2.63737 12.5176 3.14496 12.1363 3.76012C11.755 4.37527 11.5371 5.0776 11.5033 5.80055C11.4695 6.5235 11.6208 7.2431 11.943 7.89117C12.103 8.21117 12.168 8.60117 12.063 8.99317L11.81 9.93917L12.756 9.68617C13.1257 9.59084 13.5175 9.63351 13.858 9.80617C14.4317 10.0909 15.0624 10.2422 15.7028 10.2489C16.3433 10.2556 16.977 10.1175 17.5565 9.84481C18.1361 9.57215 18.6465 9.17202 19.0497 8.67434C19.4528 8.17665 19.7383 7.59428 19.8847 6.97075C20.0311 6.34723 20.0347 5.69867 19.8952 5.07355C19.7557 4.44844 19.4768 3.86294 19.0791 3.36081C18.6815 2.85868 18.1756 2.45291 17.5991 2.17384C17.0226 1.89476 16.3905 1.74958 15.75 1.74917ZM10 5.99917C10.0003 4.74875 10.4082 3.53251 11.1618 2.53475C11.9155 1.53699 12.9739 0.81211 14.1766 0.46995C15.3793 0.127789 16.6607 0.187003 17.8267 0.638619C18.9928 1.09023 19.9798 1.90963 20.6382 2.97264C21.2967 4.03565 21.5906 5.28433 21.4756 6.52944C21.3606 7.77456 20.8428 8.94824 20.0008 9.87263C19.1587 10.797 18.0383 11.4217 16.8093 11.6521C15.5803 11.8824 14.3097 11.7059 13.19 11.1492C13.1777 11.142 13.1641 11.1376 13.15 11.1362H13.143L12.031 11.4332C11.7937 11.4968 11.5438 11.4968 11.3064 11.4333C11.069 11.3698 10.8526 11.2449 10.6788 11.0712C10.505 10.8975 10.38 10.6811 10.3163 10.4438C10.2526 10.2064 10.2525 9.95654 10.316 9.71917L10.614 8.60617V8.59917C10.6122 8.58499 10.6075 8.57135 10.6 8.55917C10.2032 7.76426 9.99776 6.8876 10 5.99917ZM2.468 3.09117C3.694 1.80117 5.722 2.04217 6.736 3.47617L7.996 5.25917C8.807 6.40617 8.739 7.99917 7.771 9.01917L7.526 9.27617L7.524 9.28217C7.511 9.31917 7.479 9.43417 7.511 9.65417C7.578 10.1102 7.929 11.0352 9.357 12.5382C10.789 14.0462 11.657 14.4022 12.06 14.4672C12.1571 14.4893 12.2581 14.4869 12.354 14.4602L12.762 14.0302C13.636 13.1102 14.998 12.9292 16.097 13.5612L18.007 14.6612C19.64 15.6012 20.02 17.9002 18.715 19.2742L17.295 20.7692C16.852 21.2362 16.247 21.6352 15.5 21.7092C13.676 21.8892 9.451 21.6542 5.022 16.9912C0.888001 12.6392 0.103001 8.85417 0.00400125 7.00517C-0.0449987 6.09117 0.362001 5.30817 0.898001 4.74417L2.468 3.09117ZM5.511 4.34117C4.999 3.61717 4.078 3.57417 3.555 4.12417L1.985 5.77717C1.655 6.12617 1.48 6.52517 1.502 6.92517C1.582 8.43517 2.233 11.8772 6.109 15.9582C10.173 20.2372 13.918 20.3582 15.353 20.2162C15.636 20.1882 15.928 20.0302 16.207 19.7362L17.627 18.2412C18.241 17.5962 18.08 16.4332 17.259 15.9612L15.349 14.8612C14.836 14.5662 14.235 14.6572 13.85 15.0632L13.395 15.5432L12.851 15.0262C13.394 15.5432 13.394 15.5432 13.393 15.5442L13.392 15.5462L13.389 15.5492L13.382 15.5552L13.368 15.5692C13.3261 15.6104 13.2805 15.6479 13.232 15.6812C13.152 15.7382 13.046 15.8012 12.911 15.8532C12.635 15.9632 12.271 16.0212 11.82 15.9482C10.942 15.8052 9.792 15.1752 8.27 13.5712C6.742 11.9632 6.157 10.7642 6.027 9.87117C5.96463 9.50581 5.99348 9.13069 6.111 8.77917C6.16552 8.62597 6.24308 8.48199 6.341 8.35217L6.371 8.31517L6.385 8.30017L6.391 8.29417L6.394 8.29117L6.396 8.28917C6.396 8.28917 6.397 8.28817 6.941 8.80417L6.397 8.28817L6.684 7.98617C7.129 7.51617 7.194 6.72217 6.772 6.12617L5.511 4.34117Z" fill="#2F3043"/>
+                </svg>
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> Nelimitat</span> min. și SMS în rețea
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.468 1.09117C3.694 -0.198831 5.722 0.0421691 6.736 1.47617L7.996 3.25917C8.807 4.40617 8.739 5.99917 7.771 7.01917L7.526 7.27617L7.524 7.28217C7.511 7.31917 7.479 7.43417 7.511 7.65417C7.578 8.11017 7.929 9.03517 9.357 10.5382C10.789 12.0462 11.657 12.4022 12.06 12.4672C12.1571 12.4893 12.2581 12.4869 12.354 12.4602L12.762 12.0302C13.636 11.1102 14.998 10.9292 16.097 11.5612L18.007 12.6612C19.64 13.6012 20.02 15.9002 18.715 17.2742L17.295 18.7692C16.852 19.2362 16.247 19.6352 15.5 19.7092C13.676 19.8892 9.451 19.6542 5.022 14.9912C0.888001 10.6392 0.103001 6.85417 0.00400125 5.00517C-0.0449987 4.09117 0.362001 3.30817 0.898001 2.74417L2.468 1.09117ZM5.511 2.34117C4.999 1.61717 4.078 1.57417 3.555 2.12417L1.985 3.77717C1.655 4.12617 1.48 4.52517 1.502 4.92517C1.582 6.43517 2.233 9.87717 6.109 13.9582C10.173 18.2372 13.918 18.3582 15.353 18.2162C15.636 18.1882 15.928 18.0302 16.207 17.7362L17.627 16.2412C18.241 15.5962 18.08 14.4332 17.259 13.9612L15.349 12.8612C14.836 12.5662 14.235 12.6572 13.85 13.0632L13.395 13.5432L12.851 13.0262C13.394 13.5432 13.393 13.5442 13.393 13.5442L13.392 13.5462L13.389 13.5492L13.382 13.5552L13.368 13.5692C13.3261 13.6104 13.2805 13.6479 13.232 13.6812C13.152 13.7382 13.046 13.8012 12.911 13.8532C12.635 13.9632 12.271 14.0212 11.82 13.9482C10.942 13.8052 9.792 13.1752 8.27 11.5712C6.742 9.96317 6.157 8.76417 6.027 7.87117C5.96463 7.50581 5.99348 7.13069 6.111 6.77917C6.16552 6.62597 6.24308 6.48199 6.341 6.35217L6.371 6.31517L6.385 6.30017L6.391 6.29417L6.394 6.29117L6.396 6.28917C6.396 6.28917 6.397 6.28817 6.941 6.80417L6.397 6.28817L6.684 5.98617C7.129 5.51617 7.194 4.72217 6.772 4.12617L5.511 2.34117Z" fill="#2F3043"/>
+                </svg>
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 250 min</span>  naționale sau <br>
+           <span style="font-weight: 700;"> 25 min</span> internaționale
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7362 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7362 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" fill="#2F3043"/>
+                <path d="M15.36 13C15.44 12.34 15.5 11.68 15.5 11C15.5 10.32 15.44 9.66 15.36 9H18.74C18.9 9.64 19 10.31 19 11C19 11.69 18.9 12.36 18.74 13M3.26 13C3.1 12.36 3 11.69 3 11C3 10.31 3.1 9.64 3.26 9H6.64C6.56 9.66 6.5 10.32 6.5 11C6.5 11.68 6.56 12.34 6.64 13M13.59 18.56C14.19 17.45 14.65 16.25 14.97 15H17.92C16.9512 16.6683 15.4141 17.932 13.59 18.56ZM13.34 13H8.66C8.56 12.34 8.5 11.68 8.5 11C8.5 10.32 8.56 9.65 8.66 9H13.34C13.43 9.65 13.5 10.32 13.5 11C13.5 11.68 13.43 12.34 13.34 13ZM11 18.96C10.17 17.76 9.5 16.43 9.09 15H12.91C12.5 16.43 11.83 17.76 11 18.96ZM7 7H4.08C5.03864 5.32703 6.57466 4.06124 8.4 3.44C7.8 4.55 7.35 5.75 7 7ZM4.08 15H7C7.35 16.25 7.8 17.45 8.4 18.56C6.57827 17.9323 5.04429 16.6682 4.08 15ZM11 3.03C11.83 4.23 12.5 5.57 12.91 7H9.09C9.5 5.57 10.17 4.23 11 3.03ZM17.92 7H14.97C14.6565 5.76161 14.1931 4.56611 13.59 3.44C15.43 4.07 16.96 5.34 17.92 7ZM11 1C5.47 1 1 5.5 1 11C1 13.6522 2.05357 16.1957 3.92893 18.0711C4.85752 18.9997 5.95991 19.7363 7.17317 20.2388C8.38642 20.7413 9.68678 21 11 21C13.6522 21 16.1957 19.9464 18.0711 18.0711C19.9464 16.1957 21 13.6522 21 11C21 9.68678 20.7413 8.38642 20.2388 7.17317C19.7363 5.95991 18.9997 4.85752 18.0711 3.92893C17.1425 3.00035 16.0401 2.26375 14.8268 1.7612C13.6136 1.25866 12.3132 1 11 1Z" stroke="#F3F5FF" stroke-width="0.666667"/>
+                </svg>
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+    <div class="ab_block">
+        <div class="ab_svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 18.5C12.1811 18.5 13.8245 18.0015 15.2223 17.0675C16.6202 16.1335 17.7096 14.806 18.353 13.2528C18.9963 11.6996 19.1646 9.99057 18.8367 8.34173C18.5087 6.6929 17.6991 5.17834 16.5104 3.9896C15.3217 2.80085 13.8071 1.9913 12.1583 1.66333C10.5094 1.33535 8.80036 1.50368 7.24719 2.14703C5.69402 2.79037 4.3665 3.87984 3.43251 5.27766C2.49852 6.67547 2 8.31886 2 10C2 11.36 2.31922 12.6444 2.88778 13.7844C3.31561 14.6448 2.72061 15.8055 2.49394 16.6527C2.44373 16.84 2.44372 17.0373 2.49392 17.2247C2.54412 17.4121 2.64276 17.5829 2.77992 17.7201C2.91709 17.8572 3.08794 17.9559 3.27531 18.0061C3.46268 18.0563 3.65997 18.0563 3.84733 18.0061C4.6945 17.7794 5.85522 17.1844 6.71561 17.6132C7.89164 18.1971 9.18697 18.5006 10.5 18.5Z" stroke="#2F3043" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+                
+    
+        </div>
+        <span>
+           <span style="font-weight: 700;"> 45 GB </span>   Trafic internet
+        </span>
+    </div>
+   
+ 
+</div>
+                            </div>
+                                   
+                            </div>
+                        <div class="tv_internet_calculator_left_block">
+                            <div class="tv_internet_calculator_left_block_title">
+                                TV Suplimentar  <span class="tv_internet_calculator_left_block_second_tv_small_text">(optional)</span>
+                            </div>
+                           <div class="tv_internet_calculator_left_block_second_tv" id="second_tv" onclick="select_second_tv('')">
+<img class="tv_internet_calculator_left_block_second_tv_img" src="../../images/landings/triple/img_second_tv.png" alt="TV Suplimentar">
+<div class="tv_internet_calculator_left_block_second_tv_text_block">
+    <div class="tv_internet_calculator_left_block_second_tv_text">
+        Adaugă un abonament TV suplimentar <br>
+    <span class="tv_internet_calculator_left_block_second_tv_subtext">Grila de canale este identica cu grila abonamentului de televiziune ales.</span>
+    </div>
+    <div class="tv_internet_calculator_left_block_second_tv_activate">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+            <path d="M9.11442 5.41L8.2484 5.91C7.91688 5.33578 7.37083 4.91679 6.73038 4.74518C6.08993 4.57357 5.40755 4.66341 4.83333 4.99493C4.25912 5.32645 3.84013 5.8725 3.66852 6.51295C3.49691 7.1534 3.58675 7.83578 3.91827 8.41L3.05225 8.91C2.58812 8.1061 2.46234 7.15076 2.70259 6.25413C2.94285 5.3575 3.52944 4.59304 4.33333 4.12891C5.13723 3.66478 6.09257 3.539 6.9892 3.77925C7.88583 4.01951 8.65029 4.6061 9.11442 5.41Z" fill="#595F80"/>
+            <path d="M13.0295 7.19107C12.8062 7.32103 12.6212 7.50753 12.493 7.73177C12.2693 7.61401 12.0195 7.55467 11.7668 7.55927C11.5141 7.56386 11.2667 7.63224 11.0474 7.75806C10.8242 7.88802 10.6391 8.07451 10.5109 8.29876C10.2103 8.14183 9.86529 8.09142 9.53229 8.15575C9.1993 8.22008 8.89794 8.39536 8.67737 8.65299L7.38237 6.40998C7.18346 6.06545 6.85583 5.81406 6.47156 5.71109C6.08729 5.60813 5.67786 5.66203 5.33333 5.86094C4.98881 6.05985 4.73741 6.38748 4.63444 6.77175C4.53148 7.15602 4.58538 7.56545 4.7843 7.90998L7.5593 12.7164L6.21368 12.6157C5.89714 12.5787 5.57715 12.6459 5.30224 12.8071C5.04423 12.9552 4.83608 13.1767 4.70427 13.4434C4.57247 13.7102 4.52296 14.0101 4.56203 14.305C4.6011 14.5999 4.727 14.8766 4.92371 15.0998C5.12043 15.323 5.37907 15.4826 5.66676 15.5584L10.9559 16.7194C11.6997 16.8752 12.4749 16.7505 13.1324 16.3693L15.2974 15.1193C16.1013 14.6551 16.6879 13.8907 16.9282 12.994C17.1684 12.0974 17.0427 11.1421 16.5785 10.3382L15.0785 7.74011C14.8796 7.39558 14.552 7.14418 14.1677 7.04122C13.7834 6.93825 13.374 6.99216 13.0295 7.19107ZM15.7125 10.8382C16.044 11.4124 16.1339 12.0948 15.9623 12.7352C15.7906 13.3757 15.3716 13.9217 14.7974 14.2532L12.6324 15.5032C12.1977 15.7612 11.6842 15.8526 11.1873 15.7602L5.91981 14.5867C5.79324 14.5523 5.6853 14.4695 5.61923 14.3561C5.5728 14.2757 5.54969 14.184 5.55247 14.0911C5.55525 13.9983 5.58383 13.9081 5.63499 13.8306C5.68615 13.7531 5.75788 13.6914 5.84214 13.6524C5.9264 13.6134 6.01986 13.5986 6.11205 13.6097L9.37532 13.8619L5.65032 7.40998C5.58402 7.29514 5.56605 7.15866 5.60037 7.03057C5.63469 6.90248 5.71849 6.79327 5.83333 6.72697C5.94818 6.66066 6.08465 6.6427 6.21274 6.67702C6.34083 6.71134 6.45004 6.79514 6.51635 6.90998L9.26635 11.6731L10.1324 11.1731L9.38237 9.87408C9.31607 9.75924 9.2981 9.62276 9.33242 9.49467C9.36674 9.36658 9.45054 9.25737 9.56538 9.19107C9.68023 9.12476 9.8167 9.1068 9.94479 9.14112C10.0729 9.17544 10.1821 9.25924 10.2484 9.37408L10.9984 10.6731L11.8644 10.1731L11.3644 9.30709C11.2981 9.19225 11.2802 9.05577 11.3145 8.92768C11.3488 8.79959 11.4326 8.69039 11.5474 8.62408C11.6623 8.55778 11.7988 8.53981 11.9268 8.57413C12.0549 8.60845 12.1641 8.69225 12.2304 8.80709L12.7304 9.67312L13.5965 9.17312L13.3465 8.74011C13.2802 8.62526 13.2622 8.48879 13.2965 8.3607C13.3308 8.23261 13.4146 8.1234 13.5295 8.05709C13.6443 7.99079 13.7808 7.97282 13.9089 8.00714C14.037 8.04146 14.1462 8.12526 14.2125 8.24011L15.7125 10.8382Z" fill="#595F80"/>
+          </svg>
+        <span id="tv_internet_calculator_left_block_second_tv_activate_btn">Activează</span>
+    </div>
+</div>
+<div class="tv_internet_calculator_left_block_second_tv_price">
+    <div class="tv_internet_calculator_left_block_second_tv_price_big">
+        30
+    </div>
+   <div class="tv_internet_calculator_left_block_second_tv_price_small">
+    lei/lună
+   </div>
+</div>
+                           </div>
+                                   
+                            </div>
+                          
+                            <div class="tv_internet_calculator_left_block">
+                                <div class="tv_internet_calculator_left_block_title">
+                                    Telefonie fixă  <span class="tv_internet_calculator_left_block_second_tv_small_text"><span style="color: #212A55;">prin internet</span> (optional)</span>
+                                </div>
+                               <div class="tv_internet_calculator_left_block_second_tv" id="fix_option" onclick="select_fix('')">
+    <img class="tv_internet_calculator_left_block_second_tv_img" src="../../images/landings/triple/img_fix.png" alt="TV Suplimentar">
+    <div class="tv_internet_calculator_left_block_second_tv_text_block">
+        <div class="tv_internet_calculator_left_block_second_tv_text">
+            Minute nelimitate în rețeaua mobilă și fixă Moldtelecom
+ <br>
+        <span class="tv_internet_calculator_left_block_second_tv_subtext">+ 30 minute naționale + Serviciul CLIP inclus</span>
+        </div>
+        <div class="tv_internet_calculator_left_block_second_tv_activate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                <path d="M9.11442 5.41L8.2484 5.91C7.91688 5.33578 7.37083 4.91679 6.73038 4.74518C6.08993 4.57357 5.40755 4.66341 4.83333 4.99493C4.25912 5.32645 3.84013 5.8725 3.66852 6.51295C3.49691 7.1534 3.58675 7.83578 3.91827 8.41L3.05225 8.91C2.58812 8.1061 2.46234 7.15076 2.70259 6.25413C2.94285 5.3575 3.52944 4.59304 4.33333 4.12891C5.13723 3.66478 6.09257 3.539 6.9892 3.77925C7.88583 4.01951 8.65029 4.6061 9.11442 5.41Z" fill="#595F80"/>
+                <path d="M13.0295 7.19107C12.8062 7.32103 12.6212 7.50753 12.493 7.73177C12.2693 7.61401 12.0195 7.55467 11.7668 7.55927C11.5141 7.56386 11.2667 7.63224 11.0474 7.75806C10.8242 7.88802 10.6391 8.07451 10.5109 8.29876C10.2103 8.14183 9.86529 8.09142 9.53229 8.15575C9.1993 8.22008 8.89794 8.39536 8.67737 8.65299L7.38237 6.40998C7.18346 6.06545 6.85583 5.81406 6.47156 5.71109C6.08729 5.60813 5.67786 5.66203 5.33333 5.86094C4.98881 6.05985 4.73741 6.38748 4.63444 6.77175C4.53148 7.15602 4.58538 7.56545 4.7843 7.90998L7.5593 12.7164L6.21368 12.6157C5.89714 12.5787 5.57715 12.6459 5.30224 12.8071C5.04423 12.9552 4.83608 13.1767 4.70427 13.4434C4.57247 13.7102 4.52296 14.0101 4.56203 14.305C4.6011 14.5999 4.727 14.8766 4.92371 15.0998C5.12043 15.323 5.37907 15.4826 5.66676 15.5584L10.9559 16.7194C11.6997 16.8752 12.4749 16.7505 13.1324 16.3693L15.2974 15.1193C16.1013 14.6551 16.6879 13.8907 16.9282 12.994C17.1684 12.0974 17.0427 11.1421 16.5785 10.3382L15.0785 7.74011C14.8796 7.39558 14.552 7.14418 14.1677 7.04122C13.7834 6.93825 13.374 6.99216 13.0295 7.19107ZM15.7125 10.8382C16.044 11.4124 16.1339 12.0948 15.9623 12.7352C15.7906 13.3757 15.3716 13.9217 14.7974 14.2532L12.6324 15.5032C12.1977 15.7612 11.6842 15.8526 11.1873 15.7602L5.91981 14.5867C5.79324 14.5523 5.6853 14.4695 5.61923 14.3561C5.5728 14.2757 5.54969 14.184 5.55247 14.0911C5.55525 13.9983 5.58383 13.9081 5.63499 13.8306C5.68615 13.7531 5.75788 13.6914 5.84214 13.6524C5.9264 13.6134 6.01986 13.5986 6.11205 13.6097L9.37532 13.8619L5.65032 7.40998C5.58402 7.29514 5.56605 7.15866 5.60037 7.03057C5.63469 6.90248 5.71849 6.79327 5.83333 6.72697C5.94818 6.66066 6.08465 6.6427 6.21274 6.67702C6.34083 6.71134 6.45004 6.79514 6.51635 6.90998L9.26635 11.6731L10.1324 11.1731L9.38237 9.87408C9.31607 9.75924 9.2981 9.62276 9.33242 9.49467C9.36674 9.36658 9.45054 9.25737 9.56538 9.19107C9.68023 9.12476 9.8167 9.1068 9.94479 9.14112C10.0729 9.17544 10.1821 9.25924 10.2484 9.37408L10.9984 10.6731L11.8644 10.1731L11.3644 9.30709C11.2981 9.19225 11.2802 9.05577 11.3145 8.92768C11.3488 8.79959 11.4326 8.69039 11.5474 8.62408C11.6623 8.55778 11.7988 8.53981 11.9268 8.57413C12.0549 8.60845 12.1641 8.69225 12.2304 8.80709L12.7304 9.67312L13.5965 9.17312L13.3465 8.74011C13.2802 8.62526 13.2622 8.48879 13.2965 8.3607C13.3308 8.23261 13.4146 8.1234 13.5295 8.05709C13.6443 7.99079 13.7808 7.97282 13.9089 8.00714C14.037 8.04146 14.1462 8.12526 14.2125 8.24011L15.7125 10.8382Z" fill="#595F80"/>
+              </svg>
+            <span id="tv_internet_calculator_left_block_fix_activate_btn">Activează</span>
+        </div>
+    </div>
+    <div class="tv_internet_calculator_left_block_second_tv_price">
+        <div class="tv_internet_calculator_left_block_second_tv_price_big">
+            10
+        </div>
+       <div class="tv_internet_calculator_left_block_second_tv_price_small">
+        lei/lună
+       </div>
+    </div>
+                               </div>
+                                       
+                              
+                                </div>
+
+
+                    </div>
+                    <div class="tv_internet_calculator_right">
+                        <div class="tv_internet_calculator_right_title">
+                            Comanda ta
+                        </div>
+                        <div class="tv_internet_calculator_right_price_block">
+                            <span>Internet Fibră</span>
+                            <span><span class="tv_internet_calculator_right_price_block_old" id="pret_fibra_old_block"> <span id="pret_fibra_old">---</span>&nbsp;lei </span><span id="pret_fibra_new_block">&nbsp;&nbsp;<span id="pret_fibra_new">---</span>
+                                lei</span></span>
+                        </div>
+                        <div class="tv_internet_calculator_right_price_block">
+                            <span>TV</span>
+                            <span><span class="tv_internet_calculator_right_price_block_old" id="pret_tv_old_block"> <span id="pret_tv_old">---</span>&nbsp;lei </span><span id="pret_tv_new_block">&nbsp;&nbsp;<span id="pret_tv_new">---</span>
+                            lei</span></span>
+                        </div>
+                        <div class="tv_internet_calculator_right_price_block">
+                            <span>Mobil</span>
+                            <span><span style="display: none;" class="tv_internet_calculator_right_price_block_old" >--- lei </span>&nbsp;&nbsp;
+                            <span id="mobile_price">---</span>
+                                lei</span>
+                        </div>
+                        <style>
+                            #tv_suplimetar_price{
+                                display: none;
+                            }
+                        </style>
+                        <div class="tv_internet_calculator_right_price_block" id="tv_suplimetar_price">
+                            <span>TV Suplimentar</span>
+                            <span>30 lei</span>
+                        </div>
+                        <style>
+                            #fix_suplimetar_price{
+                                display: none;
+                            }
+                        </style>
+                        <div class="tv_internet_calculator_right_price_block" id="fix_suplimetar_price">
+                            <span>Telefon fix</span>
+                            <span>10 lei</span>
+                        </div>
+                        <div class="tv_internet_calculator_right_total">
+                            Total:
+                           </div>
+                           <div class="tv_internet_calculator_right_price_block" id="tv_internet_calculator_right_total_price_12">
+                            <span>primele 12 luni</span>
+                            <span style="font-weight: 900;"><span id="tv_internet_calculator_right_total_price_before12">---</span> lei/luna</span>
+                        </div>
+                        <div class="tv_internet_calculator_right_price_block" id="tv_internet_calculator_right_total_price_after">
+                            <span>după 12 luni</span>
+                            <span><span id="tv_internet_calculator_right_total_price_after12">---</span>lei/luna</span>
+                        </div>
+                        <form action="/comanda_marketing" class="mtc_evo_v2_form_comanda_calculator" id="tm_comanda_form">
+                            <input class="mtc_evo_v2_form_comanda_calculator_phone" maxlength="9" name="phone"
+                                pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - -"
+                                required="" value="" /> 
+                                <svg id="mtc_evo_v2_form_comanda_calculator_phone_svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.026 20.0042C15.1544 20.0042 13.93 19.689 12.0965 18.6646C9.86698 17.4143 8.14247 16.26 5.92499 14.0484C3.787 11.9117 2.74658 10.5284 1.29044 7.87864C-0.354588 4.88688 -0.0741661 3.31866 0.239299 2.64841C0.6126 1.84734 1.16362 1.36821 1.87584 0.89265C2.28038 0.627604 2.70847 0.400401 3.15471 0.213921C3.19936 0.19472 3.24089 0.176412 3.27795 0.159891C3.49898 0.0603141 3.83388 -0.0901672 4.25809 0.0705843C4.54119 0.176859 4.79393 0.39432 5.18955 0.785036C6.0009 1.58522 7.10964 3.36733 7.51866 4.24253C7.79328 4.8324 7.97502 5.22178 7.97547 5.65849C7.97547 6.16977 7.71826 6.56405 7.40614 6.9896C7.34764 7.06953 7.28959 7.14588 7.23333 7.22001C6.89352 7.66654 6.81895 7.79559 6.86807 8.026C6.96764 8.48905 7.71023 9.8675 8.9306 11.0852C10.151 12.3029 11.4897 12.9986 11.9545 13.0977C12.1947 13.1491 12.3265 13.0714 12.7873 12.7195C12.8534 12.669 12.9213 12.6168 12.9923 12.5646C13.4683 12.2105 13.8442 11.9599 14.3435 11.9599H14.3461C14.7806 11.9599 15.1526 12.1484 15.7688 12.4592C16.5725 12.8646 18.4082 13.9591 19.2133 14.7713C19.6049 15.166 19.8233 15.4179 19.93 15.7005C20.0908 16.1261 19.9394 16.4596 19.8407 16.6829C19.8242 16.72 19.8059 16.7606 19.7867 16.8057C19.5987 17.2511 19.3702 17.6783 19.1039 18.0819C18.6293 18.7919 18.1484 19.3416 17.3455 19.7153C16.9332 19.9103 16.482 20.0091 16.026 20.0042Z" fill="#D9DFFF"/>
+                                </svg>
+                                    
+                                    
+                            <button class="mtc_evo_v2_btn mtc_evo_v2_btn_calculator" name="submit" type="submit">
+                                Comandă acum
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                                        fill="white"></path>
+                                </svg>
+                                </svg></button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+                <style>
+                    .tm_abonamente_1_detalii {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 20px;
+                    }
+                </style>
+                <div class="tm_abonamente_1_detalii" id="detalii_abonamete_1">
+                    <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary"
+                        onclick=" mtc_evo_v2_popoup('mtc_evo_v2_popup_detalii_abonament')">
+                        Detalii ofertă
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                                fill="#212A55"></path>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtc_evo_v2_popup_block" id="mtc_evo_v2_popup_detalii_abonament" style="display: none;">
+                <div class="mtc_evo_v2_popup_block_inside">
+                    <ul>
+                        <li><span>Perioada de comercializare a ofertei: 02.09.2024 – 25.11.2024 (inclusiv).</span></li>
+                        <li><span>Viteza la internet se oferă în funcție de posibilitățile tehnice.</span></li>
+                        <li><span>Abonatul de internet fix beneficiază de reducere de 50 lei lunar la abonamentul de telefonie mobilă Star 150, Liberty 190 și Liberty Plus 250, valabilă pe toată perioada deținerii serviciului de Internet Fix sau Internet Fix + IPTV.</span></li>
+                        <li>Rezolutiunea anticipata (inclusiv migrarea spre PrePay, schimbul de abonament catre unul cu valoare mai mica sau port out) pana la expirarea perioadei minime contractuale implică achitarea unei plăți cu titlu de prejudiciu, conform formulei de calcul: 50 lei * nr. de luni acordare reducere.</li>
+                        <li><span>Telefonia Fixă cu 30 minute naționale în rețelele fixe și mobile și apeluri nelimitate în rețeaua fixă și mobilă Moldtelecom se oferă adițional la doar 10 lei/lună, pe perioada valabilității contractului de Internet Fix.</span></li>
+                        <li>Abonamentul Smart 55 este destinat pentru clienții Moldtelecom care dețin servicii de Internet și/sau IPTV, un alt abonament de Telefonie mobilă eligibil sau pentru utilizatorii cartelei Prepay care migrează la Postpay.</li>
+                        <li><span>Abonații conectați la abonamentele Liberty 190 și Liberty Plus 250 pot comunica în Roaming UE+SEE din contul minutelor naționale incluse în abonament. In plus, abonamentul Liberty 190 oferă 7 GB, iar abonamentul Liberty Plus 250 – 10 GB disponibili spre utilizare în Roaming în rețeaua operatorilor incluși în grupul UE+SEE.</span></li>
+                        <li>Pentru apelurile internaționale, destinațiile spre rețeaua fixă și mobilă sunt următoarele țări: Marea Britanie, Franța, Germania, Italia, Spania, Romania, Israel, Rusia, Cehia, Ucraina</li>
+                        <li>Traficul Internet va avea viteza de transfer a datelor la capacitate maximă download (descarcare) și de până la 512 Kbps upload (încarcare), în dependenta de opțiunile suplimentare activate – pentru tehnologia 3G, și la capacitate maximă download/upload (descarcare/încarcare) – pentru tehnologia 4G;</li>
+                        <li>Abonații conectați la abonamentul ”Liberty Plus 250” sunt obligați să evite folosirea abuzivă a serviciilor incluse în abonament. Prin ”folosire abuzivă a serviciilor incluse în abonament” se înțelege efectuarea de apeluri de ieșire spre „alți operatori naționali” și/sau expedierea SMS-urilor spre „alți operatori naționali” către mai mult de 200 numere telefonice unice, în decursul unei perioade de facturare, și/sau efectuarea, în decursul unei perioade de facturare, de apeluri nelimitate spre „alți operatori naționali” în volum ce depășește 3000 minute, cu condiția că numărul de minute de ieșire spre „alți operatori naționali” depășește de cel puțin două ori numărul minutelor de intrare dinspre „alți operatori naționali” în aceeași perioadă. Abonații care vor fi identificați că au utilizat abuziv serviciile incluse în abonamentul ”Liberty Plus 250” vor beneficia în continuare de conținutul standard de 1000 Minute și 245 SMS naționale la abonamentul respectiv;</li>
+                    </ul>
+                    <br>
+                    <span><b>Tarife extra abonament:</b></span><br>
+                    &nbsp;
+                  <div class="mtc_evo_v2_scrollable_table">
+                    <table class="mtc_evo_v2_popup_block_table">
+                        <thead>
+                            <tr>
+                                <td>Denumire abonament</td>
+                                <td>Apel naț. (lei/min):</td>
+                                <td>SMS naț.(lei/SMS):</td>
+                                <td>SMS Internaț.(lei/SMS):</td>
+                                <td>Trafic internet (lei/MB)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Smart 55</td>
+                                <td>2,00</td>
+                                <td>0,50</td>
+                                <td>2,00</td>
+                                <td>0,20</td>
+                            </tr>
+                            <tr>
+                                <td>Start 95</td>
+                                <td>2,00</td>
+                                <td>0,50</td>
+                                <td>2,00</td>
+                                <td>0,20</td>
+                            </tr>
+                            <tr>
+                                <td>Star 150</td>
+                                <td>2,00</td>
+                                <td>0,50</td>
+                                <td>2,00</td>
+                                <td>0,20</td>
+                            </tr>
+                            <tr>
+                                <td>Liberty 190</td>
+                                <td>2,00</td>
+                                <td>0,50</td>
+                                <td>2,00</td>
+                                <td>0,20</td>
+                            </tr>
+                            <tr>
+                                <td>Liberty Plus 250</td>
+                                <td>2,00</td>
+                                <td>0,50</td>
+                                <td>2,00</td>
+                                <td>0,00*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                    * După consumarea traficului internet inclus în abonamentul “Liberty Plus 250” traficul extra abonament va fi gratuit, însă viteza de acces download/upload va fi de până la 512/512 kbps; <span><b><br>
+                    <br>
+                    Condiții speciale privind utilizarea serviciului Roaming în Europa:</b></span>
+                    
+                    <ul>
+                        <li>Tarifarea apelurilor se efectuează per minut din prima secunda de apel;</li>
+                        <li>Viteza de acces la internet este conform condițiilor de prestare a serviciului în vigoare de către operator și în funcție de terminalul utilizat;</li>
+                        <li>Tarifarea traficului Internet consumat se efectuează din momentul începerii sesiunii per 10 KByte (1MB=1024 KB);</li>
+                        <li>După consumarea conținutului în Roaming UE, convorbirile și traficul internet vor fi taxate conform tarifelor standard în Roaming pentru fiecare operator;</li>
+                        <li>Abonatul va utiliza conținutul în Roaming UE+SEE cu condiția că va avea activ serviciul Roaming;</li>
+                        <li>Abonații conectați la abonamentele ”Liberty 190” și ”Liberty Plus 250” sunt obligați să evite folosirea abuzivă a serviciilor Roaming UE+SEE incluse în abonament. Pentru a analiza ”folosirea abuzivă a serviciilor Roaming UE+SEE incluse în abonament” se va monitoriza, în mod cumulat, pe parcursul a fiecăror patru luni consecutive din momentul conectării dacă consumul oricărui serviciu în Roaming în Europa este mai mare decât consumul respectivului serviciu la nivel naţional;</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <span><b>Lista operatorilor în rețeaua cărora este disponibil conținutul Roaming UE:</b></span><br>
+                    &nbsp;
+                    <table class="mtc_evo_v2_popup_block_table">
+                        <thead>
+                            <tr>
+                                <td><span style="color:var(--mtc_pink);"><strong>Țara</strong></span></td>
+                                <td><span style="color:var(--mtc_pink);"><strong>Operatori</strong></span></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ungaria</td>
+                                <td>Magyar Telekom</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Austria</td>
+                                <td>3 Austria (Hutchison Drei Austria)</td>
+                            </tr>
+                            <tr>
+                                <td>T-Mobile Austria (Magenta)</td>
+                            </tr>
+                            <tr>
+                                <td>Belgia</td>
+                                <td>Proximus</td>
+                            </tr>
+                            <tr>
+                                <td>Bulgaria</td>
+                                <td>Vivacom Bulgaria</td>
+                            </tr>
+                            <tr>
+                                <td>Cipru</td>
+                                <td>Epic</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Croatia</td>
+                                <td>Hrvatski Telecom</td>
+                            </tr>
+                            <tr>
+                                <td>Telemach Croatia</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Danemarka</td>
+                                <td>3 Denmark (Hi3G Denmark)</td>
+                            </tr>
+                            <tr>
+                                <td>Telenor Denmark</td>
+                            </tr>
+                            <tr>
+                                <td>Estonia</td>
+                                <td>Tele 2 Eesti AS</td>
+                            </tr>
+                            <tr>
+                                <td>Finlanda</td>
+                                <td>DNA</td>
+                            </tr>
+                            <tr>
+                                <td>Franta</td>
+                                <td>Bouygues Telecom</td>
+                            </tr>
+                            <tr>
+                                <td>Franta</td>
+                                <td>Free Mobile</td>
+                            </tr>
+                            <tr>
+                                <td>Germania</td>
+                                <td>Telekom Deutschland</td>
+                            </tr>
+                            <tr>
+                                <td>Grecia</td>
+                                <td>Cosmote Mobile</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Irlanda</td>
+                                <td>3 Ireland (Hutschison 3G Ireland)</td>
+                            </tr>
+                            <tr>
+                                <td>Meteor Mobile Communications</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Italia</td>
+                                <td>Wind Tre</td>
+                            </tr>
+                            <tr>
+                                <td>ILIAD Italia</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Letonia</td>
+                                <td>Bite Latvija</td>
+                            </tr>
+                            <tr>
+                                <td>Tele2</td>
+                            </tr>
+                            <tr>
+                                <td>Liechtenstein</td>
+                                <td>Salt Liechtenstein</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Lituania</td>
+                                <td>Bite Lietuva</td>
+                            </tr>
+                            <tr>
+                                <td>Tele2</td>
+                            </tr>
+                            <tr>
+                                <td>Luxembourg</td>
+                                <td>POST Luxembourg</td>
+                            </tr>
+                            <tr>
+                                <td>Luxembourg</td>
+                                <td>Proximus Luxemburg (Tango)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Malta</td>
+                                <td>Melita</td>
+                            </tr>
+                            <tr>
+                                <td>Epic</td>
+                            </tr>
+                            <tr>
+                                <td>Go Melita</td>
+                            </tr>
+                            <tr>
+                                <td>Norvegia</td>
+                                <td>Telenor</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Polonia</td>
+                                <td>PLAY (P4)</td>
+                            </tr>
+                            <tr>
+                                <td>Polkomtel (PLUS)</td>
+                            </tr>
+                            <tr>
+                                <td>Orange Polska</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">România</td>
+                                <td>RCS&amp;RDS (Digi Mobil)</td>
+                            </tr>
+                            <tr>
+                                <td>Orange Romania</td>
+                            </tr>
+                            <tr>
+                                <td>Telekom Romania Mobile</td>
+                            </tr>
+                            <tr>
+                                <td>Vodafone Romania</td>
+                            </tr>
+                            <tr>
+                                <td>Slovacia</td>
+                                <td>Slovak Telekom</td>
+                            </tr>
+                            <tr>
+                                <td>Slovenia</td>
+                                <td>Telemach</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Suedia</td>
+                                <td>Hi3G (3 Sweden)</td>
+                            </tr>
+                            <tr>
+                                <td>Tele2</td>
+                            </tr>
+                            <tr>
+                                <td>Telenor Sverige (VIMLA)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                </div>
+            </div>
+
+
+
+<script>
+    let final_fibra=0;
+    let final_tv=0;
+    let final_mob=0;
+    let final_sup=0;
+    let final_fix=0;
+
+let canale={
+    simple_canale:58,
+    simple_hd:32,
+    premier_canale:116,
+    premier_hd:73,
+    premier_radio:4,
+    univers_canale:116,
+    univers_hd:73,
+    univers_radio:4
+}
+    let prices={
+        fibra_300:230,
+        fibra_500:250,
+        fibra_1000:280,
+        simple_tv:60,
+        premier_tv:70,
+        univers_tv:80,
+        ab_95:95,
+        ab_150:150,
+        ab_190:190,
+        ab_250:250
+    }
+    let reducere_net=50;
+    let reducere_tv=50;
+    let reducere_net_after=25;
+    let reducere_tv_after=25;
+    let reducere_mob=50;
+
+    function set_prices_reducere(){
+        document.getElementById('fibra300_price').innerText=Math.round(prices.fibra_300/100*(100-reducere_net))
+document.getElementById('fibra500_price').innerText=Math.round(prices.fibra_500/100*(100-reducere_net))
+document.getElementById('fibra1000_price').innerText=Math.round(prices.fibra_1000/100*(100-reducere_net))
+
+document.getElementById('fibra300_price_old').innerText=prices.fibra_300
+document.getElementById('fibra500_price_old').innerText=prices.fibra_500
+document.getElementById('fibra1000_price_old').innerText=prices.fibra_1000
+
+
+document.getElementById('simple_price').innerText=Math.round(prices.simple_tv/100*(100-reducere_tv))
+document.getElementById('premier_price').innerText=Math.round(prices.premier_tv/100*(100-reducere_tv))
+document.getElementById('univers_price').innerText=Math.round(prices.univers_tv/100*(100-reducere_tv))
+
+document.getElementById('simple_price_old').innerText=prices.simple_tv
+document.getElementById('premier_price_old').innerText=prices.premier_tv
+document.getElementById('univers_price_old').innerText=prices.univers_tv
+
+
+document.querySelectorAll('.tv_internet_calculator_left_block_option_prices_old').forEach(element => {
+    element.style.opacity = '1';
+});
+document.getElementById('pret_tv_new_block').style.display="math"
+document.getElementById('pret_tv_old_block').classList.remove('old_to_new_price')
+  
+document.getElementById('pret_fibra_new_block').style.display="math"
+document.getElementById('pret_fibra_old_block').classList.remove('old_to_new_price')
+
+}
+
+    function set_prices_reducere_no(){
+        document.querySelectorAll('.tv_internet_calculator_left_block_option_prices_old').forEach(element => {
+    element.style.opacity = '0';
+
+    document.getElementById('fibra300_price').innerText=prices.fibra_300
+document.getElementById('fibra500_price').innerText=prices.fibra_500
+document.getElementById('fibra1000_price').innerText=prices.fibra_1000
+
+document.getElementById('simple_price').innerText=prices.simple_tv
+document.getElementById('premier_price').innerText=prices.premier_tv
+document.getElementById('univers_price').innerText=prices.univers_tv
+
+
+document.getElementById('pret_tv_new_block').style.display="none"
+document.getElementById('pret_tv_old_block').classList.add('old_to_new_price')
+
+document.getElementById('pret_fibra_new_block').style.display="none"
+document.getElementById('pret_fibra_old_block').classList.add('old_to_new_price')
+
+
+
+});
+
+    }
+
+
+document.getElementById('simple_canale').innerText=canale.simple_canale
+document.getElementById('simple_hd').innerText=canale.simple_hd
+document.getElementById('premier_canale').innerText=canale.premier_canale
+document.getElementById('premier_hd').innerText=canale.premier_hd
+document.getElementById('premier_radio').innerText=canale.premier_radio
+document.getElementById('univers_canale').innerText=canale.univers_canale
+document.getElementById('univers_hd').innerText=canale.univers_hd
+document.getElementById('univers_radio').innerText=canale.univers_radio
+
+
+
+    function select_fibra(id){
+        if(id=="fibra300"){
+            document.getElementById('fibra300').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra500').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra1000').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_fibra_new').innerText=Math.round(prices.fibra_300/100*reducere_net)
+document.getElementById('pret_fibra_old').innerText=prices.fibra_300
+final_fibra=prices.fibra_300
+  
+        }
+        else  if(id=="fibra500"){
+            document.getElementById('fibra300').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra500').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra1000').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_fibra_new').innerText=Math.round(prices.fibra_500/100*reducere_net)
+            document.getElementById('pret_fibra_old').innerText=prices.fibra_500
+        
+            final_fibra=prices.fibra_500
+        }
+        else  if(id=="fibra1000"){
+            document.getElementById('fibra300').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra500').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('fibra1000').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_fibra_new').innerText=Math.round(prices.fibra_1000/100*reducere_net)
+            document.getElementById('pret_fibra_old').innerText=prices.fibra_1000
+        
+            final_fibra=prices.fibra_1000
+        }
+        update_price()
+          }
+          select_fibra('fibra300')
+
+        function select_tv(id){
+            if(id=="simple"){
+            document.getElementById('simple').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('premier').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('univers').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_tv_new').innerText=Math.round(prices.simple_tv/100*reducere_net)
+document.getElementById('pret_tv_old').innerText=prices.simple_tv
+            
+  final_tv=prices.simple_tv
+        }
+        else  if(id=="premier"){
+            document.getElementById('simple').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('premier').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('univers').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_tv_new').innerText=Math.round(prices.premier_tv/100*reducere_net)
+document.getElementById('pret_tv_old').innerText=prices.premier_tv
+            
+final_tv=prices.premier_tv
+        }
+        else  if(id=="univers"){
+            document.getElementById('simple').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('premier').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('univers').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+            document.getElementById('pret_tv_new').innerText=Math.round(prices.univers_tv/100*reducere_net)
+document.getElementById('pret_tv_old').innerText=prices.univers_tv
+            
+final_tv=prices.univers_tv
+  
+        }
+        update_price()
+        }
+        select_tv('simple')
+
+
+        function select_second_tv(){
+const element = document.getElementById('second_tv');
+
+// Check if the element has the class
+if (element.classList.contains('tv_internet_calculator_left_block_second_tv_active')) {
+    element.classList.remove('tv_internet_calculator_left_block_second_tv_active');
+     document.getElementById('tv_suplimetar_price').style.display="none"
+     document.getElementById('tv_internet_calculator_left_block_second_tv_activate_btn').innerText="Activează"
+
+     final_sup=0
+} else {
+    // Add the class if it doesn't exist
+    element.classList.add('tv_internet_calculator_left_block_second_tv_active');
+    document.getElementById('tv_suplimetar_price').style.display="flex"
+    document.getElementById('tv_internet_calculator_left_block_second_tv_activate_btn').innerText="Dezactivează"
+    
+    final_sup=30
+} 
+update_price()
+        }
+        function select_fix(){
+const element = document.getElementById('fix_option');
+
+// Check if the element has the class
+if (element.classList.contains('tv_internet_calculator_left_block_fix_active')) {
+    element.classList.remove('tv_internet_calculator_left_block_fix_active');
+     document.getElementById('fix_suplimetar_price').style.display="none"
+     document.getElementById('tv_internet_calculator_left_block_fix_activate_btn').innerText="Activează"
+final_fix=0
+} else {
+    // Add the class if it doesn't exist
+    element.classList.add('tv_internet_calculator_left_block_fix_active');
+    document.getElementById('fix_suplimetar_price').style.display="flex"
+    document.getElementById('tv_internet_calculator_left_block_fix_activate_btn').innerText="Dezactivează"
+    final_fix=10
+}
+update_price()
+        }
+
+
+
+        function select_mobil(id){
+            if(id =='ab_95'){
+                document.getElementById ('ab_95').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_150').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_190').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_250').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_top_price').innerText=prices.ab_95
+                document.getElementById('mobile_price').innerText=prices.ab_95
+
+                document.getElementById('ab_95_content').style.display="flex"
+                document.getElementById('ab_150_content').style.display="none"
+                document.getElementById('ab_190_content').style.display="none"
+                document.getElementById('ab_250_content').style.display="none"
+
+
+                document.getElementById('selected_mobile_ab').innerText='START 95'
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_old_price').style.display="none"
+                
+                final_mob=prices.ab_95;
+               
+
+            }
+            else  if(id =='ab_150'){
+                document.getElementById ('ab_95').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_150').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_190').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_250').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_top_price').innerText=prices.ab_150-reducere_mob
+                document.getElementById('mobile_price').innerText=prices.ab_150-reducere_mob
+
+                document.getElementById('ab_95_content').style.display="none"
+                document.getElementById('ab_150_content').style.display="flex"
+                document.getElementById('ab_190_content').style.display="none"
+                document.getElementById('ab_250_content').style.display="none"
+
+                 document.getElementById('selected_mobile_ab').innerText='STAR 150'
+                 document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_old_price').style.display="block"
+                 document.getElementById('mob_old_price_selected').innerText=prices.ab_150
+                  
+                 final_mob=prices.ab_150-reducere_mob;
+           
+                }
+            else  if(id =='ab_190'){
+                document.getElementById ('ab_95').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_150').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_190').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_250').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_top_price').innerText=prices.ab_190-reducere_mob
+                document.getElementById('mobile_price').innerText=prices.ab_190-reducere_mob
+
+                document.getElementById('ab_95_content').style.display="none"
+                document.getElementById('ab_150_content').style.display="none"
+                document.getElementById('ab_190_content').style.display="flex"
+                document.getElementById('ab_250_content').style.display="none"
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_old_price').style.display="block"
+                document.getElementById('mob_old_price_selected').innerText=prices.ab_190
+                 
+
+                 document.getElementById('selected_mobile_ab').innerText='LIBERTY 190'
+                 final_mob=prices.ab_190-reducere_mob;
+            }
+            else  if(id =='ab_250'){
+                document.getElementById ('ab_95').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_150').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_190').classList.remove('tv_internet_calculator_left_block_options_fibra_option_active')
+                document.getElementById ('ab_250').classList.add('tv_internet_calculator_left_block_options_fibra_option_active')
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_top_price').innerText=prices.ab_250-reducere_mob
+                document.getElementById('mobile_price').innerText=prices.ab_250-reducere_mob
+
+                document.getElementById('ab_95_content').style.display="none"
+                document.getElementById('ab_150_content').style.display="none"
+                document.getElementById('ab_190_content').style.display="none"
+                document.getElementById('ab_250_content').style.display="flex"
+
+                document.getElementById('tv_internet_calculator_left_block_mobil_option_selected_old_price').style.display="block"
+                 document.getElementById('mob_old_price_selected').innerText=prices.ab_250
+                 
+
+                 document.getElementById('selected_mobile_ab').innerText='LIBERTY PLUS 250'
+                 final_mob=prices.ab_250-reducere_mob;
+                }
+            update_price()
+        }
+        select_mobil('ab_95')
+
+
+
+function update_price(){
+    document.getElementById('tv_internet_calculator_right_total_price_before12').innerText= 
+    Math.round(final_fibra/100*(100-reducere_net))+
+    Math.round(final_tv/100*(100-reducere_tv))+
+    final_mob+
+    final_sup+final_fix
+
+    let after_12_price = 
+    parseFloat((final_fibra / 100 * (100 - reducere_net_after)).toFixed(1)) +
+    parseFloat((final_tv / 100 * (100 - reducere_net_after)).toFixed(1)) +
+    final_mob +
+    final_sup +
+    final_fix;
+
+// Determine the format based on whether there's a fractional part
+let formatted_price = (after_12_price % 1 === 0) 
+    ? after_12_price.toFixed(0) // No fractional part, show as integer
+    : after_12_price.toFixed(1); // Has fractional part, show one decimal
+
+document.getElementById('tv_internet_calculator_right_total_price_after12').innerText = formatted_price;
+
+
+}
+
+
+
+
+
+                function abonament_chage(id) {
+                    // Remove the active class from all buttons
+                    document.querySelectorAll('.calculator_btn').forEach((btn) => {
+                        btn.classList.remove('calculator_btn_acitve');
+                        if (id == 'calculator_btn_yes') {
+                            set_prices_reducere()
+                        }
+                        else if (id == 'calculator_btn_no') {
+                            set_prices_reducere_no()
+                        }
+                    });
+                    // Add the active class to the clicked button
+                    document.getElementById(id).classList.add('calculator_btn_acitve');
+
+                }
+                abonament_chage('calculator_btn_yes')
+
+                window.onload = function () {
+                        mtc_evo_v2_form_comanda_new('mtc_evo_v2_form_comanda_calculator', 'triple', 'campain[triple_2024_xmas], place[calculator]', ' ')
+
+                    }
+
+            </script>
+
+
+
+
+
+
+            <div id="mtc_evo_v2_options_tv_internet">
+            </div>
+
+            <div id="mtc_evo_v2_app">
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

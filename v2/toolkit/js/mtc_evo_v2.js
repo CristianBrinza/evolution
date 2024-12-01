@@ -60,7 +60,7 @@ else if (lang === "ru") {
         // Check if the element exists
         if (appElement2) {
             if (lang === "ro") {
-        fetch("../../toolkit/html/mtc_evo_v2_options_mobile_ru.html")
+        fetch("../../toolkit/html/mtc_evo_v2_options_mobile_ro.html")
       .then((response) => response.text())
       .then((data) => {
           appElement2.innerHTML = data;
@@ -76,8 +76,29 @@ else if (lang === "ru") {
     });
 }
         }
+
+        const appElement3 = document.getElementById("mtc_evo_v2_options_tv_internet");
+        // Check if the element exists
+        if (appElement3) {
+            if (lang === "ro") {
+        fetch("../../toolkit/html/mtc_evo_v2_options_tv_internet_ro.html")
+      .then((response) => response.text())
+      .then((data) => {
+          appElement3.innerHTML = data;
+          mtc_evo_v2_tv_internet_initializeSlickCarousel()
+      });
+}
+else if (lang === "ru") {
+    fetch("../../toolkit/html/mtc_evo_v2_options_tv_internet_ru.html")
+    .then((response) => response.text())
+    .then((data) => {
+        appElement3.innerHTML = data;
+        mtc_evo_v2_tv_internet_initializeSlickCarousel()
+    });
+}
+        }
      
-      
+        
 });
       
       function mtc_evo_v2_popoup(id) {
@@ -154,17 +175,67 @@ else if (lang === "ru") {
             evlutions_form &&
             !evlutions_form.querySelector('input[name="_token"]')
           ) {
-            addHiddenInput("_token", "ymN6zXmxrKDbUCi1sq7MDG5YOhXhPz1m3QXNNNhW");
+            addHiddenInput("_token", token);
           }
         } else {
           console.error(`Form with id ${formId} does not exist.`);
         }
       }
-
+      
 
 
       function mtc_evo_v2_mobile_initializeSlickCarousel() {
         var carousel = $('.mtc_evo_v2_carousell_options_mobile');
+        if (carousel.length) { // Checks if the element exists
+            carousel.slick({
+      
+              arrows: false,
+              dots: false,
+              infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2500,
+              variableWidth: true,
+              responsive: [
+                  {
+                      breakpoint: 1351,
+                      settings: {
+                          slidesToShow: 3,
+                      },
+                  },
+                  {
+                      breakpoint: 951,
+                      settings: {
+                          slidesToShow: 2,
+                      },
+                  },
+                  {
+                      breakpoint: 651,
+                      settings: {
+                          slidesToShow: 1,
+      
+                      },
+                  },
+              ],
+        });
+        document.querySelectorAll('.mtc_evo_v2_mobile_options .mtc_evo_v2_popup_block').forEach(block => {
+            block.setAttribute('onclick', `mtc_evo_v2_popoup('${block.id}')`);
+            
+            let svgElement = `<svg class="mtc_evo_v2_popup_close_button" onclick="mtc_evo_v2_popoup('${block.id}')" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 19.5L19.425 4.5M19.5 19.5L4.575 4.5" stroke="#292C48" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"></path></svg>`;
+            block.querySelector('.mtc_evo_v2_popup_block_inside').insertAdjacentHTML('beforeend', svgElement);
+            block.querySelector('.mtc_evo_v2_popup_close_button').insertAdjacentHTML('beforeend', svgElement);
+            
+            block.querySelector('.mtc_evo_v2_popup_block_inside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+          });
+      } else {
+          console.error('Carousel element not found');
+      }
+      }
+      function mtc_evo_v2_tv_internet_initializeSlickCarousel() {
+        var carousel = $('.mtc_evo_v2_carousell_options_tv_internet');
         if (carousel.length) { // Checks if the element exists
             carousel.slick({
       

@@ -57,7 +57,7 @@ Directmail to production:
 python3 scripts/directmail_to_production.py demo/directmail/one_number_qr_ro.html
 ```
 
-Langing to production:
+Landing to production:
 
 ```python
 python3 scripts/landing_to_production.py demo/landings/home.html
