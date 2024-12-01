@@ -573,7 +573,7 @@ flex-direction: column;
 @media (max-width: 940px) {
 .mtc_evo_v2_carousell_options_mobile_block {
     width: calc((580px - 100px) / 2);
-    margin-right: 20px;
+    margin-right: 30px;
 }
 }
 
@@ -661,7 +661,7 @@ flex-direction: column;
 @media (max-width: 940px) {
 .mtc_evo_v2_carousell_options_tv_internet_block {
     width: calc((580px - 100px) / 2);
-    margin-right: 20px;
+    margin-right: 30px;
 }
 }
 
