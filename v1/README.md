@@ -8,35 +8,35 @@
 <h2>Demo/Testing:</h2>
 
 This repository is used for developing and storing Moldtelecom landings pages, directmails, and other public shared products.<br>
-Main showcase demo - [link](https://cristianbrinza.github.io/evolutio/v1n/).
+Main showcase demo - [link](https://cristianbrinza.github.io/evolutio/v1/).
 ### Landings:
-- [MD-IX](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/mdix.html) | [RU](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/mdix_ru.html)
-- [Home](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/home.html)
-- [Moldtelecom TV](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/moldtelecom-tv.html)
-- [Despre Companie](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/despre-companie.html)
-- [Cinema Online](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/cinema-online.html)
-- [Echipamente WiFi](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/echipamente-wifi.html)
-- [Safe-Web](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/safe-web.html)
-- [News](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/news.html)
+- [MD-IX](https://cristianbrinza.github.io/evolutio/v1/demo/landings/mdix.html) | [RU](https://cristianbrinza.github.io/evolutio/v1/demo/landings/mdix_ru.html)
+- [Home](https://cristianbrinza.github.io/evolutio/v1/demo/landings/home.html)
+- [Moldtelecom TV](https://cristianbrinza.github.io/evolutio/v1/demo/landings/moldtelecom-tv.html)
+- [Despre Companie](https://cristianbrinza.github.io/evolutio/v1/demo/landings/despre-companie.html)
+- [Cinema Online](https://cristianbrinza.github.io/evolutio/v1/demo/landings/cinema-online.html)
+- [Echipamente WiFi](https://cristianbrinza.github.io/evolutio/v1/demo/landings/echipamente-wifi.html)
+- [Safe-Web](https://cristianbrinza.github.io/evolutio/v1/demo/landings/safe-web.html)
+- [News](https://cristianbrinza.github.io/evolutio/v1/demo/landings/news.html)
 
 ### Promo:
-- [Triple](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/triple.html)
-- [Mobile](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/tm.html)
+- [Triple](https://cristianbrinza.github.io/evolutio/v1/demo/landings/triple.html)
+- [Mobile](https://cristianbrinza.github.io/evolutio/v1/demo/landings/tm.html)
 
 ### Others:
-- [Factura](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/factura.html)
-- [Digital 10](https://cristianbrinza.github.io/evolutio/v1n/demo/landings/digital10.html)
+- [Factura](https://cristianbrinza.github.io/evolutio/v1/demo/landings/factura.html)
+- [Digital 10](https://cristianbrinza.github.io/evolutio/v1/demo/landings/digital10.html)
 
 
 ### Directmail:
 
 |name|ro|ru|en|
 |----|----|----|----|
-|e-SIM qr|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_qr_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_qr_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_qr_en.html)
-|e-SIM code|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_code_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_code_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_code_en.html)
-|e-SIM pay|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_pay_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_pay_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_pay_en.html)
-|e-SIM thx|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_thx_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_thx_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/esim_thx_en.html)
-|One Number|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/one_number_qr_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/one_number_qr_ru.html)| [■](https://cristianbrinza.github.io/evolutio/v1n/demo/directmail/one_number_qr_en.html)|
+|e-SIM qr|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_qr_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_qr_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_qr_en.html)
+|e-SIM code|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_code_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_code_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_code_en.html)
+|e-SIM pay|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_pay_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_pay_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_pay_en.html)
+|e-SIM thx|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_thx_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_thx_ru.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/esim_thx_en.html)
+|One Number|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/one_number_qr_ro.html)|[■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/one_number_qr_ru.html)| [■](https://cristianbrinza.github.io/evolutio/v1/demo/directmail/one_number_qr_en.html)|
 
 <br>
 <h2>Assets:</h2>

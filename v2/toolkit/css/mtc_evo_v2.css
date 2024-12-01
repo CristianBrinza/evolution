@@ -300,6 +300,9 @@ margin: 0 auto;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+.mtc_evo_v2_popup_block_table tbody tr:last-child td {
+    border-bottom: 1px solid transparent;
+}
   
   .mtc_evo_v2_popup_block_pret{
     width: 100%;
