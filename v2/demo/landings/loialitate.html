@@ -130,7 +130,7 @@ display: none;
     .carousell_2_inside {
                         margin: 0 auto;
                         display: flex !important;
-                        align-items: flex-start;
+                        align-items: center;
                         justify-content: center;
                         flex-direction: column;
                     }
@@ -157,6 +157,7 @@ font-weight: 700;
 line-height: 24px; /* 100% */
                     }
                     .carousell_2_card_btn{
+                        cursor: pointer;
                         border-radius: 100px;
 border: 1px solid #B0BDFF;
 color: #B0BDFF;
@@ -180,6 +181,13 @@ transition: border 0.3s ease
 }
 .carousell_2_card_btn:hover svg {
     margin: 0 -2px 0 2px;
+}
+
+@media (max-width:1300px) {
+    .carousell_2_inside_img{
+        width: 96%;
+        margin-left: 2%;
+    }
 }
 </style>
 <div class="carousell_2">
@@ -235,7 +243,7 @@ transition: border 0.3s ease
                    
                     naștere
                 </div>
-                <div class="carousell_2_card_btn" onclick="mtc_evo_v2_popoup('loiality_2')">
+                <div class="carousell_2_card_btn" onclick="mtc_evo_v2_popoup('loiality_3')">
                     Vezi detalii
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
                         <path d="M0.886719 4.27832L12.1126 4.27832" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
@@ -301,20 +309,20 @@ transition: border 0.3s ease
             {
                 breakpoint: 1301,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     autoplay: true,
                 },
             },
             {
                 breakpoint: 951,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 },
             },
             {
                 breakpoint: 651,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 },
             },
         ],
@@ -344,6 +352,7 @@ margin: 10px 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        box-sizing: border-box;
     }
     .loialitate_guide_left_title{
         color: #2F3043;
@@ -381,6 +390,37 @@ margin: 22px 0;
     }
     .loialitate_guide_left_text_bold{
         font-weight: 700;
+    }
+    @media (max-width:1300px) {
+        .loialitate_guide_img {
+    width: 360px;
+}
+.loialitate_guide {
+    gap: 10px;
+}      
+    }
+
+    @media (max-width:950px) {
+        .loialitate_guide_left_title {
+    font-size: 22px;
+    line-height: 22px;
+}
+        .loialitate_guide {
+    padding: 40px 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.loialitate_guide_img{
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.slick-next {
+    right: -25px;
+}
+.slick-prev {
+    left: -20px;
+}
     }
 </style>
 <div class="loialitate_guide">
@@ -933,6 +973,7 @@ font-weight: 600;
 line-height: 18px; /* 100% */
 letter-spacing: 0.18px;
 width: 100%;
+gap:10px;
 cursor: pointer;
 padding: 13px 30px 13px 20px;
 box-sizing: border-box;
@@ -949,6 +990,18 @@ margin-top: -5px;
     width: 24px;
     height: 24px;
     border-top: 0px!important;
+}
+
+@media (max-width:650px) {
+    #mtc_evo_v2_faq {
+    padding: 40px 20px;
+}
+.mtc_evo_v2_block_faq_title {
+    padding: 13px 10px 13px 10px;
+}
+.mtc_evo_v2_block_faq_inside {
+    padding: 5px 10px 15px;
+}
 }
 </style>
 <div id="mtc_evo_v2_faq">
@@ -1193,6 +1246,60 @@ text-align: left;
             </table>
            
             
+           
+            
+           
+           
+          
+         
+        </div>
+    </div>
+
+    <div class="mtc_evo_v2_popup_block" id="loiality_3" style="display: none;">
+        <div class="mtc_evo_v2_popup_block_inside" style="text-align: center;">
+
+           <div class="mtc_evo_v2_title">
+            Sărbătorește ziua de naștere
+           </div>
+           
+          
+           și primește în dar de ziua ta puncte de loialitate, la fiecare zi de naștere îți dăruim <b>200 puncte</b> de loialitate.
+           
+            
+           
+           
+          
+         
+        </div>
+    </div>
+    <div class="mtc_evo_v2_popup_block" id="loiality_4" style="display: none;">
+        <div class="mtc_evo_v2_popup_block_inside" style="text-align: center;">
+
+           <div class="mtc_evo_v2_title">
+            Fă upgrade
+           </div>
+           
+          
+         
+           la abonamentul de telefonie mobilă și/sau internet mobil, cu perioadă minimă de 6 luni și primește <b>100 puncte</b> de loialitate.
+           
+            
+           
+           
+          
+         
+        </div>
+    </div>
+    <div class="mtc_evo_v2_popup_block" id="loiality_5" style="display: none;">
+        <div class="mtc_evo_v2_popup_block_inside" style="text-align: center;">
+
+           <div class="mtc_evo_v2_title">
+            Prelungește perioada contractuală
+           </div>
+           
+          
+         
+           la abonamentul de telefonie mobilă și/sau internet mobil și primește <b>100 puncte</b> de loialitate.
            
             
            
