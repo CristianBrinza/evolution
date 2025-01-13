@@ -1,0 +1,474 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Portează un prieten", ""]]);
+        </script>
+
+
+        <style>
+            .mtc_evo_v2_hero {
+                width: 1600px;
+                height: 400px;
+                border-radius: 30px;
+                margin: 0 auto;
+                background-image: url('../../images/landings/prieten/hero_desktop_ro.png');
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            .mtc_evo_v2_hero_mobile {
+                display: none;
+            }
+
+            @media (max-width:1600px) {
+                .mtc_evo_v2_hero {
+                    border-radius: 0px;
+                    width: 100%;
+
+                }
+            }
+
+            @media (max-width:1300px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/prieten/hero_tablet_ro.png');
+                    height: 300px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    padding-top: 310px;
+                }
+            }
+
+            @media (max-width:950px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/prieten/hero_tablet_verical_ro.png');
+                    height: 295px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    display: none;
+                }
+            }
+
+            @media (max-width:650px) {
+                .mtc_evo_v2_hero {
+                    display: none;
+                }
+
+                .mtc_evo_v2_hero_mobile {
+                    display: block;
+                    width: 100vw;
+                    margin: 0 auto;
+                    height: auto;
+
+                }
+            }
+
+            .mtc_evo_v2_main {
+
+    gap: 30px;
+    margin-top: 30px;
+
+     }
+        </style>
+        <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/prieten/hero_mobile_ro.png" alt="Moldtelecom">
+        <div class="mtc_evo_v2_hero">
+
+        </div>
+
+        <div class="mtc_evo_v2_main">
+
+            <style>
+.prieten_top{
+ height: 250px; 
+    border-radius: 20px;
+background: #F8F9FF;
+width: 100%;
+color: #20264A;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 105.556% */
+letter-spacing: 0.18px;
+display: flex
+;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.prieten_top_title{
+max-width:310px;
+color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: -0.32px;
+}
+.prieten_top_text{
+    box-sizing: border-box;
+    padding: 40px;
+    /* max-width: 660px; */
+    display: flex
+;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-right: 0;
+}
+.prieten_top_img{
+    height: 100%;
+}
+            </style>
+            <div class="prieten_top">
+<div class="prieten_top_text">
+    <div class="prieten_top_title">
+  
+        <span style="font-weight: 700;">  Invită-ți prietenii </span>
+    în rețeaua Moldtelecom
+    </div>
+    Prietenii tăi merită să se bucure de serviciile Moldtelecom așa cum o faci tu
+
+   
+
+    <div class="mtc_evo_v2_btn"
+    onclick="mtc_evo_v2_scroll_to_div('sroll_to_this')">
+    Vezi cum
+    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+            fill="#fff"></path>
+    </svg>
+
+</div>
+</div>
+<img src="../../images/landings/prieten/img1.png" class="prieten_top_img" alt="porteaza_un_prieten">
+            </div>
+
+
+<style>
+    .prieten_options{
+width: 100%;
+display: flex;
+gap:20px;
+flex-wrap: wrap;
+    }
+    .prieten_options_block{
+        border-radius: 20px;
+background: #F8F9FF;
+width: 100%;
+max-width: 580px;
+height: 100%;
+box-sizing: border-box;
+padding: 36px 40px 34px 40px;
+display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
+
+
+    }
+    .prieten_options_title{
+        color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 112.5% */
+letter-spacing: -0.32px;
+    }
+    .prieten_options_text{
+        color: #20264A;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 105.556% */
+letter-spacing: 0.18px;
+    }
+
+    @media (max-width:1300px) {
+        .prieten_options_block{
+            max-width: 100%;
+        }
+        
+    }
+
+    @media (max-width:950px) {
+        .prieten_top{
+            flex-wrap: wrap;
+            height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.prieten_top_img{
+    content: url('../../images/landings/prieten/img1_mob.png');
+    height: auto;
+    width: 100%;
+    margin-top: -30px;
+}
+.prieten_top_text{
+    padding-right: 40px;
+}
+        
+    }
+    @media (max-width:450px) {
+        .prieten_options_block, .prieten_top_text{
+            padding: 30px;
+        }
+    }
+
+
+</style>
+            <div class="prieten_options">
+                <div class="prieten_options_block" id="sroll_to_this">
+                    <div class="prieten_options_title">
+                        Ce primești tu?
+                    </div>
+                    
+                    <div class="prieten_options_text">
+                        Bonus la alegere: 60 GB trafic internet sau 600 minute naționale, valabil 6 luni din momentul activării.
+                        <br><br>
+                         
+                    <b>Ce trebuie să faci pentru asta?</b>
+                    <br>
+                     
+                    <ul style="margin-bottom: 27px;">
+                        <li>Să fii clientul nostru de telefonie mobilă Abonament;</li>
+                            <li>Să convingi prietenul tău să devină abonat Moldtelecom;</li>
+                                <li>Să înregistrezi în aplicația <a href="https://www.moldtelecom.md/ro/personal/mymoldtelecom" style="color: #3C6EFC!important; font-weight: 700;">My Moldtelecom</a>  numărul ce urmează să porteze;</li>
+                                    <li>Să vă bucurați împreună de serviciile Moldtelecom.</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark" style="display: none;"
+                    onclick="">
+                    <span> Mai multe detalii    </span>
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M-0.00031662 4.99997C-0.00031662 4.80106 0.0787014 4.61029 0.219354 4.46964C0.360006 4.32899 0.550771 4.24997 0.749683 4.24997L10.9397 4.24997L8.21968 1.52997C8.0872 1.38779 8.01508 1.19975 8.01851 1.00545C8.02194 0.811145 8.10065 0.62576 8.23806 0.488347C8.37547 0.350934 8.56086 0.272222 8.75516 0.268794C8.94946 0.265365 9.13751 0.337489 9.27968 0.469969L13.2797 4.46997C13.4201 4.61059 13.499 4.80122 13.499 4.99997C13.499 5.19872 13.4201 5.38934 13.2797 5.52997L9.27968 9.52997C9.13751 9.66245 8.94946 9.73457 8.75516 9.73114C8.56086 9.72772 8.37547 9.649 8.23806 9.51159C8.10065 9.37418 8.02194 9.18879 8.01851 8.99449C8.01508 8.80019 8.0872 8.61214 8.21968 8.46997L10.9397 5.74997L0.749683 5.74997C0.550771 5.74997 0.360006 5.67095 0.219354 5.5303C0.0787014 5.38965 -0.00031662 5.19888 -0.00031662 4.99997Z"
+                            fill="#212A55"></path>
+                    </svg>
+                    
+                    </div>
+                                    </div>
+
+                                    <div class="prieten_options_block">
+                                        <div class="prieten_options_title">
+                                            Ce primește prietenul tău?
+                                        </div>
+                                        
+                                        <div class="prieten_options_text">
+                                            Primește reduceri la abonament și convorbiri nelimitate în rețeaua mobilă și fixă Moldtelecom. 
+<br><br>
+                                            Mai multe detalii vezi pe pagina <a href="https://www.moldtelecom.md/ro/Portare" style="color: #3C6EFC!important; font-weight: 700;">Portare</a>
+                                        </div>
+                                        
+                                        <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark" style="display: none;"
+                                        onclick="">
+                                        <span> Mai multe detalii    </span>
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M-0.00031662 4.99997C-0.00031662 4.80106 0.0787014 4.61029 0.219354 4.46964C0.360006 4.32899 0.550771 4.24997 0.749683 4.24997L10.9397 4.24997L8.21968 1.52997C8.0872 1.38779 8.01508 1.19975 8.01851 1.00545C8.02194 0.811145 8.10065 0.62576 8.23806 0.488347C8.37547 0.350934 8.56086 0.272222 8.75516 0.268794C8.94946 0.265365 9.13751 0.337489 9.27968 0.469969L13.2797 4.46997C13.4201 4.61059 13.499 4.80122 13.499 4.99997C13.499 5.19872 13.4201 5.38934 13.2797 5.52997L9.27968 9.52997C9.13751 9.66245 8.94946 9.73457 8.75516 9.73114C8.56086 9.72772 8.37547 9.649 8.23806 9.51159C8.10065 9.37418 8.02194 9.18879 8.01851 8.99449C8.01508 8.80019 8.0872 8.61214 8.21968 8.46997L10.9397 5.74997L0.749683 5.74997C0.550771 5.74997 0.360006 5.67095 0.219354 5.5303C0.0787014 5.38965 -0.00031662 5.19888 -0.00031662 4.99997Z"
+                                                fill="#212A55"></path>
+                                        </svg>
+                                        
+                                        </div>
+                                                        </div>
+            
+            </div>
+
+
+
+
+
+
+
+            <style>
+                .prieten_guide{
+                    width: 100%;
+                    border-radius: 20px;
+            /* background: #F4F7FF; */
+            background: transparent;
+            display: flex;
+            padding: 40px 0;
+            gap: 100px;
+            align-items: center;
+            margin: 10px 0;
+                }
+                .prieten_guide_left{
+                    padding-left: 40px;
+                    width: 100%;
+                    max-width: 410px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    box-sizing: border-box;
+                }
+                .prieten_guide_left_title{
+                    color: #2F3043;
+            font-family: "Source Sans Pro";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+            letter-spacing: -0.32px;
+            font-size: 22px;
+            line-height: 22px;
+                }
+                .prieten_guide_left_title_gradienent{
+                    background: linear-gradient(90deg, #B7117E 0%, #200B92 86.78%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Source Sans Pro";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.32px;
+                }
+                .prieten_guide_img{
+            width: 528px;
+                }
+               .prieten_guide_left_text{
+                    color: #333;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.18px;
+            margin: 22px 0;
+                }
+                .prieten_guide_left_text_bold{
+                    font-weight: 700;
+                }
+                @media (max-width:1300px) {
+                    .prieten_guide_img {
+                width: 360px;
+            }
+            .prieten_guide {
+                gap: 30px;
+            }      
+                }
+            
+                @media (max-width:950px) {
+                    .prieten_guide {
+                gap: 30px;
+            } 
+                    .prieten_guide_left_title {
+                font-size: 22px;
+                line-height: 22px;
+            }
+                    .prieten_guide {
+                padding: 40px 0;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .prieten_guide_img{
+                width: 80%;
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+            .slick-next {
+                right: -25px;
+            }
+            .slick-prev {
+                left: -20px;
+            }
+            .prieten_guide_left{
+                    padding-left: 40px;
+                    padding-right: 40px;
+                   
+                }
+                }
+            
+                @media (max-width:450px) {
+                    .prieten_guide_left{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .prieten_guide_img{
+                width: 80%;
+                margin: auto;
+                margin-top: 20px;
+            }
+                }
+               
+            </style>
+            <div class="prieten_guide">
+            <div class="prieten_guide_left">
+            <div class="prieten_guide_left_title">
+                Urmează <br>
+            <span class="prieten_guide_left_title_gradienent">
+                Procedura de înregistrare</span><br>
+            <!-- în aplicația My Moldtelecom -->
+            </div>
+            
+            <div class="prieten_guide_left_text">
+                <span class="prieten_guide_left_text_bold">1.</span> Seletează contul <br>
+                <span class="prieten_guide_left_text_bold">2.</span>  Indică <span class="prieten_guide_left_text_bold">numărul</span> prietenului, alege bonusul, <br>
+                <span class="prieten_guide_left_text_bold">3.</span>  Fă click pe <span class="prieten_guide_left_text_bold">”Înregistrare”</span> <br>
+                <span class="prieten_guide_left_text_bold">4.</span>  Verifică <span class="prieten_guide_left_text_bold">statutul</span>  numerelor înregistrate
+            </div>
+            <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark" style="background: transparent; border: 1px solid #D9DFFF;"
+            onclick="window.location='https://mtc.md/my-mtc">
+            <span> Activează acum</span>
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M-0.00031662 4.99997C-0.00031662 4.80106 0.0787014 4.61029 0.219354 4.46964C0.360006 4.32899 0.550771 4.24997 0.749683 4.24997L10.9397 4.24997L8.21968 1.52997C8.0872 1.38779 8.01508 1.19975 8.01851 1.00545C8.02194 0.811145 8.10065 0.62576 8.23806 0.488347C8.37547 0.350934 8.56086 0.272222 8.75516 0.268794C8.94946 0.265365 9.13751 0.337489 9.27968 0.469969L13.2797 4.46997C13.4201 4.61059 13.499 4.80122 13.499 4.99997C13.499 5.19872 13.4201 5.38934 13.2797 5.52997L9.27968 9.52997C9.13751 9.66245 8.94946 9.73457 8.75516 9.73114C8.56086 9.72772 8.37547 9.649 8.23806 9.51159C8.10065 9.37418 8.02194 9.18879 8.01851 8.99449C8.01508 8.80019 8.0872 8.61214 8.21968 8.46997L10.9397 5.74997L0.749683 5.74997C0.550771 5.74997 0.360006 5.67095 0.219354 5.5303C0.0787014 5.38965 -0.00031662 5.19888 -0.00031662 4.99997Z"
+                    fill="#212A55"></path>
+            </svg>
+            
+            </div>
+            </div>
+                <img class="prieten_guide_img" src="../../images/landings/prieten/img2.png" alt="prieten">
+            </div>
+            
+
+            <div id="mtc_evo_v2_app">
+        
+            </div>
+            </div>
+    </div>
+
+</body>
+
+</html>

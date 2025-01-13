@@ -1,0 +1,1091 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Securitate", ""], ["Notifică o infracţiune", ""]]);
+        </script>
+
+
+<style>
+    .mtc_evo_v2_hero {
+        width: 1600px;
+        height: 400px;
+        border-radius: 30px;
+        margin: 0 auto;
+        background-image: url('../../images/landings/notifica_infractiune/hero_desktop_ro.png');
+        background-size: cover;
+        background-position-x: center;
+    }
+    .mtc_evo_v2_hero_btns {
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                padding-top: 280px;
+                margin-top: 0;
+                flex-wrap: wrap;
+
+            }
+    .mtc_evo_v2_hero_mobile{
+            display: none;
+        }
+        .mtc_evo_v2_main{
+            margin-bottom: 50px;
+        }
+    @media (max-width:1600px) {
+        .mtc_evo_v2_hero {
+        border-radius: 0px;
+        width: 100%;
+       
+    }
+}
+    @media (max-width:1300px) {
+        .mtc_evo_v2_hero {
+            background-image: url('../../images/landings/notifica_infractiune/hero_tablet_ro.png');
+            height: 300px;
+}
+.mtc_evo_v2_hero_btns {
+padding-top: 210px;
+}
+    }
+
+    @media (max-width:950px) {
+        .mtc_evo_v2_hero {
+            background-image: url('../../images/landings/notifica_infractiune/hero_tablet_verical_ro.png');
+height: 295px;
+}
+.mtc_evo_v2_hero_btns {
+display: none;
+}
+    }
+
+
+    
+    @media (max-width:650px) {
+        .mtc_evo_v2_hero{
+            display: none;
+        }
+        .mtc_evo_v2_hero_mobile{
+            display: block;
+            width: 100vw;
+            margin: 0 auto;
+            height: auto;
+           
+        }
+    }
+</style>
+      <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/notifica_infractiune/hero_mobile_ro.png" alt="Moldtelecom">
+        <div class="mtc_evo_v2_hero">
+            <div class="mtc_evo_v2_hero_btns mtc_evo_v2_main">
+                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_hero" onclick="mtc_evo_v2_scroll_to_div('mtc_evo_v2_title_infractiune')">Completeaza formular <svg fill="none" height="10" viewBox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M-0.00031662 5.19383C-0.00031662 4.99492 0.0787014 4.80415 0.219354 4.6635C0.360006 4.52285 0.550771 4.44383 0.749683 4.44383L10.9397 4.44383L8.21968 1.72383C8.0872 1.58166 8.01508 1.39361 8.01851 1.19931C8.02194 1.00501 8.10065 0.819623 8.23806 0.68221C8.37547 0.544797 8.56086 0.466085 8.75516 0.462657C8.94946 0.459228 9.13751 0.531351 9.27968 0.663831L13.2797 4.66383C13.4201 4.80446 13.499 4.99508 13.499 5.19383C13.499 5.39258 13.4201 5.58321 13.2797 5.72383L9.27968 9.72383C9.13751 9.85631 8.94946 9.92844 8.75516 9.92501C8.56086 9.92158 8.37547 9.84287 8.23806 9.70545C8.10065 9.56804 8.02194 9.38265 8.01851 9.18835C8.01508 8.99405 8.0872 8.80601 8.21968 8.66383L10.9397 5.94383L0.749683 5.94383C0.550771 5.94383 0.360006 5.86481 0.219354 5.72416C0.0787014 5.58351 -0.00031662 5.39274 -0.00031662 5.19383Z" fill="white" fill-rule="evenodd"></path> </svg></div>
+                
+                </div>
+        </div>
+      
+<style>
+    .mtc_evolution_footer_new_main{
+        display: flex!important;
+    }
+    .mtc_evo_v2_title_br{
+                        display: block;
+                    }
+    @media (max-width:1300px) {
+                  
+                     .mtc_evo_v2_title_br{
+                        display: none;
+                    }
+                }
+</style>
+        <div class="mtc_evo_v2_main">
+
+          
+<style>
+      select{
+        background-color: #fff;
+    }
+    .infractiune{
+display: flex;
+/* margin-top: 10px; */
+gap: 20px;
+    }
+    .infractiune_left{
+max-width: 580px;
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    }
+.mtc_evo_v2_title_infractiune{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.infractiune_left_text{
+    color: #535353;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: -0.18px;
+max-width:560px;
+margin: 0px 0 10px;
+}
+
+.mtc_evo_v2_btn_secondary_dark_active{
+    background: #212A55;
+   color: #fff;
+}
+.mtc_evo_v2_btn_secondary_dark_active svg path{
+    fill: #fff;
+}
+.infractiune_form{
+max-width: 520px;
+width: 100%;
+display: flex;
+  gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 30px;
+    height: 100%;
+    display: none;
+    box-sizing: border-box;
+}
+.infractiune_form_active{
+    display: flex;
+}
+.infractiune_form_small_text{
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 100% */
+width: 100%;
+}
+.infractiune_form_small_text:not(:first-of-type) {
+    margin-top: 10px;
+}
+.custom-select {
+    position: relative;
+    width: 100%; /* Adjust as per requirement */
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+border-radius: 1000px;
+border: 1px solid #D9DFFF;
+
+
+}
+
+.custom-select select {
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; 
+    border-radius: 1000px;
+    appearance: none; /* Remove default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+height: 45px;
+padding: 0px 20px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: ltr;
+    border: 0px solid #D9DFFF;
+    box-sizing: border-box;
+}
+
+.custom-select option {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 24px;
+    height: 25px;
+    background: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9999 10.8831L11.9289 17.9541L4.85791 10.8831" stroke="%23D9DFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center;
+    background-size: contain;
+}
+
+.custom-select select {
+    display: flex;
+    max-width:100% ;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.infractiune_form_input{
+    border-radius: 1000px;
+border: 1px solid #D9DFFF;
+height: 50px;
+padding: 0px 20px;
+box-sizing: border-box;
+color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+width: 100%;
+}
+.infractiune_form_input_half{
+width: calc((100% / 2) - 5px);
+}
+.infractiune_form_input_svg{
+    height: 50px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px 0 -45px;
+
+}
+.infractiune_form_input_with_svg{
+    display: flex;
+}
+.infractiune_form_input::placeholder {
+    color: #9E9E9E;
+}
+.infractiune_form_input_textarea{
+    width: 100%;
+    min-width: 100%;
+    border-radius: 20px;
+    border: 1px solid #D9DFFF;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    min-height: 90px;
+  
+}
+.infractiune_form_input_textarea::placeholder {
+    color: #9E9E9E;
+}
+.infractiune_form button{
+    margin-top: 0px;
+}
+.infractiune_form_input_file button{
+    border-radius: 1000px;
+    border: 1px solid #D9DFFF;
+}
+/* Ascunde input-ul */
+.infractiune_form_input_file {
+    display: none;
+}
+
+/* Stil pentru butonul personalizat */
+.custom-file-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    border: 1px solid #D9DFFF;
+    color: #333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: white; /* Fundal alb */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efect hover */
+.custom-file-button:hover {
+    background-color: #D9DFFF;
+    color: #fff;
+}
+/* File list styling */
+.file-list {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 10px;
+    color: #535353;
+    line-height: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    height: 100%;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+.infractiune_form_input_vulnerbilitate{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.custom-file-wrapper{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.file-list_block{
+    padding: 5px ;
+    box-sizing: border-box;
+    border-radius: 1000px;
+    border: 1px solid #D9DFFF;
+}
+
+@media (max-width:1300px) {
+    .infractiune_form{
+        max-width: 400px;
+    padding: 10px 10px;
+    }
+}
+
+@media (max-width:950px) {
+    .infractiune {
+    flex-direction: column;
+}
+.infractiune_form{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+.infractiune_left{
+    width: 100%;
+    max-width: 100%;
+}
+}
+
+@media (max-width:500px) {
+    .infractiune_form_input_half{
+        width: 100%;
+    }
+}
+</style>
+<div class="infractiune">
+    <div class="infractiune_left">
+        <div class="mtc_evo_v2_title mtc_evo_v2_title_infractiune" id="mtc_evo_v2_title_infractiune">
+            Completeaza formularul
+        </div>
+        <div class="infractiune_left_text">
+            Rugăm să notificați doar infracțiuni sau ilegalități ce au fost comise cu utilizarea serviciilor Moldtelecom sau care au tangență directă cu Moldtelecom, orice altă formă de infracțiune / ilegalitate este necesar de raportat organelor de lege.
+        </div>
+
+        <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark infractune_btn"
+        onclick="show_form('infractiune_form_1')">
+        Notifică o infracțiune/ilegalitate
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                fill="#212A55" />
+        </svg>
+
+    </div>
+    <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark infractune_btn"
+    onclick="show_form('infractiune_form_2')">
+    Notifică caz de fraudă
+    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+            fill="#212A55" />
+    </svg>
+
+</div>
+<div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark infractune_btn"
+onclick="show_form('infractiune_form_3')">
+Notifică o vulnerabilitate sau un incident securitate
+<svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+        fill="#212A55" />
+</svg>
+
+</div>
+    </div>
+    <form id="infractiune_form_1" class="infractiune_form g-recaptcha-form" action="/cerere_mtc" method = "post">
+        <div class="infractiune_form_small_text">
+        1. Selectati categoria
+        </div>
+        <div class="custom-select">
+            <select name="categoria">
+                <option value="Diseminare, propagandă și instigare la ură (etnic, rasial, religie, sex, etc.)">Diseminare, propagandă și instigare la ură (etnic, rasial, religie, sex, etc.)</option>
+                <option value="Activități ilegale, perturbare ordine publică, terorism, informații false, etc.">Activități ilegale, perturbare ordine publică, terorism, informații false, etc.</option>
+                <option value="Acte de abuz, discriminare și violență minori">Acte de abuz, discriminare și violență minori</option>
+                <option value="Pornografie infantilă">Pornografie infantilă</option>
+            </select>
+        </div>
+        
+        <div class="infractiune_form_small_text">
+            2. Raportati infracțiunea / ilegalitatea
+            </div>
+            <textarea name="descriere" class="infractiune_form_input_textarea" placeholder="Descriere *" required=""></textarea>
+           <div class="custom-file-wrapper">
+            <input type="file" class="infractiune_form_input_file" id="customFileInput" multiple>
+            <label for="customFileInput" class="custom-file-button">Adaugă un fișier</label>
+            <div id="fileList" class="file-list"></div>
+        </div>
+          
+           <div class="infractiune_form_small_text">
+                3. Informații contact
+                </div>
+        
+            <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                <input class="infractiune_form_input" type="text"  name="name" placeholder="Nume Prenume *" required=""/>
+            <div class="infractiune_form_input_svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 3C8.90524 3 6.66667 5.23858 6.66667 8C6.66667 10.7614 8.90524 13 11.6667 13C14.4281 13 16.6667 10.7614 16.6667 8C16.6667 5.23858 14.4281 3 11.6667 3ZM8.66667 8C8.66667 6.34315 10.0098 5 11.6667 5C13.3235 5 14.6667 6.34315 14.6667 8C14.6667 9.65685 13.3235 11 11.6667 11C10.0098 11 8.66667 9.65685 8.66667 8Z" fill="#D9DFFF"/>
+                    <path d="M3 20.5455C3 16.9305 5.9305 14 9.54545 14H13.7879C17.4028 14 20.3333 16.9305 20.3333 20.5455V20.9091C20.3333 21.5116 19.8449 22 19.2424 22C18.6399 22 18.1515 21.5116 18.1515 20.9091V20.5455C18.1515 18.1355 16.1979 16.1818 13.7879 16.1818H9.54545C7.13548 16.1818 5.18182 18.1355 5.18182 20.5455V20.9091C5.18182 21.5116 4.6934 22 4.09091 22C3.48842 22 3 21.5116 3 20.9091V20.5455Z" fill="#D9DFFF"/>
+                    </svg>
+            </div>
+            </div>
+            <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                <input class="infractiune_form_input" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - - *" required="">
+            <div class="infractiune_form_input_svg">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0261 22.0042C17.1545 22.0042 15.9301 21.689 14.0966 20.6646C11.8671 19.4143 10.1426 18.26 7.92511 16.0484C5.78712 13.9117 4.7467 12.5284 3.29056 9.87864C1.64553 6.88688 1.92596 5.31866 2.23942 4.64841C2.61272 3.84734 3.16374 3.36821 3.87596 2.89265C4.2805 2.6276 4.70859 2.4004 5.15483 2.21392C5.19948 2.19472 5.24101 2.17641 5.27807 2.15989C5.4991 2.06031 5.834 1.90983 6.25821 2.07058C6.54131 2.17686 6.79405 2.39432 7.18967 2.78504C8.00102 3.58522 9.10976 5.36733 9.51878 6.24253C9.7934 6.8324 9.97514 7.22178 9.97559 7.65849C9.97559 8.16977 9.71838 8.56405 9.40626 8.9896C9.34776 9.06953 9.28971 9.14588 9.23345 9.22001C8.89364 9.66654 8.81907 9.79559 8.86819 10.026C8.96776 10.4891 9.71035 11.8675 10.9307 13.0852C12.1511 14.3029 13.4898 14.9986 13.9546 15.0977C14.1948 15.1491 14.3266 15.0714 14.7874 14.7195C14.8535 14.669 14.9214 14.6168 14.9924 14.5646C15.4684 14.2105 15.8443 13.9599 16.3436 13.9599H16.3462C16.7807 13.9599 17.1527 14.1484 17.7689 14.4592C18.5726 14.8646 20.4083 15.9591 21.2134 16.7713C21.605 17.166 21.8234 17.4179 21.9301 17.7005C22.0909 18.1261 21.9395 18.4596 21.8408 18.6829C21.8243 18.72 21.806 18.7606 21.7868 18.8057C21.5988 19.2511 21.3703 19.6783 21.104 20.0819C20.6294 20.7919 20.1485 21.3416 19.3456 21.7153C18.9333 21.9103 18.4821 22.0091 18.0261 22.0042Z" fill="#D9DFFF"/>
+                    </svg>
+                    
+                    
+            </div>
+            </div>
+            <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                <input class="infractiune_form_input" name="email" placeholder="Email *" required="">
+            <div class="infractiune_form_input_svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.77778 12.6667L11.6979 21.3071C11.8068 21.7971 12.4583 21.9029 12.7166 21.4724L21.4952 6.84139C21.7173 6.4711 21.4506 6 21.0188 6H3.50181C2.98603 6 2.74865 6.6417 3.14026 6.97737L9.77778 12.6667ZM9.77778 12.6667L20.8889 6.55556" stroke="#D9DFFF" stroke-width="2"/>
+                    </svg>
+                    
+            </div>
+            </div>
+            <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                <input class="infractiune_form_input" maxlength="13" name="idnp" placeholder="IDNP">
+            <div class="infractiune_form_input_svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                    <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                    </svg>
+                    
+            </div>
+            </div>
+        
+            <textarea name="comentarii" class="infractiune_form_input_textarea" placeholder="Comentarii adiționale"></textarea>
+            <input class="recaptchaResponse" name="recaptcha_response" type="hidden"/>
+            <input name="cerere_tip" value="INFRACTIUNE" type="hidden"/>
+       
+        
+        <button class="mtc_evo_v2_btn" type="submit" name="submit">
+        Trimite formularul
+        
+        </button>
+        </form>
+
+        <form id="infractiune_form_2" class="infractiune_form g-recaptcha-form" action="/cerere_mtc" method = "post">
+            <div class="infractiune_form_small_text">
+            1. Selectati categoria
+            </div>
+            <div class="custom-select">
+                <select name="categoria" id="infractiune_form_2_categoria">
+                    <option value="Apeluri și SMS de la numere necunoscute">Apeluri și SMS de la numere necunoscute</option>
+                    <option value="Apeluri și SMS escroci">Apeluri și SMS escroci</option>
+                    <option value="Apeluri și SMS internaționale">Apeluri și SMS internaționale</option>
+                    <option value="Tombole premii, bonusuri sau oferte promoționale false">Tombole premii, bonusuri sau oferte promoționale false</option>
+                </select>
+            </div>
+            
+            <div class="infractiune_form_small_text">
+                2. Raportati cazul de fraudă 
+                </div>
+                <textarea name="descriere" class="infractiune_form_input_textarea" placeholder="Descriere *" required=""></textarea>
+               <div class="custom-file-wrapper">
+                <input type="file" class="infractiune_form_input_file" id="customFileInput" multiple>
+                <label for="customFileInput" class="custom-file-button">Adaugă un fișier</label>
+                <div id="fileList" class="file-list"></div>
+            </div>
+              
+               <div class="infractiune_form_small_text">
+                    3. Informații contact
+                    </div>
+            
+                <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                    <input class="infractiune_form_input" type="text"  name="name" placeholder="Nume Prenume *" required=""/>
+                <div class="infractiune_form_input_svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 3C8.90524 3 6.66667 5.23858 6.66667 8C6.66667 10.7614 8.90524 13 11.6667 13C14.4281 13 16.6667 10.7614 16.6667 8C16.6667 5.23858 14.4281 3 11.6667 3ZM8.66667 8C8.66667 6.34315 10.0098 5 11.6667 5C13.3235 5 14.6667 6.34315 14.6667 8C14.6667 9.65685 13.3235 11 11.6667 11C10.0098 11 8.66667 9.65685 8.66667 8Z" fill="#D9DFFF"/>
+                        <path d="M3 20.5455C3 16.9305 5.9305 14 9.54545 14H13.7879C17.4028 14 20.3333 16.9305 20.3333 20.5455V20.9091C20.3333 21.5116 19.8449 22 19.2424 22C18.6399 22 18.1515 21.5116 18.1515 20.9091V20.5455C18.1515 18.1355 16.1979 16.1818 13.7879 16.1818H9.54545C7.13548 16.1818 5.18182 18.1355 5.18182 20.5455V20.9091C5.18182 21.5116 4.6934 22 4.09091 22C3.48842 22 3 21.5116 3 20.9091V20.5455Z" fill="#D9DFFF"/>
+                        </svg>
+                </div>
+                </div>
+                <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                    <input class="infractiune_form_input" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - - *" required="">
+                <div class="infractiune_form_input_svg">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0261 22.0042C17.1545 22.0042 15.9301 21.689 14.0966 20.6646C11.8671 19.4143 10.1426 18.26 7.92511 16.0484C5.78712 13.9117 4.7467 12.5284 3.29056 9.87864C1.64553 6.88688 1.92596 5.31866 2.23942 4.64841C2.61272 3.84734 3.16374 3.36821 3.87596 2.89265C4.2805 2.6276 4.70859 2.4004 5.15483 2.21392C5.19948 2.19472 5.24101 2.17641 5.27807 2.15989C5.4991 2.06031 5.834 1.90983 6.25821 2.07058C6.54131 2.17686 6.79405 2.39432 7.18967 2.78504C8.00102 3.58522 9.10976 5.36733 9.51878 6.24253C9.7934 6.8324 9.97514 7.22178 9.97559 7.65849C9.97559 8.16977 9.71838 8.56405 9.40626 8.9896C9.34776 9.06953 9.28971 9.14588 9.23345 9.22001C8.89364 9.66654 8.81907 9.79559 8.86819 10.026C8.96776 10.4891 9.71035 11.8675 10.9307 13.0852C12.1511 14.3029 13.4898 14.9986 13.9546 15.0977C14.1948 15.1491 14.3266 15.0714 14.7874 14.7195C14.8535 14.669 14.9214 14.6168 14.9924 14.5646C15.4684 14.2105 15.8443 13.9599 16.3436 13.9599H16.3462C16.7807 13.9599 17.1527 14.1484 17.7689 14.4592C18.5726 14.8646 20.4083 15.9591 21.2134 16.7713C21.605 17.166 21.8234 17.4179 21.9301 17.7005C22.0909 18.1261 21.9395 18.4596 21.8408 18.6829C21.8243 18.72 21.806 18.7606 21.7868 18.8057C21.5988 19.2511 21.3703 19.6783 21.104 20.0819C20.6294 20.7919 20.1485 21.3416 19.3456 21.7153C18.9333 21.9103 18.4821 22.0091 18.0261 22.0042Z" fill="#D9DFFF"/>
+                        </svg>
+                        
+                        
+                </div>
+                </div>
+                <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                    <input class="infractiune_form_input" name="email" placeholder="Email *" required="">
+                <div class="infractiune_form_input_svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.77778 12.6667L11.6979 21.3071C11.8068 21.7971 12.4583 21.9029 12.7166 21.4724L21.4952 6.84139C21.7173 6.4711 21.4506 6 21.0188 6H3.50181C2.98603 6 2.74865 6.6417 3.14026 6.97737L9.77778 12.6667ZM9.77778 12.6667L20.8889 6.55556" stroke="#D9DFFF" stroke-width="2"/>
+                        </svg>
+                        
+                </div>
+                </div>
+                <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                    <input class="infractiune_form_input" maxlength="13" name="idnp" placeholder="IDNP" >
+                <div class="infractiune_form_input_svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                        <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                        </svg>
+                        
+                </div>
+                </div>
+            
+                <textarea name="comentarii" class="infractiune_form_input_textarea" placeholder="Comentarii adiționale"></textarea>
+                <input class="recaptchaResponse" name="recaptcha_response" type="hidden"/>
+                <input name="cerere_tip" value="FRAUDA" type="hidden"/>
+           
+            
+            <button class="mtc_evo_v2_btn" type="submit" name="submit">
+            Trimite formularul
+            
+            </button>
+            </form>
+            
+            <form id="infractiune_form_3" class="infractiune_form g-recaptcha-form" action="/cerere_mtc" method = "post">
+                <div class="infractiune_form_small_text">
+                    1. Selectati categoria
+                    </div>
+                    <div class="custom-select">
+                        <select name="categoria" id="infractiune_form_3_categoria">
+                            <option value="Aferente infrastructurii și serviciilor Moldtelecom">Aferente infrastructurii și serviciilor Moldtelecom</option>
+                            <option value="Aferente utilizatorilor și clienților Moldtelecom">Aferente utilizatorilor și clienților Moldtelecom</option>
+                            <option value="Comise cu utilizarea serviciilor Moldtelecom">Comise cu utilizarea serviciilor Moldtelecom</option>
+                            <option value="Au tangență directă cu Moldtelecom">Au tangență directă cu Moldtelecom</option>
+                        </select>
+                    </div>
+
+                    <div class="infractiune_form_small_text">
+                        2. Selectati sub-categoria
+                        </div>
+                        <div class="custom-select">
+                            <select name="subcategoria" id="infractiune_form_3_subcategoria">
+                                <option value="Incident de securitate">Incident de securitate</option>
+                                <option value="Activitate malițioasă de rețea">Activitate malițioasă de rețea</option>
+                                <option value="Vulnerabilitate">Vulnerabilitate</option>
+                            </select>
+                        </div>
+                
+                <div class="infractiune_form_small_text">
+                    3. Raportati vulnerabilitatea 
+                    </div>
+
+                    <div class="infractiune_form_input_vulnerbilitate" id="form_vulnerbilitate_1">
+                        <input class="infractiune_form_input" type="text" name="tip" placeholder="Tip activitate malițioasă *" required="" />
+                        <input class="infractiune_form_input" type="text" name="sursa" placeholder="Sursă IP Adresă/e *" required="" />
+                        <input class="infractiune_form_input" type="text" name="destinatie" placeholder="Destinație IP Adresă/e"  />
+                        <input class="infractiune_form_input" type="text" name="timp" placeholder="Timpul / Perioada"  />
+                    </div>
+                
+                    <div class="infractiune_form_input_vulnerbilitate" id="form_vulnerbilitate_2">
+                        <input class="infractiune_form_input" type="text" name="titlu" placeholder="Titlu succint incident *" required="" />
+                        <input class="infractiune_form_input" type="text" name="produs" placeholder="Produsul / serviciul afectat* *" required="" />
+                        <input class="infractiune_form_input" type="text" name="ip" placeholder="IP Adresă/e/domen"  />
+                        <input class="infractiune_form_input" type="date" name="date" placeholder="Data identificării *" required="" />
+                    
+                      
+                    </div>
+                
+                    <div class="infractiune_form_input_vulnerbilitate" id="form_vulnerbilitate_3">
+                        <input class="infractiune_form_input" type="text" name="titlu" placeholder="Nume Vulnerabilitate *" required="" />
+                        <input class="infractiune_form_input" type="text" name="produsul" placeholder="Produsul / serviciul afectat *" required="" />
+                        <input class="infractiune_form_input" type="text" name="ip" placeholder="IP Adresă/e/domen"  />
+                        <input class="infractiune_form_input" type="date" name="date" placeholder="Data identificării *" required="" />
+                        <input class="infractiune_form_input" type="text" name="produsul" placeholder="Produsul / serviciul afectat *" required="" />
+                        <textarea name="problema" class="infractiune_form_input_textarea" placeholder=" Descrierea vulnerabilității sau problemei *" required="" ></textarea>
+                  
+                    
+                      
+                    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const subcategorySelect = document.getElementById('infractiune_form_3_subcategoria');
+    const form1 = document.getElementById('form_vulnerbilitate_1');
+    const form2 = document.getElementById('form_vulnerbilitate_2');
+    const form3 = document.getElementById('form_vulnerbilitate_3');
+    const allForms = [form1, form2, form3];
+
+    const toggleForms = () => {
+        const selectedValue = subcategorySelect.value;
+
+        // Hide all forms first
+        allForms.forEach(form => {
+            form.style.display = 'none';
+            Array.from(form.querySelectorAll('input')).forEach(input => {
+                input.disabled = true; // Disable inputs to prevent submission
+            });
+        });
+
+        // Show the relevant form
+        let activeForm;
+        if (selectedValue === 'Incident de securitate') {
+            activeForm = form1;
+        } else if (selectedValue === 'Activitate malițioasă de rețea') {
+            activeForm = form2;
+        } else if (selectedValue === 'Vulnerabilitate') {
+            activeForm = form3;
+        }
+
+        if (activeForm) {
+            activeForm.style.display = 'flex';
+            Array.from(activeForm.querySelectorAll('input')).forEach(input => {
+                input.disabled = false; // Enable inputs for submission
+            });
+        }
+    };
+
+    // Initialize form visibility on page load
+    toggleForms();
+
+    // Add change event listener
+    subcategorySelect.addEventListener('change', toggleForms);
+});
+</script>
+
+                    <textarea name="descriere" class="infractiune_form_input_textarea" placeholder="Descriere"></textarea>
+                   <div class="custom-file-wrapper">
+                    <input type="file" class="infractiune_form_input_file" id="customFileInput" multiple>
+                    <label for="customFileInput" class="custom-file-button">Adaugă un fișier</label>
+                    <div id="fileList" class="file-list"></div>
+                </div>
+                  
+                   <div class="infractiune_form_small_text">
+                        4. Informații contact
+                        </div>
+                
+                    <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                        <input class="infractiune_form_input" type="text"  name="name" placeholder="Nume Prenume *" required=""/>
+                    <div class="infractiune_form_input_svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 3C8.90524 3 6.66667 5.23858 6.66667 8C6.66667 10.7614 8.90524 13 11.6667 13C14.4281 13 16.6667 10.7614 16.6667 8C16.6667 5.23858 14.4281 3 11.6667 3ZM8.66667 8C8.66667 6.34315 10.0098 5 11.6667 5C13.3235 5 14.6667 6.34315 14.6667 8C14.6667 9.65685 13.3235 11 11.6667 11C10.0098 11 8.66667 9.65685 8.66667 8Z" fill="#D9DFFF"/>
+                            <path d="M3 20.5455C3 16.9305 5.9305 14 9.54545 14H13.7879C17.4028 14 20.3333 16.9305 20.3333 20.5455V20.9091C20.3333 21.5116 19.8449 22 19.2424 22C18.6399 22 18.1515 21.5116 18.1515 20.9091V20.5455C18.1515 18.1355 16.1979 16.1818 13.7879 16.1818H9.54545C7.13548 16.1818 5.18182 18.1355 5.18182 20.5455V20.9091C5.18182 21.5116 4.6934 22 4.09091 22C3.48842 22 3 21.5116 3 20.9091V20.5455Z" fill="#D9DFFF"/>
+                            </svg>
+                    </div>
+                    </div>
+                    <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                        <input class="infractiune_form_input" maxlength="9" name="phone" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" placeholder="0 ( - - ) - - -  - - - *" required="">
+                    <div class="infractiune_form_input_svg">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.0261 22.0042C17.1545 22.0042 15.9301 21.689 14.0966 20.6646C11.8671 19.4143 10.1426 18.26 7.92511 16.0484C5.78712 13.9117 4.7467 12.5284 3.29056 9.87864C1.64553 6.88688 1.92596 5.31866 2.23942 4.64841C2.61272 3.84734 3.16374 3.36821 3.87596 2.89265C4.2805 2.6276 4.70859 2.4004 5.15483 2.21392C5.19948 2.19472 5.24101 2.17641 5.27807 2.15989C5.4991 2.06031 5.834 1.90983 6.25821 2.07058C6.54131 2.17686 6.79405 2.39432 7.18967 2.78504C8.00102 3.58522 9.10976 5.36733 9.51878 6.24253C9.7934 6.8324 9.97514 7.22178 9.97559 7.65849C9.97559 8.16977 9.71838 8.56405 9.40626 8.9896C9.34776 9.06953 9.28971 9.14588 9.23345 9.22001C8.89364 9.66654 8.81907 9.79559 8.86819 10.026C8.96776 10.4891 9.71035 11.8675 10.9307 13.0852C12.1511 14.3029 13.4898 14.9986 13.9546 15.0977C14.1948 15.1491 14.3266 15.0714 14.7874 14.7195C14.8535 14.669 14.9214 14.6168 14.9924 14.5646C15.4684 14.2105 15.8443 13.9599 16.3436 13.9599H16.3462C16.7807 13.9599 17.1527 14.1484 17.7689 14.4592C18.5726 14.8646 20.4083 15.9591 21.2134 16.7713C21.605 17.166 21.8234 17.4179 21.9301 17.7005C22.0909 18.1261 21.9395 18.4596 21.8408 18.6829C21.8243 18.72 21.806 18.7606 21.7868 18.8057C21.5988 19.2511 21.3703 19.6783 21.104 20.0819C20.6294 20.7919 20.1485 21.3416 19.3456 21.7153C18.9333 21.9103 18.4821 22.0091 18.0261 22.0042Z" fill="#D9DFFF"/>
+                            </svg>
+                            
+                            
+                    </div>
+                    </div>
+                    <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                        <input class="infractiune_form_input" name="email" placeholder="Email *" required="">
+                    <div class="infractiune_form_input_svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.77778 12.6667L11.6979 21.3071C11.8068 21.7971 12.4583 21.9029 12.7166 21.4724L21.4952 6.84139C21.7173 6.4711 21.4506 6 21.0188 6H3.50181C2.98603 6 2.74865 6.6417 3.14026 6.97737L9.77778 12.6667ZM9.77778 12.6667L20.8889 6.55556" stroke="#D9DFFF" stroke-width="2"/>
+                            </svg>
+                            
+                    </div>
+                    </div>
+                    <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+                        <input class="infractiune_form_input" maxlength="13" name="idnp" placeholder="IDNP">
+                    <div class="infractiune_form_input_svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                            <path d="M8.15385 4.20769H5.07692C4.84639 4.20769 4.6253 4.29927 4.46228 4.46228C4.29927 4.6253 4.20769 4.84639 4.20769 5.07692V8.15385C4.20769 8.38438 4.29927 8.60547 4.46228 8.76849C4.6253 8.9315 4.84639 9.02308 5.07692 9.02308H8.15385C8.38438 9.02308 8.60547 8.9315 8.76849 8.76849C8.9315 8.60547 9.02308 8.38438 9.02308 8.15385V5.07692C9.02308 4.84639 8.9315 4.6253 8.76849 4.46228C8.60547 4.29927 8.38438 4.20769 8.15385 4.20769ZM2.1 5.07692C2.1 4.28739 2.41364 3.5302 2.97192 2.97192C3.5302 2.41364 4.28739 2.1 5.07692 2.1H8.15385C8.94338 2.1 9.70057 2.41364 10.2588 2.97192C10.8171 3.5302 11.1308 4.28739 11.1308 5.07692V8.15385C11.1308 8.94338 10.8171 9.70057 10.2588 10.2588C9.70057 10.8171 8.94338 11.1308 8.15385 11.1308H5.07692C4.28739 11.1308 3.5302 10.8171 2.97192 10.2588C2.41364 9.70057 2.1 8.94338 2.1 8.15385V5.07692ZM18.9231 4.20769H15.8462C15.6156 4.20769 15.3945 4.29927 15.2315 4.46228C15.0685 4.6253 14.9769 4.84639 14.9769 5.07692V8.15385C14.9769 8.38438 15.0685 8.60547 15.2315 8.76849C15.3945 8.9315 15.6156 9.02308 15.8462 9.02308H18.9231C19.1536 9.02308 19.3747 8.9315 19.5377 8.76849C19.7007 8.60547 19.7923 8.38438 19.7923 8.15385V5.07692C19.7923 4.84639 19.7007 4.6253 19.5377 4.46228C19.3747 4.29927 19.1536 4.20769 18.9231 4.20769ZM12.8692 5.07692C12.8692 4.28739 13.1829 3.5302 13.7412 2.97192C14.2994 2.41364 15.0566 2.1 15.8462 2.1H18.9231C19.7126 2.1 20.4698 2.41364 21.0281 2.97192C21.5864 3.5302 21.9 4.28739 21.9 5.07692V8.15385C21.9 8.94338 21.5864 9.70057 21.0281 10.2588C20.4698 10.8171 19.7126 11.1308 18.9231 11.1308H15.8462C15.0566 11.1308 14.2994 10.8171 13.7412 10.2588C13.1829 9.70057 12.8692 8.94338 12.8692 8.15385V5.07692ZM8.15385 14.9769H5.07692C4.84639 14.9769 4.6253 15.0685 4.46228 15.2315C4.29927 15.3945 4.20769 15.6156 4.20769 15.8462V18.9231C4.20769 19.1536 4.29927 19.3747 4.46228 19.5377C4.6253 19.7007 4.84639 19.7923 5.07692 19.7923H8.15385C8.38438 19.7923 8.60547 19.7007 8.76849 19.5377C8.9315 19.3747 9.02308 19.1536 9.02308 18.9231V15.8462C9.02308 15.6156 8.9315 15.3945 8.76849 15.2315C8.60547 15.0685 8.38438 14.9769 8.15385 14.9769ZM2.97192 13.7412C3.5302 13.1829 4.28739 12.8692 5.07692 12.8692H8.15385C8.94338 12.8692 9.70057 13.1829 10.2588 13.7412C10.8171 14.2994 11.1308 15.0566 11.1308 15.8462V18.9231C11.1308 19.7126 10.8171 20.4698 10.2588 21.0281C9.70057 21.5864 8.94338 21.9 8.15385 21.9H5.07692C4.28739 21.9 3.5302 21.5864 2.97192 21.0281C2.41364 20.4698 2.1 19.7126 2.1 18.9231V15.8462C2.1 15.0566 2.41364 14.2994 2.97192 13.7412ZM18.9231 14.9769H15.8462C15.6156 14.9769 15.3945 15.0685 15.2315 15.2315C15.0685 15.3945 14.9769 15.6156 14.9769 15.8462V18.9231C14.9769 19.1536 15.0685 19.3747 15.2315 19.5377C15.3945 19.7007 15.6156 19.7923 15.8462 19.7923H18.9231C19.1536 19.7923 19.3747 19.7007 19.5377 19.5377C19.7007 19.3747 19.7923 19.1536 19.7923 18.9231V15.8462C19.7923 15.6156 19.7007 15.3945 19.5377 15.2315C19.3747 15.0685 19.1536 14.9769 18.9231 14.9769ZM12.8692 15.8462C12.8692 15.0566 13.1829 14.2994 13.7412 13.7412C14.2994 13.1829 15.0566 12.8692 15.8462 12.8692H18.9231C19.7126 12.8692 20.4698 13.1829 21.0281 13.7412C21.5864 14.2994 21.9 15.0566 21.9 15.8462V18.9231C21.9 19.7126 21.5864 20.4698 21.0281 21.0281C20.4698 21.5864 19.7126 21.9 18.9231 21.9H15.8462C15.0566 21.9 14.2994 21.5864 13.7412 21.0281C13.1829 20.4698 12.8692 19.7126 12.8692 18.9231V15.8462Z" fill="#D9DFFF" stroke="white" stroke-width="0.2"/>
+                            </svg>
+                            
+                    </div>
+                    </div>
+                
+                    <textarea name="comentarii" class="infractiune_form_input_textarea" placeholder="Comentarii adiționale"></textarea>
+                    <input class="recaptchaResponse" name="recaptcha_response" type="hidden"/>
+                    <input name="cerere_tip" value="VULNERABILITATE" type="hidden"/>
+               
+                
+                <button class="mtc_evo_v2_btn" type="submit" name="submit">
+                Trimite formularul
+                
+                </button>
+                </form>
+       
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+function show_form(form) {
+    console.log("show_form called for:", form);
+
+    // Remove 'infractiune_form_active' class from all forms
+    const forms = document.querySelectorAll('.infractiune_form');
+    forms.forEach(formElement => formElement.classList.remove('infractiune_form_active'));
+
+    // Find the selected form by its ID
+    const selected_form = document.getElementById(form);
+
+    // Check if the selected form exists before adding the class
+    if (selected_form) {
+        selected_form.classList.add('infractiune_form_active');
+        console.log(`Activated form: ${form}`);
+    } else {
+        console.error(`Form with ID '${form}' not found`);
+        return;
+    }
+
+    // Get all elements with the 'infractune_btn' class
+    const buttons = document.querySelectorAll('.infractune_btn');
+
+    // Remove the active class from all buttons
+    buttons.forEach(btn => btn.classList.remove('mtc_evo_v2_btn_secondary_dark_active'));
+
+    // Add the active class to the clicked button
+    const clickedButton = Array.from(buttons).find(button => button.getAttribute('onclick').includes(form));
+    if (clickedButton) {
+        clickedButton.classList.add('mtc_evo_v2_btn_secondary_dark_active');
+    }
+}
+
+// Initialize the functionality on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Attach click events to all buttons only once
+    const buttons = document.querySelectorAll('.infractune_btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const formId = button.getAttribute('onclick').match(/show_form\('(.+)'\)/)?.[1];
+            if (formId) {
+                show_form(formId);
+            }
+        });
+    });
+
+    // Trigger the default form display
+    show_form('infractiune_form_1');
+});
+
+
+document.getElementById("customFileInput").addEventListener("change", function () {
+    const fileList = document.getElementById("fileList");
+    fileList.innerHTML = ""; // Clear any existing file names
+
+    const files = this.files;
+
+    if (files.length > 0) {
+        const fileNames = Array.from(files).map(file => file.name);
+        fileNames.forEach(fileName => {
+            const listItem = document.createElement("div");
+            listItem.classList.add('file-list_block');
+            listItem.textContent = fileName;
+            fileList.appendChild(listItem);
+        });
+    } else {
+        fileList.innerHTML = "<div>Niciun fișier selectat.</div>";
+       
+    }
+});
+    </script>
+
+
+<style>
+    .infractiune_note{
+        color: #cbcbcb;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; 
+letter-spacing: -0.18px;
+text-align: center;
+margin: 0 0 -20px;
+    }
+    .infractiune_note a{
+        text-decoration: none;
+        color: #cbcbcb!important;
+    }
+</style>
+<div class="infractiune_note">
+<b>Atenție!</b> Prin completarea acestor notificări: 
+	Conștientizez responsabilitatea pentru denunțarea falsă cu bună știință (Art. 311 CP al RM)
+,	Înțeleg că aceste notificări poartă un caracter informativ și nu prevăd expedierea unor confirmări de recepționare sau răspuns.
+,	Confirm că datele completate sunt valide, îmi aparțin și consimt prelucrarea datelor cu caracter personal în conformitate cu Politica de securitate privind PDCP -  <a href="https://moldtelecom.md/ro/personal/Securitatea Datelor">https://moldtelecom.md/ro/personal/Securitatea Datelor</a>.
+
+</div>
+<style>
+    #mtc_evo_v2_faq{
+        width: 100%;
+        border-radius: 16px;
+background: #F3F5FF;
+padding: 40px;
+box-sizing: border-box;
+padding-bottom: 60px;
+display: flex;
+flex-direction: column;
+    align-items: center;
+ 
+    }
+    .mtc_evo_v2_faq_title{
+        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 100% */
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+padding-bottom: 32px;
+    }
+    #mtc_evo_v2_btn_faq{
+    background:transparent;
+    border: 1px solid #292C48;
+    color: #292C48;
+    margin-top: 32px;
+    margin-bottom: -20px;
+}
+ 
+#mtc_evo_v2_btn_faq svg{
+    margin: 0 0 0 0;
+    transition: margin 0.3s ease;
+  }
+  #mtc_evo_v2_btn_faq:hover{
+    border: 1px solid #D9DFFF;
+  }
+  #mtc_evo_v2_btn_faq:hover svg{
+   margin: 0 -2.5px 0 2.5px;
+ 
+}
+.mtc_evo_v2_block_faq{
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+}
+
+.mtc_evo_v2_block_faq_title{
+    display: flex;
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+gap:10px;
+cursor: pointer;
+padding: 13px 30px 13px 20px;
+box-sizing: border-box;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.mtc_evo_v2_block_faq_inside{
+    padding: 5px 20px 15px;
+box-sizing: border-box;
+width: 100%;
+margin-top: -5px;
+}
+.mtc_evo_v2_block_faq_svg_container, .mtc_evo_v2_block_faq_svg_container svg{
+    width: 24px;
+    height: 24px;
+    border-top: 0px!important;
+}
+
+@media (max-width:650px) {
+    #mtc_evo_v2_faq {
+    padding: 40px 20px;
+}
+.mtc_evo_v2_block_faq_title {
+    padding: 13px 10px 13px 10px;
+}
+.mtc_evo_v2_block_faq_inside {
+    padding: 5px 10px 15px;
+}
+}
+</style>
+<div id="mtc_evo_v2_faq">
+<div class="mtc_evo_v2_faq_title">
+    FAQ
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Cum pot să raportez o infracțiune sau o ilegalitate?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       gg
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce tipuri de fraude pot fi raportate și cum?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       gg
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Pot să includ link-uri și atașamente în notificările mele?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       gg
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce se întâmplă cu notificările mele după ce le transmit?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       gg
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce se întâmplă cu notificările mele după ce le transmit?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       gg
+    </div>
+</div>
+
+
+ 
+    <div class="mtc_evo_v2_btn" id="mtc_evo_v2_btn_faq">
+        Mai multe
+</div>
+</div>
+ 
+<script>
+   
+   document.addEventListener("DOMContentLoaded", function () {
+  const faqBlocks = document.querySelectorAll(".mtc_evo_v2_block_faq");
+  const faqButton = document.getElementById("mtc_evo_v2_btn_faq");
+  const maxVisibleFaqs = 4;
+ 
+  // Add SVG and functionality
+  faqBlocks.forEach((faqBlock, index) => {
+    const faqTitle = faqBlock.querySelector(".mtc_evo_v2_block_faq_title");
+    const faqContent = faqBlock.querySelector(".mtc_evo_v2_block_faq_inside");
+    const svgContainer = document.createElement("div");
+    svgContainer.classList.add("mtc_evo_v2_block_faq_svg_container"); // Add class for styling and rotation
+ 
+    // Insert SVG into the container
+    svgContainer.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.7186 12.8653C20.3345 12.8653 20.8339 12.3659 20.8339 11.75C20.8339 11.1341 20.3345 10.6347 19.7186 10.6347L12.8653 10.6347L12.8653 3.78129C12.8653 3.16534 12.366 2.66602 11.75 2.66602C11.1341 2.66602 10.6348 3.16534 10.6348 3.78129L10.6348 10.6347L3.78133 10.6347C3.16538 10.6347 2.66606 11.1341 2.66606 11.75C2.66606 12.3659 3.16538 12.8653 3.78133 12.8653L10.6348 12.8653L10.6348 19.7186C10.6348 20.3345 11.1341 20.8338 11.75 20.8338C12.366 20.8338 12.8653 20.3345 12.8653 19.7186L12.8653 12.8653L19.7186 12.8653Z" fill="#333333"/>
+      </svg>`;
+    faqTitle.appendChild(svgContainer);
+ 
+    // Hide content by default
+    faqContent.style.display = "none";
+ 
+    // Add click event to toggle visibility and rotate the SVG
+    faqTitle.addEventListener("click", () => {
+      const isOpen = faqContent.style.display === "block";
+      faqContent.style.display = isOpen ? "none" : "block";
+ 
+      // Rotate SVG
+      svgContainer.style.transform = isOpen ? "rotate(0deg)" : "rotate(45deg)";
+      svgContainer.style.transition = "transform 0.3s ease";
+    });
+ 
+    // Show only first 5 FAQs by default
+    if (index >= maxVisibleFaqs) {
+      faqBlock.style.display = "none";
+    }
+  });
+ 
+  // Show "Mai multe" button if there are more than 5 FAQs
+  if (faqBlocks.length > maxVisibleFaqs) {
+    faqButton.style.display = "flex"; // Show the button only if needed
+    faqButton.addEventListener("click", () => {
+      faqBlocks.forEach((faqBlock, index) => {
+        if (index >= maxVisibleFaqs) {
+          faqBlock.style.display = "block";
+        }
+      });
+      faqButton.style.display = "none"; // Hide the button after showing all FAQs
+    });
+  } else {
+    faqButton.style.display = "none"; // Hide the button if not needed
+  }
+});
+ 
+ 
+ 
+</script>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Internet", ""], ["Echipamente WI-FI", ""]]);
+        </script>
+
+
+<style>
+    .mtc_evo_v2_hero {
+        width: 1600px;
+        height: 400px;
+        border-radius: 30px;
+        margin: 0 auto;
+        background-image: url('../../images/landings/echipamente/hero_desktop_ro.png');
+        background-size: cover;
+        background-position-x: center;
+    }
+    .mtc_evo_v2_hero_mobile{
+            display: none;
+        }
+        .mtc_evo_v2_main{
+            margin-bottom: 50px;
+            gap: 20px;
+    margin-top: 20px;
+        }
+    @media (max-width:1600px) {
+        .mtc_evo_v2_hero {
+        border-radius: 0px;
+        width: 100%;
+       
+    }
+}
+    @media (max-width:1300px) {
+        .mtc_evo_v2_hero {
+            background-image: url('../../images/landings/safe-web/hero_tablet_ro.png');
+            height: 300px;
+}
+.mtc_evo_v2_hero_btns {
+padding-top: 310px;
+}
+    }
+
+    @media (max-width:950px) {
+        .mtc_evo_v2_hero {
+            background-image: url('../../images/landings/safe-web/hero_tablet_verical_ro.png');
+height: 295px;
+}
+.mtc_evo_v2_hero_btns {
+display: none;
+}
+    }
+
+    @media (max-width:650px) {
+        .mtc_evo_v2_hero{
+            display: none;
+        }
+        .mtc_evo_v2_hero_mobile{
+            display: block;
+            width: 100vw;
+            margin: 0 auto;
+            height: auto;
+           
+        }
+    }
+</style>
+      <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/safe-web/hero_mobile_ro.png" alt="Moldtelecom">
+        <div class="mtc_evo_v2_hero">
+        
+        </div>
+      
+<style>
+    .mtc_evolution_footer_new_main{
+        display: flex!important;
+    }
+    .mtc_evo_v2_title_br{
+                        display: block;
+                    }
+    @media (max-width:1300px) {
+                  
+                     .mtc_evo_v2_title_br{
+                        display: none;
+                    }
+                }
+</style>
+        <div class="mtc_evo_v2_main">
+
+          
+
+                <div class="mtc_evo_v2_title">
+                    Descopera caratersticile tehnice
+                </div>
+
+ 
+                <style>
+                    .echipamente{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                    .echipamente_row{
+                        display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+                    }
+                    .echipamente_block{
+                        border-radius: 30px;
+background: #F3F5FF;
+padding: 40px 60px 40px 30px;
+width: 100%;
+max-width: 580px;
+box-sizing: border-box;
+                    }
+                    .echipamente_img{
+                        border-radius: 30px;
+width: 100%;
+max-width: 580px;
+height: auto;
+                    }
+                    .echipamente_block_title{
+                        color: #323232;
+font-family: MTC_Highway;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: 37px; /* 108.824% */
+letter-spacing: -0.68px;
+width: 100%;
+margin-bottom: 24px;
+                    }
+                    .echipamente_block_inside{
+                        display: flex;
+    width: 100%;
+    gap:7px;
+    flex-direction: column;
+    align-items: flex-start;
+                    }
+                    .echipamente_block_inside_row{
+display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+                    }
+                    .echipamente_block_inside_row_svg{
+                        width: 5px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .echipamente_block_inside_row_text{
+                        color: #323232;
+font-family: "Source Sans Pro";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+                    }
+                    .echipamente_block_inside_row_text b{
+                        font-weight: 700;
+                    }
+                    .echipamente_row_reversed{
+                        flex-direction: row-reverse;
+                    }
+                    .echipamente_block_guide .echipamente_block_title{
+                        margin-bottom: 8px; 
+                        margin-top: -10px;
+                    }
+                    .mtc_evo_v2_btn_echipamente{
+                        margin-top: 5px;
+                    }
+
+
+                    #mtc_evo_v2_faq{
+    margin-top: 20px;
+}
+
+
+                    @media (max-width:1300px) {
+                        .echipamente_row {
+                            justify-content: center;
+                            gap: 10px;
+                            margin-bottom: 10px;
+}
+                    }
+
+                </style>
+<div class="echipamente">
+    <div class="echipamente_row">
+        <img class="echipamente_img" src="../../images/landings/echipamente/img1.png" alt="Echipamente">
+        <div class="echipamente_block echipamente_block_guide">
+          <div class="echipamente_block_title">
+            Moldtelecom OptiXstar
+          </div>
+          <div class="echipamente_block_inside">
+            <div class="echipamente_block_inside_row">
+                <div class="echipamente_block_inside_row_svg">
+                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                        </svg>
+                        
+                </div>
+                <div class="echipamente_block_inside_row_text">
+                    <b>Wi-Fi 6:</b>  802.11n/ac/ax, Dual band: 2,4 și 5GHz
+                </div>
+                
+                
+                </div>
+                <div class="echipamente_block_inside_row">
+                    <div class="echipamente_block_inside_row_svg">
+                        <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="echipamente_block_inside_row_text">
+                        Viteza de transfer a datelor prin: cablu <b>~ 1 Gbps</b>, Wi-Fi (2,4GHz) <b> ~ 600 Mbps</b>, Wi-Fi (5GHz) <b>~ 1.2 Gbps</b>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="echipamente_block_inside_row">
+                        <div class="echipamente_block_inside_row_svg">
+                            <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="echipamente_block_inside_row_text">
+                            Dimensiuni: 155 mm x 105 mm x 35 mm 
+                        </div>
+                        
+                        
+                        </div>
+                        <div class="echipamente_block_inside_row">
+                            <div class="echipamente_block_inside_row_svg">
+                                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="echipamente_block_inside_row_text">
+                                <b>4 porturi</b> Gigabit Ethernet + <b>1 port</b> FXS (telefonie fixă SIP) + <b>1 port</b> USB 2.0
+                            </div>
+                            
+                            
+                            </div>
+                            <div class="echipamente_block_inside_row">
+                                <div class="echipamente_block_inside_row_svg">
+                                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="echipamente_block_inside_row_text">
+                                    Disponibil pentru <b>tehnologia GPON</b> (blocuri locative, sector privat) 
+                                </div>
+                                
+                                
+                                
+                                </div>
+                                <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark mtc_evo_v2_btn_echipamente"
+                                onclick="window.location='https://moldtelecom.md/files/HG8245X6-8N%20Instructiune%20Rapida.pdf'">
+                                Instrucțiune
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                                        fill="#212A55" />
+                                </svg>
+       
+                            </div>
+          </div>
+        </div>
+    </div>
+    <div class="echipamente_row echipamente_row_reversed">
+        <img class="echipamente_img" src="../../images/landings/echipamente/img2.png" alt="Echipamente">
+        <div class="echipamente_block">
+          <div class="echipamente_block_title">
+            Moldtelecom U92
+          </div>
+          <div class="echipamente_block_inside">
+            <div class="echipamente_block_inside_row">
+                <div class="echipamente_block_inside_row_svg">
+                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                        </svg>
+                        
+                </div>
+                <div class="echipamente_block_inside_row_text">
+                    <b>Wi-Fi 6:</b>  802.11n/ac/ax, Dual band: 2,4 și 5GHz
+                </div>
+                
+                
+                </div>
+                <div class="echipamente_block_inside_row">
+                    <div class="echipamente_block_inside_row_svg">
+                        <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="echipamente_block_inside_row_text">
+                        Viteza de transfer a datelor prin: cablu <b>~ 1 Gbps</b>, Wi-Fi (2,4GHz) <b> ~ 600 Mbps</b>, Wi-Fi (5GHz) <b>~ 1.2 Gbps</b>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="echipamente_block_inside_row">
+                        <div class="echipamente_block_inside_row_svg">
+                            <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="echipamente_block_inside_row_text">
+                            Dimensiuni: 247 mm x 154 mm x 42 mm
+                        </div>
+                        
+                        
+                        </div>
+                        <div class="echipamente_block_inside_row">
+                            <div class="echipamente_block_inside_row_svg">
+                                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="echipamente_block_inside_row_text">
+                                <b>4 porturi</b> Gigabit Ethernet + <b>2 porturi</b> FXS (telefonie fixă SIP) + <b>1 port</b> USB 3.0
+                            </div>
+                            
+                            
+                            </div>
+                            <div class="echipamente_block_inside_row">
+                                <div class="echipamente_block_inside_row_svg">
+                                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="echipamente_block_inside_row_text">
+                                    Disponibil pentru conectarea clienților rezidenți din sectorul privat prin <b>tehnologia FTTH</b>
+                                </div>
+                                
+                                
+                                </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="echipamente_row">
+        <img class="echipamente_img" src="../../images/landings/echipamente/img3.png" alt="Echipamente">
+        <div class="echipamente_block">
+          <div class="echipamente_block_title">
+            Moldtelecom E92
+          </div>
+          <div class="echipamente_block_inside">
+            <div class="echipamente_block_inside_row">
+                <div class="echipamente_block_inside_row_svg">
+                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                        </svg>
+                        
+                </div>
+                <div class="echipamente_block_inside_row_text">
+                    <b>Wi-Fi 6:</b>  802.11n/ac/ax, Dual band: 2,4 și 5GHz
+                </div>
+                
+                
+                </div>
+                <div class="echipamente_block_inside_row">
+                    <div class="echipamente_block_inside_row_svg">
+                        <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="echipamente_block_inside_row_text">
+                        Viteza de transfer a datelor prin: cablu <b>~ 1 Gbps</b>, Wi-Fi (2,4GHz) <b> ~ 600 Mbps</b>, Wi-Fi (5GHz) <b>~ 1.2 Gbps</b>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="echipamente_block_inside_row">
+                        <div class="echipamente_block_inside_row_svg">
+                            <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="echipamente_block_inside_row_text">
+                            Dimensiuni: 226 mm x 140 mm x 48 mm
+                        </div>
+                        
+                        
+                        </div>
+                        <div class="echipamente_block_inside_row">
+                            <div class="echipamente_block_inside_row_svg">
+                                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="echipamente_block_inside_row_text">
+                                <b>3 porturi</b> Gigabit Ethernet + <b>2 porturi</b> FXS (telefonie fixă SIP) + <b>1 port</b> USB 2.0
+                            </div>
+                            
+                            
+                            </div>
+                            <div class="echipamente_block_inside_row">
+                                <div class="echipamente_block_inside_row_svg">
+                                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="echipamente_block_inside_row_text">
+                                    Disponibil pentru <b>tehnologia tehnologia FTTB</b> (blocuri locative) 
+                                </div>
+                                
+                                
+                                </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="echipamente_row echipamente_row_reversed">
+        <img class="echipamente_img" src="../../images/landings/echipamente/img4.png" alt="Echipamente">
+        <div class="echipamente_block">
+          <div class="echipamente_block_title">
+            Moldtelecom EchoLife
+          </div>
+          <div class="echipamente_block_inside">
+            <div class="echipamente_block_inside_row">
+                <div class="echipamente_block_inside_row_svg">
+                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                        </svg>
+                        
+                </div>
+                <div class="echipamente_block_inside_row_text">
+                    <b>Wi-Fi 5:</b> 802.11n/ac, Dual band: 2,4 și 5GHz 
+                </div>
+                
+                
+                </div>
+                <div class="echipamente_block_inside_row">
+                    <div class="echipamente_block_inside_row_svg">
+                        <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="echipamente_block_inside_row_text">
+                        Viteza de transfer a datelor prin: cablu <b> ~ 1 Gbps</b>, Wi-Fi (2,4GHz) <b>~ 300 Mbps</b>, Wi-Fi (5GHz) <b>~ 866 Mbps </b>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="echipamente_block_inside_row">
+                        <div class="echipamente_block_inside_row_svg">
+                            <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="echipamente_block_inside_row_text">
+                            Dimensiuni: 105 mm × 155 mm × 30 mm 
+                        </div>
+                        
+                        
+                        </div>
+                        <div class="echipamente_block_inside_row">
+                            <div class="echipamente_block_inside_row_svg">
+                                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="echipamente_block_inside_row_text">
+                                <b>4 porturi</b> Gigabit Ethernet + <b>2 porturi</b> FXS (telefonie fixă SIP) + <b>1 port</b> USB 3.0
+                            </div>
+                            
+                            
+                            </div>
+                            <div class="echipamente_block_inside_row">
+                                <div class="echipamente_block_inside_row_svg">
+                                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.882812" width="5" height="5" rx="1" fill="#212A55"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="echipamente_block_inside_row_text">
+                                    Disponibil pentru <b>tehnologia GPON</b> (blocuri locative, sector privat) 
+                                </div>
+                                
+                                
+                                </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<style>
+    #mtc_evo_v2_faq{
+        width: 100%;
+        border-radius: 16px;
+background: #F3F5FF;
+padding: 40px;
+box-sizing: border-box;
+padding-bottom: 60px;
+display: flex;
+flex-direction: column;
+    align-items: center;
+ 
+    }
+    .mtc_evo_v2_faq_title{
+        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 100% */
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+padding-bottom: 32px;
+    }
+    #mtc_evo_v2_btn_faq{
+    background:transparent;
+    border: 1px solid #292C48;
+    color: #292C48;
+    margin-top: 32px;
+    margin-bottom: -20px;
+}
+ 
+#mtc_evo_v2_btn_faq svg{
+    margin: 0 0 0 0;
+    transition: margin 0.3s ease;
+  }
+  #mtc_evo_v2_btn_faq:hover{
+    border: 1px solid #D9DFFF;
+  }
+  #mtc_evo_v2_btn_faq:hover svg{
+   margin: 0 -2.5px 0 2.5px;
+ 
+}
+.mtc_evo_v2_block_faq{
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+}
+
+.mtc_evo_v2_block_faq_title{
+    display: flex;
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+gap:10px;
+cursor: pointer;
+padding: 13px 30px 13px 20px;
+box-sizing: border-box;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.mtc_evo_v2_block_faq_inside{
+    padding: 5px 20px 15px;
+box-sizing: border-box;
+width: 100%;
+margin-top: -5px;
+}
+.mtc_evo_v2_block_faq_svg_container, .mtc_evo_v2_block_faq_svg_container svg{
+    width: 24px;
+    height: 24px;
+    border-top: 0px!important;
+}
+
+@media (max-width:650px) {
+    #mtc_evo_v2_faq {
+    padding: 40px 20px;
+}
+.mtc_evo_v2_block_faq_title {
+    padding: 13px 10px 13px 10px;
+}
+.mtc_evo_v2_block_faq_inside {
+    padding: 5px 10px 15px;
+}
+}
+</style>
+<div id="mtc_evo_v2_faq">
+<div class="mtc_evo_v2_faq_title">
+    FAQ
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Care sunt caracteristicile tehnice principale ale echipamentelor prezentate?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+
+        <ul>
+            <li> Suport pentru Wi-Fi 6 sau Wi-Fi 5, în funcție de model.</li>
+            <li>Viteze de transfer de până la 1 Gbps prin cablu și viteze variabile prin Wi-Fi în funcție de frecvență (2,4GHz sau 5GHz).</li>
+            <li>Porturi multiple: Gigabit Ethernet, FXS pentru telefonie fixă, și USB 2.0/3.0.</li>
+        </ul>
+  
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Cum pot accesa manualele de utilizare pentru echipamentele Moldtelecom?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Apăsați pe butonul „Instrucțiune” disponibil în secțiunea echipamentului dorit pentru a descărca ghidul rapid în format PDF.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce tehnologii sunt compatibile cu aceste echipamente?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Echipamentele sunt compatibile cu tehnologiile <b>GPON</b>, <b>FTTH</b>, sau <b>FTTB</b>, în funcție de modelul specific. Acestea sunt concepute pentru utilizatori rezidențiali, fie în blocuri locative, fie în sectorul privat.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Echipamentele suportă conexiuni dual-band?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Da, toate echipamentele suportă conexiuni dual-band (2,4 GHz și 5 GHz), permițând utilizatorilor să beneficieze de viteze mai mari și de o conexiune stabilă, în funcție de rețea și dispozitive.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce beneficii oferă tehnologia Wi-Fi 6?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Tehnologia Wi-Fi 6 permite o conectivitate mai rapidă, mai eficientă și mai stabilă, reducând interferențele și îmbunătățind performanța pentru dispozitivele conectate simultan.
+    </div>
+</div>
+
+
+ 
+    <div class="mtc_evo_v2_btn" id="mtc_evo_v2_btn_faq">
+        Mai multe
+</div>
+</div>
+ 
+<script>
+   
+   document.addEventListener("DOMContentLoaded", function () {
+  const faqBlocks = document.querySelectorAll(".mtc_evo_v2_block_faq");
+  const faqButton = document.getElementById("mtc_evo_v2_btn_faq");
+  const maxVisibleFaqs = 4;
+ 
+  // Add SVG and functionality
+  faqBlocks.forEach((faqBlock, index) => {
+    const faqTitle = faqBlock.querySelector(".mtc_evo_v2_block_faq_title");
+    const faqContent = faqBlock.querySelector(".mtc_evo_v2_block_faq_inside");
+    const svgContainer = document.createElement("div");
+    svgContainer.classList.add("mtc_evo_v2_block_faq_svg_container"); // Add class for styling and rotation
+ 
+    // Insert SVG into the container
+    svgContainer.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.7186 12.8653C20.3345 12.8653 20.8339 12.3659 20.8339 11.75C20.8339 11.1341 20.3345 10.6347 19.7186 10.6347L12.8653 10.6347L12.8653 3.78129C12.8653 3.16534 12.366 2.66602 11.75 2.66602C11.1341 2.66602 10.6348 3.16534 10.6348 3.78129L10.6348 10.6347L3.78133 10.6347C3.16538 10.6347 2.66606 11.1341 2.66606 11.75C2.66606 12.3659 3.16538 12.8653 3.78133 12.8653L10.6348 12.8653L10.6348 19.7186C10.6348 20.3345 11.1341 20.8338 11.75 20.8338C12.366 20.8338 12.8653 20.3345 12.8653 19.7186L12.8653 12.8653L19.7186 12.8653Z" fill="#333333"/>
+      </svg>`;
+    faqTitle.appendChild(svgContainer);
+ 
+    // Hide content by default
+    faqContent.style.display = "none";
+ 
+    // Add click event to toggle visibility and rotate the SVG
+    faqTitle.addEventListener("click", () => {
+      const isOpen = faqContent.style.display === "block";
+      faqContent.style.display = isOpen ? "none" : "block";
+ 
+      // Rotate SVG
+      svgContainer.style.transform = isOpen ? "rotate(0deg)" : "rotate(45deg)";
+      svgContainer.style.transition = "transform 0.3s ease";
+    });
+ 
+    // Show only first 5 FAQs by default
+    if (index >= maxVisibleFaqs) {
+      faqBlock.style.display = "none";
+    }
+  });
+ 
+  // Show "Mai multe" button if there are more than 5 FAQs
+  if (faqBlocks.length > maxVisibleFaqs) {
+    faqButton.style.display = "flex"; // Show the button only if needed
+    faqButton.addEventListener("click", () => {
+      faqBlocks.forEach((faqBlock, index) => {
+        if (index >= maxVisibleFaqs) {
+          faqBlock.style.display = "block";
+        }
+      });
+      faqButton.style.display = "none"; // Hide the button after showing all FAQs
+    });
+  } else {
+    faqButton.style.display = "none"; // Hide the button if not needed
+  }
+});
+ 
+ 
+ 
+</script>
+
+     
+    </div>
+
+    </div>
+</body>
+
+</html>
