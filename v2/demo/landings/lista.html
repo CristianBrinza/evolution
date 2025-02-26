@@ -1,0 +1,511 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Televiziune", ""], ["Listă canale", ""]]);
+        </script>
+
+
+
+    <style>
+        body{
+          background: #fff;
+        }
+        .mtc_evo_v2_main {
+          gap: 20px;
+          margin-top:15px;
+        }
+        .mtc_evo_v2_title_list_tv{
+          margin-left: 0;
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5px;
+        }
+        .mtc_evo_v2_description{
+          color: #323232;
+      font-family: "Source Sans Pro";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      letter-spacing: -0.18px;
+        }
+       .mtc_evo_v2_btn_list_tv_btns{
+        display: flex;
+        gap:10px;
+       }
+       .mtc_evo_v2_btn_list_tv{
+       color: #ADBBFF;
+       background: #F5F5F5;
+
+
+      }
+      .mtc_evo_v2_btn_list_tv_print{
+        border-radius: 1000px;
+border: 1px solid #ADBBFF;
+background: #ffffff;
+      }
+      .mtc_evo_v2_btn_list_tv_print:hover svg{
+        margin: 0 0 0 0;
+        transform: scale(1.05);
+      }
+      .mtc_evo_v2_btn_list_tv_print svg{
+      
+        transform: scale(1);
+        transition: scale 1s ease-in-out;
+      }
+.list_tv_abonaments{
+  display: flex;
+  gap:20px;
+  margin-top: -10px;
+}
+      .list_tv_abonaments_block{
+        width: 280px;
+min-height: 91px;
+border-radius: 16px;
+border: 1.5px solid #F7F7F7;
+background: #FAFAFA;
+padding: 15px 20px;
+box-sizing: border-box;
+position: relative;
+cursor: pointer;
+      }
+      .list_tv_abonaments_block_chenals{
+        display: flex;
+max-width: 135px;
+align-items: center;
+align-content: center;
+gap: 3px;
+flex-wrap: wrap;
+      }
+      .list_tv_abonaments_block_canale{
+        border-radius: 100px;
+background: #EEF7F6;
+display: flex;
+padding: 2px 5px;
+justify-content: center;
+align-items: center;
+color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 12px;
+      }
+      .list_tv_abonaments_block_title{
+        color: #78C144;
+font-family: "Source Sans Pro";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 75% */
+letter-spacing: 0.24px;
+margin-bottom: 10px;
+      }
+      .list_tv_abonaments_block_price{
+        position: absolute;
+        top:20px;
+        right:20px;
+        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 100% */
+display: flex;
+      }
+      .list_tv_abonaments_block_price_big{
+        color: #2F3043;
+text-align: right;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 44.444% */
+letter-spacing: -0.72px;
+      }
+      .list_tv_abonaments_block_vezi{
+        display: inline-flex;
+        
+padding: 3px 0px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+position: absolute;
+        right:18px;
+        bottom:10px;
+        color: #B0BDFF;
+font-family: "Source Sans Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px; /* 121.429% */
+      }
+      .list_tv_abonaments_block_active{
+        border: 1.5px solid #DFE5FE;
+background: #EEF1FF;
+
+      }
+      .list_tv_abonaments_block_active .list_tv_abonaments_block_chenals .list_tv_abonaments_block_canale{
+        background: #ffffff;
+      }
+      .list_tv_abonaments_block_vezi_show{
+        display: none;
+      }
+      .mtc_evo_v2_btn_list_tv_active{
+        border: 1px solid #CFD7FF;
+
+background: #EEF1FF;
+      }
+     
+
+      </style>
+<div class="mtc_evo_v2_main">
+
+    <div>
+    <div class="mtc_evo_v2_title mtc_evo_v2_title_list_tv">
+        Lista de canale</div>
+    
+    <div class="mtc_evo_v2_description">
+        Bucură-te de cele mai bune canale TV, de la știri și sport la filme și divertisment. <br>
+        Alege pachetul potrivit și transformă fiecare moment în spectacol! </div>
+    </div>
+
+    <div class="mtc_evo_v2_btn_list_tv_btns">
+    
+  <div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark mtc_evo_v2_btn_list_tv"
+  onclick="show_list('Fiber')">
+  Fiber
+  <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+          fill="#ADBBFF" />
+  </svg>
+
+</div>
+<div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark mtc_evo_v2_btn_list_tv"
+onclick="show_list('ADSL')">
+ADSL
+<svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+        fill="#ADBBFF" />
+</svg>
+
+</div>
+<div class="mtc_evo_v2_btn mtc_evo_v2_btn_secondary_dark mtc_evo_v2_btn_list_tv mtc_evo_v2_btn_list_tv_print"
+onclick="window.location='https://www.moldtelecom.md/canale_print'">
+
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7.99805 21.3828C7.44805 21.3828 6.97738 21.1871 6.58605 20.7958C6.19471 20.4045 5.99871 19.9335 5.99805 19.3828V17.3828H3.99805C3.44805 17.3828 2.97738 17.1871 2.58605 16.7958C2.19471 16.4045 1.99871 15.9335 1.99805 15.3828V11.3828C1.99805 10.5328 2.28971 9.82048 2.87305 9.24581C3.45638 8.67115 4.16471 8.38348 4.99805 8.38281H18.998C19.848 8.38281 20.5607 8.67048 21.136 9.24581C21.7114 9.82115 21.9987 10.5335 21.998 11.3828V15.3828C21.998 15.9328 21.8024 16.4038 21.411 16.7958C21.0197 17.1878 20.5487 17.3835 19.998 17.3828H17.998V19.3828C17.998 19.9328 17.8024 20.4038 17.411 20.7958C17.0197 21.1878 16.5487 21.3835 15.998 21.3828H7.99805ZM3.99805 15.3828H5.99805C5.99805 14.8328 6.19405 14.3621 6.58605 13.9708C6.97805 13.5795 7.44871 13.3835 7.99805 13.3828H15.998C16.548 13.3828 17.019 13.5788 17.411 13.9708C17.803 14.3628 17.9987 14.8335 17.998 15.3828H19.998V11.3828C19.998 11.0995 19.902 10.8621 19.71 10.6708C19.518 10.4795 19.2807 10.3835 18.998 10.3828H4.99805C4.71471 10.3828 4.47738 10.4788 4.28605 10.6708C4.09471 10.8628 3.99871 11.1001 3.99805 11.3828V15.3828ZM15.998 8.38281V5.38281H7.99805V8.38281H5.99805V5.38281C5.99805 4.83281 6.19405 4.36215 6.58605 3.97081C6.97805 3.57948 7.44871 3.38348 7.99805 3.38281H15.998C16.548 3.38281 17.019 3.57881 17.411 3.97081C17.803 4.36281 17.9987 4.83348 17.998 5.38281V8.38281H15.998ZM17.998 12.8828C18.2814 12.8828 18.519 12.7868 18.711 12.5948C18.903 12.4028 18.9987 12.1655 18.998 11.8828C18.9974 11.6001 18.9014 11.3628 18.71 11.1708C18.5187 10.9788 18.2814 10.8828 17.998 10.8828C17.7147 10.8828 17.4774 10.9788 17.286 11.1708C17.0947 11.3628 16.9987 11.6001 16.998 11.8828C16.9974 12.1655 17.0934 12.4031 17.286 12.5958C17.4787 12.7885 17.716 12.8841 17.998 12.8828ZM15.998 19.3828V15.3828H7.99805V19.3828H15.998Z" fill="#ADBBFF" stroke="white" stroke-width="0.3"/>
+  </svg>
+  
+
+</div>
+    </div>
+    
+
+
+    <div class="list_tv_abonaments" data-type="ADSL" id="ADSL">
+   
+      <div class="list_tv_abonaments_block" id="Univers" onclick="show_tv('ADSL','Univers')">
+        <div class="list_tv_abonaments_block_title">
+          Univers
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            160
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="list_tv_abonaments_block" id="Premier" onclick="show_tv('ADSL','Premier')">
+        <div class="list_tv_abonaments_block_title">
+          Premier
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            150
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="list_tv_abonaments_block" id="Simplu" onclick="show_tv('ADSL','Simplu')">
+        <div class="list_tv_abonaments_block_title">
+          Simplu
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            140
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+    <div class="list_tv_abonaments" data-type="ADSL" id="Fiber">
+    
+      <div class="list_tv_abonaments_block" id="Univers" onclick="show_tv('Fiber','Univers')">
+        <div class="list_tv_abonaments_block_title">
+          Univers
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            160
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="list_tv_abonaments_block" id="Premier" onclick="show_tv('Fiber','Premier')">
+        <div class="list_tv_abonaments_block_title">
+          Premier
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            150
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="list_tv_abonaments_block" id="Simplu" onclick="show_tv('Fiber','Simplu')">
+        <div class="list_tv_abonaments_block_title">
+          Simplu
+        </div>
+        <div class="list_tv_abonaments_block_chenals">
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">116 </span>&nbsp;canale
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">73 </span>&nbsp; HD
+          </div>
+          <div class="list_tv_abonaments_block_canale"> <span style="font-weight: 600;">4 </span>&nbsp;radio
+          </div>
+        </div>
+
+        <div class="list_tv_abonaments_block_price">
+       
+          <div class="list_tv_abonaments_block_price_big">
+            140
+          </div>
+          <div>
+            &nbsp;lei/lună
+          </div>
+        </div>
+        <div class="list_tv_abonaments_block_vezi">
+          Vezi grila
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+            <path d="M0.886719 3.89551L12.1126 3.89551" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 1.10547L12.0803 3.86155" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+            <path d="M9.32422 6.68652L12.0803 3.93045" stroke="#B0BDFF" stroke-width="1.1875" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+
+
+    <script>
+     
+
+     function show_tv(type, id) {
+    // Remove active class from all elements in all sections
+    document.querySelectorAll('.list_tv_abonaments_block').forEach(element => {
+        element.classList.remove('list_tv_abonaments_block_active');
+    });
+
+    document.querySelectorAll('.list_tv_abonaments_block .list_tv_abonaments_block_vezi').forEach(element => {
+        element.classList.remove('list_tv_abonaments_block_vezi_show');
+    });
+
+    // Select the specific section and item inside it
+    let parentElement = document.querySelector(`#${type} #${id}`);
+    if (parentElement) {
+        parentElement.classList.add('list_tv_abonaments_block_active');
+
+        // Select the child element inside the found parent
+        let veziElement = parentElement.querySelector('.list_tv_abonaments_block_vezi');
+        if (veziElement) {
+            veziElement.classList.add('list_tv_abonaments_block_vezi_show');
+        }
+    }
+}
+
+function show_list(id) {
+    // Define the sections
+    let sections = ["ADSL", "Fiber"];
+
+    sections.forEach(section => {
+        let element = document.getElementById(section);
+        if (element) {
+            element.style.display = (section === id) ? 'flex' : 'none';
+        }
+    });
+
+    // Remove active class from all buttons
+    document.querySelectorAll('.mtc_evo_v2_btn_list_tv').forEach(button => {
+        button.classList.remove('mtc_evo_v2_btn_list_tv_active');
+    });
+
+    // Add active class to the clicked button
+    let clickedButton = document.querySelector(`.mtc_evo_v2_btn_list_tv[onclick="show_list('${id}')"]`);
+    if (clickedButton) {
+        clickedButton.classList.add('mtc_evo_v2_btn_list_tv_active');
+    }
+
+    // Select the first available `list_tv_abonaments_block` inside the chosen section
+    let firstAvailable = document.querySelector(`#${id} .list_tv_abonaments_block`);
+    if (firstAvailable) {
+        show_tv(id, firstAvailable.id);
+    }
+}
+
+
+// Initially show one of the sections dynamically (default to Fiber)
+//show_list("Fiber");
+
+//document.querySelector("#Fiber #Premier")?.click();
+document.addEventListener("DOMContentLoaded", function () {
+    // Ensure UI is fully loaded before executing
+    setTimeout(() => {
+        let fiberButton = document.querySelector(".mtc_evo_v2_btn_list_tv[onclick=\"show_list('Fiber')\"]");
+        if (fiberButton) {
+            fiberButton.click(); // Simulate click on the Fiber button
+        }
+    }, 100); // Small delay to ensure everything is rendered
+});
+
+
+    </script>
+    </div>
+</body>
+
+</html>
