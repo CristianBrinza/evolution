@@ -41,6 +41,7 @@
                 background-image: url('../../images/landings/21gbsp/hero_desktop_ro.png');
                 background-size: cover;
                 background-position-x: center;
+                border: 1px solid #e5e9ff;
             }
 
             .mtc_evo_v2_hero_mobile {
@@ -351,10 +352,9 @@ display: flex;
         border-radius: 30px;
 background: #F3F5FF;
 width: 580px;
-height: 330px;
+height: auto;
 padding: 30px 30px;
 box-sizing: border-box;
-margin-top: -20px;
     }
     .i21gbps_block1_title{
         max-width: 490px;
@@ -417,16 +417,45 @@ justify-content: flex-start;
         width: 37px;
         height: 37px;
     }
+    .i21gbps_video{
+        margin-top: -20px;
+    }
+    .i21gbps_video img{
+            aspect-ratio: 16/9;
+        }
+    
 
     @media (max-width:1300px) {
         .i21gbps img{
-            width: ;
+            max-width: 280px;
         }
+        .i21gbps_video img{
+            max-width: 280px;
+            aspect-ratio: auto;
+        }
+    
+
+
     }
+
+    @media (max-width:950px) {
+    .i21gbps{
+        flex-direction: column;
+    }
+    .i21gbps_video{
+        flex-direction: column-reverse;
+    }
+    .i21gbps img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+   
+}
 
 </style>
 <div class="i21gbps">
-    <img src="" alt="i21gbps">
+    <img src="../../images/landings/21Gbps/img2.png" alt="i21gbps">
     <div class="i21gbps_block1">
 <div class="i21gbps_block1_title">
     Experimentează viteza supremă pentru o lume fără limite!
@@ -451,7 +480,7 @@ Verifică disponibilitatea
 </div>
     </div>
 </div>
-<div class="i21gbps">
+<div class="i21gbps i21gbps_video">
    
     <div class="i21gbps_block2">
 <div class="i21gbps_block1_title">
@@ -483,7 +512,7 @@ Verifică disponibilitatea
                 
                 
         </div>
-        <span>Dacă ai <b>Smart Home</b> și multe dispozitive IoT –
+        <span>Dacă ai <b>Smart Home</b> și multe dispozitive IoT – <br>
             fără întârzieri, conexiune instantă </span>
     </div>
     <div class="i21gbps_block2_list_block">
@@ -531,7 +560,7 @@ Verifică disponibilitatea
 </div>
 
     </div>
-    <img src="" alt="i21gbps" style="aspect-ratio: 16/9;">
+    <img src="../../images/landings/21Gbps/img3.png" alt="i21gbps">
 </div>
 
 
@@ -546,7 +575,6 @@ background-size: contain;
 height: 233px;
 padding: 40px;
 box-sizing: border-box;
-
 }
 .i21gbps_block3_title{
     color: #2F3043;
@@ -568,7 +596,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 19px; /* 105.556% */
 letter-spacing: 0.18px;
-text-decoration-line: strikethrough;
+text-decoration-line: line-through;
 }
 .i21gbps_block3_title_small div{
     margin-top: -20px;
@@ -587,6 +615,22 @@ margin: 12px 0 19px;
 .i21gbps_block3_btns{
     display: flex;
     gap:10px;
+}
+
+@media (max-width:1300px) {
+    .i21gbps_block3{
+background: url('../../images/landings/21Gbps/img1_tablet.png');
+background-size: contain;
+}
+}
+
+@media (max-width:950px) {
+    .i21gbps_block3{
+background: url('../../images/landings/21Gbps/img1_mobil.png');
+background-size: cover;
+height: auto;
+aspect-ratio: 1/0.9;
+}
 }
 </style>
 
