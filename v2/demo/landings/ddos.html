@@ -1,0 +1,1294 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTC Evolution Testing</title>
+    <link rel="icon" type="image/png" href="https://www.moldtelecom.md/images/favico_logo.png">
+    <style>
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        var lang = "ro";
+    </script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <link href="../../toolkit/css/mtc_evo_v2.css" rel="stylesheet" type="text/css" />
+        <script src="../../toolkit/js/mtc_evo_v2.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"
+            type="text/css" />
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            mtc_evo_v2_add_route([["Acasă", "https://www.moldtelecom.md/ro/personal"], ["Securitate", ""], ["PROTECȚIE DDOS", ""]]);
+        </script>
+
+
+        <style>
+            .mtc_evo_v2_hero {
+                width: 1600px;
+                height: 400px;
+                border-radius: 30px;
+                margin: 0 auto;
+                background-image: url('../../images/landings/ddos/hero_desktop_ro.png');
+                background-size: cover;
+                background-position-x: center;
+                border: 1px solid #e5e9ff;
+            }
+
+            .mtc_evo_v2_hero_mobile {
+                display: none;
+            }
+
+            @media (max-width:1600px) {
+                .mtc_evo_v2_hero {
+                    border-radius: 0px;
+                    width: 100%;
+
+                }
+            }
+
+            @media (max-width:1300px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/ddos/hero_tablet_ro.png');
+                    height: 300px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    padding-top: 310px;
+                }
+            }
+
+            @media (max-width:950px) {
+                .mtc_evo_v2_hero {
+                    background-image: url('../../images/landings/ddos/hero_tablet_verical_ro.png');
+                    height: 295px;
+                }
+
+                .mtc_evo_v2_hero_btns {
+                    display: none;
+                }
+            }
+
+            @media (max-width:650px) {
+                .mtc_evo_v2_hero {
+                    display: none;
+                }
+
+                .mtc_evo_v2_hero_mobile {
+                    display: block;
+                    width: 100vw;
+                    margin: 0 auto;
+                    height: auto;
+
+                }
+            }
+
+            .mtc_evo_v2_main {
+
+    gap: 40px;
+    margin-top: 20px;
+
+     }
+        </style>
+        <img class="mtc_evo_v2_hero_mobile" src="../../images/landings/ddos/hero_mobile_ro.png" alt="Moldtelecom">
+        <div class="mtc_evo_v2_hero">
+
+        </div>
+
+        <div class="mtc_evo_v2_main">
+
+<style>
+    .mtc_evo_v2_title_options{
+    margin: 18px auto;
+}
+.mtc_evo_v2_carousell_options_carousell{
+    border-radius: 20px;
+    border: 1px solid #EDF0FD;
+   background:  #EDF0FD;
+width: 100%;
+box-sizing: border-box;
+padding: 33px 46px 29px;
+}
+.mtc_evo_v2_carousell_options_carousell_svg{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mtc_evo_v2_carousell_options_carousell_title{
+    color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
+margin-top: 12px;
+}
+.mtc_evo_v2_carousell_options_carousell_text{
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 112.5% */
+margin: 5px 0 15px;
+}
+.mtc_evo_v2_carousell_options_carousell_btn{
+    color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px; /* 106.25% */
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: flex-start;
+gap: 10px;
+transition: gap 0.3s ease;
+cursor: pointer;
+}
+.mtc_evo_v2_carousell_options_carousell_btn:hover{
+    gap: 12.5px;
+}
+.mtc_evo_v2_carousell_options_carousell_block{
+    width: calc((1090px - 150px) / 4);
+margin-right: 50px;
+display: flex !important;
+flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+.mtc_evo_v2_carousell_options_carousell_block {
+    width: calc((790px - 100px) / 3);
+    margin-right: 50px;
+    display: flex !important        ;
+    flex-direction: column;
+}
+}
+@media (max-width: 940px) {
+.mtc_evo_v2_carousell_options_carousell_block {
+    width: calc((580px - 100px) / 2);
+    margin-right: 30px;
+}
+}
+
+@media (max-width:650px) {
+.mtc_evo_v2_carousell_options_carousell {
+max-width: 360px;
+margin: 0 auto;
+}
+
+}
+
+</style>
+<div class="mtc_evo_v2_carousell_options_carousell">
+    <div class="mtc_evo_v2_carousell_options_carousell_block">
+        <div class="mtc_evo_v2_carousell_options_carousell_svg">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_9036_28001)">
+                <path d="M13.6194 24.2567C14.2335 24.8709 15.0269 25.1718 15.9993 25.1595C16.9718 25.1473 17.6884 24.7951 18.149 24.1031L24.6364 14.3912C24.8668 14.0329 24.835 13.7064 24.5412 13.4116C24.2474 13.1168 23.9209 13.085 23.5616 13.3164L13.8497 19.8038C13.1587 20.2644 12.7943 20.9682 12.7564 21.9151C12.7185 22.8619 13.0062 23.6425 13.6194 24.2567ZM15.9993 6.59863C16.9206 6.59863 17.8291 6.67541 18.7248 6.82896C19.6205 6.9825 20.4906 7.22562 21.3351 7.55831C21.7446 7.71186 22.1797 8.00002 22.6403 8.42279C23.101 8.84555 23.2289 9.24836 23.0242 9.63121C22.8194 10.0141 22.3588 10.27 21.6422 10.399C20.9257 10.5279 20.3499 10.5151 19.9148 10.3606C19.275 10.1302 18.6291 9.95776 17.977 9.84311C17.325 9.72846 16.6657 9.67062 15.9993 9.6696C12.5957 9.6696 9.69722 10.8662 7.30392 13.2596C4.91061 15.6529 3.71447 18.5508 3.71549 21.9535C3.71549 23.0283 3.8629 24.0903 4.15771 25.1396C4.45253 26.1888 4.86813 27.1741 5.40452 28.0954H26.5942C27.1828 27.1229 27.6117 26.112 27.8809 25.0628C28.1501 24.0136 28.2842 22.9259 28.2832 21.7999C28.2832 21.1345 28.2254 20.4819 28.1097 19.8422C27.994 19.2024 27.8215 18.5754 27.5922 17.9612C27.4387 17.5261 27.4131 17.1039 27.5155 16.6944C27.6178 16.285 27.8482 15.9395 28.2064 15.658C28.5391 15.4021 28.904 15.3253 29.3012 15.4277C29.6984 15.53 29.9733 15.7603 30.1258 16.1186C30.5097 17.0143 30.8039 17.9295 31.0087 18.8641C31.2134 19.7987 31.3286 20.7517 31.3542 21.7231C31.3798 23.1818 31.2134 24.5766 30.8551 25.9073C30.4969 27.2381 29.9722 28.5048 29.2813 29.7076C28.9998 30.1683 28.6159 30.5266 28.1297 30.7825C27.6434 31.0384 27.1316 31.1663 26.5942 31.1663H5.40452C4.86711 31.1663 4.35528 31.0384 3.86904 30.7825C3.38281 30.5266 2.99894 30.1683 2.71743 29.7076C2.05206 28.556 1.54023 27.3343 1.18195 26.0424C0.823671 24.7506 0.644531 23.3876 0.644531 21.9535C0.644531 19.8294 1.04785 17.8399 1.85449 15.985C2.66113 14.1302 3.76156 12.5051 5.15578 11.1099C6.54999 9.71464 8.18119 8.61421 10.0494 7.80859C11.9175 7.00298 13.9009 6.59966 15.9993 6.59863Z" fill="#ADBBFF"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_9036_28001">
+                <rect width="36.8516" height="36.8516" fill="white" transform="translate(0.574219 0.457031)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+                
+                
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_title">
+            Protecție  <br>
+            continuă
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_text">
+            Identificăm și blocăm atacurile înainte de a vă afecta rețeaua.
+        </div>
+      
+    </div>
+  
+    <div class="mtc_evo_v2_carousell_options_carousell_block">
+        <div class="mtc_evo_v2_carousell_options_carousell_svg">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2839 3.38281C15.2568 3.38281 11.9922 6.64741 11.9922 10.6745C11.9922 14.7015 15.2568 17.9661 19.2839 17.9661C23.3109 17.9661 26.5756 14.7015 26.5756 10.6745C26.5756 6.64741 23.3109 3.38281 19.2839 3.38281ZM14.9089 10.6745C14.9089 8.25824 16.8676 6.29948 19.2839 6.29948C21.7001 6.29948 23.6589 8.25824 23.6589 10.6745C23.6589 13.0907 21.7001 15.0495 19.2839 15.0495C16.8676 15.0495 14.9089 13.0907 14.9089 10.6745Z" fill="#ADBBFF"/>
+                <path d="M6.64844 28.9693C6.64844 23.6975 10.9221 19.4238 16.1939 19.4238H22.3808C27.6525 19.4238 31.9262 23.6975 31.9262 28.9693V29.4996C31.9262 30.3782 31.2139 31.0905 30.3353 31.0905C29.4566 31.0905 28.7444 30.3782 28.7444 29.4996V28.9693C28.7444 25.4548 25.8954 22.6056 22.3808 22.6056H16.1939C12.6793 22.6056 9.83026 25.4548 9.83026 28.9693V29.4996C9.83026 30.3782 9.11798 31.0905 8.23935 31.0905C7.36072 31.0905 6.64844 30.3782 6.64844 29.4996V28.9693Z" fill="#ADBBFF"/>
+                </svg>
+                
+                
+                
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_title">
+            Soluție <br>
+            personalizabilă
+            
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_text">
+            Alegeți nivelul de protecție potrivit pentru afacerea dvs.
+        </div>
+      
+    </div>
+    <div class="mtc_evo_v2_carousell_options_carousell_block">
+        <div class="mtc_evo_v2_carousell_options_carousell_svg">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_9036_28064)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2382 5.35326C34.5141 5.05597 34.6643 4.66275 34.6572 4.25645C34.65 3.85016 34.4861 3.4625 34.1999 3.17516C33.9137 2.88783 33.5276 2.72323 33.1229 2.71606C32.7183 2.7089 32.3266 2.85971 32.0305 3.13673L29.3438 5.83421C27.6426 4.64467 25.5787 4.09401 23.5138 4.27866C21.4488 4.46332 19.5144 5.37152 18.0493 6.84419L16.8413 8.05701C16.4687 8.43316 16.2595 8.94212 16.2595 9.47266C16.2595 10.0032 16.4687 10.5122 16.8413 10.8883L26.5176 20.6034C26.8922 20.9775 27.3992 21.1876 27.9276 21.1876C28.456 21.1876 28.9629 20.9775 29.3376 20.6034L30.5455 19.3906C32.0127 17.9199 32.9176 15.9778 33.1019 13.9046C33.2862 11.8313 32.7381 9.75903 31.5536 8.05073L34.2382 5.35326ZM16.5352 15.6831C16.8277 15.9772 16.992 16.3758 16.992 16.7914C16.992 17.207 16.8277 17.6056 16.5352 17.8996L13.9318 20.5135L16.9309 23.5246L19.5343 20.9108C19.8304 20.6338 20.222 20.4829 20.6267 20.4901C21.0314 20.4973 21.4175 20.6619 21.7037 20.9492C21.9899 21.2365 22.1538 21.6242 22.1609 22.0305C22.1681 22.4368 22.0179 22.83 21.7419 23.1273L19.1385 25.7411L20.2695 26.8766C20.6421 27.2527 20.8513 27.7617 20.8513 28.2922C20.8513 28.8228 20.6421 29.3317 20.2695 29.7079L19.0615 30.9207C17.5967 32.3937 15.6624 33.3023 13.5974 33.4873C11.5324 33.6724 9.46843 33.122 7.76696 31.9328L5.08026 34.6303C4.78553 34.9158 4.39088 35.0737 3.98132 35.0699C3.57176 35.0662 3.18006 34.901 2.89058 34.6101C2.6011 34.3192 2.43701 33.9258 2.43365 33.5146C2.43028 33.1034 2.58791 32.7073 2.87259 32.4116L5.55929 29.7142C4.37451 28.0061 3.82604 25.934 4.00996 23.8607C4.19388 21.7875 5.09845 19.8453 6.56524 18.3743L7.77321 17.1615C8.14786 16.7874 8.65479 16.5773 9.1832 16.5773C9.71162 16.5773 10.2185 16.7874 10.5932 17.1615L11.7241 18.2969L14.3275 15.6831C14.6204 15.3894 15.0174 15.2245 15.4313 15.2245C15.8453 15.2245 16.2423 15.3894 16.5352 15.6831ZM9.1832 20.1789L8.77291 20.5908C7.71895 21.6701 7.13186 23.1233 7.13927 24.6348C7.14668 26.1462 7.74798 27.5936 8.81246 28.6624C9.87695 29.7311 11.3186 30.3348 12.824 30.3423C14.3294 30.3497 15.7768 29.7603 16.8517 28.7021L17.262 28.2901L9.1832 20.1789ZM28.3379 17.1699L27.9276 17.5818L19.8488 9.47266L20.259 9.06072C21.334 8.00253 22.7814 7.41309 24.2868 7.42053C25.7922 7.42796 27.2338 8.03168 28.2983 9.10043C29.3628 10.1692 29.9641 11.6166 29.9715 13.128C29.9789 14.6395 29.3918 16.0906 28.3379 17.1699Z" fill="#ADBBFF"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_9036_28064">
+                <rect width="33.457" height="33.457" fill="white" transform="translate(1.82812 2.1543)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+                
+                
+                
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_title">
+            Monitorizare și <br>
+            notificări
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_text">
+            Primiți alerte în timp real și rapoarte detaliate.
+        </div>
+      
+    </div>
+    <div class="mtc_evo_v2_carousell_options_carousell_block">
+        <div class="mtc_evo_v2_carousell_options_carousell_svg">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_9036_28064)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2382 5.35326C34.5141 5.05597 34.6643 4.66275 34.6572 4.25645C34.65 3.85016 34.4861 3.4625 34.1999 3.17516C33.9137 2.88783 33.5276 2.72323 33.1229 2.71606C32.7183 2.7089 32.3266 2.85971 32.0305 3.13673L29.3438 5.83421C27.6426 4.64467 25.5787 4.09401 23.5138 4.27866C21.4488 4.46332 19.5144 5.37152 18.0493 6.84419L16.8413 8.05701C16.4687 8.43316 16.2595 8.94212 16.2595 9.47266C16.2595 10.0032 16.4687 10.5122 16.8413 10.8883L26.5176 20.6034C26.8922 20.9775 27.3992 21.1876 27.9276 21.1876C28.456 21.1876 28.9629 20.9775 29.3376 20.6034L30.5455 19.3906C32.0127 17.9199 32.9176 15.9778 33.1019 13.9046C33.2862 11.8313 32.7381 9.75903 31.5536 8.05073L34.2382 5.35326ZM16.5352 15.6831C16.8277 15.9772 16.992 16.3758 16.992 16.7914C16.992 17.207 16.8277 17.6056 16.5352 17.8996L13.9318 20.5135L16.9309 23.5246L19.5343 20.9108C19.8304 20.6338 20.222 20.4829 20.6267 20.4901C21.0314 20.4973 21.4175 20.6619 21.7037 20.9492C21.9899 21.2365 22.1538 21.6242 22.1609 22.0305C22.1681 22.4368 22.0179 22.83 21.7419 23.1273L19.1385 25.7411L20.2695 26.8766C20.6421 27.2527 20.8513 27.7617 20.8513 28.2922C20.8513 28.8228 20.6421 29.3317 20.2695 29.7079L19.0615 30.9207C17.5967 32.3937 15.6624 33.3023 13.5974 33.4873C11.5324 33.6724 9.46843 33.122 7.76696 31.9328L5.08026 34.6303C4.78553 34.9158 4.39088 35.0737 3.98132 35.0699C3.57176 35.0662 3.18006 34.901 2.89058 34.6101C2.6011 34.3192 2.43701 33.9258 2.43365 33.5146C2.43028 33.1034 2.58791 32.7073 2.87259 32.4116L5.55929 29.7142C4.37451 28.0061 3.82604 25.934 4.00996 23.8607C4.19388 21.7875 5.09845 19.8453 6.56524 18.3743L7.77321 17.1615C8.14786 16.7874 8.65479 16.5773 9.1832 16.5773C9.71162 16.5773 10.2185 16.7874 10.5932 17.1615L11.7241 18.2969L14.3275 15.6831C14.6204 15.3894 15.0174 15.2245 15.4313 15.2245C15.8453 15.2245 16.2423 15.3894 16.5352 15.6831ZM9.1832 20.1789L8.77291 20.5908C7.71895 21.6701 7.13186 23.1233 7.13927 24.6348C7.14668 26.1462 7.74798 27.5936 8.81246 28.6624C9.87695 29.7311 11.3186 30.3348 12.824 30.3423C14.3294 30.3497 15.7768 29.7603 16.8517 28.7021L17.262 28.2901L9.1832 20.1789ZM28.3379 17.1699L27.9276 17.5818L19.8488 9.47266L20.259 9.06072C21.334 8.00253 22.7814 7.41309 24.2868 7.42053C25.7922 7.42796 27.2338 8.03168 28.2983 9.10043C29.3628 10.1692 29.9641 11.6166 29.9715 13.128C29.9789 14.6395 29.3918 16.0906 28.3379 17.1699Z" fill="#ADBBFF"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_9036_28064">
+                <rect width="33.457" height="33.457" fill="white" transform="translate(1.82812 2.1543)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+                
+                
+                
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_title">
+            Compatibilitate <br>
+            completă
+        </div>
+        <div class="mtc_evo_v2_carousell_options_carousell_text">
+            Funcționează cu orice conexiune la Internet de la Moldtelecom.
+        </div>
+      
+    </div>
+  
+  
+</div>
+
+
+<script>
+     $('.mtc_evo_v2_carousell_options_carousell').slick({
+      
+      arrows: false,
+      dots: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      variableWidth: true,
+      responsive: [
+          {
+              breakpoint: 1351,
+              settings: {
+                  slidesToShow: 3,
+              },
+          },
+          {
+              breakpoint: 951,
+              settings: {
+                  slidesToShow: 2,
+              },
+          },
+          {
+              breakpoint: 651,
+              settings: {
+                  slidesToShow: 1,
+
+              },
+          },
+      ],
+                    });
+
+</script>
+
+
+
+
+
+<div class="mtc_evo_v2_title mtc_evo_v2_title_abonament">
+    Protejeaza sistemele informaţionale împotriva atacurilor
+</div>
+
+<style>
+    .carousell_1_portare{
+        margin-top: -20px;
+    }
+    .carousell_1_portare .slick-arrow {
+        top: 230px;
+    }
+
+    .carousell_1_portare_inside {
+        margin: 0 auto;
+        display: flex !important;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .carousell_1_portare_card {
+        border-radius: 20px;
+        border: 1px solid #D9DFFF;
+        background: #FFF;
+        width: 280px;
+        /* height: 473px; */
+        padding: 20px 20px;
+        box-sizing: border-box;
+    }
+
+    .carousell_1_portare_card_abonament {
+        color: #828282;
+        font-family: "Open Sans";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        /* 160% */
+        margin-left: 10px;
+    }
+
+    .carousell_1_portare_card_abonament_big {
+        color: #2B2B2B;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        /* 66.667% */
+        letter-spacing: -0.48px;
+    }
+
+    .carousell_1_portare_btn {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .carousell_1_portare_card_blocks {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .carousell_1_portare_card_block {
+        border-radius: 10px;
+        background: #F3F5FF;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        color: #2B2B2B;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    /* .carousell_1_portare_card_block:hover{
+background: #eff2fd;
+} */
+    .carousell_1_portare_card_block_white {
+        background: #fff;
+    }
+
+    /* .carousell_1_portare_card_block_white:hover{
+background: #fafcff;
+} */
+    .carousell_1_portare_card_block_svg {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousell_1_portare_card_price {
+
+        display: flex;
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .carousell_1_portare_card_price_left {
+        color: #2B2B2B;
+        font-family: "Source Sans Pro";
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        /* 52.381% */
+    }
+
+    .carousell_1_portare_card_price_right {}
+
+    .carousell_1_portare_card_price_right_top {
+        color: #2B2B2B;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .carousell_1_portare_card_price_right_bottom {
+        color: #BBB;
+        font-family: "Source Sans Pro";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        text-decoration-line: line-through;
+    }
+
+    .carousell_1_portare_plus {
+        margin: -14px auto 14px;
+        z-index: 3;
+    }
+
+    .carousell_1_portare_onenumber {
+        width: 100%;
+        max-width: 280px;
+        border: 1px solid #F3F5FF;
+        border-radius: 18px;
+        margin-top: -30px;
+    }
+
+    .carousell_1_portare_onenumber img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousell_1_portare_menu{
+    color: #2B2B2B;
+font-family: "Open Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: -0.34px;
+    }
+    @media (max-width:650px) {
+        .carousell_1_portare_inside{
+           align-items: center;
+        }
+    }
+</style>
+<div class="carousell_1_portare" id="portare_abonamente">
+    <div class="carousell_1_portare_inside">
+        <div class="carousell_1_portare_card">
+            <div class="carousell_1_portare_card_abonament">
+                Opțiunea <br>
+                <span class="carousell_1_portare_card_abonament_big">BASIC</span>
+            </div>
+
+            <div class="carousell_1_portare_card_blocks">
+                <div class="carousell_1_portare_card_block carousell_1_portare_card_block_white">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7747 0.522799L18.4754 3.41056C18.8949 3.5678 19.2564 3.84934 19.5116 4.21755C19.7667 4.58575 19.9034 5.02307 19.9034 5.47105V11.3709C19.9034 13.2096 19.3914 15.012 18.4248 16.5762C17.4581 18.1403 16.075 19.4044 14.4304 20.2267L10.7406 22.0705C10.5114 22.1851 10.2587 22.2448 10.0025 22.2448C9.74621 22.2448 9.49348 22.1851 9.2643 22.0705L5.57456 20.2256C3.92995 19.4033 2.54683 18.1392 1.58017 16.5751C0.613517 15.0109 0.101523 13.2085 0.101563 11.3698V5.47215C0.101283 5.02398 0.237871 4.58642 0.493053 4.218C0.748236 3.84958 1.10984 3.56787 1.52949 3.41056L9.2302 0.522799C9.72813 0.33615 10.2768 0.33615 10.7747 0.522799ZM10.0025 13.5095C9.7107 13.5095 9.43089 13.6254 9.22458 13.8317C9.01827 14.038 8.90236 14.3178 8.90236 14.6096C8.90236 14.9013 9.01827 15.1812 9.22458 15.3875C9.43089 15.5938 9.7107 15.7097 10.0025 15.7097C10.2942 15.7097 10.574 15.5938 10.7804 15.3875C10.9867 15.1812 11.1026 14.9013 11.1026 14.6096C11.1026 14.3178 10.9867 14.038 10.7804 13.8317C10.574 13.6254 10.2942 13.5095 10.0025 13.5095ZM10.0025 5.80878C9.73301 5.80882 9.47295 5.90774 9.27159 6.08679C9.07023 6.26584 8.94159 6.51257 8.91007 6.78017L8.90236 6.90888V11.3093C8.90268 11.5897 9.01004 11.8594 9.20253 12.0633C9.39501 12.2671 9.65808 12.3898 9.93799 12.4063C10.2179 12.4227 10.4935 12.3316 10.7085 12.1517C10.9236 11.9717 11.0617 11.7164 11.0949 11.438L11.1026 11.3093V6.90888C11.1026 6.61712 10.9867 6.3373 10.7804 6.13099C10.574 5.92468 10.2942 5.80878 10.0025 5.80878Z" fill="#2B2B2B"/>
+                            </svg>
+                            
+
+                    </div>
+                    <span> Protecție DDOS de bază</span>
+                </div>
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.10156 7.24512C3.10156 6.71468 3.31228 6.20598 3.68735 5.8309C4.06242 5.45583 4.57113 5.24512 5.10156 5.24512H19.1016C19.632 5.24512 20.1407 5.45583 20.5158 5.8309C20.8908 6.20598 21.1016 6.71468 21.1016 7.24512V17.2451C21.1016 17.7756 20.8908 18.2843 20.5158 18.6593C20.1407 19.0344 19.632 19.2451 19.1016 19.2451H5.10156C4.57113 19.2451 4.06242 19.0344 3.68735 18.6593C3.31228 18.2843 3.10156 17.7756 3.10156 17.2451V7.24512Z" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.10156 7.24512L12.1016 13.2451L21.1016 7.24512" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;"> Notificarea </span> clientului <br>
+prin email
+                       
+                </div>
+               
+                <div class="carousell_1_portare_card_block" style="opacity: 0;">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.10156 10.2451H6.10156C5.57113 10.2451 5.06242 10.4558 4.68735 10.8309C4.31228 11.206 4.10156 11.7147 4.10156 12.2451V19.2451C4.10156 19.7756 4.31228 20.2843 4.68735 20.6593C5.06242 21.0344 5.57113 21.2451 6.10156 21.2451H18.1016C18.632 21.2451 19.1407 21.0344 19.5158 20.6593C19.8908 20.2843 20.1016 19.7756 20.1016 19.2451V12.2451C20.1016 11.7147 19.8908 11.206 19.5158 10.8309C19.1407 10.4558 18.632 10.2451 18.1016 10.2451H16.1016M8.10156 10.2451V7.24512C8.10156 6.18425 8.52299 5.16684 9.27314 4.41669C10.0233 3.66654 11.0407 3.24512 12.1016 3.24512C13.1624 3.24512 14.1798 3.66654 14.93 4.41669C15.6801 5.16684 16.1016 6.18425 16.1016 7.24512V10.2451M8.10156 10.2451H16.1016M12.1016 14.2451V17.2451" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;">Safe WEB</span> </span>
+                </div>
+               
+
+            </div>
+
+            <div class="carousell_1_portare_card_price">
+                <div class="carousell_1_portare_card_price_left">
+                    20
+                </div>
+                <div class="carousell_1_portare_card_price_right">
+                    <div class="carousell_1_portare_card_price_right_top">
+                        lei/lună
+                    </div>
+                    <!-- <div class="carousell_1_portare_card_price_right_bottom" style="opacity: 0;">
+150 preț standard
+</div> -->
+                </div>
+
+            </div>
+
+            <div class="mtc_evo_v2_btn carousell_1_portare_btn"
+                onclick="scroll_to_form('Basic')">
+                Comandă acum
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    <div class="carousell_1_portare_inside">
+        <div class="carousell_1_portare_card">
+            <div class="carousell_1_portare_card_abonament">
+                Opțiunea <br>
+                <span class="carousell_1_portare_card_abonament_big">BASIC <span class="carousell_1_portare_menu">+ SAFE WEB</span></span>
+            </div>
+
+            <div class="carousell_1_portare_card_blocks">
+                <div class="carousell_1_portare_card_block carousell_1_portare_card_block_white">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7747 0.522799L18.4754 3.41056C18.8949 3.5678 19.2564 3.84934 19.5116 4.21755C19.7667 4.58575 19.9034 5.02307 19.9034 5.47105V11.3709C19.9034 13.2096 19.3914 15.012 18.4248 16.5762C17.4581 18.1403 16.075 19.4044 14.4304 20.2267L10.7406 22.0705C10.5114 22.1851 10.2587 22.2448 10.0025 22.2448C9.74621 22.2448 9.49348 22.1851 9.2643 22.0705L5.57456 20.2256C3.92995 19.4033 2.54683 18.1392 1.58017 16.5751C0.613517 15.0109 0.101523 13.2085 0.101563 11.3698V5.47215C0.101283 5.02398 0.237871 4.58642 0.493053 4.218C0.748236 3.84958 1.10984 3.56787 1.52949 3.41056L9.2302 0.522799C9.72813 0.33615 10.2768 0.33615 10.7747 0.522799ZM10.0025 13.5095C9.7107 13.5095 9.43089 13.6254 9.22458 13.8317C9.01827 14.038 8.90236 14.3178 8.90236 14.6096C8.90236 14.9013 9.01827 15.1812 9.22458 15.3875C9.43089 15.5938 9.7107 15.7097 10.0025 15.7097C10.2942 15.7097 10.574 15.5938 10.7804 15.3875C10.9867 15.1812 11.1026 14.9013 11.1026 14.6096C11.1026 14.3178 10.9867 14.038 10.7804 13.8317C10.574 13.6254 10.2942 13.5095 10.0025 13.5095ZM10.0025 5.80878C9.73301 5.80882 9.47295 5.90774 9.27159 6.08679C9.07023 6.26584 8.94159 6.51257 8.91007 6.78017L8.90236 6.90888V11.3093C8.90268 11.5897 9.01004 11.8594 9.20253 12.0633C9.39501 12.2671 9.65808 12.3898 9.93799 12.4063C10.2179 12.4227 10.4935 12.3316 10.7085 12.1517C10.9236 11.9717 11.0617 11.7164 11.0949 11.438L11.1026 11.3093V6.90888C11.1026 6.61712 10.9867 6.3373 10.7804 6.13099C10.574 5.92468 10.2942 5.80878 10.0025 5.80878Z" fill="#2B2B2B"/>
+                            </svg>
+                            
+
+                    </div>
+                    <span> Protecție DDOS de bază</span>
+                </div>
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.10156 7.24512C3.10156 6.71468 3.31228 6.20598 3.68735 5.8309C4.06242 5.45583 4.57113 5.24512 5.10156 5.24512H19.1016C19.632 5.24512 20.1407 5.45583 20.5158 5.8309C20.8908 6.20598 21.1016 6.71468 21.1016 7.24512V17.2451C21.1016 17.7756 20.8908 18.2843 20.5158 18.6593C20.1407 19.0344 19.632 19.2451 19.1016 19.2451H5.10156C4.57113 19.2451 4.06242 19.0344 3.68735 18.6593C3.31228 18.2843 3.10156 17.7756 3.10156 17.2451V7.24512Z" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.10156 7.24512L12.1016 13.2451L21.1016 7.24512" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;"> Notificarea </span> clientului <br>
+prin email
+                       
+                </div>
+               
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.10156 10.2451H6.10156C5.57113 10.2451 5.06242 10.4558 4.68735 10.8309C4.31228 11.206 4.10156 11.7147 4.10156 12.2451V19.2451C4.10156 19.7756 4.31228 20.2843 4.68735 20.6593C5.06242 21.0344 5.57113 21.2451 6.10156 21.2451H18.1016C18.632 21.2451 19.1407 21.0344 19.5158 20.6593C19.8908 20.2843 20.1016 19.7756 20.1016 19.2451V12.2451C20.1016 11.7147 19.8908 11.206 19.5158 10.8309C19.1407 10.4558 18.632 10.2451 18.1016 10.2451H16.1016M8.10156 10.2451V7.24512C8.10156 6.18425 8.52299 5.16684 9.27314 4.41669C10.0233 3.66654 11.0407 3.24512 12.1016 3.24512C13.1624 3.24512 14.1798 3.66654 14.93 4.41669C15.6801 5.16684 16.1016 6.18425 16.1016 7.24512V10.2451M8.10156 10.2451H16.1016M12.1016 14.2451V17.2451" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;">Safe WEB</span> </span>
+                </div>
+               
+
+            </div>
+
+            <div class="carousell_1_portare_card_price">
+                <div class="carousell_1_portare_card_price_left">
+                    30
+                </div>
+                <div class="carousell_1_portare_card_price_right">
+                    <div class="carousell_1_portare_card_price_right_top">
+                        lei/lună
+                    </div>
+                    <!-- <div class="carousell_1_portare_card_price_right_bottom" style="opacity: 0;">
+150 preț standard
+</div> -->
+                </div>
+
+            </div>
+
+            <div class="mtc_evo_v2_btn carousell_1_portare_btn"
+                onclick="scroll_to_form('BASIC_SAFE_WEB')">
+                Comandă acum
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    <div class="carousell_1_portare_inside">
+        <div class="carousell_1_portare_card">
+            <div class="carousell_1_portare_card_abonament">
+                Opțiunea <br>
+                <span class="carousell_1_portare_card_abonament_big">ADVANCED</span>
+            </div>
+
+            <div class="carousell_1_portare_card_blocks">
+                <div class="carousell_1_portare_card_block carousell_1_portare_card_block_white">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7747 0.522799L18.4754 3.41056C18.8949 3.5678 19.2564 3.84934 19.5116 4.21755C19.7667 4.58575 19.9034 5.02307 19.9034 5.47105V11.3709C19.9034 13.2096 19.3914 15.012 18.4248 16.5762C17.4581 18.1403 16.075 19.4044 14.4304 20.2267L10.7406 22.0705C10.5114 22.1851 10.2587 22.2448 10.0025 22.2448C9.74621 22.2448 9.49348 22.1851 9.2643 22.0705L5.57456 20.2256C3.92995 19.4033 2.54683 18.1392 1.58017 16.5751C0.613517 15.0109 0.101523 13.2085 0.101563 11.3698V5.47215C0.101283 5.02398 0.237871 4.58642 0.493053 4.218C0.748236 3.84958 1.10984 3.56787 1.52949 3.41056L9.2302 0.522799C9.72813 0.33615 10.2768 0.33615 10.7747 0.522799ZM10.0025 13.5095C9.7107 13.5095 9.43089 13.6254 9.22458 13.8317C9.01827 14.038 8.90236 14.3178 8.90236 14.6096C8.90236 14.9013 9.01827 15.1812 9.22458 15.3875C9.43089 15.5938 9.7107 15.7097 10.0025 15.7097C10.2942 15.7097 10.574 15.5938 10.7804 15.3875C10.9867 15.1812 11.1026 14.9013 11.1026 14.6096C11.1026 14.3178 10.9867 14.038 10.7804 13.8317C10.574 13.6254 10.2942 13.5095 10.0025 13.5095ZM10.0025 5.80878C9.73301 5.80882 9.47295 5.90774 9.27159 6.08679C9.07023 6.26584 8.94159 6.51257 8.91007 6.78017L8.90236 6.90888V11.3093C8.90268 11.5897 9.01004 11.8594 9.20253 12.0633C9.39501 12.2671 9.65808 12.3898 9.93799 12.4063C10.2179 12.4227 10.4935 12.3316 10.7085 12.1517C10.9236 11.9717 11.0617 11.7164 11.0949 11.438L11.1026 11.3093V6.90888C11.1026 6.61712 10.9867 6.3373 10.7804 6.13099C10.574 5.92468 10.2942 5.80878 10.0025 5.80878Z" fill="#2B2B2B"/>
+                            </svg>
+                            
+
+                    </div>
+                    <span> Protecție   <span style="font-weight: 700;"><span style="color: #EF4D6C;">Avansată</span> DDOS</span></span>
+                </div>
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.10156 7.24512C3.10156 6.71468 3.31228 6.20598 3.68735 5.8309C4.06242 5.45583 4.57113 5.24512 5.10156 5.24512H19.1016C19.632 5.24512 20.1407 5.45583 20.5158 5.8309C20.8908 6.20598 21.1016 6.71468 21.1016 7.24512V17.2451C21.1016 17.7756 20.8908 18.2843 20.5158 18.6593C20.1407 19.0344 19.632 19.2451 19.1016 19.2451H5.10156C4.57113 19.2451 4.06242 19.0344 3.68735 18.6593C3.31228 18.2843 3.10156 17.7756 3.10156 17.2451V7.24512Z" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.10156 7.24512L12.1016 13.2451L21.1016 7.24512" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;"> Notificarea </span> clientului <br>
+prin email
+                       
+                </div>
+               
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.10156 10.2451H6.10156C5.57113 10.2451 5.06242 10.4558 4.68735 10.8309C4.31228 11.206 4.10156 11.7147 4.10156 12.2451V19.2451C4.10156 19.7756 4.31228 20.2843 4.68735 20.6593C5.06242 21.0344 5.57113 21.2451 6.10156 21.2451H18.1016C18.632 21.2451 19.1407 21.0344 19.5158 20.6593C19.8908 20.2843 20.1016 19.7756 20.1016 19.2451V12.2451C20.1016 11.7147 19.8908 11.206 19.5158 10.8309C19.1407 10.4558 18.632 10.2451 18.1016 10.2451H16.1016M8.10156 10.2451V7.24512C8.10156 6.18425 8.52299 5.16684 9.27314 4.41669C10.0233 3.66654 11.0407 3.24512 12.1016 3.24512C13.1624 3.24512 14.1798 3.66654 14.93 4.41669C15.6801 5.16684 16.1016 6.18425 16.1016 7.24512V10.2451M8.10156 10.2451H16.1016M12.1016 14.2451V17.2451" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;">Safe WEB</span> </span>
+                </div>
+               
+
+            </div>
+
+            <div class="carousell_1_portare_card_price">
+                <div class="carousell_1_portare_card_price_left">
+                    150
+                </div>
+                <div class="carousell_1_portare_card_price_right">
+                    <div class="carousell_1_portare_card_price_right_top">
+                        lei/lună
+                    </div>
+                    <div class="carousell_1_portare_card_price_right_bottom" >
+                        380  lei/lună
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="mtc_evo_v2_btn carousell_1_portare_btn"
+                onclick="scroll_to_form('ADVANCED')">
+                Comandă acum
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    <div class="carousell_1_portare_inside">
+        <div class="carousell_1_portare_card">
+            <div class="carousell_1_portare_card_abonament">
+                Opțiunea <br>
+                <span class="carousell_1_portare_card_abonament_big">PREMIUM</span>
+            </div>
+
+            <div class="carousell_1_portare_card_blocks">
+                <div class="carousell_1_portare_card_block carousell_1_portare_card_block_white">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7747 0.522799L18.4754 3.41056C18.8949 3.5678 19.2564 3.84934 19.5116 4.21755C19.7667 4.58575 19.9034 5.02307 19.9034 5.47105V11.3709C19.9034 13.2096 19.3914 15.012 18.4248 16.5762C17.4581 18.1403 16.075 19.4044 14.4304 20.2267L10.7406 22.0705C10.5114 22.1851 10.2587 22.2448 10.0025 22.2448C9.74621 22.2448 9.49348 22.1851 9.2643 22.0705L5.57456 20.2256C3.92995 19.4033 2.54683 18.1392 1.58017 16.5751C0.613517 15.0109 0.101523 13.2085 0.101563 11.3698V5.47215C0.101283 5.02398 0.237871 4.58642 0.493053 4.218C0.748236 3.84958 1.10984 3.56787 1.52949 3.41056L9.2302 0.522799C9.72813 0.33615 10.2768 0.33615 10.7747 0.522799ZM10.0025 13.5095C9.7107 13.5095 9.43089 13.6254 9.22458 13.8317C9.01827 14.038 8.90236 14.3178 8.90236 14.6096C8.90236 14.9013 9.01827 15.1812 9.22458 15.3875C9.43089 15.5938 9.7107 15.7097 10.0025 15.7097C10.2942 15.7097 10.574 15.5938 10.7804 15.3875C10.9867 15.1812 11.1026 14.9013 11.1026 14.6096C11.1026 14.3178 10.9867 14.038 10.7804 13.8317C10.574 13.6254 10.2942 13.5095 10.0025 13.5095ZM10.0025 5.80878C9.73301 5.80882 9.47295 5.90774 9.27159 6.08679C9.07023 6.26584 8.94159 6.51257 8.91007 6.78017L8.90236 6.90888V11.3093C8.90268 11.5897 9.01004 11.8594 9.20253 12.0633C9.39501 12.2671 9.65808 12.3898 9.93799 12.4063C10.2179 12.4227 10.4935 12.3316 10.7085 12.1517C10.9236 11.9717 11.0617 11.7164 11.0949 11.438L11.1026 11.3093V6.90888C11.1026 6.61712 10.9867 6.3373 10.7804 6.13099C10.574 5.92468 10.2942 5.80878 10.0025 5.80878Z" fill="#2B2B2B"/>
+                            </svg>
+                            
+
+                    </div>
+                    <span> Protecție   <span style="font-weight: 700;"><span style="color: #ADBBFF;">Premium</span> DDOS</span></span>
+                </div>
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.10156 7.24512C3.10156 6.71468 3.31228 6.20598 3.68735 5.8309C4.06242 5.45583 4.57113 5.24512 5.10156 5.24512H19.1016C19.632 5.24512 20.1407 5.45583 20.5158 5.8309C20.8908 6.20598 21.1016 6.71468 21.1016 7.24512V17.2451C21.1016 17.7756 20.8908 18.2843 20.5158 18.6593C20.1407 19.0344 19.632 19.2451 19.1016 19.2451H5.10156C4.57113 19.2451 4.06242 19.0344 3.68735 18.6593C3.31228 18.2843 3.10156 17.7756 3.10156 17.2451V7.24512Z" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.10156 7.24512L12.1016 13.2451L21.1016 7.24512" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;"> Notificarea </span> clientului <br>
+prin email
+                       
+                </div>
+               
+                <div class="carousell_1_portare_card_block">
+                    <div class="carousell_1_portare_card_block_svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.10156 10.2451H6.10156C5.57113 10.2451 5.06242 10.4558 4.68735 10.8309C4.31228 11.206 4.10156 11.7147 4.10156 12.2451V19.2451C4.10156 19.7756 4.31228 20.2843 4.68735 20.6593C5.06242 21.0344 5.57113 21.2451 6.10156 21.2451H18.1016C18.632 21.2451 19.1407 21.0344 19.5158 20.6593C19.8908 20.2843 20.1016 19.7756 20.1016 19.2451V12.2451C20.1016 11.7147 19.8908 11.206 19.5158 10.8309C19.1407 10.4558 18.632 10.2451 18.1016 10.2451H16.1016M8.10156 10.2451V7.24512C8.10156 6.18425 8.52299 5.16684 9.27314 4.41669C10.0233 3.66654 11.0407 3.24512 12.1016 3.24512C13.1624 3.24512 14.1798 3.66654 14.93 4.41669C15.6801 5.16684 16.1016 6.18425 16.1016 7.24512V10.2451M8.10156 10.2451H16.1016M12.1016 14.2451V17.2451" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+
+
+
+                    </div>
+
+                    <span>
+                        <span style="font-weight: 700;">Safe WEB</span> </span>
+                </div>
+               
+
+            </div>
+
+            <div class="carousell_1_portare_card_price">
+                <div class="carousell_1_portare_card_price_left">
+                    750
+                </div>
+                <div class="carousell_1_portare_card_price_right">
+                    <div class="carousell_1_portare_card_price_right_top">
+                        lei/lună
+                    </div>
+                  <div class="carousell_1_portare_card_price_right_bottom" >
+1390  lei/lună
+</div>  
+                </div>
+
+            </div>
+
+            <div class="mtc_evo_v2_btn carousell_1_portare_btn"
+                onclick="scroll_to_form('PREMIUM')">
+                Comandă acum
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+  
+
+
+
+
+</div>
+
+<script>
+    $('.carousell_1_portare').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        responsive: [
+            {
+                breakpoint: 1301,
+                settings: {
+                    slidesToShow: 3,
+                    autoplay: true,
+                },
+            },
+            {
+                breakpoint: 951,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 651,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+
+
+   
+</script>
+
+
+<style>
+    .form_ddos{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+        border-radius: 20px;
+border: 1px solid #EDF0FD;
+    }
+    .form_ddos_title{
+        color: #2F3043;
+font-family: "Source Sans Pro";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 120% */
+letter-spacing: -0.3px;
+    }
+    .infractiune_form_input, #ddos_select{
+    border-radius: 1000px;
+border: 1px solid #D9DFFF;
+height: 50px;
+padding: 0px 20px;
+box-sizing: border-box;
+color: #333;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+width: 100%;
+max-width: 245px;
+}
+.infractiune_form_input_half{
+width: 100%;
+max-width: 245px;
+}
+.infractiune_form_input_svg{
+    height: 50px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px 0 -45px;
+
+}
+.infractiune_form_input_with_svg{
+    display: flex;
+}
+.infractiune_form_input::placeholder {
+    color: #9E9E9E;
+}
+.mtc_evo_v2_form_comanda_ddos button{
+    margin-top: 10px;
+    height: 48px;
+}
+.mtc_evo_v2_form_comanda_ddos{
+    margin-top: 20px;
+}
+.mtc_evo_v2_form_comanda_ddos_inputs{
+    display: flex;
+    gap:10px
+}
+
+@media (max-width:950px) {
+    .mtc_evo_v2_form_comanda_ddos_inputs{
+        flex-wrap: wrap;
+    }
+    
+}
+</style>
+
+<div class="form_ddos">
+    <div class="form_ddos_title" id="form_ddos_title">
+        Protejați-vă afacerea ACUM!
+    </div>
+
+    <form action="/comanda_acum" class="g-recaptcha-form disableAfterClick mtc_evo_v2_form_comanda_ddos" id="tm_comanda_form">
+        <input class="recaptchaResponse" name="recaptcha_response" type="hidden" /><input name="comanda_acum_type" type="hidden" value="Business" /> <input id="tp_type_input" name="type" type="hidden" value="MaxFiber Business" />
+
+        <input id="form_language" name="lang" type="hidden" value="ro" /> <input class="token portare" name="_token" type="hidden" value="d3Ttqmjlp6MwGW8gXDT1pkcmaw1VGTjrEzOtyIoz" />
+
+
+      
+        <div class="mtc_evo_v2_form_comanda_ddos_inputs">
+        <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+            <input class="infractiune_form_input" name="company" placeholder="Nume companie *" required="">
+        <div class="infractiune_form_input_svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 3C8.90524 3 6.66667 5.23858 6.66667 8C6.66667 10.7614 8.90524 13 11.6667 13C14.4281 13 16.6667 10.7614 16.6667 8C16.6667 5.23858 14.4281 3 11.6667 3ZM8.66667 8C8.66667 6.34315 10.0098 5 11.6667 5C13.3235 5 14.6667 6.34315 14.6667 8C14.6667 9.65685 13.3235 11 11.6667 11C10.0098 11 8.66667 9.65685 8.66667 8Z" fill="#D9DFFF"/>
+                <path d="M3 20.5455C3 16.9305 5.9305 14 9.54545 14H13.7879C17.4028 14 20.3333 16.9305 20.3333 20.5455V20.9091C20.3333 21.5116 19.8449 22 19.2424 22C18.6399 22 18.1515 21.5116 18.1515 20.9091V20.5455C18.1515 18.1355 16.1979 16.1818 13.7879 16.1818H9.54545C7.13548 16.1818 5.18182 18.1355 5.18182 20.5455V20.9091C5.18182 21.5116 4.6934 22 4.09091 22C3.48842 22 3 21.5116 3 20.9091V20.5455Z" fill="#D9DFFF"/>
+                </svg>
+                
+                
+        </div>
+        </div>
+        <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+            <input class="infractiune_form_input" name="email" placeholder="Email *" required="">
+        <div class="infractiune_form_input_svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.77778 12.6667L11.6979 21.3071C11.8068 21.7971 12.4583 21.9029 12.7166 21.4724L21.4952 6.84139C21.7173 6.4711 21.4506 6 21.0188 6H3.50181C2.98603 6 2.74865 6.6417 3.14026 6.97737L9.77778 12.6667ZM9.77778 12.6667L20.8889 6.55556" stroke="#D9DFFF" stroke-width="2"/>
+                </svg>
+                
+        </div>
+        </div>
+        <div class="infractiune_form_input_with_svg infractiune_form_input_half">
+            <input class="infractiune_form_input" maxlength="9" pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}" name="phone" placeholder="0** *** *** " required="">
+        <div class="infractiune_form_input_svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0261 22.0042C17.1545 22.0042 15.9301 21.689 14.0966 20.6646C11.8671 19.4143 10.1426 18.26 7.92511 16.0484C5.78712 13.9117 4.7467 12.5284 3.29056 9.87864C1.64553 6.88688 1.92596 5.31866 2.23942 4.64841C2.61272 3.84734 3.16374 3.36821 3.87596 2.89265C4.2805 2.6276 4.7086 2.4004 5.15483 2.21392C5.19948 2.19472 5.24101 2.17641 5.27807 2.15989C5.49911 2.06031 5.834 1.90983 6.25821 2.07058C6.54131 2.17686 6.79405 2.39432 7.18968 2.78504C8.00102 3.58522 9.10976 5.36733 9.51879 6.24253C9.7934 6.8324 9.97514 7.22178 9.97559 7.65849C9.97559 8.16976 9.71839 8.56405 9.40626 8.9896C9.34776 9.06953 9.28972 9.14588 9.23345 9.22001C8.89364 9.66654 8.81907 9.79559 8.86819 10.026C8.96777 10.4891 9.71035 11.8675 10.9307 13.0852C12.1511 14.3029 13.4898 14.9986 13.9546 15.0977C14.1949 15.1491 14.3266 15.0714 14.7874 14.7195C14.8535 14.669 14.9214 14.6168 14.9924 14.5646C15.4684 14.2105 15.8444 13.9599 16.3436 13.9599H16.3463C16.7807 13.9599 17.1527 14.1484 17.7689 14.4592C18.5727 14.8646 20.4084 15.9591 21.2135 16.7713C21.6051 17.166 21.8234 17.4179 21.9301 17.7005C22.0909 18.1261 21.9395 18.4597 21.8408 18.6829C21.8243 18.72 21.806 18.7606 21.7868 18.8057C21.5989 19.2511 21.3703 19.6783 21.1041 20.0819C20.6294 20.7919 20.1485 21.3416 19.3456 21.7153C18.9334 21.9103 18.4822 22.0091 18.0261 22.0042Z" fill="#D9DFFF"/>
+                </svg>
+                
+                
+        </div>
+        </div>
+        <select name="ddos_select" id="ddos_select">
+            <option value="Basic" >Basic </option>
+            <option value="BASIC_SAFE_WEB" >BASIC + SAFE WEB </option>
+            <option value="ADVANCED" >ADVANCED </option>
+            <option value="PREMIUM" >PREMIUM </option>
+        </select>
+       </div>
+        <button class="mtc_evo_v2_btn" name="submitButton" type="submit">
+            Comandă acum
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.25066 4.99997C0.25066 4.80106 0.329678 4.61029 0.47033 4.46964C0.610983 4.32899 0.801748 4.24997 1.00066 4.24997L11.1907 4.24997L8.47066 1.52997C8.33818 1.38779 8.26606 1.19975 8.26948 1.00545C8.27291 0.811145 8.35162 0.62576 8.48904 0.488347C8.62645 0.350934 8.81184 0.272222 9.00614 0.268794C9.20044 0.265365 9.38849 0.337489 9.53066 0.469969L13.5307 4.46997C13.6711 4.61059 13.75 4.80122 13.75 4.99997C13.75 5.19872 13.6711 5.38934 13.5307 5.52997L9.53066 9.52997C9.38849 9.66245 9.20044 9.73457 9.00614 9.73114C8.81184 9.72772 8.62645 9.649 8.48904 9.51159C8.35162 9.37418 8.27291 9.18879 8.26948 8.99449C8.26606 8.80019 8.33818 8.61214 8.47066 8.46997L11.1907 5.74997L1.00066 5.74997C0.801748 5.74997 0.610983 5.67095 0.47033 5.5303C0.329678 5.38965 0.25066 5.19888 0.25066 4.99997Z"
+                    fill="white"></path>
+            </svg>
+            </svg></button>
+    </form>
+    
+</div>
+
+
+
+
+<script>
+    function scroll_to_form(plan) {
+    // Select the dropdown element
+    const selectElement = document.getElementById('ddos_select');
+    
+    // Set the selected value
+    if (selectElement) {
+        selectElement.value = plan;
+    }
+
+    // Scroll to the form title smoothly
+    document
+        .getElementById('form_ddos_title')
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+</script>
+<style>
+    #mtc_evo_v2_faq{
+        width: 100%;
+        border-radius: 16px;
+background: #F3F5FF;
+padding: 40px;
+box-sizing: border-box;
+padding-bottom: 60px;
+display: flex;
+flex-direction: column;
+    align-items: center;
+ 
+    }
+    .mtc_evo_v2_faq_title{
+        color: #2F3043;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 100% */
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+padding-bottom: 32px;
+    }
+    #mtc_evo_v2_btn_faq{
+    background:transparent;
+    border: 1px solid #292C48;
+    color: #292C48;
+    margin-top: 32px;
+    margin-bottom: -20px;
+}
+ 
+#mtc_evo_v2_btn_faq svg{
+    margin: 0 0 0 0;
+    transition: margin 0.3s ease;
+  }
+  #mtc_evo_v2_btn_faq:hover{
+    border: 1px solid #D9DFFF;
+  }
+  #mtc_evo_v2_btn_faq:hover svg{
+   margin: 0 -2.5px 0 2.5px;
+ 
+}
+.mtc_evo_v2_block_faq{
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+border-bottom: 1px solid #DFE4FD;
+}
+
+.mtc_evo_v2_block_faq_title{
+    display: flex;
+    color: #333;
+font-family: "Source Sans Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; /* 100% */
+letter-spacing: 0.18px;
+width: 100%;
+gap:10px;
+cursor: pointer;
+padding: 13px 30px 13px 20px;
+box-sizing: border-box;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.mtc_evo_v2_block_faq_inside{
+    padding: 5px 20px 15px;
+box-sizing: border-box;
+width: 100%;
+margin-top: -5px;
+}
+.mtc_evo_v2_block_faq_svg_container, .mtc_evo_v2_block_faq_svg_container svg{
+    width: 24px;
+    height: 24px;
+    border-top: 0px!important;
+}
+
+@media (max-width:650px) {
+    #mtc_evo_v2_faq {
+    padding: 40px 20px;
+}
+.mtc_evo_v2_block_faq_title {
+    padding: 13px 10px 13px 10px;
+}
+.mtc_evo_v2_block_faq_inside {
+    padding: 5px 10px 15px;
+}
+}
+</style>
+<div id="mtc_evo_v2_faq">
+<div class="mtc_evo_v2_faq_title">
+    FAQ
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Ce este un atac DDoS și cum îți poate afecta afacerea?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Un atac DDoS (Distributed Denial of Service) este o amenințare cibernetică care poate paraliza activitatea online a afacerii tale. Acesta constă într-un val masiv de trafic malițios trimis către site-ul sau serverele tale, cu scopul de a le suprasolicita și bloca.
+<b>Cum te poate afecta?</b>
+<ul>
+   <li> <b>Blocarea website-ului</b> – Clienții nu mai pot accesa magazinul online sau serviciile digitale.</li>
+   <li>  <b>Pierderi financiare</b> – Fiecare minut de downtime înseamnă pierderi directe pentru afacerea ta.</li>
+   <li>  <b>Daune reputaționale</b> – Un atac poate afecta încrederea clienților și partenerilor tăi.</li>
+   <li>  <b>Solicitări de recompense</b> – În unele cazuri, atacatorii cer sume de bani pentru a opri atacurile.</li>
+
+</ul>
+Nu lăsa atacurile cibernetice să îți pună afacerea în pericol!
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Cum funcționează filtrarea traficului DDoS?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Pentru a-ți proteja afacerea de atacuri, Moldtelecom implementează un sistem avansat de filtrare care analizează traficul și blochează amenințările în timp real.
+        <ul>
+            <li>
+               <b> Protecție locală</b> – Filtrarea atacurilor mici și a celor care vizează direct aplicațiile tale.</li>
+                <li> <b>Protecție la nivel de furnizor</b> – Blocarea traficului malițios volumetric, înainte să îți afecteze conexiunea.</li>
+                <li> <b>Protecție în cloud</b> – Nivelul maxim de securitate, gestionat de parteneri specializați în combaterea atacurilor DDoS complexe.</li>
+            
+        </ul>
+        Serviciul Protecție DDoS de la Moldtelecom include toate aceste nivele de apărare, în funcție de pachetul ales.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Cum ești notificat în caz de atac?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        <li>
+            Notificare instant prin e-mail la detectarea unui atac, pentru a putea reacționa rapid.</li>
+            <li> Raport lunar detaliat, cu informații despre atacurile detectate și măsurile aplicate. </li>
+       
+        Rămâi informat și protejat, fără să îți faci griji pentru securitatea afacerii tale!
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Pot schimba planul tarifar după activare?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        Da! Știm că nevoile afacerii tale se pot schimba, așa că îți oferim flexibilitatea de a modifica planul tarifar oricând. Alege protecția potrivită pentru tine, în funcție de riscurile la care ești expus.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        Serviciul afectează viteza Internetului?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+        În condiții normale, viteza conexiunii tale nu este afectată de serviciul de protecție DDoS.
+        În timpul unui atac masiv, performanța poate fi influențată de intensitatea atacului și resursele necesare pentru a-l filtra, dar echipa noastră lucrează constant pentru a minimiza orice impact asupra conexiunii tale.
+    </div>
+</div>
+<div class="mtc_evo_v2_block_faq">
+    <div class="mtc_evo_v2_block_faq_title">
+        De ce să alegi Protecția DDoS de la Moldtelecom?
+    </div>
+    <div class="mtc_evo_v2_block_faq_inside">
+       <ul>
+        <li> <b>Securitate avansată</b> – Filtrare inteligentă a traficului, adaptată nevoilor tale.</li>
+<li><b>Monitorizare 24/7</b> – Detectare rapidă și intervenție automată în caz de atac.</li>
+<li><b>Flexibilitate</b> – Alegi pachetul care ți se potrivește și îl poți modifica oricând.</li>
+<li><b>Fiabilitate</b> – Protecție multi-nivel, fără întreruperi în activitatea afacerii tale.</li>
+       </ul>
+    </div>
+</div>
+
+
+ 
+    <div class="mtc_evo_v2_btn" id="mtc_evo_v2_btn_faq">
+        Mai multe
+</div>
+</div>
+ 
+<script>
+   
+   document.addEventListener("DOMContentLoaded", function () {
+  const faqBlocks = document.querySelectorAll(".mtc_evo_v2_block_faq");
+  const faqButton = document.getElementById("mtc_evo_v2_btn_faq");
+  const maxVisibleFaqs = 4;
+ 
+  // Add SVG and functionality
+  faqBlocks.forEach((faqBlock, index) => {
+    const faqTitle = faqBlock.querySelector(".mtc_evo_v2_block_faq_title");
+    const faqContent = faqBlock.querySelector(".mtc_evo_v2_block_faq_inside");
+    const svgContainer = document.createElement("div");
+    svgContainer.classList.add("mtc_evo_v2_block_faq_svg_container"); // Add class for styling and rotation
+ 
+    // Insert SVG into the container
+    svgContainer.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.7186 12.8653C20.3345 12.8653 20.8339 12.3659 20.8339 11.75C20.8339 11.1341 20.3345 10.6347 19.7186 10.6347L12.8653 10.6347L12.8653 3.78129C12.8653 3.16534 12.366 2.66602 11.75 2.66602C11.1341 2.66602 10.6348 3.16534 10.6348 3.78129L10.6348 10.6347L3.78133 10.6347C3.16538 10.6347 2.66606 11.1341 2.66606 11.75C2.66606 12.3659 3.16538 12.8653 3.78133 12.8653L10.6348 12.8653L10.6348 19.7186C10.6348 20.3345 11.1341 20.8338 11.75 20.8338C12.366 20.8338 12.8653 20.3345 12.8653 19.7186L12.8653 12.8653L19.7186 12.8653Z" fill="#333333"/>
+      </svg>`;
+    faqTitle.appendChild(svgContainer);
+ 
+    // Hide content by default
+    faqContent.style.display = "none";
+ 
+    // Add click event to toggle visibility and rotate the SVG
+    faqTitle.addEventListener("click", () => {
+      const isOpen = faqContent.style.display === "block";
+      faqContent.style.display = isOpen ? "none" : "block";
+ 
+      // Rotate SVG
+      svgContainer.style.transform = isOpen ? "rotate(0deg)" : "rotate(45deg)";
+      svgContainer.style.transition = "transform 0.3s ease";
+    });
+ 
+    // Show only first 5 FAQs by default
+    if (index >= maxVisibleFaqs) {
+      faqBlock.style.display = "none";
+    }
+  });
+ 
+  // Show "Mai multe" button if there are more than 5 FAQs
+  if (faqBlocks.length > maxVisibleFaqs) {
+    faqButton.style.display = "flex"; // Show the button only if needed
+    faqButton.addEventListener("click", () => {
+      faqBlocks.forEach((faqBlock, index) => {
+        if (index >= maxVisibleFaqs) {
+          faqBlock.style.display = "block";
+        }
+      });
+      faqButton.style.display = "none"; // Hide the button after showing all FAQs
+    });
+  } else {
+    faqButton.style.display = "none"; // Hide the button if not needed
+  }
+});
+ 
+ 
+ 
+</script>
+
+
+
+
+
+
+            </div>
+            
+
+
+   
+    </div>
+
+</body>
+
+</html>
