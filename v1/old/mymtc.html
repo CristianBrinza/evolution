@@ -1,0 +1,2026 @@
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async=""></script>
+
+    <link href="mtc_webkit_v2.css" rel="stylesheet" type="text/css" />
+    <script src="mtc_webkit_v2.js"></script>
+
+
+
+    <style>
+        #mymtc_hero {
+            width: 96vw;
+            max-width: 1850px;
+            height: 510px;
+            margin: 0px auto 0px auto;
+            border-radius: 45px;
+            background: #4A55D8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mymtc_hero_left {
+            width: 585px;
+        }
+
+        #mymtc_hero_left_title1 {
+            color: #FFF;
+            font-family: "MTC-Futura New";
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 35px;
+        }
+
+        #mymtc_hero_left_title2 {
+            color: #FFF;
+            font-family: "MTC-Futura New";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 6px;
+        }
+
+        #mymtc_hero_left_title3 {
+            color: #FFF;
+            font-family: "MTC-Futura New";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 26px;
+            /* 118.182% */
+            margin-bottom: 40px;
+        }
+
+        #mymtc_hero_left_btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+
+        .mymtc_hero_left_btn {
+            border-radius: 10px;
+            border: 1px solid #FFF;
+            box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.33);
+            color: #FFF;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            /* 130% */
+            padding: 10px 25px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .mymtc_hero_left_btn:hover {
+            box-shadow: none;
+            background: #ffffff0d;
+
+        }
+
+        #mymtc_hero_img {
+            height: 100%;
+            width: auto;
+        }
+
+
+        @media (max-width:1300px) {
+
+            #mymtc_hero {
+                flex-direction: column;
+                height: auto;
+            }
+
+            #mymtc_hero_left {
+                width: 550px;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            #mymtc_hero_left_btns {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            #mymtc_hero_img {
+                width: 550px;
+                height: auto;
+            }
+
+            #mymtc_hero {
+                width: 100%;
+            }
+
+        }
+
+
+        @media (max-width:700px) {
+            #mymtc_hero_img {
+                width: 80%;
+            }
+
+
+            #mymtc_hero_left {
+                width: 90%;
+            }
+        }
+    </style>
+    <div id="mymtc_hero">
+        <div id="mymtc_hero_left">
+
+
+            <div id="mymtc_hero_left_title1">
+                Aplicația<br>
+                <span style="font-weight: 700;">
+                    My Moldtelecom
+                </span>
+            </div>
+
+
+            <div id="mymtc_hero_left_title2">
+                Tot ce ai nevoie într-un singur loc
+            </div>
+
+            <div id="mymtc_hero_left_title3">
+                Cu aplicația My Moldtelecom deții controlul deplin să gestionezi
+                conturile și serviciile tale și ale membrilor de familie, oricând și oriunde.
+            </div>
+
+
+            <div id="mymtc_hero_left_btns">
+                <div class="mymtc_hero_left_btn hand" onclick='scroll_to_div("mymtc_download")'>
+                    Descarcă App
+                </div>
+                <div class="mymtc_hero_left_btn hand"
+                    onclick="window.location='https://moldtelecom.md/ro/personal/loialitate'">
+                    Loialitate
+                </div>
+
+            </div>
+        </div>
+
+        <img id="mymtc_hero_img" src="images/mymtc/img1.png" alt="hero">
+
+    </div>
+
+    <div class="mtc_main">
+        <style>
+            #mymtc_title1 {
+                margin-top: 35px;
+                text-align: center;
+                width: 100%;
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 71.111% */
+            }
+        </style>
+        <div id="mymtc_title1">
+            Opțiunile de top
+        </div>
+
+
+
+
+
+
+
+        <style>
+            .carousell_1 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            .mtc_carousell {
+                width: 100%;
+            }
+
+            .carousell_blocks_inside {
+                width: 380px;
+
+                border-radius: 10px;
+
+            }
+
+            .carousell_blocks {
+
+                height: 380px;
+            }
+
+            .carousell_blocks_inside_title {
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 100% */
+                width: 100%;
+                box-sizing: content-box;
+                padding: 35px 0 30 25px;
+
+            }
+
+            .carousell_blocks_inside_btn {
+                background: #4A55D8;
+                border-radius: 10px;
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                /* 130% */
+                padding: 10px 15px 10px 25px;
+                display: math;
+                margin: 0 0 0 25px;
+
+            }
+
+            .carousell_blocks_inside_btn svg {
+                margin-left: 5px;
+                margin-bottom: -4px;
+            }
+
+            .carousell_blocks_inside_btn:hover {
+                background: #7078d1;
+            }
+
+            .carousell_blocks_inside_img {
+                width: 100%;
+                margin-top: -50%;
+                position: relative;
+                z-index: -2;
+                border-radius: 10px;
+
+            }
+        </style>
+
+
+        <div class="mtc_carousell carousell_1">
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Transferă credit <br>
+                        pe contul altor <br>
+                        utilizători</div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('1')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img6.png" alt="card">
+
+                </div>
+            </div>
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Verifică balanța <br>conturilor<br><br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('2')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img7.png" alt="card">
+
+                </div>
+            </div>
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Activează opțiuni<br> adiționale<br><br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('3')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img8.png" alt="card">
+
+                </div>
+            </div>
+
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Cumpără 2 GB la<br> doar 10 lei<br><br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('4')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img21.png" alt="card">
+
+                </div>
+            </div>
+
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Activează Roaming<br> înainte de călătorie<br><br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand"onclick="popoup('5')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img22.png" alt="card">
+
+                </div>
+            </div>
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Achită serviciile<br> Moldtelecom<br><br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('6')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img23.png" alt="card">
+
+                </div>
+            </div>
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Treci de la un cont <br>la altul, fără a <br>ieși din aplicație<br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('7+')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img24.png" alt="card">
+
+                </div>
+            </div>
+
+
+            <div class="carousell_blocks">
+                <div class="carousell_blocks_inside" id="carousell_blocks_inside_1">
+
+                    <div class="carousell_blocks_inside_title">Urmărește statistica<br> cheltuielilor lunare<br?<br></div>
+
+
+                    <div class="carousell_blocks_inside_btn hand" onclick="popoup('7')">Detalii
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M18.8406 17.3765C16.9564 15.5088 15.0679 13.6464 13.1784 11.7829C13.9601 10.6263 14.379 9.26697 14.377 7.84182C14.3749 5.93612 13.6266 4.15082 12.2697 2.81622C10.9148 1.48367 9.10663 0.75 7.17754 0.75H7.16086C3.20785 0.759261 -0.00416469 3.95017 4.05324e-06 7.86548C0.0041728 11.7695 3.23182 14.9439 7.1963 14.9439H7.20255C8.81377 14.9429 10.3416 14.4212 11.5922 13.4632C13.4046 15.2536 15.217 17.0431 17.0304 18.8325C17.5952 19.3902 17.9371 19.3892 18.5051 18.8294C18.6166 18.7193 18.7323 18.6133 18.8386 18.4981C19.1752 18.1328 19.1898 17.7232 18.8406 17.3775V17.3765ZM7.20047 12.5762H7.1963C4.55227 12.5762 2.40016 10.4627 2.39703 7.8624C2.39391 5.25081 4.53351 3.12183 7.16608 3.11668H7.17754C8.46881 3.11668 9.67566 3.60545 10.5782 4.49347C11.4807 5.3815 11.9789 6.57204 11.981 7.8449C11.982 9.11056 11.487 10.2991 10.5855 11.1912C9.684 12.0833 8.48236 12.5752 7.20151 12.5762H7.20047Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <img class="carousell_blocks_inside_img" src="images/mymtc/img25.png" alt="card">
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+            $('.carousell_1').slick({
+
+
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2100,
+                responsive: [
+                    {
+                        breakpoint: 1351,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    },
+                    {
+                        breakpoint: 951,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    },
+                    {
+                        breakpoint: 651,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    }
+                ]
+            });
+
+        </script>
+
+        <style>
+            #mymtc_ater_carousell {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+
+            .mymtc_ater_carousell_btn {
+
+                background: #4A55D8;
+                border-radius: 10px;
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                padding: 10px 25px;
+                display: math;
+
+
+            }
+
+
+
+            .mymtc_ater_carousell_btn:hover {
+                background: #7078d1;
+            }
+        </style>
+        <div id="mymtc_ater_carousell">
+            <div class="mymtc_ater_carousell_btn hand" onclick="popoup('8')">Vezi alte opțiuni
+
+            </div>
+        </div>
+
+
+        <style>
+            #mymtc_10gb {
+                margin: 20px 0 0 20px;
+                height: 380px;
+                width: 100%;
+                background: url('images/mymtc/img9.png');
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            #mymtc_10gb_left {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+
+
+
+            }
+
+            #mymtc_10gb_left_title {
+
+                color: #1D1D1F;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 40px;
+                /* 88.889% */
+
+            }
+
+            #mymtc_10gb_right {
+                height: 100%;
+
+            }
+
+
+            @media (max-width:1300px) {
+                #mymtc_10gb {
+
+                    height: auto;
+                    flex-direction: column;
+                }
+
+                #mymtc_10gb_right {
+                    height: auto;
+                    width: 60%;
+                }
+
+                #mymtc_10gb_left_title {
+                    margin-top: 40px;
+
+                }
+
+                #mymtc_10gb_left {
+                    width: 80%;
+                }
+            }
+
+            @media (max-width: 700px) {
+
+                #mymtc_10gb_left_title {
+
+                    font-size: 35px;
+
+                }
+            }
+        </style>
+        <div id="mymtc_10gb">
+            <div id="mymtc_10gb_left">
+                <div id="mymtc_10gb_left_title">
+                    Crează un cont<br>
+                    <span style="font-weight: 700;">My Moldtelecom</span><br>
+                    și primește Bonus<br><br>
+                    <div class="mymtc_ater_carousell_btn hand" onclick="popoup('9')">Activare și condiții</div>
+                </div>
+            </div>
+
+            <img id="mymtc_10gb_right" src="images/mymtc/img10.png" alt="10GB">
+            <div>
+
+            </div>
+        </div>
+
+        <style>
+            #mymtc_10gb_under {
+                width: 100%;
+                color: #1D1D1F;
+                text-align: center;
+
+                font-family: "MTC-Futura New";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px;
+                /* 114.286% */
+                margin: 20px 0 60px 0;
+
+            }
+
+
+            @media (max-width:700px) {
+                #mymtc_10gb_under {
+                    font-size: 20px;
+                    line-height: 1;
+                }
+
+            }
+        </style>
+        <div id="mymtc_10gb_under">
+            La crearea unui cont în aplicația My Moldtelecom, ai 10 GB cadou pentru a naviga și mai mult pe net!
+            Activează-ți traficul suplimentar direct din aplicație și folosește-l timp de 30 de zile.
+        </div>
+        <style>
+            #mymtc_title2 {
+                margin-top: 35px;
+                text-align: center;
+                width: 100%;
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 71.111% */
+                margin-bottom: 30px;
+            }
+        </style>
+        <div id="mymtc_title2">
+            Tutoriale Video
+        </div>
+
+
+
+
+        <style>
+            .carousell_2 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+
+
+            .mymtc_ater_carousel_2_img {
+                width: 580px;
+                height: 320px;
+                border-radius: 11px;
+                border: 0.5px solid #c4c4c4;
+
+
+            }
+
+            .carousell_blocks2 {
+                height: 325px;
+            }
+
+            .carousell_blocks2_inside {
+                display: flex !important;
+                height: auto;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .carousell_blocks2_inside_title {
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .carousell_blocks2_inside_text {
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-align: center;
+                width: 100%;
+            }
+
+            .carousell_blocks2_inside_left {
+                width: 450px;
+                padding-left: 100px;
+
+            }
+
+            @media (max-width:1300px) {
+                .carousell_blocks2_inside {
+                    flex-direction: column-reverse;
+                    gap: 20px;
+                }
+
+                .carousell_blocks2 {
+                    height: 550px!important;
+                }
+
+                .carousell_blocks2_inside_left {
+                    width: 90%;
+                    padding-left: 0;
+                }
+
+            }
+
+            @media (max-width:700px) {
+                .mymtc_ater_carousel_2_img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+        <div class="mtc_carousell carousell_2">
+            <div class="carousell_blocks2">
+
+                <div class="carousell_blocks2_inside">
+                    <div class="carousell_blocks2_inside_left">
+                        <div class="carousell_blocks2_inside_title">
+                            Cum te înregistrezi?
+                        </div>
+
+                        <div class="carousell_blocks2_inside_text">
+                            Simplu și ușor urmezi acest ghid, te înregistrezi în aplicația My Moldtelecom și te bucuri
+                            de controlul asupra contului tău.
+                        </div>
+                    </div>
+
+                    <img onclick="popoup('14')" class="mymtc_ater_carousel_2_img" src="images/mymtc/img18.png" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="carousell_blocks2">
+
+                <div class="carousell_blocks2_inside">
+                    <div class="carousell_blocks2_inside_left">
+                        <div class="carousell_blocks2_inside_title">
+                            Cum activezi opțiuni?
+                        </div>
+
+                        <div class="carousell_blocks2_inside_text">
+                           
+
+                            Descoperă pașii pe care-i ai de parcurs pentru a activa opțiuni adiționale și comunica mai avantajos.
+                            
+                        </div>
+                    </div>
+
+                    <img onclick="popoup('15')" class="mymtc_ater_carousel_2_img" src="images/mymtc/img14.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="carousell_blocks2">
+
+                <div class="carousell_blocks2_inside">
+                    <div class="carousell_blocks2_inside_left">
+                        <div class="carousell_blocks2_inside_title">
+                            Cum modifici planul tarifar?
+                        </div>
+
+                        <div class="carousell_blocks2_inside_text">
+                           
+
+                           
+
+                            Cu doar câteva click-uri, fără a vizita magazinul, schimbă abonamentul de Telefonie Mobilă pe altul mai potrivit nevoilor tale. 
+                            
+                        </div>
+                    </div>
+
+                    <img onclick="popoup('16')" class="mymtc_ater_carousel_2_img" src="images/mymtc/img20.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="carousell_blocks2">
+
+                <div class="carousell_blocks2_inside">
+                    <div class="carousell_blocks2_inside_left">
+                        <div class="carousell_blocks2_inside_title">
+                            Cum activezi opțiunea ShareNet?
+                        </div>
+
+                        <div class="carousell_blocks2_inside_text">
+                           
+
+                           
+
+                           
+
+Cu opțiune ShareNet ai tocmai 24 GB la doar 30 de lei, valabili 7 zile de la conectare! Folosește-i sau alege să-i împarți cu persoana iubită.
+
+                        </div>
+                    </div>
+
+                    <img onclick="popoup('17')" class="mymtc_ater_carousel_2_img" src="images/mymtc/img19.png" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <script>
+            $('.carousell_2').slick({
+
+
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2100,
+
+            });
+
+        </script>
+
+
+
+        <style>
+            #mymtc_transfer {
+                margin: 60px 0 0 20px;
+                height: 342px;
+                width: 100%;
+                background: url('images/mymtc/img9.png');
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            #mymtc_transfer_left {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+
+
+
+            }
+
+            #mymtc_transfer_left_title {
+
+                color: #1D1D1F;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 40px;
+                /* 88.889% */
+
+            }
+
+            #mymtc_transfer_right {
+                height: 100%;
+
+            }
+
+            .mymtc_transfer_empty_sapce {
+                height: 15px;
+            }
+
+            @media (max-width:1300px) {
+                #mymtc_transfer {
+                    flex-direction: column;
+                    gap: 20px;
+                    height: auto;
+                }
+
+                #mymtc_transfer_right {
+                    content: url('images/mymtc/img15.png');
+                    width: 60%;
+                    height: auto;
+                }
+
+                #mymtc_transfer_left_title {
+                    margin-top: 40px;
+                }
+
+                #mymtc_transfer_left {
+                    width: 80%;
+                }
+
+
+            }
+        </style>
+        <div id="mymtc_transfer">
+            <div id="mymtc_transfer_left">
+                <div id="mymtc_transfer_left_title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="49" viewBox="0 0 52 49" fill="none">
+                        <g clip-path="url(#clip0_715_4064)">
+                            <path
+                                d="M36.2287 4C36.9887 4 37.7587 4.08 38.4987 4.25C44.0887 5.48 46.2787 11.11 46.6587 12.23C48.5687 17.8 46.1687 24.6 40.6787 29.15L40.6087 29.21L40.5487 29.27L31.7587 37.23L25.7287 42.69L19.6287 36.84L10.8387 28.4L10.7687 28.33L10.6887 28.26C5.24869 23.55 2.8287 17.12 4.5287 11.87C4.9687 10.52 6.3487 7.21 9.7487 5.55C11.0487 4.92 12.4787 4.6 14.0087 4.6C16.9487 4.6 20.0287 5.83 22.4487 7.98L25.4087 10.61L28.0687 7.67C30.1687 5.35 33.1487 4.01 36.2287 4.01M36.2287 0.01C32.0587 0.01 27.9987 1.79 25.0987 4.98C21.8587 2.1 17.8687 0.58 14.0087 0.58C11.9187 0.58 9.8587 1.02 7.9887 1.94C3.1487 4.31 1.2787 8.92 0.718696 10.62C-1.4913 17.42 1.4487 25.55 8.0687 31.27L25.6487 48.14C31.5087 42.83 37.3687 37.53 43.2287 32.22C50.0387 26.57 52.8787 18.05 50.4387 10.93C50.0387 9.77 47.2387 2.07 39.3487 0.34C38.3087 0.11 37.2587 0 36.2187 0L36.2287 0.01Z"
+                                fill="#DF5E75" />
+                            <path
+                                d="M28.5605 28.2404C27.9005 28.2404 27.2905 28.4404 26.7905 28.7804L21.0305 24.7804C21.1005 24.5204 21.1505 24.2504 21.1505 23.9704C21.1505 23.9404 21.1505 23.9104 21.1505 23.8804L27.1105 20.0504C27.6705 20.5204 28.3805 20.8204 29.1805 20.8204C30.9505 20.8204 32.3905 19.3804 32.3905 17.6104C32.3905 15.8404 30.9505 14.4004 29.1805 14.4004C27.4105 14.4004 25.9705 15.8404 25.9705 17.6104C25.9705 17.8604 26.0105 18.1104 26.0605 18.3404L20.4305 21.9504C19.8405 21.2204 18.9505 20.7504 17.9405 20.7504C16.1705 20.7504 14.7305 22.1904 14.7305 23.9604C14.7305 25.7304 16.1705 27.1704 17.9405 27.1704C18.7005 27.1704 19.3905 26.8904 19.9405 26.4504L25.5605 30.3504C25.4405 30.6904 25.3605 31.0604 25.3605 31.4404C25.3605 33.2104 26.8005 34.6504 28.5705 34.6504C30.3405 34.6504 31.7805 33.2104 31.7805 31.4404C31.7805 29.6704 30.3405 28.2304 28.5705 28.2304L28.5605 28.2404Z"
+                                fill="#DF5E75" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_715_4064">
+                                <rect width="51.31" height="48.14" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg><br>
+                    <div class="mymtc_transfer_empty_sapce"></div>
+
+                    <span style="font-weight: 700;">ShareNet</span><br>
+
+                    Împarte iubirea<br>
+                    Transferă GB<br>
+                    <div class="mymtc_transfer_empty_sapce"></div>
+                    <div class="mymtc_ater_carousell_btn hand" onclick="popoup('10')">Activare și condiții</div>
+                </div>
+            </div>
+
+            <img id="mymtc_transfer_right" src="images/mymtc/img11.png" alt="transfer">
+            <div>
+
+            </div>
+        </div>
+        <style>
+            #mymtc_title3 {
+                margin-top: 65px;
+                text-align: center;
+                width: 100%;
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 71.111% */
+            }
+        </style>
+        <div id="mymtc_title3">
+            Promoțiile de top:
+        </div>
+
+
+        <style>
+            #mymtc_promotii {
+                width: 100%;
+                display: flex;
+                margin-top: 30px;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .mymtc_promotii_block {
+                border-radius: 10px;
+                width: 570px;
+                height: 270px;
+
+
+                padding: 40px 0 0 40px;
+
+            }
+
+            #mymtc_promotii_block_1 {
+                background: url('images/mymtc/img12.png');
+                background-size: cover;
+                background-position: center;
+                box-sizing: border-box;
+
+            }
+
+            #mymtc_promotii_block_2 {
+                background: url('images/mymtc/img13.png');
+                background-size: cover;
+                background-position: center;
+                box-sizing: border-box;
+            }
+
+            .mymtc_promotii_block_title {
+                color: #FFF;
+                font-family: "MTC-Futura New";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            .mymtc_promotii_block_subtitle {
+                color: #FFF;
+                font-family: "MTC-Futura New";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-top: 20px;
+                width: 215px;
+                margin-bottom: 30px;
+            }
+
+
+
+            .mymtc_promotii_block_btn {
+
+                background: #4A55D8;
+                border-radius: 10px;
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                padding: 10px 25px;
+                display: math;
+
+
+
+            }
+
+
+
+            .mymtc_promotii_block_btn:hover {
+                background: #7078d1;
+            }
+
+            @media (max-width:1300px) {
+                #mymtc_promotii {
+                    gap: 25px;
+                    flex-direction: column;
+                }
+
+            }
+
+
+            @media (max-width:700px) {
+                .mymtc_promotii_block {
+                    width: 100%;
+                }
+
+                #mymtc_promotii_block_1 {
+                    background: url('images/mymtc/img16.png');
+                    background-size: cover;
+                    background-position: center;
+                    height: 500px;
+
+                }
+
+                #mymtc_promotii_block_2 {
+                    background: url('images/mymtc/img17.png');
+                    background-size: cover;
+                    background-position: center;
+                    height: 500px;
+
+                }
+
+            }
+        </style>
+
+        <div id="mymtc_promotii">
+            <div class="mymtc_promotii_block" id="mymtc_promotii_block_1">
+                <div class="mymtc_promotii_block_title">Cu My Moldtelecom<br>
+                    <span style="font-weight: 700;">Mergi și câștigi</span>
+                </div>
+
+                <div class="mymtc_promotii_block_subtitle">
+                    Te recompensăm pentru pașii pe care-i faci
+                </div>
+
+
+                <div class="mymtc_promotii_block_btn hand" onclick="popoup('11')">Află mai mult
+
+
+                </div>
+            </div>
+
+            <div class="mymtc_promotii_block" id="mymtc_promotii_block_2">
+                <div class="mymtc_promotii_block_title">Participă la Challenge
+                    <br>
+                    <span style="font-weight: 700;">Și câștigă premii</span>
+                </div>
+
+                <div class="mymtc_promotii_block_subtitle">
+                    Cartela Moldtelecom.<br>
+                    Viața ta - regulile tale!
+                </div>
+
+
+                <div class="mymtc_promotii_block_btn hand" onclick="popoup('12')">Află mai mult
+
+
+                </div>
+            </div>
+        </div>
+
+        <style>
+            #mymtc_download {
+                border-radius: 12px;
+                background: #F6F7FF;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 390px;
+                margin-top: 30px;
+            }
+
+            #mymtc_download_left {
+                box-sizing: content-box;
+                width: 59%;
+                padding: 0 0 0 55px;
+            }
+
+            #mymtc_download_left_text {
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px;
+                /* 114.286% */
+            }
+
+            #mymtc_download_left_title {
+                color: #1D1D1F;
+                font-family: "MTC-Futura New";
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                /* 71.111% */
+                margin-bottom: 30px;
+            }
+
+            #mymtc_download_right {
+                width: 39%;
+                display: flex;
+                gap: 45px;
+                justify-content: center;
+
+            }
+
+            .mymtc_download_right_qr {
+                width: 150px;
+                height: auto;
+            }
+
+            .mymtc_download_right_btn {
+                width: 150px;
+                height: auto;
+            }
+
+
+            .mymtc_download_right_blocks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+            }
+
+            @media (max-width:1300px) {
+                #mymtc_download_left_title {
+                    line-height: 1;
+                }
+
+                #mymtc_download {
+                    height: auto;
+                    flex-direction: column;
+                    padding: 40px 0;
+                }
+
+                #mymtc_download_left {
+                    width: 80%;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                #mymtc_download_left_text {
+                    margin-bottom: 30px;
+                }
+
+
+                @media (max-width:700px) {
+
+                    .mymtc_download_right_qr,
+                    .mymtc_download_right_btn {
+                        width: 100px;
+                    }
+
+                }
+            }
+        </style>
+        <div id="mymtc_download">
+            <div id="mymtc_download_left">
+                <div id="mymtc_download_left_title">
+                    Descarcă aplicația
+                </div>
+                <div id="mymtc_download_left_text">
+                    Printr-osingură accesare, poți verifica toate conturile, achita facturile, transferabani către alte
+                    persoane sau activa opțiuni adiționale. Aplicația este disponibilă pentru toți clienții Moldtelecom
+                    de Telefonie mobilă, Internet și/sau Televiziune digitală, Telefonie fixă. Aceasta este disponibilă
+                    în 3 limbi: RO, RU, EN și poate fi accesată 24/7
+                </div>
+            </div>
+
+
+            <div id="mymtc_download_right">
+                <div class="mymtc_download_right_blocks">
+                    <img class="mymtc_download_right_qr" src="images/mymtc/img2.png" alt="qr code">
+
+                    <img onclick="window.location='https://mtc.md/my-mtc'" class="mymtc_download_right_btn zoom hand"
+                        src="images/mymtc/img4.png" alt="downlaod">
+                </div>
+
+                <div class="mymtc_download_right_blocks">
+                    <img class="mymtc_download_right_qr" src="images/mymtc/img3.png" alt="qr code">
+
+                    <img onclick="window.location='https://mtc.md/my-mtc'" class="mymtc_download_right_btn zoom hand"
+                        src="images/mymtc/img5.png" alt="downlaod">
+                </div>
+            </div>
+        </div>
+
+        </style>
+        <div id="mymtc_title1">
+            Întrebări frecvente
+        </div>
+
+        <style>
+            #mymtc_qa {
+                width: 100%;
+                margin: 20px 0;
+            }
+        </style>
+        <div id="mymtc_qa">
+            <div class="mtc_qa_block" id="mtc_qa_block_1">
+                <div class="mtc_qa_block_top hand" onclick="qa('1')"><span>Unde pot vizualiza factura?</span>
+                    <svg class="mtc_qa_block_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="12"
+                        viewBox="0 0 21 12" fill="none">
+                        <path class="mtc_qa_block_svg_path"
+                            d="M0.43934 0.43934C1.02513 -0.146447 1.97487 -0.146447 2.56066 0.43934L10.5 8.37868L18.4393 0.43934C19.0251 -0.146447 19.9749 -0.146447 20.5607 0.43934C21.1464 1.02513 21.1464 1.97487 20.5607 2.56066L11.5607 11.5607C10.9749 12.1464 10.0251 12.1464 9.43934 11.5607L0.43934 2.56066C-0.146447 1.97487 -0.146447 1.02513 0.43934 0.43934Z"
+                            fill="#212A55" />
+                    </svg>
+                </div>
+
+                <div class="mtc_qa_block_bottom" style="display: none;">&nbsp;&nbsp;&nbsp; <p>Accesati <b>“Contul
+                            Meu”</b> în aplicație, după care <b>“Mai multe”</b> și alegeți <b>“Factura”</b>. Se va
+                        deschide o pagina suplimentară care va conține informația sumară despre istoricul facturilor.
+                    </p>
+                </div>
+
+                <div class="mtc_qa_block" id="mtc_qa_block_2">
+                    <div class="mtc_qa_block_top hand" onclick="qa('2')"><span>Am uitat parola sau numele de
+                            utilizator</span>
+                        <svg class="mtc_qa_block_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="12"
+                            viewBox="0 0 21 12" fill="none">
+                            <path class="mtc_qa_block_svg_path"
+                                d="M0.43934 0.43934C1.02513 -0.146447 1.97487 -0.146447 2.56066 0.43934L10.5 8.37868L18.4393 0.43934C19.0251 -0.146447 19.9749 -0.146447 20.5607 0.43934C21.1464 1.02513 21.1464 1.97487 20.5607 2.56066L11.5607 11.5607C10.9749 12.1464 10.0251 12.1464 9.43934 11.5607L0.43934 2.56066C-0.146447 1.97487 -0.146447 1.02513 0.43934 0.43934Z"
+                                fill="#212A55" />
+                        </svg>
+                    </div>
+
+                    <div class="mtc_qa_block_bottom" style="display: none;">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;<b>Dacă ați uitat parola:</b>
+
+                        <ul>
+                            <li>puteți reseta din aplicaţie și seta o parola nouă;</li>
+                            <li>puteți reseta prin apel la numărul 1181 pentru persoanele fizice sau 11855 pentru
+                                persoanele juridice;</li>
+                        </ul>
+
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<b>Dacă ați uitat numele de utilizator:</b>
+
+                        <ul>
+                            <li>îl puteți reaminti cu ajutorul Serviciului Asistență Clienți prin apel la numărul 1181
+                                pentru persoanele fizice sau 11855 pentru persoanele juridice.</li>
+                        </ul>
+                    </div>
+                    </p>
+
+
+
+                </div>
+
+
+                <div class="mtc_footer_text">Stimate client, Moldtelecom.md face eforturi permanente pentru a păstra
+                    acuratețea
+                    informațiilor din acest site. Cu toate acestea, rareori, informațiile plasate pe site pot conține
+                    inadvertențe punctuale, cum ar fi: unele specificații sau prețuri pot fi modificate de către
+                    producător,
+                    fără preaviz sau pot conține erori de operare. &Icirc;n cazul &icirc;n care prețurile sau alte
+                    detalii
+                    referitoare la produse au fost afișate greșit, inclusiv din cauza faptului că au fost introduse
+                    greșit
+                    &icirc;n baza de date, www.moldtelecom.md, S. A &bdquo;Moldtelecom&rdquo; &icirc;și rezervă dreptul
+                    de a
+                    anula comercializarea produsului respectiv și de a anunța clientul &icirc;n cel mai scurt timp
+                    despre
+                    eroarea aparută. &Icirc;ți mulțumim pentru &icirc;nțelegere.</div>
+
+            </div>
+        </div>
+            <div class="mtc_popup_block" id="mtc_popup_block_9" style="display: none;">
+                <div class="mtc_popup_block_inside">
+                    <div class="mtc_popup_close_button" onclick="popoup('9')"><svg class="popup_block_inside_svg"
+                            fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                            <path
+                                d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                                fill="#222222"></path>
+                        </svg></div>
+
+                    <div class="mtc_popup_block_title">WELCOME BONUS</div>
+                    &nbsp;&nbsp;La crearea unui cont în aplicația My Moldtelecom, ai 10 GB cadou pentru a naviga și mai
+                    mult pe net! Activează-ți traficul suplimentar direct din aplicație și folosește-l timp de 30 de
+                    zile.
+
+                    <br><br>&nbsp;&nbsp;<b>Activare și condiții</b> - pop-up: Noi, mai bine ca oricine, știm să spunem
+                    bine ai venit! Creează-ți un cont și profită de beneficiile din Aplicația My Moldtelecom –primești
+                    10 GB gratuit, valabili timp de 30 de zile.
+                    <br><br>
+                    <div style="text-align: center;">
+                        Mai mult Internet, mai multă distracție!<br>
+                        Descarcă aplicația - <a href="mtc.md/my-mtc">mtc.md/my-mtc</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="mtc_popup_block" id="mtc_popup_block_8" style="display: none;">
+                <div class="mtc_popup_block_inside">
+                    <div class="mtc_popup_close_button" onclick="popoup('8')"><svg class="popup_block_inside_svg"
+                            fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                            <path
+                                d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                                fill="#222222"></path>
+                        </svg></div>
+
+
+                    <b style="text-align: center;">Alte utilități din Aplicația My Moldtelecom:</b>
+                    <ul>
+                        <li>Urmărește istoria facturilor</li>
+                        <li>Adaugă cont în aplicație</li>
+                        <li>Modifică planul tarifar</li>
+                        <li>Urmărește tranzacțiile efectuate</li>
+                        <li>Portează un prieten</li>
+                        <li>Transferă Internet</li>
+                        <li>Vezi detalii despre Internet și TV</li>
+                        <li>Vizualizează lista de canale TV</li>
+                        <li>Activează cinematograful online IVI / Megogo / Premier</li>
+                        <li>Accesează M-eshop </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="mtc_popup_block" id="mtc_popup_block_10" style="display: none;">
+            <div class="mtc_popup_block_inside">
+                <div class="mtc_popup_close_button" onclick="popoup('10')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+                <div class="mtc_popup_block_title">Share Net</div>
+
+                <table class="mtc_popup_block_table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <td><span>Denumire Opțiune</span></td>
+                            <td><span>Trafic internet inclus</span></td>
+                            <td><span>GB Tarif (lei)</span></td>
+                            <td><span>Valabilitate</span></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>ShareNet</span></td>
+                            <td><span>24</span></td>
+                            <td><span>30 lei</span></td>
+                            <td><span> 7 zile</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <b>Condiții de utilizare opțiune:</b>
+
+                <ul>
+                    <li>Tariful include TVA.</li>
+                    <li>Opțiunea este disponibilă pentru toţi abonaţii de Telefonie Mobilă Postpay și Prepay.</li>
+                    <li>Viteza de acces la Internet este conform condiţiilor de prestare a serviciului &icirc;n vigoare
+                        și &icirc;n funcție de terminalul utilizat.</li>
+                    <li>Tarifarea traficului Internet consumat se efectuează din momentul &icirc;nceperii sesiunii per
+                        10 KByte (1MB=1024 KB).</li>
+                    <li>După consumarea traficului Internet inclus &icirc;n opțiune, traficul Internet va fi taxat la
+                        tariful aferent planului tarifar.</li>
+                    <li>Opțiunea activată se va consuma prioritar conținutului din abonament sau cartelă.</li>
+                    <li>Utilizatorii PrePay și abonații PostPay nu pot concomitent activa mai multe opțiuni
+                        &rdquo;ShareNet&rdquo;. Activarea repetată a opțiunii va fi posibilă dupa expirarea primei
+                        opțiuni activate.</li>
+                    <li>La schimbul de pachet opțiunea se va păstra.</li>
+                </ul>
+                <b>Activare plan tarifar:</b>
+
+                <ul>
+                    <li><span>prin aplicația &quot;<a
+                                href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span>
+                    </li>
+                    <li><span>prin intermediul SMS Service 100:<b>pentru opțiunea ShareNet: 24GB</b></span></li>
+                    <li><span>prin apel la nr. 1181 Serviciul Suport Clienți</span></li>
+                    <li><span>prin cerere depusă la orice reprezentanță S.A. Moldtelecom.</span></li>
+                    <li><span>Prin meniul USSD, la formare *500# pentru abonații Postpay și *200# pentru abonații Prepay
+                            va urmări instrucțiunile meniului.</span></li>
+                </ul>
+                <br />
+                &nbsp;&nbsp;&nbsp; Experimentează libertatea opțiunii ShareNet și fă ziua celor dragi și mai interesantă
+                cu funcționalitatea de transfer Internet, folosind aplicația My Moldtelecom. Așadar, partajează gratuit
+                traficul, urm&acirc;nd pașii de mai jos:
+                <ul>
+                    <li>Accesează meniul Opțiuni și servicii &rarr; Opțiuni din aplicația My Moldtelecom;</li>
+                    <li>Selectează opțiunea ShareNet;</li>
+                    <li>Fă click pe (pictograma inimă);- pune inima</li>
+                    <li>Alege cantitatea de GB și numărul de mobil către care vei transfera GB.</li>
+                    <br />
+                    <li>&nbsp;&nbsp;&nbsp; Poți transfera lunar p&acirc;nă la 10 GB, aleg&acirc;nd liber de la 1 la 10
+                        GB, fără a depăși 10 GB către un număr. Transferurile includ taxe suplimentare și se fac de pe
+                        conturile cu statut activ, inclusiv &icirc;ntre abonații postpay.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_11" style="display: none;">
+            <div class="mtc_popup_block_inside">
+                <div class="mtc_popup_close_button" onclick="popoup('11')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+                <div class="mtc_popup_block_title">Mergi și Câștigi</div>
+
+                &nbsp;&nbsp;&nbsp;Promoția "Mergi și Câștigi" le oferă abonaților de Telefonie Mobilă oportunitatea să primească la fiecare șapte zile internet și minute naționale gratuite în schimbul numărului de pași parcurși. De promoție se pot bucura toate persoanele fizice care folosesc abonamentele de Telefonie Mobilă Moldtelecom, dar și au cea mai nouă versiune a aplicației My Moldtelecom
+
+                <br><br><b>Cum participi la promoție?</b>
+                
+                <br>&nbsp;&nbsp;&nbsp;Înainte ca să te îndrepți cu pași mulți și siguri spre recompensa mult râvnită, descarcă aplicația My Moldtelecom sau actualizeaz-o dacă o ai deja instalată. Este o etapă rapidă, dar extrem de importantă, iar după ce ai îndeplinit-o, accesează secțiunea ,,Mergi și Câștigi”, acceptând condițiile promoției. Ulterior, tot ce-ți rămâne este să parcurgi cel puțin 60.000 de pași timp de șapte zile consecutive pentru ca să te alegi cu recompensă
+                
+                <br>&nbsp;&nbsp;&nbsp;Pentru a număra pașii, My Moldtelecom va folosi datele din aplicația ,,Google Fit” pentru Android sau ,,Health” pentru dispozitivul iOS. Astfel, dacă nu ai una dintre ele, asigură-te că o instalezi și permiți accesul necesar în aplicația My Moldtelecom pentru a ne ajuta să te premiem pe merit
+                
+                <br><br> <b>Recompense oferite</b>  
+                
+                 <br>&nbsp;&nbsp;&nbsp; La fiecare șapte zile, vei putea primi 1 GB trafic de internet sau 30 de minute naționale gratuite pe care fie le folosești tu, fie le dăruiești apropiaților tăi. Alegerea îți aparține! Ambele recompense sunt valabile timp de 7 zile.
+                 <br>&nbsp;&nbsp;&nbsp;Participarea la promoția "Mergi și Câștigi" este gratis, iar regulamentul îl poți consulta, accesând aici.
+                
+                 <br><br>&nbsp;&nbsp;&nbsp;  Ce mai aștepți? Începe drumul către o viață activă și victorie, actualizând sau instalând acum My Moldtelecom din Google Play sau AppStore. My Moldtelecom - încurajează fiecare pas și transformă fiecare reușită într-o victorie!
+                
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_12" style="display: none;">
+            <div class="mtc_popup_block_inside">
+                <div class="mtc_popup_close_button" onclick="stopVideoPopup('popup_costume_video_12','12')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+                <div class="mtc_popup_block_title">Îți plac provocările?</div>
+                <video id="popup_costume_video_13" controls style="width: 100%; height: auto; border-radius: 10px;" src="images/mymtc/vid1.mp4"></video>
+               <p style="text-align: center;">
+
+Atunci accceptă provocarea în aplicația My Moldtelecom și câștigă premii valoroase! 
+<br>
+Descarcă aplicația My Moldtelecom <a href="mtc.md/my-mtc">mtc.md/my-mtc</a> și treci etapele din Challenge.
+<br>
+Cartela Moldtelecom. Viața ta - regulile tale!
+
+               </p>
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_14" style="display: none;">
+            <div class="mtc_popup_block_inside" style="background:unset">
+                <div class="mtc_popup_close_button" onclick="stopVideoPopup('popup_costume_video_14','14')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+              
+                <video id="popup_costume_video_14" controls style="width: 100%; height: auto; border-radius: 10px;" src="images/mymtc/vid2.mp4"></video>
+              
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_15" style="display: none;">
+            <div class="mtc_popup_block_inside" style="background:unset">
+                <div class="mtc_popup_close_button" onclick="stopVideoPopup('popup_costume_video_15','15')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+              
+                <video id="popup_costume_video_15" controls style="width: 100%; height: auto; border-radius: 10px;" src="images/mymtc/vid3.mp4"></video>
+              
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_16" style="display: none;">
+            <div class="mtc_popup_block_inside" style="background:unset">
+                <div class="mtc_popup_close_button" onclick="stopVideoPopup('popup_costume_video_16','16')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+              
+                <video id="popup_costume_video_16" controls style="width: 100%; height: auto; border-radius: 10px;" src="images/mymtc/vid4.mp4"></video>
+              
+            </div>
+
+        </div>
+
+        <div class="mtc_popup_block" id="mtc_popup_block_17" style="display: none;">
+            <div class="mtc_popup_block_inside" style="background:unset">
+                <div class="mtc_popup_close_button" onclick="stopVideoPopup('popup_costume_video_17','17')"><svg class="popup_block_inside_svg"
+                        fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                        <path
+                            d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                            fill="#222222"></path>
+                    </svg></div>
+
+
+
+              
+                <video id="popup_costume_video_17" controls style="width: 100%; height: auto; border-radius: 10px;" src="images/mymtc/vid4.mp5"></video>
+              
+            </div>
+
+        </div>
+
+
+<style>
+    .mtc_popup_block_flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mtc_popup_block_left{
+        width: 50%;
+        display: flex;
+        padding-left: 40px;
+        flex-direction: column;
+    justify-content: center;
+    }
+    .mtc_popup_block_right_img{
+        width: 35%;
+        height: auto;
+    }
+    .mtc_popup_block_left_title{
+        color: #FFF;
+font-family: 'MTC-Futura New';
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin-bottom: 20px;
+    }
+    .mtc_popup_block_left_text{
+        color: #FFF;
+font-family: 'MTC-Futura New';
+font-size: 32px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+    }
+    .mtc_popup_block_left_downlad {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+    .mtc_popup_block_left_downlad_btn{
+width: 120px;
+height: auto;
+    }
+
+
+    @media (max-width: 950px) {
+        .mtc_popup_block_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.mtc_popup_block_left {
+    width: 90%;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.mtc_popup_block_left_title, .mtc_popup_block_left_text{
+    text-align: center;
+}
+
+.mtc_popup_block_right_img {
+    width: 50vw;
+    height: auto;
+}
+        
+    }
+
+    @media (max-width: 600px) {
+        .mtc_popup_block_right_img {
+    width: 70vw;
+    height: auto;
+}
+    }
+</style>
+<div class="mtc_popup_block" id="mtc_popup_block_1" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('1')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Transferă credit pe contul altor utilizatori
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Poți transfera credit mebrilor de familie sau celor dragi prin câteva clickuri
+            </div>
+
+
+            <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_2" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('2')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Verifică balanța contului 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Vezi instant minutele, traficul de Internet și toate resursele rămase din contul tău.
+            </div>
+
+
+            <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_3" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('3')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Activează opțiuni adiționale 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Aici poți alege opțiuni de Internet, SMS, minute naționale/internaționale sau activa bonusuri, opțiuni lunare, dar și cinematograful online. </div>
+
+
+            <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_4" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('4')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Cumpără 2 GB la doar 10 MDL 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Exclusiv în aplicație poți achiziționa 2 GB la doar 10 MDL pentru a naviga mai mult, fără griji
+            </div>
+            <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_5" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('5')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Activează Roaming înainte de călătorie 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Activează serviciul de Roaming simplu și ușor, chiar din aplicație, înainte de plecarea ta peste hotare.
+            </div>  
+                <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="mtc_popup_block" id="mtc_popup_block_6" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('6')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Achită serviciile Moldtelecom
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Reîncarcă contul la orice oră și beneficiază în continuare de serviciile tale Moldtelecom.  
+                </div>  
+                <div class="mtc_popup_block_left_downlad">
+                
+                    <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<div class="mtc_popup_block" id="mtc_popup_block_7" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('7')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Urmărește statistica cheltuielilor lunare 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Monitorizează și accesează în orice clipă statistica cheltuielilor tale lunare</div>
+                <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_7+" style="display: none; background: rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(3.5999999046325684px);">
+    <div class="mtc_popup_block_inside" style="background: rgba(0, 0, 0, 0.26);
+padding: 45px 25px;
+    backdrop-filter: blur(50px);">
+        <div class="mtc_popup_close_button" onclick="popoup('7+')"><svg class="popup_block_inside_svg"
+                fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+                <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect>
+                <path
+                    d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z"
+                    fill="#222222"></path>
+            </svg></div>
+
+
+
+      
+       <div class="mtc_popup_block_flex">
+        <div class="mtc_popup_block_left">
+
+
+            <div class="mtc_popup_block_left_title">
+                Treci de la un cont la altul, fără a ieși din aplicație 
+            </div>
+
+            <div class="mtc_popup_block_left_text">
+                Poți naviga între conturi pentru o gestionare ușoară a serviciilor tuturor membrilor de familie</div>
+                <div class="mtc_popup_block_left_downlad">
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img4.png" alt="downoad">
+
+                <img onclick="window.location='https://mtc.md/my-mtc'" class="mtc_popup_block_left_downlad_btn hand zoom" src="images/mymtc/img5.png" alt="downoad">
+            </div>
+        </div>
+        <img class="mtc_popup_block_right_img " src="images/mymtc/img26.png" alt="Exemple">
+       </div>
+    </div>
+
+</div>
+</div>
+
+
+   <script>
+    function stopVideoPopup(video,id) {
+        popoup(id)
+    var video = document.getElementById(video);
+    video.pause(); // Pause the video
+    video.currentTime = 0; // Reset the video to the beginning
+  }
+   </script>
+
+</body>

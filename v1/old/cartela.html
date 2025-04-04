@@ -1,0 +1,2724 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+<style type="text/css">@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+
+    :root {
+        --mtc_blue: #212a55;
+        --mtc_pink: #dd4e6c;
+        --mtc_purple: #c666a4;
+        --mtc_light_green: #68b828;
+        --mtc_dark_green: #1da099;
+        --mtc_yellow: #e6e419;
+        --mtc_orange: #f2ab4c;
+
+        --mtc_dark_gray: #333333;
+        --mtc_backbroung: #ffffff;
+
+        --mtc_link_blue: #0071FA;
+
+
+        --heading_text: #1D1D1F;
+        --light_gray: #F7F7F7;
+
+        --border_radius_1: 18px;
+
+
+
+
+    }
+
+
+
+
+
+
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hand {
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #ff0000;
+    }
+
+    .default_head,
+    .add_serv_holder,
+    .serv_blocks {
+        display: none;
+    }
+
+    @font-face {
+        font-family: "MTC-Futura New";
+        src: url("https://www.moldtelecom.md/fonts/MTC-FuturaNewBold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC-Futura New";
+        src: url("https://www.moldtelecom.md/fonts/MTC-FuturaNewHeavi.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC-Futura New";
+        src: url("https://www.moldtelecom.md/fonts/MTC-FuturaNewDemi.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC-Futura New";
+        src: url("https://www.moldtelecom.md/fonts/MTC-FuturaNewMedium.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC_Highway";
+        src: url("https://www.moldtelecom.md/fonts/MTC_Highway-Bold.otf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC_Highway";
+        src: url("https://www.moldtelecom.md/fonts/MTC_Highway-Regular.otf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "MTC_Highway";
+        src: url("https://www.moldtelecom.md/fonts/MTC_Highway-Medium.otf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .page_content {
+        max-width: 100vw !important;
+        width: 100% !important;
+        min-height: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #fff;
+    }
+
+    body {
+        background: #fff;
+
+    }
+
+    .zoom:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+        transition: transform 0.3s linear;
+        -o-transition: transform 0.3s linear;
+        -ms-transition: transform 0.3s linear;
+        -moz-transition: transform 0.3s linear;
+        -webkit-transition: transform 0.3s linear;
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(8.1vw);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .hiden {
+        display: none !important;
+    }
+
+    .cartela_main {
+        max-width: 1180px;
+        margin: 0px auto 0px auto;
+    }
+
+    .cartela_main {
+        width: 1180px;
+        margin: 20px auto 0px auto;
+
+    }
+
+
+
+
+    /*---------------------------*/
+
+    #cartela_hero {
+        max-width: 1850px;
+        width: 96vw;
+        margin: 5px auto;
+        height: 515px;
+        border-radius: 45px;
+        border: 1px solid #C3C3C3;
+        background: url('https://moldtelecom.md/new/images/landings/personal/cartela/img1.png');
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+
+
+    @media (max-width:1300px) {
+        .cartela_main {
+            width: 880px;
+        }
+
+        #cartela_hero {
+            height: 450px;
+            background-position-x: calc(50% + 110px);
+        }
+    }
+
+
+    @media (max-width:950px) {
+        .cartela_main {
+            width: 580px;
+        }
+
+        #cartela_hero {
+            height: 350px;
+        }
+    }
+
+    @media (max-width:650px) {
+        .cartela_main {
+            width: 90%;
+        }
+
+        #cartela_hero {
+
+            background-position-x: 30%;
+        }
+
+        ul {
+            padding-inline-start: 0px;
+        }
+
+        .mtc_popup_block_table {
+            text-align: center;
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            table-layout: fixed;
+            width: calc(100% + 40px);
+            position: relative;
+            left: -20px;
+        }
+    }
+</style>
+<div id="cartela_hero"></div>
+
+<div class="cartela_main">
+<style type="text/css">#cartela_first_title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cartela_first_title_right {
+            color: var(--heading_text);
+            font-family: "MTC-Futura New";
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 43px;
+            /* 102.381% */
+            letter-spacing: -0.21px;
+        }
+
+        #cartela_first_title_left {
+            margin: 0 20px 0 50px;
+        }
+
+        #cartela_first_title_left_hey {
+            color: var(--heading_text);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 82px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.642px;
+        }
+
+        #cartela_first_title_left_go {
+            background: var(--heading_text);
+            display: inline-flex;
+            height: 29px;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+            color: #FFF;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.44px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -15px;
+        }
+
+
+        @media (max-width:950px) {
+            #cartela_first_title_right {
+                font-size: 32px;
+                line-height: 30px;
+            }
+
+            #cartela_first_title_left_hey {
+                font-size: 50;
+            }
+
+            #cartela_first_title_left_go {
+
+                margin-top: -10px;
+            }
+        }
+
+
+        @media (max-width:650px) {
+            #cartela_first_title_left {
+                margin: 0 10px 0 0px;
+            }
+
+            #cartela_first_title_right {
+                font-size: 20px;
+                line-height: 1;
+                width: 154px;
+            }
+        }
+</style>
+<div id="cartela_first_title">
+<div id="cartela_first_title_left"><span id="cartela_first_title_left_hey">HEY!<br />
+<span id="cartela_first_title_left_go">LET&rsquo;S GO!</span> </span></div>
+
+<div id="cartela_first_title_right">BINE AI VENIT &Icirc;N<br />
+REȚEAUA MOLDTELECOM</div>
+</div>
+<style type="text/css">#cartela_block1 {
+            margin: 20px 0;
+            border-radius: var(--border_radius_1);
+            background: var(--light_gray);
+            width: 100%;
+            display: flex;
+        }
+
+        #cartela_block1_left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cartela_block1_img {
+            width: 520px;
+            height: 412px;
+            margin-top: 10px;
+
+        }
+
+        #cartela_block1_right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #cartela_block1_right_tilte {
+            margin: 70px 0 0 0;
+            color: var(--heading_text);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #cartela_block1_right_subtilte {
+            color: var(--heading_text);
+            margin: 8px 0 0 0;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 495px;
+        }
+
+        #cartela_block1_right_intorduction {
+            color: var(--heading_text);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin: 34px 0 14px 0;
+        }
+
+        #cartela_block1_right_options {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+        }
+
+        .cartela_block1_right_options_blocks {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.42);
+            backdrop-filter: blur(16px);
+            width: 122px;
+            height: 92px;
+            flex-shrink: 0;
+
+
+
+        }
+
+        .cartela_block1_right_options_blocks_subtext {
+            color: #242424;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            width: 100%;
+
+
+        }
+
+        .cartela_block1_right_options_blocks_text {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        #cartela_block1_right_note {
+            color: var(--heading_text);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 70%;
+            margin: 40px 0 60px 0;
+        }
+
+        #cartela_block1_right_options_10GB {
+            color: #DD4E6C;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 30.466px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 80.556% */
+        }
+
+        #cartela_block1_right_options_150 {
+            color: var(--MTC_pink, #DD4E6C);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 30.466px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 80.556% */
+        }
+
+        #cartela_block1_right_options_min {
+            color: var(--MTC_pink, #DD4E6C);
+            font-family: "MTC-Futura New";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 153.387% */
+        }
+
+        #cartela_block1_right_options_blocks_text_costume {
+            margin: 10px 0 -10px 0;
+        }
+
+        @media (max-width:1300px) {
+            #cartela_block1_img {
+                width: 400px;
+                margin: 0 -60px 0 10px;
+                height: auto;
+            }
+
+            #cartela_block1_left {
+                width: 40%;
+            }
+
+            #cartela_block1_right {
+                margin-left: 5%;
+                width: 50%;
+            }
+
+        }
+
+        @media (max-width:950px) {
+            #cartela_block1 {
+
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #cartela_block1_right_note {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width:650px) {
+            #cartela_block1_right {
+                margin-left: 0;
+
+                width: 90%;
+            }
+
+            #cartela_block1_img {
+                margin: 0x;
+            }
+
+            #cartela_block1_right_tilte {
+                font-size: 42px;
+            }
+
+            #cartela_block1_right_options {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            #cartela_block1_left {
+                width: 100%;
+                display: flex;
+            }
+
+            #cartela_block1_img {
+                width: 90%;
+                margin: 0;
+                height: auto;
+            }
+
+            #cartela_block1_right_tilte {
+                margin: 32px 0 0 0;
+            }
+
+            #cartela_block1_right_subtilte {
+                width: 100%;
+                font-size: 23px;
+
+            }
+
+            #cartela_block1_right_note {
+                margin: 30px 0 30px 0;
+
+            }
+
+        }
+</style>
+<div id="cartela_block1">
+<div id="cartela_block1_left"><img alt="" id="cartela_block1_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/img2.png" /></div>
+
+<div id="cartela_block1_right"><span id="cartela_block1_right_tilte">BONUS DE BUN VENIT</span> <span id="cartela_block1_right_subtilte">distracție nelimitată, provocari si comunicare la super preț</span> <span id="cartela_block1_right_intorduction"> cel mai cool bonus de bun venit:</span>
+
+<div id="cartela_block1_right_options">
+<div class="cartela_block1_right_options_blocks">
+<div class="cartela_block1_right_options_blocks_text"><svg fill="none" height="26" viewbox="0 0 50 26" width="50" xmlns="http://www.w3.org/2000/svg"> <path d="M37.8951 0.632576C33.7469 0.418399 30.0595 2.20321 27.6486 5.14815C27.6486 5.14815 24.9363 8.68208 24.9363 8.66424C24.9363 8.66424 21.5149 13.1798 21.5327 13.1798L18.5899 17.0707L18.3595 17.3741C16.6754 19.6408 13.6971 20.9081 10.5594 19.9799C9.38481 19.6228 8.32497 18.9592 7.48745 18.0564C6.64993 17.1537 6.06455 16.0439 5.79072 14.8397C5.54633 13.7967 5.53918 12.7116 5.76979 11.6655C6.0004 10.6194 6.46283 9.6392 7.12251 8.79825C7.78219 7.95731 8.62209 7.27731 9.57945 6.80905C10.5368 6.3408 11.5869 6.0964 12.6512 6.0941C14.7962 6.0941 16.3917 7.00436 17.4908 7.96816C18.6608 9.00335 20.4513 8.84272 21.4086 7.59335C22.2418 6.50461 22.1354 4.93397 21.1427 4.00587C15.5408 -1.17009 4.9398 0.00789001 1.55387 7.20069C-2.84253 16.5353 3.85843 25.7449 12.6512 25.7449C16.5158 25.7449 19.9726 24.0136 22.2595 21.2293L23.0218 20.2298C23.0218 20.2298 24.9541 17.6775 24.9541 17.6954C24.9541 17.6954 28.3754 13.1798 28.3577 13.1798L31.3536 9.23537L31.5664 8.96765C33.1087 6.86157 35.7678 5.66575 38.6928 6.23689C41.281 6.75448 43.426 8.78917 44.0642 11.3772C45.2342 16.0712 41.7242 20.3012 37.2392 20.3012C35.1296 20.3012 33.5341 19.391 32.435 18.4093C32.1575 18.1643 31.8328 17.9792 31.4813 17.8657C31.1298 17.7522 30.7588 17.7126 30.3915 17.7495C30.0241 17.7863 29.6682 17.8987 29.3458 18.0797C29.0234 18.2608 28.7414 18.5066 28.5173 18.802C27.6486 19.9443 27.8082 21.5327 28.8718 22.4965C30.5205 23.9779 33.3391 25.7806 37.2392 25.7806C44.6847 25.7806 50.6233 19.1946 49.6129 11.5021C48.8329 5.57651 43.7983 0.935994 37.8951 0.632576Z" fill="#DD4E6C"></path> </svg></div>
+<span class="cartela_block1_right_options_blocks_subtext"> trafic<br />
+retele sociale </span></div>
+
+<div class="cartela_block1_right_options_blocks">
+<div class="cartela_block1_right_options_blocks_text"><svg fill="none" height="26" viewbox="0 0 50 26" width="50" xmlns="http://www.w3.org/2000/svg"> <path d="M37.8951 0.632576C33.7469 0.418399 30.0595 2.20321 27.6486 5.14815C27.6486 5.14815 24.9363 8.68208 24.9363 8.66424C24.9363 8.66424 21.5149 13.1798 21.5327 13.1798L18.5899 17.0707L18.3595 17.3741C16.6754 19.6408 13.6971 20.9081 10.5594 19.9799C9.38481 19.6228 8.32497 18.9592 7.48745 18.0564C6.64993 17.1537 6.06455 16.0439 5.79072 14.8397C5.54633 13.7967 5.53918 12.7116 5.76979 11.6655C6.0004 10.6194 6.46283 9.6392 7.12251 8.79825C7.78219 7.95731 8.62209 7.27731 9.57945 6.80905C10.5368 6.3408 11.5869 6.0964 12.6512 6.0941C14.7962 6.0941 16.3917 7.00436 17.4908 7.96816C18.6608 9.00335 20.4513 8.84272 21.4086 7.59335C22.2418 6.50461 22.1354 4.93397 21.1427 4.00587C15.5408 -1.17009 4.9398 0.00789001 1.55387 7.20069C-2.84253 16.5353 3.85843 25.7449 12.6512 25.7449C16.5158 25.7449 19.9726 24.0136 22.2595 21.2293L23.0218 20.2298C23.0218 20.2298 24.9541 17.6775 24.9541 17.6954C24.9541 17.6954 28.3754 13.1798 28.3577 13.1798L31.3536 9.23537L31.5664 8.96765C33.1087 6.86157 35.7678 5.66575 38.6928 6.23689C41.281 6.75448 43.426 8.78917 44.0642 11.3772C45.2342 16.0712 41.7242 20.3012 37.2392 20.3012C35.1296 20.3012 33.5341 19.391 32.435 18.4093C32.1575 18.1643 31.8328 17.9792 31.4813 17.8657C31.1298 17.7522 30.7588 17.7126 30.3915 17.7495C30.0241 17.7863 29.6682 17.8987 29.3458 18.0797C29.0234 18.2608 28.7414 18.5066 28.5173 18.802C27.6486 19.9443 27.8082 21.5327 28.8718 22.4965C30.5205 23.9779 33.3391 25.7806 37.2392 25.7806C44.6847 25.7806 50.6233 19.1946 49.6129 11.5021C48.8329 5.57651 43.7983 0.935994 37.8951 0.632576Z" fill="#DD4E6C"></path> </svg></div>
+<span class="cartela_block1_right_options_blocks_subtext"> apeluri<br />
+in retea </span></div>
+
+<div class="cartela_block1_right_options_blocks">
+<div class="cartela_block1_right_options_blocks_text"><span id="cartela_block1_right_options_10GB">10GB</span></div>
+<span class="cartela_block1_right_options_blocks_subtext"> internet<br />
+trafic </span></div>
+
+<div class="cartela_block1_right_options_blocks">
+<div class="cartela_block1_right_options_blocks_text" id="cartela_block1_right_options_blocks_text_costume"><span id="cartela_block1_right_options_150">150</span> <span id="cartela_block1_right_options_min">MINUTE</span></div>
+<span class="cartela_block1_right_options_blocks_subtext"> nationale </span></div>
+</div>
+<span id="cartela_block1_right_note"> Notă: Bonusul de bun-venit, minute nelimitate &icirc;n rețeaua Moldtelecom, 10 GB și 150 minute naționale, se oferă o singură dată la activarea cartelei și este valabil 21 zile. </span></div>
+</div>
+<style type="text/css">#cartela_block2_header {
+            color: var(--heading_text);
+            width: 100%;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        #cartela_block2_subheader {
+            color: var(--heading_text);
+            width: 100%;
+
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+</style>
+<div id="cartela_block2_header">MINUTE, SMS ȘI REȚELE NELIMITAT</div>
+
+<div id="cartela_block2_subheader">BUCURĂ-TE DE OPȚIUNILE REBEL:</div>
+<style type="text/css">#cartela_block2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 40px 0;
+        }
+
+        .cartela_block2_rebel_card {
+            width: 580px;
+            height: 540px;
+            border-radius: 18px;
+            background: linear-gradient(325deg, #FF004C 1.93%, rgba(255, 0, 76, 0.18) 47.44%, rgba(255, 0, 76, 0.00) 59.17%, rgba(0, 0, 0, 0.00) 59.17%), #95045D;
+            backdrop-filter: blur(32.150001525878906px);
+            box-sizing: border-box;
+            padding: 60px;
+        }
+
+        .cartela_block2_title {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 92%;
+            /* 50.6px */
+        }
+
+        .cartela_block2_subtitle {
+            color: rgba(255, 255, 255, 0.60);
+            font-family: "MTC-Futura New";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 100%;
+            /* 14px */
+            margin-top: 10px;
+        }
+
+        .cartela_block2_options {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 10px;
+            margin: 20px 0 0 0;
+
+        }
+
+        .cartela_block2_options_block {
+            border-radius: 15.233px;
+            background: rgba(255, 255, 255, 0.10);
+            width: 122px;
+            height: 93px;
+
+        }
+
+        .cartela_block2_options_block_top {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 30.466px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 80.556% */
+        }
+
+        .cartela_block2_options_block_bottom {
+            width: 100%;
+            height: 50%;
+            display: flex;
+
+            justify-content: center;
+            color: #FFF;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 20.311px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16.926px;
+            /* 83.333% */
+        }
+
+        .cartela_block2_options_block_top_text2 {
+
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 30.466px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 80.556% */
+        }
+
+        .cartela_block2_options_block_top_text3 {
+
+            font-family: "MTC-Futura New";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.542px;
+            /* 153.387% */
+        }
+
+        #cartela_block2_options_block_top_cosume {
+            display: flex;
+            margin: 10px 0 0px 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cartela_block2_options_block_tarife {
+            color: #FFF;
+            font-family: "MTC-Futura New";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 30px;
+        }
+
+        .cartela_block2_options_block_btn {
+            margin-top: 10px;
+            border-radius: 40px;
+            background: #FFF;
+            display: flex;
+            width: 180px;
+            height: 41px;
+            padding: 1px 23px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+            /* 222.222% */
+        }
+
+        .cartela_block2_options_block_img {
+            position: absolute;
+
+            height: auto;
+            bottom: 0px;
+            right: 20px;
+        }
+
+        #cartela_block2_options_block_img_1 {
+            width: 290px;
+        }
+
+        #cartela_block2_options_block_img_2 {
+            width: 180px
+        }
+
+        @media (max-width:1300px) {
+            .cartela_block2_rebel_card {
+                width: 430px;
+                height: auto;
+            }
+
+            #cartela_block2_options_block_img_1 {
+                content: url('https://moldtelecom.md/new/images/landings/personal/cartela/img10.png');
+                right: 4px;
+                width: 209px;
+            }
+        }
+
+        @media (max-width:950px) {
+            #cartela_block2 {
+                flex-direction: column;
+                gap: 20px
+            }
+
+            .cartela_block2_rebel_card {
+                width: 100%;
+            }
+
+            #cartela_block2_options_block_img_1 {
+                content: url('https://moldtelecom.md/new/images/landings/personal/cartela/img8.png');
+                right: 4px;
+                width: 290px;
+                bottom: 0px;
+                right: 20px;
+            }
+        }
+
+
+        @media (max-width:650px) {
+            .cartela_block2_rebel_card {
+                padding: 5%;
+            }
+        }
+</style>
+<div id="cartela_block2">
+<div class="cartela_block2_rebel_card">
+<div class="cartela_block2_title"><span style=" color: #D2FF00;"> REBEL FUN<br />
+50 <span style="color: #fff;">LEI </span> </span></div>
+
+<div class="cartela_block2_subtitle">valabil 21 zile</div>
+
+<div class="cartela_block2_options">
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#D2FF00"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">minute<br />
+&icirc;n rețea</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><span style="color: #D2FF00; padding-top: 8px;">15GB</span></div>
+
+<div class="cartela_block2_options_block_bottom">internt<br />
+trafic</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#D2FF00"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">SMS<br />
+&icirc;n rețea</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top" id="cartela_block2_options_block_top_cosume">
+<div class="cartela_block2_options_block_top_text2" style=" color: #D2FF00;">20</div>
+
+<div class="cartela_block2_options_block_top_text3" style=" color: #D2FF00;">MINUTE</div>
+</div>
+
+<div class="cartela_block2_options_block_bottom">nationale</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#D2FF00"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">trafic<br />
+retele sociale</div>
+</div>
+</div>
+
+<div class="cartela_block2_options_block_tarife" onclick="scroll_top_div('cartela_block5_header')">*vezi <span style=" color: #D2FF00;">extra terife </span></div>
+
+<div class="cartela_block2_options_block_btn" onclick="popoup('rebel_fun')"><span style="color: #EA0250;">Activare si conditii</span> <svg fill="none" height="41" viewbox="0 0 25 41" width="25" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M14.028 20.5048L8.94957 24.7364C8.5386 25.0936 8.48872 25.7138 8.83732 26.1321C9.18592 26.5504 9.80502 26.6132 10.2305 26.2734L16.2305 21.2734C16.4582 21.0831 16.5898 20.8016 16.5898 20.5048C16.5898 20.208 16.4582 19.9265 16.2305 19.7362L10.2305 14.7362C9.80574 14.3855 9.17747 14.444 8.82481 14.8671C8.47216 15.2902 8.52774 15.9187 8.94917 16.2734L14.028 20.5048Z" fill="#EA0250" fill-rule="evenodd"></path> </svg></div>
+<img alt="Satoshi" class="cartela_block2_options_block_img" id="cartela_block2_options_block_img_1" src="https://moldtelecom.md/new/images/landings/personal/cartela/img8.png" /></div>
+
+<div class="cartela_block2_rebel_card" style="background: linear-gradient(325deg, #E12B99 1.93%, rgba(239, 24, 118, 0.55) 22.63%, rgba(255, 0, 76, 0.00) 58.12%, rgba(0, 0, 0, 0.00) 58.12%), #1F0089;
+ ">
+<div class="cartela_block2_title"><span style=" color: #E12B99;"> REBEL FUN<br />
+100 <span style="color: #fff;">LEI </span> </span></div>
+
+<div class="cartela_block2_subtitle">valabil 21 zile</div>
+
+<div class="cartela_block2_options">
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#E12B99"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">minute<br />
+&icirc;n rețea</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><span style="color: #E12B99; padding-top: 8px;">15GB</span></div>
+
+<div class="cartela_block2_options_block_bottom">internt<br />
+trafic</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#E12B99"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">SMS<br />
+&icirc;n rețea</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top" id="cartela_block2_options_block_top_cosume">
+<div class="cartela_block2_options_block_top_text2" style=" color: #E12B99;">20</div>
+
+<div class="cartela_block2_options_block_top_text3" style=" color: #E12B99;">MINUTE</div>
+</div>
+
+<div class="cartela_block2_options_block_bottom">nationale</div>
+</div>
+
+<div class="cartela_block2_options_block">
+<div class="cartela_block2_options_block_top"><svg fill="none" height="24" viewbox="0 0 49 24" width="49" xmlns="http://www.w3.org/2000/svg"> <path d="M36.7979 0.0163873C32.8513 -0.186001 29.3433 1.50057 27.0495 4.2834C27.0495 4.2834 24.4691 7.6228 24.4691 7.60594C24.4691 7.60594 21.214 11.873 21.2309 11.873L18.4312 15.5497L18.2119 15.8364C16.6097 17.9783 13.7763 19.1758 10.791 18.2988C9.67356 17.9613 8.66524 17.3342 7.86843 16.4811C7.07163 15.6281 6.5147 14.5793 6.25418 13.4415C6.02168 12.4559 6.01487 11.4305 6.23427 10.442C6.45368 9.45343 6.89362 8.52723 7.52124 7.73258C8.14885 6.93792 8.94792 6.29535 9.85874 5.85287C10.7696 5.4104 11.7686 5.17945 12.7812 5.17728C14.8219 5.17728 16.3399 6.03743 17.3855 6.94818C18.4987 7.92638 20.2021 7.77459 21.1128 6.594C21.9055 5.56519 21.8043 4.08101 20.8598 3.204C15.5303 -1.68705 5.44463 -0.573913 2.22329 6.22295C-1.95939 15.0437 4.41583 23.7464 12.7812 23.7464C16.4579 23.7464 19.7467 22.1104 21.9224 19.4794L22.6476 18.5349C22.6476 18.5349 24.486 16.1231 24.486 16.14C24.486 16.14 27.741 11.873 27.7242 11.873L30.5745 8.14564L30.7769 7.89265C32.2442 5.9025 34.774 4.7725 37.5569 5.3122C40.0192 5.80131 42.06 7.724 42.6672 10.1695C43.7803 14.6052 40.4409 18.6024 36.1739 18.6024C34.1669 18.6024 32.649 17.7422 31.6033 16.8146C31.3392 16.583 31.0304 16.4082 30.6959 16.3009C30.3615 16.1937 30.0086 16.1563 29.6591 16.191C29.3096 16.2258 28.971 16.3321 28.6642 16.5032C28.3575 16.6743 28.0892 16.9065 27.876 17.1856C27.0495 18.265 27.2013 19.7661 28.2133 20.6768C29.7818 22.0767 32.4634 23.7801 36.1739 23.7801C43.2575 23.7801 48.9075 17.5567 47.9461 10.2876C47.204 4.68818 42.4142 0.303104 36.7979 0.0163873Z" fill="#E12B99"></path> </svg></div>
+
+<div class="cartela_block2_options_block_bottom">trafic<br />
+retele sociale</div>
+</div>
+</div>
+
+<div class="cartela_block2_options_block_tarife" onclick="scroll_top_div('cartela_block5_header')">*vezi <span style=" color: #E12B99;">extra terife </span></div>
+
+<div class="cartela_block2_options_block_btn" onclick="popoup('rebel_fun')"><span style="color: #E12B99;">Activare si conditii</span> <svg fill="none" height="41" viewbox="0 0 25 41" width="25" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M14.028 20.5048L8.94957 24.7364C8.5386 25.0936 8.48872 25.7138 8.83732 26.1321C9.18592 26.5504 9.80502 26.6132 10.2305 26.2734L16.2305 21.2734C16.4582 21.0831 16.5898 20.8016 16.5898 20.5048C16.5898 20.208 16.4582 19.9265 16.2305 19.7362L10.2305 14.7362C9.80574 14.3855 9.17747 14.444 8.82481 14.8671C8.47216 15.2902 8.52774 15.9187 8.94917 16.2734L14.028 20.5048Z" fill="#EA0250" fill-rule="evenodd"></path> </svg></div>
+<img alt="Satoshi" class="cartela_block2_options_block_img" id="cartela_block2_options_block_img_2" src="https://moldtelecom.md/new/images/landings/personal/cartela/img9.png" /></div>
+</div>
+</div>
+<style type="text/css">#cartela_block3 {
+        width: 100vw;
+        background: var(--light_gray);
+        display: flex;
+    }
+
+    #cartela_block3_header {
+        color: var(--heading_text);
+        width: 100%;
+        text-align: center;
+        font-family: "MTC-Futura New";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #cartela_block3_subheader {
+        color: var(--heading_text);
+        width: 100%;
+
+        text-align: center;
+        font-family: "MTC-Futura New";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    #cartela_block3_main_img {
+        margin: 0 0 0 -60px;
+        width: 433px;
+        height: auto;
+    }
+
+    #cartela_block3_main_text {
+        color: var(--heading_text);
+        text-align: right;
+        font-family: "MTC-Futura New";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    #cartela_block3_flex {
+        display: flex;
+    }
+
+    #cartela_block3_text_flex {
+        width: 50%;
+        margin-left: 60px;
+        text-align: right;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cartela_get_btn {
+        width: 168px;
+        height: auto;
+    }
+
+    #cartela_block3_get_btns {
+        display: flex;
+        margin-top: 60px;
+        gap: 10px;
+    }
+
+    @media (max-width:950px) {
+        #cartela_block3_flex {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        #cartela_block3_text_flex {
+            width: 100%;
+            margin-left: 0;
+            align-items: center;
+        }
+
+        #cartela_block3_main_text {
+            text-align: center;
+        }
+
+        #cartela_block3 {
+            padding-bottom: 50px;
+        }
+    }
+
+    @media (max-width:650px) {
+        #cartela_block3_main_img {
+            margin: 0 0 0 -60px;
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    @media (max-width:650px) {
+        .cartela_get_btn {
+            width: 45%;
+            height: auto;
+        }
+
+        #cartela_block3_header {
+            font-size: 42px;
+        }
+    }
+</style>
+<div id="cartela_block3">
+<div class="cartela_main">
+<div id="cartela_block3_header">&Icirc;ȚI PLAC PROVOCĂRILE?</div>
+
+<div id="cartela_block3_subheader">PARTICIPĂ LA CHALLENGE ȘI C&Acirc;ȘTIGĂ PREMII VALOROASE!</div>
+
+<div class="cartela_block3_main" id="cartela_block3_flex">
+<div id="cartela_block3_text_flex"><span id="cartela_block3_main_text"> Acceptă provocarea &icirc;n aplicația My Moldtelecom și c&acirc;știgă premii valoroase! Descarcă aplicația My Moldtelecom și treci etapele din Challenge.<br />
+<br />
+Cartela Moldtelecom. Viața ta - regulile tale!</span>
+
+<div id="cartela_block3_get_btns"><img alt="Get on App Store" class="cartela_get_btn hand zoom" onclick="window.location='https://mtc.md/my-mtc'" src="https://moldtelecom.md/new/images/landings/personal/cartela/App_Store_btn.png" /> <img alt="Get on Google Play" class="cartela_get_btn hand zoom" onclick="window.location='https://mtc.md/my-mtc'" src="https://moldtelecom.md/new/images/landings/personal/cartela/Google_Play_btn.png" /></div>
+</div>
+<img alt="Cartela_Moldtelecom" id="cartela_block3_main_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/img3.png" /></div>
+</div>
+</div>
+
+<div class="cartela_main">
+<style type="text/css">#cartela_block4 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #cartela_block4_header {
+            color: var(--heading_text);
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #cartela_block4_video {
+            border-radius: 15px;
+            border: 3px solid #000;
+            width: 777px;
+            height: 434px;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 50px;
+        }
+
+        @media (max-width:950px) {
+            #cartela_block4_video {
+                width: 700px;
+                height: 390px;
+
+            }
+        }
+
+        @media (max-width:650px) {
+            #cartela_block4_header {
+                width: 100%;
+                font-size: 42px;
+            }
+
+            #cartela_block4_video {
+                width: 100%;
+                height: 50vw;
+            }
+        }
+</style>
+<div id="cartela_block4">
+<div id="cartela_block4_header">Cartela Moldtelecom: prinde vibe-ul provocărilor rebele</div>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" id="cartela_block4_video" src="https://www.youtube.com/embed/t98o49yRmy8" title="YouTube video player"></iframe></div>
+<style type="text/css">#cartela_block5 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #cartela_block5_header {
+            color: var(--heading_text);
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .cartela_block5_tarife_title {
+            color: var(--MTC_pink, #DD4E6C);
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: "MTC-Futura New";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 27.577px;
+            /* 57.453% */
+            letter-spacing: 1px;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-top: 10px;
+
+        }
+
+        .cartela_block5_tarife_block {
+            border-radius: 18px;
+            border: 1px solid #EBEAEA;
+            background: #FFF;
+            display: flex;
+            width: 180px;
+            height: 125px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .cartela_block5_tarife_text {
+            color: var(--heading_text);
+            width: 90%;
+            margin: auto;
+
+            height: 40%;
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: "MTC-Futura New";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 17px;
+            /* 113.333% */
+
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        #cartela_block5_tarife {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        #cartela_block5_tarife_footer {
+            color: var(--heading_text);
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: flex;
+            width: 462px;
+            flex-direction: column;
+            justify-content: center;
+            margin: 30px 0 40px 0;
+        }
+
+        @media (max-width:1300px) {
+            #cartela_block5_tarife {
+                flex-wrap: wrap;
+                width: 600px;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width:650px) {
+            #cartela_block5_tarife_footer {
+                width: 90%;
+            }
+
+            #cartela_block5_tarife {
+                width: 400px;
+
+            }
+
+            #cartela_block5_header {
+                font-size: 42px;
+            }
+
+            #cartela_block5_tarife {
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+</style>
+<div id="cartela_block5">
+<div id="cartela_block5_header">Tarife Extra:</div>
+
+<div id="cartela_block5_tarife">
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">1 leu</div>
+
+<div class="cartela_block5_tarife_text">Minuta in reteaua mobila Moldtelecom</div>
+</div>
+
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">1.5 lei</div>
+
+<div class="cartela_block5_tarife_text">Minuta in reteaua fixa Moldtelecom</div>
+</div>
+
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">1.5 lei</div>
+
+<div class="cartela_block5_tarife_text">Minuta nationala</div>
+</div>
+
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">1leu</div>
+
+<div class="cartela_block5_tarife_text">MB internet</div>
+</div>
+
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">1leu</div>
+
+<div class="cartela_block5_tarife_text">SMS national</div>
+</div>
+
+<div class="cartela_block5_tarife_block">
+<div class="cartela_block5_tarife_title">2 lei</div>
+
+<div class="cartela_block5_tarife_text">SMS international</div>
+</div>
+</div>
+
+<div id="cartela_block5_tarife_footer">Sună, trimite SMS, navigheaza pe net si primeste apeluri timp de 6 luni, plus 6 luni in care poti primi doar apeluri.</div>
+</div>
+</div>
+<style type="text/css">#cartela_block6 {
+        width: 100vw;
+        background: var(--light_gray);
+        display: flex;
+    }
+</style>
+<div id="cartela_block6">
+<div class="cartela_main">
+<style type="text/css">#cartela_block7 {
+                border-radius: 18px;
+                background: #FFF;
+                width: 100%;
+                margin: 55px 0 40px 0;
+                display: flex;
+            }
+
+            #cartela_block7_img {
+                height: 370px;
+                width: auto;
+            }
+
+            #cartela_block7_left {
+                width: 50%;
+                display: flex;
+
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            #cartela_block7_title {
+                color: #1D1D1F;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 10px 0;
+            }
+
+            #cartela_block7_subtitle {
+                color: #1D1D1F;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 28px;
+                /* 100% */
+            }
+
+            #cartela_block7_btn {
+                color: #FD4B6B;
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 12.893px;
+                font-style: normal;
+                font-weight: 600;
+                display: flex;
+                line-height: 19.34px;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 20px 0 0 0;
+                cursor: pointer;
+            }
+
+
+            @media (max-width:950px) {
+                #cartela_block7_img {
+                    content: url('https://moldtelecom.md/new/images/landings/personal/cartela/img11.png');
+
+                    height: 330px;
+                    margin: 10px 0;
+                    width: auto;
+
+                }
+
+                #cartela_block7_left {
+                    width: 60%;
+                }
+
+            }
+
+            @media (max-width:650px) {
+                #cartela_block7 {
+                    border-radius: 18px;
+                    background: #FFF;
+                    width: 100%;
+                    margin: 55px 0 40px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    padding: 15px 0;
+                }
+
+                #cartela_block7_left {
+                    width: 98%;
+                }
+
+                #cartela_block7_title {
+                    font-size: 42px;
+                }
+
+                #cartela_block7_img {
+                    margin-top: 20px;
+                }
+            }
+</style>
+<div id="cartela_block7">
+<div id="cartela_block7_left"><svg fill="none" height="63" viewbox="0 0 67 63" width="67" xmlns="http://www.w3.org/2000/svg"> <path d="M64.2935 19.947C64.2935 19.7291 64.3063 19.5112 64.3063 19.2932C64.3063 10.5633 57.1147 3 48.2566 3C41.7701 3 36.1937 7.2688 33.6555 12.717C31.1173 7.2688 25.541 3 19.0544 3C10.1835 3 3.00478 10.5633 3.00478 19.2932C3.00478 19.5112 3.00479 19.7291 3.01761 19.947C3.01761 19.947 2.10743 30.3178 13.3755 41.6371C18.4904 46.893 24.2206 51.8925 33.6555 59.7379C43.0777 51.8925 48.8079 46.893 53.9355 41.6371C65.2036 30.3178 64.2935 19.947 64.2935 19.947Z" stroke="#DF5E75" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.9354"></path> <path d="M41.8977 24.0362C41.8977 26.2155 40.1671 27.9845 38.0519 27.9845C35.9368 27.9845 34.1934 26.2155 34.1934 24.0362C34.1934 21.8569 35.9239 20.0879 38.0519 20.0879C40.1799 20.0879 41.8977 21.8569 41.8977 24.0362Z" fill="#DF5E75"></path> <path d="M36.7831 41.0098L24.1689 32.0619L38.0522 24.0371" stroke="#DF5E75" stroke-miterlimit="10" stroke-width="3.25608"></path> <path d="M40.5261 41.0089C40.5261 43.1881 38.7955 44.9572 36.6804 44.9572C34.5652 44.9572 32.8218 43.1881 32.8218 41.0089C32.8218 38.8296 34.5524 37.0605 36.6804 37.0605C38.8083 37.0605 40.5261 38.8296 40.5261 41.0089Z" fill="#DF5E75"></path> <path d="M28.0154 32.2003C28.0154 34.3795 26.2848 36.1486 24.1696 36.1486C22.0545 36.1486 20.311 34.3795 20.311 32.2003C20.311 30.021 22.0416 28.252 24.1696 28.252C26.2976 28.252 28.0154 30.021 28.0154 32.2003Z" fill="#DF5E75"></path> </svg> <span id="cartela_block7_title">&ldquo;Share Net&rdquo; </span> <span id="cartela_block7_subtitle"> &Icirc;mparte <span style="font-weight: 450;">IUBIREA</span><br />
+Transfera <span style="font-weight: 450;">GB</span> </span> <span id="cartela_block7_btn" onclick="popoup('ShareNet')"> Activare și condiții <svg fill="none" height="10" viewbox="0 0 7 10" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M1.07861 8.84375L5.91362 5.34628L1.07861 1.55735" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg> </span></div>
+<img alt="Share Love" id="cartela_block7_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/img7.png" /></div>
+<style type="text/css">#cartela_block8 {
+                display: flex;
+                border-radius: 18px;
+                background: url(https://moldtelecom.md/new/images/landings/personal/cartela/img4.png) no-repeat center;
+                background-size: 100%;
+                width: 100%;
+                margin: 55px 0 40px 0;
+                align-items: center;
+            }
+
+            #cartela_block8_img {
+                width: 400px;
+                height: auto;
+                flex-shrink: 0;
+                margin-top: 35px;
+
+            }
+
+            #cartela_block8_left {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #cartela_block8_right {
+                width: 50%;
+            }
+
+            #cartela_block8_right_title {
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            #cartela_block8_right_subtitle {
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            #cartela_block8_right_img {
+                height: auto;
+                width: 524px;
+                margin: auto;
+            }
+
+            #cartela_block8_right_btn {
+                color: #FFF;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                /* 222.222% */
+                border-radius: 40px;
+                border: 2px solid #FD4B6B;
+                background: rgba(255, 255, 255, 0.20);
+                display: flex;
+                width: 222.965px;
+                padding: 3px 28px;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                margin: 30px auto 0;
+                cursor: pointer;
+
+            }
+
+            @media (max-width:1300px) {
+                #cartela_block8_left {
+                    width: 40%;
+                }
+
+                #cartela_block8_img {
+                    width: 330px
+                }
+
+                #cartela_block8_right_img {
+                    width: 404px;
+                    margin-left: 40px;
+                }
+
+                #cartela_block8 {
+
+                    background-size: 131%;
+                    background-position-x: -132px;
+                }
+            }
+
+            @media (max-width:950px) {
+                #cartela_block8 {
+                    flex-direction: column-reverse;
+                }
+
+                #cartela_block8_right {
+                    width: 90%;
+                }
+
+                #cartela_block8 {
+                    background-size: 361%;
+                    background-position-x: -722px;
+                }
+
+                #cartela_block8_right_title {
+                    margin-top: 40px;
+
+                }
+            }
+
+            @media (max-width:650px) {
+                #cartela_block8_right_img {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+
+                #cartela_block8 {
+                    background-size: 666%;
+
+                }
+
+                #cartela_block8_img {
+                    width: 80vw;
+                }
+            }
+
+
+
+            @media (max-width:350px) {
+                #cartela_block8_right_btn {
+                    width: 80%;
+                    padding: 3px 0;
+                }
+            }
+</style>
+<div id="cartela_block8">
+<div id="cartela_block8_left"><img alt="Satoshi" id="cartela_block8_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/img5.png" /></div>
+
+<div id="cartela_block8_right">
+<div id="cartela_block8_right_title">UNDE CUMPERI CARTELA MOLDTELECOM?</div>
+
+<div id="cartela_block8_right_subtitle">ALEGE CEA MAI APROPIATĂ LOCAȚIE</div>
+<img alt="unde?" id="cartela_block8_right_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/img6.png" />
+<div id="cartela_block8_right_btn" onclick="window.location='https://www.moldtelecom.md/ro/magazine'">Vezi harta aici <svg fill="none" height="40" viewbox="0 0 25 40" width="25" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M14.5099 20.0048L9.43151 24.2364C9.02054 24.5936 8.97065 25.2138 9.31925 25.6321C9.66786 26.0504 10.287 26.1132 10.7124 25.7734L16.7124 20.7734C16.9402 20.5831 17.0718 20.3016 17.0718 20.0048C17.0718 19.708 16.9402 19.4265 16.7124 19.2362L10.7124 14.2362C10.2877 13.8855 9.6594 13.944 9.30675 14.3671C8.95409 14.7902 9.00968 15.4187 9.43111 15.7734L14.5099 20.0048Z" fill="white" fill-rule="evenodd"></path> </svg></div>
+</div>
+</div>
+<style type="text/css">.mtc_carousell_card {
+                width: 273px;
+                margin-bottom: 10px;
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 3.994px 3.994px 4.992px 0px rgba(0, 0, 0, 0.05);
+                border: 1px solid #f5f5f5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 365px;
+
+            }
+
+
+
+
+            /* Slider */
+            .slick-loading .slick-list {
+                background: #fff url('./ajax-loader.gif') center center no-repeat;
+            }
+
+            /* Icons */
+            @font-face {
+                font-family: 'slick';
+                font-weight: normal;
+                font-style: normal;
+
+                src: url('./fonts/slick.eot');
+                src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+            }
+
+            /* Arrows */
+            .slick-prev,
+            .slick-next {
+                font-size: 0;
+                line-height: 0;
+
+                position: absolute;
+                top: 50%;
+
+                display: block;
+
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                -webkit-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+
+                cursor: pointer;
+
+                color: transparent;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+
+            .slick-prev:hover,
+            .slick-prev:focus,
+            .slick-next:hover,
+            .slick-next:focus {
+                color: transparent;
+                outline: none;
+                background: transparent;
+            }
+
+            .slick-prev:hover:before,
+            .slick-prev:focus:before,
+            .slick-next:hover:before,
+            .slick-next:focus:before {
+                opacity: 1;
+            }
+
+            .slick-prev.slick-disabled:before,
+            .slick-next.slick-disabled:before {
+                opacity: .25;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+                font-family: 'slick';
+                font-size: 20px;
+                line-height: 1;
+
+                opacity: .75;
+                color: #17233D;
+
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .slick-prev {
+                left: -25px;
+            }
+
+            [dir='rtl'] .slick-prev {
+                right: -25px;
+                left: auto;
+            }
+
+            .slick-prev:before {
+                /* content: 'ÃƒÂ¢Ã¢â‚¬ Ã‚Â'; */
+                content: "";
+                display: block;
+                width: 16px;
+                /* Width of the SVG */
+                height: 28px;
+                /* Height of the SVG */
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDE2IDI4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMTUuMTgwOSAwLjc3MzIzNUMxNS45NTAxIDEuNTQyNSAxNS45NTAxIDIuNzg5NzIgMTUuMTgwOSAzLjU1ODk4TDQuNzU0ODMgMTMuOTg1TDE1LjE4MDkgMjQuNDExQzE1Ljk1MDEgMjUuMTgwMyAxNS45NTAxIDI2LjQyNzUgMTUuMTgwOSAyNy4xOTY4QzE0LjQxMTYgMjcuOTY2IDEzLjE2NDQgMjcuOTY2IDEyLjM5NTEgMjcuMTk2OEwwLjU3NjIyMSAxNS4zNzc5Qy0wLjE5MzA0MSAxNC42MDg2IC0wLjE5MzA0IDEzLjM2MTQgMC41NzYyMjEgMTIuNTkyMUwxMi4zOTUxIDAuNzczMjM1QzEzLjE2NDQgMC4wMDM5NzM1MyAxNC40MTE2IDAuMDAzOTczNTkgMTUuMTgwOSAwLjc3MzIzNVoiIGZpbGw9IiMxNzIzM0QiLz4KPC9zdmc+');
+                background-size: contain;
+                background-repeat: no-repeat;
+                image-rendering: -webkit-optimize-contrast;
+                /* Webkit browsers */
+                image-rendering: pixelated;
+                /* Modern browsers */
+            }
+
+            [dir='rtl'] .slick-prev:before {
+                /* content: 'ÃƒÂ¢Ã¢â‚¬ Ã¢â‚¬â„¢'; */
+                content: "";
+                display: block;
+                width: 16px;
+                /* Width of the SVG */
+                height: 28px;
+                /* Height of the SVG */
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDE2IDI4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMC41ODU3ODYgMjcuNDE0MkMtMC4xOTUyNjIgMjYuNjMzMiAtMC4xOTUyNjIgMjUuMzY2OCAwLjU4NTc4NiAyNC41ODU4TDExLjE3MTYgMTRMMC41ODU3ODUgMy40MTQyMUMtMC4xOTUyNjMgMi42MzMxNyAtMC4xOTUyNjMgMS4zNjY4MyAwLjU4NTc4NSAwLjU4NTc4N0MxLjM2NjgzIC0wLjE5NTI2MyAyLjYzMzE2IC0wLjE5NTI2MyAzLjQxNDIxIDAuNTg1Nzg3TDE1LjQxNDIgMTIuNTg1OEMxNi4xOTUzIDEzLjM2NjggMTYuMTk1MyAxNC42MzMyIDE1LjQxNDIgMTUuNDE0MkwzLjQxNDIxIDI3LjQxNDJDMi42MzMxNyAyOC4xOTUzIDEuMzY2ODQgMjguMTk1MyAwLjU4NTc4NiAyNy40MTQyWiIgZmlsbD0iIzE3MjMzRCIvPgo8L3N2Zz4=');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .slick-next {
+                right: -25px;
+            }
+
+            [dir='rtl'] .slick-next {
+                right: auto;
+                left: -25px;
+            }
+
+            .slick-next:before {
+                /* content: 'ÃƒÂ¢Ã¢â‚¬ Ã¢â‚¬â„¢'; */
+                content: "";
+                display: block;
+                width: 16px;
+                /* Width of the SVG */
+                height: 28px;
+                /* Height of the SVG */
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDE2IDI4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMC41ODU3ODYgMjcuNDE0MkMtMC4xOTUyNjIgMjYuNjMzMiAtMC4xOTUyNjIgMjUuMzY2OCAwLjU4NTc4NiAyNC41ODU4TDExLjE3MTYgMTRMMC41ODU3ODUgMy40MTQyMUMtMC4xOTUyNjMgMi42MzMxNyAtMC4xOTUyNjMgMS4zNjY4MyAwLjU4NTc4NSAwLjU4NTc4N0MxLjM2NjgzIC0wLjE5NTI2MyAyLjYzMzE2IC0wLjE5NTI2MyAzLjQxNDIxIDAuNTg1Nzg3TDE1LjQxNDIgMTIuNTg1OEMxNi4xOTUzIDEzLjM2NjggMTYuMTk1MyAxNC42MzMyIDE1LjQxNDIgMTUuNDE0MkwzLjQxNDIxIDI3LjQxNDJDMi42MzMxNyAyOC4xOTUzIDEuMzY2ODQgMjguMTk1MyAwLjU4NTc4NiAyNy40MTQyWiIgZmlsbD0iIzE3MjMzRCIvPgo8L3N2Zz4=');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            [dir='rtl'] .slick-next:before {
+                /* content: 'ÃƒÂ¢Ã¢â‚¬ Ã‚Â'; */
+                content: "";
+                display: block;
+                width: 16px;
+                /* Width of the SVG */
+                height: 28px;
+                /* Height of the SVG */
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDE2IDI4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMTUuMTgwOSAwLjc3MzIzNUMxNS45NTAxIDEuNTQyNSAxNS45NTAxIDIuNzg5NzIgMTUuMTgwOSAzLjU1ODk4TDQuNzU0ODMgMTMuOTg1TDE1LjE4MDkgMjQuNDExQzE1Ljk1MDEgMjUuMTgwMyAxNS45NTAxIDI2LjQyNzUgMTUuMTgwOSAyNy4xOTY4QzE0LjQxMTYgMjcuOTY2IDEzLjE2NDQgMjcuOTY2IDEyLjM5NTEgMjcuMTk2OEwwLjU3NjIyMSAxNS4zNzc5Qy0wLjE5MzA0MSAxNC42MDg2IC0wLjE5MzA0IDEzLjM2MTQgMC41NzYyMjEgMTIuNTkyMUwxMi4zOTUxIDAuNzczMjM1QzEzLjE2NDQgMC4wMDM5NzM1MyAxNC40MTE2IDAuMDAzOTczNTkgMTUuMTgwOSAwLjc3MzIzNVoiIGZpbGw9IiMxNzIzM0QiLz4KPC9zdmc+');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            /* Dots */
+            .slick-dotted.slick-slider {
+                margin-bottom: 30px;
+            }
+
+            .slick-dots {
+                position: absolute;
+                bottom: -25px;
+
+                display: block;
+
+                width: 100%;
+                padding: 0;
+                margin: 0;
+
+                list-style: none;
+
+                text-align: center;
+            }
+
+            .slick-dots li {
+                position: relative;
+
+                display: inline-block;
+
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+
+                cursor: pointer;
+            }
+
+            .slick-dots li button {
+                font-size: 0;
+                line-height: 0;
+
+                display: block;
+
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+
+                cursor: pointer;
+
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+
+            .slick-dots li button:hover,
+            .slick-dots li button:focus {
+                outline: none;
+            }
+
+            .slick-dots li button:hover:before,
+            .slick-dots li button:focus:before {
+                opacity: 1;
+            }
+
+            .slick-dots li button:before {
+                font-family: 'slick';
+                font-size: 6px;
+                line-height: 20px;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 20px;
+                height: 20px;
+
+                content: 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢';
+                text-align: center;
+
+                opacity: .25;
+                color: black;
+
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .slick-dots li.slick-active button:before {
+                opacity: .75;
+                color: black;
+            }
+
+
+            /* ---------------------------------------------*/
+
+
+            .carousell_blocks {
+                display: flex !important;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+            .mtc_carousell {
+                width: 100%;
+
+            }
+</style>
+<style type="text/css">#cartela_block9_header {
+                color: var(--heading_text);
+                width: 100%;
+                text-align: center;
+                font-family: "MTC-Futura New";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width:650px) {
+                #cartela_block9_header {
+                    font-size: 42px;
+                }
+            }
+</style>
+<div id="cartela_block9_header">Descoperă și alte opțiuni suplimentare</div>
+<style type="text/css">.carousell_1 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            .mtc_carousell_card_img {
+                width: 100%;
+                height: auto;
+                border-radius: 18px;
+                margin: -1px 0 0 -1px;
+            }
+
+            .mtc_carousell_card_text {
+                color: #989898;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: "MTC-Futura New";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%;
+                /* 17.334px */
+                width: 90%;
+                height: 55px;
+                margin: 0px auto 10px auto;
+            }
+
+            .mtc_carousell_card_btn {
+                color: #FD4B6B;
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 12.893px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 19.34px;
+                /* 150% */
+                gap: 10px
+            }
+
+            .mtc_carousell_card_title {
+                margin: 20px 0 10px;
+                color: var(--heading_text);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: "MTC-Futura New";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                /* 116.667% */
+            }
+
+            @media (max-width:1300px) {
+                .mtc_popup_block_inside {
+                    max-width: 880px;
+                }
+
+
+            }
+
+            @media (max-width:950px) {
+                .mtc_popup_block_inside {
+                    max-width: 580px;
+                }
+
+
+            }
+
+            @media (max-width:650px) {
+                .mtc_popup_block_inside {
+                    max-width: 90vw;
+                    padding: 45px 35px;
+                }
+            }
+</style>
+<div class="mtc_carousell carousell_1">
+<div class="carousell_blocks">
+<div class="mtc_carousell_card "><img alt="options" class="mtc_carousell_card_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/satoshi_option_1.png" /> <span class="mtc_carousell_card_title">World Roaming</span>
+<div class="mtc_carousell_card_text">Opțiune de Internet mobil pentru cele  mai populare destinaţii și cele mai aproape ca distanţă.</div>
+
+<div class="mtc_carousell_card_btn zoom" onclick="popoup('World')">Activare și condiții <svg fill="none" height="11" viewbox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M0.953613 9.5918L5.78862 5.72379L0.953613 1.53345" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg></div>
+</div>
+</div>
+
+<div class="carousell_blocks">
+<div class="mtc_carousell_card "><img alt="options" class="mtc_carousell_card_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/satoshi_option_2.png" /> <span class="mtc_carousell_card_title">Fly Prepay</span>
+
+<div class="mtc_carousell_card_text">Cu opțiunile preplătite Fly, bucură-te de date mobile nelimitate, minute si  și rețele sociale fără limite</div>
+
+<div class="mtc_carousell_card_btn zoom" onclick="popoup('FLY_PREPAY')">Activare și condiții <svg fill="none" height="11" viewbox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M0.953613 9.5918L5.78862 5.72379L0.953613 1.53345" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg></div>
+</div>
+</div>
+
+<div class="carousell_blocks">
+<div class="mtc_carousell_card "><img alt="options" class="mtc_carousell_card_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/satoshi_option_4.png" /> <span class="mtc_carousell_card_title">Internațional</span>
+
+<div class="mtc_carousell_card_text">Opțiune de Internet mobil pentru cele  mai populare destinaţii și cele mai aproape ca distanţă.</div>
+
+<div class="mtc_carousell_card_btn zoom" onclick="popoup('INTERNAȚIONAL')">Activare și condiții <svg fill="none" height="11" viewbox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M0.953613 9.5918L5.78862 5.72379L0.953613 1.53345" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg></div>
+</div>
+</div>
+
+<div class="carousell_blocks">
+<div class="mtc_carousell_card "><img alt="options" class="mtc_carousell_card_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/satoshi_option_3.png" /> <span class="mtc_carousell_card_title">Internet</span>
+
+<div class="mtc_carousell_card_text">Mult trafic internet la preț special pentru mai multă comunicare.</div>
+
+<div class="mtc_carousell_card_btn zoom" onclick="popoup('Internet')">Activare și condiții <svg fill="none" height="11" viewbox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M0.953613 9.5918L5.78862 5.72379L0.953613 1.53345" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg></div>
+</div>
+</div>
+<!--
+<div class="carousell_blocks">
+<div class="mtc_carousell_card "><img alt="options" class="mtc_carousell_card_img" src="https://moldtelecom.md/new/images/landings/personal/cartela/satoshi_option_5.png" /> <span class="mtc_carousell_card_title">Roaming Romania</span>
+
+<div class="mtc_carousell_card_text">Descoperă opțiunile pe care ți le punem la dispoziție</div>
+
+<div class="mtc_carousell_card_btn zoom" onclick="popoup('RomaniaRom')">Activare și condiții <svg fill="none" height="11" viewbox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg"> <path d="M0.953613 9.5918L5.78862 5.72379L0.953613 1.53345" stroke="#FD4B6B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.61167"></path> </svg></div>
+</div>
+</div>
+-->
+</div>
+<script>
+            $('.carousell_1').slick({
+
+
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2100,
+                responsive: [
+                    {
+                        breakpoint: 1351,
+                        settings: {
+                            slidesToShow: 3
+
+                        }
+                    },
+                    {
+                        breakpoint: 951,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    },
+                    {
+                        breakpoint: 651,
+                        settings: {
+                            slidesToShow: 1
+
+                        }
+                    }
+                ]
+            });
+
+        </script></div>
+</div>
+
+<div class="cartela_main">
+<style type="text/css">#cartela_arhiva {
+            color: #1D1D1F;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: flex;
+            gap: 20px;
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cartela_arhiva_btn {
+            border-radius: 40px;
+            border: 2px solid #FD4B6B;
+            background: #FFF;
+            color: #FD4B6B;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            /* 222.222% */
+            display: inline-flex;
+            padding: 3px 28px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width:950px) {
+            #cartela_arhiva {
+                flex-direction: column;
+            }
+        }
+</style>
+<div id="cartela_arhiva">ARHIVĂ CARTELA PREPAY MOLDTELECOM
+<div id="cartela_arhiva_btn">Vezi mai multe aici <svg fill="none" height="40" viewbox="0 0 24 40" width="24" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M13.5275 20.0048L8.44908 24.2364C8.03811 24.5936 7.98823 25.2138 8.33683 25.6321C8.68543 26.0504 9.30453 26.1132 9.72998 25.7734L15.73 20.7734C15.9577 20.5831 16.0894 20.3016 16.0894 20.0048C16.0894 19.708 15.9577 19.4265 15.73 19.2362L9.72998 14.2362C9.30525 13.8855 8.67698 13.944 8.32433 14.3671C7.97167 14.7902 8.02726 15.4187 8.44868 15.7734L13.5275 20.0048Z" fill="#FD4B6B" fill-rule="evenodd"></path> </svg></div>
+</div>
+<style type="text/css">#cartela_footer {
+            color: #A6A6A6;
+            text-align: center;
+            font-family: "MTC-Futura New";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 0.326px;
+            margin: 20px auto;
+        }
+</style>
+<div id="cartela_footer">Stimate client, Moldtelecom.md face eforturi permanente pentru a păstra acuratețea informațiilor din acest site. Cu toate acestea, rareori, informațiile plasate pe site pot conține inadvertențe punctuale, cum ar fi: unele specificații sau prețuri pot fi modificate de către producător, fără preaviz sau pot conține erori de operare. &Icirc;n cazul &icirc;n care prețurile sau alte detalii referitoare la produse au fost afișate greșit, inclusiv din cauza faptului că au fost introduse greșit &icirc;n baza de date, www.moldtelecom.md, S. A &bdquo;Moldtelecom&rdquo; &icirc;și rezervă dreptul de a anula comercializarea produsului respectiv și de a anunța clientul &icirc;n cel mai scurt timp despre eroarea aparută. &Icirc;ți mulțumim pentru &icirc;nțelegere.</div>
+</div>
+<script>
+    //---------------------------------------------------------------------
+    //reveal script
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight * 1.2;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 100;
+
+
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+
+    //---------------------------------------------------------------------
+
+    function scroll_top_div(to_where) {
+        document.getElementById(to_where).scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    }
+
+    //---------------------------------------------------------------------
+
+
+    function popoup(id) {
+
+        target1 = document.getElementById("mtc_popup_block_" + id);
+        if (target1.style.display == 'none') {
+            target1.style.display = 'flex';
+        }
+        else {
+            target1.style.display = 'none'
+        }
+    }
+
+
+
+</script>
+<style type="text/css">.mtc_popup_block {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .72);
+        box-shadow: 0px 4px 8px 0px rgba(27, 27, 27, 0.16);
+
+        align-items: flex-start;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999;
+        overflow-y: auto;
+    }
+
+    .mtc_popup_block_inside {
+        box-sizing: border-box;
+        border-radius: 24px;
+        padding: 45px 65px;
+        background: #FFF;
+        width: 700px;
+        margin: 10vw 0 10vw 0;
+        position: relative;
+
+
+        font-size: 16px;
+        font-family: Open Sans;
+
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+
+    .mtc_popup_close_button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .mtc_popup_close_button path {
+        fill: #aaaaaa;
+    }
+
+    .mtc_popup_close_button rect {
+        stroke: #aaaaaa;
+    }
+
+    .mtc_popup_block_title {
+        width: 100%;
+        font-family: "MTC-Futura New", sans-serif;
+        font-size: 37px;
+        color: var(--mtc_blue);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .mtc_popup_block_heading {
+        font-weight: 700;
+    }
+
+
+
+
+
+    .mtc_popup_block_table {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--mtc_blue);
+        margin-bottom: 20px;
+    }
+
+    .mtc_popup_block_table thead {
+        background: #FFF;
+        border-radius: 8px;
+    }
+
+    .mtc_popup_block_table thead td {
+        padding: 5px 5px 5px 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        background: #f2f5ff;
+    }
+
+    .mtc_popup_block_table td {
+        padding: 2px 2px 2px 10px;
+
+    }
+
+    .mtc_popup_block_table tbody td {
+
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--mtc_backbroung);
+    }
+</style>
+<div class="mtc_popup_block" id="mtc_popup_block_rebel_fun" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('rebel_fun')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">Opțiuni REBEL FUN</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+			<td><span>Opțiunea</span></td>
+			<td><span><span>REBEL FUN</span>&nbsp;<span style="color:#2980b9;"><strong>50</strong></span></span></td>
+			<td><span><span>REBEL FUN&nbsp;</span><span style="color:#f39c12;"><strong>100</strong></span></span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span>Preț</span></td>
+			<td><span>50 lei</span></td>
+			<td><span>100 lei</span></td>
+		</tr>
+		<tr>
+			<td><span>Trafic</span></td>
+			<td><span>15 GB</span></td>
+			<td><span>40 GB</span></td>
+		</tr>
+		<tr>
+			<td><span>Convorbiri<br />
+			&icirc;n rețea</span></td>
+			<td><span>&infin;</span></td>
+			<td><span>&infin;</span></td>
+		</tr>
+		<tr>
+			<td><span>Rețele<br />
+			sociale</span></td>
+			<td><span>&infin;</span></td>
+			<td><span>&infin;</span></td>
+		</tr>
+		<tr>
+			<td><span>Minute<br />
+			națioanle</span></td>
+			<td><span style="font-size: 18px;">200</span></td>
+			<td><span>250</span></td>
+		</tr>
+		<tr>
+			<td><span>Valabil</span></td>
+			<td><span>15 zile</span></td>
+			<td><span>15 zile</span></td>
+		</tr>
+	</tbody>
+</table>
+<b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li><span>Opțiunea este disponibilă pentru toţi utilizatorii planului tarifar REBEL FUN.</span></li>
+	<li><span>La fiecare re&icirc;ncărcare a contului, se va activa automat Opțiunea Rebel FUN 50/100, &icirc;n dependență&nbsp;de suma re&icirc;ncărcată.</span></li>
+	<li><span>Opțiunile se activează automat&nbsp;la suplinirea contului cu o sumă echivalentă prețului opțiunii. Dacă suma depășește valoarea opțiunii, restul banilor răm&acirc;n &icirc;n cont.&nbsp;</span></li>
+	<li><span>Aplicaţiile/website-urile incluse &icirc;n &bdquo;Rețele sociale gratuite&rdquo; a căror trafic (download/ulpoad) nu va fi taxat sunt: Facebook, Messenger, Vkontakte, Instagram, TikTok, Odnoklassniki, WhatsApp, Multiscreen, Unite Talk, MyMoldtelecom, www.moldtelecom.md precum și toate subdomenele acestuia și Wikipedia.</span></li>
+	<li><span>Viteza de acces la internet este conform condițiilor de prestare a serviciului din pachet și &icirc;n funcție de terminalul utilizat.</span></li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin codul&nbsp;*200# apel.</span></li>
+	<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+</ul>
+<br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span></div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_FLY_PREPAY" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('FLY_PREPAY')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">FLY PREPAY</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+			<td><span>Denumire Opțiune</span></td>
+			<td><span>Preț</span></td>
+			<td><span>Internet</span></td>
+			<td><span>Minute<br />
+			mobil/fix<br />
+			Moldtelecom&nbsp;</span><br />
+			&nbsp;</td>
+			<td><span>Minute<br />
+			naționale</span></td>
+			<td><span>Valabilitate</span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span>Fly Prepay 30</span></td>
+			<td><span>30 lei</span></td>
+			<td><span>5 GB</span></td>
+			<td><span>Nelimitat</span></td>
+			<td><span>100 min.</span></td>
+			<td><span>30 zile</span></td>
+		</tr>
+		<tr>
+			<td><span>Fly Prepay 50</span></td>
+			<td><span>50 lei&nbsp;</span></td>
+			<td><span>20 GB</span></td>
+			<td><span>250 min.&nbsp;</span></td>
+			<td><span>250 min.&nbsp;</span></td>
+			<td><span>15 zile</span></td>
+		</tr>
+		<tr>
+			<td><span>Fly Prepay 70</span></td>
+			<td><span>70 lei</span></td>
+			<td><span>25 GB</span></td>
+			<td><span>300 min.</span></td>
+			<td><span>300 min.</span></td>
+			<td><span>30 zile&nbsp;</span></td>
+		</tr>
+		<tr>
+			<td><span>Fly Prepay 100</span></td>
+			<td><span>100 lei</span></td>
+			<td><span>Nelimitat</span></td>
+			<td><span>Nelimitat</span></td>
+			<td><span>300 min.</span></td>
+			<td><span>15 zile</span></td>
+		</tr>
+	</tbody>
+</table>
+<b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li>Opțiunile sunt&nbsp;valabile&nbsp;doar &icirc;n perioada activă a cartelei Prepay.</li>
+	<li>După consumarea minutelor &icirc;n rețeaua fixă și mobilă Moldtelecom, minutelor naționale și traficului internet inclus &icirc;n opțiune, acestea vor fi taxate la tariful aferent planulu tarifar.&nbsp;&nbsp;</li>
+	<li>Opțiunea este disponibilă pentru toţi utilizatorii&nbsp;&nbsp;cartelei&nbsp;Prepay.</li>
+	<li>Viteza de acces la internet este conform condițiilor de prestare a serviciului din pachet și &icirc;n funcție de terminalul utilizat.</li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin codul&nbsp;*200# apel.</span></li>
+	<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+</ul>
+<br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span></div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_INTERNAȚIONAL" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('INTERNAȚIONAL')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">INTERNAȚIONAL</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+		</tr>
+		<tr>
+			<td>Romania și Ucraina</td>
+			<td>Europa, Israel, SUA, Canada</td>
+			<td>Orice Țară</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>30 minute internționale</td>
+			<td>25 minute<br />
+			internaționale</td>
+			<td>10 minute internaționale</td>
+		</tr>
+		<tr>
+			<td>50 lei&nbsp;</td>
+			<td>50 lei&nbsp;</td>
+			<td>50 lei</td>
+		</tr>
+	</tbody>
+</table>
+<b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li>Opțiunea este valabilă 30 zile.</li>
+	<li>Opțiunea &bdquo;Europa, Israel, SUA, Canada&rdquo; conține următoarele destinatii internaționale: Ucraina, Italia, Romania, Germania, Franța, Cehia, Marea Britanie, Polonia, Grecia, Portugalia, Spania, Belarusia, Estonia, Belgia, Turcia, Israel, USA, Canada.<br />
+	Destinație națională: regiunea transnistreană.</li>
+	<li>Opțiunea Orice Țară conține destinațiile din Zona 1, Zona 2, Zona 3, pe care le puteți găsi pe pagina <a href="https://moldtelecom.md/apeluri-internationale">Apeluri Internaționale.</a>&nbsp;</li>
+	<li>Minutele incluse &icirc;n opțiune sunt destinate pentru apeluri spre orice rețea mobilă sau fixă.</li>
+	<li>După consumarea Minutelor internaționale incluse &icirc;n opțiune, convorbirile vor fi taxate la tarifele standard aplicate pentru fiecare țară &icirc;n parte.&nbsp;</li>
+	<li>Opțiunile sunt valabile doar &icirc;n perioada activă.&nbsp;</li>
+	<li>La schimbul de pachet opțiunea va fi păstrată.</li>
+	<li>Opțiunea este disponibilă pentru toţi abonații Moldteleocom, deținători de abonamente sau cartela Prepay, telefonie mobilă sau internet mobil.</li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin codul&nbsp;*200# apel.</span></li>
+	<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+</ul>
+<br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span></div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_World" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('World')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">World</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+			<td><span>Denumire Opțiune</span></td>
+			<td>Trafic Internet</td>
+			<td>Tarif, lei/pachet</td>
+			<td>Valabilitate</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span>World Net 60</span></td>
+			<td>1 GB</td>
+			<td>60</td>
+			<td>30 zile</td>
+		</tr>
+		<tr>
+			<td><span>World Net 90</span></td>
+			<td>500 Mb</td>
+			<td>90</td>
+			<td>30 zile</td>
+		</tr>
+		<tr>
+			<td><span>World 120</span></td>
+			<td>10 minute</td>
+			<td>120</td>
+			<td>30 zile</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+Lista operatorilor incluși &icirc;n opțiunea &quot;World Net 60&quot;: <b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li>Opțiunea este valabilă 30 zile.</li>
+	<li>Opțiunea &bdquo;Europa, Israel, SUA, Canada&rdquo; conține următoarele destinatii internaționale: Ucraina, Italia, Romania, Germania, Franța, Cehia, Marea Britanie, Polonia, Grecia, Portugalia, Spania, Belarusia, Estonia, Belgia, Turcia, Israel, USA, Canada.<br />
+	Destinație națională: regiunea transnistreană.</li>
+	<li>Opțiunea Orice Țară conține destinațiile din Zona 1, Zona 2, Zona 3, pe care le puteți găsi pe pagina <a href="https://moldtelecom.md/apeluri-internationale">Apeluri Internaționale.</a>&nbsp;</li>
+	<li>Minutele incluse &icirc;n opțiune sunt destinate pentru apeluri spre orice rețea mobilă sau fixă.</li>
+	<li>După consumarea Minutelor internaționale incluse &icirc;n opțiune, convorbirile vor fi taxate la tarifele standard aplicate pentru fiecare țară &icirc;n parte.&nbsp;</li>
+	<li>Opțiunile sunt valabile doar &icirc;n perioada activă.&nbsp;</li>
+	<li>La schimbul de pachet opțiunea va fi păstrată.</li>
+	<li>Opțiunea este disponibilă pentru toţi abonații Moldteleocom, deținători de abonamente sau cartela Prepay, telefonie mobilă sau internet mobil.</li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin codul&nbsp;*200# apel.</span></li>
+	<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+</ul>
+<br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span></div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_Internet" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('Internet')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">INTERNET</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+		</tr>
+		<tr>
+			<td>Internet&nbsp;</td>
+			<td>Trafic&nbsp;</td>
+			<td>Tarif</td>
+			<td>Valabilitate</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span>Internet Nelimitat 1 zi</span></td>
+			<td><span>nelimitat</span></td>
+			<td><span>20 lei</span></td>
+			<td><span>1 zi&nbsp;</span></td>
+		</tr>
+		<tr>
+			<td><span>Internet Nelimitat 7 zile</span></td>
+			<td>nelimitat</td>
+			<td>100 lei</td>
+			<td>7 zile</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><span>Internet 10 GB 15 zile</span></td>
+			<td><span>10 GB</span></td>
+			<td><span>50 lei</span></td>
+			<td><span>15 zile</span></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><span>Internet 5 GB 30<span>&nbsp;zile</span></span></td>
+			<td><span>5 GB</span></td>
+			<td><span>60 lei</span></td>
+			<td><span>30 zile</span></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><span>Internet 10 GB&nbsp;<span>30<span>&nbsp;zile</span></span></span></td>
+			<td><span>10 GB</span></td>
+			<td><span>100 lei</span></td>
+			<td><span>30 zile</span></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><span>Internet 20 GB&nbsp;<span>30<span>&nbsp;zile</span></span></span></td>
+			<td><span>20 GB&nbsp;</span></td>
+			<td><span>150 lei</span></td>
+			<td><span>30 zile</span></td>
+		</tr>
+	</tbody>
+</table>
+<br />
+Lista operatorilor incluși &icirc;n opțiunea &quot;World Net 60&quot;: <b>Condiții de utilizare opțiune:</b> <b>Activare plan tarifar:</b><br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span>
+
+<ul>
+	<li>
+	<ul class="mtc_list">
+		<li>Opțiunile pentru 1 zi sunt valabile 24 ore din momentul activării.</li>
+		<li>Opțiunea poate fi activată &icirc;n orice zi, de mai multe ori pe lună.</li>
+		<li>Viteza de acces la internet este &icirc;n funcţie de terminalul utilizat.</li>
+		<li>Opțiunile sunt valabile doar &icirc;n perioada activă.</li>
+		<li>Opțiunea este disponibilă pentru toţi abonații Moldtelecom, deținători de abonamente sau cartela Prepay, telefonie mobilă sau internet mobil.</li>
+	</ul>
+
+	<ul>
+		<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+		<li><span>prin codul&nbsp;*200# apel.</span></li>
+		<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_RomaniaRom" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('RomaniaRom')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">Roaming Romania</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+			<td><strong>Opțiunea</strong></td>
+			<td><strong>Tarif</strong></td>
+			<td><strong>Conținutul opțiunii</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="1"><strong> <font face="MTC-FuturaNewDemi">Internet Roaming 70</font> </strong></td>
+			<td>70 MDL</td>
+			<td><strong>&nbsp;1 GB</strong><br />
+			<b><span style="font-size:8.0pt"><span calibri=""><span style="color:black"></span></span></span></b></td>
+		</tr>
+		<tr>
+			<td rowspan="1"><strong>Net &amp; minute Roaming 100</strong></td>
+			<td>100 MDL</td>
+			<td><strong>&nbsp;<strong>&nbsp;1 GB + 25 minute</strong></strong><br />
+			<b><span style="font-size:8.0pt"><span calibri=""><span style="color:black"></span></span></span></b></td>
+		</tr>
+		<tr>
+			<td rowspan="1"><strong> <font face="MTC-FuturaNewDemi">Minute Roaming 70</font> </strong></td>
+			<td>70 MDL</td>
+			<td><strong>&nbsp;50 minute</strong><br />
+			<b><span style="font-size:8.0pt"><span style="color:black"></span></span></b></td>
+		</tr>
+	</tbody>
+</table>
+<br />
+Operatorii incluși &icirc;n opțiunea de internet mobil &icirc;n serviciul Roaming:
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+		</tr>
+		<tr>
+			<td><span><strong>Țara</strong></span></td>
+			<td><span><strong>Operatori</strong></span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="1" rowspan="4">Rom&acirc;nia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+			<td>Orange</td>
+		</tr>
+		<tr>
+			<td>Telekom Romanian Mobile Communications</td>
+		</tr>
+		<tr>
+			<td>Vodafone&nbsp;</td>
+		</tr>
+		<tr>
+			<td>RCS&amp;RDS (Digi Mobil)</td>
+		</tr>
+	</tbody>
+</table>
+<strong> <font face="MTC-FuturaNewDemi">Internet Roaming 70</font> </strong> 70 MDL <strong>&nbsp;1 GB</strong><br />
+<b><span style="font-size:8.0pt"><span calibri=""><span style="color:black"></span></span></span></b> <strong>Net &amp; minute Roaming 100</strong> 100 MDL <strong>&nbsp;<strong>&nbsp;1 GB + 25 minute</strong></strong><br />
+<b><span style="font-size:8.0pt"><span calibri=""><span style="color:black"></span></span></span></b> <strong> <font face="MTC-FuturaNewDemi">Minute Roaming 70</font> </strong> 70 MDL <strong>&nbsp;50 minute</strong><br />
+<b><span style="font-size:8.0pt"><span style="color:black"></span></span></b><br />
+Lista operatorilor incluși &icirc;n opțiunea &quot;World Net 60&quot;: <b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li>Opțiunile pentru 1 zi sunt valabile 24 ore din momentul activării.</li>
+	<li>Opțiunea poate fi activată &icirc;n orice zi, de mai multe ori pe lună.</li>
+	<li>Viteza de acces la internet este &icirc;n funcţie de terminalul utilizat.</li>
+	<li>Opțiunile sunt valabile doar &icirc;n perioada activă.</li>
+	<li>Opțiunea este disponibilă pentru toţi abonații Moldtelecom, deținători de abonamente sau cartela Prepay, telefonie mobilă sau internet mobil.</li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin codul&nbsp;*200# apel.</span></li>
+	<li><span>prin apel la numărul 1181 - Serviciul Suport Clienți.</span></li>
+</ul>
+<br />
+<span><em><strong>Notă 1:</strong></em>&nbsp;După modificarea planului tarifar nu vei putea reveni/migra la planul tarifar inițial.</span><br />
+<span><em><strong>Notă 2:</strong></em> &Icirc;nainte de suplinirea contului asigurați-vă că nu sunt activate opțiuni automate. Activarea / Dezactivarea opțiunilor este posibilă prin aplicația &quot;MyMoldtelecom&quot; sau prin codul *200# apel.</span></div>
+</div>
+
+<div class="mtc_popup_block" id="mtc_popup_block_ShareNet" style="display: none;">
+<div class="mtc_popup_block_inside">
+<div class="mtc_popup_close_button" onclick="popoup('ShareNet')"><svg class="popup_block_inside_svg" fill="none" viewbox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"> <rect height="30" rx="15" stroke="#222222" width="30" x="0.5" y="0.5"></rect> <path d="M22 9.85848L21.1414 9L15.5 14.6415L9.85855 9L9 9.85848L14.6415 15.5L9 21.1415L9.85855 22L15.5 16.3585L21.1414 22L22 21.1415L16.3585 15.5L22 9.85848Z" fill="#222222"></path> </svg></div>
+
+<div class="mtc_popup_block_title">Share Net</div>
+
+<table class="mtc_popup_block_table" style="text-align: center;">
+	<thead>
+		<tr>
+			<td><span>Denumire Opțiune</span></td>
+			<td><span>Trafic internet inclus</span></td>
+			<td><span>GB Tarif (lei)</span></td>
+			<td><span>Valabilitate</span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span>ShareNet</span></td>
+			<td><span>24</span></td>
+			<td><span>30 lei</span></td>
+			<td><span> 7 zile</span></td>
+		</tr>
+	</tbody>
+</table>
+<b>Condiții de utilizare opțiune:</b>
+
+<ul>
+	<li>Tariful include TVA.</li>
+	<li>Opțiunea este disponibilă pentru toţi abonaţii de Telefonie Mobilă Postpay și Prepay.</li>
+	<li>Viteza de acces la Internet este conform condiţiilor de prestare a serviciului &icirc;n vigoare și &icirc;n funcție de terminalul utilizat.</li>
+	<li>Tarifarea traficului Internet consumat se efectuează din momentul &icirc;nceperii sesiunii per 10 KByte (1MB=1024 KB).</li>
+	<li>După consumarea traficului Internet inclus &icirc;n opțiune, traficul Internet va fi taxat la tariful aferent planului tarifar.</li>
+	<li>Opțiunea activată se va consuma prioritar conținutului din abonament sau cartelă.</li>
+	<li>Utilizatorii PrePay și abonații PostPay nu pot concomitent activa mai multe opțiuni &rdquo;ShareNet&rdquo;. Activarea repetată a opțiunii va fi posibilă dupa expirarea primei opțiuni activate.</li>
+	<li>La schimbul de pachet opțiunea se va păstra.</li>
+</ul>
+<b>Activare plan tarifar:</b>
+
+<ul>
+	<li><span>prin aplicația &quot;<a href="https://www.moldtelecom.md/ro/personal/MyMoldtelecom">MyMoldtelecom</a>&quot;.</span></li>
+	<li><span>prin intermediul SMS Service 100:<b>pentru opțiunea ShareNet: 24GB</b></span></li>
+	<li><span>prin apel la nr. 1181 Serviciul Suport Clienți</span></li>
+	<li><span>prin cerere depusă la orice reprezentanță S.A. Moldtelecom.</span></li>
+	<li><span>Prin meniul USSD, la formare *500# pentru abonații Postpay și *200# pentru abonații Prepay va urmări instrucțiunile meniului.</span></li>
+</ul>
+<br />
+&nbsp;&nbsp;&nbsp; Experimentează libertatea opțiunii ShareNet și fă ziua celor dragi și mai interesantă cu funcționalitatea de transfer Internet, folosind aplicația My Moldtelecom. Așadar, partajează gratuit traficul, urm&acirc;nd pașii de mai jos:
+<ul>
+	<li>Accesează meniul Opțiuni și servicii &rarr; Opțiuni din aplicația My Moldtelecom;</li>
+	<li>Selectează opțiunea ShareNet;</li>
+	<li>Fă click pe (pictograma inimă);- pune inima</li>
+	<li>Alege cantitatea de GB și numărul de mobil către care vei transfera GB.</li>
+	<br />
+	<li>&nbsp;&nbsp;&nbsp; Poți transfera lunar p&acirc;nă la 10 GB, aleg&acirc;nd liber de la 1 la 10 GB, fără a depăși 10 GB către un număr. Transferurile includ taxe suplimentare și se fac de pe conturile cu statut activ, inclusiv &icirc;ntre abonații postpay.</li>
+</ul>
+</div>
+</div>
